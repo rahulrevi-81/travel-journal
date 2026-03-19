@@ -3,752 +3,315 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alaska — June 2025</title>
+<title>Alaska &mdash; June 2025 &middot; Revi Family Travel Journal</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1a1a2e;
-    --cream: #faf8f3;
-    --warm: #f5efe6;
-    --gold: #c9a84c;
-    --gold-light: #e8d5a3;
-    --rust: #b85c38;
-    --sage: #6b8f71;
-    --slate: #4a5568;
-    --border: #e2d9cc;
-    --alaska-blue: #1d4a5e;
-    --alaska-light: #e8f4f8;
-  }
-
+  :root { --ink: #1a2a2e; --cream: #faf8f3; --warm: #f0f5f7; --gold: #c9a84c; --gold-light: #e8d5a3; --blue: #2a6b8a; --rust: #b85c38; --slate: #4a5568; --border: #d4e0e8; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-
-  /* HERO */
-  .hero {
-    background: linear-gradient(135deg, #1a2a2e 0%, #1d4a5e 60%, #2d6a8e 100%);
-    color: var(--cream);
-    padding: 80px 40px 60px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 30% 50%, rgba(29,74,94,0.4) 0%, transparent 60%),
-                radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.08) 0%, transparent 50%);
-  }
-  .hero-flags { font-size: 28px; margin-bottom: 20px; position: relative; }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(36px, 6vw, 68px);
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 16px;
-    position: relative;
-  }
+  body { font-family: "DM Sans", sans-serif; background: var(--cream); color: #1a1a1a; font-size: 15px; line-height: 1.7; }
+  nav { background: var(--ink); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .nav-logo { font-family: "Playfair Display", serif; font-size: 16px; color: #faf8f3; text-decoration: none; }
+  .nav-logo em { color: #e8d5a3; font-style: italic; }
+  .nav-trip { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.4); }
+  .hero { background: linear-gradient(135deg, #1a2a2e 0%, #1d4a5e 100%); color: #faf8f3; padding: 80px 40px 60px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 40%, rgba(201,168,76,0.12) 0%, transparent 60%); }
+  .hero-flags { font-size: 40px; margin-bottom: 16px; position: relative; }
+  .hero h1 { font-family: "Playfair Display", serif; font-size: clamp(36px, 6vw, 68px); font-weight: 900; line-height: 1.1; margin-bottom: 12px; position: relative; }
   .hero h1 em { font-style: italic; color: var(--gold-light); }
-  .hero-sub {
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(250,248,243,0.55);
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    position: relative;
-  }
+  .hero-sub { font-size: 14px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.55); margin-bottom: 40px; position: relative; }
+  .hero-stats { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; position: relative; }
   .stat { text-align: center; }
-  .stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--gold-light);
-    display: block;
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(250,248,243,0.45);
-    margin-top: 4px;
-  }
-
-  /* SECTION TITLES */
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 11px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 24px;
-    margin-top: 56px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  /* SUMMARY STRIP */
-  .summary-strip {
-    background: var(--alaska-blue);
-    color: var(--cream);
-    padding: 20px 40px;
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 13px;
-  }
-  .summary-item { display: flex; align-items: center; gap: 8px; }
-  .summary-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
-  .summary-ref { font-size: 12px; color: var(--gold-light); font-weight: 500; }
-
-  /* DAY CARDS */
+  .stat-num { font-family: "Playfair Display", serif; font-size: 32px; font-weight: 700; color: var(--gold-light); display: block; line-height: 1; }
+  .stat-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.45); margin-top: 4px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .section-title { font-family: "Playfair Display", serif; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--blue); margin-bottom: 20px; margin-top: 52px; display: flex; align-items: center; gap: 12px; }
+  .section-title::after { content: ""; flex: 1; height: 1px; background: var(--border); }
   .days-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
-  .day-card {
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    transition: box-shadow 0.2s;
-  }
-  .day-card:hover { box-shadow: 0 4px 20px rgba(26,26,46,0.08); }
-  .day-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 20px;
-    cursor: pointer;
-    background: white;
-    user-select: none;
-  }
+  .day-card { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .day-card:hover { box-shadow: 0 4px 20px rgba(26,42,46,0.1); }
+  .day-header { display: flex; align-items: center; gap: 16px; padding: 16px 20px; cursor: pointer; background: white; user-select: none; }
   .day-header:hover { background: var(--warm); }
-  .day-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--alaska-blue);
-    min-width: 36px;
-    line-height: 1;
-  }
+  .day-num { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700; color: var(--blue); min-width: 36px; line-height: 1; }
   .day-info { flex: 1; }
   .day-title { font-weight: 500; font-size: 15px; line-height: 1.2; }
-  .day-meta {
-    font-size: 11px;
-    color: var(--slate);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 2px;
-  }
-  .day-flag { font-size: 20px; }
+  .day-meta { font-size: 11px; color: var(--slate); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
   .day-toggle { color: var(--slate); font-size: 18px; transition: transform 0.2s; min-width: 20px; text-align: center; }
   .day-card.open .day-toggle { transform: rotate(180deg); }
-  .day-body {
-    display: none;
-    padding: 20px 20px 20px 72px;
-    background: var(--warm);
-    border-top: 1px solid var(--border);
-  }
+  .day-body { display: none; padding: 20px 20px 20px 72px; background: var(--warm); border-top: 1px solid var(--border); }
   .day-card.open .day-body { display: block; }
   .day-body ul { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
   .day-body ul li { padding-left: 16px; position: relative; font-size: 14px; }
-  .day-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--alaska-blue); font-size: 12px; top: 2px; }
+  .day-body ul li::before { content: "—"; position: absolute; left: 0; color: var(--blue); font-size: 12px; top: 2px; }
   .day-body ul li strong { font-weight: 500; }
-
-  .day-map-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--slate);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    padding: 5px 12px;
-    border-radius: 2px;
-    margin-bottom: 14px;
-    transition: all 0.15s;
-  }
-  .day-map-link:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-
-  .booking-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    background: rgba(107,143,113,0.12);
-    color: var(--sage);
-    border: 1px solid rgba(107,143,113,0.3);
-    padding: 4px 10px;
-    border-radius: 2px;
-    margin-top: 8px;
-    margin-right: 6px;
-  }
-  .alarm-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    background: rgba(184,92,56,0.1);
-    color: var(--rust);
-    border: 1px solid rgba(184,92,56,0.3);
-    padding: 4px 10px;
-    border-radius: 2px;
-    margin-top: 6px;
-    margin-right: 6px;
-  }
-  .info-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    background: rgba(29,74,94,0.08);
-    color: var(--alaska-blue);
-    border: 1px solid rgba(29,74,94,0.2);
-    padding: 4px 10px;
-    border-radius: 2px;
-    margin-top: 6px;
-    margin-right: 6px;
-  }
-
-  /* ACCOM TABLE */
-  .accom-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-  .accom-table th {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--slate);
-    font-weight: 500;
-    text-align: left;
-    padding: 8px 12px;
-    border-bottom: 2px solid var(--border);
-  }
-  .accom-table td { padding: 11px 12px; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: top; }
-  .accom-table tr:hover td { background: var(--warm); }
-  .prop { font-weight: 500; }
-  .ref { font-size: 11px; color: var(--slate); }
-  .booked { color: var(--sage); font-weight: 500; font-size: 11px; }
-
-  /* BUDGET */
-  .budget-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 8px; }
-  .budget-item { background: white; border: 1px solid var(--border); border-radius: 4px; padding: 16px; }
-  .budget-cat { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); margin-bottom: 6px; }
-  .budget-range { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--ink); }
-  .budget-total { grid-column: 1 / -1; background: var(--alaska-blue); color: var(--cream); border-color: var(--alaska-blue); }
-  .budget-total .budget-cat { color: var(--gold-light); }
-  .budget-total .budget-range { color: var(--gold-light); font-size: 28px; }
-
-  /* PACKING */
-  .packing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 8px; }
-  .packing-item {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 16px;
-    font-size: 13px;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
-  .packing-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
-
-  footer {
-    background: var(--ink);
-    color: rgba(250,248,243,0.4);
-    text-align: center;
-    padding: 32px;
-    margin-top: 80px;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
+  .tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 4px 10px; border-radius: 2px; margin-top: 6px; margin-right: 6px; }
+  .tag-blue { background: rgba(42,107,138,0.1); color: var(--blue); border: 1px solid rgba(42,107,138,0.3); }
+  .tag-gold { background: rgba(201,168,76,0.1); color: #8a6e1a; border: 1px solid rgba(201,168,76,0.3); }
+  .tag-rust { background: rgba(184,92,56,0.1); color: var(--rust); border: 1px solid rgba(184,92,56,0.3); }
+  .sub-heading { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); margin: 14px 0 6px; }
+  .reminders { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 8px; margin-bottom: 60px; }
+  .reminder { background: white; border: 1px solid var(--border); border-radius: 4px; padding: 16px; font-size: 13px; display: flex; gap: 10px; }
+  .reminder-icon { font-size: 18px; flex-shrink: 0; }
+  footer { background: var(--ink); color: rgba(250,248,243,0.35); text-align: center; padding: 32px; margin-top: 40px; font-size: 12px; letter-spacing: 1px; }
   footer strong { color: var(--gold-light); }
-
+  footer a { color: var(--gold-light); text-decoration: none; }
   @media (max-width: 600px) {
+    nav { padding: 12px 16px; }
+    .nav-trip { display: none; }
     .hero { padding: 50px 20px 40px; }
-    .hero-stats { gap: 24px; }
-    .summary-strip { padding: 16px 20px; gap: 16px; }
-    .day-body { padding: 16px; }
+    .hero-stats { gap: 20px; }
+    .day-body { padding: 14px; }
+    .day-header { padding: 12px 14px; gap: 10px; }
+    .day-num { font-size: 18px; min-width: 26px; }
+    .tag { font-size: 10px; }
   }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav style="background:#1a1a2e;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;">
-  <a href="../index.html" style="font-family:'Playfair Display',serif;font-size:16px;color:#faf8f3;text-decoration:none;">← Rahul & <em style="color:#e8d5a3;font-style:italic;">Veena's</em> Travel Journal</a>
-  <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(250,248,243,0.4);">Alaska · June 2025</span>
+<nav>
+  <a class="nav-logo" href="../index.html">&#8592; Rahul &amp; <em>Veena's</em> Travel Journal</a>
+  <span class="nav-trip">Alaska &middot; Jun 2025</span>
 </nav>
-
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-flags">🐻 🦅 🧊 🏔️</div>
-  <h1>Alaska<br><em>The Last Frontier</em></h1>
-  <p class="hero-sub">Anchorage · Seward · Valdez · Denali · Palmer</p>
+  <div class="hero-flags">&#127963;&#65039;&#128059;&#10052;&#65039;</div>
+  <h1>Alaska<br><em>June 2025</em></h1>
+  <p class="hero-sub">Anchorage &middot; Seward &middot; Valdez &middot; Denali</p>
   <div class="hero-stats">
     <div class="stat"><span class="stat-num">12</span><span class="stat-label">Days</span></div>
     <div class="stat"><span class="stat-num">1</span><span class="stat-label">State</span></div>
     <div class="stat"><span class="stat-num">4</span><span class="stat-label">Travellers</span></div>
-    <div class="stat"><span class="stat-num">Jun 23</span><span class="stat-label">Departure</span></div>
-    <div class="stat"><span class="stat-num">Jul 4</span><span class="stat-label">Return</span></div>
+    <div class="stat"><span class="stat-num">20,310ft</span><span class="stat-label">Denali Peak</span></div>
   </div>
 </div>
-
-<!-- SUMMARY STRIP -->
-<div class="summary-strip">
-  <div class="summary-item"><div class="summary-dot"></div> Flights <span class="summary-ref">Delta · $1,772</span></div>
-  <div class="summary-item"><div class="summary-dot"></div> Car Rental <span class="summary-ref">$500</span></div>
-  <div class="summary-item"><div class="summary-dot"></div> Kenai Fjords Tour <span class="summary-ref">#3210426</span></div>
-  <div class="summary-item"><div class="summary-dot"></div> Stan Stephens Cruise <span class="summary-ref">#460640</span></div>
-  <div class="summary-item"><div class="summary-dot"></div> Total <span class="summary-ref">~$6,442</span></div>
-</div>
-
 <div class="container">
-
-  <!-- ACCOMMODATION -->
-  <p class="section-title">Accommodation</p>
-  <div style="overflow-x:auto;">
-    <table class="accom-table">
-      <thead>
-        <tr>
-          <th>Night</th>
-          <th>Property & Address</th>
-          <th>Dates</th>
-          <th>Notes</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td><span class="prop">Airbnb — Anchorage</span><br><span class="ref">1706 Stratford Ct, Anchorage, AK 99508</span></td>
-          <td>Jun 23–24</td>
-          <td><span class="ref">WiFi: CKA3KA · Door: 1969 · Park left side only</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><span class="prop">Moose Pass — Expedia</span><br><span class="ref">Mile 29.5 Seward Hwy, Moose Pass, AK 99631</span></td>
-          <td>Jun 24–25</td>
-          <td><span class="ref">Booked via Expedia</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>3–4</td>
-          <td><span class="prop">VRBO — Seward</span><br><span class="ref">232 5th Ave, Unit 1, Seward, AK 99664</span></td>
-          <td>Jun 25–27</td>
-          <td><span class="ref">Gate: 1901 · WiFi: 232Marathon · Booked via VRBO</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><span class="prop">The Pioneer Hotel — Palmer</span><br><span class="ref">124 W Arctic Ave, Palmer, AK 99645</span></td>
-          <td>Jun 27–28</td>
-          <td><span class="ref">Booked via Expedia</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>6–7</td>
-          <td><span class="prop">Keystone Hotel — Valdez</span><br><span class="ref">400 Egan St, Valdez, AK 99686</span></td>
-          <td>Jun 28–30</td>
-          <td><span class="ref">Booked via Expedia · Laundry nearby: 196 S Harbor Rd</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>8–9</td>
-          <td><span class="prop">Airbnb — Denali</span><br><span class="ref">Hickory, Denali Park, AK 99755</span></td>
-          <td>Jun 30–Jul 2</td>
-          <td><span class="ref">Booked via Airbnb</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-        <tr>
-          <td>10–11</td>
-          <td><span class="prop">Airbnb — Palmer</span><br><span class="ref">8829 East Kokopelli Circle 9, Palmer, AK 99645</span></td>
-          <td>Jul 2–3</td>
-          <td><span class="ref">Booked via Airbnb</span></td>
-          <td><span class="booked">✓ Booked</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- ITINERARY -->
   <p class="section-title">Day-by-Day Itinerary</p>
   <div class="days-grid">
 
-    <!-- DAY 1 -->
-    <div class="day-card">
+    <div class="day-card open">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">1</div>
-        <div class="day-info">
-          <div class="day-title">Tampa → Miami → Seattle → Anchorage</div>
-          <div class="day-meta">Mon Jun 23 · Travel Day</div>
-        </div>
-        <div class="day-flag">✈️</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Tampa &rarr; Miami &rarr; Seattle &rarr; Anchorage</div><div class="day-meta">Mon Jun 23 &middot; Travel Day</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
         <ul>
-          <li>Drive Tampa → Miami</li>
-          <li>Miami → Seattle via <strong>Delta Airlines at 6:05pm</strong></li>
-          <li>Seattle → Anchorage via <strong>Delta Airlines at 11:00pm</strong></li>
-          <li>Arrive Anchorage <strong>1:32am</strong></li>
-          <li>Pick up rental car · head to Airbnb</li>
+          <li>Drive Tampa &rarr; Miami</li>
+          <li><strong>Delta flight Miami &rarr; Seattle</strong> &middot; Departs 6:05pm</li>
+          <li><strong>Delta flight Seattle &rarr; Anchorage</strong> &middot; Departs 11pm &middot; Arrives 1:32am</li>
+          <li>Check in to Airbnb &middot; Rest</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Airbnb · 1706 Stratford Ct · Door: 1969</span>
-          <span class="info-tag">💰 $180</span>
+        <div>
+          <span class="tag tag-blue">&#10003; Rental Car booked</span>
+          <span class="tag tag-gold">&#127968; 1706 Stratford Ct, Anchorage AK 99508 &middot; Door code 1969</span>
         </div>
       </div>
     </div>
 
-    <!-- DAY 2 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">2</div>
-        <div class="day-info">
-          <div class="day-title">Anchorage → Beluga Point → Whittier → Moose Pass</div>
-          <div class="day-meta">Tue Jun 24 · Scenic Drive</div>
-        </div>
-        <div class="day-flag">🐋</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Anchorage &rarr; Whittier &rarr; Moose Pass</div><div class="day-meta">Tue Jun 24 &middot; 4hr drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Anchorage,+AK/Beluga+Point+Scenic+Overlook/Bird+Creek/Whittier,+AK/Moose+Pass,+AK" target="_blank">📍 Day 2 Map</a>
         <ul>
-          <li>Costco shopping in Anchorage (stock up for the trip)</li>
-          <li><strong>Beluga Point</strong> — scenic overlook on Turnagain Arm, watch for beluga whales</li>
-          <li><strong>Bird Creek</strong> — scenic stop</li>
-          <li><strong>Turnagain Pass</strong> — mountain views</li>
-          <li><strong>Whittier</strong> — charming harbor town through the tunnel</li>
-          <li><strong>Portage Pass Trail</strong> — 3-mile steep hike, ~4hrs · views of Portage Glacier</li>
+          <li>Morning <strong>Costco shopping</strong> for supplies</li>
+          <li><strong>Beluga Point</strong> &mdash; watch for beluga whales in Turnagain Arm</li>
+          <li><strong>Bird Creek</strong> and <strong>Turnagain Pass</strong> scenic stops</li>
+          <li><strong>Whittier</strong> &mdash; quirky all-in-one-building town</li>
+          <li><strong>Portage Pass Trail</strong> &mdash; 3-mile steep hike to glacier viewpoint</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Moose Pass · Mile 29.5 Seward Hwy · Expedia</span>
-          <span class="info-tag">💰 $200</span>
-        </div>
+        <div><span class="tag tag-gold">&#127968; Mile 29.5 Seward Hwy, Moose Pass AK 99631 &middot; Expedia</span></div>
       </div>
     </div>
 
-    <!-- DAY 3 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">3</div>
-        <div class="day-info">
-          <div class="day-title">Moose Pass → Cooper Landing → Seward</div>
-          <div class="day-meta">Wed Jun 25 · Kenai Peninsula</div>
-        </div>
-        <div class="day-flag">🏔️</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Moose Pass &rarr; Kenai Lake &rarr; Seward</div><div class="day-meta">Wed Jun 25 &middot; 3hr drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Moose+Pass,+AK/Cooper+Landing,+AK/Skilak+Lake/Seward,+AK" target="_blank">📍 Day 3 Map</a>
         <ul>
-          <li><strong>Cooper Landing</strong> — Kenai River viewpoints, stunning turquoise water</li>
-          <li><strong>Hidden Creek Trail</strong> — peaceful forest and lake hike</li>
-          <li><strong>Skilak Lookout Trail</strong> — 4.4 miles, beautiful panoramic views (~3hrs)</li>
-          <li>Drive to Seward and settle in</li>
+          <li><strong>Cooper Landing</strong> &mdash; Kenai River viewpoints and fishing town</li>
+          <li><strong>Hidden Creek Trail</strong> &mdash; peaceful forest walk</li>
+          <li><strong>Skilak Lookout Trail</strong> &mdash; 4.4 miles, stunning panoramic views</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ VRBO · 232 5th Ave · Gate: 1901 · WiFi: 232Marathon</span>
-          <span class="info-tag">💰 $533</span>
-        </div>
+        <div><span class="tag tag-gold">&#127968; 232 5th Ave, Seward AK 99664 &middot; VRBO &middot; Gate code 1901 &middot; WiFi: 232Marathon</span></div>
       </div>
     </div>
 
-    <!-- DAY 4 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">4</div>
-        <div class="day-info">
-          <div class="day-title">Kenai Fjords National Park Cruise</div>
-          <div class="day-meta">Thu Jun 26 · Full Day Tour · Seward</div>
-        </div>
-        <div class="day-flag">🐋</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Kenai Fjords Glacier Cruise</div><div class="day-meta">Thu Jun 26 &middot; Full day on the water</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/place/1304+W+Fourth+Ave,+Seward,+AK+99664" target="_blank">📍 Check-in Location</a>
         <ul>
-          <li><strong>Kenai Fjords Tour — 9:00am</strong> · Captain's Choice National Park Tour</li>
-          <li>Check-in: 1304 W. Fourth Avenue, Seward, AK 99664</li>
-          <li>Wildlife viewing — orca, humpback whales, sea otters, puffins</li>
-          <li>Tidewater glacier viewing</li>
-          <li>Afternoon: <strong>Mt. Marathon Bowl Trail</strong></li>
-          <li>Evening: walk along <strong>Waterfront Park</strong></li>
+          <li><strong>Kenai Fjords National Park Tour</strong> &middot; Departs 9:00am &middot; Captain's Choice tour</li>
+          <li>Tidewater glaciers, sea otters, puffins, orcas and humpback whales</li>
+          <li>Afternoon: <strong>Mt. Marathon Bowl Trail</strong> &mdash; great views over Seward</li>
+          <li><strong>Waterfront Park</strong> walk</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Kenai Fjords · Conf. #3210426 · Captain's Choice Tour</span>
-          <span class="info-tag">💰 $733</span>
+        <div>
+          <span class="tag tag-blue">&#10003; Conf. 3210426 &middot; Captain's Choice National Park Tour</span>
+          <span class="tag tag-gold">&#128205; 1304 W. Fourth Ave, Seward AK 99664</span>
         </div>
       </div>
     </div>
 
-    <!-- DAY 5 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">5</div>
-        <div class="day-info">
-          <div class="day-title">Exit Glacier → Summit Lake → Palmer</div>
-          <div class="day-meta">Fri Jun 27 · ~3hrs drive</div>
-        </div>
-        <div class="day-flag">🧊</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Exit Glacier + Harding Icefield &rarr; Palmer</div><div class="day-meta">Fri Jun 27 &middot; 3hr drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Seward,+AK/Exit+Glacier/Summit+Lake,+AK/Palmer,+AK" target="_blank">📍 Day 5 Map</a>
         <ul>
-          <li><strong>Exit Glacier — Harding Icefield Trail</strong> — epic glacier hike, stunning views</li>
-          <li><strong>Summit Lake</strong> — kayaking or rest stop</li>
-          <li>First half of <strong>Twin Peaks Trail</strong></li>
-          <li>Drive ~3hrs north to Palmer</li>
+          <li><strong>Exit Glacier &amp; Harding Icefield Trail</strong> &mdash; epic hike above the clouds</li>
+          <li><strong>Summit Lake</strong> &mdash; kayaking or rest stop</li>
+          <li><strong>First half of Twin Peaks Trail</strong> &mdash; wildflowers and glacier views</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ The Pioneer Hotel · 124 W Arctic Ave, Palmer · Expedia</span>
-          <span class="info-tag">💰 $160</span>
-        </div>
+        <div><span class="tag tag-gold">&#127968; The Pioneer Hotel, 124 W Arctic Ave, Palmer AK &middot; Expedia</span></div>
       </div>
     </div>
 
-    <!-- DAY 6 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">6</div>
-        <div class="day-info">
-          <div class="day-title">Matanuska Glacier → Worthington Glacier → Valdez</div>
-          <div class="day-meta">Sat Jun 28 · ~5hrs drive</div>
-        </div>
-        <div class="day-flag">🧊</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Matanuska Glacier Trek &rarr; Valdez</div><div class="day-meta">Sat Jun 28 &middot; 5hr drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Palmer,+AK/Eklutna+Lake/Matanuska+Glacier/Worthington+Glacier/Thompson+Pass/Valdez,+AK" target="_blank">📍 Day 6 Map</a>
         <ul>
-          <li><strong>Eklutna Lake</strong> — scenic detour or hike</li>
-          <li><strong>Matanuska Glacier</strong> — 31090 W. Glenn Hwy, Glacier View · Private ice trek 9:30am–1pm · Booking #291859658</li>
-          <li><strong>Worthington Glacier Ridge Trail</strong> — stunning roadside glacier</li>
-          <li><strong>Thompson Pass</strong> and <strong>Bridal Veil Falls</strong></li>
-          <li>Arrive Valdez ~5hrs drive</li>
+          <li><strong>Eklutna Lake</strong> &mdash; scenic detour or hike</li>
+          <li><strong>Matanuska Glacier</strong> &mdash; private guided ice fall trek 9:30am&ndash;1pm</li>
+          <li><strong>Worthington Glacier Ridge Trail</strong> &mdash; easy walk to glacier viewpoint</li>
+          <li><strong>Thompson Pass &amp; Bridal Veil Falls</strong></li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Matanuska Ice Trek · Booking #291859658 · 9:30am</span>
-          <span class="booking-tag">✓ Keystone Hotel · 400 Egan St, Valdez · Expedia</span>
-          <span class="info-tag">💰 $880</span>
+        <div>
+          <span class="tag tag-blue">&#10003; Matanuska Glacier Booking #291859658 &middot; 31090 W Glenn Hwy</span>
+          <span class="tag tag-gold">&#127968; Keystone Hotel, 400 Egan St, Valdez AK &middot; Expedia</span>
         </div>
       </div>
     </div>
 
-    <!-- DAY 7 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">7</div>
-        <div class="day-info">
-          <div class="day-title">Stan Stephens Glacier Cruise · Valdez</div>
-          <div class="day-meta">Sun Jun 29 · Full Day · Valdez</div>
-        </div>
-        <div class="day-flag">🚢</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Stan Stephens Glacier Cruise &middot; Valdez</div><div class="day-meta">Sun Jun 29 &middot; Full day cruise</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/place/112+North+Harbor+Drive,+Valdez,+AK+99686" target="_blank">📍 Cruise Departure</a>
         <ul>
-          <li><strong>Stan Stephens Glacier Cruise — 8:30am–4:30pm</strong></li>
-          <li>Meares Glacier Excursion · 112 North Harbor Drive, Valdez</li>
-          <li>Afternoon: <strong>Salmon Hatchery</strong></li>
-          <li><strong>Keystone Canyon Trail</strong></li>
-          <li><strong>Mineral Creek Trail</strong> (Moderate, 6 miles round-trip) — waterfalls, canyon views</li>
+          <li><strong>Meares Glacier Excursion</strong> &middot; 8:30am&ndash;4:30pm &middot; Stan Stephens Cruises</li>
+          <li><strong>Salmon Hatchery</strong> &mdash; watch salmon ladders</li>
+          <li><strong>Keystone Canyon Trail</strong> &mdash; dramatic canyon walls</li>
+          <li><strong>Mineral Creek Trail</strong> &mdash; 6 miles round trip, waterfalls and canyon views</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Stan Stephens Cruise · Conf. #460640 · 8:30am</span>
-          <span class="info-tag">💰 $572</span>
-          <span class="info-tag">🧺 Laundry: 196 S Harbor Rd, Valdez</span>
-        </div>
+        <div><span class="tag tag-blue">&#10003; Conf. 460640 &middot; 112 North Harbor Drive, Valdez AK</span></div>
       </div>
     </div>
 
-    <!-- DAY 8 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">8</div>
-        <div class="day-info">
-          <div class="day-title">Valdez → Denali Highway → Denali</div>
-          <div class="day-meta">Mon Jun 30 · Epic ~9hr Drive</div>
-        </div>
-        <div class="day-flag">🏔️</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Valdez &rarr; Denali via Denali Highway</div><div class="day-meta">Mon Jun 30 &middot; Epic 9hr scenic drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Valdez,+AK/Paxson,+AK/Tangle+Lakes/Maclaren+River+Lodge/Denali+National+Park,+AK" target="_blank">📍 Day 8 Map</a>
         <ul>
-          <li>Drive via <strong>Paxson and Tangle Lakes Lodge</strong>, 22 Denali Hwy</li>
-          <li>Stop at <strong>Maclaren River Lodge</strong>, Mile 42 Denali Hwy</li>
-          <li><strong>Black Rapids Glacier Viewpoint</strong>, Richardson Hwy, Delta Junction</li>
-          <li><strong>Castner Glacier Ice Cave</strong> — trailhead on Richardson Hwy, Delta Junction</li>
-          <li>Arrive Denali area (~9hr total drive)</li>
+          <li>Drive via <strong>Paxson</strong> and the stunning <strong>Denali Highway</strong> (gravel road, worth it!)</li>
+          <li><strong>Black Rapids Glacier Viewpoint</strong> &mdash; Richardson Hwy</li>
+          <li><strong>Castner Glacier Ice Cave</strong> &mdash; trailhead on Richardson Hwy</li>
+          <li>Arrive Denali area &middot; check in to Airbnb</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Airbnb · Hickory, Denali Park, AK 99755</span>
-          <span class="info-tag">💰 $511</span>
-        </div>
+        <div><span class="tag tag-gold">&#127968; Hickory, Denali Park AK 99755 &middot; Airbnb</span></div>
       </div>
     </div>
 
-    <!-- DAY 9 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">9</div>
-        <div class="day-info">
-          <div class="day-title">Denali National Park</div>
-          <div class="day-meta">Tue Jul 1 · Full Day · Denali</div>
-        </div>
-        <div class="day-flag">🐺</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Denali National Park</div><div class="day-meta">Tue Jul 1 &middot; Denali base</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/place/Denali+National+Park+and+Preserve,+AK" target="_blank">📍 Denali National Park</a>
         <ul>
-          <li><strong>Denali National Park</strong> — explore by bus or guided tour</li>
-          <li><strong>Mount Healy Overlook Trail</strong> — panoramic views of the park and Alaska Range</li>
-          <li>Watch for wildlife — grizzly, moose, caribou, Dall sheep</li>
+          <li><strong>Denali National Park</strong> &mdash; explore the park by bus (private vehicles restricted)</li>
+          <li><strong>Mount Healy Overlook Trail</strong> &mdash; panoramic views of the park and Alaska Range</li>
+          <li>Watch for grizzlies, moose, caribou and Dall sheep</li>
         </ul>
       </div>
     </div>
 
-    <!-- DAY 10 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">10</div>
-        <div class="day-info">
-          <div class="day-title">Denali → Hatcher Pass → Palmer</div>
-          <div class="day-meta">Wed Jul 2 · ~4hrs drive</div>
-        </div>
-        <div class="day-flag">✈️</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Denali &rarr; Hatcher Pass &rarr; Palmer</div><div class="day-meta">Wed Jul 2 &middot; 4hr drive</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Denali+National+Park/Hatcher+Pass/Palmer,+AK" target="_blank">📍 Day 10 Map</a>
         <ul>
-          <li>Optional: <strong>Flightseeing over Denali</strong> — breathtaking aerial views of North America's highest peak</li>
-          <li><strong>Hatcher Pass</strong> — Gold Cord Lake Trail</li>
-          <li><strong>Reed Lakes Trail</strong> — stunning alpine scenery</li>
-          <li>Drive ~4hrs back to Palmer</li>
+          <li>Optional: <strong>Flightseeing tour over Denali</strong> &mdash; unforgettable if clear skies</li>
+          <li><strong>Hatcher Pass</strong> &mdash; Gold Cord Lake Trail or Reed Lakes Trail</li>
+          <li>Check in to Airbnb in Palmer</li>
         </ul>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-          <span class="booking-tag">✓ Airbnb · 8829 East Kokopelli Circle 9, Palmer</span>
-          <span class="info-tag">💰 $201</span>
-        </div>
+        <div><span class="tag tag-gold">&#127968; 8829 East Kokopelli Circle 9, Palmer AK &middot; Airbnb</span></div>
       </div>
     </div>
 
-    <!-- DAY 11 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">11</div>
-        <div class="day-info">
-          <div class="day-title">Palmer → Independence Mine → Airport</div>
-          <div class="day-meta">Thu Jul 3 · Last Day · Midnight flight</div>
-        </div>
-        <div class="day-flag">⛏️</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Palmer &rarr; Anchorage &rarr; Airport</div><div class="day-meta">Thu Jul 3 &middot; Last day &middot; Flight at midnight</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
-        <a class="day-map-link" href="https://www.google.com/maps/dir/Palmer,+AK/April+Bowl+Trail/Independence+Mine+State+Historical+Park/Eklutna+Lake/Ted+Stevens+Anchorage+International+Airport" target="_blank">📍 Day 11 Map</a>
         <ul>
-          <li><strong>April Bowl Trail</strong> — scenic alpine hike</li>
-          <li><strong>Independence Mine State Park</strong> — historic gold mine, stunning mountain setting</li>
-          <li><strong>Chugach Mountains Scenic Drives</strong></li>
-          <li><strong>Eklutna Lake</strong> — scenic detour or hike</li>
-          <li>Head to Anchorage airport — <strong>flight at midnight</strong></li>
+          <li><strong>April Bowl Trail</strong> &mdash; alpine wildflowers</li>
+          <li><strong>Independence Mine State Historic Park</strong> &mdash; gold rush history</li>
+          <li><strong>Chugach Mountains</strong> scenic drives</li>
+          <li>Drive to Anchorage &middot; dinner &middot; airport</li>
         </ul>
-        <div style="margin-top:12px;">
-          <span class="alarm-tag">⏰ Flight at midnight — be at airport by 10pm</span>
-        </div>
+        <div><span class="tag tag-rust">&#9200;&#65039; Flight at midnight &mdash; arrive airport by 10pm</span></div>
       </div>
     </div>
 
-    <!-- DAY 12 -->
     <div class="day-card">
       <div class="day-header" onclick="toggle(this)">
         <div class="day-num">12</div>
-        <div class="day-info">
-          <div class="day-title">Anchorage → Seattle → Miami → Tampa</div>
-          <div class="day-meta">Fri Jul 4 · Return Home</div>
-        </div>
-        <div class="day-flag">🏠</div>
-        <div class="day-toggle">▾</div>
+        <div class="day-info"><div class="day-title">Anchorage &rarr; Seattle &rarr; Miami &rarr; Tampa</div><div class="day-meta">Fri Jul 4 &middot; Independence Day &middot; Home</div></div>
+        <div class="day-toggle">&#9662;</div>
       </div>
       <div class="day-body">
         <ul>
-          <li>Anchorage → Seattle via <strong>Delta Airlines at 00:04am</strong></li>
-          <li>Seattle → Miami via <strong>Delta Airlines at 8:00am</strong></li>
-          <li>Arrive Miami <strong>5:11pm</strong></li>
-          <li>Drive Miami → Tampa 🏠</li>
+          <li><strong>Delta flight Anchorage &rarr; Seattle</strong> &middot; Departs 12:04am</li>
+          <li><strong>Delta flight Seattle &rarr; Miami</strong> &middot; Departs 8am &middot; Arrives 5:11pm</li>
+          <li>Drive Miami &rarr; Tampa &#127968; Happy 4th of July!</li>
         </ul>
       </div>
     </div>
 
-  </div><!-- /days-grid -->
-
-  <!-- BUDGET -->
-  <p class="section-title">Budget</p>
-  <div class="budget-grid">
-    <div class="budget-item"><div class="budget-cat">Flights ✅</div><div class="budget-range">$1,772</div></div>
-    <div class="budget-item"><div class="budget-cat">Car Rental ✅</div><div class="budget-range">$500</div></div>
-    <div class="budget-item"><div class="budget-cat">Miami ↔ Tampa ✅</div><div class="budget-range">$200</div></div>
-    <div class="budget-item"><div class="budget-cat">Accommodation</div><div class="budget-range">~$1,200</div></div>
-    <div class="budget-item"><div class="budget-cat">Tours & Activities</div><div class="budget-range">~$1,500</div></div>
-    <div class="budget-item"><div class="budget-cat">Food & Misc</div><div class="budget-range">~$1,270</div></div>
-    <div class="budget-item budget-total"><div class="budget-cat">Total</div><div class="budget-range">~$6,442</div></div>
   </div>
 
-  <!-- PACKING -->
-  <p class="section-title">What to Pack</p>
-  <div class="packing-grid">
-    <div class="packing-item"><div class="packing-icon">🧥</div><div>Waterproof rain jacket — Alaska weather is unpredictable</div></div>
-    <div class="packing-item"><div class="packing-icon">👟</div><div>Good walking shoes + water shoes for glacier hikes</div></div>
-    <div class="packing-item"><div class="packing-icon">🦟</div><div>Mosquito repellent — essential in summer</div></div>
-    <div class="packing-item"><div class="packing-icon">🕶️</div><div>Sunscreen + hat/visor — long daylight hours</div></div>
-    <div class="packing-item"><div class="packing-icon">🎒</div><div>Daypack + fitness clothes for hikes</div></div>
-    <div class="packing-item"><div class="packing-icon">📷</div><div>Camera or binoculars for wildlife spotting</div></div>
-    <div class="packing-item"><div class="packing-icon">🛂</div><div>Original passport + driving license</div></div>
-    <div class="packing-item"><div class="packing-icon">🛡️</div><div>Travel insurance — <a href="https://www.visitorscoverage.com/insurance/atlas-essential-international/select-coverage" style="color:var(--alaska-blue)">Atlas Essential International</a></div></div>
+  <p class="section-title">Key Reminders</p>
+  <div class="reminders">
+    <div class="reminder"><span class="reminder-icon">&#127985;&#65039;</span><div>Alaska in June has very long daylight &mdash; bring <strong>eye masks</strong> for sleeping (up to 19hrs of daylight)</div></div>
+    <div class="reminder"><span class="reminder-icon">&#127771;&#65039;</span><div>Weather changes fast &mdash; always pack layers and a <strong>waterproof jacket</strong> even on sunny days</div></div>
+    <div class="reminder"><span class="reminder-icon">&#128059;</span><div>Wildlife is everywhere &mdash; keep distance from bears, moose and other wildlife at all times</div></div>
+    <div class="reminder"><span class="reminder-icon">&#9981;</span><div>Denali Highway is a <strong>gravel road</strong> &mdash; drive slowly, check tire pressure before and after</div></div>
+    <div class="reminder"><span class="reminder-icon">&#128247;</span><div>Day 8's 9-hour drive is long but spectacular &mdash; start early and build in photo stops</div></div>
+    <div class="reminder"><span class="reminder-icon">&#128167;</span><div>Carry bear spray on all hikes and know how to use it</div></div>
   </div>
 
-</div><!-- /container -->
-
+</div>
 <footer>
-  <strong>Alaska · June 23 – July 4, 2025</strong><br>
-  <span>Rahul · Veena · Veda · Vaiga</span>
+  <strong>Rahul &amp; Veena's Travel Journal</strong> &middot; <a href="../index.html">&#8592; All Trips</a><br>
+  <span>Alaska &middot; June 2025 &middot; Family of 4</span>
 </footer>
-
 <script>
-  function toggle(header) {
-    const card = header.parentElement;
-    card.classList.toggle('open');
-  }
-  document.querySelector('.day-card').classList.add('open');
+function toggle(h) { h.parentElement.classList.toggle("open"); }
 </script>
 </body>
 </html>
