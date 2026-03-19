@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peru Family Trip — December 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a2e1a;
+    --cream: #faf8f3;
+    --warm: #f5efe6;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --rust: #b85c38;
+    --sage: #6b8f71;
+    --forest: #2d5535;
+    --slate: #4a5568;
+    --border: #e2d9cc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--ink);
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #faf8f3;
+    text-decoration: none;
+  }
+  .nav-logo em { color: #e8d5a3; font-style: italic; }
+  .nav-trip {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.4);
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1a2e1a 0%, #2d5535 60%, #3d6b3d 100%);
+    color: #faf8f3;
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(107,143,113,0.1) 0%, transparent 50%);
+  }
+  .hero-flags { font-size: 28px; letter-spacing: 6px; margin-bottom: 20px; position: relative; }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.6);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--gold-light);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.5);
+    margin-top: 4px;
+  }
+
+  /* BOOKING STRIP */
+  .booking-strip {
+    background: var(--forest);
+    color: #faf8f3;
+    padding: 18px 40px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .booking-item { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .booking-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+  .booking-ref { font-weight: 500; font-size: 12px; color: var(--gold-light); }
+
+  /* LAYOUT */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 24px;
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* FLIGHTS */
+  .info-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .flight-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .flight-date { font-size: 13px; color: var(--slate); min-width: 80px; }
+  .flight-route { font-weight: 500; }
+  .flight-detail { font-size: 12px; color: var(--slate); }
+  .conf-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    background: rgba(107,143,113,0.12);
+    color: var(--sage);
+    border: 1px solid rgba(107,143,113,0.3);
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+
+  /* ACCOMMODATION TABLE */
+  .accom-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .accom-table th {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--slate); font-weight: 500; text-align: left;
+    padding: 8px 12px; border-bottom: 2px solid var(--border);
+  }
+  .accom-table td { padding: 12px 12px; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: top; }
+  .accom-table tr:hover td { background: var(--warm); }
+  .prop { font-weight: 500; }
+  .ref { font-size: 11px; color: var(--slate); }
+  .booked { color: var(--sage); font-weight: 500; font-size: 11px; }
+
+  /* DAY CARDS */
+  .days-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
+  .day-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .day-card:hover { box-shadow: 0 4px 20px rgba(26,46,26,0.08); }
+  .day-header {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 20px; cursor: pointer; background: white; user-select: none;
+  }
+  .day-header:hover { background: var(--warm); }
+  .day-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; color: var(--sage); min-width: 36px; line-height: 1;
+  }
+  .day-info { flex: 1; }
+  .day-title { font-weight: 500; font-size: 15px; line-height: 1.2; }
+  .day-meta { font-size: 11px; color: var(--slate); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+  .day-flag { font-size: 20px; }
+  .day-toggle { color: var(--slate); font-size: 18px; transition: transform 0.2s; min-width: 20px; text-align: center; }
+  .day-card.open .day-toggle { transform: rotate(180deg); }
+  .day-body {
+    display: none; padding: 20px 20px 20px 72px;
+    background: var(--warm); border-top: 1px solid var(--border);
+  }
+  .day-card.open .day-body { display: block; }
+  .day-body ul { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .day-body ul li { padding-left: 16px; position: relative; font-size: 14px; }
+  .day-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--sage); font-size: 12px; top: 2px; }
+  .day-body ul li strong { font-weight: 500; }
+  .day-map-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--slate); text-decoration: none;
+    border: 1px solid var(--border); padding: 5px 12px;
+    border-radius: 2px; margin-bottom: 14px; transition: all 0.15s;
+  }
+  .day-map-link:hover { background: var(--ink); color: #faf8f3; border-color: var(--ink); }
+  .booking-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; background: rgba(107,143,113,0.12);
+    color: var(--sage); border: 1px solid rgba(107,143,113,0.3);
+    padding: 4px 10px; border-radius: 2px; margin-top: 8px;
+  }
+  .alarm-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; background: rgba(184,92,56,0.1);
+    color: var(--rust); border: 1px solid rgba(184,92,56,0.3);
+    padding: 4px 10px; border-radius: 2px; margin-top: 6px;
+  }
+  .alt-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; background: rgba(201,168,76,0.1);
+    color: #8a6e1a; border: 1px solid rgba(201,168,76,0.3);
+    padding: 4px 10px; border-radius: 2px; margin-top: 6px;
+  }
+  .sub-heading {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 1px; color: var(--slate); margin-bottom: 6px;
+  }
+
+  /* PACKING */
+  .packing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .packing-cat {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+  }
+  .packing-cat-title {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--sage); font-weight: 500; margin-bottom: 10px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  }
+  .packing-cat ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .packing-cat ul li { font-size: 13px; padding-left: 14px; position: relative; }
+  .packing-cat ul li::before { content: '·'; position: absolute; left: 0; color: var(--sage); }
+
+  /* REMINDERS */
+  .reminders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px; margin-top: 8px;
+  }
+  .reminder-item {
+    background: white; border: 1px solid var(--border);
+    border-radius: 4px; padding: 16px; font-size: 13px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+  /* ALTITUDE BADGE */
+  .altitude-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; background: rgba(45,85,53,0.1);
+    color: var(--forest); border: 1px solid rgba(45,85,53,0.3);
+    padding: 4px 10px; border-radius: 2px; margin-top: 6px;
+  }
+
+  footer {
+    background: var(--ink);
+    color: rgba(250,248,243,0.4);
+    text-align: center;
+    padding: 32px;
+    margin-top: 80px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  footer strong { color: var(--gold-light); }
+
+  @media (max-width: 600px) {
+    nav { padding: 14px 20px; }
+    .hero { padding: 50px 20px 40px; }
+    .hero-stats { gap: 24px; }
+    .booking-strip { padding: 16px 20px; gap: 16px; }
+    .day-body { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="../index.html">← Rahul & <em>Veena's</em> Travel Journal</a>
+  <span class="nav-trip">Peru · Dec 2025 – Jan 2026</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-flags">🇵🇪</div>
+  <h1>Peru<br><em>Family Adventure</em></h1>
+  <p class="hero-sub">Cusco · Sacred Valley · Machu Picchu · Rainbow Mountain</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">11</span><span class="stat-label">Days</span></div>
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label">Country</span></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Travellers</span></div>
+    <div class="stat"><span class="stat-num">Dec 24</span><span class="stat-label">Departure</span></div>
+    <div class="stat"><span class="stat-num">Jan 3</span><span class="stat-label">Return</span></div>
+  </div>
+</div>
+
+<!-- BOOKING STRIP -->
+<div class="booking-strip">
+  <div class="booking-item"><div class="booking-dot"></div> Spirit FLL–Lima <span class="booking-ref">XHMMVY</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> JetSmart Lima–Cusco <span class="booking-ref">JY7H8D</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> Inca Rail <span class="booking-ref">#597874</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> Machu Picchu Circuit 2B + 1B <span class="booking-ref">✓ Booked</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> LATAM Cusco–Lima <span class="booking-ref">UHTQKH</span></div>
+</div>
+
+<div class="container">
+
+  <!-- FLIGHTS -->
+  <p class="section-title">Flights</p>
+  <div class="info-card">
+    <div class="flight-row">
+      <span class="flight-date">Dec 24 Wed</span>
+      <span class="flight-route">FLL → Lima</span>
+      <span class="flight-detail">Spirit · 4:45pm → 10:35pm · Conf. XHMMVY</span>
+    </div>
+    <div class="flight-row">
+      <span class="flight-date">Dec 25 Thu</span>
+      <span class="flight-route">Lima → Cusco</span>
+      <span class="flight-detail">JetSmart · 5:00am · Conf. JY7H8D</span>
+    </div>
+    <div class="flight-row">
+      <span class="flight-date">Jan 2 Fri</span>
+      <span class="flight-route">Cusco → Lima</span>
+      <span class="flight-detail">LATAM · 2:15pm · Conf. UHTQKH</span>
+    </div>
+    <div class="flight-row">
+      <span class="flight-date">Jan 2 Fri</span>
+      <span class="flight-route">Lima → FLL</span>
+      <span class="flight-detail">Spirit · 11:50pm → 5:40am Jan 3 · Conf. XHMMVY</span>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:12px;display:flex;gap:12px;flex-wrap:wrap;">
+      <span class="conf-tag">🚗 Avis rental Tampa → Miami (Dec 24) + Miami → Tampa (Jan 3)</span>
+    </div>
+  </div>
+
+  <!-- ACCOMMODATION -->
+  <p class="section-title">Accommodation</p>
+  <div style="overflow-x:auto;">
+    <table class="accom-table">
+      <thead>
+        <tr>
+          <th>Night</th>
+          <th>Property & Address</th>
+          <th>Dates</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><span class="prop">Valle Mistico</span><br><span class="ref">Ac. Estudiante 291, Ollantaytambo, Peru</span></td>
+          <td>Dec 25</td>
+          <td><span class="booked">✓ Booked</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><span class="prop">Valle Mistico</span><br><span class="ref">Ac. Estudiante 291, Ollantaytambo, Peru</span></td>
+          <td>Dec 26</td>
+          <td><span class="booked">✓ Booked</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><span class="prop">Hotel Aguas Calientes</span><br><span class="ref">Prolongación Imperio de los Incas Mz. 5, Aguas Calientes, Machu Picchu, Peru</span></td>
+          <td>Dec 27</td>
+          <td><span class="booked">✓ Booked</span></td>
+        </tr>
+        <tr>
+          <td>4–8</td>
+          <td><span class="prop">Airbnb Cusco</span><br><span class="ref">Avenida Tullumayo 374, Cusco 08002, Peru</span></td>
+          <td>Dec 28 – Jan 1</td>
+          <td><span class="booked">✓ Booked</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ITINERARY -->
+  <p class="section-title">Day-by-Day Itinerary</p>
+  <div class="days-grid">
+
+    <!-- DAY 1 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">1</div>
+        <div class="day-info">
+          <div class="day-title">Tampa → Miami → Lima</div>
+          <div class="day-meta">Wed Dec 24 · Christmas Eve</div>
+        </div>
+        <div class="day-flag">✈️</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Tampa,+FL/Miami+Airport,+FL" target="_blank">📍 Tampa → Miami Map</a>
+        <ul>
+          <li><strong>Avis car rental</strong> — drive Tampa → Miami</li>
+          <li><strong>Spirit Flight FLL → Lima</strong> · Departs 4:45pm · Arrives 10:35pm · Conf. XHMMVY</li>
+          <li>Overnight flight · arrive Lima Christmas morning</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">✓ Spirit · Conf. XHMMVY · $2,250 total</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">2</div>
+        <div class="day-info">
+          <div class="day-title">Lima → Cusco → Ollantaytambo · Acclimatize</div>
+          <div class="day-meta">Thu Dec 25 · Christmas Day</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Lima+Airport/Cusco+Airport/Pisac,+Peru/Ollantaytambo,+Peru" target="_blank">📍 Day 2 Map</a>
+        <ul>
+          <li><strong>JetSmart Lima → Cusco</strong> · Departs 5:00am · Conf. JY7H8D</li>
+          <li><strong>Taxi from airport at 7:30am</strong> → Sacred Valley via Pisac on the way</li>
+          <li>Check in at <strong>Valle Mistico, Ollantaytambo</strong></li>
+          <li>Afternoon: Rest and acclimatize — altitude is 9,500 ft, take it easy!</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">✓ JetSmart · Conf. JY7H8D · 5:00am</span>
+          <span class="altitude-badge">⛰️ 9,500 ft elevation · acclimatize day</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">3</div>
+        <div class="day-info">
+          <div class="day-title">Sacred Valley — Moray, Maras & Ollantaytambo</div>
+          <div class="day-meta">Fri Dec 26 · Ollantaytambo base</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Ollantaytambo/Moray+Archaeological+Site/Maras+Salt+Mines/Ollantaytambo+Fortress" target="_blank">📍 Day 3 Map</a>
+        <ul>
+          <li><strong>Moray Terraces</strong> — spectacular circular Inca agricultural laboratory</li>
+          <li><strong>Maras Salt Mines</strong> — thousands of ancient salt pools still in use today</li>
+          <li><strong>Ollantaytambo Fortress</strong> — impressive Inca ruins right in town</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alt-tag">Optional: Pinkuilluna Hike — views over Ollantaytambo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">4</div>
+        <div class="day-info">
+          <div class="day-title">Train to Aguas Calientes + Machu Picchu (Afternoon)</div>
+          <div class="day-meta">Sat Dec 27 · Ollantaytambo → Aguas Calientes</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Ollantaytambo/Aguas+Calientes,+Peru/Machu+Picchu" target="_blank">📍 Day 4 Map</a>
+        <ul>
+          <li><strong>Inca Rail</strong> — departs 7:22am · arrives Aguas Calientes 10:30am · Conf. 597874</li>
+          <li>Check in at hotel · freshen up</li>
+          <li><strong>Machu Picchu — Circuit 2B</strong> · 3:00pm entry · afternoon light is stunning</li>
+          <li>Return to Aguas Calientes for overnight</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">✓ Inca Rail · Conf. 597874 · 7:22am</span>
+          <span class="booking-tag">✓ Machu Picchu Circuit 2B · 3pm entry</span>
+          <span class="altitude-badge">⛰️ Machu Picchu 7,972 ft</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">5</div>
+        <div class="day-info">
+          <div class="day-title">Machu Picchu (Morning) + Train back → Cusco</div>
+          <div class="day-meta">Sun Dec 28 · Aguas Calientes → Cusco</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Aguas+Calientes/Machu+Picchu/Cusco,+Peru" target="_blank">📍 Day 5 Map</a>
+        <ul>
+          <li><strong>Machu Picchu — Circuit 1B</strong> · 6:00am entry · magical early morning light, far fewer crowds</li>
+          <li>Return to Aguas Calientes</li>
+          <li><strong>Peru Rail back</strong> · departs 1:37pm · Conf. UHTQKH</li>
+          <li>Check in at <strong>Airbnb Cusco</strong> · Av. Tullumayo 374</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">✓ Machu Picchu Circuit 1B · 6am entry</span>
+          <span class="booking-tag">✓ Peru Rail · 1:37pm departure</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">6</div>
+        <div class="day-info">
+          <div class="day-title">Cusco City — Markets, Ruins & Llama Farm</div>
+          <div class="day-meta">Mon Dec 29 · Cusco base</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Cusco/San+Pedro+Market+Cusco/Qenqo+Cusco/Awanacancha+Cusco" target="_blank">📍 Day 6 Map</a>
+        <ul>
+          <li><strong>San Pedro Market</strong> — the best local market in Cusco, incredible food and crafts</li>
+          <li><strong>Q'enqo Canyon viewpoint</strong> — Inca rock carvings and ceremonial site</li>
+          <li><strong>Awanacancha Llama Farm</strong> — meet llamas, alpacas and vicuñas, see traditional weaving</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alt-tag">Optional: Tipón terraces or Pikillacta ruins</span>
+          <span class="altitude-badge">⛰️ Cusco 11,152 ft</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">7</div>
+        <div class="day-info">
+          <div class="day-title">Humantay Lake Hike</div>
+          <div class="day-meta">Tue Dec 30 · Cusco base</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Cusco/Humantay+Lake+Peru" target="_blank">📍 Day 7 Map</a>
+        <ul>
+          <li><strong>Humantay Lake</strong> — stunning turquoise glacial lake at 15,092 ft, one of Peru's most beautiful hikes</li>
+          <li>Full day guided excursion from Cusco — leave early morning</li>
+          <li>Moderate hike ~2.5 miles each way · worth every step</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="altitude-badge">⛰️ 15,092 ft at the lake — highest point of the trip!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 8 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">8</div>
+        <div class="day-info">
+          <div class="day-title">Cusco — Cristo Blanco, San Blas & Saqsaywaman</div>
+          <div class="day-meta">Wed Dec 31 · New Year's Eve · Cusco base</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Cusco/Cristo+Blanco+Cusco/San+Blas+Cusco/Saqsaywaman" target="_blank">📍 Day 8 Map</a>
+        <ul>
+          <li><strong>Saqsaywaman</strong> — massive Inca fortress overlooking Cusco, incredible stone masonry</li>
+          <li><strong>San Blas neighborhood</strong> — charming bohemian quarter with artisan workshops and cobblestone streets</li>
+          <li><strong>Mirador Cristo Blanco</strong> — sunset views over Cusco from the white Christ statue</li>
+          <li>🎉 New Year's Eve celebrations in the Plaza de Armas!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 9 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">9</div>
+        <div class="day-info">
+          <div class="day-title">Rainbow Mountain or Palcoyo Mountain</div>
+          <div class="day-meta">Thu Jan 1 · New Year's Day · Cusco base</div>
+        </div>
+        <div class="day-flag">🇵🇪</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Cusco/Rainbow+Mountain+Peru" target="_blank">📍 Day 9 Map</a>
+        <ul>
+          <li><strong>Rainbow Mountain (Vinicunca)</strong> — iconic striped mountain at 17,060 ft · full day guided tour from Cusco</li>
+          <li>OR <strong>Palcoyo Mountain</strong> — less crowded alternative with similar coloured mountains, easier hike</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alt-tag">🌈 Rainbow Mountain: more dramatic · Palcoyo: easier walk, fewer crowds</span>
+          <span class="altitude-badge">⛰️ Rainbow Mountain 17,060 ft</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 10 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">10</div>
+        <div class="day-info">
+          <div class="day-title">Fly Cusco → Lima → Fort Lauderdale</div>
+          <div class="day-meta">Fri Jan 2 · Departure day</div>
+        </div>
+        <div class="day-flag">✈️</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><strong>LATAM Cusco → Lima</strong> · departs 2:15pm · Conf. UHTQKH</li>
+          <li>Transit Lima airport</li>
+          <li><strong>Spirit Lima → FLL</strong> · departs 11:50pm · arrives 5:40am Jan 3 · Conf. XHMMVY</li>
+        </ul>
+        <div style="margin-top:12px;">
+          <span class="alarm-tag">⏰ Early morning available — explore Lima airport or nearby if time permits</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 11 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">11</div>
+        <div class="day-info">
+          <div class="day-title">Land FLL → Drive home to Tampa</div>
+          <div class="day-meta">Sat Jan 3 · Home!</div>
+        </div>
+        <div class="day-flag">🏠</div>
+        <div class="day-toggle">▾</div>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li>Land Fort Lauderdale FLL 5:40am</li>
+          <li><strong>Avis car rental</strong> — drive Miami → Tampa</li>
+          <li>Welcome home! 🎉</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /days-grid -->
+
+  <!-- PACKING LIST -->
+  <p class="section-title">What to Pack</p>
+  <div class="packing-grid">
+    <div class="packing-cat">
+      <div class="packing-cat-title">Documents</div>
+      <ul>
+        <li>Passport (each)</li>
+        <li>Passport copy (digital)</li>
+        <li>Flight boarding passes</li>
+        <li>Machu Picchu tickets</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Health</div>
+      <ul>
+        <li>Altitude medication</li>
+        <li>Personal medications</li>
+        <li>Pain reliever</li>
+        <li>Motion sickness medicine</li>
+        <li>Electrolyte packets</li>
+        <li>Band-aids / blister pads</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Clothing</div>
+      <ul>
+        <li>Packable rain jacket / poncho</li>
+        <li>Warm layers (cold at altitude)</li>
+        <li>Underwear × 5–6</li>
+        <li>Socks incl. warm pair × 5–6</li>
+        <li>Sleepwear</li>
+        <li>Sun hat / cap</li>
+        <li>Scarf / neck warmer</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Footwear</div>
+      <ul>
+        <li>Walking / hiking shoes</li>
+        <li>Light sandals (optional)</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Electronics</div>
+      <ul>
+        <li>Phone (each)</li>
+        <li>Charging cables</li>
+        <li>Power bank</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Money</div>
+      <ul>
+        <li>Credit / debit cards</li>
+        <li>Cash — USD + Soles</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Kids</div>
+      <ul>
+        <li>Snacks (non-liquid)</li>
+        <li>Headphones</li>
+      </ul>
+    </div>
+    <div class="packing-cat">
+      <div class="packing-cat-title">Toiletries</div>
+      <ul>
+        <li>Toothbrush & toothpaste</li>
+        <li>Deodorant (travel size)</li>
+        <li>Moisturizer (travel size)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- KEY REMINDERS -->
+  <p class="section-title">Key Reminders</p>
+  <div class="reminders-grid">
+    <div class="reminder-item"><div class="reminder-icon">⛰️</div><div><strong>Altitude sickness is real</strong> — Cusco is at 11,152 ft. Drink lots of water, take it slow Day 2, consider altitude medication</div></div>
+    <div class="reminder-item"><div class="reminder-icon">🌿</div><div><strong>Coca tea</strong> — widely available and helps with altitude. Try it as soon as you arrive</div></div>
+    <div class="reminder-item"><div class="reminder-icon">🎟️</div><div><strong>Machu Picchu tickets</strong> are timed and non-transferable — don't miss entry windows (6am Circuit 1B, 3pm Circuit 2B)</div></div>
+    <div class="reminder-item"><div class="reminder-icon">🌡️</div><div><strong>Pack layers</strong> — mornings are cold at altitude, afternoons can be warm, and it can rain any time</div></div>
+    <div class="reminder-item"><div class="reminder-icon">💧</div><div><strong>Drink bottled water only</strong> — tap water in Peru is not safe to drink</div></div>
+    <div class="reminder-item"><div class="reminder-icon">💵</div><div><strong>Carry Soles cash</strong> — many smaller restaurants and markets don't accept cards. ATMs available in Cusco</div></div>
+    <div class="reminder-item"><div class="reminder-icon">🌧️</div><div><strong>December = rainy season</strong> — bring ponchos and waterproof bags for everything</div></div>
+    <div class="reminder-item"><div class="reminder-icon">🚂</div><div><strong>Inca Rail is booked</strong> — print or download tickets before the trip, cell signal is patchy</div></div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <strong>Peru Family Adventure · Dec 24, 2025 – Jan 3, 2026</strong><br>
+  <span>Rahul · Veena · Veda · Vaiga</span>
+</footer>
+
+<script>
+  function toggle(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+  document.querySelector('.day-card').classList.add('open');
+</script>
+</body>
+</html>
