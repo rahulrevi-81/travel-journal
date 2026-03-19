@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul & Veena's Travel Journal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --cream: #faf8f3;
+    --warm: #f5efe6;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --rust: #b85c38;
+    --sage: #6b8f71;
+    --slate: #4a5568;
+    --border: #e2d9cc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--ink);
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--cream);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+  .nav-logo em { color: var(--gold-light); font-style: italic; }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    padding: 100px 40px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 30%, rgba(107,143,113,0.08) 0%, transparent 50%);
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 7vw, 80px);
+    font-weight: 900;
+    color: var(--cream);
+    line-height: 1.05;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(250,248,243,0.5);
+    letter-spacing: 1px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--gold-light);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.4);
+    margin-top: 4px;
+  }
+
+  /* SECTION */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 64px 0 32px;
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .section-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* TRIP GRID */
+  .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  /* TRIP CARD */
+  .trip-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .trip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(26,26,46,0.12);
+  }
+
+  .trip-thumb {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .trip-thumb-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    opacity: 0.15;
+    position: absolute;
+    inset: 0;
+    filter: blur(2px);
+  }
+  .trip-thumb-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  .trip-flags { font-size: 28px; letter-spacing: 4px; margin-bottom: 8px; }
+  .trip-thumb-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.2;
+  }
+  .trip-thumb-title em { font-style: italic; color: var(--gold-light); }
+
+  .trip-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .trip-badge.upcoming {
+    background: rgba(201,168,76,0.2);
+    color: var(--gold-light);
+    border: 1px solid rgba(201,168,76,0.4);
+  }
+  .trip-badge.completed {
+    background: rgba(107,143,113,0.2);
+    color: #a8d5b0;
+    border: 1px solid rgba(107,143,113,0.4);
+  }
+  .trip-badge.planned {
+    background: rgba(184,92,56,0.2);
+    color: #e8a080;
+    border: 1px solid rgba(184,92,56,0.3);
+  }
+
+  .trip-body { padding: 20px; }
+  .trip-date {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .trip-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .trip-desc {
+    font-size: 13px;
+    color: var(--slate);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .trip-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .trip-pill {
+    font-size: 11px;
+    background: var(--warm);
+    color: var(--slate);
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
+  .trip-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--slate);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .trip-card.coming-soon { opacity: 0.7; cursor: default; }
+  .trip-card.coming-soon:hover { transform: none; box-shadow: none; }
+  .trip-card.has-itinerary .trip-arrow { color: var(--gold); }
+
+  /* GRADIENT OVERLAYS PER DESTINATION */
+  .grad-europe { background: linear-gradient(135deg, #1a1a2e 0%, #2d3561 100%); }
+  .grad-peru { background: linear-gradient(135deg, #1a2e1a 0%, #2d5535 100%); }
+  .grad-alaska { background: linear-gradient(135deg, #1a2a2e 0%, #1d4a5e 100%); }
+  .grad-costarica { background: linear-gradient(135deg, #1a2e1a 0%, #3d5e1d 100%); }
+  .grad-hawaii { background: linear-gradient(135deg, #2e1a1a 0%, #5e2d1d 100%); }
+  .grad-future { background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%); }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: rgba(250,248,243,0.35);
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  footer strong { color: var(--gold-light); }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    nav { padding: 14px 20px; }
+    .hero { padding: 60px 20px 50px; }
+    .hero-stats { gap: 24px; }
+    .nav-links { display: none; }
+    .trips-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Rahul & <em>Veena's</em> Travel Journal</a>
+  <div class="nav-links">
+    <a href="#upcoming">Upcoming</a>
+    <a href="#past">Past Trips</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">A Family's Adventures Around the World</p>
+  <h1>Rahul & <em>Veena's</em><br>Travel Journal</h1>
+  <p class="hero-sub">Rahul · Veena · Veda · Vaiga</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Trips</span></div>
+    <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Countries</span></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Travellers</span></div>
+    <div class="stat"><span class="stat-num">2022</span><span class="stat-label">Since</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- UPCOMING -->
+  <div class="section-header" id="upcoming">
+    <h2>Upcoming</h2>
+  </div>
+  <div class="trips-grid">
+
+    <a class="trip-card has-itinerary" href="trips/europe-2026.html">
+      <div class="trip-thumb grad-europe">
+        <div class="trip-thumb-bg">🏔️</div>
+        <div class="trip-thumb-content">
+          <div class="trip-flags">🇮🇸 🇨🇭 🇩🇪 🇦🇹 🇸🇮 🇮🇹 🇱🇮</div>
+          <div class="trip-thumb-title">Europe<br><em>Family Road Trip</em></div>
+        </div>
+        <span class="trip-badge upcoming">Upcoming</span>
+      </div>
+      <div class="trip-body">
+        <div class="trip-date">Jun 19 – Jul 5, 2026</div>
+        <div class="trip-name">Iceland · Switzerland · Germany · Austria · Slovenia · Italy · Liechtenstein</div>
+        <div class="trip-desc">16-day alpine adventure — Golden Circle, Grindelwald, Königssee, Hallstatt, Lake Bled and the Dolomites.</div>
+        <div class="trip-meta">
+          <span class="trip-pill">16 days</span>
+          <span class="trip-pill">7 countries</span>
+          <span class="trip-pill">Family of 4</span>
+        </div>
+        <div class="trip-arrow"><span>View full itinerary</span><span>→</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- PAST TRIPS -->
+  <div class="section-header" id="past">
+    <h2>Past Trips</h2>
+  </div>
+  <div class="trips-grid">
+
+    <!-- PERU -->
+    <div class="trip-card coming-soon">
+      <div class="trip-thumb grad-peru">
+        <div class="trip-thumb-bg">🦙</div>
+        <div class="trip-thumb-content">
+          <div class="trip-flags">🇵🇪</div>
+          <div class="trip-thumb-title">Peru</div>
+        </div>
+        <span class="trip-badge completed">Completed</span>
+      </div>
+      <div class="trip-body">
+        <div class="trip-date">December 2025</div>
+        <div class="trip-name">Peru</div>
+        <div class="trip-desc">Machu Picchu, the Sacred Valley and the Inca Trail.</div>
+        <div class="trip-meta">
+          <span class="trip-pill">1 country</span>
+          <span class="trip-pill">Family of 4</span>
+        </div>
+        <div class="trip-arrow"><span>Itinerary coming soon</span><span>·</span></div>
+      </div>
+    </div>
+
+    <!-- ALASKA -->
+    <div class="trip-card coming-soon">
+      <div class="trip-thumb grad-alaska">
+        <div class="trip-thumb-bg">🐻</div>
+        <div class="trip-thumb-content">
+          <div class="trip-flags">🇺🇸</div>
+          <div class="trip-thumb-title">Alaska</div>
+        </div>
+        <span class="trip-badge completed">Completed</span>
+      </div>
+      <div class="trip-body">
+        <div class="trip-date">June 2025</div>
+        <div class="trip-name">Alaska</div>
+        <div class="trip-desc">Glaciers, wildlife and the last frontier of America.</div>
+        <div class="trip-meta">
+          <span class="trip-pill">1 country</span>
+          <span class="trip-pill">Family of 4</span>
+        </div>
+        <div class="trip-arrow"><span>Itinerary coming soon</span><span>·</span></div>
+      </div>
+    </div>
+
+    <!-- COSTA RICA -->
+    <div class="trip-card coming-soon">
+      <div class="trip-thumb grad-costarica">
+        <div class="trip-thumb-bg">🦜</div>
+        <div class="trip-thumb-content">
+          <div class="trip-flags">🇨🇷</div>
+          <div class="trip-thumb-title">Costa Rica</div>
+        </div>
+        <span class="trip-badge completed">Completed</span>
+      </div>
+      <div class="trip-body">
+        <div class="trip-date">March 2024</div>
+        <div class="trip-name">Costa Rica</div>
+        <div class="trip-desc">Rainforests, volcanoes, zip-lining and wildlife in Pura Vida country.</div>
+        <div class="trip-meta">
+          <span class="trip-pill">1 country</span>
+          <span class="trip-pill">Family of 4</span>
+        </div>
+        <div class="trip-arrow"><span>Itinerary coming soon</span><span>·</span></div>
+      </div>
+    </div>
+
+    <!-- HAWAII -->
+    <div class="trip-card coming-soon">
+      <div class="trip-thumb grad-hawaii">
+        <div class="trip-thumb-bg">🌺</div>
+        <div class="trip-thumb-content">
+          <div class="trip-flags">🇺🇸</div>
+          <div class="trip-thumb-title">Hawaii</div>
+        </div>
+        <span class="trip-badge completed">Completed</span>
+      </div>
+      <div class="trip-body">
+        <div class="trip-date">December 2022</div>
+        <div class="trip-name">Hawaii</div>
+        <div class="trip-desc">Volcanoes, waterfalls, beaches and aloha spirit across the islands.</div>
+        <div class="trip-meta">
+          <span class="trip-pill">1 country</span>
+          <span class="trip-pill">Family of 4</span>
+        </div>
+        <div class="trip-arrow"><span>Itinerary coming soon</span><span>·</span></div>
+      </div>
+    </div>
+
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <strong>Rahul & Veena's Travel Journal</strong><br>
+  <span>Rahul · Veena · Veda · Vaiga · Exploring the world together</span>
+</footer>
+
+</body>
+</html>
