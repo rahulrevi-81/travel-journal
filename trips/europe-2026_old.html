@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe Family Trip â June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --cream: #faf8f3;
+    --warm: #f5efe6;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --rust: #b85c38;
+    --sage: #6b8f71;
+    --slate: #4a5568;
+    --border: #e2d9cc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(107,143,113,0.1) 0%, transparent 50%);
+  }
+  .hero-flags {
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.6);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--gold-light);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(250,248,243,0.5);
+    margin-top: 4px;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  /* SECTION HEADERS */
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* BOOKING STRIP */
+  .booking-strip {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 24px 40px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .booking-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .booking-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--sage);
+    flex-shrink: 0;
+  }
+  .booking-dot.pending { background: var(--gold); }
+  .booking-ref {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--gold-light);
+  }
+
+  /* ACCOMMODATION TABLE */
+  .accom-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .accom-table th {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .accom-table td {
+    padding: 12px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    vertical-align: top;
+  }
+  .accom-table tr:hover td { background: var(--warm); }
+  .accom-table .booked { color: var(--sage); font-weight: 500; font-size: 11px; }
+  .accom-table .pending { color: var(--gold); font-weight: 500; font-size: 11px; }
+  .accom-table .prop { font-weight: 500; }
+  .accom-table .ref { font-size: 11px; color: var(--slate); }
+  .stars { color: var(--gold); font-size: 11px; }
+
+  /* DAY CARDS */
+  .days-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
+
+  .day-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .day-card:hover { box-shadow: 0 4px 20px rgba(26,26,46,0.08); }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    background: white;
+    user-select: none;
+  }
+  .day-header:hover { background: var(--warm); }
+
+  .day-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold);
+    min-width: 36px;
+    line-height: 1;
+  }
+  .day-info { flex: 1; }
+  .day-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .day-meta {
+    font-size: 11px;
+    color: var(--slate);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .day-flag { font-size: 20px; }
+  .day-toggle {
+    color: var(--slate);
+    font-size: 18px;
+    transition: transform 0.2s;
+    min-width: 20px;
+    text-align: center;
+  }
+  .day-card.open .day-toggle { transform: rotate(180deg); }
+
+  .day-body {
+    display: none;
+    padding: 20px 20px 20px 72px;
+    background: var(--warm);
+    border-top: 1px solid var(--border);
+  }
+  .day-card.open .day-body { display: block; }
+
+  .day-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .day-body ul li {
+    padding-left: 16px;
+    position: relative;
+    font-size: 14px;
+  }
+  .day-body ul li::before {
+    content: 'â';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 12px;
+    top: 2px;
+  }
+  .day-body ul li strong { font-weight: 500; }
+
+  .day-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--slate);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+    transition: all 0.15s;
+  }
+  .day-map-link:hover {
+    background: var(--ink);
+    color: var(--cream);
+    border-color: var(--ink);
+  }
+
+  .booking-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    background: rgba(107,143,113,0.12);
+    color: var(--sage);
+    border: 1px solid rgba(107,143,113,0.3);
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-top: 8px;
+  }
+  .laundry-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    background: rgba(201,168,76,0.1);
+    color: #8a6e1a;
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-top: 6px;
+  }
+  .alarm-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    background: rgba(184,92,56,0.1);
+    color: var(--rust);
+    border: 1px solid rgba(184,92,56,0.3);
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-top: 6px;
+  }
+
+  /* CHECKLIST */
+  .checklist { display: flex; flex-direction: column; gap: 1px; margin-top: 8px; }
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  .check-icon {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+  .check-icon.done { background: var(--sage); color: white; }
+  .check-icon.urgent { background: var(--rust); color: white; }
+  .check-icon.pending { background: var(--gold); color: white; }
+  .check-main { flex: 1; font-weight: 500; }
+  .check-deadline { font-size: 11px; color: var(--slate); }
+  .check-status-done { font-size: 11px; color: var(--sage); font-weight: 500; }
+  .check-status-pending { font-size: 11px; color: var(--gold); }
+  .check-link { font-size: 11px; color: var(--slate); text-decoration: none; }
+  .check-link:hover { color: var(--ink); }
+
+  /* BUDGET */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .budget-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+  }
+  .budget-cat { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); margin-bottom: 6px; }
+  .budget-range { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--ink); }
+  .budget-total {
+    grid-column: 1 / -1;
+    background: var(--ink);
+    color: var(--cream);
+    border-color: var(--ink);
+  }
+  .budget-total .budget-cat { color: var(--gold-light); }
+  .budget-total .budget-range { color: var(--gold-light); font-size: 28px; }
+
+  /* CASH */
+  .cash-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .cash-table th {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .cash-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .cash-table tr:hover td { background: var(--warm); }
+  .cash-amount { font-weight: 600; color: var(--ink); }
+
+  /* REMINDERS */
+  .reminders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .reminder-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: rgba(250,248,243,0.4);
+    text-align: center;
+    padding: 32px;
+    margin-top: 80px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  footer strong { color: var(--gold-light); }
+
+  @media (max-width: 600px) {
+    .hero { padding: 50px 20px 40px; }
+    .hero-stats { gap: 24px; }
+    .booking-strip { padding: 16px 20px; gap: 16px; }
+    .day-body { padding: 16px 16px 16px 16px; }
+    .accom-table { font-size: 12px; }
+    .accom-table th, .accom-table td { padding: 8px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="background:#1a1a2e;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;">
+  <a href="../index.html" style="font-family:'Playfair Display',serif;font-size:16px;color:#faf8f3;text-decoration:none;letter-spacing:0.5px;">â Rahul & <em style="color:#e8d5a3;font-style:italic;">Veena's</em> Travel Journal</a>
+  <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(250,248,243,0.4);">Europe Â· JunâJul 2026</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-flags">ð®ð¸ ð¨ð­ ð©ðª ð¦ð¹ ð¸ð® ð®ð¹ ð±ð®</div>
+  <h1>Europe Family Trip<br><em>June 2026</em></h1>
+  <p class="hero-sub">Iceland Â· Switzerland Â· Germany Â· Austria Â· Slovenia Â· Italy Â· Liechtenstein</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">16</span><span class="stat-label">Days</span></div>
+    <div class="stat"><span class="stat-num">7</span><span class="stat-label">Countries</span></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Travellers</span></div>
+    <div class="stat"><span class="stat-num">Jun 19</span><span class="stat-label">Departure</span></div>
+    <div class="stat"><span class="stat-num">Jul 5</span><span class="stat-label">Return</span></div>
+  </div>
+</div>
+
+<!-- BOOKING STATUS STRIP -->
+<div class="booking-strip">
+  <div class="booking-item"><div class="booking-dot"></div> Flights <span class="booking-ref">A77762</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> Iceland Car <span class="booking-ref">â Booked</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> Europe Car <span class="booking-ref">â Booked</span></div>
+  <div class="booking-item"><div class="booking-dot"></div> Gondola <span class="booking-ref">#238070</span></div>
+  <div class="booking-item"><div class="booking-dot pending"></div> Zurich Hotel <span class="booking-ref">â³ Pending</span></div>
+</div>
+
+<div class="container">
+
+  <!-- FLIGHTS -->
+  <p class="section-title">Flights</p>
+  <div style="background:white;border:1px solid var(--border);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--slate);min-width:80px">Jun 19 Fri</span>
+      <span style="font-weight:500">MCO â KEF</span>
+      <span style="font-size:12px;color:var(--slate)">FI686 Â· 10:00pm â 9:25am +1 Â· Non-stop 7h 25m</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--slate);min-width:80px">Jun 22 Mon</span>
+      <span style="font-weight:500">KEF â ZRH</span>
+      <span style="font-size:12px;color:var(--slate)">FI568 Â· 7:20am â 1:05pm Â· Non-stop 3h 45m</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--slate);min-width:80px">Jul 5 Sun</span>
+      <span style="font-weight:500">ZRH â MCO</span>
+      <span style="font-size:12px;color:var(--slate)">FI571/FI689 Â· 7:55am â 8:50pm Â· 18h 55m via KEF</span>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:12px;display:flex;gap:20px;flex-wrap:wrap;">
+      <span class="booking-tag">â Booked Â· Ref A77762 Â· $4,087.92</span>
+      <span style="font-size:12px;color:var(--slate);align-self:center">Economy Light Â· Non-refundable Â· Carry-on only (22 lbs/person)</span>
+    </div>
+  </div>
+
+  <!-- CAR RENTALS -->
+  <p class="section-title">Car Rentals</p>
+  <div style="background:white;border:1px solid var(--border);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--slate);min-width:100px">ð®ð¸ Iceland</span>
+      <span style="font-weight:500">Budget Â· Keflavik KEF</span>
+      <span style="font-size:12px;color:var(--slate)">Jun 20 12pm â Jun 22 12pm Â· Conf. #42334482US1 Â· <strong>$289.00</strong> Â· Pay at pick-up</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--slate);min-width:100px">ð¨ð­ Europe</span>
+      <span style="font-weight:500">Hertz Â· Zurich ZRH</span>
+      <span style="font-size:12px;color:var(--slate)">Jun 22 12pm â Jul 5 7am Â· Hertz conf. <strong>L5350959316</strong> Â· <strong>CHF 575.92</strong> Â· Due at pick-up Â· Jeep Compass or similar Â· Free cancellation</span>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:12px;display:flex;gap:20px;flex-wrap:wrap;">
+      <span class="booking-tag">â Total car rentals: $1,181.50 Â· Both pay at pick-up</span>
+    </div>
+  </div>
+
+  <!-- ACCOMMODATION -->
+  <p class="section-title">Accommodation</p>
+  <div style="overflow-x:auto;">
+    <table class="accom-table">
+      <thead>
+        <tr>
+          <th>Nights</th>
+          <th>Property</th>
+          <th>Dates</th>
+          <th>Ref</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><span class="prop">Guesthouse 77 ð®ð¸</span><br><span class="ref">Eyrargata 77, 820 Eyrarbakki, Iceland</span></td>
+          <td>Jun 20â21</td>
+          <td><span class="ref">Booking.com Â· $212.37 <span style="color:var(--sage);font-size:10px">Free cancel Jun 18</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><span class="prop">BergOne ð®ð¸</span><br><span class="ref">1 BergÃ¡s, 260 Ytri-NjarÃ°vÃ­k, Iceland</span></td>
+          <td>Jun 21â22</td>
+          <td><span class="ref">Booking.com Â· $263.98 <span style="color:var(--sage);font-size:10px">Free cancel Jun 19</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><span class="prop">Tiny House im schÃ¶nen Diemtigtal ð¨ð­</span><br><span class="ref">BÃ¤chlen 362A, 3753 Oey, Diemtigtal</span></td>
+          <td>Jun 22â23</td>
+          <td><span class="ref">Airbnb Â· $255.92</span></td>
+          <td><span class="booked">â Confirmed</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><span class="prop">Escape by Landhaus Lindenberg ð©ðª</span><br><span class="ref">HÃ¶fatsweg 3, 86807 Buchloe, Germany</span></td>
+          <td>Jun 23â24</td>
+          <td><span class="ref">$202 Â· Booking.com #6026325459</span></td>
+          <td><span style="color:#e67e22;font-weight:600">â³ Book now</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><span class="prop">Wurznwirt ð©ðª</span><br><span class="ref">Schneizlreuth 4, 83458 Schneizlreuth, Germany</span></td>
+          <td>Jun 24â25</td>
+          <td><span class="ref">#72072251742511 <span class="stars">9.0â</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>6â7</td>
+          <td><span class="prop">HOMEBOUND Apartments ð¦ð¹</span><br><span class="ref">Schmiedgasse 15, 4822 Bad Goisern, Austria</span></td>
+          <td>Jun 25â27</td>
+          <td><span class="ref">#72072198804917 <span class="stars">9.6â</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>8â10</td>
+          <td><span class="prop">Pr' Matjon Pension ð¸ð®</span><br><span class="ref">Selo pri Bledu 35, 4260 Bled, Slovenia</span></td>
+          <td>Jun 27â30</td>
+          <td><span class="ref">#72072265408188 <span class="stars">9.4â</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>11â13</td>
+          <td><span class="prop">Das Auss.Zeit ð¦ð¹</span><br><span class="ref">AuÃervillgraten 185, 9931 AuÃervillgraten, Tirol, Austria</span></td>
+          <td>Jun 30âJul 3</td>
+          <td><span class="ref">#72072265941383 <span class="stars">10.0â</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><span class="prop">Vienna House Martinspark ð¦ð¹</span><br><span class="ref">Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg, Austria</span></td>
+          <td>Jul 3â4</td>
+          <td><span class="ref">#72072266618761 <span class="stars">8.6â</span></span></td>
+          <td><span class="booked">â Booked</span></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><span class="prop">Zurich / Airport ð¨ð­</span><br><span class="ref">Near ZRH Airport, Zurich, Switzerland</span></td>
+          <td>Jul 4â5</td>
+          <td><span class="ref">â</span></td>
+          <td><span class="pending">â³ Pending</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ITINERARY -->
+  <p class="section-title">Day-by-Day Itinerary</p>
+
+  <p class="section-title" style="margin-top:0;">Trip at a Glance</p>
+  <!-- TRIP SUMMARY TABLE -->
+  <div style="overflow-x:auto;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;min-width:800px;">
+      <thead>
+        <tr style="background:var(--gold);color:#fff;text-transform:uppercase;letter-spacing:0.5px;">
+          <th style="padding:10px 12px;text-align:left;white-space:nowrap;">Day</th>
+          <th style="padding:10px 12px;text-align:left;white-space:nowrap;">Date</th>
+          <th style="padding:10px 12px;text-align:left;">Starting Place</th>
+          <th style="padding:10px 12px;text-align:left;">Night Stay</th>
+          <th style="padding:10px 12px;text-align:center;white-space:nowrap;">Drive</th>
+          <th style="padding:10px 12px;text-align:center;white-space:nowrap;">Time</th>
+          <th style="padding:10px 12px;text-align:left;">Highlights</th>
+          <th style="padding:10px 12px;text-align:left;white-space:nowrap;">Bookings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">1â2</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 20â21</td>
+          <td style="padding:9px 12px;">ReykjavÃ­k / KEF ð®ð¸</td>
+          <td style="padding:9px 12px;">Guesthouse 77 â BergOne</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">â</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">â</td>
+          <td style="padding:9px 12px;">Ãingvellir NP Â· Geysir Â· Gullfoss Â· Seljalandsfoss Â· SkÃ³gafoss Â· Reynisfjara</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Guesthouse 77<br>â BergOne<br>â Budget car KEF</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">3</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 22</td>
+          <td style="padding:9px 12px;">Zurich ZRH ð¨ð­</td>
+          <td style="padding:9px 12px;">Tiny House Diemtigtal</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">~78 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">1h 15m<br><span style="font-size:11px;color:var(--slate);">+1h 15m stops</span></td>
+          <td style="padding:9px 12px;">Fly KEFâZRH Â· Hertz pickup Â· <strong>Thun</strong> old town + castle Â· <strong>Spiez Castle</strong> (Lake Thun vineyards) Â· Diemtigtal</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Diemtigtal Airbnb<br>â Hertz ZRH</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">4 â ï¸</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 23</td>
+          <td style="padding:9px 12px;">Diemtigtal ð¨ð­</td>
+          <td style="padding:9px 12px;">Munich ð©ðª</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;color:#c0392b;">~317 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;color:#c0392b;">6h 40m</td>
+          <td style="padding:9px 12px;">Oeschinensee gondola Â· Grindelwald First Cliff Walk Â· Bachalpsee Â· First Flyer/Glider</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Landhaus Lindenberg #6026325459<br></span><span style="color:#27ae60;font-weight:600;font-size:12px;">â Gondola #238070</span><br><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ Oeschinensee slot</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">5</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 24</td>
+          <td style="padding:9px 12px;">Buchloe ð©ðª</td>
+          <td style="padding:9px 12px;">Wurznwirt, Schneizlreuth ð©ðª</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">203 km</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">2h 20m</td>
+          <td style="padding:9px 12px;">KÃ¶nigssee electric boat Â· St. BartholomÃ¤ Â· Rothbach Waterfall Â· Wimbachklamm gorge (16 min from KÃ¶nigssee)</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Wurznwirt</span><br><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ KÃ¶nigssee boat</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">6</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 25</td>
+          <td style="padding:9px 12px;">Schneizlreuth ð©ðª</td>
+          <td style="padding:9px 12px;">HOMEBOUND, Bad Goisern ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">~110 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">2h 40m</td>
+          <td style="padding:9px 12px;">Liechtensteinklamm gorge (deepest in Alps) Â· Hallstatt evening walk</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â HOMEBOUND</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">7</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 26</td>
+          <td style="padding:9px 12px;">Bad Goisern ð¦ð¹</td>
+          <td style="padding:9px 12px;">HOMEBOUND, Bad Goisern ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~10 mi</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~20m</td>
+          <td style="padding:9px 12px;">Hallstatt full day Â· Echern Valley waterfall Â· Skywalk viewpoint Â· lakeside dinner</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â HOMEBOUND</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">8</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 27</td>
+          <td style="padding:9px 12px;">Bad Goisern ð¦ð¹</td>
+          <td style="padding:9px 12px;">Pr' Matjon, Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">~140 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">2h 33m<br><span style="font-size:11px;color:var(--slate);">+Grossglockner</span></td>
+          <td style="padding:9px 12px;">Grossglockner High Alpine Road Â· Pasterze glacier (2,504m) Â· Arrive Lake Bled</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Pr' Matjon</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">9</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 28</td>
+          <td style="padding:9px 12px;">Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;">Pr' Matjon, Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~25 mi</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~45m</td>
+          <td style="padding:9px 12px;">Mala Osojnica viewpoint Â· Bled Castle Â· Mostnica Gorge Â· Vogel Cable Car at Bohinj</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Pr' Matjon</span><br><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ Vintgar entry</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">10 ð</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 29</td>
+          <td style="padding:9px 12px;">Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;">Pr' Matjon, Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~30 mi</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~1h 00m</td>
+          <td style="padding:9px 12px;">Vintgar Gorge Â· Savica Waterfall Â· Radovljica Â· Pletna boat Â· Veena's birthday dinner ð</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ Vintgar entry (book May 1)</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">11</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jun 30</td>
+          <td style="padding:9px 12px;">Lake Bled ð¸ð®</td>
+          <td style="padding:9px 12px;">Das Auss.Zeit, AuÃervillgraten ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">~138 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">3h 12m<br><span style="font-size:11px;color:var(--slate);">+Lagazuoi</span></td>
+          <td style="padding:9px 12px;">Passo Falzarego Â· Lagazuoi cable car + WWI tunnels Â· Lago di Braies</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Das Auss.Zeit</span><br><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ No booking needed · arrive by 9:30am</span></td></tr>
+        <tr style=e="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">12</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jul 1</td>
+          <td style="padding:9px 12px;">AuÃervillgraten ð®ð¹</td>
+          <td style="padding:9px 12px;">Das Auss.Zeit, AuÃervillgraten ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~40 mi</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~1h 00m</td>
+          <td style="padding:9px 12px;">Lago di Braies sunrise Â· Tre Cime di Lavaredo loop (4.5 miles)</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ No booking needed · arrive early AM</span></td></tr>
+        <tr>
+            <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">13</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jul 2</td>
+          <td style="padding:9px 12px;">AuÃervillgraten ð®ð¹</td>
+          <td style="padding:9px 12px;">Das Auss.Zeit, AuÃervillgraten ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~35 mi</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">~50m</td>
+          <td style="padding:9px 12px;">Cinque Torri hike Â· WWI trenches Â· Cortina d'Ampezzo Â· Tofana cable car</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Das Auss.Zeit</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">14 â ï¸</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jul 3</td>
+          <td style="padding:9px 12px;">AuÃervillgraten ð¦ð¹</td>
+          <td style="padding:9px 12px;">Vienna House Martinspark, Dornbirn ð¦ð¹</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;color:#c0392b;">~130 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;color:#c0392b;">3h 00m</td>
+          <td style="padding:9px 12px;">Nordkette cable car (2,300m) Â· Innsbruck Golden Roof Â· Old town Â· Drive to Dornbirn</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Vienna House</span></td></tr>
+        <tr>
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">15</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jul 4</td>
+          <td style="padding:9px 12px;">Dornbirn ð¦ð¹</td>
+          <td style="padding:9px 12px;">Zurich Airport Hotel ð¨ð­</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">~86 mi</td>
+          <td style="padding:9px 12px;text-align:center;font-weight:600;">1h 40m</td>
+          <td style="padding:9px 12px;">Vaduz passport stamp ð±ð® Â· Rhine Falls boat Â· Zurich Altstadt Â· Lake Zurich</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#e67e22;font-weight:600;font-size:12px;">â³ ZRH hotel</span></td></tr>
+        <tr style="background:var(--warm);">
+          <td style="padding:9px 12px;font-weight:700;white-space:nowrap;">16</td>
+          <td style="padding:9px 12px;white-space:nowrap;">Jul 5</td>
+          <td style="padding:9px 12px;">Zurich ZRH ð¨ð­</td>
+          <td style="padding:9px 12px;">â Home â Orlando MCO</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">â</td>
+          <td style="padding:9px 12px;text-align:center;color:var(--slate);">â</td>
+          <td style="padding:9px 12px;">Hertz drop-off 7am Â· Depart 7:55am FI571 via KEF â MCO 8:50pm</td>
+        
+          <td style="padding:9px 12px;font-size:12px;line-height:1.6;"><span style="color:#27ae60;font-weight:600;font-size:12px;">â Hertz drop-off</span></td></tr>
+        <tr style="background:#2c2c2c;color:#fff;">
+          <td colspan="5" style="padding:10px 12px;font-weight:700;text-align:right;">Total Driving (Days 3â15)</td>
+          <td style="padding:10px 12px;text-align:center;font-weight:700;">~1,135 mi</td>
+          <td style="padding:10px 12px;text-align:center;font-weight:700;">~24h 56m</td>
+          <td style="padding:10px 12px;font-size:11px;color:#aaa;">â ï¸ = heavy driving days Â· red = 300+ mi or 5+ hrs</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <div class="days-grid" id="days">
+
+    <!-- DAY 1-2 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">1â2</div>
+        <div class="day-info">
+          <div class="day-title">Iceland â Golden Circle &amp; South Coast</div>
+          <div class="day-meta">Jun 20â21 Â· Selfoss base</div>
+        </div>
+        <div class="day-flag">ð®ð¸</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Keflavik+Airport/Thingvellir+National+Park/Geysir/Gullfoss/Selfoss" target="_blank">ð Day 1 Map â Golden Circle</a>
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Selfoss/Seljalandsfoss/Skogafoss/Reynisfjara+Black+Sand+Beach/Selfoss" target="_blank">ð Day 2 Map â South Coast</a>
+        <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-bottom:6px;">Day 1 â Golden Circle</p>
+        <ul>
+          <li>Pick up Iceland car at KEF ~10am</li>
+          <li><strong>Ãingvellir NP</strong> â UNESCO Â· walk between the tectonic plates</li>
+          <li><strong>Geysir</strong> â Strokkur erupts every 5â10 min</li>
+          <li><strong>Gullfoss</strong> waterfall</li>
+          <li>Drive ~45 min to <strong>Guesthouse 77, Eyrarbakki</strong> for overnight</li>
+        </ul>
+        <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-bottom:6px;margin-top:14px;">Day 2 â South Coast</p>
+        <ul>
+          <li><strong>Seljalandsfoss</strong> â walk behind the falls Â· bring waterproofs!</li>
+          <li><strong>SkÃ³gafoss</strong> waterfall</li>
+          <li><strong>Reynisfjara</strong> black sand beach</li>
+          <li>Drive ~1hr to <strong>BergOne, Ytri-NjarÃ°vÃ­k</strong> for overnight</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alarm-tag">â° Set alarm 5:15am Jun 22 â drive ~45 min to KEF</span>
+          <span class="booking-tag">â Guesthouse 77 Â· Night 1 Â· Booking.com Â· $212.37</span>
+          <span class="booking-tag">â BergOne Â· Night 2 Â· Booking.com Â· $263.98</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">3</div>
+        <div class="day-info">
+          <div class="day-title">Fly â Diemtigtal</div>
+          <div class="day-meta">Jun 22 Â· ZRH â Thun â Spiez â Diemtigtal</div>
+        </div>
+        <div class="day-flag">ð¨ð­</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Zurich+Airport/Thun,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland" target="_blank">ð Day 3 Map</a>
+        <ul>
+          <li>Return Iceland car at KEF Â· board 7:20am FI568</li>
+          <li>Land ZRH 1:05pm Â· pick up <strong>Hertz rental car</strong> â Hertz desk at <strong>Zurich Airport Terminal (Arrivals Hall)</strong> Â· Conf. <strong>L5350959316</strong> Â· Jeep Compass or similar</li>
+          <li>Drive <strong>~30 min</strong> â <strong>Thun</strong> â walk the medieval old town Â· covered bridge over the turquoise Aare Â· <strong>Thun Castle</strong> viewpoint (free to walk up, ~CHF 10 to enter) Â· Eiger/Jungfrau backdrop Â· ~45 min stop</li>
+          <li>Drive <strong>~15 min</strong> â <strong>Spiez Castle</strong> â 12th-century castle surrounded by vineyards on Lake Thun Â· stunning Bernese Alps panorama Â· CHF 10/adult Â· ~30 min stop</li>
+          <li>Drive <strong>~30 min</strong> â Diemtigtal Â· check in Tiny House Â· arrive ~5:30pm â</li>
+          <li>â ï¸ If customs/Hertz takes longer than 45 min, skip Thun and do Spiez only (or go straight to Diemtigtal)</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">â Tiny House im schÃ¶nen Diemtigtal Â· Airbnb Â· $255.92 Â· Jun 22â23 Â· 1 night</span>
+          <span class="alarm-tag">ð Spiez Castle: CHF 10/adult Â· open MayâOct Â· no booking needed</span>
+          <span class="alarm-tag">ð· At Hertz pick-up: confirm Swiss vignette (CHF 40) included Â· confirm cross-border approval for <strong>Italy + Slovenia</strong> Â· inspect car thoroughly before leaving</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">4</div>
+        <div class="day-info">
+          <div class="day-title">Oeschinensee + Grindelwald First</div>
+          <div class="day-meta">Jun 23 Â· Diemtigtal â Kandersteg â Grindelwald â Munich</div>
+        </div>
+        <div class="day-flag">ð¨ð­</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg/Grindelwald,+Switzerland/Munich,+Germany" target="_blank">ð Day 4 Map</a>
+        <ul>
+          <li>Leave <strong>7:30am</strong> â drive ~30 min to <strong>Kandersteg</strong> (Rome2rio: DiemtigtalâKandersteg ~30 min)</li>
+          <li>ð <strong>Oeschinensee</strong> â gondola up to turquoise alpine lake at 1,578m Â· lake walk + photos (~2hrs) Â· one of Switzerland's most beautiful lakes</li>
+          <li>Gondola down Â· drive <strong>~56 min to Grindelwald</strong> (Rome2rio) Â· arrive ~11am</li>
+          <li>â­ <strong>Firstbahn gondola</strong> up â First (2,166m) Â· Cliff Walk (~30 min) Â· <strong>Bachalpsee lake</strong> hike (~2.5 miles, Eiger reflections, ~1.5hrs)</li>
+          <li>â­ <strong>First Flyer or First Glider</strong> â pricey but a peak memory for the kids (especially the 13-year-old!) Â· book at the top</li>
+          <li>â ï¸ Leave Grindelwald by <strong>4:30pm</strong> â take gondola down from Bort (8 min, saves 1hr vs hiking down)</li>
+          <li>RÃ¶sti lunch in Grindelwald Â· drive <strong>~5hrs to Munich</strong> (Rome2rio: 5hr 7min) Â· arrive ~9:30pm</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">â Gondola Booked Â· #238070 Â· 2 adults + 2 children</span>
+          <span class="alarm-tag">ð¨ Escape by Landhaus Lindenberg, Buchloe Â· Conf #6026325459 Â· $202 â</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">5</div>
+        <div class="day-info">
+          <div class="day-title">KÃ¶nigssee + Wimbachklamm</div>
+          <div class="day-meta">Jun 24 Â· Buchloe â KÃ¶nigssee â Wimbachklamm â Schneizlreuth</div>
+        </div>
+        <div class="day-flag">ð©ðª</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Buchloe,+Germany/SchÃ¶nau+am+KÃ¶nigssee,+Germany/Ramsau+bei+Berchtesgaden,+Germany/Schneizlreuth,+Germany" target="_blank">ð Day 5 Map</a>
+        <ul>
+          <li>Leave Buchloe <strong>7:30am</strong> â drive <strong>2h 20min, 203km via A8</strong> (Google Maps) â KÃ¶nigssee Â· arrive ~9:50am Â· walk to SeelÃ¤nde dock</li>
+          <li><strong>KÃ¶nigssee electric boat 10:30am</strong> â trumpet echo at St. BartholomÃ¤ â <strong>Rothbach Waterfall hike</strong> (~3 miles)</li>
+          <li>Lunch at mountain hut Â· return boat <strong>12:45pm</strong></li>
+          <li><strong>Wimbachklamm Gorge</strong> (~1 mile, â¬4/person, open 7amâ7pm) â drive <strong>16 min via B305</strong> from KÃ¶nigssee (Google Maps)</li>
+          <li>Drive ~10 min â <strong>Wurznwirt, Schneizlreuth</strong> Â· check in Â· short evening Â· easy end to a full day â</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="booking-tag">â Wurznwirt Â· #72072251742511 Â· Family Suite</span>
+          <span style="font-size:11px;color:var(--slate);align-self:center">âµ Boat: book at seenschifffahrt.de Â· May/Jun</span>
+          <span class="alarm-tag">â° Book KÃ¶nigssee boat in advance at seenschifffahrt.de â fills up fast in summer</span>
+          <span class="alarm-tag">ð· Austria Vignette: entering from Germany â buy 10-day digital vignette at asfinag.at at least 18 days before entry, or buy physical sticker at last German petrol station</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">6</div>
+        <div class="day-info">
+          <div class="day-title">Liechtensteinklamm Gorge</div>
+          <div class="day-meta">Jun 25 Â· Schneizlreuth â Bad Goisern</div>
+        </div>
+        <div class="day-flag">ð¦ð¹</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Bad+Goisern/Liechtensteinklamm,+St.+Johann+im+Pongau/Bad+Goisern" target="_blank">ð Day 6 Map</a>
+        <ul>
+          <li>Leave Schneizlreuth <strong>7:30am</strong> â <strong>~1hr 30min</strong> (Rome2rio) to <strong>Liechtensteinklamm Gorge</strong> Â· arrive ~9am</li>
+          <li>Deepest gorge in Alps â Helix staircase, 400 stairs, thundering waterfall (~2.5hrs, ~â¬15/adult)</li>
+          <li>Drive <strong>~1hr 20min</strong> back â <strong>check in at HOMEBOUND Apartments, Bad Goisern</strong> Â· arrive ~1:30pm â</li>
+          <li>Afternoon: 10 min to <strong>Hallstatt</strong> for evening lakeside walk</li>
+        </ul>
+        <div style="margin-top:12px;">
+          <span class="booking-tag">â HOMEBOUND Apartments Â· Expedia #72072198804917</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">7</div>
+        <div class="day-info">
+          <div class="day-title">Hallstatt Full Day</div>
+          <div class="day-meta">Jun 26 Â· Bad Goisern base</div>
+        </div>
+        <div class="day-flag">ð¦ð¹</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Bad+Goisern/Hallstatt,+Austria" target="_blank">ð Day 7 Map</a>
+        <ul>
+          <li>Arrive Hallstatt <strong>8:45am</strong> (before crowds)</li>
+          <li><strong>Echern Valley â Waldbachstrub Waterfall</strong> (~3 miles, ~2.5hrs)</li>
+          <li><strong>Hallstatt Skywalk (Welterbeblick)</strong> â free viewpoint, best panoramic view of lake and village</li>
+          <li>Lunch lakeside Â· afternoon: lake boat or relax</li>
+          <li>Dinner lakeside â try local char (Saibling)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 8 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">8</div>
+        <div class="day-info">
+          <div class="day-title">Grossglockner â Lake Bled</div>
+          <div class="day-meta">Jun 27 Â· Bad Goisern â Slovenia</div>
+        </div>
+        <div class="day-flag">ð¦ð¹ð¸ð®</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Bad+Goisern/Gosausee,+Gosau/Grossglockner+High+Alpine+Road/Lake+Bled,+Slovenia" target="_blank">ð Day 8 Map</a>
+        <ul>
+          <li>Checkout 10am</li>
+          <li><strong>Gosausee</strong> â optional (2.85-mile flat loop) Â· only if energy allows</li>
+          <li>Drive south â <strong>Grossglockner High Alpine Road</strong> Â· arrive ~1pm Â· glacier views at Pasterze Â· toll â¬45/car Â· pack warm layers Â· ~2hrs on the road</li>
+          <li>Drive <strong>~2hrs 30min</strong> (Rome2rio: 2hr 33min direct) â arrive Lake Bled <strong>~8:30pm</strong> â</li>
+          <li>ð§º <strong>Laundry #2</strong> â use washing machine at Pr' Matjon Pension on arrival night</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="laundry-tag">ð Laundry #2 â hand in at Pr' Matjon on arrival</span>
+          <span class="booking-tag">â Pr' Matjon Pension Â· Expedia #72072265408188</span>
+          <span class="alarm-tag">ð· Slovenia Dars e-Vignette required â buy online before crossing at <a href="https://evinjeta.dars.si" style="color:inherit">evinjeta.dars.si</a> Â· Automated cameras at border Â· Fine â¬300+ if missing</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 9 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">9</div>
+        <div class="day-info">
+          <div class="day-title">Lake Bled</div>
+          <div class="day-meta">Jun 28 Â· Bled base</div>
+        </div>
+        <div class="day-flag">ð¸ð®</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Lake+Bled/Mala+Osojnica/Bled+Castle/Mostnica+Gorge/Bohinj+Cable+Car" target="_blank">ð Day 9 Map</a>
+        <ul>
+          <li><strong>7:30am â Mala Osojnica viewpoint</strong> (20-min hike, best view of Bled Island)</li>
+          <li><strong>Bled Castle</strong> â clifftop fortress, panoramic views (~1.5hrs, â¬13/adult)</li>
+          <li><strong>Mostnica Gorge</strong> â forest trail, Devil's Bridge, ~2 miles</li>
+          <li>Late afternoon: drive <strong>~20 min</strong> (Rome2rio: BledâBohinj ~20min) to <strong>Vogel Cable Car</strong> at Bohinj â panoramic Julian Alps views</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 10 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">10</div>
+        <div class="day-info">
+          <div class="day-title">Vintgar + Savica + Radovljica ð</div>
+          <div class="day-meta">Jun 29 Â· Bled base Â· Veena's Birthday! ð</div>
+        </div>
+        <div class="day-flag">ð¸ð®</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <div style="background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(184,92,56,0.1));border:1px solid rgba(201,168,76,0.4);border-radius:4px;padding:12px 16px;margin-bottom:14px;font-size:13px;">ð <strong>Happy Birthday Veena!</strong> â celebrated in one of the most beautiful places on Earth, Lake Bled, Slovenia.</div>
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Lake+Bled/Vintgar+Gorge/Savica+Waterfall/Radovljica,+Slovenia/Lake+Bled" target="_blank">ð Day 10 Map</a>
+        <ul>
+          <li><strong>9:00am â Vintgar Gorge</strong> (pre-booked timed entry mandatory) Â· 1.6-mile boardwalk over blue-green water (~1.5hrs)</li>
+          <li>Drive 30 min â <strong>Savica Waterfall</strong> (78m cascade, 558 steps, ~1.5hrs)</li>
+          <li><strong>Radovljica old town</strong> â medieval town, gingerbread workshop, beekeeping museum (~1hr)</li>
+          <li>Back to Bled for overnight</li>
+        </ul>
+        <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin:14px 0 6px;">ð Birthday Extras</p>
+        <ul>
+          <li><strong>Bled cream cake</strong> at Park CafÃ© â the iconic local dessert, perfect as a birthday treat!</li>
+          <li><strong>Pletna boat to Bled Island</strong> â traditional hand-rowed wooden boat, ring the wishing bell</li>
+          <li><strong>Special birthday dinner</strong> lakeside â try Vila Bled or Restavracija Belvedere for the occasion</li>
+        </ul>
+        <div style="margin-top:12px;">
+          <span class="alarm-tag">â° Book Vintgar timed entry by May 1 â vintgar.si</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 11 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">11</div>
+        <div class="day-info">
+          <div class="day-title">Drive â Dolomites via Lagazuoi</div>
+          <div class="day-meta">Jun 30 Â· Bled â AuÃervillgraten</div>
+        </div>
+        <div class="day-flag">ð®ð¹</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Lake+Bled/Passo+Falzarego/Lagazuoi+Cable+Car/AuÃervillgraten,+Austria/Lago+di+Braies,+Italy" target="_blank">ð Day 11 Map</a>
+        <ul>
+          <li>Early checkout (10:30am) Â· drive west via <strong>Passo Falzarego</strong> (allow ~3hrs including photo stops at the pass)</li>
+          <li><strong>Lagazuoi cable car</strong> (3-min ride to 2,752m Â· WWI military tunnels with headlamps Â· ~1.5hrs)</li>
+          <li>Continue to AuÃervillgraten Â· â ï¸ Total drive BledâAuÃervillgraten <strong>~3hrs</strong> (Rome2rio) + Lagazuoi stop ~2hrs = <strong>check in ~6pm</strong></li>
+          <li>Late afternoon: drive 25 min to <strong>Lago di Braies</strong> â or save for sunrise Day 12</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alarm-tag">â° Book Braies parking by May 1 â prags.bz</span>
+          <span class="booking-tag">â Das Auss.Zeit Â· Expedia #72072265941383 Â· 10.0â</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 12-13 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">12â13</div>
+        <div class="day-info">
+          <div class="day-title">Dolomites â­ Tre Cime + Cinque Torri</div>
+          <div class="day-meta">Jul 1â2 Â· AuÃervillgraten base</div>
+        </div>
+        <div class="day-flag">ð®ð¹</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/AuÃervillgraten/Lago+di+Braies/Misurina/Tre+Cime+di+Lavaredo/AuÃervillgraten" target="_blank">ð Day 12 Map</a>
+        <a class="day-map-link" href="https://www.google.com/maps/dir/AuÃervillgraten/Cinque+Torri,+Cortina+d'Ampezzo/Cortina+d'Ampezzo/AuÃervillgraten" target="_blank">ð Day 13 Map</a>
+        <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-bottom:6px;">Day 12 â Tre Cime di Lavaredo</p>
+        <ul>
+          <li>Optional <strong>Lago di Braies sunrise</strong> â leave 5:00am Â· arrive ~6am Â· magical reflections Â· back by 8am</li>
+          <li><strong>Tre Cime di Lavaredo loop</strong> (~4.5 miles) â always take Misurina shuttle (â¬10, fills by 9am)</li>
+        </ul>
+        <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--slate);margin-bottom:6px;margin-top:14px;">Day 13 â Cinque Torri</p>
+        <ul>
+          <li><strong>Cinque Torri hike</strong> (~3 miles) â five dramatic rock towers, WWI trenches, chairlift up</li>
+          <li>Long Italian lunch in <strong>Cortina d'Ampezzo</strong></li>
+        </ul>
+        <div style="margin-top:12px;">
+          <span class="laundry-tag">ð§º Laundry #3 â self-service laundromat in Cortina d'Ampezzo, Jul 2 afternoon</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 14 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">14</div>
+        <div class="day-info">
+          <div class="day-title">Innsbruck â Dornbirn</div>
+          <div class="day-meta">Jul 3 Â· AuÃervillgraten â Dornbirn</div>
+        </div>
+        <div class="day-flag">ð¦ð¹</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/AuÃervillgraten/Innsbruck,+Austria/Dornbirn,+Austria" target="_blank">ð Day 14 Map</a>
+        <ul>
+          <li>Checkout 10am Â· drive <strong>~1hr 30min</strong> (Rome2rio: AuÃervillgratenâInnsbruck ~1.5hrs) â <strong>Innsbruck</strong></li>
+          <li><strong>Nordkette cable car</strong> first â up to 2,300m, panoramic Alps views (~2hrs) Â· weather-dependent, go first</li>
+          <li><strong>Innsbruck old town</strong> â Golden Roof, Maria-Theresien-Strasse, Tyrolean dinner</li>
+          <li>Drive <strong>~1hr 30min</strong> (Rome2rio: InnsbruckâDornbirn) west â <strong>Dornbirn</strong> Â· check in ~5:30pm</li>
+          <li>ð§º <strong>Laundry #4</strong> â hotel laundry service at Vienna House Martinspark, Dornbirn</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="laundry-tag">ð Laundry #4 â self-service laundromat in Dornbirn evening</span>
+          <span class="booking-tag">â Vienna House Martinspark Â· Expedia #72072266618761</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 15 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">15</div>
+        <div class="day-info">
+          <div class="day-title">Liechtenstein â Rhine Falls â Zurich</div>
+          <div class="day-meta">Jul 4 Â· Dornbirn â Zurich</div>
+        </div>
+        <div class="day-flag">ð±ð®ð¨ð­</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <a class="day-map-link" href="https://www.google.com/maps/dir/Dornbirn,+Austria/Vaduz,+Liechtenstein/Rhine+Falls,+Schaffhausen/Zurich,+Switzerland" target="_blank">ð Day 15 Map</a>
+        <ul>
+          <li>Leave 9am Â· drive <strong>~25 min</strong> (Rome2rio: DornbirnâVaduz ~25min) â <strong>Vaduz, Liechtenstein</strong> (border crossing) ð±ð®</li>
+          <li>Vaduz Castle viewpoint Â· passport stamp at tourist office (â¬3 â the girls will love this!)</li>
+          <li>Drive ~45 min â <strong>Rhine Falls</strong> â take the boat to the central rock (~5 CHF) for the best view</li>
+          <li>Drive <strong>~30 min</strong> (Rome2rio) â <strong>Zurich</strong> â Altstadt, Lake Zurich, GrossmÃ¼nster, Bahnhofstrasse Â· dinner</li>
+          <li>Overnight near ZRH airport â <strong>Radisson Blu</strong> or <strong>Hyatt Place</strong> (both walkable to terminal)</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="alarm-tag">ð¨ Book Zurich Airport hotel Jul 4 Â· Radisson Blu ZRH or Hyatt Place Â· walkable to terminal</span>
+          <span class="alarm-tag">â° Set alarm 5:30am Jul 5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 16 -->
+    <div class="day-card">
+      <div class="day-header" onclick="toggle(this)">
+        <div class="day-num">16</div>
+        <div class="day-info">
+          <div class="day-title">Fly Home</div>
+          <div class="day-meta">Jul 5 Â· ZRH â MCO</div>
+        </div>
+        <div class="day-flag">âï¸</div>
+        <div class="day-toggle">â¾</div>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li>Return <strong>Hertz</strong> car at ZRH ~6:30am Â· drop-off deadline 7:00am Â· Hertz desk in Arrivals/Ground Transport level Â· Conf. L5350959316</li>
+          <li>Depart <strong>7:55am</strong> FI571/FI689 via ReykjavÃ­k â Orlando MCO <strong>8:50pm</strong></li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /days-grid -->
+
+  <!-- BOOKING CHECKLIST -->
+  <p class="section-title">Booking Checklist</p>
+  <div class="checklist">
+    <div class="check-item"><div class="check-icon done">â</div><div class="check-main">Icelandair flights Ã 4</div><span class="check-status-done">Ref A77762 Â· $4,087.92</span></div>
+    <div class="check-item"><div class="check-icon done">â</div><div class="check-main">Grindelwald gondola â Jun 23</div><span class="check-status-done">Booking #238070</span></div>
+    <div class="check-item"><div class="check-icon done">â</div><div class="check-main">Cancel KÃ³pavogur booking</div><span class="check-status-done">Done</span></div>
+    <div class="check-item"><div class="check-icon done">â</div><div class="check-main">Check 4 passports (valid Oct 2026+)</div><span class="check-status-done">Done</span></div>
+    <div class="check-item"><div class="check-icon done">â</div><div class="check-main">Notify bank of travel dates</div><span class="check-status-done">Done</span></div>
+    <div class="check-item"><div class="check-icon pending">!</div><div class="check-main">Zurich / Airport â Jul 4â5</div><div class="check-deadline">When ready Â· Booking.com / Expedia</div><span class="check-status-pending">â³ Pending</span></div>
+    <div class="check-item"><div class="check-icon done">✓</div><div class="check-main">ð Vintgar Gorge timed entry â Jun 29</div><div class="check-deadline">Invoice PE01-BL0I-808 · €40 · 10:00am entry</div><span class="check-status-done">✓ Booked</span></div>
+    <div class="check-item"><div class="check-icon pending">!</div><div class="check-main">ð¿ Lago di Braies parking â Jul 1</div><div class="check-deadline">By May 1 Â· prags.bz</div><span class="check-status-pending">â³ Pending</span></div>
+    <div class="check-item"><div class="check-icon pending">!</div><div class="check-main">âµ KÃ¶nigssee boat â Jun 24</div><div class="check-deadline">May/Jun Â· seenschifffahrt.de Â· non-refundable</div><span class="check-status-pending">â³ Pending</span></div>
+    <div class="check-item"><div class="check-icon pending">!</div><div class="check-main">ð¡ Travel insurance Ã 4</div><div class="check-deadline">By May 15 Â· any provider</div><span class="check-status-pending">â³ Pending</span></div>
+    <div class="check-item"><div class="check-icon pending">!</div><div class="check-main">ð Ask rental company re vignettes</div><div class="check-deadline">Before travel â Swiss + Austrian motorway stickers</div><span class="check-status-pending">â³ Pending</span></div>
+  </div>
+
+  <!-- BUDGET -->
+  <p class="section-title">Budget</p>
+  <div class="budget-grid">
+    <div class="budget-item"><div class="budget-cat">Flights â</div><div class="budget-range">$4,088</div></div>
+    <div class="budget-item"><div class="budget-cat">Accommodation â 8 nights â</div><div class="budget-range">$2,706</div></div>
+    <div class="budget-item"><div class="budget-cat">Accommodation â Zurich â³</div><div class="budget-range">~$200 est.</div></div>
+    <div class="budget-item"><div class="budget-cat">Car Rentals â</div><div class="budget-range">$1,182</div></div>
+    <div class="budget-item"><div class="budget-cat">Food &amp; Drinks</div><div class="budget-range">$1,500â$2,200</div></div>
+    <div class="budget-item"><div class="budget-cat">Activities &amp; Entry Fees</div><div class="budget-range">$950â$1,250</div></div>
+    <div class="budget-item"><div class="budget-cat">Fuel, Tolls &amp; Misc</div><div class="budget-range">$850â$1,150</div></div>
+    <div class="budget-item budget-total"><div class="budget-cat">Confirmed so far Â· Total Estimated</div><div class="budget-range">$7,958 Â· ~$11,500â$13,600</div></div>
+  </div>
+
+  <p class="section-title" style="margin-top:32px;">Accommodation Breakdown</p>
+  <div style="overflow-x:auto;">
+    <table class="accom-table">
+      <thead><tr><th>Property</th><th>Paid</th></tr></thead>
+      <tbody>
+        <tr><td>Guesthouse 77, Eyrarbakki ð®ð¸ Â· Night 1</td><td>$212.37</td></tr>
+        <tr><td>BergOne, Ytri-NjarÃ°vÃ­k ð®ð¸ Â· Night 2</td><td>$263.98</td></tr>
+        <tr><td>Tiny House Diemtigtal, Oey ð¨ð­ Â· Night 3</td><td>$255.92</td></tr>
+        <tr><td>Escape by Landhaus Lindenberg, Buchloe ð©ðª Â· Night 4</td><td>$202 â #6026325459</td></tr>
+        <tr><td>Wurznwirt, Schneizlreuth ð©ðª</td><td>$156.88</td></tr>
+        <tr><td>HOMEBOUND Apartments, Bad Goisern ð¦ð¹</td><td>$429.83</td></tr>
+        <tr><td>Pr' Matjon Pension, Bled ð¸ð®</td><td>$467.57</td></tr>
+        <tr><td>Das Auss.Zeit, AuÃervillgraten ð¦ð¹</td><td>â¬515.38 (~$562)</td></tr>
+        <tr><td>Vienna House Martinspark, Dornbirn ð¦ð¹</td><td>â¬162.00 (~$177)</td></tr>
+        <tr><td>Zurich / Airport ð¨ð­</td><td><span class="pending">â³ ~$200 est.</span></td></tr>
+        <tr style="background:var(--warm)"><td><strong>Total</strong></td><td><strong>~$2,888</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CASH GUIDE -->
+  <p class="section-title">Cash &amp; Currency Guide</p>
+  <div style="overflow-x:auto;">
+    <table class="cash-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Currency</th>
+          <th>Days</th>
+          <th>Bring</th>
+          <th>Needed for</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>ð®ð¸ Iceland</td><td>ISK</td><td>1â2</td><td class="cash-amount">~$30</td><td>Snacks, tips</td></tr>
+        <tr><td>ð¨ð­ Switzerland</td><td>CHF</td><td>3â4, 15â16</td><td class="cash-amount">~$150</td><td>Hut lunches, Rhine Falls boat, laundromat, Nordkette</td></tr>
+        <tr><td>ð©ðª Germany</td><td>EUR</td><td>5</td><td class="cash-amount">~$30</td><td>Wimbachklamm â¬4/person</td></tr>
+        <tr><td>ð¦ð¹ Austria</td><td>EUR</td><td>6â8, 11â14</td><td class="cash-amount">~$200</td><td>Grossglockner toll â¬45, Liechtensteinklamm, gorge entries</td></tr>
+        <tr><td>ð¸ð® Slovenia</td><td>EUR</td><td>8â10</td><td class="cash-amount">~$80</td><td>Vintgar, Vogel cable car, Bled Castle</td></tr>
+        <tr><td>ð®ð¹ Italy</td><td>EUR</td><td>11â13</td><td class="cash-amount">~$100</td><td>Lagazuoi, Tre Cime shuttle, Cinque Torri, Braies parking</td></tr>
+        <tr><td>ð±ð® Liechtenstein</td><td>CHF</td><td>15</td><td class="cash-amount">â</td><td>Passport stamp â¬3 (use CHF)</td></tr>
+        <tr style="background:var(--warm)"><td colspan="3"><strong>Total</strong></td><td class="cash-amount">~$590</td><td>~$385 EUR + ~$150 CHF + ~$30 ISK</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY REMINDERS -->
+  <p class="section-title">Key Reminders</p>
+  <div class="reminders-grid">
+    <div class="reminder-item"><div class="reminder-icon">ð§¥</div><div>Bring <strong>waterproof jackets</strong> for Iceland â especially Seljalandsfoss (walk behind the falls)</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð´</div><div>Late June Iceland = 24hr daylight â bring <strong>eye masks</strong></div></div>
+    <div class="reminder-item"><div class="reminder-icon">ðï¸</div><div><strong>Grossglockner toll â¬45/car</strong> â pack warm layers at 2,504m even in summer</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð</div><div><strong>Tre Cime</strong>: always take Misurina shuttle (â¬10), fills by 9am</div></div>
+    <div class="reminder-item"><div class="reminder-icon">â°</div><div><strong>Hallstatt</strong>: arrive before 9am, crowds arrive fast</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð¤ï¸</div><div><strong>Nordkette Innsbruck</strong>: weather-dependent â go first before old town</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð</div><div><strong>ETIAS</strong> not required â launches Q4 2026 after your return</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð·ï¸</div><div><strong>Slovenia Dars e-Vignette</strong> â buy at evinjeta.dars.si before crossing. Automated cameras, fine â¬300+ if missing</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð¦ð¹</div><div><strong>Austrian digital vignette</strong> â buy at asfinag.at by <strong>June 6</strong> (18-day waiting period before Jun 24 Austria entry). Do not leave this until the last minute.</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð¨</div><div><strong>Zurich Airport hotel</strong> still needed (Jul 4â5). Consider Radisson Blu Zurich Airport (walkable to terminal) or Hyatt Place Zurich Airport â worth the extra $50 vs a 4:30am shuttle</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð³</div><div>Use the <strong>HOMEBOUND</strong> (Bad Goisern) and <strong>Das Auss.Zeit</strong> (AuÃervillgraten) kitchens for dinners â a single restaurant dinner in Switzerland for 4 easily hits $180</div></div>
+    <div class="reminder-item"><div class="reminder-icon">ð°</div><div><strong>Liechtenstein passport stamp</strong> â¬3 at Vaduz tourist office â worth every cent!</div></div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <strong>Europe Family Trip Â· June 19 â July 5, 2026</strong><br>
+  <span>Rahul Â· Veena Â· Veda Â· Vaiga</span>
+</footer>
+
+<script>
+  function toggle(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+  // Open first card by default
+  document.querySelector('.day-card').classList.add('open');
+</script>
+</body>
+</html>

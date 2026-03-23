@@ -1,0 +1,530 @@
+{
+  "id": "europe-2026",
+  "meta": {
+    "title": "Europe Family Trip",
+    "subtitle": "June 2026",
+    "tagline": "Iceland · Switzerland · Germany · Austria · Slovenia · Italy · Liechtenstein",
+    "flags": ["🇮🇸", "🇨🇭", "🇩🇪", "🇦🇹", "🇸🇮", "🇮🇹", "🇱🇮"],
+    "countries": 7,
+    "days": 16,
+    "travellers": 4,
+    "traveller_names": ["Rahul", "Veena", "Veda", "Vaiga"],
+    "departure": "Jun 19",
+    "return": "Jul 5",
+    "status": "upcoming"
+  },
+  "bookingStrip": [
+    { "label": "Flights", "ref": "A77762", "status": "booked" },
+    { "label": "Iceland Car", "ref": "✓ Booked", "status": "booked" },
+    { "label": "Europe Car", "ref": "✓ Booked", "status": "booked" },
+    { "label": "Gondola", "ref": "#238070", "status": "booked" },
+    { "label": "Zurich Hotel", "ref": "⏳ Pending", "status": "pending" }
+  ],
+  "flights": [
+    { "date": "Jun 19 Fri", "route": "MCO → KEF", "detail": "FI686 · 10:00pm → 9:25am +1 · Non-stop 7h 25m" },
+    { "date": "Jun 22 Mon", "route": "KEF → ZRH", "detail": "FI568 · 7:20am → 1:05pm · Non-stop 3h 45m" },
+    { "date": "Jul 5 Sun",  "route": "ZRH → MCO", "detail": "FI571/FI689 · 7:55am → 8:50pm · 18h 55m via KEF" }
+  ],
+  "flightsRef": "Ref A77762 · $4,087.92 · Economy Light · Non-refundable · Carry-on only (22 lbs/person)",
+  "cars": [
+    {
+      "country": "🇮🇸 Iceland",
+      "vendor": "Budget · Keflavik KEF",
+      "detail": "Jun 20 12pm → Jun 22 12pm · Conf. #42334482US1 · $289.00 · Pay at pick-up"
+    },
+    {
+      "country": "🇨🇭 Europe",
+      "vendor": "Hertz · Zurich ZRH",
+      "detail": "Jun 22 12pm → Jul 5 7am · Hertz conf. L5350959316 · CHF 575.92 · Due at pick-up · Jeep Compass or similar · Free cancellation"
+    }
+  ],
+  "carsTotalNote": "Total car rentals: $1,181.50 · Both pay at pick-up",
+  "accommodation": [
+    { "nights": "1",   "property": "Guesthouse 77 🇮🇸",               "address": "Eyrargata 77, 820 Eyrarbakki, Iceland",              "dates": "Jun 20–21",   "ref": "Booking.com · $212.37",                       "freeCancel": "Free cancel Jun 18",  "status": "booked" },
+    { "nights": "2",   "property": "BergOne 🇮🇸",                      "address": "1 Bergás, 260 Ytri-Njarðvík, Iceland",              "dates": "Jun 21–22",   "ref": "Booking.com · $263.98",                       "freeCancel": "Free cancel Jun 19",  "status": "booked" },
+    { "nights": "3",   "property": "Tiny House im schönen Diemtigtal 🇨🇭","address": "Bächlen 362A, 3753 Oey, Diemtigtal",            "dates": "Jun 22–23",   "ref": "Airbnb · $255.92",                            "freeCancel": null,                  "status": "confirmed" },
+    { "nights": "4",   "property": "Escape by Landhaus Lindenberg 🇩🇪", "address": "Höfatsweg 3, 86807 Buchloe, Germany",             "dates": "Jun 23–24",   "ref": "Booking.com #6026325459 · $202",              "freeCancel": null,                  "status": "booked" },
+    { "nights": "5",   "property": "Wurznwirt 🇩🇪",                    "address": "Schneizlreuth 4, 83458 Schneizlreuth, Germany",    "dates": "Jun 24–25",   "ref": "#72072251742511",                             "stars": "9.0",                      "status": "booked" },
+    { "nights": "6–7", "property": "HOMEBOUND Apartments 🇦🇹",         "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",        "dates": "Jun 25–27",   "ref": "#72072198804917",                             "stars": "9.6",                      "status": "booked" },
+    { "nights": "8–10","property": "Pr' Matjon Pension 🇸🇮",           "address": "Selo pri Bledu 35, 4260 Bled, Slovenia",           "dates": "Jun 27–30",   "ref": "#72072265408188",                             "stars": "9.4",                      "status": "booked" },
+    { "nights": "11–13","property": "Das Auss.Zeit 🇦🇹",               "address": "Außervillgraten 185, 9931 Außervillgraten, Tirol", "dates": "Jun 30–Jul 3","ref": "#72072265941383",                             "stars": "10.0",                     "status": "booked" },
+    { "nights": "14",  "property": "Vienna House Martinspark 🇦🇹",     "address": "Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg",     "dates": "Jul 3–4",     "ref": "#72072266618761",                             "stars": "8.6",                      "status": "booked" },
+    { "nights": "15",  "property": "Zurich / Airport 🇨🇭",             "address": "Near ZRH Airport, Zurich, Switzerland",            "dates": "Jul 4–5",     "ref": "—",                                           "stars": null,                       "status": "pending" }
+  ],
+  "days": [
+    {
+      "dayLabel": "1–2",
+      "date": "Jun 20–21",
+      "title": "Iceland — Reykjanes, Geysir & South Coast",
+      "meta": "Jun 20–21 · Selfoss base",
+      "flag": "🇮🇸",
+      "mapLinks": [
+        { "label": "Day 1 Map", "url": "https://www.google.com/maps/dir/Keflavik+Airport/Reykjanes+Lighthouse/Kerid+Crater/Geysir/Urridafoss/Seljalandsfoss/Skogafoss/Stokkseyri/Eyrarbakki" },
+        { "label": "Day 2 Map — South Coast", "url": "https://www.google.com/maps/dir/Eyrarbakki/Reynisfjara+Black+Sand+Beach/Dyrhólaey/Jokulsarlon+Glacier+Lagoon/Diamond+Beach/Ytri-Njarðvík" }
+      ],
+      "sections": [
+        {
+          "heading": "Day 1 — Reykjanes + Geysir (quick) + South Coast",
+          "items": [
+            "Pick up Iceland car at KEF ~10am",
+            "<strong>Reykjanes Peninsula</strong> (~30 min from KEF) — <strong>Gunnuhver hot springs</strong> (boiling mud, steam vents) · <strong>Bridge Between Continents</strong> (walk between tectonic plates — kids love this) · <strong>Reykjanes Lighthouse</strong> on black volcanic cliffs · ~1.5hrs · almost no crowds",
+            "Drive ~45 min → <strong>Kerið Crater</strong> — red volcanic walls, vivid aquamarine lake, walk the rim + descend to lake edge (~45 min · ISK 600 entry)",
+            "Drive ~15 min → <strong>Lunch in Selfoss</strong> — Kaffi Krús or Almar Bakari (~45 min)",
+            "Drive ~35 min → <strong>Geysir</strong> — Strokkur erupts every 5–10 min · watch 2–3 eruptions and leave · don't linger (~45 min)",
+            "⚠️ <strong>Gullfoss optional</strong> (10 min from Geysir) — spectacular two-tier waterfall but busy · add 45 min if energy allows · otherwise head south",
+            "Drive ~45 min south → <strong>Urriðafoss</strong> — Iceland's most voluminous waterfall · 2 min off Route 1 · ground trembles from the force · almost nobody here (~20 min · free)",
+            "Drive ~15 min → <strong>Seljalandsfoss</strong> — walk behind the falls · bring waterproofs! (~1hr)",
+            "<strong>Gljúfrabúi</strong> — hidden canyon waterfall 5 min walk from Seljalandsfoss · most tour buses skip it · genuinely magical (~30 min)",
+            "Drive ~20 min → <strong>Skógafoss</strong> — climb the 527 steps for the top view · late evening light is spectacular (~45 min)",
+            "Drive ~30 min → <strong>Stokkseyri</strong> — black rocky coastal shoreline · Knarrarósviti lighthouse in golden evening light (~20 min)",
+            "Drive 5 min → <strong>Guesthouse 77, Eyrarbakki</strong> — check in ✅"
+          ]
+        },
+        {
+          "heading": "Day 2 — South Coast East + Glacier Lagoon",
+          "items": [
+            "Leave early ~7am — beat the tour buses to Reynisfjara",
+            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, powerful waves · early morning = almost empty and extraordinary light (~1hr)",
+            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over the black sand coast and Eyjafjallajökull · 5 min drive from Reynisfjara (~30 min)",
+            "Drive ~2hrs east → <strong>Jökulsárlón Glacier Lagoon</strong> — icebergs calving off the glacier in electric-blue water · take the <strong>amphibian boat tour</strong> (~40 min, pre-book at glacierlagoon.is) · kids absolutely love it",
+            "<strong>Diamond Beach</strong> — icebergs washed up on black sand · 2 min walk from Jökulsárlón · looks completely unreal",
+            "Drive ~2.5hrs back west toward <strong>BergOne, Ytri-Njarðvík</strong> — arrive late afternoon ✅"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "alarm",   "text": "⏰ Set alarm 5:15am Jun 22 — drive ~45 min to KEF" },
+        { "type": "alarm",   "text": "🎟 Pre-book Jökulsárlón amphibian boat tour at glacierlagoon.is — fills up in summer" },
+        { "type": "booking", "text": "✓ Guesthouse 77 · Night 1 · Booking.com · $212.37" },
+        { "type": "booking", "text": "✓ BergOne · Night 2 · Booking.com · $263.98" }
+      ],
+      "summary": { "drive": "~3.5hrs Day 1 / ~5hrs Day 2", "time": "~14hrs daylight each day", "from": "Reykjavík / KEF 🇮🇸", "to": "Guesthouse 77 → BergOne", "highlights": "Reykjanes · Kerið · Geysir · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Jökulsárlón · Diamond Beach",
+        "bookings": [{ "status": "booked", "text": "✓ Guesthouse 77" }, { "status": "booked", "text": "✓ BergOne" }, { "status": "booked", "text": "✓ Budget car KEF" }] }
+    },
+    {
+      "dayLabel": "3",
+      "date": "Jun 22",
+      "title": "Fly → Diemtigtal",
+      "meta": "Jun 22 · ZRH → Thun → Spiez → Diemtigtal",
+      "flag": "🇨🇭",
+      "mapLinks": [
+        { "label": "Day 3 Map", "url": "https://www.google.com/maps/dir/Zurich+Airport/Thun,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Return Iceland car at KEF · board 7:20am FI568",
+            "Land ZRH 1:05pm · pick up <strong>Hertz rental car</strong> — Hertz desk at <strong>Zurich Airport Terminal (Arrivals Hall)</strong> · Conf. <strong>L5350959316</strong> · Jeep Compass or similar",
+            "Drive <strong>~30 min</strong> → <strong>Thun</strong> — walk the medieval old town · covered bridge over the turquoise Aare · <strong>Thun Castle</strong> viewpoint (free to walk up, ~CHF 10 to enter) · Eiger/Jungfrau backdrop · ~45 min stop",
+            "Drive <strong>~15 min</strong> → <strong>Spiez Castle</strong> — 12th-century castle surrounded by vineyards on Lake Thun · stunning Bernese Alps panorama · CHF 10/adult · ~30 min stop",
+            "Drive <strong>~30 min</strong> → Diemtigtal · check in Tiny House · arrive ~5:30pm ✅",
+            "⚠️ If customs/Hertz takes longer than 45 min, skip Thun and do Spiez only (or go straight to Diemtigtal)"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ Tiny House im schönen Diemtigtal · Airbnb · $255.92 · Jun 22–23 · 1 night" },
+        { "type": "alarm",   "text": "🎟 Spiez Castle: CHF 10/adult · open May–Oct · no booking needed" },
+        { "type": "alarm",   "text": "🏷 At Hertz pick-up: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Slovenia · inspect car thoroughly before leaving" }
+      ],
+      "summary": { "drive": "~78 mi", "time": "1h 15m +1h 15m stops", "from": "Zurich ZRH 🇨🇭", "to": "Tiny House Diemtigtal", "highlights": "Fly KEF→ZRH · Hertz pickup · Thun old town + castle · Spiez Castle (Lake Thun vineyards) · Diemtigtal",
+        "bookings": [{ "status": "booked", "text": "✓ Diemtigtal Airbnb" }, { "status": "booked", "text": "✓ Hertz ZRH" }] }
+    },
+    {
+      "dayLabel": "4",
+      "date": "Jun 23",
+      "title": "Oeschinensee + Grindelwald First",
+      "meta": "Jun 23 · Diemtigtal → Kandersteg → Grindelwald → Munich",
+      "flag": "🇨🇭",
+      "warning": true,
+      "mapLinks": [
+        { "label": "Day 4 Map", "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg/Grindelwald,+Switzerland/Munich,+Germany" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Leave <strong>7:30am</strong> → drive ~30 min to <strong>Kandersteg</strong>",
+            "🏔 <strong>Oeschinensee</strong> — gondola up to turquoise alpine lake at 1,578m · lake walk + photos (~2hrs)",
+            "Gondola down · drive <strong>~56 min to Grindelwald</strong> · arrive ~11am",
+            "⭐ <strong>Firstbahn gondola</strong> up → First (2,166m) · Cliff Walk (~30 min) · <strong>Bachalpsee lake</strong> hike (~2.5 miles, ~1.5hrs)",
+            "⭐ <strong>First Flyer or First Glider</strong> — peak memory for the kids · book at the top",
+            "⚠️ Leave Grindelwald by <strong>4:30pm</strong> — take gondola down from Bort (8 min, saves 1hr)",
+            "Rösti lunch in Grindelwald · drive <strong>~5hrs to Munich</strong> · arrive ~9:30pm"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ Gondola Booked · #238070 · 2 adults + 2 children" },
+        { "type": "alarm",   "text": "🏨 Escape by Landhaus Lindenberg, Buchloe · Conf #6026325459 · $202 ✅" }
+      ],
+      "summary": { "drive": "~317 mi", "time": "6h 40m", "heavy": true, "from": "Diemtigtal 🇨🇭", "to": "Munich 🇩🇪", "highlights": "Oeschinensee gondola · Grindelwald First Cliff Walk · Bachalpsee · First Flyer/Glider",
+        "bookings": [{ "status": "booked", "text": "✓ Landhaus Lindenberg #6026325459" }, { "status": "booked", "text": "✓ Gondola #238070" }, { "status": "pending", "text": "⏳ Oeschinensee slot" }] }
+    },
+    {
+      "dayLabel": "5",
+      "date": "Jun 24",
+      "title": "Königssee + Wimbachklamm",
+      "meta": "Jun 24 · Buchloe → Königssee → Wimbachklamm → Schneizlreuth",
+      "flag": "🇩🇪",
+      "mapLinks": [
+        { "label": "Day 5 Map", "url": "https://www.google.com/maps/dir/Buchloe,+Germany/Schönau+am+Königssee,+Germany/Ramsau+bei+Berchtesgaden,+Germany/Schneizlreuth,+Germany" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Leave Buchloe <strong>7:30am</strong> → drive <strong>2h 20min, 203km via A8</strong> → Königssee · arrive ~9:50am",
+            "<strong>Königssee electric boat 10:30am</strong> → trumpet echo at St. Bartholomä → <strong>Rothbach Waterfall hike</strong> (~3 miles)",
+            "Lunch at mountain hut · return boat <strong>12:45pm</strong>",
+            "<strong>Wimbachklamm Gorge</strong> (~1 mile, €4/person, open 7am–7pm) — drive <strong>16 min via B305</strong>",
+            "Drive ~10 min → <strong>Wurznwirt, Schneizlreuth</strong> · check in ✅"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ Wurznwirt · #72072251742511 · Family Suite" },
+        { "type": "alarm",   "text": "⏰ Book Königssee boat in advance at seenschifffahrt.de — fills up fast in summer" },
+        { "type": "alarm",   "text": "🏷 Austria Vignette: buy digital vignette at asfinag.at at least 18 days before entry (by June 6)" }
+      ],
+      "summary": { "drive": "203 km", "time": "2h 20m", "from": "Buchloe 🇩🇪", "to": "Wurznwirt, Schneizlreuth 🇩🇪", "highlights": "Königssee electric boat · St. Bartholomä · Rothbach Waterfall · Wimbachklamm gorge",
+        "bookings": [{ "status": "booked", "text": "✓ Wurznwirt" }, { "status": "pending", "text": "⏳ Königssee boat" }] }
+    },
+    {
+      "dayLabel": "6",
+      "date": "Jun 25",
+      "title": "Liechtensteinklamm Gorge",
+      "meta": "Jun 25 · Schneizlreuth → Bad Goisern",
+      "flag": "🇦🇹",
+      "mapLinks": [
+        { "label": "Day 6 Map", "url": "https://www.google.com/maps/dir/Bad+Goisern/Liechtensteinklamm,+St.+Johann+im+Pongau/Bad+Goisern" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Leave Schneizlreuth <strong>7:30am</strong> → <strong>~1hr 30min</strong> to <strong>Liechtensteinklamm Gorge</strong> · arrive ~9am",
+            "Deepest gorge in Alps — Helix staircase, 400 stairs, thundering waterfall (~2.5hrs, ~€15/adult)",
+            "Drive <strong>~1hr 20min</strong> → <strong>HOMEBOUND Apartments, Bad Goisern</strong> · arrive ~1:30pm ✅",
+            "Afternoon: 10 min to <strong>Hallstatt</strong> for evening lakeside walk"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ HOMEBOUND Apartments · Expedia #72072198804917" }
+      ],
+      "summary": { "drive": "~110 mi", "time": "2h 40m", "from": "Schneizlreuth 🇩🇪", "to": "HOMEBOUND, Bad Goisern 🇦🇹", "highlights": "Liechtensteinklamm gorge (deepest in Alps) · Hallstatt evening walk",
+        "bookings": [{ "status": "booked", "text": "✓ HOMEBOUND" }] }
+    },
+    {
+      "dayLabel": "7",
+      "date": "Jun 26",
+      "title": "Hallstatt Full Day",
+      "meta": "Jun 26 · Bad Goisern base",
+      "flag": "🇦🇹",
+      "mapLinks": [
+        { "label": "Day 7 Map", "url": "https://www.google.com/maps/dir/Bad+Goisern/Hallstatt,+Austria" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Arrive Hallstatt <strong>8:45am</strong> (before crowds)",
+            "<strong>Echern Valley → Waldbachstrub Waterfall</strong> (~3 miles, ~2.5hrs)",
+            "<strong>Hallstatt Skywalk (Welterbeblick)</strong> — free viewpoint, best panoramic view",
+            "Lunch lakeside · afternoon: lake boat or relax",
+            "Dinner lakeside — try local char (Saibling)"
+          ]
+        }
+      ],
+      "tags": [],
+      "summary": { "drive": "~10 mi", "time": "~20m", "from": "Bad Goisern 🇦🇹", "to": "HOMEBOUND, Bad Goisern 🇦🇹", "highlights": "Hallstatt full day · Echern Valley waterfall · Skywalk viewpoint · lakeside dinner",
+        "bookings": [{ "status": "booked", "text": "✓ HOMEBOUND" }] }
+    },
+    {
+      "dayLabel": "8",
+      "date": "Jun 27",
+      "title": "Grossglockner → Lake Bled",
+      "meta": "Jun 27 · Bad Goisern → Slovenia",
+      "flag": "🇦🇹🇸🇮",
+      "mapLinks": [
+        { "label": "Day 8 Map", "url": "https://www.google.com/maps/dir/Bad+Goisern/Gosausee,+Gosau/Grossglockner+High+Alpine+Road/Lake+Bled,+Slovenia" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Checkout 10am",
+            "<strong>Gosausee</strong> — optional (2.85-mile flat loop) · only if energy allows",
+            "Drive south → <strong>Grossglockner High Alpine Road</strong> · arrive ~1pm · glacier views at Pasterze · toll €45/car · pack warm layers · ~2hrs on the road",
+            "Drive <strong>~2hrs 30min</strong> → arrive Lake Bled <strong>~8:30pm</strong> ✅",
+            "🧺 <strong>Laundry #2</strong> — use washing machine at Pr' Matjon Pension on arrival night"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "laundry",  "text": "👕 Laundry #2 — hand in at Pr' Matjon on arrival" },
+        { "type": "booking",  "text": "✓ Pr' Matjon Pension · Expedia #72072265408188" },
+        { "type": "alarm",    "text": "🏷 Slovenia Dars e-Vignette required — buy at evinjeta.dars.si before crossing · Fine €300+ if missing" }
+      ],
+      "summary": { "drive": "~140 mi", "time": "2h 33m +Grossglockner", "from": "Bad Goisern 🇦🇹", "to": "Pr' Matjon, Lake Bled 🇸🇮", "highlights": "Grossglockner High Alpine Road · Pasterze glacier (2,504m) · Arrive Lake Bled",
+        "bookings": [{ "status": "booked", "text": "✓ Pr' Matjon" }] }
+    },
+    {
+      "dayLabel": "9",
+      "date": "Jun 28",
+      "title": "Lake Bled",
+      "meta": "Jun 28 · Bled base",
+      "flag": "🇸🇮",
+      "mapLinks": [
+        { "label": "Day 9 Map", "url": "https://www.google.com/maps/dir/Lake+Bled/Mala+Osojnica/Bled+Castle/Mostnica+Gorge/Bohinj+Cable+Car" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "<strong>7:30am — Mala Osojnica viewpoint</strong> (20-min hike, best view of Bled Island)",
+            "<strong>Bled Castle</strong> — clifftop fortress, panoramic views (~1.5hrs, €13/adult)",
+            "<strong>Mostnica Gorge</strong> — forest trail, Devil's Bridge, ~2 miles",
+            "Late afternoon: drive <strong>~20 min</strong> to <strong>Vogel Cable Car</strong> at Bohinj — panoramic Julian Alps views"
+          ]
+        }
+      ],
+      "tags": [],
+      "summary": { "drive": "~25 mi", "time": "~45m", "from": "Lake Bled 🇸🇮", "to": "Pr' Matjon, Lake Bled 🇸🇮", "highlights": "Mala Osojnica viewpoint · Bled Castle · Mostnica Gorge · Vogel Cable Car at Bohinj",
+        "bookings": [{ "status": "booked", "text": "✓ Pr' Matjon" }, { "status": "booked", "text": "✓ Vintgar entry · PE01-BL0I-808" }] }
+    },
+    {
+      "dayLabel": "10",
+      "date": "Jun 29",
+      "title": "Vintgar + Savica + Radovljica 🎂",
+      "meta": "Jun 29 · Bled base · Veena's Birthday! 🎉",
+      "flag": "🇸🇮",
+      "birthday": "🎂 Happy Birthday Veena! — celebrated in one of the most beautiful places on Earth, Lake Bled, Slovenia.",
+      "mapLinks": [
+        { "label": "Day 10 Map", "url": "https://www.google.com/maps/dir/Lake+Bled/Vintgar+Gorge/Savica+Waterfall/Radovljica,+Slovenia/Lake+Bled" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "<strong>10:00am — Vintgar Gorge</strong> (pre-booked timed entry) · 1.6-mile boardwalk over blue-green water (~1.5hrs)",
+            "Drive 30 min → <strong>Savica Waterfall</strong> (78m cascade, 558 steps, ~1.5hrs)",
+            "<strong>Radovljica old town</strong> — medieval town, gingerbread workshop, beekeeping museum (~1hr)",
+            "Back to Bled for overnight"
+          ]
+        },
+        {
+          "heading": "🎂 Birthday Extras",
+          "items": [
+            "<strong>Bled cream cake</strong> at Park Café — the iconic local dessert, perfect as a birthday treat!",
+            "<strong>Pletna boat to Bled Island</strong> — traditional hand-rowed wooden boat, ring the wishing bell",
+            "<strong>Special birthday dinner</strong> lakeside — try Vila Bled or Restavracija Belvedere"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ Vintgar Gorge · Invoice PE01-BL0I-808 · €40 · 10:00am entry Jun 29" }
+      ],
+      "summary": { "drive": "~30 mi", "time": "~1h 00m", "from": "Lake Bled 🇸🇮", "to": "Pr' Matjon, Lake Bled 🇸🇮", "highlights": "Vintgar Gorge · Savica Waterfall · Radovljica · Pletna boat · Veena's birthday dinner 🎉",
+        "bookings": [{ "status": "booked", "text": "✓ Vintgar entry · PE01-BL0I-808 · 10:00am" }] }
+    },
+    {
+      "dayLabel": "11",
+      "date": "Jun 30",
+      "title": "Drive → Dolomites via Lagazuoi",
+      "meta": "Jun 30 · Bled → Außervillgraten",
+      "flag": "🇮🇹",
+      "mapLinks": [
+        { "label": "Day 11 Map", "url": "https://www.google.com/maps/dir/Lake+Bled/Passo+Falzarego/Lagazuoi+Cable+Car/Au%C3%9Fervillgraten,+Austria/Lago+di+Braies,+Italy" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Early checkout (10:30am) · drive west via <strong>Passo Falzarego</strong> (allow ~3hrs including photo stops)",
+            "<strong>Lagazuoi cable car</strong> (3-min ride to 2,752m · WWI military tunnels with headlamps · ~1.5hrs)",
+            "Continue to Außervillgraten · ⚠️ Total drive ~3hrs + Lagazuoi ~2hrs = <strong>check in ~6pm</strong>",
+            "Late afternoon: drive 25 min to <strong>Lago di Braies</strong> — or save for sunrise Day 12"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "booking", "text": "✓ Das Auss.Zeit · Expedia #72072265941383 · 10.0★" },
+        { "type": "alarm",   "text": "✅ Braies parking: No booking needed. Arrive before 9:30am to drive directly to lake." }
+      ],
+      "summary": { "drive": "~138 mi", "time": "3h 12m +Lagazuoi", "from": "Lake Bled 🇸🇮", "to": "Das Auss.Zeit, Außervillgraten 🇦🇹", "highlights": "Passo Falzarego · Lagazuoi cable car + WWI tunnels · Lago di Braies",
+        "bookings": [{ "status": "booked", "text": "✓ Das Auss.Zeit" }, { "status": "booked", "text": "✓ No booking needed · arrive by 9:30am" }] }
+    },
+    {
+      "dayLabel": "12–13",
+      "date": "Jul 1–2",
+      "title": "Dolomites ⭐ Tre Cime + Cinque Torri",
+      "meta": "Jul 1–2 · Außervillgraten base",
+      "flag": "🇮🇹",
+      "mapLinks": [
+        { "label": "Day 12 Map", "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten/Lago+di+Braies/Misurina/Tre+Cime+di+Lavaredo/Au%C3%9Fervillgraten" },
+        { "label": "Day 13 Map", "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten/Cinque+Torri,+Cortina+d'Ampezzo/Cortina+d'Ampezzo/Au%C3%9Fervillgraten" }
+      ],
+      "sections": [
+        {
+          "heading": "Day 12 — Tre Cime di Lavaredo",
+          "items": [
+            "Optional <strong>Lago di Braies sunrise</strong> — leave 5:00am · arrive ~6am · magical reflections · back by 8am",
+            "<strong>Tre Cime di Lavaredo loop</strong> (~4.5 miles) — always take Misurina shuttle (€10, fills by 9am)"
+          ]
+        },
+        {
+          "heading": "Day 13 — Cinque Torri",
+          "items": [
+            "<strong>Cinque Torri hike</strong> (~3 miles) — five dramatic rock towers, WWI trenches, chairlift up",
+            "Long Italian lunch in <strong>Cortina d'Ampezzo</strong>"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "laundry", "text": "🧺 Laundry #3 — self-service laundromat in Cortina d'Ampezzo, Jul 2 afternoon" }
+      ],
+      "summary": { "drive": "~40 mi", "time": "~1h 00m", "from": "Außervillgraten 🇮🇹", "to": "Das Auss.Zeit, Außervillgraten 🇦🇹", "highlights": "Lago di Braies sunrise · Tre Cime di Lavaredo loop (4.5 miles)",
+        "bookings": [{ "status": "booked", "text": "✓ No booking needed · arrive early AM" }] }
+    },
+    {
+      "dayLabel": "14",
+      "date": "Jul 3",
+      "title": "Innsbruck → Dornbirn",
+      "meta": "Jul 3 · Außervillgraten → Dornbirn",
+      "flag": "🇦🇹",
+      "warning": true,
+      "mapLinks": [
+        { "label": "Day 14 Map", "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten/Innsbruck,+Austria/Dornbirn,+Austria" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Checkout 10am · drive <strong>~1hr 30min</strong> → <strong>Innsbruck</strong>",
+            "<strong>Nordkette cable car</strong> first — up to 2,300m, panoramic Alps views (~2hrs) · weather-dependent, go first",
+            "<strong>Innsbruck old town</strong> — Golden Roof, Maria-Theresien-Strasse, Tyrolean dinner",
+            "Drive <strong>~1hr 30min</strong> west → <strong>Dornbirn</strong> · check in ~5:30pm",
+            "🧺 <strong>Laundry #4</strong> — hotel laundry service at Vienna House Martinspark"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "laundry",  "text": "👕 Laundry #4 — self-service laundromat in Dornbirn evening" },
+        { "type": "booking",  "text": "✓ Vienna House Martinspark · Expedia #72072266618761" }
+      ],
+      "summary": { "drive": "~130 mi", "time": "3h 00m", "heavy": true, "from": "Außervillgraten 🇦🇹", "to": "Vienna House Martinspark, Dornbirn 🇦🇹", "highlights": "Nordkette cable car (2,300m) · Innsbruck Golden Roof · Old town · Drive to Dornbirn",
+        "bookings": [{ "status": "booked", "text": "✓ Vienna House" }] }
+    },
+    {
+      "dayLabel": "15",
+      "date": "Jul 4",
+      "title": "Liechtenstein → Rhine Falls → Zurich",
+      "meta": "Jul 4 · Dornbirn → Zurich",
+      "flag": "🇱🇮🇨🇭",
+      "mapLinks": [
+        { "label": "Day 15 Map", "url": "https://www.google.com/maps/dir/Dornbirn,+Austria/Vaduz,+Liechtenstein/Rhine+Falls,+Schaffhausen/Zurich,+Switzerland" }
+      ],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Leave 9am · drive <strong>~25 min</strong> → <strong>Vaduz, Liechtenstein</strong> 🇱🇮",
+            "Vaduz Castle viewpoint · passport stamp at tourist office (€3 — the girls will love this!)",
+            "Drive ~45 min → <strong>Rhine Falls</strong> — take the boat to the central rock (~5 CHF)",
+            "Drive <strong>~30 min</strong> → <strong>Zurich</strong> — Altstadt, Lake Zurich, Grossmünster, Bahnhofstrasse · dinner",
+            "Overnight near ZRH airport — <strong>Radisson Blu</strong> or <strong>Hyatt Place</strong> (both walkable to terminal)"
+          ]
+        }
+      ],
+      "tags": [
+        { "type": "alarm", "text": "🏨 Book Zurich Airport hotel Jul 4 · Radisson Blu ZRH or Hyatt Place · walkable to terminal" },
+        { "type": "alarm", "text": "⏰ Set alarm 5:30am Jul 5" }
+      ],
+      "summary": { "drive": "~86 mi", "time": "1h 40m", "from": "Dornbirn 🇦🇹", "to": "Zurich Airport Hotel 🇨🇭", "highlights": "Vaduz passport stamp 🇱🇮 · Rhine Falls boat · Zurich Altstadt · Lake Zurich",
+        "bookings": [{ "status": "pending", "text": "⏳ ZRH hotel" }] }
+    },
+    {
+      "dayLabel": "16",
+      "date": "Jul 5",
+      "title": "Fly Home",
+      "meta": "Jul 5 · ZRH → MCO",
+      "flag": "✈️",
+      "mapLinks": [],
+      "sections": [
+        {
+          "heading": null,
+          "items": [
+            "Return <strong>Hertz</strong> car at ZRH ~6:30am · drop-off deadline 7:00am · Hertz desk in Arrivals/Ground Transport level · Conf. L5350959316",
+            "Depart <strong>7:55am</strong> FI571/FI689 via Reykjavík → Orlando MCO <strong>8:50pm</strong>"
+          ]
+        }
+      ],
+      "tags": [],
+      "summary": { "drive": "—", "time": "—", "from": "Zurich ZRH 🇨🇭", "to": "✈ Home — Orlando MCO", "highlights": "Hertz drop-off 7am · Depart 7:55am FI571 via KEF → MCO 8:50pm",
+        "bookings": [{ "status": "booked", "text": "✓ Hertz drop-off" }] }
+    }
+  ],
+  "checklist": [
+    { "id": "flights",    "label": "Icelandair flights × 4",              "status": "done",    "ref": "Ref A77762 · $4,087.92",                              "deadline": null,          "link": null },
+    { "id": "gondola",    "label": "Grindelwald gondola — Jun 23",         "status": "done",    "ref": "Booking #238070",                                     "deadline": null,          "link": null },
+    { "id": "kopavogur",  "label": "Cancel Kópavogur booking",             "status": "done",    "ref": "Done",                                                "deadline": null,          "link": null },
+    { "id": "passports",  "label": "Check 4 passports (valid Oct 2026+)",  "status": "done",    "ref": "Done",                                                "deadline": null,          "link": null },
+    { "id": "bank",       "label": "Notify bank of travel dates",          "status": "done",    "ref": "Done",                                                "deadline": null,          "link": null },
+    { "id": "vintgar",    "label": "🎟 Vintgar Gorge timed entry — Jun 29","status": "done",    "ref": "Invoice PE01-BL0I-808 · €40 · 10:00am entry",         "deadline": null,          "link": null },
+    { "id": "zurich",     "label": "Zurich / Airport — Jul 4–5",           "status": "pending", "ref": null,                                                  "deadline": "When ready",  "link": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-zurich-airport" },
+    { "id": "konigssee",  "label": "⛵ Königssee boat — Jun 24",           "status": "pending", "ref": null,                                                  "deadline": "Book ASAP",   "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/" },
+    { "id": "oeschinen",  "label": "🏔 Oeschinensee boarding pass slot",   "status": "pending", "ref": null,                                                  "deadline": "Confirm #238070", "link": "https://oeschinensee.skiperformance.com/en/store" },
+    { "id": "vignette",   "label": "🇦🇹 Austrian digital vignette",        "status": "urgent",  "ref": null,                                                  "deadline": "Buy by Jun 6", "link": "https://www.asfinag.at" },
+    { "id": "insurance",  "label": "🛡 Travel insurance × 4",              "status": "pending", "ref": null,                                                  "deadline": "By May 15",   "link": null },
+    { "id": "hertz",      "label": "🚗 Confirm Italy + Slovenia cross-border at Hertz ZRH", "status": "pending", "ref": null,                               "deadline": "At pickup Jun 22","link": null }
+  ],
+  "budget": [
+    { "cat": "Flights ✅",               "amount": "$4,088",        "confirmed": true },
+    { "cat": "Accommodation — 9 nights ✅","amount": "$2,888",       "confirmed": true },
+    { "cat": "Accommodation — Zurich ⏳", "amount": "~$200 est.",    "confirmed": false },
+    { "cat": "Car Rentals ✅",            "amount": "$1,182",        "confirmed": true },
+    { "cat": "Food & Drinks",            "amount": "$1,500–$2,200", "confirmed": false },
+    { "cat": "Activities & Entry Fees",  "amount": "$950–$1,250",   "confirmed": false },
+    { "cat": "Fuel, Tolls & Misc",       "amount": "$850–$1,150",   "confirmed": false }
+  ],
+  "budgetSummary": { "confirmed": "$7,958", "estimated": "~$11,500–$13,600" },
+  "accommodationBreakdown": [
+    { "property": "Guesthouse 77, Eyrarbakki 🇮🇸 · Night 1",            "paid": "$212.37" },
+    { "property": "BergOne, Ytri-Njarðvík 🇮🇸 · Night 2",               "paid": "$263.98" },
+    { "property": "Tiny House Diemtigtal, Oey 🇨🇭 · Night 3",           "paid": "$255.92" },
+    { "property": "Escape by Landhaus Lindenberg, Buchloe 🇩🇪 · Night 4","paid": "$202 ✅ #6026325459" },
+    { "property": "Wurznwirt, Schneizlreuth 🇩🇪",                        "paid": "$156.88" },
+    { "property": "HOMEBOUND Apartments, Bad Goisern 🇦🇹",               "paid": "$429.83" },
+    { "property": "Pr' Matjon Pension, Bled 🇸🇮",                        "paid": "$467.57" },
+    { "property": "Das Auss.Zeit, Außervillgraten 🇦🇹",                  "paid": "€515.38 (~$562)" },
+    { "property": "Vienna House Martinspark, Dornbirn 🇦🇹",              "paid": "€162.00 (~$177)" },
+    { "property": "Zurich / Airport 🇨🇭",                                "paid": "⏳ ~$200 est." }
+  ],
+  "cash": [
+    { "country": "🇮🇸 Iceland",      "currency": "ISK", "days": "1–2",       "bring": "~$30",  "for": "Snacks, tips" },
+    { "country": "🇨🇭 Switzerland",  "currency": "CHF", "days": "3–4, 15–16","bring": "~$150", "for": "Hut lunches, Rhine Falls boat, laundromat, Nordkette" },
+    { "country": "🇩🇪 Germany",      "currency": "EUR", "days": "5",         "bring": "~$30",  "for": "Wimbachklamm €4/person" },
+    { "country": "🇦🇹 Austria",      "currency": "EUR", "days": "6–8, 11–14","bring": "~$200", "for": "Grossglockner toll €45, Liechtensteinklamm, gorge entries" },
+    { "country": "🇸🇮 Slovenia",     "currency": "EUR", "days": "8–10",      "bring": "~$80",  "for": "Vintgar, Vogel cable car, Bled Castle" },
+    { "country": "🇮🇹 Italy",        "currency": "EUR", "days": "11–13",     "bring": "~$100", "for": "Lagazuoi, Tre Cime shuttle, Cinque Torri" },
+    { "country": "🇱🇮 Liechtenstein","currency": "CHF", "days": "15",        "bring": "—",     "for": "Passport stamp €3 (use CHF)" }
+  ],
+  "cashTotal": { "amount": "~$590", "breakdown": "~$385 EUR + ~$150 CHF + ~$30 ISK" },
+  "reminders": [
+    { "icon": "🧥", "text": "Bring <strong>waterproof jackets</strong> for Iceland — especially Seljalandsfoss (walk behind the falls)" },
+    { "icon": "😴", "text": "Late June Iceland = 24hr daylight — bring <strong>eye masks</strong>" },
+    { "icon": "🏔️", "text": "<strong>Grossglockner toll €45/car</strong> — pack warm layers at 2,504m even in summer" },
+    { "icon": "🚌", "text": "<strong>Tre Cime</strong>: always take Misurina shuttle (€10), fills by 9am" },
+    { "icon": "⏰", "text": "<strong>Hallstatt</strong>: arrive before 9am, crowds arrive fast" },
+    { "icon": "🌤️", "text": "<strong>Nordkette Innsbruck</strong>: weather-dependent — go first before old town" },
+    { "icon": "🛂", "text": "<strong>ETIAS</strong> not required — launches Q4 2026 after your return" },
+    { "icon": "🏷️", "text": "<strong>Slovenia Dars e-Vignette</strong> — buy at evinjeta.dars.si before crossing. Automated cameras, fine €300+ if missing" },
+    { "icon": "🇦🇹", "text": "<strong>Austrian digital vignette</strong> — buy at <a href='https://www.asfinag.at' style='color:inherit'>asfinag.at</a> by <strong>June 6</strong> (18-day waiting period before Jun 24 entry)" },
+    { "icon": "🏨", "text": "<strong>Zurich Airport hotel</strong> still needed (Jul 4–5). Radisson Blu ZRH is inside the terminal — walkable at 5am. Worth the extra $50 vs a 4:30am shuttle." },
+    { "icon": "🍳", "text": "Use the <strong>HOMEBOUND</strong> (Bad Goisern) and <strong>Das Auss.Zeit</strong> (Außervillgraten) kitchens for dinners — a single restaurant dinner in Switzerland for 4 easily hits $180" },
+    { "icon": "🏰", "text": "<strong>Liechtenstein passport stamp</strong> €3 at Vaduz tourist office — worth every cent!" }
+  ]
+}
