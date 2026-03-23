@@ -60,7 +60,7 @@
       "flag": "🇮🇸",
       "mapLinks": [
         { "label": "Day 1 Map", "url": "https://www.google.com/maps/dir/Keflavik+Airport/Reykjanes+Lighthouse/Kerid+Crater/Geysir/Urridafoss/Seljalandsfoss/Skogafoss/Stokkseyri/Eyrarbakki" },
-        { "label": "Day 2 Map — South Coast", "url": "https://www.google.com/maps/dir/Eyrarbakki/Reynisfjara+Black+Sand+Beach/Dyrhólaey/Jokulsarlon+Glacier+Lagoon/Diamond+Beach/Ytri-Njarðvík" }
+        { "label": "Day 2 Map — South Coast", "url": "https://www.google.com/maps/dir/Eyrarbakki/Reynisfjara+Black+Sand+Beach/Dyrholaey/Vik+Iceland/Gigjagja+Yoda+Cave/Fjadrargljufur+Canyon/Kvernufoss+Waterfall/Ytri-Njarðvík" }
       ],
       "sections": [
         {
@@ -81,24 +81,32 @@
           ]
         },
         {
-          "heading": "Day 2 — South Coast East + Glacier Lagoon",
+          "heading": "Day 2 — South Coast Full Push",
           "items": [
-            "Leave early ~7am — beat the tour buses to Reynisfjara",
-            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, powerful waves · early morning = almost empty and extraordinary light (~1hr)",
-            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over the black sand coast and Eyjafjallajökull · 5 min drive from Reynisfjara (~30 min)",
-            "Drive ~2hrs east → <strong>Jökulsárlón Glacier Lagoon</strong> — icebergs calving off the glacier in electric-blue water · take the <strong>amphibian boat tour</strong> (~40 min, pre-book at glacierlagoon.is) · kids absolutely love it",
-            "<strong>Diamond Beach</strong> — icebergs washed up on black sand · 2 min walk from Jökulsárlón · looks completely unreal",
-            "Drive ~2.5hrs back west toward <strong>BergOne, Ytri-Njarðvík</strong> — arrive late afternoon ✅"
+            "Leave Eyrarbakki <strong>7:00am</strong> — beat the tour buses",
+            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, Reynisdrangar · early morning = almost empty and extraordinary light · head to the lower Lágey area for puffin spotting (most active before 10am in June!) · ~1hr",
+            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over the black sand coast · 5 min drive from Reynisfjara · ~30 min",
+            "<strong>Vík village</strong> — Iceland's southernmost village · quick coffee stop · iconic red-roofed church viewpoint on the hill · ~20 min",
+            "Drive 15 min east → <strong>Gígjagjá (Yoda Cave)</strong> — massive lava cave at the base of Hjörleifshöfði Mountain · the entrance perfectly silhouettes Yoda's face when standing inside looking out · download GPS beforehand (no tourist signs) · almost no crowds · ~30 min · free",
+            "Drive ~50 min east → <strong>Fjaðrárgljúfur Canyon</strong> — 100m deep, 2km long canyon with twisted moss-covered walls · Game of Thrones dragon canyon · easy 1hr rim walk · far fewer crowds than main South Coast stops · ISK 1000 parking via Parka app",
+            "<strong>Lunch in Kirkjubæjarklaustur</strong> village (~10 min from canyon) · ~45 min",
+            "Drive ~2hrs west back toward Skógar",
+            "<strong>Kvernufoss</strong> — park at Skógar Museum (500 ISK) · 20-min easy walk through a lush gorge · walk BEHIND the waterfall · almost nobody here despite hundreds at Skógafoss next door · bring waterproofs (~45 min)",
+            "Drive ~30 min → <strong>BergOne, Ytri-Njarðvík</strong> — check in ~5pm ✅",
+            "Evening (~6:30pm): drive 20 min to <strong>Reykjanes Peninsula at golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents in warm evening light · completely different from the morning visit on Day 1 · almost nobody here · back by 8:30pm",
+            "Early night — <strong>5:15am alarm</strong> tomorrow for KEF"
           ]
         }
       ],
       "tags": [
         { "type": "alarm",   "text": "⏰ Set alarm 5:15am Jun 22 — drive ~45 min to KEF" },
-        { "type": "alarm",   "text": "🎟 Pre-book Jökulsárlón amphibian boat tour at glacierlagoon.is — fills up in summer" },
+        { "type": "alarm",   "text": "🐦 Puffins at Dyrhólaey — head to the lower Lágey area · most active before 10am in June" },
+        { "type": "alarm",   "text": "📍 Download Yoda Cave GPS before leaving — no tourist signs on site. Search 'Gígjagjá' on Google Maps" },
+        { "type": "alarm",   "text": "💳 Parking apps needed: Parka app for Fjaðrárgljúfur (ISK 1000) and Kvernufoss/Skógar Museum (ISK 500)" },
         { "type": "booking", "text": "✓ Guesthouse 77 · Night 1 · Booking.com · $212.37" },
         { "type": "booking", "text": "✓ BergOne · Night 2 · Booking.com · $263.98" }
       ],
-      "summary": { "drive": "~3.5hrs Day 1 / ~5hrs Day 2", "time": "~14hrs daylight each day", "from": "Reykjavík / KEF 🇮🇸", "to": "Guesthouse 77 → BergOne", "highlights": "Reykjanes · Kerið · Geysir · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Jökulsárlón · Diamond Beach",
+      "summary": { "drive": "~3.5hrs Day 1 / ~4hrs Day 2", "time": "~14hrs daylight each day", "from": "Reykjavík / KEF 🇮🇸", "to": "Guesthouse 77 → BergOne", "highlights": "Reykjanes · Kerið · Geysir · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Kvernufoss · Reykjanes golden hour",
         "bookings": [{ "status": "booked", "text": "✓ Guesthouse 77" }, { "status": "booked", "text": "✓ BergOne" }, { "status": "booked", "text": "✓ Budget car KEF" }] }
     },
     {
