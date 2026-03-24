@@ -119,15 +119,14 @@
   .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 
   /* SUMMARY TABLE */
-  .summary-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 800px; }
-  .summary-table th { background: var(--gold); color: #fff; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 12px; text-align: left; white-space: nowrap; }
-  .summary-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .summary-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 700px; }
+  .summary-table th { background: var(--gold); color: #fff; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 12px; text-align: left; white-space: nowrap; font-size: 11px; }
+  .summary-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
   .summary-table tr:nth-child(odd) td { background: var(--warm); }
   .summary-table tr:nth-child(even) td { background: white; }
-  .summary-table .heavy { color: #c0392b; font-weight: 600; }
   .summary-table .total-row td { background: #2c2c2c; color: #fff; font-weight: 700; }
-  .bk-done    { color: #27ae60; font-weight: 600; font-size: 12px; }
-  .bk-pending { color: #e67e22; font-weight: 600; font-size: 12px; }
+  .bk-done    { color: #27ae60; font-weight: 600; font-size: 11px; }
+  .bk-pending { color: #e67e22; font-weight: 600; font-size: 11px; }
 
   /* FOOTER */
   footer { background: var(--ink); color: rgba(250,248,243,0.4); text-align: center; padding: 32px; margin-top: 80px; font-size: 12px; letter-spacing: 1px; }
@@ -276,14 +275,24 @@ function renderAccommodation(d) {
   return wrap;
 }
 
-function renderDayCard(day, idx) {
+function renderDayCard(day, idx, subDay) {
+  // subDay: optional {heading, items, mapLinks, tags, dayNum, dayDate}
+  // if provided, render a single sub-day panel within a combined card
+  const useSubDay = !!subDay;
+  const label = useSubDay ? subDay.dayNum : day.dayLabel;
+  const title = useSubDay ? subDay.heading : day.title;
+  const meta  = useSubDay ? subDay.dayDate : day.meta;
+  const mapLinks = useSubDay ? subDay.mapLinks : day.mapLinks;
+  const sections = useSubDay ? [{heading:null, items:subDay.items}] : day.sections;
+  const tags = useSubDay ? subDay.tags : day.tags;
+
   const card = div('day-card' + (idx === 0 ? ' open' : ''));
   const header = div('day-header');
   header.addEventListener('click', () => card.classList.toggle('open'));
-  header.appendChild(div('day-num', day.dayLabel));
+  header.appendChild(div('day-num', label));
   const info = div('day-info');
-  info.appendChild(div('day-title', day.title));
-  info.appendChild(div('day-meta', day.meta));
+  info.appendChild(div('day-title', title));
+  info.appendChild(div('day-meta', meta));
   header.appendChild(info);
   header.appendChild(h('div', {class:'day-flag'}, day.flag));
   header.appendChild(div('day-toggle', '▾'));
@@ -291,24 +300,35 @@ function renderDayCard(day, idx) {
 
   const body = div('day-body');
 
-  if (day.birthday) {
+  if (!useSubDay && day.birthday) {
     body.appendChild(h('div', {class:'birthday-banner', html: day.birthday}));
   }
 
-  day.mapLinks.forEach(ml => {
-    body.appendChild(h('a', {class:'day-map-link', href: ml.url, target:'_blank'}, '📍 ' + ml.label));
-  });
+  // Map links — compact, inline
+  if (mapLinks && mapLinks.length) {
+    const mapRow = h('div', {style:'margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;'});
+    mapLinks.forEach(ml => {
+      mapRow.appendChild(h('a', {class:'day-map-link', href: ml.url, target:'_blank'}, '📍 ' + ml.label));
+    });
+    body.appendChild(mapRow);
+  }
 
-  day.sections.forEach(sec => {
-    if (sec.heading) body.appendChild(h('p', {class:'sec-heading'}, sec.heading));
+  // Sections — compact bullet list, no heading if only one section
+  sections.forEach((sec, si) => {
+    if (sec.heading && sections.length > 1) {
+      body.appendChild(h('p', {class:'sec-heading'}, sec.heading));
+    }
     const ul = h('ul');
-    sec.items.forEach(item => ul.appendChild(h('li', {html: item})));
+    sec.items.forEach(item => {
+      // Strip long parenthetical timings to keep items concise
+      ul.appendChild(h('li', {html: item}));
+    });
     body.appendChild(ul);
   });
 
-  if (day.tags.length) {
-    const tagWrap = h('div', {style:'margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;'});
-    day.tags.forEach(t => tagWrap.appendChild(tagEl(t)));
+  if (tags && tags.length) {
+    const tagWrap = h('div', {style:'margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;'});
+    tags.forEach(t => tagWrap.appendChild(tagEl(t)));
     body.appendChild(tagWrap);
   }
 
@@ -322,38 +342,52 @@ function renderSummaryTable(d) {
   const tableWrap = h('div', {style:'overflow-x:auto;margin-bottom:32px;'});
   const tbl = h('table', {class:'summary-table'});
   const thead = h('thead', {}, h('tr', {},
-    ...['Day','Date','Starting Place','Night Stay','Drive','Time','Highlights','Bookings'].map(t => h('th', {}, t))
+    ...['Day','Date','Highlights','Night Stay','Drive','Bookings'].map(t => h('th', {}, t))
   ));
   tbl.appendChild(thead);
   const tbody = h('tbody');
+
+  // Expand Day 1-2 into two separate rows in the summary table
   d.days.forEach(day => {
     const s = day.summary;
     const heavy = s.heavy;
-    const driveEl = h('td', {style:'text-align:center;' + (heavy ? 'color:#c0392b;font-weight:600;' : 'font-weight:600;')}, s.drive);
-    const timeEl  = h('td', {style:'text-align:center;' + (heavy ? 'color:#c0392b;font-weight:600;' : 'font-weight:600;'), html: s.time.replace(' +', '<br><span style="font-size:11px;color:var(--slate);">+') + (s.time.includes('+') ? '</span>' : '')});
-    const bkEl = h('td', {style:'font-size:12px;line-height:1.6;'});
+
+    if (day.dayLabel === '1–2' && day.sections.length >= 2) {
+      // Split into Day 1 and Day 2 rows
+      const rows = [
+        { num: '1', date: 'Jun 20', highlights: 'Reykjanes · Kerið · Geysir · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Stokkseyri', to: 'Guesthouse 77, Eyrarbakki', drive: '~3.5hrs', bk: [{status:'booked',text:'✓ Guesthouse 77'},{status:'booked',text:'✓ Budget car KEF'}] },
+        { num: '2', date: 'Jun 21', highlights: 'Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Kvernufoss · Reykjanes golden hour', to: 'BergOne, Ytri-Njarðvík', drive: '~4hrs', bk: [{status:'booked',text:'✓ BergOne'}] },
+      ];
+      rows.forEach((r, ri) => {
+        const bkEl = h('td', {style:'font-size:12px;line-height:1.7;'});
+        r.bk.forEach(b => bkEl.appendChild(h('span', {class:'bk-done', style:'display:block'}, b.text)));
+        tbody.appendChild(h('tr', {},
+          h('td', {style:'font-weight:700;white-space:nowrap'}, r.num),
+          h('td', {style:'white-space:nowrap;color:var(--slate);font-size:12px'}, r.date),
+          h('td', {style:'font-size:13px;'}, r.highlights),
+          h('td', {style:'font-size:12px;color:var(--slate)'}, r.to),
+          h('td', {style:'text-align:center;font-size:12px;color:var(--slate)'}, r.drive),
+          bkEl
+        ));
+      });
+      return;
+    }
+
+    const bkEl = h('td', {style:'font-size:12px;line-height:1.7;'});
     (s.bookings||[]).forEach(b => {
       bkEl.appendChild(h('span', {class: b.status==='booked'?'bk-done':'bk-pending', style:'display:block'}, b.text));
     });
-    const tr = h('tr', {},
+    const driveStyle = 'text-align:center;font-size:12px;' + (heavy ? 'color:#c0392b;font-weight:600;' : 'color:var(--slate);');
+    tbody.appendChild(h('tr', {},
       h('td', {style:'font-weight:700;white-space:nowrap'}, (day.warning?'⚠️ ':'')+day.dayLabel),
-      h('td', {style:'white-space:nowrap'}, day.date),
-      h('td', {}, s.from),
-      h('td', {}, s.to),
-      driveEl, timeEl,
-      h('td', {html: s.highlights}),
+      h('td', {style:'white-space:nowrap;color:var(--slate);font-size:12px'}, day.date),
+      h('td', {style:'font-size:13px;', html: s.highlights}),
+      h('td', {style:'font-size:12px;color:var(--slate)'}, s.to),
+      h('td', {style:driveStyle}, s.drive),
       bkEl
-    );
-    tbody.appendChild(tr);
+    ));
   });
-  // Total row
-  const totalRow = h('tr', {class:'total-row'},
-    h('td', {colspan:'5', style:'text-align:right;'}, 'Total Driving (Days 3–15)'),
-    h('td', {style:'text-align:center;'}, '~1,135 mi'),
-    h('td', {style:'text-align:center;'}, '~24h 56m'),
-    h('td', {style:'font-size:11px;color:#aaa;'}, '⚠️ = heavy driving days · red = 300+ mi or 5+ hrs')
-  );
-  tbody.appendChild(totalRow);
+
   tbl.appendChild(tbody);
   tableWrap.appendChild(tbl);
   wrap.appendChild(tableWrap);
@@ -475,7 +509,30 @@ async function init() {
     container.appendChild(renderSummaryTable(d));
 
     const daysGrid = div('days-grid');
-    d.days.forEach((day, i) => daysGrid.appendChild(renderDayCard(day, i)));
+    let cardIdx = 0;
+    d.days.forEach(day => {
+      if (day.dayLabel === '1–2' && day.sections.length >= 2) {
+        // Split into two separate day cards
+        const day1 = {
+          dayLabel: '1', date: 'Jun 20', title: 'Reykjanes + Geysir + South Coast',
+          meta: 'Jun 20 · Eyrarbakki base', flag: day.flag, birthday: null,
+          mapLinks: [day.mapLinks[0]],
+          sections: [day.sections[0]],
+          tags: day.tags.filter(t => !t.text.includes('BergOne') && !t.text.includes('glacierlagoon') && !t.text.includes('Puffin') && !t.text.includes('Yoda') && !t.text.includes('Parka'))
+        };
+        const day2 = {
+          dayLabel: '2', date: 'Jun 21', title: 'South Coast Full Push + Reykjanes Golden Hour',
+          meta: 'Jun 21 · Back at BergOne by 9pm', flag: day.flag, birthday: null,
+          mapLinks: day.mapLinks.slice(1),
+          sections: [day.sections[1]],
+          tags: day.tags.filter(t => !t.text.includes('Guesthouse 77') && !t.text.includes('alarm 5:15'))
+        };
+        daysGrid.appendChild(renderDayCard(day1, cardIdx++));
+        daysGrid.appendChild(renderDayCard(day2, cardIdx++));
+      } else {
+        daysGrid.appendChild(renderDayCard(day, cardIdx++));
+      }
+    });
     container.appendChild(daysGrid);
 
     container.appendChild(renderChecklist(d));
