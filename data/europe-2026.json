@@ -60,7 +60,7 @@
       "flag": "🇮🇸",
       "mapLinks": [
         { "label": "Day 1 Map", "url": "https://www.google.com/maps/dir/Keflavik+Airport/Kerid+Crater/Geysir/Gullfoss/Urridafoss/Seljalandsfoss/Skogafoss/Knarrarosviti+Lighthouse+Stokkseyri/Eyrarbakki" },
-        { "label": "Day 2 Map — South Coast", "url": "https://www.google.com/maps/dir/Eyrarbakki/Reynisfjara+Black+Sand+Beach/Dyrholaey/Vik+Iceland/Gigjagja+Yoda+Cave/Fjadrargljufur+Canyon/Solheimajokull+Glacier/Kvernufoss+Waterfall/Ytri-Njarðvík" }
+        { "label": "Day 2 Map — South Coast", "url": "https://www.google.com/maps/dir/Eyrarbakki/Dyrholaey/Reynisfjara+Black+Sand+Beach/Vik+Iceland/Gigjagja+Yoda+Cave/Fjadrargljufur+Canyon/Kvernufoss+Waterfall/Ytri-Njarðvík" }
       ],
       "sections": [
         {
@@ -83,16 +83,15 @@
           "heading": "Day 2 — South Coast Full Push",
           "items": [
             "Leave Eyrarbakki <strong>7:00am</strong> — beat the tour buses",
-            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, Reynisdrangar · early morning = almost empty · head to lower Lágey area for puffins (most active before 10am!) · <strong>8:00am</strong> (~1hr)",
-            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint · 5 min drive · <strong>9:15am</strong> (~30 min)",
+            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over the black sand coast and sea arch · puffins nesting in June! head to the lower Lágey area (most active before 10am) · <strong>8:00am</strong> (~30 min)",
+            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, Reynisdrangar · early morning = almost empty and extraordinary light · <strong>8:45am</strong> (~1hr)",
             "<strong>Vík village</strong> — quick coffee · red-roofed church viewpoint · <strong>10:00am</strong> (~20 min)",
-            "Drive <strong>15 min east</strong> → <strong>Gígjagjá (Yoda Cave)</strong> — lava cave whose entrance silhouettes Yoda · download GPS first, no tourist signs · almost no crowds · <strong>10:30am</strong> (~30 min · free)",
-            "Drive <strong>50 min east</strong> → <strong>Fjaðrárgljúfur Canyon</strong> — 100m deep moss-covered canyon · Game of Thrones dragon location · easy 1hr rim walk · <strong>11:15am</strong> (ISK 1000 Parka app)",
+            "Drive <strong>15 min east</strong> → <strong>Gígjagjá (Yoda Cave)</strong> — lava cave whose entrance silhouettes Yoda · download GPS first, no signs · almost no crowds · <strong>10:30am</strong> (~30 min · free)",
+            "Drive <strong>50 min east</strong> → <strong>Fjaðrárgljúfur Canyon</strong> — 100m deep moss-covered canyon · Game of Thrones Season 8 Ep 1 dragon flight location · easy 1hr rim walk · <strong>11:15am</strong> (ISK 1000 Parka app)",
             "<strong>Lunch in Kirkjubæjarklaustur</strong> — 10 min from canyon · <strong>12:30pm</strong> (~45 min)",
             "Drive <strong>~2hrs west</strong> back toward Skógar · <strong>1:30pm</strong>",
-            "<strong>Sólheimajökull Glacier</strong> — 20 min walk from car park to the glacier base · glacier lagoon with floating icebergs · alien black ash streaked through ancient ice · no guide needed just to view · <strong>3:00pm</strong> (~45 min · ISK 750 parking)",
-            "<strong>Kvernufoss</strong> — 15 min from Sólheimajökull · park at Skógar Museum · 20-min easy walk · walk BEHIND the waterfall · almost nobody here · <strong>4:00pm</strong> (~45 min · ISK 500 parking)",
-            "Drive <strong>~30 min</strong> → <strong>BergOne, Ytri-Njarðvík</strong> — check in · <strong>5:15pm</strong> ✅",
+            "⚠️ <strong>Kvernufoss optional</strong> — park at Skógar Museum · 20-min walk · walk BEHIND the waterfall · almost nobody here · <strong>3:30pm if energy allows</strong> (~45 min · ISK 500) · skip if tired, go straight to BergOne",
+            "Drive <strong>~30 min</strong> → <strong>BergOne, Ytri-Njarðvík</strong> — check in · <strong>~4:30–5:15pm depending on Kvernufoss</strong> ✅",
             "Evening <strong>6:30pm</strong>: drive 20 min → <strong>Reykjanes Peninsula golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents · warm evening light · almost nobody here · back by 8:30pm",
             "Early night — <strong>5:15am alarm</strong> tomorrow for KEF"
           ]
@@ -102,41 +101,42 @@
         { "type": "alarm",   "text": "⏰ Set alarm 5:15am Jun 22 — drive ~45 min to KEF" },
         { "type": "alarm",   "text": "🐦 Puffins at Dyrhólaey — head to lower Lágey area · most active before 10am in June" },
         { "type": "alarm",   "text": "📍 Download Yoda Cave GPS before leaving — no signs on site · search 'Gígjagjá' on Google Maps" },
-        { "type": "alarm",   "text": "💳 Parka app needed: Fjaðrárgljúfur ISK 1000 · Sólheimajökull ISK 750 · Kvernufoss ISK 500" },
+        { "type": "alarm",   "text": "💳 Parka app needed: Fjaðrárgljúfur ISK 1000 · Kvernufoss ISK 500" },
         { "type": "booking", "text": "✓ Guesthouse 77 · Night 1 · Booking.com · $212.37" },
         { "type": "booking", "text": "✓ BergOne · Night 2 · Booking.com · $263.98" }
       ],
-      "summary": { "drive": "~90 mi Day 1 / ~100 mi Day 2", "time": "~14hrs daylight each day", "from": "Reykjavík / KEF 🇮🇸", "to": "Guesthouse 77 → BergOne", "highlights": "Kerið · Geysir · Gullfoss · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Sólheimajökull · Kvernufoss · Reykjanes golden hour",
+      "summary": { "drive": "~90 mi Day 1 / ~95 mi Day 2", "time": "~14hrs daylight each day", "from": "Reykjavík / KEF 🇮🇸", "to": "Guesthouse 77 → BergOne", "highlights": "Kerið · Geysir · Gullfoss · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Kvernufoss · Reykjanes golden hour",
         "bookings": [{ "status": "booked", "text": "✓ Guesthouse 77" }, { "status": "booked", "text": "✓ BergOne" }, { "status": "booked", "text": "✓ Budget car KEF" }] }
     },
     {
       "dayLabel": "3",
       "date": "Jun 22",
-      "title": "Fly → Diemtigtal",
-      "meta": "Jun 22 · ZRH → Thun → Spiez → Diemtigtal",
+      "title": "Fly → Blausee → Diemtigtal",
+      "meta": "Jun 22 · ZRH → Blausee → Diemtigtal",
       "flag": "🇨🇭",
       "mapLinks": [
-        { "label": "Day 3 Map", "url": "https://www.google.com/maps/dir/Zurich+Airport/Thun,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland" }
+        { "label": "Day 3 Map", "url": "https://www.google.com/maps/dir/Zurich+Airport/Blausee+Nature+Park+Kandergrund/Oey,+Diemtigtal,+Switzerland" }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Return Iceland car at KEF · board 7:20am FI568",
-            "Land ZRH 1:05pm · pick up <strong>Hertz rental car</strong> — Hertz desk at <strong>Zurich Airport Terminal (Arrivals Hall)</strong> · Conf. <strong>L5350959316</strong> · Jeep Compass or similar",
-            "Drive <strong>~30 min</strong> → <strong>Thun</strong> — walk the medieval old town · covered bridge over the turquoise Aare · <strong>Thun Castle</strong> viewpoint (free to walk up, ~CHF 10 to enter) · Eiger/Jungfrau backdrop · ~45 min stop",
-            "Drive <strong>~15 min</strong> → <strong>Spiez Castle</strong> — 12th-century castle surrounded by vineyards on Lake Thun · stunning Bernese Alps panorama · CHF 10/adult · ~30 min stop",
-            "Drive <strong>~30 min</strong> → Diemtigtal · check in Tiny House · arrive ~5:30pm ✅",
-            "⚠️ If customs/Hertz takes longer than 45 min, skip Thun and do Spiez only (or go straight to Diemtigtal)"
+            "Return Iceland car at KEF · board <strong>7:20am FI568</strong>",
+            "Land ZRH <strong>1:05pm</strong> · clear Non-Schengen → Schengen passport control · pick up <strong>Hertz rental car</strong> at Arrivals Hall desk · Conf. <strong>L5350959316</strong> · Jeep Compass or similar · allow <strong>60–90 min</strong> for immigration + car pickup",
+            "Depart ZRH <strong>~2:30–3:00pm</strong> · drive <strong>1h 30m, ~95 mi</strong> → <strong>Blausee Nature Park</strong>, Kandergrund",
+            "<strong>Blausee</strong> — crystal-clear deep blue glacial lake in a 20-hectare fairytale forest · walk the lake loop + wooden bridge (~45 min) · glass-bottom boat included in entry · organic trout farm · playground for kids · open until 9pm · CHF 12/adult · CHF 6/child · <strong>arrive ~4:30pm</strong>",
+            "Drive <strong>20 min</strong> → <strong>Tiny House Diemtigtal</strong> · check in · arrive <strong>~6:00pm</strong> ✅",
+            "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow"
           ]
         }
       ],
       "tags": [
         { "type": "booking", "text": "✓ Tiny House im schönen Diemtigtal · Airbnb · $255.92 · Jun 22–23 · 1 night" },
-        { "type": "alarm",   "text": "🎟 Spiez Castle: CHF 10/adult · open May–Oct · no booking needed" },
-        { "type": "alarm",   "text": "🏷 At Hertz pick-up: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Slovenia · inspect car thoroughly before leaving" }
+        { "type": "alarm",   "text": "🏷 At Hertz: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Slovenia · inspect car before leaving" },
+        { "type": "alarm",   "text": "💙 Blausee tickets: buy online at blausee.ch to skip queue · CHF 12 adult / CHF 6 child" },
+        { "type": "alarm",   "text": "⏰ Book Oeschinensee 8:30am slot tonight at oeschinensee.skiperformance.com — fills up fast in summer" }
       ],
-      "summary": { "drive": "~78 mi", "time": "1h 15m +1h 15m stops", "from": "Zurich ZRH 🇨🇭", "to": "Tiny House Diemtigtal", "highlights": "Fly KEF→ZRH · Hertz pickup · Thun old town + castle · Spiez Castle (Lake Thun vineyards) · Diemtigtal",
+      "summary": { "drive": "~95 mi", "time": "1h 30m", "from": "Zurich ZRH 🇨🇭", "to": "Tiny House Diemtigtal", "highlights": "Fly KEF→ZRH · Hertz pickup · Blausee crystal lake + forest walk · Diemtigtal",
         "bookings": [{ "status": "booked", "text": "✓ Diemtigtal Airbnb" }, { "status": "booked", "text": "✓ Hertz ZRH" }] }
     },
     {
@@ -153,50 +153,54 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>7:30am</strong> → drive ~30 min to <strong>Kandersteg</strong>",
-            "🏔 <strong>Oeschinensee</strong> — gondola up to turquoise alpine lake at 1,578m · lake walk + photos (~2hrs)",
-            "Gondola down · drive <strong>~56 min to Grindelwald</strong> · arrive ~11am",
-            "⭐ <strong>Firstbahn gondola</strong> up → First (2,166m) · Cliff Walk (~30 min) · <strong>Bachalpsee lake</strong> hike (~2.5 miles, ~1.5hrs)",
-            "⭐ <strong>First Flyer or First Glider</strong> — peak memory for the kids · book at the top",
-            "⚠️ Leave Grindelwald by <strong>4:30pm</strong> — take gondola down from Bort (8 min, saves 1hr)",
-            "Rösti lunch in Grindelwald · drive <strong>~5hrs to Munich</strong> · arrive ~9:30pm"
+            "Leave Diemtigtal <strong>7:30am</strong> → drive <strong>30 min</strong> → <strong>Kandersteg</strong> · arrive 8:00am",
+            "🏔 <strong>Oeschinensee gondola 8:30am</strong> — first slot · turquoise alpine lake at 1,578m · lake walk + photos · (~2hrs)",
+            "Gondola down <strong>10:30am</strong> · drive <strong>56 min</strong> → <strong>Grindelwald</strong> · arrive ~11:30am",
+            "Grab sandwiches from a bakery in Grindelwald · <strong>Firstbahn gondola</strong> up → First (2,166m)",
+            "<strong>Cliff Walk</strong> at First (~30 min) · then <strong>Bachalpsee lake hike</strong> (~2.5 miles, ~1.5hrs) · eat lunch at the lake with Eiger reflections",
+            "Return to First station · <strong>gondola all the way down to Grindelwald</strong> (25 min · simpler than Bort)",
+            "⚠️ Leave Grindelwald by <strong>3:30pm</strong> · drive <strong>~5hrs</strong> to Munich · arrive <strong>~8:30–9pm</strong>"
           ]
         }
       ],
       "tags": [
-        { "type": "booking", "text": "✓ Gondola Booked · #238070 · 2 adults + 2 children" },
+        { "type": "booking", "text": "✓ Grindelwald Gondola · #238070 · 2 adults + 2 children" },
+        { "type": "alarm",   "text": "⏰ Book Oeschinensee 8:30am slot NOW at oeschinensee.skiperformance.com — slots fill in summer" },
         { "type": "alarm",   "text": "🏨 Escape by Landhaus Lindenberg, Buchloe · Conf #6026325459 · $202 ✅" }
       ],
-      "summary": { "drive": "~317 mi", "time": "6h 40m", "heavy": true, "from": "Diemtigtal 🇨🇭", "to": "Munich 🇩🇪", "highlights": "Oeschinensee gondola · Grindelwald First Cliff Walk · Bachalpsee · First Flyer/Glider",
-        "bookings": [{ "status": "booked", "text": "✓ Landhaus Lindenberg #6026325459" }, { "status": "booked", "text": "✓ Gondola #238070" }, { "status": "pending", "text": "⏳ Oeschinensee slot" }] }
+      "summary": { "drive": "~317 mi", "time": "6h 40m", "heavy": true, "from": "Diemtigtal 🇨🇭", "to": "Munich 🇩🇪", "highlights": "Oeschinensee 8:30am gondola · Grindelwald First Cliff Walk · Bachalpsee · First Flyer/Glider",
+        "bookings": [{ "status": "booked", "text": "✓ Landhaus Lindenberg #6026325459" }, { "status": "booked", "text": "✓ Gondola #238070" }, { "status": "pending", "text": "⏳ Oeschinensee 8:30am slot" }] }
     },
     {
       "dayLabel": "5",
       "date": "Jun 24",
-      "title": "Königssee + Wimbachklamm",
+      "title": "Königssee + Obersee + Wimbachklamm",
       "meta": "Jun 24 · Buchloe → Königssee → Wimbachklamm → Schneizlreuth",
       "flag": "🇩🇪",
       "mapLinks": [
-        { "label": "Day 5 Map", "url": "https://www.google.com/maps/dir/Buchloe,+Germany/Schönau+am+Königssee,+Germany/Ramsau+bei+Berchtesgaden,+Germany/Schneizlreuth,+Germany" }
+        { "label": "Day 5 Map", "url": "https://www.google.com/maps/dir/Buchloe,+Germany/Schoenau+am+Koenigssee,+Germany/Ramsau+bei+Berchtesgaden,+Germany/Schneizlreuth,+Germany" }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave Buchloe <strong>7:30am</strong> → drive <strong>2h 20min, 203km via A8</strong> → Königssee · arrive ~9:50am",
-            "<strong>Königssee electric boat 10:30am</strong> → trumpet echo at St. Bartholomä → <strong>Rothbach Waterfall hike</strong> (~3 miles)",
-            "Lunch at mountain hut · return boat <strong>12:45pm</strong>",
-            "<strong>Wimbachklamm Gorge</strong> (~1 mile, €4/person, open 7am–7pm) — drive <strong>16 min via B305</strong>",
-            "Drive ~10 min → <strong>Wurznwirt, Schneizlreuth</strong> · check in ✅"
+            "Leave Buchloe <strong>7:30am</strong> → drive <strong>~2h 20min, ~126 mi via A8</strong> → Königssee · arrive <strong>~9:00am</strong> · buy tickets at the dock",
+            "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min total · don't get off at St. Bartholomä) · trumpet echo demonstration en route",
+            "At Salet: walk <strong>15 min</strong> → <strong>Obersee lake</strong> — pristine mountain lake with the iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest at 470m) visible towering in the distance · (~45 min at lake)",
+            "Walk back to Salet (15 min) · board boat to <strong>St. Bartholomä</strong> (20 min) · beer garden lunch at the historic hunting lodge restaurant (~45 min)",
+            "Board final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~<strong>1:30pm</strong>",
+            "Drive <strong>16 min via B305</strong> → <strong>Wimbachklamm Gorge</strong> (~1 mile · €4/person · open 7am–7pm) · ~1hr",
+            "Drive <strong>~10 min</strong> → <strong>Wurznwirt, Schneizlreuth</strong> · check in <strong>~3:15pm</strong> ✅"
           ]
         }
       ],
       "tags": [
         { "type": "booking", "text": "✓ Wurznwirt · #72072251742511 · Family Suite" },
-        { "type": "alarm",   "text": "⏰ Book Königssee boat in advance at seenschifffahrt.de — fills up fast in summer" },
-        { "type": "alarm",   "text": "🏷 Austria Vignette: buy digital vignette at asfinag.at at least 18 days before entry (by June 6)" }
+        { "type": "alarm",   "text": "⏰ Book Königssee boat online at seenschifffahrt.de — arrive 9am, depart 9:30am · return ticket to Salet ~€29/adult · €14.50/child" },
+        { "type": "alarm",   "text": "⚠️ Ride boat ALL THE WAY to Salet first — do NOT get off at St. Bartholomä · do St. Bartholomä on the way back" },
+        { "type": "alarm",   "text": "🏷 Austrian vignette: buy digital at asfinag.at at least 18 days before entry (by June 6)" }
       ],
-      "summary": { "drive": "~126 mi", "time": "2h 20m", "from": "Buchloe 🇩🇪", "to": "Wurznwirt, Schneizlreuth 🇩🇪", "highlights": "Königssee electric boat · St. Bartholomä · Rothbach Waterfall · Wimbachklamm gorge",
+      "summary": { "drive": "~126 mi", "time": "2h 20m", "from": "Buchloe 🇩🇪", "to": "Wurznwirt, Schneizlreuth 🇩🇪", "highlights": "Königssee electric boat → Salet → Obersee lake + Röthbach waterfall view · St. Bartholomä lunch · Wimbachklamm gorge",
         "bookings": [{ "status": "booked", "text": "✓ Wurznwirt" }, { "status": "pending", "text": "⏳ Königssee boat" }] }
     },
     {
