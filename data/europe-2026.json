@@ -265,10 +265,6 @@
           "text": "💳 Parka app needed: Fjaðrárgljúfur ISK 1000"
         },
         {
-          "type": "alarm",
-          "text": "⚠️ CANCEL Guesthouse 77, Eyrarbakki (Booking.com · $212.37) — replaced by Room in Skeidflot · cancel before Jun 18 free cancel deadline"
-        },
-        {
           "type": "booking",
           "text": "✓ Room in Skeidflot · Night 1 · Airbnb · $290.36"
         },
@@ -1188,14 +1184,6 @@
       "ref": null,
       "deadline": "At pickup Jun 22",
       "link": null
-    },
-    {
-      "id": "cancel-guesthouse77",
-      "label": "❌ Cancel Guesthouse 77, Eyrarbakki — Booking.com · free cancel by Jun 18",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "By Jun 18",
-      "link": "https://www.booking.com"
     }
   ],
   "budget": [
@@ -1206,7 +1194,7 @@
     },
     {
       "cat": "Accommodation — 9 nights ✅",
-      "amount": "$2,888",
+      "amount": "$2,676",
       "confirmed": true
     },
     {
@@ -1236,7 +1224,7 @@
     }
   ],
   "budgetSummary": {
-    "confirmed": "$7,958",
+    "confirmed": "$7,746",
     "estimated": "~$11,500–$13,600"
   },
   "accommodationBreakdown": [
