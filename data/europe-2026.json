@@ -100,7 +100,7 @@
     {
       "label": "🇮🇸 Iceland — Full Route Map",
       "description": "Days 1–2 · KEF → Golden Circle → South Coast → Reykjanes",
-      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerið+Crater+Lake,+Iceland/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Reynisfjara+Black+Sand+Beach/Fjaðrárgljúfur+Canyon/Ytri-Njarðvík,+Iceland"
+      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerið+Crater+Lake/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Eyrarbakki,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon/Svínafellsjökull/Jökulsárlón+Glacier+Lagoon/Ytri-Njarðvík,+Iceland"
     },
     {
       "label": "🌍 Europe — Full Route Map",
@@ -111,11 +111,11 @@
   "accommodation": [
     {
       "nights": "1",
-      "property": "Guesthouse 77 🇮🇸",
-      "address": "Eyrargata 77, 820 Eyrarbakki, Iceland",
+      "property": "Room in Skeidflot 🇮🇸",
+      "address": "Skeidflot 871, IS, Iceland",
       "dates": "Jun 20–21",
-      "ref": "Booking.com · $212.37",
-      "freeCancel": "Free cancel Jun 18",
+      "ref": "Airbnb · $290.36",
+      "freeCancel": "",
       "status": "booked"
     },
     {
@@ -210,11 +210,11 @@
       "mapLinks": [
         {
           "label": "Day 1 Map — Golden Circle + South Coast",
-          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerid+Crater+Lake,+Iceland/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Skogafoss,+Iceland/Eyrarbakki,+Iceland"
+          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerið+Crater+Lake,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Reynisfjara+Black+Sand+Beach/Vík,+Iceland/Skeidflot+871,+Iceland"
         },
         {
-          "label": "Day 2 Map — South Coast",
-          "url": "https://www.google.com/maps/dir/Eyrarbakki,+Iceland/Dyrhólaey,+Iceland/Reynisfjara+Black+Sand+Beach/Fjaðrárgljúfur+Canyon/Kirkjubæjarklaustur,+Iceland/Ytri-Njarðvík,+Iceland"
+          "label": "Day 2 Map — South Coast + Glacier Lagoon",
+          "url": "https://www.google.com/maps/dir/Skeidflot+871,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon,+Iceland/Kirkjubæjarklaustur,+Iceland/Svínafellsjökull,+Iceland/Jökulsárlón+Glacier+Lagoon/Diamond+Beach+Iceland/Ytri-Njarðvík,+Iceland"
         }
       ],
       "sections": [
@@ -230,24 +230,23 @@
             "Drive <strong>15 min</strong> → <strong>Seljalandsfoss</strong> — walk behind the falls · bring waterproofs! · <strong>6:15pm</strong> (~1hr)",
             "<strong>Gljúfrabúi</strong> — hidden canyon waterfall 5 min walk from Seljalandsfoss · most tour buses skip it · genuinely magical (~30 min)",
             "Drive <strong>20 min</strong> → <strong>Skógafoss</strong> — climb the 527 steps for the top view · evening light is spectacular · <strong>8:15pm</strong> (~45 min)",
-            "Drive <strong>30 min</strong> → <strong>Stokkseyri</strong> — Knarrarósviti lighthouse on the black rocky coast in golden evening light · <strong>9:30pm</strong> (~20 min · free)",
-            "Drive <strong>5 min</strong> → <strong>Guesthouse 77, Eyrarbakki</strong> — check in ✅"
+            "Drive <strong>15 min east</strong> → <strong>Reynisfjara black sand beach</strong> — basalt columns, Reynisdrangar sea stacks · stunning in evening light · (~25 min)",
+            "Drive <strong>10 min</strong> → <strong>Vík village</strong> — red-roofed church viewpoint · quick stop (~15 min)",
+            "Drive <strong>10 min east</strong> → <strong>Room in Skeidflot, Skeidflot 871</strong> — check in <strong>~9:30pm</strong> · hosted by Arnar · Airbnb ✅"
           ]
         },
         {
           "heading": "Day 2 — South Coast Full Push",
           "items": [
-            "Leave Eyrarbakki <strong>7:00am</strong> — beat the tour buses",
-            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over the black sand coast and sea arch · puffins nesting in June! head to the lower Lágey area (most active before 10am) · <strong>8:00am</strong> (~30 min)",
-            "<strong>Reynisfjara black sand beach</strong> — basalt columns, sea stacks, Reynisdrangar · early morning = almost empty and extraordinary light · <strong>8:45am</strong> (~1hr)",
-            "<strong>Vík village</strong> — quick coffee · red-roofed church viewpoint · <strong>10:00am</strong> (~20 min)",
-            "Drive <strong>15 min east</strong> → <strong>Gígjagjá (Yoda Cave)</strong> — lava cave whose entrance silhouettes Yoda · download GPS first, no signs · almost no crowds · <strong>10:30am</strong> (~30 min · free)",
-            "Drive <strong>50 min east</strong> → <strong>Fjaðrárgljúfur Canyon</strong> — 100m deep moss-covered canyon · Game of Thrones Season 8 Ep 1 dragon flight location · easy 1hr rim walk · <strong>11:15am</strong> (ISK 1000 Parka app)",
-            "<strong>Lunch in Kirkjubæjarklaustur</strong> — 10 min from canyon · <strong>12:30pm</strong> (~45 min)",
-            "Drive <strong>~2hrs west</strong> back toward Skógar · <strong>1:30pm</strong>",
-            "⚠️ <strong>Kvernufoss optional</strong> — park at Skógar Museum · 20-min walk · walk BEHIND the waterfall · almost nobody here · <strong>3:30pm if energy allows</strong> (~45 min · ISK 500) · skip if tired, go straight to BergOne",
-            "Drive <strong>~30 min</strong> → <strong>BergOne, Ytri-Njarðvík</strong> — check in · <strong>~4:30–5:15pm depending on Kvernufoss</strong> ✅",
-            "Evening <strong>6:30pm</strong>: drive 20 min → <strong>Reykjanes Peninsula golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents · warm evening light · almost nobody here · back by 8:30pm",
+            "Leave Skeidflot <strong>7:00am</strong> — already deep on the South Coast, 10km from Dyrhólaey",
+            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over black sand coast and sea arch · puffins nesting on Lágey islet in June · head to the lower road for the arch · arrive before 8am · (~30 min)",
+            "Drive <strong>45 min east</strong> → <strong>Fjaðrárgljúfur Canyon</strong> — 100m deep moss-covered canyon · Game of Thrones Season 8 Episode 1 dragon flight location · ISK 1000 Parka fee · walk the full rim (~1.5hrs)",
+            "<strong>Lunch in Kirkjubæjarklaustur</strong> — 10 min from canyon · quick stop ~30 min",
+            "Drive <strong>30 min east</strong> → <strong>Svínafellsjökull Glacier</strong> — 2km side road off Ring Road · 15–20 min walk to viewpoint · deep blue glacial ice + jagged black peaks · Game of Thrones S7 + Interstellar filming location · ⚠️ viewpoint only (rockfall risk advisory) · free · ~45 min total",
+            "Drive <strong>1hr east</strong> → <strong>Jökulsárlón Glacier Lagoon</strong> — floating blue icebergs at the edge of Vatnajökull · walk the lagoon shore · seals basking on the ice · truly otherworldly · (~45 min)",
+            "Cross the road → <strong>Diamond Beach</strong> — ice diamonds scattered across jet-black volcanic sand · every piece unique · constantly changing with the tides · free · (~30 min)",
+            "Drive <strong>~2hrs west</strong> back along Ring Road → <strong>BergOne, Ytri-Njarðvík</strong> · check in <strong>~5:00pm</strong> ✅",
+            "Evening <strong>6:30pm</strong>: drive 20 min → <strong>Reykjanes Peninsula golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents · 24hr June daylight · spectacular late light",
             "Early night — <strong>5:15am alarm</strong> tomorrow for KEF"
           ]
         }
@@ -263,15 +262,15 @@
         },
         {
           "type": "alarm",
-          "text": "📍 Download Yoda Cave GPS before leaving — no signs on site · search 'Gígjagjá' on Google Maps"
+          "text": "💳 Parka app needed: Fjaðrárgljúfur ISK 1000"
         },
         {
           "type": "alarm",
-          "text": "💳 Parka app needed: Fjaðrárgljúfur ISK 1000 · Kvernufoss ISK 500"
+          "text": "⚠️ CANCEL Guesthouse 77, Eyrarbakki (Booking.com · $212.37) — replaced by Room in Skeidflot · cancel before Jun 18 free cancel deadline"
         },
         {
           "type": "booking",
-          "text": "✓ Guesthouse 77 · Night 1 · Booking.com · $212.37"
+          "text": "✓ Room in Skeidflot · Night 1 · Airbnb · $290.36"
         },
         {
           "type": "booking",
@@ -282,12 +281,12 @@
         "drive": "~90 mi Day 1 / ~95 mi Day 2",
         "time": "~14hrs daylight each day",
         "from": "Reykjavík / KEF 🇮🇸",
-        "to": "Guesthouse 77 → BergOne",
-        "highlights": "Kerið · Geysir · Gullfoss · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Kvernufoss · Reykjanes golden hour",
+        "to": "Room in Skeidflot → BergOne",
+        "highlights": "Kerið · Geysir · Seljalandsfoss · Skógafoss · Reynisfjara · Svínafellsjökull · Jökulsárlón Glacier Lagoon · Diamond Beach · Dyrhólaey",
         "bookings": [
           {
             "status": "booked",
-            "text": "✓ Guesthouse 77"
+            "text": "✓ Room in Skeidflot (Airbnb)"
           },
           {
             "status": "booked",
@@ -1189,6 +1188,14 @@
       "ref": null,
       "deadline": "At pickup Jun 22",
       "link": null
+    },
+    {
+      "id": "cancel-guesthouse77",
+      "label": "❌ Cancel Guesthouse 77, Eyrarbakki — Booking.com · free cancel by Jun 18",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "By Jun 18",
+      "link": "https://www.booking.com"
     }
   ],
   "budget": [
@@ -1234,8 +1241,8 @@
   },
   "accommodationBreakdown": [
     {
-      "property": "Guesthouse 77, Eyrarbakki 🇮🇸 · Night 1",
-      "paid": "$212.37"
+      "property": "Room in Skeidflot 🇮🇸 · Night 1",
+      "paid": "$290.36"
     },
     {
       "property": "BergOne, Ytri-Njarðvík 🇮🇸 · Night 2",
@@ -1405,11 +1412,11 @@
       "date": "Jun 20–21",
       "flag": "🇮🇸",
       "from": "Reykjavík / KEF 🇮🇸",
-      "nightStay": "Guesthouse 77 → BergOne",
-      "highlights": "Kerið · Geysir · Gullfoss · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Vík · Yoda Cave · Fjaðrárgljúfur · Kvernufoss · Reykjanes golden hour",
+      "nightStay": "Room in Skeidflot → BergOne",
+      "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara black sand beach · Vík · Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
       "drive": "~90 mi Day 1 / ~95 mi Day 2",
       "driveTime": "~14hrs daylight each day",
-      "bookings": "✓ Guesthouse 77 · ✓ BergOne · ✓ Budget car KEF"
+      "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ BergOne · ✓ Budget car KEF"
     },
     {
       "day": "3",
@@ -1417,7 +1424,7 @@
       "flag": "🇨🇭",
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "Tiny House Diemtigtal",
-      "highlights": "Fly KEF→ZRH · Hertz pickup · Blausee crystal lake + forest walk · Diemtigtal",
+      "highlights": "Fly KEF→ZRH · Hertz pickup · Blausee Nature Park · Tiny House Diemtigtal",
       "drive": "~95 mi",
       "driveTime": "1h 30m",
       "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH"
@@ -1428,7 +1435,7 @@
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Munich 🇩🇪",
-      "highlights": "Oeschinensee 8:30am gondola · Grindelwald First Cliff Walk · Bachalpsee · First Flyer/Glider",
+      "highlights": "Oeschinensee gondola · Grindelwald First · Cliff Walk · Bachalpsee lake hike",
       "drive": "~317 mi",
       "driveTime": "6h 40m",
       "bookings": "✓ Landhaus Lindenberg #6026325459 · ✓ Gondola #238070 · ⏳ Oeschinensee 8:30am slot"
@@ -1439,7 +1446,7 @@
       "flag": "🇩🇪",
       "from": "Buchloe 🇩🇪",
       "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
-      "highlights": "Königssee electric boat → Salet → Obersee lake + Röthbach waterfall view · St. Bartholomä lunch · Wimbachklamm gorge",
+      "highlights": "Königssee electric boat · Salet · Obersee lake · Röthbach Waterfall viewpoint · St. Bartholomä lunch · Wimbachklamm Gorge",
       "drive": "~126 mi",
       "driveTime": "2h 20m",
       "bookings": "✓ Wurznwirt · ⏳ Königssee boat"
@@ -1450,7 +1457,7 @@
       "flag": "🇦🇹",
       "from": "Schneizlreuth 🇩🇪",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
-      "highlights": "Liechtensteinklamm gorge (deepest in Alps) · Hallstatt evening walk",
+      "highlights": "Liechtensteinklamm Gorge (444 stairs) · Hallstatt evening lakeside walk",
       "drive": "~110 mi",
       "driveTime": "2h 40m",
       "bookings": "✓ HOMEBOUND"
@@ -1461,7 +1468,7 @@
       "flag": "🇦🇹",
       "from": "Bad Goisern 🇦🇹",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
-      "highlights": "Hallstatt village · Echern Valley waterfall · Bone House · Roman ruins · Dachstein Krippenstein 5 Fingers + Giant Ice Cave",
+      "highlights": "Hallstatt village · Echern Valley · Waldbachstrub Waterfall · Beinhaus (1,200 painted skulls) · Roman ruins under Dachsteinsport Janu · Dachstein Krippenstein · 5 Fingers viewing platform · Giant Ice Cave",
       "drive": "~25 mi",
       "driveTime": "~45m",
       "bookings": "✓ HOMEBOUND"
@@ -1472,7 +1479,7 @@
       "flag": "🇦🇹🇸🇮",
       "from": "Bad Goisern 🇦🇹",
       "nightStay": "Pr' Matjon, Lake Bled 🇸🇮",
-      "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Pasterze glacier · Lake Bled",
+      "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze (2,571m) · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Lake Bled",
       "drive": "~140 mi",
       "driveTime": "2h 33m +Grossglockner",
       "bookings": "✓ Pr' Matjon"
@@ -1483,7 +1490,7 @@
       "flag": "🇸🇮",
       "from": "Lake Bled 🇸🇮",
       "nightStay": "Pr' Matjon, Lake Bled 🇸🇮",
-      "highlights": "Ojstrica + Mala Osojnica viewpoints · Bled Castle · Mostnica Gorge + Devil's Bridge · Vogel Cable Car + Orlove Glave chairlift",
+      "highlights": "Ojstrica viewpoint · Mala Osojnica viewpoint · Bled Castle · Mostnica Gorge · Devil's Bridge · Vogel Cable Car · Orlove Glave chairlift",
       "drive": "~25 mi",
       "driveTime": "~45m",
       "bookings": "✓ Pr' Matjon · ✓ Vintgar entry · PE01-BL0I-808"
@@ -1494,7 +1501,7 @@
       "flag": "🇸🇮",
       "from": "Lake Bled 🇸🇮",
       "nightStay": "Pr' Matjon, Lake Bled 🇸🇮",
-      "highlights": "Vintgar Gorge + Šum waterfall · King of Triglav return trail · Peričnik Waterfall (walk behind falls) · optional Savica · Radovljica · Pletna boat + wishing bell · Veena's birthday dinner 🎉",
+      "highlights": "Vintgar Gorge · Šum Waterfall · Peričnik Waterfall (walk behind falls) · Radovljica old town · Lectar gingerbread workshop · Pletna boat to Bled Island · wishing bell · Bled cream cake · birthday dinner",
       "drive": "~30 mi",
       "driveTime": "~1h 00m",
       "bookings": "✓ Vintgar entry · PE01-BL0I-808 · 10:00am"
@@ -1505,7 +1512,7 @@
       "flag": "🇮🇹",
       "from": "Lake Bled 🇸🇮",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Passo Falzarego · Lagazuoi cable car · Rifugio panorama · Galleries WWI tunnel descent · Außervillgraten",
+      "highlights": "Passo Falzarego · Lagazuoi cable car · Rifugio Lagazuoi panorama · Galleries of Piccolo Lagazuoi (WWI tunnels)",
       "drive": "~138 mi",
       "driveTime": "3h 12m +Lagazuoi",
       "bookings": "✓ Das Auss.Zeit"
@@ -1516,7 +1523,7 @@
       "flag": "🇮🇹",
       "from": "Außervillgraten 🇮🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Lago di Braies sunrise · Cadini di Misurina viewpoint · Tre Cime loop · WWI caves at Sasso di Sesto",
+      "highlights": "Lago di Braies sunrise · Cadini di Misurina viewpoint · Tre Cime di Lavaredo loop · Rifugio Locatelli · WWI caves at Sasso di Sesto",
       "drive": "~40 mi",
       "driveTime": "~1h 00m",
       "bookings": "✓ Das Auss.Zeit · ⏳ Pre-book Tre Cime shuttle"
@@ -1527,7 +1534,7 @@
       "flag": "🇮🇹",
       "from": "Außervillgraten 🇮🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Thurntaler 2,407m summit · Cinque Torri + WWI trenches · Cortina lunch + laundry · Lago di Sorapis turquoise lake",
+      "highlights": "Thurntaler summit (2,407m) · Cinque Torri · Scoiattoli chairlift · WWI open-air museum · Cortina d'Ampezzo · Lago di Sorapis (turquoise glacial lake)",
       "drive": "~50 mi",
       "driveTime": "~1h 30m",
       "bookings": "✓ Das Auss.Zeit"
@@ -1538,7 +1545,7 @@
       "flag": "🇦🇹",
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Vienna House Martinspark, Dornbirn 🇦🇹",
-      "highlights": "Nordkette 2,334m · Innsbruck Golden Roof · old town · Karren Cable Car over Rhine Valley",
+      "highlights": "Nordkette cable car (2,334m) · Hungerburgbahn · Innsbruck Golden Roof · Maria-Theresien-Strasse · Karren Cable Car (Rhine Valley + Lake Constance)",
       "drive": "~130 mi",
       "driveTime": "3h 10m",
       "bookings": "✓ Vienna House"
@@ -1549,7 +1556,7 @@
       "flag": "🇱🇮🇨🇭",
       "from": "Dornbirn 🇦🇹",
       "nightStay": "Zurich Airport Hotel 🇨🇭",
-      "highlights": "Vaduz Castle viewpoint · passport stamp 🇱🇮 · Schaffhausen Munot Fortress · optional Stein am Rhein · Rhine Falls boat · Lindenhof Hill · Zurich Altstadt · Zeughauskeller dinner",
+      "highlights": "Vaduz Castle viewpoint · Liechtenstein passport stamp · Schaffhausen Munot Fortress · Stein am Rhein (optional) · Rhine Falls boat · Lindenhof Hill · Zurich Altstadt · Grossmünster · Fraumünster (Chagall windows) · Lake Zurich promenade · Zeughauskeller dinner",
       "drive": "~101 mi",
       "driveTime": "2h 30m",
       "bookings": "⏳ ZRH hotel · Radisson Blu ZRH"
@@ -1560,7 +1567,7 @@
       "flag": "✈️",
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "✈ Home — Orlando MCO",
-      "highlights": "Hertz drop-off 7am · Depart 7:55am FI571 via KEF → MCO 8:50pm",
+      "highlights": "Hertz drop-off ZRH · Fly FI571 via KEF → Orlando MCO",
       "drive": "—",
       "driveTime": "—",
       "bookings": "✓ Hertz drop-off"
