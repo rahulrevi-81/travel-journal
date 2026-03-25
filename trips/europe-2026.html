@@ -128,13 +128,23 @@
   .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 
   /* SUMMARY / GLANCE TABLE — 8 columns */
-  .summary-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 860px; }
-  .summary-table th { background: var(--gold); color: #fff; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 12px; text-align: left; white-space: nowrap; font-size: 11px; }
-  .summary-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-  .summary-table tr:nth-child(odd) td  { background: var(--warm); }
-  .summary-table tr:nth-child(even) td { background: white; }
-  .summary-table .highlights-cell { white-space: normal; min-width: 180px; max-width: 240px; font-size: 12px; }
-  .summary-table .bookings-cell   { white-space: normal; min-width: 140px; font-size: 11px; line-height: 1.8; }
+  .glance-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 860px; }
+  .glance-table th { background: var(--ink); color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 12px; text-align: left; white-space: nowrap; font-size: 10px; }
+  .glance-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .glance-table tr:nth-child(odd) td  { background: var(--warm); }
+  .glance-table tr:nth-child(even) td { background: white; }
+  .glance-table tr:hover td { background: #f0f7f1; }
+  .g-day  { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold); white-space: nowrap; font-size: 15px; vertical-align: middle !important; }
+  .g-date { white-space: nowrap; color: var(--slate); font-size: 11px; vertical-align: middle !important; }
+  .g-from { font-size: 12px; white-space: nowrap; vertical-align: middle !important; }
+  .g-stay { font-size: 12px; color: var(--slate); white-space: nowrap; vertical-align: middle !important; }
+  .g-drive { text-align: center; font-size: 12px; white-space: nowrap; font-weight: 500; vertical-align: middle !important; }
+  .g-time  { text-align: center; font-size: 11px; color: var(--slate); white-space: nowrap; vertical-align: middle !important; }
+  .g-bookings { font-size: 11px; line-height: 1.9; min-width: 130px; white-space: normal; }
+  /* Highlight pills */
+  .g-highlights { min-width: 200px; max-width: 300px; padding-top: 10px !important; padding-bottom: 10px !important; }
+  .hl-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+  .hl-pill { display: inline-block; background: rgba(201,168,76,0.12); color: #6b5010; border: 1px solid rgba(201,168,76,0.3); border-radius: 20px; padding: 2px 9px; font-size: 10px; font-weight: 500; white-space: nowrap; letter-spacing: 0.2px; }
   .bk-done    { color: #27ae60; font-weight: 600; font-size: 11px; }
   .bk-pending { color: #e67e22; font-weight: 600; font-size: 11px; }
 
@@ -358,14 +368,22 @@ function renderSummaryTable(d) {
       bkTd.appendChild(s);
     });
 
+    // Render highlights as pills
+    const hlTd = h('td', {class:'g-highlights'});
+    const pillWrap = div('hl-pills');
+    g.highlights.split(' · ').forEach(place => {
+      if (place.trim()) pillWrap.appendChild(h('span', {class:'hl-pill'}, place.trim()));
+    });
+    hlTd.appendChild(pillWrap);
+
     tbody.appendChild(h('tr', {},
-      h('td', {class:'g-day'},       g.day),
-      h('td', {class:'g-date'},      g.date),
-      h('td', {class:'g-from'},      g.from),
-      h('td', {class:'g-stay'},      g.nightStay),
-      h('td', {class:'g-highlights', html: g.highlights}),
-      h('td', {class:'g-drive'},     g.drive),
-      h('td', {class:'g-time'},      g.driveTime),
+      h('td', {class:'g-day'},   g.day),
+      h('td', {class:'g-date'},  g.date),
+      h('td', {class:'g-from'},  g.from),
+      h('td', {class:'g-stay'},  g.nightStay),
+      hlTd,
+      h('td', {class:'g-drive'}, g.drive),
+      h('td', {class:'g-time'},  g.driveTime),
       bkTd
     ));
   });
