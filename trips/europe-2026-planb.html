@@ -64,32 +64,49 @@
   .trip-map-desc { font-size: 11px; color: var(--slate); margin-top: 2px; letter-spacing: 0.3px; }
   .trip-map-arrow { font-size: 16px; color: var(--gold); margin-left: auto; flex-shrink: 0; }
 
-  /* DAY CARDS */
-  .days-grid { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
-  .day-card { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: box-shadow 0.2s; }
-  .day-card:hover { box-shadow: 0 4px 20px rgba(26,26,46,0.08); }
-  .day-header { display: flex; align-items: center; gap: 16px; padding: 16px 20px; cursor: pointer; background: white; user-select: none; }
-  .day-header:hover { background: var(--warm); }
-  .day-num { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--gold); min-width: 36px; line-height: 1; }
+  /* DAY CARDS — schedule style */
+  .days-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
+  .day-card { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .day-header { display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: 16px; padding: 14px 20px; cursor: pointer; background: var(--ink); color: var(--cream); user-select: none; }
+  .day-num-wrap { display: flex; flex-direction: column; }
+  .day-num { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 900; color: var(--gold); line-height: 1; }
+  .day-date-small { font-size: 10px; color: rgba(250,248,243,0.45); font-weight: 400; margin-top: 2px; letter-spacing: 0.5px; }
   .day-info { flex: 1; }
-  .day-title { font-weight: 500; font-size: 15px; line-height: 1.2; }
-  .day-meta { font-size: 11px; color: var(--slate); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+  .day-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 15px; line-height: 1.2; color: var(--cream); }
+  .day-meta { font-size: 11px; color: rgba(250,248,243,0.45); letter-spacing: 0.5px; margin-top: 3px; }
+  .day-flag-toggle { display: flex; align-items: center; gap: 10px; }
   .day-flag { font-size: 20px; }
-  .day-toggle { color: var(--slate); font-size: 18px; transition: transform 0.2s; min-width: 20px; text-align: center; }
+  .day-toggle { color: rgba(250,248,243,0.5); font-size: 16px; transition: transform 0.2s; }
   .day-card.open .day-toggle { transform: rotate(180deg); }
-  .day-body { display: none; padding: 20px 20px 20px 72px; background: var(--warm); border-top: 1px solid var(--border); }
+  .day-body { display: none; background: white; }
   .day-card.open .day-body { display: block; }
-  .day-body ul { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
-  .day-body ul li { padding-left: 16px; position: relative; font-size: 14px; }
-  .day-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: 12px; top: 2px; }
-  .day-body ul li strong { font-weight: 500; }
-  .day-map-link { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); text-decoration: none; border: 1px solid var(--border); padding: 5px 12px; border-radius: 2px; margin-bottom: 14px; margin-right: 6px; transition: all 0.15s; }
+  .day-map-row { padding: 10px 16px; background: #f8f5ef; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; }
+  .day-map-link { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); text-decoration: none; border: 1px solid var(--border); padding: 4px 10px; border-radius: 2px; transition: all 0.15s; background: white; }
   .day-map-link:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-  .sec-heading { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--slate); margin-bottom: 6px; margin-top: 14px; }
+  .sched-grid { display: grid; grid-template-columns: 72px 1fr; }
+  .sched-time { background: #f8f5ef; border-right: 2px solid var(--border); padding: 10px; font-size: 11px; font-weight: 500; color: #2b6cb0; letter-spacing: 0.3px; border-bottom: 1px solid #ece8df; display: flex; align-items: flex-start; padding-top: 12px; }
+  .sched-item { padding: 9px 14px; border-bottom: 1px solid #f0ece4; display: flex; align-items: flex-start; gap: 8px; min-height: 40px; font-size: 13px; }
+  .sched-item:last-child { border-bottom: none; }
+  .sched-item.wow   { background: linear-gradient(135deg,#fffdf0,#fef9e7); border-left: 3px solid var(--gold); }
+  .sched-item.hike  { background: linear-gradient(135deg,#f0f8f0,#e8f5e8); border-left: 3px solid #4a7c2f; }
+  .sched-item.meal  { background: #faf8f4; border-left: 3px solid var(--border); }
+  .sched-item.drive { background: #f8f8fc; border-left: 3px solid #b0b8d4; }
+  .sched-item.checkin { background: #f8faf8; border-left: 3px solid var(--sage); }
+  .sched-item.planb { background: #fdf8f0; border-left: 3px solid #e67e22; }
+  .sched-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+  .sched-text { flex: 1; line-height: 1.5; color: #2a2a3e; }
+  .sched-text strong { font-weight: 500; color: var(--ink); }
+  .sched-badge { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+  .badge-wow  { background: var(--gold); color: white; }
+  .badge-hike { background: #4a7c2f; color: white; }
+  .day-footer-stats { background: #f8f5ef; border-top: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 20px; flex-wrap: wrap; }
+  .day-footer-stat { font-size: 11px; color: #666; }
+  .day-footer-stat strong { color: var(--ink); font-weight: 500; }
+  .sec-heading { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--slate); margin-bottom: 6px; margin-top: 14px; padding: 0 14px; }
   .booking-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; background: rgba(107,143,113,0.12); color: var(--sage); border: 1px solid rgba(107,143,113,0.3); padding: 4px 10px; border-radius: 2px; margin-top: 8px; margin-right: 6px; }
   .laundry-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; background: rgba(201,168,76,0.1); color: #8a6e1a; border: 1px solid rgba(201,168,76,0.3); padding: 4px 10px; border-radius: 2px; margin-top: 6px; margin-right: 6px; }
   .alarm-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; background: rgba(184,92,56,0.1); color: var(--rust); border: 1px solid rgba(184,92,56,0.3); padding: 4px 10px; border-radius: 2px; margin-top: 6px; margin-right: 6px; }
-  .birthday-banner { background: linear-gradient(135deg,rgba(201,168,76,0.15),rgba(184,92,56,0.1)); border: 1px solid rgba(201,168,76,0.4); border-radius: 4px; padding: 12px 16px; margin-bottom: 14px; font-size: 13px; }
+  .birthday-banner { background: linear-gradient(135deg,#2d5016,#1a3a0a); color: #d4e8c2; padding: 8px 16px; font-size: 12px; font-weight: 500; letter-spacing: 1px; text-align: center; }
 
   /* CHECKLIST */
   .checklist { display: flex; flex-direction: column; gap: 1px; margin-top: 8px; }
@@ -307,41 +324,117 @@ function renderAccommodation(d) {
   return wrap;
 }
 
+// Classify an item text into a schedule row type
+function classifyItem(text) {
+  const t = text.toLowerCase();
+  if (t.includes('check in') || t.includes('check-in') || t.includes('night at') || t.includes('night —') || t.includes('✅')) return 'checkin';
+  if (t.includes('lunch') || t.includes('dinner') || t.includes('breakfast') || t.includes('fondue') || t.includes('meal') || t.includes('eat')) return 'meal';
+  if (t.includes('⭐') || t.includes('plan a') || t.includes('plan b') || t.includes('optional')) {
+    if (t.includes('plan b') || t.includes('backup')) return 'planb';
+    return 'wow';
+  }
+  if (t.includes('hike') || t.includes('walk') || t.includes('trail') || t.includes('summit') || t.includes('gorge') || t.includes('climb') || t.includes('loop') || t.includes('ascent') || t.includes('gondola') || t.includes('cable car') || t.includes('trek')) return 'hike';
+  if (t.includes('drive') || t.includes('fly') || t.includes('flight') || t.includes('board') || t.includes('depart') || t.includes('leave') || t.includes('→') || t.includes('pick up car') || t.includes('return') && t.includes('car')) return 'drive';
+  return '';
+}
+
+function iconForType(type, text) {
+  const t = text.toLowerCase();
+  if (type === 'checkin') return '🏠';
+  if (type === 'meal') {
+    if (t.includes('lunch')) return '🍽';
+    if (t.includes('dinner')) return '🍽';
+    return '🍽';
+  }
+  if (type === 'wow') return '⭐';
+  if (type === 'planb') return '⚠️';
+  if (type === 'hike') return '🥾';
+  if (type === 'drive') {
+    if (t.includes('fly') || t.includes('flight') || t.includes('board')) return '✈️';
+    return '🚗';
+  }
+  return '•';
+}
+
 function renderDayCard(day, idx) {
   const card = div('day-card' + (idx === 0 ? ' open' : ''));
+
+  // Header — dark style
   const header = div('day-header');
   header.addEventListener('click', () => card.classList.toggle('open'));
-  header.appendChild(div('day-num', day.dayLabel));
+  const numWrap = div('day-num-wrap');
+  numWrap.appendChild(h('div', {class:'day-num'}, day.dayLabel));
+  numWrap.appendChild(h('div', {class:'day-date-small'}, day.date));
+  header.appendChild(numWrap);
   const info = div('day-info');
   info.appendChild(div('day-title', day.title));
   info.appendChild(div('day-meta', day.meta));
   header.appendChild(info);
-  header.appendChild(h('div', {class:'day-flag'}, day.flag));
-  header.appendChild(div('day-toggle', '▾'));
+  const flagToggle = div('day-flag-toggle');
+  flagToggle.appendChild(h('div', {class:'day-flag'}, day.flag));
+  flagToggle.appendChild(div('day-toggle', '▾'));
+  header.appendChild(flagToggle);
   card.appendChild(header);
 
+  // Body
   const body = div('day-body');
-  if (day.birthday) body.appendChild(h('div', {class:'birthday-banner', html: day.birthday}));
+  if (day.birthday) body.appendChild(h('div', {class:'birthday-banner', html: '🎂 ' + day.birthday}));
 
+  // Map links row
   if (day.mapLinks && day.mapLinks.length) {
-    const mapRow = h('div', {style:'margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;'});
+    const mapRow = div('day-map-row');
     day.mapLinks.forEach(ml => mapRow.appendChild(
-      h('a', {class:'day-map-link', href:ml.url, target:'_blank'}, '📍 ' + ml.label)
+      h('a', {class:'day-map-link', href:ml.url, target:'_blank', rel:'noopener'}, '📍 ' + ml.label)
     ));
     body.appendChild(mapRow);
   }
 
+  // Schedule grid — items from all sections
+  const grid = div('sched-grid');
   day.sections.forEach(sec => {
-    if (sec.heading && day.sections.length > 1) body.appendChild(h('p',{class:'sec-heading'},sec.heading));
-    const ul = h('ul');
-    sec.items.forEach(item => ul.appendChild(h('li',{html:item})));
-    body.appendChild(ul);
+    if (sec.heading && day.sections.length > 1) {
+      // Section heading spans both columns
+      const headingEl = h('div', {style:'grid-column:1/-1;', class:'sec-heading'}, sec.heading);
+      grid.appendChild(headingEl);
+    }
+    sec.items.forEach(item => {
+      const type = classifyItem(item);
+      const icon = iconForType(type, item);
+      const timeCell = h('div', {class:'sched-time'}, '');
+      const itemCell = h('div', {class:'sched-item' + (type ? ' ' + type : '')});
+      itemCell.appendChild(h('span', {class:'sched-icon'}, icon));
+      const textEl = h('span', {class:'sched-text', html: item});
+      itemCell.appendChild(textEl);
+      if (type === 'wow') itemCell.appendChild(h('span', {class:'sched-badge badge-wow'}, 'WOW'));
+      if (type === 'hike') itemCell.appendChild(h('span', {class:'sched-badge badge-hike'}, 'HIKE'));
+      grid.appendChild(timeCell);
+      grid.appendChild(itemCell);
+    });
   });
+  body.appendChild(grid);
 
+  // Tags row
   if (day.tags && day.tags.length) {
-    const tagWrap = h('div', {style:'margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;'});
+    const tagWrap = h('div', {style:'padding:10px 14px 12px;display:flex;flex-wrap:wrap;gap:6px;background:#fafaf8;border-top:1px solid var(--border);'});
     day.tags.forEach(t => tagWrap.appendChild(tagEl(t)));
     body.appendChild(tagWrap);
+  }
+
+  // Footer stats from summary
+  if (day.summary) {
+    const s = day.summary;
+    const stats = [];
+    if (s.drive && s.drive !== '—') stats.push(['Drive', s.drive]);
+    if (s.highlights) stats.push(['Highlights', s.highlights.split(' · ').slice(0,3).join(' · ')]);
+    if (stats.length) {
+      const footer = div('day-footer-stats');
+      stats.forEach(([k,v]) => {
+        const st = div('day-footer-stat');
+        st.innerHTML = '<strong>' + k + ':</strong> ' + v;
+        footer.appendChild(st);
+      });
+      body.appendChild(footer);
+    }
   }
 
   card.appendChild(body);
