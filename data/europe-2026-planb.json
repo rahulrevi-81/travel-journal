@@ -427,12 +427,16 @@
     {
       "dayLabel": "5",
       "date": "Jun 24",
-      "title": "Lauterbrunnen + Neuschwanstein Castle → Buchloe",
-      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Neuschwanstein → Buchloe",
+      "title": "Lauterbrunnen + Burg Ehrenberg + Highline179",
+      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Reutte (Ehrenberg) → Buchloe",
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 5 Map — Lauterbrunnen → Neuschwanstein → Buchloe",
+          "label": "Day 5 Plan A — Lauterbrunnen → Ehrenberg → Buchloe",
+          "url": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Burg+Ehrenberg,+Reutte,+Austria/Landhaus+Lindenberg,+Buchloe,+Germany"
+        },
+        {
+          "label": "Day 5 Plan B — Lauterbrunnen → Neuschwanstein → Buchloe",
           "url": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Neuschwanstein+Castle,+Hohenschwangau,+Germany/Landhaus+Lindenberg,+Buchloe,+Germany"
         }
       ],
@@ -441,28 +445,31 @@
           "heading": null,
           "items": [
             "Leave <strong>Diemtigtal 8:30am</strong> · drive <strong>~45 min</strong> → Lauterbrunnen · park in village",
-            "⭐ <strong>Lauterbrunnen valley</strong> — 72 waterfalls in one valley · <strong>Staubbach Falls</strong> (300m freefall right over the village · 15 min walk to base · free) · valley floor walk past thundering cascades · ~1hr",
-            "⭐ <strong>Trümmelbach Falls</strong> (optional · 10 min from Staubbach) — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · worth it for kids",
-            "Drive <strong>~4hrs 15min</strong> → <strong>Neuschwanstein, Hohenschwangau / Füssen</strong> · arrive ~<strong>2:00pm</strong> · park at P1–P4 in valley (paid)",
-            "⭐ <strong>Neuschwanstein Castle</strong> — <strong>⚠️ pre-book timed entry tickets NOW at neuschwanstein.de · June sells out months ahead</strong> · shuttle bus up (~€3) · guided interior tour ~1hr · throne room · minstrels' hall · Eiger-like cliff setting · inspired Disney's Sleeping Beauty Castle",
-            "Walk to <strong>Marienbrücke (Mary's Bridge)</strong> — suspension bridge over the gorge with the iconic full-castle view · ~15 min from entrance · best photo of the trip",
-            "<strong>Dinner</strong> in Füssen / Schwangau town (~1hr) — Brauhaus Füssen recommended · charming Bavarian town with painted houses",
-            "Drive <strong>~45 min</strong> → <strong>Landhaus Lindenberg, Buchloe</strong> · check in · Conf. #6026325459 ✅"
+            "⭐ <strong>Lauterbrunnen valley</strong> — 72 waterfalls in one valley · <strong>Staubbach Falls</strong> (300m freefall right over the village · 15 min walk to base · free) · valley floor walk (~1hr)",
+            "⭐ <strong>Trümmelbach Falls</strong> (optional · 10 min away) — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
+            "Drive <strong>~3hrs</strong> → <strong>Reutte, Austria</strong> · arrive ~<strong>1:30pm</strong>",
+            "⭐ <strong>PLAN A — Burg Ehrenberg + Highline179 Bridge</strong> · no booking needed · tickets at site",
+            "⭐ <strong>Ehrenberg Castle ruins (13th century)</strong> — inclined elevator 'Ehrenberg Liner' up 110m · walk the ramparts · real medieval fortress with sweeping views · free roam of ruins · ~1hr",
+            "<strong>Lunch</strong> — Klause valley floor café or hut near castle (~1hr)",
+            "⭐ <strong>Highline179 suspension bridge</strong> — 406-metre pedestrian bridge hanging 113m above the valley · connects Ehrenberg Castle ruins with Fort Claudia across the gorge · one of Europe's longest suspension bridges · thrilling for kids · ~30 min · included in combined ticket ~€18/adult",
+            "⚠️ <strong>PLAN B (if pressed for time or kids want fairy-tale interior)</strong> — skip Ehrenberg · drive <strong>~45 min south</strong> → <strong>Neuschwanstein Castle, Füssen</strong> · ⚠️ requires pre-booked timed entry at neuschwanstein.de · guided tour only · ~€15/adult · June slots sell out months ahead",
+            "Drive <strong>~1hr 30min</strong> → <strong>Landhaus Lindenberg, Buchloe</strong> · check in · Conf. #6026325459 ✅",
+            "<strong>Dinner</strong> — Buchloe or at hotel (~1hr)"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "🎟 Book Neuschwanstein timed tickets NOW at neuschwanstein.de — June sells out months ahead · guided tour only · ~€15/adult"
+          "text": "🏰 Ehrenberg + Highline179 combined ticket ~€18/adult · no booking needed · buy on site · opens 9am"
         },
         {
           "type": "alarm",
-          "text": "🚌 Shuttle bus from P1–P4 parking to castle · departs every 20 min · ~€3 · or walk 30–40 min uphill"
+          "text": "🌉 Highline179: 406m suspension bridge · 113m above valley · connects Ehrenberg ruins to Fort Claudia · genuinely thrilling for kids"
         },
         {
           "type": "alarm",
-          "text": "📸 Marienbrücke (Mary's Bridge) — the iconic castle view · 15 min walk from castle entrance · do NOT skip"
+          "text": "⚠️ Plan B — Neuschwanstein: book NOW at neuschwanstein.de if switching · June sells out months ahead · guided tour only ~€15/adult"
         },
         {
           "type": "booking",
@@ -470,11 +477,11 @@
         }
       ],
       "summary": {
-        "drive": "~310 km / 193 mi",
+        "drive": "~270 km / 168 mi",
         "time": "2h 20m",
         "from": "Diemtigtal 🇨🇭",
         "to": "Landhaus Lindenberg, Buchloe 🇩🇪",
-        "highlights": "Lauterbrunnen valley · Staubbach Falls · Trümmelbach Falls (optional) · Neuschwanstein Castle · Marienbrücke viewpoint · Füssen dinner",
+        "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg ruins · Highline179 suspension bridge · (Plan B: Neuschwanstein)",
         "bookings": [
           {
             "status": "booked",
@@ -1103,10 +1110,10 @@
     },
     {
       "id": "neuschwanstein",
-      "label": "🏰 Neuschwanstein Castle timed entry — Jun 24",
-      "status": "urgent",
+      "label": "🏰 Neuschwanstein timed entry — only if switching from Ehrenberg on Jun 24",
+      "status": "pending",
       "ref": null,
-      "deadline": "Book NOW — Jun sells out",
+      "deadline": "Only if Plan B chosen",
       "link": "https://www.neuschwanstein.de/englisch/tourist/tickets.htm"
     },
     {
@@ -1453,11 +1460,11 @@
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Landhaus Lindenberg, Buchloe 🇩🇪",
-      "highlights": "Lauterbrunnen · Staubbach Falls · Neuschwanstein Castle · Marienbrücke viewpoint · Füssen",
-      "drive": "~310 km / 193 mi",
-      "driveTime": "~5hrs total",
-      "bookings": "🎟 Book Neuschwanstein NOW · ✓ Landhaus Lindenberg #6026325459",
-      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Neuschwanstein+Castle,+Hohenschwangau,+Germany/Landhaus+Lindenberg,+Buchloe,+Germany"
+      "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg ruins · Highline179 bridge · (Plan B: Neuschwanstein)",
+      "drive": "~270 km / 168 mi",
+      "driveTime": "~4.5hrs total",
+      "bookings": "✓ Landhaus Lindenberg #6026325459 · ⚠️ Plan B: Book Neuschwanstein if switching",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Burg+Ehrenberg,+Reutte,+Austria/Landhaus+Lindenberg,+Buchloe,+Germany"
     },
     {
       "day": "6",
