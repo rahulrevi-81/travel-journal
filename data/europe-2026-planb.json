@@ -3,17 +3,16 @@
   "meta": {
     "title": "Europe Family Trip",
     "subtitle": "June 2026",
-    "tagline": "Iceland · Switzerland · Germany · Austria · Slovenia · Italy · Liechtenstein",
+    "tagline": "Iceland · Switzerland · Germany · Austria · Italy · Liechtenstein",
     "flags": [
       "🇮🇸",
       "🇨🇭",
       "🇩🇪",
       "🇦🇹",
-      "🇸🇮",
       "🇮🇹",
       "🇱🇮"
     ],
-    "countries": 7,
+    "countries": 6,
     "days": 16,
     "travellers": 4,
     "traveller_names": [
@@ -436,13 +435,16 @@
         {
           "heading": null,
           "items": [
-            "Leave Buchloe <strong>7:30am</strong> → drive <strong>~2h 20min, ~126 mi via A8</strong> → Königssee · arrive <strong>~9:00am</strong> · buy tickets at the dock",
-            "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min total · don't get off at St. Bartholomä) · trumpet echo demonstration en route",
-            "At Salet: walk <strong>15 min</strong> → <strong>Obersee lake</strong> — pristine mountain lake with the iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest at 470m) visible towering in the distance · (~45 min at lake)",
-            "Walk back to Salet (15 min) · board boat to <strong>St. Bartholomä</strong> (20 min) · beer garden lunch at the historic hunting lodge restaurant (~45 min)",
-            "Board final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~<strong>1:30pm</strong>",
-            "Drive <strong>16 min via B305</strong> → <strong>Wimbachklamm Gorge</strong> (~1 mile · €4/person · open 7am–7pm) · ~1hr",
-            "Drive <strong>~10 min</strong> → <strong>Wurznwirt, Schneizlreuth</strong> · check in <strong>~3:15pm</strong> ✅"
+            "Leave <strong>Diemtigtal 8:30am</strong> · drive <strong>~45 min</strong> → Grindelwald · park at Grindelwald Grund station",
+            "⭐ <strong>Grindelwald Firstbahn gondola #238070</strong> — pre-booked · 2 adults + 2 children · ride to First (2,168m) · first gondola of the day",
+            "⭐ <strong>First Cliff Walk</strong> — suspended steel & glass walkway bolted to the cliff face · Eiger directly opposite · ~30 min",
+            "⭐ <strong>Bachalpsee hike</strong> — flat trail from First station to the iconic alpine lake · Eiger/Mönch/Jungfrau reflected in water · 5km return (~1.5hrs)",
+            "<strong>Lunch</strong> at Restaurant First on the ridge or back in Grindelwald (~1hr)",
+            "Gondola down · drive <strong>15 min</strong> → <strong>Lauterbrunnen</strong>",
+            "⭐ <strong>Lauterbrunnen village + Staubbach Falls</strong> — 300m freefall waterfall right over the village · walk to base (~30 min · free)",
+            "Drive <strong>~2hrs</strong> north → <strong>Buchloe, Germany</strong> · cross border",
+            "Check in <strong>Escape by Landhaus Lindenberg, Buchloe</strong> · Conf. #6026325459 ✅",
+            "<strong>Dinner</strong> — Buchloe or at hotel (~1hr)"
           ]
         }
       ],
@@ -467,9 +469,9 @@
       "summary": {
         "drive": "~130 km / 81 mi",
         "time": "2h 20m",
-        "from": "Buchloe 🇩🇪",
-        "to": "Wurznwirt, Schneizlreuth 🇩🇪",
-        "highlights": "Königssee electric boat → Salet → Obersee lake + Röthbach waterfall view · St. Bartholomä lunch · Wimbachklamm gorge",
+        "from": "Diemtigtal 🇨🇭",
+        "to": "Landhaus Lindenberg, Buchloe 🇩🇪",
+        "highlights": "Grindelwald Firstbahn gondola · First Cliff Walk · Bachalpsee hike · Lauterbrunnen · Staubbach Falls",
         "bookings": [
           {
             "status": "booked",
@@ -498,16 +500,15 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Schneizlreuth 7:30am</strong> · drive <strong>~1hr 30min</strong> → Liechtensteinklamm · arrive ~9:00am",
-            "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · helix staircase · 444 stairs · thundering waterfall at the end · ~2.5hrs · €16/adult · €9/child · aim for ticket counter at opening · back at car ~11:30am",
-            "Drive <strong>~45 min</strong> north → <strong>Salzburg</strong> · arrive ~12:15pm · park at <strong>Altstadtgarage B</strong> (carved into the rock · €3.30/hr · very central)",
-            "⭐ <strong>Salzburg old town lunch + walk</strong> — <strong>Getreidegasse</strong> (Mozart's birthplace street · ornate iron shop signs) · <strong>Residenzplatz</strong> · <strong>Salzburg Cathedral</strong> (free · Mozart was baptised here · Roman ruins in the basement) · <strong>Hohensalzburg Fortress</strong> exterior view from below · ~1hr 30min total · leave by 2:00pm",
-            "⚠️ <strong>Lunch tip</strong> — try Café Tomaselli (oldest coffee house in Austria · Residenzplatz area) or grab a bratwurst on Universitätsplatz market · budget ~€15–20pp",
-            "Drive <strong>~45 min</strong> east via Route 158 → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~2:45pm",
-            "⭐ <strong>Wolfgangsee photo stop</strong> — pull over at St. Gilgen lakefront · turquoise lake backed by Schafberg mountain · iconic Salzkammergut view · 20–30 min · completely free · <em>optional: short walk along the waterfront promenade</em>",
-            "Drive <strong>~30 min</strong> south → <strong>HOMEBOUND Apartments, Bad Goisern</strong> · check in ~<strong>3:45pm</strong> ✅ · booking #72072198804917",
-            "Drive 10 min → <strong>Hallstatt evening lakeside walk</strong> — arrive after 4pm to avoid peak crowds · lakeside stroll + dinner · ⚠️ if P1/P2 full → park at Obertraun + ferry across",
-            "⭐ <strong>Hintersee lake</strong> (15 min from Königssee) — crystal-clear turquoise mountain lake · walk through the <strong>Zauberwald (Magic Forest)</strong> — giant moss-covered boulders + ancient trees · 45-min loop trail · free entry · one of the most romantic spots in Bavaria · arrive ~5:30pm → Schneizlreuth 10 min"
+            "Leave <strong>Buchloe 8:30am</strong> · drive <strong>~2h 20min</strong> → Königssee · arrive ~9:00am · buy tickets at the dock",
+            "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min total · don't get off at St. Bartholomä yet)",
+            "At Salet: walk <strong>15 min</strong> → <strong>Obersee lake</strong> — pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest 470m) visible in distance · (~45 min return)",
+            "Board boat back to <strong>St. Bartholomä</strong> (20 min) · <strong>Lunch</strong> — beer garden at historic hunting lodge (~1hr)",
+            "Board final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~<strong>1:30pm</strong>",
+            "Drive <strong>16 min via B305</strong> → <strong>Wimbachklamm Gorge</strong> — 1 mile gorge walk · carved limestone · rushing torrent · (~1hr · €4/person)",
+            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders · 45-min loop trail · free · one of the most romantic spots in Bavaria",
+            "<strong>Dinner</strong> — Ramsau or Schneizlreuth (~1hr)",
+            "Check in <strong>Wurznwirt, Schneizlreuth</strong> · #72072251742511 ✅"
           ]
         }
       ],
@@ -526,8 +527,10 @@
         }
       ],
       "summary": {
-        "highlights": "Liechtensteinklamm gorge · Salzburg old town lunch · Wolfgangsee photo stop · Hallstatt evening walk",
-        "drive": "~200 km / 124 mi"
+        "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä lunch · Wimbachklamm · Hintersee + Zauberwald",
+        "drive": "~200 km / 124 mi",
+        "from": "Buchloe 🇩🇪",
+        "to": "Wurznwirt, Schneizlreuth 🇩🇪"
       }
     },
     {
