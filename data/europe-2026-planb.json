@@ -360,49 +360,54 @@
     {
       "dayLabel": "4",
       "date": "Jun 23",
-      "title": "Oeschinensee + Jaun Pass + Gruyères",
-      "meta": "Jun 23 · Diemtigtal → Oeschinensee → Jaun Pass → Gruyères → Diemtigtal",
+      "title": "Oeschinensee + Grindelwald First + Cliff Walk + Bachalpsee",
+      "meta": "Jun 23 · Diemtigtal → Kandersteg → Grindelwald → Diemtigtal",
       "flag": "🇨🇭",
       "warning": true,
       "mapLinks": [
         {
-          "label": "Day 4 Map — Oeschinensee + Jaun Pass + Gruyères",
-          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruy%C3%A8res,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+          "label": "Day 4 Map — Oeschinensee + Grindelwald First",
+          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Diemtigtal 7:30am</strong> · drive <strong>20 min</strong> → Kandersteg",
-            "⭐ <strong>Oeschinensee gondola 8:30am</strong> — first slot · turquoise alpine lake at 1,578m enclosed by sheer 2,000m cliffs · lake walk + photos · ~CHF 35/adult · gondola down by <strong>10:30am</strong>",
-            "Drive <strong>45 min</strong> west → <strong>Jaun Pass (1,509m)</strong> · dramatic switchbacks through the Fribourg Prealps · stop at the pass for views · short walk on the ridge if energy allows · completely different landscape to Bernese Oberland",
-            "⭐ <strong>Descend to Gruyères</strong> (~30 min from Jaun Pass) — perfectly preserved medieval hilltop village · <strong>Château de Gruyères</strong> (exterior walk free · interior €12/adult) · cobblestone main street · fondue lunch at a local restaurant (~CHF 25–30pp)",
-            "Drive <strong>1hr 30min</strong> back to Diemtigtal via Bulle + Frutigen · arrive ~<strong>5:00pm</strong> · 2nd night at Tiny House ✅"
+            "Leave <strong>Diemtigtal 8:00am</strong> · drive <strong>20 min</strong> → Kandersteg",
+            "⭐ <strong>Oeschinensee gondola 8:30am slot</strong> — pre-booked timed entry · turquoise alpine lake at 1,578m enclosed by sheer 2,000m cliffs · ~CHF 35/adult · <strong>⚠️ book slot tonight at oeschinensee.skiperformance.com</strong>",
+            "🥾 <strong>Oeschinensee lake walk</strong> — 25 min down to shore from gondola station · panorama trail or direct path · rowing boats available · summer toboggan run at mountain station · ~1.5hrs at lake · gondola down by <strong>10:30am</strong>",
+            "Drive <strong>~1hr</strong> → Grindelwald · park at Firstbahn Talstation · arrive ~<strong>11:30am</strong>",
+            "⭐ <strong>Grindelwald Firstbahn gondola #238070</strong> — <strong>⚠️ rebook from Jun 24 → Jun 23</strong> · ride to First (2,168m) · 25-min scenic ascent · Eiger North Face directly opposite",
+            "⭐ <strong>First Cliff Walk</strong> — suspended steel & glass walkway bolted to the sheer cliff face · vertigo-inducing views over the valley · ~30 min · free with gondola ticket",
+            "<strong>Lunch</strong> — Restaurant First on the ridge (~1hr)",
+            "🥾 <strong>Bachalpsee hike</strong> — flat trail from First station to the iconic alpine lake · Eiger/Mönch/Jungfrau reflected in the water · 5km return · ~1.5hrs",
+            "Gondola down · drive <strong>~45 min</strong> back to <strong>Diemtigtal</strong> · arrive ~<strong>6:30pm</strong>",
+            "<strong>Dinner</strong> — Tiny House kitchen or Stärnä Beizli, Oey (~1hr)"
           ]
         }
       ],
       "tags": [
         {
-          "type": "booking",
-          "text": "✓ Grindelwald Gondola · #238070 · 2 adults + 2 children"
+          "type": "alarm",
+          "text": "⏰ Book Oeschinensee 8:30am slot at oeschinensee.skiperformance.com — fills fast in summer"
         },
         {
           "type": "alarm",
-          "text": "⏰ Book Oeschinensee 8:30am slot NOW at oeschinensee.skiperformance.com — slots fill in summer"
+          "text": "⚠️ Rebook Grindelwald Gondola #238070 from Jun 24 → Jun 23"
         },
         {
           "type": "alarm",
-          "text": "🏨 Escape by Landhaus Lindenberg, Buchloe · Conf #6026325459 · $202 ✅"
+          "text": "💡 Gondola #238070 opens 8:30am Mon–Fri · arrive Grindelwald by 11:30am for noon ascent"
         }
       ],
       "summary": {
-        "drive": "~130 km / 81 mi",
+        "drive": "~100 km / 62 mi",
         "time": "6h 40m",
         "heavy": true,
         "from": "Diemtigtal 🇨🇭",
-        "to": "Munich 🇩🇪",
-        "highlights": "Oeschinensee optional · Grindelwald First · Cliff Walk · Bachalpsee lake hike",
+        "to": "Tiny House Diemtigtal 🇨🇭",
+        "highlights": "Oeschinensee gondola · turquoise alpine lake · Grindelwald Firstbahn · First Cliff Walk · Bachalpsee lake hike",
         "bookings": [
           {
             "status": "booked",
@@ -422,56 +427,54 @@
     {
       "dayLabel": "5",
       "date": "Jun 24",
-      "title": "Grindelwald First + Lauterbrunnen + Mürren (optional)",
-      "meta": "Jun 24 · Diemtigtal → Grindelwald → Lauterbrunnen → Buchloe",
+      "title": "Lauterbrunnen + Neuschwanstein Castle → Buchloe",
+      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Neuschwanstein → Buchloe",
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 5 Map — Grindelwald + Lauterbrunnen → Buchloe",
-          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Lauterbrunnen,+Switzerland/Landhaus+Lindenberg,+Buchloe,+Germany"
+          "label": "Day 5 Map — Lauterbrunnen → Neuschwanstein → Buchloe",
+          "url": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Neuschwanstein+Castle,+Hohenschwangau,+Germany/Landhaus+Lindenberg,+Buchloe,+Germany"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Diemtigtal 8:30am</strong> · drive <strong>~45 min</strong> → Grindelwald · park at Grindelwald Grund station",
-            "⭐ <strong>Grindelwald Firstbahn gondola #238070</strong> — pre-booked · 2 adults + 2 children · ride to First (2,168m) · first gondola of the day",
-            "⭐ <strong>First Cliff Walk</strong> — suspended steel & glass walkway bolted to the cliff face · Eiger directly opposite · ~30 min",
-            "⭐ <strong>Bachalpsee hike</strong> — flat trail from First station to the iconic alpine lake · Eiger/Mönch/Jungfrau reflected in water · 5km return (~1.5hrs)",
-            "<strong>Lunch</strong> at Restaurant First on the ridge or back in Grindelwald (~1hr)",
-            "Gondola down · drive <strong>15 min</strong> → <strong>Lauterbrunnen</strong>",
-            "⭐ <strong>Lauterbrunnen village + Staubbach Falls</strong> — 300m freefall waterfall right over the village · walk to base (~30 min · free)",
-            "Drive <strong>~2hrs</strong> north → <strong>Buchloe, Germany</strong> · cross border",
-            "Check in <strong>Escape by Landhaus Lindenberg, Buchloe</strong> · Conf. #6026325459 ✅",
-            "<strong>Dinner</strong> — Buchloe or at hotel (~1hr)"
+            "Leave <strong>Diemtigtal 8:30am</strong> · drive <strong>~45 min</strong> → Lauterbrunnen · park in village",
+            "⭐ <strong>Lauterbrunnen valley</strong> — 72 waterfalls in one valley · <strong>Staubbach Falls</strong> (300m freefall right over the village · 15 min walk to base · free) · valley floor walk past thundering cascades · ~1hr",
+            "⭐ <strong>Trümmelbach Falls</strong> (optional · 10 min from Staubbach) — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · worth it for kids",
+            "Drive <strong>~4hrs 15min</strong> → <strong>Neuschwanstein, Hohenschwangau / Füssen</strong> · arrive ~<strong>2:00pm</strong> · park at P1–P4 in valley (paid)",
+            "⭐ <strong>Neuschwanstein Castle</strong> — <strong>⚠️ pre-book timed entry tickets NOW at neuschwanstein.de · June sells out months ahead</strong> · shuttle bus up (~€3) · guided interior tour ~1hr · throne room · minstrels' hall · Eiger-like cliff setting · inspired Disney's Sleeping Beauty Castle",
+            "Walk to <strong>Marienbrücke (Mary's Bridge)</strong> — suspension bridge over the gorge with the iconic full-castle view · ~15 min from entrance · best photo of the trip",
+            "<strong>Dinner</strong> in Füssen / Schwangau town (~1hr) — Brauhaus Füssen recommended · charming Bavarian town with painted houses",
+            "Drive <strong>~45 min</strong> → <strong>Landhaus Lindenberg, Buchloe</strong> · check in · Conf. #6026325459 ✅"
           ]
         }
       ],
       "tags": [
         {
+          "type": "alarm",
+          "text": "🎟 Book Neuschwanstein timed tickets NOW at neuschwanstein.de — June sells out months ahead · guided tour only · ~€15/adult"
+        },
+        {
+          "type": "alarm",
+          "text": "🚌 Shuttle bus from P1–P4 parking to castle · departs every 20 min · ~€3 · or walk 30–40 min uphill"
+        },
+        {
+          "type": "alarm",
+          "text": "📸 Marienbrücke (Mary's Bridge) — the iconic castle view · 15 min walk from castle entrance · do NOT skip"
+        },
+        {
           "type": "booking",
-          "text": "✓ Wurznwirt · #72072251742511 · Family Suite"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Book Königssee boat online at seenschifffahrt.de — arrive 9am, depart 9:30am · return ticket to Salet ~€29/adult · €14.50/child"
-        },
-        {
-          "type": "alarm",
-          "text": "⚠️ Ride boat ALL THE WAY to Salet first — do NOT get off at St. Bartholomä · do St. Bartholomä on the way back"
-        },
-        {
-          "type": "alarm",
-          "text": "🏷 Austrian vignette: buy digital at asfinag.at at least 18 days before entry (by June 6)"
+          "text": "✓ Landhaus Lindenberg, Buchloe · Conf. #6026325459 · $202"
         }
       ],
       "summary": {
-        "drive": "~130 km / 81 mi",
+        "drive": "~310 km / 193 mi",
         "time": "2h 20m",
         "from": "Diemtigtal 🇨🇭",
         "to": "Landhaus Lindenberg, Buchloe 🇩🇪",
-        "highlights": "Grindelwald Firstbahn gondola · First Cliff Walk · Bachalpsee hike · Lauterbrunnen · Staubbach Falls",
+        "highlights": "Lauterbrunnen valley · Staubbach Falls · Trümmelbach Falls (optional) · Neuschwanstein Castle · Marienbrücke viewpoint · Füssen dinner",
         "bookings": [
           {
             "status": "booked",
@@ -1092,11 +1095,19 @@
     },
     {
       "id": "gondola",
-      "label": "Grindelwald gondola — Jun 23",
-      "status": "done",
+      "label": "Grindelwald gondola #238070 — rebook Jun 24 → Jun 23",
+      "status": "urgent",
       "ref": "Booking #238070",
-      "deadline": null,
+      "deadline": "Rebook ASAP",
       "link": null
+    },
+    {
+      "id": "neuschwanstein",
+      "label": "🏰 Neuschwanstein Castle timed entry — Jun 24",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book NOW — Jun sells out",
+      "link": "https://www.neuschwanstein.de/englisch/tourist/tickets.htm"
     },
     {
       "id": "kopavogur",
@@ -1430,11 +1441,11 @@
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Tiny House Diemtigtal 🇨🇭",
-      "highlights": "Oeschinensee gondola (8:30am) · Jaun Pass scenic drive (1,509m) · Gruyères medieval village · Château de Gruyères · fondue lunch",
-      "drive": "~130 km / 81 mi",
+      "highlights": "Oeschinensee gondola · turquoise alpine lake · Grindelwald Firstbahn · First Cliff Walk · Bachalpsee hike",
+      "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
-      "bookings": "✓ Tiny House Diemtigtal (2nd night)",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruy%C3%A8res,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+      "bookings": "⚠️ Rebook gondola #238070 → Jun 23 · ⏳ Oeschinensee 8:30am slot",
+      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland"
     },
     {
       "day": "5",
@@ -1442,11 +1453,11 @@
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Landhaus Lindenberg, Buchloe 🇩🇪",
-      "highlights": "Grindelwald Firstbahn gondola · Cliff Walk · Bachalpsee hike · Lauterbrunnen village · Staubbach Falls · Mürren cliff village (optional)",
-      "drive": "~130 km / 81 mi",
-      "driveTime": "~2hrs",
-      "bookings": "✓ Landhaus Lindenberg #6026325459 · ✓ Gondola #238070 · ⏳ Oeschinensee 8:30am slot",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Lauterbrunnen,+Switzerland/Landhaus+Lindenberg,+Buchloe,+Germany"
+      "highlights": "Lauterbrunnen · Staubbach Falls · Neuschwanstein Castle · Marienbrücke viewpoint · Füssen",
+      "drive": "~310 km / 193 mi",
+      "driveTime": "~5hrs total",
+      "bookings": "🎟 Book Neuschwanstein NOW · ✓ Landhaus Lindenberg #6026325459",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Neuschwanstein+Castle,+Hohenschwangau,+Germany/Landhaus+Lindenberg,+Buchloe,+Germany"
     },
     {
       "day": "6",
