@@ -92,8 +92,8 @@
     },
     {
       "label": "🗺️ Europe Route — Full 13-Day Road Trip",
-      "description": "ZRH → Switzerland → Germany → Austria → Slovenia → Italy → Austria → Liechtenstein → Zurich",
-      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Königssee,+Schönau+am+Königssee,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Hallstatt,+Austria/Grossglockner,+Austria/Lake+Bled,+Slovenia/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Zurich,+Switzerland"
+      "description": "ZRH → Diemtigtal → Grindelwald → Buchloe → Schneizlreuth → Bad Goisern → Zell am See → Pertisau → Außervillgraten → Lago di Braies → Tre Cime → Innsbruck → Dornbirn → Vaduz → Rhine Falls → ZRH",
+      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
     }
   ],
   "tripMaps": [
@@ -104,8 +104,8 @@
     },
     {
       "label": "🌍 Europe — Full Route Map",
-      "description": "Days 3–15 · ZRH → Switzerland → Germany → Austria → Slovenia → Italy → Austria → Liechtenstein → Zurich",
-      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Blausee+Nature+Park,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Schönau+am+Königssee,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Hallstatt,+Austria/Großglockner,+Austria/Lake+Bled,+Slovenia/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Rhine+Falls,+Switzerland/Zurich,+Switzerland"
+      "description": "Days 3–16 · ZRH → Switzerland → Germany → Austria → Italy → Liechtenstein → Zurich",
+      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
     }
   ],
   "accommodation": [
