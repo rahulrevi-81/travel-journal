@@ -298,13 +298,13 @@
     {
       "dayLabel": "3",
       "date": "Jun 22",
-      "title": "Fly → Lake Thun → Diemtigtal",
-      "meta": "Jun 22 · ZRH → Lake Thun → Diemtigtal",
+      "title": "Fly → Blausee → Diemtigtal",
+      "meta": "Jun 22 · ZRH → Blausee → Diemtigtal",
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 3 Map — ZRH → Lake Thun → Blausee → Diemtigtal",
-          "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Spiez,+Switzerland/Blausee+Nature+Park,+Kandergrund,+Switzerland/Oey,+3753+Diemtigen,+Switzerland"
+          "label": "Day 3 Map — ZRH → Blausee → Diemtigtal",
+          "url": "https://www.google.com/maps/dir/Zurich+Airport/Blausee+Nature+Park,+Kandergrund/Oey,+Diemtigtal,+Switzerland"
         }
       ],
       "sections": [
@@ -313,9 +313,9 @@
           "items": [
             "Return Iceland car at KEF · board <strong>7:20am FI568</strong>",
             "Land ZRH <strong>1:05pm</strong> · clear Non-Schengen → Schengen passport control · pick up <strong>Hertz rental car</strong> at Arrivals Hall desk · Conf. <strong>L5350959316</strong> · Jeep Compass or similar · allow <strong>60–90 min</strong> for immigration + car pickup",
-            "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
-            "Drive <strong>~1hr</strong> → <strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval <strong>Spiez Castle</strong> on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min)",
-            "Drive <strong>45 min</strong> → <strong>Tiny House Diemtigtal</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
+            "Depart ZRH <strong>~2:30–3:00pm</strong> · drive <strong>1h 30m, ~95 mi</strong> → <strong>Blausee Nature Park</strong>, Kandergrund",
+            "<strong>Blausee</strong> — crystal-clear deep blue glacial lake in a 20-hectare fairytale forest · walk the lake loop + wooden bridge (~45 min) · glass-bottom boat included in entry · organic trout farm · playground for kids · open until 9pm · CHF 12/adult · CHF 6/child · <strong>arrive ~4:30pm</strong>",
+            "Drive <strong>20 min</strong> → <strong>Tiny House Diemtigtal</strong> · check in · arrive <strong>~6:00pm</strong> ✅",
             "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow"
           ]
         }
@@ -343,7 +343,7 @@
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
         "to": "Tiny House Diemtigtal",
-        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Tiny House Diemtigtal",
+        "highlights": "Fly KEF→ZRH · Hertz pickup · Blausee crystal lake + forest walk · Diemtigtal",
         "bookings": [
           {
             "status": "booked",
@@ -359,8 +359,8 @@
     {
       "dayLabel": "4",
       "date": "Jun 23",
-      "title": "Oeschinensee + Grindelwald First + Lauterbrunnen + Mürren",
-      "meta": "Jun 23 · Diemtigtal → Kandersteg → Grindelwald → Lauterbrunnen → Mürren → Buchloe",
+      "title": "Oeschinensee + Grindelwald First",
+      "meta": "Jun 23 · Diemtigtal → Kandersteg → Grindelwald → Munich",
       "flag": "🇨🇭",
       "warning": true,
       "mapLinks": [
@@ -373,18 +373,13 @@
         {
           "heading": null,
           "items": [
-            "⚠️ <strong>Oeschinensee optional</strong> — if doing it: leave Diemtigtal <strong>7:30am</strong> · drive 30 min → Kandersteg · if skipping: leave <strong>9:00am</strong> → drive direct to Grindelwald (~1hr 10min)",
-            "⭐ <strong>Oeschinensee gondola</strong> (optional) — turquoise alpine lake at 1,578m enclosed by sheer 2,000m cliffs · lake walk + photos · ~CHF 35/adult · gondola down by <strong>10:30am</strong> · <em>skip if you prefer more time in Grindelwald</em>",
-            "Drive <strong>56 min</strong> → <strong>Grindelwald</strong> · arrive ~<strong>11:30am</strong> · (or direct from Diemtigtal → arrive ~10:15am if skipping Oeschinensee) · grab sandwiches from a bakery",
-            "⭐ <strong>Firstbahn gondola up → First (2,166m)</strong> — 25 min ride · Eiger, Mönch, Jungfrau panorama opens up · ~CHF 55/adult return",
-            "⭐ <strong>Cliff Walk at First</strong> (~30 min) — glass-floor walkway along the cliff edge · hanging over the void · Eiger directly in front · then <strong>Bachalpsee lake hike</strong> (~2.5 miles, ~1hr return) · eat packed lunch at the lake · Schreckhorn + Wetterhorn reflections · wildflowers in full bloom late June",
-            "Return to First station · <strong>gondola all the way down</strong> to Grindelwald (25 min) · back in Grindelwald by <strong>3:00pm</strong>",
-            "⚠️ <strong>Leave Grindelwald by 3:00pm</strong> · drive <strong>20 min</strong> → Lauterbrunnen · arrive <strong>3:20pm</strong>",
-            "⭐ <strong>Lauterbrunnen village</strong> — iconic church + <strong>Staubbach Falls</strong> (297m free-falling waterfall) backdrop · the most photographed view in Switzerland · walk to viewpoint · free · 45 min total",
-            "⚠️ <strong>Grütschalp cable car CLOSED Apr 13–Jul 10 2026</strong> — access Mürren via <strong>bus Lauterbrunnen→Stechelberg</strong> (20 min) + <strong>Schilthornbahn cable car up</strong> (10 min) · CHF 11.80/adult one way",
-            "⭐ <strong>Mürren</strong> — car-free cliff village at 1,638m · Eiger, Mönch, Jungfrau right in front · evening light spectacular at 5pm · dinner or drinks on a terrace · 45 min–1hr · <em>optional: skip to arrive Buchloe 1hr 45min earlier</em>",
-            "Cable car down → bus back to Lauterbrunnen (~30 min) · <strong>leave Lauterbrunnen ~6:30pm</strong> · drive <strong>~2.5hrs</strong> via Interlaken → A8 → Buchloe",
-            "⚠️ <strong>Landhaus Lindenberg, Buchloe</strong> 🇩🇪 · check in ~<strong>9:00pm</strong> · booking #6026325459 ✅ · dinner en route or at hotel"
+            "Leave Diemtigtal <strong>7:30am</strong> → drive <strong>30 min</strong> → <strong>Kandersteg</strong> · arrive 8:00am",
+            "🏔 <strong>Oeschinensee gondola 8:30am</strong> — first slot · turquoise alpine lake at 1,578m · lake walk + photos · (~2hrs)",
+            "Gondola down <strong>10:30am</strong> · drive <strong>56 min</strong> → <strong>Grindelwald</strong> · arrive ~11:30am",
+            "Grab sandwiches from a bakery in Grindelwald · <strong>Firstbahn gondola</strong> up → First (2,166m)",
+            "<strong>Cliff Walk</strong> at First (~30 min) · then <strong>Bachalpsee lake hike</strong> (~2.5 miles, ~1.5hrs) · eat lunch at the lake with Eiger reflections",
+            "Return to First station · <strong>gondola all the way down to Grindelwald</strong> (25 min · simpler than Bort)",
+            "⚠️ Leave Grindelwald by <strong>3:30pm</strong> · drive <strong>~5hrs</strong> to Munich · arrive <strong>~8:30–9pm</strong>"
           ]
         }
       ],
@@ -408,7 +403,7 @@
         "heavy": true,
         "from": "Diemtigtal 🇨🇭",
         "to": "Munich 🇩🇪",
-        "highlights": "Oeschinensee optional · Grindelwald First · Cliff Walk · Bachalpsee lake hike",
+        "highlights": "Oeschinensee 8:30am gondola · Grindelwald First Cliff Walk · Bachalpsee · First Flyer/Glider",
         "bookings": [
           {
             "status": "booked",
@@ -490,8 +485,8 @@
     {
       "dayLabel": "6",
       "date": "Jun 25",
-      "title": "Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 25 · Schneizlreuth → Liechtensteinklamm → Salzburg → Wolfgangsee → Bad Goisern",
+      "title": "Liechtensteinklamm Gorge",
+      "meta": "Jun 25 · Schneizlreuth → Bad Goisern",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -503,15 +498,11 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Schneizlreuth 7:30am</strong> · drive <strong>~1hr 30min</strong> → Liechtensteinklamm · arrive ~9:00am",
-            "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · helix staircase · 444 stairs · thundering waterfall at the end · ~2.5hrs · €16/adult · €9/child · aim for ticket counter at opening · back at car ~11:30am",
-            "Drive <strong>~45 min</strong> north → <strong>Salzburg</strong> · arrive ~12:15pm · park at <strong>Altstadtgarage B</strong> (carved into the rock · €3.30/hr · very central)",
-            "⭐ <strong>Salzburg old town lunch + walk</strong> — <strong>Getreidegasse</strong> (Mozart's birthplace street · ornate iron shop signs) · <strong>Residenzplatz</strong> · <strong>Salzburg Cathedral</strong> (free · Mozart was baptised here · Roman ruins in the basement) · <strong>Hohensalzburg Fortress</strong> exterior view from below · ~1hr 30min total · leave by 2:00pm",
-            "⚠️ <strong>Lunch tip</strong> — try Café Tomaselli (oldest coffee house in Austria · Residenzplatz area) or grab a bratwurst on Universitätsplatz market · budget ~€15–20pp",
-            "Drive <strong>~45 min</strong> east via Route 158 → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~2:45pm",
-            "⭐ <strong>Wolfgangsee photo stop</strong> — pull over at St. Gilgen lakefront · turquoise lake backed by Schafberg mountain · iconic Salzkammergut view · 20–30 min · completely free · <em>optional: short walk along the waterfront promenade</em>",
-            "Drive <strong>~30 min</strong> south → <strong>HOMEBOUND Apartments, Bad Goisern</strong> · check in ~<strong>3:45pm</strong> ✅ · booking #72072198804917",
-            "Drive 10 min → <strong>Hallstatt evening lakeside walk</strong> — arrive after 4pm to avoid peak crowds · lakeside stroll + dinner · ⚠️ if P1/P2 full → park at Obertraun + ferry across"
+            "Leave Schneizlreuth <strong>7:30am</strong> → <strong>~1hr 30min</strong> → <strong>Liechtensteinklamm Gorge</strong> · arrive ~9am · aim for ticket counter at opening to avoid 10am–2pm peak",
+            "Deepest gorge in Alps — Helix staircase, <strong>444 stairs</strong>, thundering waterfall at the end · (~2.5hrs · <strong>€16/adult · €9/child 2026</strong>)",
+            "Drive <strong>~1hr 20min</strong> → <strong>HOMEBOUND Apartments, Bad Goisern</strong> · check in ~1:30pm ✅",
+            "Drive <strong>10 min</strong> → <strong>Hallstatt</strong> for evening lakeside walk · arrive after 4pm to avoid peak crowds",
+            "⚠️ <strong>Parking tip</strong>: if P1 and P2 signs show full on approach, skip them entirely · drive <strong>5 min to Obertraun</strong> · park free at the train station · take the ferry across into Hallstatt (~10 min)"
           ]
         }
       ],
@@ -530,7 +521,17 @@
         }
       ],
       "summary": {
-        "highlights": "Liechtensteinklamm gorge · Salzburg old town lunch · Wolfgangsee photo stop · Hallstatt evening walk"
+        "drive": "~110 mi",
+        "time": "2h 40m",
+        "from": "Schneizlreuth 🇩🇪",
+        "to": "HOMEBOUND, Bad Goisern 🇦🇹",
+        "highlights": "Liechtensteinklamm gorge (deepest in Alps) · Hallstatt evening walk",
+        "bookings": [
+          {
+            "status": "booked",
+            "text": "✓ HOMEBOUND"
+          }
+        ]
       }
     },
     {
@@ -933,8 +934,8 @@
     {
       "dayLabel": "14",
       "date": "Jul 3",
-      "title": "Innsbruck → Dornbirn (Plan A: Nordkette · Plan B: Olpererhütte)",
-      "meta": "Jul 3 · Außervillgraten → Innsbruck → Dornbirn",
+      "title": "Innsbruck → Dornbirn",
+      "meta": "Jul 3 · Außervillgraten → Dornbirn",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -946,19 +947,12 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>8:00am</strong> · drive <strong>~2hrs</strong> → Innsbruck · arrive ~<strong>10:15am</strong> · ⚠️ check S16 Arlberg Tunnel for closures before departure",
-            "━━━ <strong>PLAN A — Nordkette + Innsbruck old town</strong> ━━━ <em>Choose if weather is mixed or family prefers a relaxed city morning</em>",
-            "⭐ <strong>Nordkette cable car</strong> — take <strong>Hungerburgbahn</strong> from Congress station → <strong>Seegrube</strong> (1,905m) → <strong>Hafelekar</strong> (2,334m) · panoramic views over Innsbruck and Inn valley · ~€50–56/adult return · last ascent 5pm · allow 2hrs total",
-            "🏙 <strong>Innsbruck old town</strong> — <strong>Golden Roof</strong> facade (exterior, skip museum interior) · <strong>Maria-Theresien-Strasse</strong> · grab lunch on the street · 1hr · depart Innsbruck ~2:30pm",
-            "━━━ <strong>PLAN B — Olpererhütte + suspension bridge</strong> ━━━ <em>Choose if weather is clear and family wants the best alpine hike of the trip</em>",
-            "⭐ <strong>Drive Innsbruck → Mayrhofen → Schlegeis reservoir</strong> — 53 min to Mayrhofen + 45 min up Schlegeis Alpine Road toll road · arrive trailhead ~<strong>12:00pm</strong> · ⚠️ <strong>cash only</strong> at toll station ~€17/car · road opens 7am",
-            "⭐ <strong>Olpererhütte hike</strong> — Trail 502 from Schlegeis reservoir (1,800m) · 3km · 600m elevation gain · <strong>1hr 30min up</strong> · rocky but well-marked · Schlegeis turquoise reservoir views entire way up",
-            "⭐ <strong>Suspension bridge (Zillertaler Hängebrücke)</strong> — 5 min past the hütte · iconic floating bridge illusion · safe to walk · best photo of the trip · lunch at Olpererhütte restaurant · <strong>1hr 30min</strong> at top",
-            "Hike down <strong>1hr</strong> · drive back to Innsbruck <strong>1hr 40min</strong> · quick <strong>30min</strong> Innsbruck old town walk if energy allows · depart ~<strong>5:30pm</strong>",
-            "━━━ <strong>Both plans converge here</strong> ━━━",
-            "Drive <strong>~1hr 30min</strong> west via S16 → <strong>Dornbirn</strong> · check in <strong>Vienna House Martinspark</strong> · Plan A arrives ~4:00pm · Plan B arrives ~7:00pm · booking #72072266618761 ✅",
-            "⭐ <strong>Karren Cable Car</strong> (5 min from hotel) — glass-floor <em>Karren-Kante</em> viewpoint over Rhine Valley + Lake Constance · last cable car down ~6pm · <em>Plan A only — skip if doing Plan B</em>",
-            "🧺 <strong>Laundry #4</strong> — hotel offers 24hr service laundry · drop off on arrival · for same-evening wash use laundrette in Dornbirn centre (2km)"
+            "Checkout <strong>8:00am</strong> · drive <strong>~2hrs</strong> → <strong>Innsbruck</strong> · arrive <strong>~10:15am</strong> · ⚠️ check S16 Arlberg Tunnel for maintenance closures — if closed, route over Arlberg Pass adds ~40 min",
+            "<strong>Nordkette cable car first</strong> — take Hungerburgbahn from Congress station → Seegrube → Hafelekar summit (2,334m) · panoramic Alps views · <strong>~€50–56/adult return · last ascent 5pm</strong> · weather-dependent, go first before lunch (~2hrs total)",
+            "<strong>Innsbruck old town</strong> — Golden Roof facade (exterior, skip the museum interior to save time) · Maria-Theresien-Strasse · Tyrolean lunch",
+            "Drive <strong>~1hr 30min</strong> west via S16 → <strong>Dornbirn</strong> · check in Vienna House ~<strong>4:00–4:30pm</strong>",
+            "⭐ <strong>Karren Cable Car</strong> (5 min from hotel) — glass-floor 'Karren-Kante' viewpoint over the Rhine Valley and Lake Constance · open until ~6pm in summer · perfect early evening activity · ~1hr",
+            "🧺 <strong>Laundry #4</strong> — hotel offers 24hr service laundry (not same-day) · for same-evening wash use self-service laundromat in Dornbirn"
           ]
         }
       ],
@@ -1402,28 +1396,15 @@
   ],
   "glance": [
     {
-      "day": "1",
-      "date": "Jun 20",
+      "day": "1–2",
+      "date": "Jun 20–21",
       "flag": "🇮🇸",
-      "from": "Keflavík / KEF 🇮🇸",
-      "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
-      "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara black sand beach · Vík village",
-      "drive": "~130 mi",
-      "driveTime": "~3.5hrs",
-      "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
-      "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Ker%C3%AD%C3%B0+Crater+Lake,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Black+Sand+Beach/V%C3%ADk,+Iceland/Skeidflot+871,+Iceland"
-    },
-    {
-      "day": "2",
-      "date": "Jun 21",
-      "flag": "🇮🇸",
-      "from": "Skeidflot, Mýrdalur 🇮🇸",
-      "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
-      "highlights": "Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
-      "drive": "~180 mi",
-      "driveTime": "~5hrs",
-      "bookings": "✓ BergOne",
-      "mapUrl": "https://www.google.com/maps/dir/Skeidflot+871,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon,+Iceland/Kirkjubæjarklaustur,+Iceland/Svínafellsjökull,+Iceland/Jökulsárlón+Glacier+Lagoon/Diamond+Beach+Iceland/Ytri-Njarðvík,+Iceland"
+      "from": "Reykjavík / KEF 🇮🇸",
+      "nightStay": "Room in Skeidflot → BergOne",
+      "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi · Skógafoss · Reynisfjara black sand beach · Vík · Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
+      "drive": "~90 mi Day 1 / ~95 mi Day 2",
+      "driveTime": "~14hrs daylight each day",
+      "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ BergOne · ✓ Budget car KEF"
     },
     {
       "day": "3",
@@ -1431,23 +1412,21 @@
       "flag": "🇨🇭",
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "Tiny House Diemtigtal",
-      "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Tiny House Diemtigtal",
+      "highlights": "Fly KEF→ZRH · Hertz pickup · Blausee Nature Park · Tiny House Diemtigtal",
       "drive": "~95 mi",
       "driveTime": "1h 30m",
-      "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH",
-      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Spiez,+Switzerland/Oey,+3753+Diemtigen,+Switzerland"
+      "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH"
     },
     {
       "day": "4",
       "date": "Jun 23",
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
-      "nightStay": "Landhaus Lindenberg, Buchloe 🇩🇪",
-      "highlights": "Oeschinensee gondola (optional) · Grindelwald First · Cliff Walk · Bachalpsee hike · Lauterbrunnen + Staubbach Falls · Mürren cliff village",
-      "drive": "~120 mi",
-      "driveTime": "~3hrs",
-      "bookings": "✓ Landhaus Lindenberg #6026325459 · ✓ Gondola #238070 · ⏳ Oeschinensee 8:30am slot",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+3753+Diemtigen,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Lauterbrunnen,+Switzerland/Stechelberg,+Switzerland/Landhaus+Lindenberg,+Buchloe,+Germany"
+      "nightStay": "Munich 🇩🇪",
+      "highlights": "Oeschinensee gondola · Grindelwald First · Cliff Walk · Bachalpsee lake hike",
+      "drive": "~317 mi",
+      "driveTime": "6h 40m",
+      "bookings": "✓ Landhaus Lindenberg #6026325459 · ✓ Gondola #238070 · ⏳ Oeschinensee 8:30am slot"
     },
     {
       "day": "5",
@@ -1458,8 +1437,7 @@
       "highlights": "Königssee electric boat · Salet · Obersee lake · Röthbach Waterfall viewpoint · St. Bartholomä lunch · Wimbachklamm Gorge",
       "drive": "~126 mi",
       "driveTime": "2h 20m",
-      "bookings": "✓ Wurznwirt · ⏳ Königssee boat",
-      "mapUrl": "https://www.google.com/maps/dir/Buchloe,+Germany/Schönau+am+Königssee,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden/Schneizlreuth,+Germany"
+      "bookings": "✓ Wurznwirt · ⏳ Königssee boat"
     },
     {
       "day": "6",
@@ -1467,11 +1445,10 @@
       "flag": "🇦🇹",
       "from": "Schneizlreuth 🇩🇪",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
-      "highlights": "Liechtensteinklamm Gorge · Salzburg old town · Wolfgangsee (St. Gilgen) · Hallstatt evening walk",
-      "drive": "~150 mi",
-      "driveTime": "~3.5hrs",
-      "bookings": "✓ HOMEBOUND",
-      "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Austria/Bad+Goisern,+Austria/Hallstatt,+Austria"
+      "highlights": "Liechtensteinklamm Gorge (444 stairs) · Hallstatt evening lakeside walk",
+      "drive": "~110 mi",
+      "driveTime": "2h 40m",
+      "bookings": "✓ HOMEBOUND"
     },
     {
       "day": "7",
@@ -1482,8 +1459,7 @@
       "highlights": "Hallstatt village · Echern Valley · Waldbachstrub Waterfall · Beinhaus (1,200 painted skulls) · Roman ruins under Dachsteinsport Janu · Dachstein Krippenstein · 5 Fingers viewing platform · Giant Ice Cave",
       "drive": "~25 mi",
       "driveTime": "~45m",
-      "bookings": "✓ HOMEBOUND",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Hallstatt,+Austria/Echerntal,+Hallstatt/Dachstein+Krippenstein,+Obertraun"
+      "bookings": "✓ HOMEBOUND"
     },
     {
       "day": "8",
@@ -1494,8 +1470,7 @@
       "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze (2,571m) · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Lake Bled",
       "drive": "~140 mi",
       "driveTime": "2h 33m +Grossglockner",
-      "bookings": "✓ Pr' Matjon",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau/Großglockner+Hochalpenstraße/Kaiser-Franz-Josefs-Höhe/Lake+Bled,+Slovenia"
+      "bookings": "✓ Pr' Matjon"
     },
     {
       "day": "9",
@@ -1506,8 +1481,7 @@
       "highlights": "Ojstrica viewpoint · Mala Osojnica viewpoint · Bled Castle · Mostnica Gorge · Devil's Bridge · Vogel Cable Car · Orlove Glave chairlift",
       "drive": "~25 mi",
       "driveTime": "~45m",
-      "bookings": "✓ Pr' Matjon · ✓ Vintgar entry · PE01-BL0I-808",
-      "mapUrl": "https://www.google.com/maps/dir/Lake+Bled,+Slovenia/Mala+Osojnica,+Bled/Bled+Castle/Stara+Fužina,+Slovenia/Ukanc,+Slovenia"
+      "bookings": "✓ Pr' Matjon · ✓ Vintgar entry · PE01-BL0I-808"
     },
     {
       "day": "10",
@@ -1518,8 +1492,7 @@
       "highlights": "Vintgar Gorge · Šum Waterfall · Peričnik Waterfall (walk behind falls) · Radovljica old town · Lectar gingerbread workshop · Pletna boat to Bled Island · wishing bell · Bled cream cake · birthday dinner",
       "drive": "~30 mi",
       "driveTime": "~1h 00m",
-      "bookings": "✓ Vintgar entry · PE01-BL0I-808 · 10:00am",
-      "mapUrl": "https://www.google.com/maps/dir/Lake+Bled,+Slovenia/Vintgar+Gorge,+Slovenia/Peričnik+Waterfall,+Slovenia/Radovljica,+Slovenia/Lake+Bled,+Slovenia"
+      "bookings": "✓ Vintgar entry · PE01-BL0I-808 · 10:00am"
     },
     {
       "day": "11",
@@ -1530,8 +1503,7 @@
       "highlights": "Passo Falzarego · Lagazuoi cable car · Rifugio Lagazuoi panorama · Galleries of Piccolo Lagazuoi (WWI tunnels)",
       "drive": "~138 mi",
       "driveTime": "3h 12m +Lagazuoi",
-      "bookings": "✓ Das Auss.Zeit",
-      "mapUrl": "https://www.google.com/maps/dir/Lake+Bled,+Slovenia/Passo+Falzarego,+Italy/Lagazuoi+Cable+Car,+Italy/Außervillgraten,+Austria"
+      "bookings": "✓ Das Auss.Zeit"
     },
     {
       "day": "12",
@@ -1542,8 +1514,7 @@
       "highlights": "Lago di Braies sunrise · Cadini di Misurina viewpoint · Tre Cime di Lavaredo loop · Rifugio Locatelli · WWI caves at Sasso di Sesto",
       "drive": "~40 mi",
       "driveTime": "~1h 00m",
-      "bookings": "✓ Das Auss.Zeit · ⏳ Pre-book Tre Cime shuttle",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Lago+di+Misurina,+Italy/Rifugio+Auronzo,+Italy/Außervillgraten,+Austria"
+      "bookings": "✓ Das Auss.Zeit · ⏳ Pre-book Tre Cime shuttle"
     },
     {
       "day": "13",
@@ -1554,8 +1525,7 @@
       "highlights": "Thurntaler summit (2,407m) · Cinque Torri · Scoiattoli chairlift · WWI open-air museum · Cortina d'Ampezzo · Lago di Sorapis (turquoise glacial lake)",
       "drive": "~50 mi",
       "driveTime": "~1h 30m",
-      "bookings": "✓ Das Auss.Zeit",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Außervillgraten,+Austria"
+      "bookings": "✓ Das Auss.Zeit"
     },
     {
       "day": "14",
@@ -1563,11 +1533,10 @@
       "flag": "🇦🇹",
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Vienna House Martinspark, Dornbirn 🇦🇹",
-      "highlights": "Plan A: Nordkette cable car (2,334m) · Innsbruck old town · Karren Cable Car · OR · Plan B: Olpererhütte hike · Zillertaler Hängebrücke suspension bridge · Innsbruck old town",
-      "drive": "~180 mi",
-      "driveTime": "~3.5hrs",
-      "bookings": "✓ Vienna House",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Innsbruck,+Austria/Dornbirn,+Austria"
+      "highlights": "Nordkette cable car (2,334m) · Hungerburgbahn · Innsbruck Golden Roof · Maria-Theresien-Strasse · Karren Cable Car (Rhine Valley + Lake Constance)",
+      "drive": "~130 mi",
+      "driveTime": "3h 10m",
+      "bookings": "✓ Vienna House"
     },
     {
       "day": "15",
@@ -1578,8 +1547,7 @@
       "highlights": "Vaduz Castle viewpoint · Liechtenstein passport stamp · Schaffhausen Munot Fortress · Stein am Rhein (optional) · Rhine Falls boat · Lindenhof Hill · Zurich Altstadt · Grossmünster · Fraumünster (Chagall windows) · Lake Zurich promenade · Zeughauskeller dinner",
       "drive": "~101 mi",
       "driveTime": "2h 30m",
-      "bookings": "⏳ ZRH hotel · Radisson Blu ZRH",
-      "mapUrl": "https://www.google.com/maps/dir/Dornbirn,+Austria/Vaduz,+Liechtenstein/Schaffhausen,+Switzerland/Neuhausen+am+Rheinfall,+Switzerland/Zurich,+Switzerland"
+      "bookings": "⏳ ZRH hotel · Radisson Blu ZRH"
     },
     {
       "day": "16",
@@ -1590,8 +1558,7 @@
       "highlights": "Hertz drop-off ZRH · Fly FI571 via KEF → Orlando MCO",
       "drive": "—",
       "driveTime": "—",
-      "bookings": "✓ Hertz drop-off",
-      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport/Orlando+International+Airport"
+      "bookings": "✓ Hertz drop-off"
     }
   ]
 }
