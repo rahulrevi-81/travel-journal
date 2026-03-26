@@ -530,8 +530,8 @@
     {
       "dayLabel": "7",
       "date": "Jun 26",
-      "title": "Berchtesgaden — Eagle's Nest + Jenner",
-      "meta": "Jun 26 · Schneizlreuth → Eagle's Nest → Jenner summit → Schneizlreuth",
+      "title": "Eagle's Nest + Rossfeld Panorama Road + Jenner",
+      "meta": "Jun 26 · Schneizlreuth — Berchtesgaden — Rossfeld — Jenner — Schneizlreuth",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -543,13 +543,13 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Schneizlreuth 8:00am</strong> · drive <strong>10 min</strong> → Berchtesgaden · ⚠️ Eagle's Nest bus runs from <strong>Kehlstein bus stop</strong> — first bus ~8:50am · tickets at Dokumentation Obersalzberg",
-            "⭐ <strong>Dokumentation Obersalzberg</strong> — excellent WWII museum documenting Nazi history of the Berchtesgaden area · ~45 min · €10/adult · tickets also give access to original bunker tunnels underground",
-            "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus ride up the Kehlsteinstrasse (narrow mountain road, no private cars) · elevator through the mountain · perched at <strong>1,834m</strong> · 360° panorama over Berchtesgaden, Königssee and Austria · the view of Königssee from up here is the best on the trip · ~1.5hrs · €33/adult bus + return",
-            "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · arrive ~<strong>12:30pm</strong>",
-            "⭐ <strong>Jennerbahn cable car</strong> — <strong>20-min ride</strong> to 1,800m mountain station · ~€25/adult return · views of Königssee and Watzmann open up on the way",
-            "⭐ <strong>Jenner summit hike</strong> (1,874m) — <strong>15–20 min</strong> from mountain station · 360° panorama · Königssee far below · Eagle's Nest visible across the valley · Watzmann massif · pack lunch at the Jenneralm restaurant terrace",
-            "Cable car back down ~<strong>3:00pm</strong> · drive 10 min → Schneizlreuth · rest · <strong>2nd night at Wurznwirt</strong> ✅"
+            "Leave <strong>Schneizlreuth 8:00am</strong> · drive <strong>10 min</strong> → Berchtesgaden",
+            "⭐ <strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels · ~45 min · €10/adult",
+            "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · first bus ~8:50am · elevator through mountain · 1,834m · 360° panorama · Eagle's Nest visible later from Rossfeld · ~1.5hrs · €33/adult",
+            "⭐ <strong>Rossfeld Panorama Road</strong> — Germany's highest road at 1,600m · start at <strong>Obersalzberg south entrance</strong> (same area as Eagle's Nest bus stop) · <strong>15km ring road</strong> · sweeping 360° views of Watzmann, Königssee, Salzburg and Austria · ~2hrs with photo stops · toll ~€9.50/car · Bavarian hut lunch at Panorama Restaurant at the top",
+            "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · arrive ~1:30pm",
+            "⭐ <strong>Jennerbahn cable car</strong> → 1,800m · <strong>Jenner summit hike (1,874m)</strong> · 15–20 min · 360° panorama · Königssee below · Eagle's Nest and Rossfeld visible across the valley · afternoon light on the mountains",
+            "Cable car down ~<strong>4:00pm</strong> · drive 10 min → Schneizlreuth · rest · <strong>2nd night Wurznwirt</strong> ✅"
           ]
         }
       ],
@@ -808,8 +808,8 @@
     {
       "dayLabel": "12",
       "date": "Jul 1",
-      "title": "Seceda + Lagazuoi → Dolomites base",
-      "meta": "Jul 1 · Innsbruck → Ortisei (Seceda) → Passo Falzarego (Lagazuoi) → Außervillgraten",
+      "title": "Seceda + Val di Funes + Lagazuoi → Dolomites",
+      "meta": "Jul 1 · Innsbruck → Ortisei (Seceda) → Val di Funes → Passo Falzarego → Außervillgraten",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -821,12 +821,14 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Innsbruck area 7:30am</strong> · drive <strong>1hr 10min</strong> → Ortisei, Val Gardena · ⚠️ <strong>Pre-book Seceda cable car tickets online before trip</strong> (2026 requires timed entry slots) · park at Parkgarage Seceda (~€3/hr)",
-            "⭐ <strong>Seceda cable car</strong> (Ortisei → Furnes → Seceda) · <strong>15-min ride</strong> · €59/adult 2026 · arrive 2,519m · <strong>10-min walk to Forcella Pana ridgeline</strong> — the most iconic jagged-peak view in the entire Dolomites · Fermeda Towers (Torri di Fermeda) · Puez-Odle Nature Park panorama · Sassolungo + Marmolada views",
-            "Lunch at <strong>Rifugio Firenze</strong> (Regensburgerhütte) on the ridge · cable car back down · depart Ortisei ~<strong>1:00pm</strong>",
-            "Drive <strong>1hr</strong> → <strong>Passo Falzarego</strong> · arrive ~2:00pm",
-            "⭐ <strong>Lagazuoi cable car</strong> (2,752m) · Rifugio Lagazuoi panorama · <strong>WWI Galleries (Piccolo Lagazuoi tunnels)</strong> — descend through hand-carved WWII tunnels (helmet + headlamp needed, rent at rifugio) · <strong>Alternate: summit walk only</strong> if kids prefer no tunnels — 30-min walk to cross, equal views",
-            "Drive <strong>35 min</strong> → <strong>Das Auss.Zeit, Außervillgraten</strong> · arrive ~<strong>6:30pm</strong> · check in · first night in the Dolomites ✅"
+            "Leave <strong>Innsbruck area 7:30am</strong> · drive <strong>1hr 10min</strong> → Ortisei, Val Gardena · ⚠️ <strong>Pre-book Seceda cable car tickets online before the trip</strong> (2026 requires timed entry slots) · park at Parkgarage Seceda",
+            "⭐ <strong>Seceda cable car</strong> (Ortisei → Furnes → Seceda) · <strong>15-min ride</strong> · €59/adult 2026 · arrive 2,519m · <strong>10-min walk to Forcella Pana ridgeline</strong> · Fermeda Towers (Torri di Fermeda) · most iconic jagged-peak view in the entire Dolomites · Sassolungo + Marmolada panorama",
+            "Lunch at <strong>Rifugio Firenze</strong> on the ridge · cable car back down · depart Ortisei ~<strong>12:00pm</strong>",
+            "Drive <strong>30 min</strong> → <strong>Val di Funes</strong> (Santa Maddalena) · ⚠️ park in village — road to church is now closed to cars (May 2026 barrier)",
+            "⭐ <strong>Santa Maddalena Church viewpoint</strong> — walk 30 min up Panoramaweg from village · tiny stone church in rolling green meadow framed by the jagged Odle/Geisler peaks behind · the most photographed scene in South Tyrol · <strong>Adolf Munkel Trail optional</strong> if time allows (2hrs extra, directly under Odle peaks) · back to car by ~3:00pm",
+            "Drive <strong>1hr</strong> → <strong>Passo Falzarego</strong> · arrive ~4:00pm",
+            "⭐ <strong>Lagazuoi cable car</strong> (2,752m) · Rifugio Lagazuoi sunset light · <strong>WWI Galleries</strong> (tunnels, helmet + headlamp) · OR summit walk if kids prefer · cable car back down",
+            "Drive <strong>35 min</strong> → <strong>Das Auss.Zeit, Außervillgraten</strong> · check in · first night in the Dolomites ✅"
           ]
         }
       ],
@@ -995,7 +997,8 @@
             "Drive <strong>1hr</strong> → <strong>Vaduz, Liechtenstein</strong> · passport stamp · Vaduz Castle walk · ~30 min",
             "Drive <strong>45 min</strong> → <strong>Rhine Falls, Schaffhausen</strong> · Europe's largest waterfall · boat to the rock · ~1hr",
             "Drive <strong>40 min</strong> → <strong>Zurich</strong> · arrive ~7:30pm · Zurich Altstadt walk · Fraumünster · Limmat riverfront · dinner",
-            "⭐ <strong>Hertz ZRH drop-off</strong> (24hr service, airport location) · check in <strong>Radisson Blu ZRH</strong> ~9:30pm · 5-min walk to terminal · <strong>set alarm 4:30am</strong>"
+            "⭐ <strong>Hertz ZRH drop-off</strong> (24hr service, airport location) · check in <strong>Radisson Blu ZRH</strong> ~9:30pm · 5-min walk to terminal · <strong>set alarm 4:30am</strong>",
+            "⭐ <strong>Plansee (optional)</strong> — 'the Fjord of Tyrol' · 45 min detour from Reutte on B179 · turquoise second-largest lake in Tyrol · framed by Ammergau Alps · 45-min lakeside walk or swim · perfect rest stop before the long final drive · ⚠️ only add if skipping Rhine Falls or departing Außervillgraten extra early"
           ]
         }
       ],
@@ -1453,7 +1456,7 @@
       "flag": "🇩🇪",
       "from": "Schneizlreuth 🇩🇪",
       "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
-      "highlights": "Eagle's Nest (Kehlsteinhaus 1,834m) · Dokumentation Obersalzberg WWII bunkers · Jennerbahn cable car · Jenner summit (1,874m) · Königssee panorama",
+      "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road (Germany's highest road) · Jennerbahn cable car · Jenner summit 1,874m",
       "drive": "~20 mi",
       "driveTime": "~30min",
       "bookings": "✓ Wurznwirt (2nd night — check availability)",
@@ -1513,9 +1516,9 @@
       "flag": "🇮🇹",
       "from": "Near Innsbruck 🇦🇹 via Ortisei 🇮🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Seceda cable car (Ortisei) · Forcella Pana ridgeline · Fermeda Towers panorama · Passo Falzarego · Lagazuoi cable car (2,752m) · WWI Galleries",
+      "highlights": "Seceda cable car · Fermeda Towers ridgeline · Val di Funes · Santa Maddalena Church meadow viewpoint · Odle peaks · Lagazuoi 2,752m · WWI Galleries",
       "drive": "~150 mi",
-      "driveTime": "~3hrs + Seceda + Lagazuoi",
+      "driveTime": "~3.5hrs + Seceda + Val di Funes + Lagazuoi",
       "bookings": "✓ Das Auss.Zeit",
       "mapUrl": "https://www.google.com/maps/dir/Lake+Bled,+Slovenia/Passo+Falzarego,+Italy/Lagazuoi+Cable+Car,+Italy/Außervillgraten,+Austria"
     },
@@ -1549,7 +1552,7 @@
       "flag": "🇦🇹",
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Radisson Blu ZRH 🇨🇭",
-      "highlights": "Weather choice: Nordkette + Innsbruck · OR · Olpererhütte + suspension bridge · Dornbirn (Karren Cable Car optional) · Vaduz Liechtenstein · Rhine Falls · Zurich Altstadt dinner",
+      "highlights": "Nordkette OR Olpererhütte · Dornbirn (daytime) · Plansee optional · Vaduz Liechtenstein · Rhine Falls · Zurich Altstadt dinner · Hertz drop-off ZRH",
       "drive": "~180 mi",
       "driveTime": "~3.5hrs",
       "bookings": "✓ Vienna House Dornbirn (daytime only — cancel overnight) · ⏳ Radisson Blu ZRH — book Jul 4",
