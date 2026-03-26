@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe 2026 Plan B — Daily Schedule</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --cream: #f5f0e8;
+    --ink: #1a1a2e;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --pine: #2d5016;
+    --pine-light: #4a7c2f;
+    --sky: #2b6cb0;
+    --rust: #9b3a1a;
+    --sage: #6b8f71;
+    --border: #d4c9b0;
+    --wow: #c9a84c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 40px 48px 32px;
+    border-bottom: 4px solid var(--gold);
+  }
+
+  header .label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  header .sub {
+    font-size: 13px;
+    color: #a0a0b8;
+    font-weight: 300;
+  }
+
+  .rules-bar {
+    background: var(--pine);
+    color: #d4e8c2;
+    padding: 10px 48px;
+    font-size: 12px;
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+  }
+
+  .rules-bar span::before { content: '● '; color: var(--gold); }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 48px 64px;
+  }
+
+  .day-block {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .day-header {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  .day-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .day-num .date-small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: #a0a0b8;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .day-meta {
+    font-size: 11px;
+    color: #8888aa;
+    font-weight: 300;
+    margin-top: 2px;
+  }
+
+  .day-flag {
+    font-size: 22px;
+    text-align: right;
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0;
+  }
+
+  .time-col {
+    background: #f8f5ef;
+    border-right: 2px solid var(--border);
+    padding: 0;
+  }
+
+  .time-item {
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--sky);
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ece8df;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 12px;
+  }
+
+  .activity-col {
+    padding: 0;
+  }
+
+  .activity-item {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f0ece4;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 42px;
+  }
+
+  .activity-item:last-child { border-bottom: none; }
+
+  .activity-item.wow {
+    background: linear-gradient(135deg, #fffdf0 0%, #fef9e7 100%);
+    border-left: 3px solid var(--gold);
+  }
+
+  .activity-item.hike {
+    background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 100%);
+    border-left: 3px solid var(--pine-light);
+  }
+
+  .activity-item.meal {
+    background: #faf8f4;
+    border-left: 3px solid #d4c9b0;
+  }
+
+  .activity-item.drive {
+    background: #f8f8fc;
+    border-left: 3px solid #b0b8d4;
+  }
+
+  .activity-item.checkin {
+    background: #f8faf8;
+    border-left: 3px solid var(--sage);
+  }
+
+  .act-icon {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .act-text {
+    font-size: 13px;
+    color: #2a2a3e;
+    flex: 1;
+  }
+
+  .act-text strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .act-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .badge-wow { background: var(--gold); color: white; }
+  .badge-hike { background: var(--pine-light); color: white; }
+
+  .day-footer {
+    background: #f8f5ef;
+    border-top: 1px solid var(--border);
+    padding: 10px 20px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-stat {
+    font-size: 11px;
+    color: #666;
+  }
+
+  .footer-stat strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .rest-day {
+    padding: 20px 20px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    background: #fafaf8;
+  }
+
+  .birthday-banner {
+    background: linear-gradient(135deg, var(--pine) 0%, #1a3a0a 100%);
+    color: #d4e8c2;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--rust);
+    padding: 8px 16px 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    border-bottom: 1px solid #f0ece4;
+    background: #fdfcfa;
+  }
+
+  .legend {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0 24px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #555;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="label">Europe Family Road Trip 2026 · Plan B</div>
+  <h1>Daily Schedule — Jun 19 → Jul 5</h1>
+  <div class="sub">Iceland · Switzerland · Germany · Austria · Italy · Liechtenstein &nbsp;·&nbsp; Rahul · Veena · Veda · Vaiga</div>
+</header>
+
+<div class="rules-bar">
+  <span>Day starts 8:30am</span>
+  <span>1hr lunch</span>
+  <span>1hr dinner</span>
+  <span>Back by 8:30pm</span>
+  <span>⭐ WOW + 🥾 Hike every day (except Jun 22 & Jul 5)</span>
+</div>
+
+<div class="container">
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--gold)"></div> WOW item</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--pine-light)"></div> Hike</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d4c9b0"></div> Meal</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#b0b8d4"></div> Drive</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--sage)"></div> Check-in</div>
+  </div>
+
+  <!-- DAY 1 - Jun 20 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">1<span class="date-small">Jun 20</span></div>
+      <div>
+        <div class="day-title">Iceland — Golden Circle + South Coast Waterfalls</div>
+        <div class="day-meta">KEF → Kerið → Geysir → Seljalandsfoss → Skógafoss → Reynisfjara → Skeidflot</div>
+      </div>
+      <div class="day-flag">🇮🇸</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">10:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">2:00pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:00pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Pick up Iceland car at KEF · depart for Kerið (~45 min)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Kerið Crater Lake</strong> — red volcanic walls, vivid aquamarine lake · walk the rim + descend to lake edge (~45 min · ISK 600)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Kaffi Krús or Almar Bakari, Selfoss (~1hr)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Geysir / Strokkur</strong> — erupts every 5–10 min · watch 2–3 eruptions (~45 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min south → Urriðafoss (Iceland's most voluminous waterfall · 2 min off Rte 1 · free · ~20 min)</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Seljalandsfoss</strong> — walk behind the falls · waterproofs essential (~1hr)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Gljúfrabúi</strong> hidden canyon waterfall (5 min from Seljalandsfoss · ~30 min) · then <strong>Skógafoss</strong> — 527 steps for top view (~45 min)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Reynisfjara black sand beach</strong> — basalt columns, Reynisdrangar sea stacks · Vík church viewpoint (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — grab food in Vík or at accommodation (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Room in Skeidflot</strong> · Airbnb ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~130 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Kerið · Geysir · Reynisfjara</span>
+      <span class="footer-stat"><strong>Hike:</strong> Seljalandsfoss + Gljúfrabúi · Skógafoss steps</span>
+      <span class="footer-stat">⚠️ Set alarm 5:15am Jun 22 for KEF</span>
+    </div>
+  </div>
+
+  <!-- DAY 2 - Jun 21 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">2<span class="date-small">Jun 21</span></div>
+      <div>
+        <div class="day-title">Iceland — South Coast Full Push</div>
+        <div class="day-meta">Skeidflot → Dyrhólaey → Fjaðrárgljúfur → Svínafellsjökull → Jökulsárlón → BergOne</div>
+      </div>
+      <div class="day-flag">🇮🇸</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">7:00am</div>
+        <div class="time-item">7:45am</div>
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:30am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:30pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">3:30pm</div>
+        <div class="time-item">5:00pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Skeidflot early — already 10km from Dyrhólaey</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Dyrhólaey arch</strong> — clifftop viewpoint over black sand coast · puffins nesting on Lágey islet in June · lower road for arch (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min east → Fjaðrárgljúfur Canyon</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Fjaðrárgljúfur Canyon</strong> — 100m deep moss-covered canyon · GoT filming location · full rim walk (~1.5hrs · ISK 1000)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Kirkjubæjarklaustur (~1hr)</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Svínafellsjökull Glacier</strong> — 2km side road · 15–20 min walk to viewpoint · deep blue ice · GoT + Interstellar filming location (~45 min · free)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr east → Jökulsárlón</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Jökulsárlón Glacier Lagoon</strong> — floating blue icebergs · seals on ice (~45 min) → cross road → <strong>Diamond Beach</strong> ice on black sand (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive ~2hrs west → BergOne, Ytri-Njarðvík</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — BergOne</strong> ✅</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 20 min → Reykjanes Peninsula golden hour — lighthouse + Bridge Between Continents</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> at BergOne / nearby (~1hr)</span></div>
+        <div class="activity-item"><span class="act-icon">😴</span><span class="act-text">Early night — alarm 5:15am tomorrow for KEF</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~180 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Dyrhólaey + Puffins · Jökulsárlón · Diamond Beach</span>
+      <span class="footer-stat"><strong>Hike:</strong> Fjaðrárgljúfur rim · Svínafellsjökull glacier walk</span>
+    </div>
+  </div>
+
+  <!-- DAY 3 - Jun 22 (NO hike, NO wow - travel day) -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">3<span class="date-small">Jun 22</span></div>
+      <div>
+        <div class="day-title">Fly KEF → ZRH · Lake Thun · Diemtigtal</div>
+        <div class="day-meta">Travel day — no hike required</div>
+      </div>
+      <div class="day-flag">🇮🇸→🇨🇭</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">6:00am</div>
+        <div class="time-item">7:20am</div>
+        <div class="time-item">1:05pm</div>
+        <div class="time-item">2:30pm</div>
+        <div class="time-item">3:30pm</div>
+        <div class="time-item">4:15pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive ~45 min to KEF · return Iceland car</span></div>
+        <div class="activity-item wow"><span class="act-icon">✈️</span><span class="act-text"><strong>FI568 departs KEF 7:20am</strong> → ZRH 1:05pm · Non-stop 3h 45m</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Clear immigration · <strong>Hertz pickup</strong> Conf. L5350959316 · allow 60–90 min · depart ~2:30pm</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive south toward Bernese Oberland (~1hr)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — Eiger/Mönch/Jungfrau framed by turquoise lake · <strong>Spiez Castle</strong> waterfront (~30 min)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min → Diemtigtal</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Tiny House Diemtigtal</strong> ✅ · Airbnb · $255.92</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Grimmimutz Discovery Trail</strong> — family-themed trail starting right in Oey · kids discover the story of the forest dwarf Grimmimutz and the pepper witch via illustrated markers along the route · ~45–60 min · free · perfect evening stretch after long travel day</span><span class="act-badge badge-hike">WALK</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Diemtigtal village stroll</strong> — traditional wooden chalets · award-winning intact villagescape (Wakker Prize 1986) · largest alpine farming valley in Switzerland · cowbells, wild roses, mountain backdrop · genuinely beautiful arrival moment</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — cook in Tiny House kitchen or Stärnä Beizli, Oey (~1hr)</span></div>
+        <div class="activity-item"><span class="act-icon">📱</span><span class="act-text">Book Oeschinensee 8:30am slot tonight at oeschinensee.skiperformance.com — fills fast!</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Travel day</strong> — hike & WOW exempt · evening walk added</span>
+      <span class="footer-stat"><strong>Evening:</strong> Grimmimutz Trail + village stroll</span>
+      <span class="footer-stat">💡 Confirm Swiss vignette at Hertz pickup</span>
+      <span class="footer-stat">💡 Confirm Italy cross-border approval</span>
+    </div>
+  </div>
+
+  <!-- DAY 4 - Jun 23 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">4<span class="date-small">Jun 23</span></div>
+      <div>
+        <div class="day-title">Oeschinensee + Jaun Pass + Gruyères</div>
+        <div class="day-meta">Diemtigtal → Kandersteg → Jaun Pass → Gruyères → Diemtigtal</div>
+      </div>
+      <div class="day-flag">🇨🇭</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:00am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">2:15pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:30pm</div>
+        <div class="time-item">6:00pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Diemtigtal · drive 20 min → Kandersteg</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Oeschinensee gondola 8:30am slot</strong> — turquoise alpine lake at 1,578m · sheer 2,000m cliffs · ~CHF 35/adult · pre-booked timed entry</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Oeschinensee lake walk</strong> — 25 min walk from gondola station to lake shore · optional panorama trail (D) · rowing boats available · summer toboggan run (~1.5hrs)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Gondola down · drive 45 min west → Jaun Pass</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Jaun Pass (1,509m)</strong> — dramatic switchbacks through Fribourg Prealps · stop at the pass for panoramic views · short ridge walk (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 30 min → Gruyères</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Fondue lunch</strong> in Gruyères — local restaurant · CHF 25–30pp (~1hr)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Château de Gruyères</strong> — perfectly preserved medieval hilltop village · cobblestone street · exterior walk free · interior €12 optional (~1hr)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1h 30min back to Diemtigtal via Bulle + Frutigen</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Back at Tiny House Diemtigtal</strong> — 2nd night ✅</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — cook at Tiny House (~1hr)</span></div>
+        <div class="activity-item"><span class="act-icon">😴</span><span class="act-text">Early night — big Grindelwald day tomorrow</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~80 mi round trip</span>
+      <span class="footer-stat"><strong>WOW:</strong> Oeschinensee · Jaun Pass · Gruyères medieval village</span>
+      <span class="footer-stat"><strong>Hike:</strong> Oeschinensee lake trail</span>
+      <span class="footer-stat">⚠️ Pre-book gondola slot tonight</span>
+    </div>
+  </div>
+
+  <!-- DAY 5 - Jun 24 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">5<span class="date-small">Jun 24</span></div>
+      <div>
+        <div class="day-title">Grindelwald First + Cliff Walk + Bachalpsee</div>
+        <div class="day-meta">Diemtigtal → Grindelwald → Lauterbrunnen → Buchloe</div>
+      </div>
+      <div class="day-flag">🇨🇭</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:15am</div>
+        <div class="time-item">9:45am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">2:00pm</div>
+        <div class="time-item">2:30pm</div>
+        <div class="time-item">3:15pm</div>
+        <div class="time-item">4:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Diemtigtal · drive ~45 min → Grindelwald</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Grindelwald First gondola #238070</strong> — ride to First (2,168m) · pre-booked · 2 adults + 2 children</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>First Cliff Walk</strong> — suspended steel & glass walkway over the valley · Eiger directly opposite · ~30 min</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Bachalpsee hike</strong> — flat trail from First to the iconic alpine lake · Eiger/Mönch/Jungfrau reflected in water · 5km return (~1.5hrs)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Restaurant First on the ridge or back in Grindelwald (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Gondola down · drive 15 min → Lauterbrunnen</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Lauterbrunnen village + Staubbach Falls</strong> — 300m freefall waterfall right over the village · short walk to base (~30 min · free)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive ~2hrs north → Buchloe, Germany</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Escape by Landhaus Lindenberg, Buchloe</strong> · Conf. #6026325459 ✅</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Buchloe or at hotel (~1hr)</span></div>
+        <div class="activity-item"><span class="act-icon">😴</span><span class="act-text">Rest up — Königssee day tomorrow</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~80 mi + 2hr to Buchloe</span>
+      <span class="footer-stat"><strong>WOW:</strong> Grindelwald First gondola · Cliff Walk · Staubbach Falls</span>
+      <span class="footer-stat"><strong>Hike:</strong> Bachalpsee 5km return</span>
+    </div>
+  </div>
+
+  <!-- DAY 6 - Jun 25 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">6<span class="date-small">Jun 25</span></div>
+      <div>
+        <div class="day-title">Königssee + Obersee + Hintersee Zauberwald</div>
+        <div class="day-meta">Buchloe → Königssee → Obersee → St. Bartholomä → Hintersee → Schneizlreuth</div>
+      </div>
+      <div class="day-flag">🇩🇪</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:00am</div>
+        <div class="time-item">9:30am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:15pm</div>
+        <div class="time-item">1:15pm</div>
+        <div class="time-item">1:45pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:00pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">8:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Buchloe · drive ~2h 20min → Königssee · buy tickets at dock</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Königssee electric boat departs ~9:30am</strong> — ride straight to <strong>Salet</strong> (55 min) · trumpet echo demo en route · do NOT get off at St. Bartholomä yet</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Obersee walk</strong> — 15 min to pristine mountain lake · iconic boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest 470m) visible in distance (~45 min return)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Board boat back to St. Bartholomä (20 min)</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — beer garden at historic St. Bartholomä hunting lodge (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Final boat back to Königssee Seelände (~35 min)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 16 min → Wimbachklamm Gorge</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Wimbachklamm Gorge</strong> — 1 mile gorge walk · carved limestone · rushing torrent (~1hr · €4/person)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 15 min → Hintersee</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop trail · free · one of the most romantic spots in Bavaria</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Ramsau or Schneizlreuth (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Wurznwirt, Schneizlreuth</strong> · #72072251742511 ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~126 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Königssee electric boat · Obersee boathouse · Röthbach Waterfall view</span>
+      <span class="footer-stat"><strong>Hike:</strong> Obersee · Wimbachklamm · Zauberwald loop</span>
+      <span class="footer-stat">⚠️ Book Königssee boat online at seenschifffahrt.de</span>
+    </div>
+  </div>
+
+  <!-- DAY 7 - Jun 26 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">7<span class="date-small">Jun 26</span></div>
+      <div>
+        <div class="day-title">Eagle's Nest + Rossfeld Panorama Road + Jenner Summit</div>
+        <div class="day-meta">Schneizlreuth → Eagle's Nest → Rossfeld → Jennerbahn → Schneizlreuth</div>
+      </div>
+      <div class="day-flag">🇩🇪</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">8:45am</div>
+        <div class="time-item">9:30am</div>
+        <div class="time-item">11:00am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">2:30pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:00pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Schneizlreuth · drive 10 min → Berchtesgaden / Obersalzberg</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels (~45 min · €10/adult)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · elevator through mountain · 1,834m · 360° panorama (~1.5hrs · €33/adult · first bus ~8:50am)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Rossfeld Panorama Road</strong> — Germany's highest road 1,600m · 15km ring · sweeping views of Watzmann, Königssee, Salzburg + Austria · hut lunch at top (~2hrs · €9.50 toll)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Panorama Restaurant at Rossfeld (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 10 min → Jennerbahn valley station, Schönau am Königssee</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Jennerbahn cable car</strong> → 1,800m · views of Königssee below</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Jenner summit (1,874m)</strong> — 20-min walk from cable car · summit cross · 360° panorama · Eagle's Nest and Rossfeld visible across valley</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Route 4 loop (Rundwanderung)</strong> — descend from mountain station to <strong>Carl-von-Stahl-Haus</strong> (just across Austrian border · cosy hut · soup + beer stop) → continue to <strong>Schneibsteinhaus</strong> → climb back up to mountain station · ~2.5hrs · crosses into Austria and back · genuinely off-the-tourist-path section</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Cable car down · drive 10 min → Schneizlreuth</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Wurznwirt (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>2nd night — Wurznwirt</strong> ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~20 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Eagle's Nest · Rossfeld panorama · Jennerbahn</span>
+      <span class="footer-stat"><strong>Hike:</strong> Jenner summit 1,874m + Route 4 loop via Carl-von-Stahl-Haus (~2.5hrs)</span>
+      <span class="footer-stat">💡 Cable car down by 5:30pm — last car ~6pm in summer</span>
+    </div>
+  </div>
+
+  <!-- DAY 8 - Jun 27 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">8<span class="date-small">Jun 27</span></div>
+      <div>
+        <div class="day-title">Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt</div>
+        <div class="day-meta">Schneizlreuth → Liechtensteinklamm → Salzburg → Wolfgangsee → Bad Goisern</div>
+      </div>
+      <div class="day-flag">🇦🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:10am</div>
+        <div class="time-item">11:40am</div>
+        <div class="time-item">12:30pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">2:15pm</div>
+        <div class="time-item">2:45pm</div>
+        <div class="time-item">3:15pm</div>
+        <div class="time-item">4:00pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Schneizlreuth · drive 40 min → Liechtensteinklamm</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · 444 stairs · helix staircase · 50m waterfall at end (~2.5hrs · €16/adult)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min → Salzburg · park at Altstadtgarage B (€3.30/hr)</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Café Tomaselli (oldest coffee house in Austria) or Universitätsplatz market (~1hr)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Salzburg old town</strong> — Getreidegasse · Mozart's birthplace street · Residenzplatz · Cathedral (Mozart baptised here) · Roman ruins in basement (~45 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min east via Route 158 → Wolfgangsee</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Wolfgangsee (St. Gilgen)</strong> — turquoise lake backed by Schafberg mountain · iconic Salzkammergut view · lakefront promenade walk (~30 min · free)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 30 min south → Bad Goisern</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — HOMEBOUND Apartments, Bad Goisern</strong> · #72072198804917 ✅</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Hallstatt evening lakeside walk</strong> — drive 10 min · arrive after 4pm to avoid peak crowds · lakefront stroll + photos</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Hallstatt lakefront restaurant (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 10 min back → HOMEBOUND</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~150 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Salzburg Altstadt · Wolfgangsee · Hallstatt evening</span>
+      <span class="footer-stat"><strong>Hike:</strong> Liechtensteinklamm 444 stairs</span>
+      <span class="footer-stat">🇸🇮 Note: Slovenia removed — Plan B continues Austria→Italy</span>
+    </div>
+  </div>
+
+  <!-- DAY 9 - Jun 28 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">9<span class="date-small">Jun 28</span></div>
+      <div>
+        <div class="day-title">Hallstatt Full Day + Dachstein Krippenstein</div>
+        <div class="day-meta">Bad Goisern → Hallstatt → Echern Valley → Dachstein 5 Fingers</div>
+      </div>
+      <div class="day-flag">🇦🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:00am</div>
+        <div class="time-item">9:30am</div>
+        <div class="time-item">11:00am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">2:00pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">5:00pm</div>
+        <div class="time-item">6:00pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 10 min → Hallstatt · arrive by 8am — before tour buses</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Hallstatt village walk</strong> — UNESCO World Heritage · lakefront · Pfarrkirche · <strong>Beinhaus (bone chapel — painted skulls · unique in world)</strong> (~1.5hrs)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Echern Valley hike</strong> — trail behind village into Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up) · excellent views back over Hallstatt lake (~1.5hrs return)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Hallstatt lakeside café (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 15 min → Dachstein Krippenstein cable car, Obertraun · ⚠️ pre-book at dachstein.at</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Dachstein Krippenstein cable car → 5 Fingers (2,109m)</strong> — five glass-floored arms over a 400m cliff face · Hallstatt visible far below · one of the most dramatic viewpoints in Austria (~2hrs)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Cable car down · drive 10 min → Bad Goisern</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — HOMEBOUND kitchen or local (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>2nd night — HOMEBOUND Apartments</strong> ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~20 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Hallstatt village + Beinhaus · Dachstein 5 Fingers</span>
+      <span class="footer-stat"><strong>Hike:</strong> Echern Valley + Waldbachstrub Waterfall</span>
+      <span class="footer-stat">⚠️ Dachstein Giant Ice Cave closed until Jun 30 — skip this visit</span>
+    </div>
+  </div>
+
+  <!-- DAY 10 - Jun 29 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">10<span class="date-small">Jun 29</span></div>
+      <div>
+        <div class="day-title">Grossglockner High Alpine Road → Zell am See</div>
+        <div class="day-meta">Bad Goisern → Gosausee optional → Grossglockner → Zell am See</div>
+      </div>
+      <div class="day-flag">🇦🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:00am</div>
+        <div class="time-item">9:45am</div>
+        <div class="time-item">11:00am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:30pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:30pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Bad Goisern 8:30am · optional 20 min detour → Gosausee</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Gosausee optional</strong> — turquoise lake with Dachstein glacier backdrop · 45-min loop walk (only if leaving by 9:30am)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr 15min → Grossglockner entrance at Bruck an der Glocknerstraße</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Grossglockner High Alpine Road</strong> — 48km · 36 hairpin bends · Austria's most famous mountain road · €46.50 toll (cash)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Fuscher Törl (2,428m)</strong> + <strong>Edelweißspitze (2,571m)</strong> — short walk to Austria's highest point accessible by car · wildflowers · 360° panorama (~30 min)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — restaurant at Edelweißhütte or Kaiser-Franz-Josefs-Höhe (~1hr)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of Austria's highest peak Grossglockner 3,798m · <strong>Pasterze Glacier</strong> overlook · museum (~1.5hrs)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr south exit → Zell am See</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Zell am See lakeside walk</strong> — town center + lake promenade · Schmittenhöhe backdrop (~45 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — lakeside restaurant, Zell am See (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Zell am See hotel</strong> ⏳ (need booking)</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~120 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Grossglockner road · Pasterze Glacier · Zell am See</span>
+      <span class="footer-stat"><strong>Hike:</strong> Gosausee loop (optional) · Edelweißspitze</span>
+      <span class="footer-stat">⚠️ Grossglockner toll €46.50 cash only · pack warm layers at 2,500m</span>
+    </div>
+  </div>
+
+  <!-- DAY 11 - Jun 30 BIRTHDAY -->
+  <div class="day-block">
+    <div class="birthday-banner">🎂 Happy Birthday Veena! — Jun 30</div>
+    <div class="day-header">
+      <div class="day-num">11<span class="date-small">Jun 30 🎂</span></div>
+      <div>
+        <div class="day-title">Lake Achensee + Bärenkopf Summit — Veena's Birthday</div>
+        <div class="day-meta">Zell am See → Pertisau am Achensee → Bärenkopf → Innsbruck area</div>
+      </div>
+      <div class="day-flag">🇦🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:30am</div>
+        <div class="time-item">10:00am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">3:30pm</div>
+        <div class="time-item">4:15pm</div>
+        <div class="time-item">5:00pm</div>
+        <div class="time-item">5:45pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Zell am See · drive 1hr 30min → Pertisau am Achensee · park near Karwendelbahn</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Karwendelbahn cable car</strong> → Zwölferkopf (1,500m) · €18–22/adult return · opens ~8:30am</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Bärenbad Alm</strong> — 30 min flat trail from cable car · hut stop for Kaiserschmarrn · perfect Achensee views</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Bärenkopf summit (1,991m)</strong> — steep trail with fixed cables · 1.5hrs up · the <em>only</em> place with full Achensee panorama including the bluest southeast edge · pro tip: 2 min past cross for secret viewpoint</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Summit lunch</strong> — packed or at Bärenbad Alm on descent (~1hr)</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text">Descend Bärenkopf · back to cable car by 3:30pm ⚠️ last cable car ~5pm</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min → Innsbruck area hotel</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Innsbruck / Pertisau hotel</strong> ⏳ (need booking)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Birthday dinner 🎂</strong> — Innsbruck old town · Goldenes Dachl area · or lakeside at Pertisau · celebratory evening for Veena</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Birthday dinner</strong> — special restaurant, Innsbruck (~1hr+)</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~60 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Karwendel cable car · Birthday dinner in Innsbruck</span>
+      <span class="footer-stat"><strong>Hike:</strong> Bärenkopf summit 1,991m (4hrs round trip)</span>
+      <span class="footer-stat">⚠️ Sturdy shoes essential · fixed cable sections on summit trail</span>
+    </div>
+  </div>
+
+  <!-- DAY 12 - Jul 1 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">12<span class="date-small">Jul 1</span></div>
+      <div>
+        <div class="day-title">Seceda + Val di Funes + Lagazuoi</div>
+        <div class="day-meta">Innsbruck → Ortisei (Seceda) → Santa Maddalena → Passo Falzarego → Außervillgraten</div>
+      </div>
+      <div class="day-flag">🇮🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:40am</div>
+        <div class="time-item">10:00am</div>
+        <div class="time-item">11:00am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">2:30pm</div>
+        <div class="time-item">3:00pm</div>
+        <div class="time-item">4:00pm</div>
+        <div class="time-item">5:00pm</div>
+        <div class="time-item">6:00pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Innsbruck area · drive 1hr 10min → Ortisei, Val Gardena · park at Parkgarage Seceda</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Seceda cable car</strong> (Ortisei → Furnes → Seceda) — 15-min ride · €59/adult · arrive 2,519m · most iconic jagged-peak view in the entire Dolomites</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Forcella Pana ridgeline</strong> — 10-min walk from top station · Fermeda Towers · Sassolungo + Marmolada panorama (~1hr)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Rifugio Firenze on the ridge (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Cable car down · depart Ortisei · drive 30 min → Val di Funes · park in Santa Maddalena village</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Panoramaweg to Santa Maddalena Church</strong> — 30 min walk up from village · tiny stone church in green meadow framed by jagged Odle peaks · most photographed scene in South Tyrol</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Santa Maddalena viewpoint</strong> — rolling emerald meadows + Odle/Geisler peaks · genuinely jaw-dropping (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr → Passo Falzarego</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Lagazuoi cable car (2,752m)</strong> — sunset light on the Dolomites · <strong>WWI Galleries</strong> (tunnels · helmet + headlamp rental ~€20) or summit walk</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Cable car down · drive 35 min → Außervillgraten</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Das Auss.Zeit kitchen or local (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Das Auss.Zeit, Außervillgraten</strong> · #72072265941383 · 10.0★ ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~150 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Seceda ridgeline · Santa Maddalena Church viewpoint · Lagazuoi + WWI tunnels</span>
+      <span class="footer-stat"><strong>Hike:</strong> Forcella Pana · Panoramaweg Santa Maddalena</span>
+      <span class="footer-stat">⚠️ Pre-book Seceda timed slots — 2026 requires advance purchase</span>
+    </div>
+  </div>
+
+  <!-- DAY 13 - Jul 2 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">13<span class="date-small">Jul 2</span></div>
+      <div>
+        <div class="day-title">Lago di Braies Sunrise + Tre Cime di Lavaredo</div>
+        <div class="day-meta">Außervillgraten → Lago di Braies → Tre Cime → Außervillgraten</div>
+      </div>
+      <div class="day-flag">🇮🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">5:00am</div>
+        <div class="time-item">5:45am</div>
+        <div class="time-item">7:00am</div>
+        <div class="time-item">7:30am</div>
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:00am</div>
+        <div class="time-item">10:00am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">3:30pm</div>
+        <div class="time-item">5:00pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Wake 5:00am</strong> — drive 35 min → Lago di Braies for sunrise</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Lago di Braies sunrise</strong> — mirror reflections on the emerald-green lake · iconic Dolomite boathouse · guaranteed parking before 7am · one of the most beautiful lakes in Italy</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Lago di Braies lakeside circuit</strong> — easy 3.5km loop around the lake · stunning reflections of surrounding peaks (~1hr)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive to Rifugio Auronzo · take mandatory shuttle from Misurina (~€10/person · arrive before 8:30am)</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Cadini di Misurina viewpoint</strong> — short 20-min hike from Rifugio Auronzo · the classic Tre Cime postcard shot from above</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Tre Cime di Lavaredo loop (6.2mi)</strong> — circumnavigation of the three iconic peaks · Rifugio Locatelli · WWI caves at Sasso di Sesto (~3hrs)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Rifugio Locatelli or Rifugio Auronzo (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Shuttle back · drive ~1hr → Außervillgraten</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Das Auss.Zeit kitchen (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>2nd night — Das Auss.Zeit</strong> ✅</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~120 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Lago di Braies sunrise · Cadini viewpoint · Tre Cime</span>
+      <span class="footer-stat"><strong>Hike:</strong> Braies circuit · Cadini viewpoint trail · Tre Cime loop 6.2mi</span>
+      <span class="footer-stat">⚠️ Pre-book Tre Cime shuttle at auronzo.it — fills weeks ahead</span>
+    </div>
+  </div>
+
+  <!-- DAY 14 - Jul 3 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">14<span class="date-small">Jul 3</span></div>
+      <div>
+        <div class="day-title">Cinque Torri + WWI Museum + Lago di Sorapis</div>
+        <div class="day-meta">Außervillgraten → Cinque Torri → Cortina → Lago di Sorapis → Außervillgraten</div>
+      </div>
+      <div class="day-flag">🇮🇹</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:30am</div>
+        <div class="time-item">9:05am</div>
+        <div class="time-item">9:20am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">2:00pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">6:30pm</div>
+        <div class="time-item">7:30pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Außervillgraten · drive 35 min → Cinque Torri</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Cinque Torri Scoiattoli chairlift</strong> — five dramatic rock towers rising from the plateau</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Cinque Torri loop (~3 miles)</strong> — all five towers + <strong>WWI open-air museum</strong> with original trenches, barbed wire and fortifications preserved in place · genuinely moving (~2.5hrs)</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 20 min → Cortina d'Ampezzo · 🧺 Laundry drop-off at self-service laundrette</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Corso Italia, Cortina (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 15 min → Passo Tre Croci trailhead · start no later than 2:00pm</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Lago di Sorapis hike (Trail 215)</strong> — 2hrs each way · milky turquoise glacial lake at 1,925m · 'Finger of God' rock spire · narrow exposed ledges with cables · turn around by 4:00pm</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive ~50 min → Außervillgraten</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Das Auss.Zeit kitchen · last night in the Dolomites (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>3rd night — Das Auss.Zeit</strong> ✅ · pack for Dornbirn tomorrow</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~50 mi</span>
+      <span class="footer-stat"><strong>WOW:</strong> Cinque Torri · Lago di Sorapis turquoise lake</span>
+      <span class="footer-stat"><strong>Hike:</strong> Cinque Torri loop · Lago di Sorapis (Trail 215) 4hrs round trip</span>
+      <span class="footer-stat">⚠️ Sorapis: start by 2pm · good boots essential · polished rocks slippery</span>
+    </div>
+  </div>
+
+  <!-- DAY 15 - Jul 4 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">15<span class="date-small">Jul 4</span></div>
+      <div>
+        <div class="day-title">Nordkette → Dornbirn → Vaduz → Rhine Falls → Zurich</div>
+        <div class="day-meta">Außervillgraten → Innsbruck → Dornbirn → Vaduz 🇱🇮 → Rhine Falls → Zurich ZRH</div>
+      </div>
+      <div class="day-flag">🇦🇹🇱🇮🇨🇭</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">8:00am</div>
+        <div class="time-item">10:00am</div>
+        <div class="time-item">10:30am</div>
+        <div class="time-item">11:30am</div>
+        <div class="time-item">12:00pm</div>
+        <div class="time-item">1:00pm</div>
+        <div class="time-item">1:30pm</div>
+        <div class="time-item">2:00pm</div>
+        <div class="time-item">2:30pm</div>
+        <div class="time-item">3:30pm</div>
+        <div class="time-item">4:30pm</div>
+        <div class="time-item">5:30pm</div>
+        <div class="time-item">7:00pm</div>
+        <div class="time-item">8:00pm</div>
+        <div class="time-item">8:30pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Leave Außervillgraten <strong>8:00am</strong> · drive ~53 min → Schlegeis Stausee reservoir · pay toll ~€17 cash · park at reservoir</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>⭐ PLAN A — Olpererhütte + Suspension Bridge</strong> (Zillertal Alps, Tyrol) · trailhead at Schlegeis reservoir · <strong>600m elevation · 3km · ~1.5–2hrs up</strong> · balcony trail with continuous views of the emerald Schlegeis Stausee cradled by 3,000m+ peaks</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item hike"><span class="act-icon">🥾</span><span class="act-text"><strong>Olpererhütte hike to 2,388m</strong> — rocky ascent via Trail 502 · views of Zillertal glaciers throughout · arrive at hut terrace with panoramic dam view · cash only at hut</span><span class="act-badge badge-hike">HIKE</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Kebema Suspension Bridge</strong> — 5 min past the hut · the iconic Instagram-famous bridge that appears to float over the reservoir · optical illusion — solid ground just below · queue for photo (~10 min wait) · <strong>Giant Swing at base (31m free fall)</strong> for the kids on the way back down</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Lunch</strong> — Olpererhütte restaurant · Kaiserschmarrn + Schnitzel · cash only (~1hr)</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Descend ~1hr · drive ~1hr 30min → Innsbruck</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text"><em>⚠️ PLAN B (bad weather / tight time) — skip Olpererhütte · drive directly 2hrs → Innsbruck instead · <strong>Nordkette:</strong> Hungerburgbahn → Seegrube (1,905m) → Hafelekar (2,334m) · ridge walk · ~1.5hrs total · last ascent 5pm</em></span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Innsbruck old town</strong> — Goldenes Dachl · Maria-Theresien-Straße · Imperial Palace exterior (~45 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr 30min → Dornbirn · daytime stop · confirm Hertz ZRH drop-off location</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 1hr → Vaduz, Liechtenstein</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Vaduz, Liechtenstein 🇱🇮</strong> — passport stamp (CHF 3) · Vaduz Castle walk · Rhine Valley view (~30 min)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 45 min → Rhine Falls, Schaffhausen</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Rhine Falls</strong> — Europe's largest waterfall · boat to the central rock · CHF 10.50/adult (~1hr)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item drive"><span class="act-icon">🚗</span><span class="act-text">Drive 40 min → Zurich Altstadt · park at Parkhaus Hohe Promenade</span></div>
+        <div class="activity-item wow"><span class="act-icon">⭐</span><span class="act-text"><strong>Zurich Altstadt</strong> — Fraumünster · Grossmünster · Limmat riverfront · Lindenhof Hill view (~1hr)</span><span class="act-badge badge-wow">WOW</span></div>
+        <div class="activity-item meal"><span class="act-icon">🍽</span><span class="act-text"><strong>Dinner</strong> — Zeughauskeller (book in advance!) or Zurich old town (~1hr)</span></div>
+        <div class="activity-item checkin"><span class="act-icon">🏠</span><span class="act-text"><strong>Check in — Radisson Blu ZRH</strong> · 3–7 min walk to terminal · ⏳ book Jul 4 · Hertz drop-off tonight · set alarm 4:30am</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Drive:</strong> ~180 mi (Plan A) · ~160 mi (Plan B Nordkette)</span>
+      <span class="footer-stat"><strong>WOW:</strong> Olpererhütte + Suspension Bridge · Giant Swing · Vaduz 🇱🇮 · Rhine Falls · Zurich</span>
+      <span class="footer-stat"><strong>Hike:</strong> Olpererhütte 600m ascent · 3km one way (~4.5hrs total)</span>
+      <span class="footer-stat">⚠️ Schlegeis toll road €17 cash · Hertz ZRH drop-off tonight</span>
+    </div>
+  </div>
+
+  <!-- DAY 16 - Jul 5 (NO hike) -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-num">16<span class="date-small">Jul 5</span></div>
+      <div>
+        <div class="day-title">Fly home ZRH → KEF → MCO</div>
+        <div class="day-meta">No hike required — departure day</div>
+      </div>
+      <div class="day-flag">✈️</div>
+    </div>
+    <div class="schedule-grid">
+      <div class="time-col">
+        <div class="time-item">4:30am</div>
+        <div class="time-item">5:00am</div>
+        <div class="time-item">7:55am</div>
+        <div class="time-item">8:50pm</div>
+      </div>
+      <div class="activity-col">
+        <div class="activity-item"><span class="act-icon">⏰</span><span class="act-text">Wake 4:30am · walk 5 min to ZRH terminal · Hertz already dropped off previous evening</span></div>
+        <div class="activity-item"><span class="act-icon">✈️</span><span class="act-text"><strong>Check-in opens ~5:00am</strong> · print boarding passes the night before · passport + tickets ready</span></div>
+        <div class="activity-item wow"><span class="act-icon">✈️</span><span class="act-text"><strong>FI571 departs ZRH 7:55am</strong> via KEF → <strong>MCO arrives 8:50pm</strong> · Ref A77762 ✅</span></div>
+        <div class="activity-item"><span class="act-icon">🏠</span><span class="act-text"><strong>Home — Orlando MCO</strong> 🎉</span></div>
+      </div>
+    </div>
+    <div class="day-footer">
+      <span class="footer-stat"><strong>Departure day</strong> — hike & WOW exempt</span>
+      <span class="footer-stat">Total trip: 16 days · 6 countries · Family of 4</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

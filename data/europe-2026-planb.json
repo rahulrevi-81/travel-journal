@@ -316,7 +316,9 @@
             "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
             "Drive <strong>~1hr</strong> → <strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval <strong>Spiez Castle</strong> on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min)",
             "Drive <strong>45 min</strong> → <strong>Tiny House Diemtigtal</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
-            "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow"
+            "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow",
+            "Evening ~<strong>6:00pm</strong>: walk the <strong>Grimmimutz Discovery Trail</strong> from Oey — family-themed trail through the valley with illustrated markers telling the story of the forest dwarf Grimmimutz and the pepper witch · ~45–60 min · free · starts right at the village",
+            "Stroll through <strong>Diemtigtal village</strong> — traditional wooden chalets · Wakker Prize-winning intact villagescape · largest alpine farming valley in Switzerland · cowbells, wild roses, mountain backdrop · 20 min · free"
           ]
         }
       ],
@@ -343,7 +345,7 @@
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
         "to": "Tiny House Diemtigtal",
-        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Tiny House Diemtigtal",
+        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Grimmimutz Discovery Trail · Diemtigtal village stroll",
         "bookings": [
           {
             "status": "booked",
@@ -548,6 +550,7 @@
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · first bus ~8:50am · elevator through mountain · 1,834m · 360° panorama · Eagle's Nest visible later from Rossfeld · ~1.5hrs · €33/adult",
             "⭐ <strong>Rossfeld Panorama Road</strong> — Germany's highest road at 1,600m · start at <strong>Obersalzberg south entrance</strong> (same area as Eagle's Nest bus stop) · <strong>15km ring road</strong> · sweeping 360° views of Watzmann, Königssee, Salzburg and Austria · ~2hrs with photo stops · toll ~€9.50/car · Bavarian hut lunch at Panorama Restaurant at the top",
             "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · arrive ~1:30pm",
+            "⭐ <strong>Route 4 loop (Rundwanderung Bergstation)</strong> — from mountain station descend to <strong>Carl-von-Stahl-Haus</strong> hut (just across Austrian border · cosy alpine hut · soup + beer stop) → continue to <strong>Schneibsteinhaus</strong> → ascent back up to mountain station · ~2.5hrs · crosses into Austria and back · far less crowded than summit trail",
             "⭐ <strong>Jennerbahn cable car</strong> → 1,800m · <strong>Jenner summit hike (1,874m)</strong> · 15–20 min · 360° panorama · Königssee below · Eagle's Nest and Rossfeld visible across the valley · afternoon light on the mountains",
             "Cable car down ~<strong>4:00pm</strong> · drive 10 min → Schneizlreuth · rest · <strong>2nd night Wurznwirt</strong> ✅"
           ]
@@ -572,7 +575,7 @@
         "time": "~45m",
         "from": "Bad Goisern 🇦🇹",
         "to": "HOMEBOUND, Bad Goisern 🇦🇹",
-        "highlights": "Hallstatt village · Echern Valley waterfall · Bone House · Roman ruins · Dachstein Krippenstein 5 Fingers + Giant Ice Cave",
+        "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road · Jennerbahn · Jenner summit 1,874m · Route 4 loop via Carl-von-Stahl-Haus (Austria)",
         "bookings": [
           {
             "status": "booked",
@@ -991,14 +994,17 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Außervillgraten 8:00am</strong> · drive <strong>2hrs</strong> → Innsbruck",
-            "⭐ <strong>Weather choice in Innsbruck:</strong><br>• <strong>Plan A (Nordkette):</strong> Hungerburgbahn → Seegrube (1,905m) → Hafelekar (2,334m) · 1.5hrs + Innsbruck old town walk · Golden Roof · arrive Dornbirn ~4:00pm<br>• <strong>Plan B (Olpererhütte):</strong> Drive 53 min → Schlegeis toll road (€17 cash) → 3km hike → Olpererhütte · suspension bridge · back Innsbruck ~4:00pm → arrive Dornbirn ~5:30pm",
-            "⭐ <strong>Dornbirn — daytime stop only</strong> (cancel overnight) · Karren Cable Car optional if energy allows · <strong>Hertz drop-off</strong> — ⚠️ confirm ZRH drop-off location (not Dornbirn)",
-            "Drive <strong>1hr</strong> → <strong>Vaduz, Liechtenstein</strong> · passport stamp · Vaduz Castle walk · ~30 min",
-            "Drive <strong>45 min</strong> → <strong>Rhine Falls, Schaffhausen</strong> · Europe's largest waterfall · boat to the rock · ~1hr",
-            "Drive <strong>40 min</strong> → <strong>Zurich</strong> · arrive ~7:30pm · Zurich Altstadt walk · Fraumünster · Limmat riverfront · dinner",
-            "⭐ <strong>Hertz ZRH drop-off</strong> (24hr service, airport location) · check in <strong>Radisson Blu ZRH</strong> ~9:30pm · 5-min walk to terminal · <strong>set alarm 4:30am</strong>",
-            "⭐ <strong>Plansee (optional)</strong> — 'the Fjord of Tyrol' · 45 min detour from Reutte on B179 · turquoise second-largest lake in Tyrol · framed by Ammergau Alps · 45-min lakeside walk or swim · perfect rest stop before the long final drive · ⚠️ only add if skipping Rhine Falls or departing Außervillgraten extra early"
+            "Leave <strong>Außervillgraten 8:00am</strong> · drive <strong>~53 min</strong> → Schlegeis Stausee reservoir via Schlegeis Alpine Road · toll ~€17 cash · park at reservoir base",
+            "⭐ <strong>PLAN A — Olpererhütte hike (2,388m)</strong> — trailhead at Schlegeis reservoir · Trail 502 · 3km · 600m elevation gain · ~1.5–2hrs up · rocky alpine ascent with continuous views of the emerald Schlegeis Stausee cradled by 3,000m+ Zillertal peaks · cash only at hut",
+            "⭐ <strong>Kebema Suspension Bridge</strong> — 5 min past the hut · the iconic floating suspension bridge over the reservoir · optical illusion — solid ground just below · genuinely spectacular · ~10 min queue for photo · lunch at Olpererhütte restaurant (Kaiserschmarrn · Schnitzel · Skiwasser) · ~1hr",
+            "⭐ <strong>Giant Swing at Schlegeis base</strong> (31m free fall) — on the way back down · perfect for the kids · descend ~1hr · drive ~1hr 30min → Innsbruck",
+            "⚠️ <strong>PLAN B (bad weather or time pressure)</strong> — skip Olpererhütte · drive directly 2hrs → Innsbruck · <strong>Nordkette</strong>: Hungerburgbahn → Seegrube (1,905m) → Hafelekar (2,334m) · ridge walk · panorama of Innsbruck + Inn Valley · ~1.5hrs total · book online · last ascent 5pm",
+            "<strong>Innsbruck old town</strong> (~45 min) — Goldenes Dachl · Maria-Theresien-Straße · Imperial Palace exterior · ⚠️ confirm Hertz drop-off at ZRH airport (not Dornbirn)",
+            "Drive <strong>1hr 30min</strong> → <strong>Dornbirn</strong> · daytime stop only (cancel overnight) · Karren Cable Car optional if energy allows",
+            "Drive <strong>1hr</strong> → <strong>Vaduz, Liechtenstein</strong> · passport stamp (CHF 3) · Vaduz Castle walk · Rhine Valley view · ~30 min",
+            "Drive <strong>45 min</strong> → <strong>Rhine Falls, Schaffhausen</strong> · Europe's largest waterfall · boat to the central rock · CHF 10.50/adult · ~1hr",
+            "Drive <strong>40 min</strong> → <strong>Zurich</strong> · park at Parkhaus Hohe Promenade · Altstadt walk · Fraumünster · Limmat riverfront · Lindenhof Hill · dinner at Zeughauskeller (book in advance!)",
+            "⭐ <strong>Hertz ZRH drop-off</strong> (24hr service, airport location) · check in <strong>Radisson Blu ZRH</strong> ~9:30pm · 5-min walk to terminal · <strong>set alarm 4:30am</strong>"
           ]
         }
       ],
@@ -1029,7 +1035,7 @@
         "time": "2h 30m",
         "from": "Dornbirn 🇦🇹",
         "to": "Zurich Airport Hotel 🇨🇭",
-        "highlights": "Vaduz Castle viewpoint · passport stamp 🇱🇮 · Schaffhausen Munot Fortress · optional Stein am Rhein · Rhine Falls boat · Lindenhof Hill · Zurich Altstadt · Zeughauskeller dinner",
+        "highlights": "Olpererhütte 2,388m + Kebema suspension bridge (Plan A) · OR Nordkette 2,334m (Plan B) · Giant Swing at Schlegeis · Innsbruck old town · Dornbirn daytime · Vaduz 🇱🇮 · Rhine Falls · Zurich Altstadt dinner · Hertz drop-off ZRH",
         "bookings": [
           {
             "status": "pending",
