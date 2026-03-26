@@ -136,25 +136,34 @@
       "status": "confirmed"
     },
     {
-      "nights": "5",
+      "nights": "5–6",
+      "property": "Salzburg Hotel 🇦🇹",
+      "address": "Salzburg, Austria",
+      "dates": "Jun 24–26",
+      "ref": "⏳ Pending — book now (2 nights)",
+      "freeCancel": null,
+      "status": "pending"
+    },
+    {
+      "nights": "—",
       "property": "Escape by Landhaus Lindenberg 🇩🇪",
       "address": "Höfatsweg 3, 86807 Buchloe, Germany",
       "dates": "Jun 24–25",
-      "ref": "Booking.com #6026325459 · $202",
+      "ref": "#6026325459 — CANCELLED",
       "freeCancel": null,
-      "status": "booked"
+      "status": "cancelled"
     },
     {
-      "nights": "6–7",
+      "nights": "—",
       "property": "Wurznwirt 🇩🇪",
       "address": "Schneizlreuth 4, 83458 Schneizlreuth, Germany",
       "dates": "Jun 25–27",
-      "ref": "#72072251742511",
+      "ref": "#72072251742511 — CANCELLED",
       "stars": "9.0",
-      "status": "booked"
+      "status": "cancelled"
     },
     {
-      "nights": "8–9",
+      "nights": "7–8",
       "property": "HOMEBOUND Apartments 🇦🇹",
       "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
       "dates": "Jun 27–29",
@@ -163,7 +172,7 @@
       "status": "booked"
     },
     {
-      "nights": "8–10",
+      "nights": "—",
       "property": "Pr' Matjon Pension 🇸🇮",
       "address": "Selo pri Bledu 35, 4260 Bled, Slovenia",
       "dates": "Jun 27–30",
@@ -172,7 +181,7 @@
       "status": "cancelled"
     },
     {
-      "nights": "10",
+      "nights": "9",
       "property": "Zell am See Hotel 🇦🇹",
       "address": "Zell am See, Austria",
       "dates": "Jun 29–30",
@@ -181,7 +190,7 @@
       "status": "pending"
     },
     {
-      "nights": "11",
+      "nights": "10",
       "property": "Near Innsbruck / Pertisau 🇦🇹 🎂",
       "address": "Innsbruck area or Pertisau am Achensee, Austria",
       "dates": "Jun 30–Jul 1",
@@ -199,7 +208,7 @@
       "status": "booked"
     },
     {
-      "nights": "14",
+      "nights": "—",
       "property": "Vienna House Martinspark 🇦🇹",
       "address": "Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg",
       "dates": "Jul 3–4",
@@ -208,7 +217,7 @@
       "status": "cancelled"
     },
     {
-      "nights": "15",
+      "nights": "14",
       "property": "Zurich / Airport 🇨🇭",
       "address": "Near ZRH Airport, Zurich, Switzerland",
       "dates": "Jul 4–5",
@@ -446,7 +455,7 @@
       "dayLabel": "5",
       "date": "Jun 24",
       "title": "Lauterbrunnen + Burg Ehrenberg + Highline179",
-      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Reutte (Ehrenberg) → Buchloe",
+      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Reutte (Ehrenberg) → Salzburg",
       "flag": "🇨🇭",
       "mapLinks": [
         {
@@ -471,7 +480,7 @@
             "<strong>Lunch</strong> — Klause valley floor café or hut near castle (~1hr)",
             "⭐ <strong>Highline179 suspension bridge</strong> — 406-metre pedestrian bridge hanging 113m above the valley · connects Ehrenberg Castle ruins with Fort Claudia across the gorge · one of Europe's longest suspension bridges · thrilling for kids · ~30 min · included in combined ticket ~€18/adult",
             "⚠️ <strong>PLAN B (if pressed for time or kids want fairy-tale interior)</strong> — skip Ehrenberg · drive <strong>~45 min south</strong> → <strong>Neuschwanstein Castle, Füssen</strong> · ⚠️ requires pre-booked timed entry at neuschwanstein.de · guided tour only · ~€15/adult · June slots sell out months ahead",
-            "Drive <strong>~1hr 30min</strong> → <strong>Landhaus Lindenberg, Buchloe</strong> · check in · Conf. #6026325459 ✅",
+            "Drive <strong>~2hrs 45min</strong> → <strong>Salzburg</strong> · check in · Conf. #6026325459 ✅",
             "<strong>Dinner</strong> — Buchloe or at hotel (~1hr)"
           ]
         }
@@ -495,10 +504,10 @@
         }
       ],
       "summary": {
-        "drive": "~270 km / 168 mi",
+        "drive": "~330 km / 205 mi",
         "time": "2h 20m",
         "from": "Diemtigtal 🇨🇭",
-        "to": "Landhaus Lindenberg, Buchloe 🇩🇪",
+        "to": "Salzburg 🇦🇹",
         "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg ruins · Highline179 suspension bridge · (Plan B: Neuschwanstein)",
         "bookings": [
           {
@@ -516,27 +525,29 @@
       "dayLabel": "6",
       "date": "Jun 25",
       "title": "Königssee + Wimbachklamm + Hintersee",
-      "meta": "Jun 25 · Buchloe → Königssee → Hintersee → Wimbachklamm → Schneizlreuth",
+      "meta": "Jun 25 · Salzburg → Königssee → Wimbachklamm → Hintersee → Salzburg",
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 6 Map — Königssee + Hintersee + Wimbachklamm",
-          "url": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
+          "label": "Day 6 Map — Salzburg → Königssee → Hintersee → Salzburg",
+          "url": "https://www.google.com/maps/dir/Salzburg,+Austria/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Salzburg,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Buchloe 8:30am</strong> · drive <strong>~2h 20min</strong> → Königssee · arrive ~9:00am · buy tickets at the dock",
-            "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min total · don't get off at St. Bartholomä yet)",
-            "At Salet: walk <strong>15 min</strong> → <strong>Obersee lake</strong> — pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest 470m) visible in distance · (~45 min return)",
+            "Leave <strong>Salzburg 8:30am</strong> · drive <strong>~28 min</strong> → Königssee · buy tickets at dock",
+            "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min · don't get off at St. Bartholomä yet) · trumpet echo demo en route",
+            "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest 470m) visible in distance · ~45 min return",
             "Board boat back to <strong>St. Bartholomä</strong> (20 min) · <strong>Lunch</strong> — beer garden at historic hunting lodge (~1hr)",
-            "Board final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~<strong>1:30pm</strong>",
-            "Drive <strong>16 min via B305</strong> → <strong>Wimbachklamm Gorge</strong> — 1 mile gorge walk · carved limestone · rushing torrent · (~1hr · €4/person)",
-            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders · 45-min loop trail · free · one of the most romantic spots in Bavaria",
-            "<strong>Dinner</strong> — Ramsau or Schneizlreuth (~1hr)",
-            "Check in <strong>Wurznwirt, Schneizlreuth</strong> · #72072251742511 ✅"
+            "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~<strong>1:30pm</strong>",
+            "Drive <strong>16 min</strong> → <strong>Wimbachklamm Gorge</strong> — 1 mile gorge walk · carved limestone · rushing torrent · ~1hr · €4/person",
+            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop trail · free",
+            "<strong>Drive ~40 min</strong> back → <strong>Salzburg</strong> · arrive ~6:00pm",
+            "⭐ <strong>Salzburg evening walk</strong> — Getreidegasse · Residenzplatz · old town (~1hr · crowds gone after 5pm)",
+            "<strong>Dinner</strong> — Salzburg old town · Café Tomaselli or Universitätsplatz market (~1hr)",
+            "<strong>2nd night — Salzburg hotel</strong> ✅"
           ]
         }
       ],
@@ -555,17 +566,17 @@
         }
       ],
       "summary": {
-        "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä lunch · Wimbachklamm · Hintersee + Zauberwald",
-        "drive": "~200 km / 124 mi",
-        "from": "Buchloe 🇩🇪",
-        "to": "Wurznwirt, Schneizlreuth 🇩🇪"
+        "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä lunch · Wimbachklamm · Hintersee + Zauberwald · Salzburg evening",
+        "drive": "~120 km / 75 mi",
+        "from": "Salzburg 🇦🇹",
+        "to": "Salzburg 🇦🇹"
       }
     },
     {
       "dayLabel": "7",
       "date": "Jun 26",
       "title": "Eagle's Nest + Rossfeld Panorama Road + Jenner",
-      "meta": "Jun 26 · Schneizlreuth → Eagle's Nest → Rossfeld → Jenner → Schneizlreuth",
+      "meta": "Jun 26 · Salzburg → Eagle's Nest → Rossfeld → Jenner → Salzburg",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -577,14 +588,14 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Schneizlreuth 8:00am</strong> · drive <strong>10 min</strong> → Berchtesgaden",
+            "Leave <strong>Salzburg 8:00am</strong> · drive <strong>~24 min</strong> → Berchtesgaden / Obersalzberg",
             "⭐ <strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels · ~45 min · €10/adult",
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · first bus ~8:50am · elevator through mountain · 1,834m · 360° panorama · Eagle's Nest visible later from Rossfeld · ~1.5hrs · €33/adult",
             "⭐ <strong>Rossfeld Panorama Road</strong> — Germany's highest road at 1,600m · start at <strong>Obersalzberg south entrance</strong> (same area as Eagle's Nest bus stop) · <strong>15km ring road</strong> · sweeping 360° views of Watzmann, Königssee, Salzburg and Austria · ~2hrs with photo stops · toll ~€9.50/car · Bavarian hut lunch at Panorama Restaurant at the top",
             "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · arrive ~1:30pm",
             "⭐ <strong>Route 4 loop (Rundwanderung Bergstation)</strong> — from mountain station descend to <strong>Carl-von-Stahl-Haus</strong> hut (just across Austrian border · cosy alpine hut · soup + beer stop) → continue to <strong>Schneibsteinhaus</strong> → ascent back up to mountain station · ~2.5hrs · crosses into Austria and back · far less crowded than summit trail",
             "⭐ <strong>Jennerbahn cable car</strong> → 1,800m · <strong>Jenner summit hike (1,874m)</strong> · 15–20 min · 360° panorama · Königssee below · Eagle's Nest and Rossfeld visible across the valley · afternoon light on the mountains",
-            "Cable car down ~<strong>4:00pm</strong> · drive 10 min → Schneizlreuth · rest · <strong>2nd night Wurznwirt</strong> ✅"
+            "Cable car down ~<strong>4:00pm</strong> · drive <strong>~30 min</strong> → <strong>Salzburg</strong> · checkout tomorrow morning"
           ]
         }
       ],
@@ -603,10 +614,10 @@
         }
       ],
       "summary": {
-        "drive": "~32 km / 20 mi",
+        "drive": "~80 km / 50 mi",
         "time": "~45m",
-        "from": "Bad Goisern 🇦🇹",
-        "to": "HOMEBOUND, Bad Goisern 🇦🇹",
+        "from": "Salzburg 🇦🇹",
+        "to": "Salzburg 🇦🇹",
         "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road · Jennerbahn · Jenner summit 1,874m · Route 4 loop via Carl-von-Stahl-Haus (Austria)",
         "bookings": [
           {
@@ -619,8 +630,8 @@
     {
       "dayLabel": "8",
       "date": "Jun 27",
-      "title": "Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 27 · Schneizlreuth → Liechtensteinklamm → Salzburg → Wolfgangsee → Bad Goisern",
+      "title": "Salzburg Old Town + Hohensalzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 27 · Salzburg → Salzburg old town → Wolfgangsee → Hallstatt → Bad Goisern",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -632,12 +643,14 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Schneizlreuth 8:30am</strong> · drive <strong>40 min</strong> → Liechtensteinklamm",
-            "⭐ <strong>Liechtensteinklamm</strong> — deepest gorge in the Alps · <strong>444 stairs</strong> up + helix staircase · roaring torrent at the base · massive 50m waterfall at the end · ~2.5hrs · €16/adult · helmet NOT required but wear good shoes",
-            "Drive <strong>45 min</strong> → <strong>Salzburg</strong> · quick lunch stop · Getreidegasse · Mozart's birthplace exterior · Mirabell Gardens · ~1.5hrs",
-            "Drive <strong>30 min</strong> → <strong>Wolfgangsee</strong> · St. Gilgen quick photo stop · ferry across the lake optional · 20 min max",
-            "Drive <strong>20 min</strong> → <strong>Hallstatt</strong> · arrive ~5:30pm · evening walk on the lakefront promenade · Hallstatt market square · best light for photos in the evening",
-            "Drive <strong>10 min</strong> → <strong>Bad Goisern</strong> · check in HOMEBOUND Apartments ✅ · 1st night"
+            "Checkout <strong>Salzburg hotel 8:30am</strong>",
+            "⭐ <strong>Salzburg old town morning</strong> — <strong>Getreidegasse</strong> (Mozart's birthplace street) · <strong>Residenzplatz</strong> · <strong>Salzburg Cathedral</strong> (free · Mozart was baptised here) · <strong>Hohensalzburg Fortress</strong> — go inside (€16/adult · one of Europe's largest medieval fortresses · ~1hr 30min total)",
+            "<strong>Lunch</strong> — Café Tomaselli (oldest coffee house in Austria) or Universitätsplatz market (~1hr)",
+            "Drive <strong>~30 min</strong> east via Route 158 → <strong>Wolfgangsee (St. Gilgen)</strong>",
+            "⭐ <strong>Wolfgangsee photo stop</strong> — turquoise lake backed by Schafberg mountain · lakefront promenade walk (~30 min · free)",
+            "Drive <strong>~30 min</strong> south → <strong>HOMEBOUND Apartments, Bad Goisern</strong> · check in ~<strong>3:45pm</strong> ✅ · #72072198804917",
+            "Drive 10 min → <strong>Hallstatt evening lakeside walk</strong> — arrive after 4pm to avoid peak crowds · lakeside stroll + dinner",
+            "<strong>Dinner</strong> — Hallstatt lakefront restaurant (~1hr)"
           ]
         }
       ],
@@ -660,11 +673,11 @@
         }
       ],
       "summary": {
-        "drive": "~240 km / 149 mi",
+        "drive": "~100 km / 62 mi",
         "time": "2h 33m +Grossglockner",
-        "from": "Bad Goisern 🇦🇹",
-        "to": "Pr' Matjon, Lake Bled 🇸🇮",
-        "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Pasterze glacier · Lake Bled",
+        "from": "Salzburg 🇦🇹",
+        "to": "HOMEBOUND, Bad Goisern 🇦🇹",
+        "highlights": "Salzburg old town · Getreidegasse · Cathedral · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
         "bookings": [
           {
             "status": "booked",
@@ -1223,22 +1236,6 @@
       "link": null
     },
     {
-      "id": "shift_lindenberg",
-      "label": "Shift Landhaus Lindenberg dates Jun 23–24 → Jun 24–25",
-      "status": "urgent",
-      "ref": "#6026325459",
-      "deadline": "Contact Booking.com",
-      "link": null
-    },
-    {
-      "id": "shift_wurznwirt",
-      "label": "Shift + extend Wurznwirt Jun 24–25 → Jun 25–27 (2 nights)",
-      "status": "urgent",
-      "ref": "#72072251742511",
-      "deadline": "Contact property",
-      "link": null
-    },
-    {
       "id": "shift_homebound",
       "label": "Shift HOMEBOUND Bad Goisern Jun 25–27 → Jun 27–29",
       "status": "urgent",
@@ -1261,6 +1258,14 @@
       "ref": null,
       "deadline": "Book now",
       "link": null
+    },
+    {
+      "id": "salzburg_hotel",
+      "label": "🏨 Book Salzburg hotel — Jun 24–26 (2 nights)",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now — replaces Buchloe + Schneizlreuth",
+      "link": "https://www.booking.com/city/at/salzburg.html"
     }
   ],
   "budget": [
@@ -1525,48 +1530,48 @@
       "date": "Jun 24",
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
-      "nightStay": "Landhaus Lindenberg, Buchloe 🇩🇪",
-      "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg ruins · Highline179 bridge · (Plan B: Neuschwanstein)",
-      "drive": "~270 km / 168 mi",
-      "driveTime": "~4.5hrs total",
-      "bookings": "✓ Landhaus Lindenberg #6026325459 · ⚠️ Plan B: Book Neuschwanstein if switching",
-      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Burg+Ehrenberg,+Reutte,+Austria/Landhaus+Lindenberg,+Buchloe,+Germany"
+      "nightStay": "Salzburg Hotel 🇦🇹",
+      "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg · Highline179 bridge · Salzburg arrival",
+      "drive": "~330 km / 205 mi",
+      "driveTime": "~5hrs total",
+      "bookings": "⏳ Book Salzburg hotel Jun 24–26",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Burg+Ehrenberg,+Reutte,+Austria/Salzburg,+Austria"
     },
     {
       "day": "6",
       "date": "Jun 25",
       "flag": "🇩🇪",
-      "from": "Buchloe 🇩🇪",
-      "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
-      "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä · Wimbachklamm Gorge · Hintersee lake + Zauberwald (Magic Forest)",
-      "drive": "~200 km / 124 mi",
-      "driveTime": "~2h 20m",
-      "bookings": "✓ Wurznwirt · ⏳ Königssee boat",
-      "mapUrl": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
+      "from": "Salzburg 🇦🇹",
+      "nightStay": "Salzburg Hotel 🇦🇹",
+      "highlights": "Königssee electric boat · Obersee · Röthbach Waterfall · Wimbachklamm · Hintersee + Zauberwald",
+      "drive": "~120 km / 75 mi",
+      "driveTime": "~2hrs",
+      "bookings": "⏳ Königssee boat · ✅ Salzburg hotel",
+      "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Salzburg,+Austria"
     },
     {
       "day": "7",
       "date": "Jun 26",
       "flag": "🇩🇪",
-      "from": "Schneizlreuth 🇩🇪",
-      "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
-      "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road (Germany's highest road) · Jennerbahn cable car · Jenner summit 1,874m",
-      "drive": "~32 km / 20 mi",
-      "driveTime": "~30min",
-      "bookings": "✓ Wurznwirt (2nd night — check availability)",
-      "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panoramastra%C3%9Fe,+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Schneizlreuth,+Germany"
+      "from": "Salzburg 🇦🇹",
+      "nightStay": "Salzburg Hotel 🇦🇹",
+      "highlights": "Eagle's Nest 1,834m · Rossfeld Panorama Road · Jennerbahn · Jenner summit 1,874m · Route 4 loop",
+      "drive": "~80 km / 50 mi",
+      "driveTime": "~1hr",
+      "bookings": "✅ Salzburg hotel",
+      "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panorama%C3%9Ftra%C3%9Fe,+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Salzburg,+Austria"
     },
     {
       "day": "8",
       "date": "Jun 27",
       "flag": "🇦🇹",
-      "from": "Schneizlreuth 🇩🇪",
+      "from": "Salzburg 🇦🇹",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
-      "highlights": "Liechtensteinklamm Gorge (444 stairs) · Salzburg old town · Wolfgangsee St. Gilgen · Hallstatt evening walk",
-      "drive": "~240 km / 149 mi",
-      "driveTime": "~3h 30m",
-      "bookings": "✓ HOMEBOUND",
-      "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Bad+Goisern,+Austria"
+      "highlights": "Salzburg old town · Getreidegasse · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
+      "drive": "~100 km / 62 mi",
+      "driveTime": "~2hrs",
+      "bookings": "✅ HOMEBOUND #72072198804917",
+      "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Bad+Goisern,+Austria"
     },
     {
       "day": "9",
