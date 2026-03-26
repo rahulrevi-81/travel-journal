@@ -88,24 +88,24 @@
     {
       "label": "🗺️ Iceland Route — Full 2-Day Loop",
       "description": "KEF → Golden Circle → South Coast → Reykjanes → KEF",
-      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Kerið+Crater+Lake,+Iceland/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Gljufrabui+Waterfall,+Iceland/Skogafoss,+Iceland/Reynisfjara+Black+Sand+Beach,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon,+Iceland/Ytri-Njarðvík,+Iceland/Keflavik+International+Airport,+Iceland"
+      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater+Lake,+Iceland/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Gljufrabui+Waterfall,+Iceland/Skogafoss,+Iceland/Reynisfjara+Black+Sand+Beach,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Ytri-Njar%C3%B0v%C3%ADk,+Iceland/Keflavik+International+Airport,+Iceland"
     },
     {
       "label": "🗺️ Europe Route — Full 13-Day Road Trip",
       "description": "ZRH → Diemtigtal → Grindelwald → Buchloe → Schneizlreuth → Bad Goisern → Zell am See → Pertisau → Außervillgraten → Lago di Braies → Tre Cime → Innsbruck → Dornbirn → Vaduz → Rhine Falls → ZRH",
-      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
+      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Au%C3%9Fervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
     }
   ],
   "tripMaps": [
     {
       "label": "🇮🇸 Iceland — Full Route Map",
       "description": "Days 1–2 · KEF → Golden Circle → South Coast → Reykjanes",
-      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerið+Crater+Lake/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Eyrarbakki,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon/Svínafellsjökull/Jökulsárlón+Glacier+Lagoon/Ytri-Njarðvík,+Iceland"
+      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Keri%C3%B0+Crater+Lake/Geysir,+Iceland/Gullfoss,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Eyrarbakki,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon/Sv%C3%ADnafellsj%C3%B6kull/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon/Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
     },
     {
       "label": "🌍 Europe — Full Route Map",
       "description": "Days 3–16 · ZRH → Switzerland → Germany → Austria → Italy → Liechtenstein → Zurich",
-      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
+      "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Buchloe,+Germany/Schneizlreuth,+Germany/Bad+Goisern,+Austria/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Au%C3%9Fervillgraten,+Austria/Lago+di+Braies,+Italy/Tre+Cime+di+Lavaredo,+Italy/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
     }
   ],
   "accommodation": [
@@ -210,11 +210,11 @@
       "mapLinks": [
         {
           "label": "Day 1 Map — Golden Circle + South Coast",
-          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Kerið+Crater+Lake,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Reynisfjara+Black+Sand+Beach/Vík,+Iceland/Skeidflot+871,+Iceland"
+          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Keri%C3%B0+Crater+Lake,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Black+Sand+Beach/V%C3%ADk,+Iceland/Skeidflot+871,+Iceland"
         },
         {
           "label": "Day 2 Map — South Coast + Glacier Lagoon",
-          "url": "https://www.google.com/maps/dir/Skeidflot+871,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon,+Iceland/Kirkjubæjarklaustur,+Iceland/Svínafellsjökull,+Iceland/Jökulsárlón+Glacier+Lagoon/Diamond+Beach+Iceland/Ytri-Njarðvík,+Iceland"
+          "url": "https://www.google.com/maps/dir/Skeidflot+871,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Kirkjubæjarklaustur,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon/Diamond+Beach+Iceland/Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
         }
       ],
       "sections": [
@@ -341,7 +341,7 @@
         }
       ],
       "summary": {
-        "drive": "~95 mi",
+        "drive": "~174 km / 108 mi",
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
         "to": "Tiny House Diemtigtal",
@@ -368,7 +368,7 @@
       "mapLinks": [
         {
           "label": "Day 4 Map — Oeschinensee + Jaun Pass + Gruyères",
-          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruyères,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruy%C3%A8res,+Switzerland/Oey,+Diemtigtal,+Switzerland"
         }
       ],
       "sections": [
@@ -398,7 +398,7 @@
         }
       ],
       "summary": {
-        "drive": "~317 mi",
+        "drive": "~130 km / 81 mi",
         "time": "6h 40m",
         "heavy": true,
         "from": "Diemtigtal 🇨🇭",
@@ -465,7 +465,7 @@
         }
       ],
       "summary": {
-        "drive": "~126 mi",
+        "drive": "~130 km / 81 mi",
         "time": "2h 20m",
         "from": "Buchloe 🇩🇪",
         "to": "Wurznwirt, Schneizlreuth 🇩🇪",
@@ -491,7 +491,7 @@
       "mapLinks": [
         {
           "label": "Day 6 Map — Königssee + Hintersee + Wimbachklamm",
-          "url": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/Königssee,+Schönau+am+Königssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
+          "url": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
         }
       ],
       "sections": [
@@ -526,7 +526,8 @@
         }
       ],
       "summary": {
-        "highlights": "Liechtensteinklamm gorge · Salzburg old town lunch · Wolfgangsee photo stop · Hallstatt evening walk"
+        "highlights": "Liechtensteinklamm gorge · Salzburg old town lunch · Wolfgangsee photo stop · Hallstatt evening walk",
+        "drive": "~200 km / 124 mi"
       }
     },
     {
@@ -538,7 +539,7 @@
       "mapLinks": [
         {
           "label": "Day 7 Map — Eagle's Nest + Rossfeld + Jenner",
-          "url": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panoramastraße,+Berchtesgaden,+Germany/Jennerbahn,+Schönau+am+Königssee,+Germany/Schneizlreuth,+Germany"
+          "url": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panoramastra%C3%9Fe,+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Schneizlreuth,+Germany"
         }
       ],
       "sections": [
@@ -571,7 +572,7 @@
         }
       ],
       "summary": {
-        "drive": "~25 mi",
+        "drive": "~32 km / 20 mi",
         "time": "~45m",
         "from": "Bad Goisern 🇦🇹",
         "to": "HOMEBOUND, Bad Goisern 🇦🇹",
@@ -628,7 +629,7 @@
         }
       ],
       "summary": {
-        "drive": "~140 mi",
+        "drive": "~240 km / 149 mi",
         "time": "2h 33m +Grossglockner",
         "from": "Bad Goisern 🇦🇹",
         "to": "Pr' Matjon, Lake Bled 🇸🇮",
@@ -678,7 +679,7 @@
         }
       ],
       "summary": {
-        "drive": "~25 mi",
+        "drive": "~35 km / 22 mi",
         "time": "~45m",
         "from": "Lake Bled 🇸🇮",
         "to": "Pr' Matjon, Lake Bled 🇸🇮",
@@ -704,7 +705,7 @@
       "mapLinks": [
         {
           "label": "Day 10 Map — Grossglockner → Zell am See",
-          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-Höhe,+Austria/Zell+am+See,+Austria"
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
         }
       ],
       "sections": [
@@ -740,7 +741,7 @@
         }
       ],
       "summary": {
-        "drive": "~30 mi",
+        "drive": "~195 km / 121 mi",
         "time": "~1h 00m",
         "from": "Lake Bled 🇸🇮",
         "to": "Pr' Matjon, Lake Bled 🇸🇮",
@@ -794,7 +795,7 @@
         }
       ],
       "summary": {
-        "drive": "~138 mi",
+        "drive": "~100 km / 62 mi",
         "time": "3h 12m +Lagazuoi",
         "from": "Lake Bled 🇸🇮",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
@@ -817,7 +818,7 @@
       "mapLinks": [
         {
           "label": "Day 12 Map — Seceda + Val di Funes + Lagazuoi",
-          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Außervillgraten,+Austria"
+          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
@@ -846,7 +847,7 @@
         }
       ],
       "summary": {
-        "drive": "~40 mi",
+        "drive": "~240 km / 149 mi",
         "time": "~1h 00m",
         "from": "Außervillgraten 🇮🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
@@ -872,7 +873,7 @@
       "mapLinks": [
         {
           "label": "Day 13 Map — Lago di Braies + Tre Cime",
-          "url": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Außervillgraten,+Austria"
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
@@ -907,7 +908,7 @@
         }
       ],
       "summary": {
-        "drive": "~50 mi",
+        "drive": "~190 km / 118 mi",
         "time": "~1h 30m",
         "from": "Außervillgraten 🇮🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
@@ -929,7 +930,7 @@
       "mapLinks": [
         {
           "label": "Day 14 Map — Cinque Torri + Sorapis",
-          "url": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Außervillgraten,+Austria"
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
@@ -965,7 +966,7 @@
         }
       ],
       "summary": {
-        "drive": "~130 mi",
+        "drive": "~80 km / 50 mi",
         "time": "3h 10m",
         "from": "Außervillgraten 🇦🇹",
         "to": "Vienna House Martinspark, Dornbirn 🇦🇹",
@@ -987,7 +988,7 @@
       "mapLinks": [
         {
           "label": "Day 15 Map — Innsbruck → Vaduz → Rhine Falls → Zurich",
-          "url": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich,+Switzerland/Zurich+Airport,+Switzerland"
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich,+Switzerland/Zurich+Airport,+Switzerland"
         }
       ],
       "sections": [
@@ -1031,7 +1032,7 @@
         }
       ],
       "summary": {
-        "drive": "~101 mi",
+        "drive": "~290 km / 180 mi",
         "time": "2h 30m",
         "from": "Dornbirn 🇦🇹",
         "to": "Zurich Airport Hotel 🇨🇭",
@@ -1391,10 +1392,10 @@
       "from": "Keflavík / KEF 🇮🇸",
       "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
       "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi cave · Skógafoss · Reynisfjara black sand beach · Vík village",
-      "drive": "~130 mi",
-      "driveTime": "~3.5hrs",
+      "drive": "~358 km / 222 mi",
+      "driveTime": "~5.5hrs",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
-      "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Kerið+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Skógafoss,+Iceland/Reynisfjara,+Iceland/Vík,+Iceland/Room+in+Skeidflot,+Iceland"
+      "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland"
     },
     {
       "day": "2",
@@ -1403,10 +1404,10 @@
       "from": "Skeidflot, Mýrdalur 🇮🇸",
       "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
       "highlights": "Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier walk · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
-      "drive": "~180 mi",
+      "drive": "~290 km / 180 mi",
       "driveTime": "~5hrs",
       "bookings": "✓ BergOne",
-      "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrhólaey,+Iceland/Fjaðrárgljúfur+Canyon,+Iceland/Svínafellsjökull,+Iceland/Jökulsárlón+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njarðvík,+Iceland"
+      "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
     },
     {
       "day": "3",
@@ -1415,8 +1416,8 @@
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "Tiny House Diemtigtal",
       "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · arrive Tiny House Diemtigtal 5:30pm",
-      "drive": "~95 mi",
-      "driveTime": "1h 30m",
+      "drive": "~174 km / 108 mi",
+      "driveTime": "~2hrs",
       "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH",
       "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland"
     },
@@ -1427,10 +1428,10 @@
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Tiny House Diemtigtal 🇨🇭",
       "highlights": "Oeschinensee gondola (8:30am) · Jaun Pass scenic drive (1,509m) · Gruyères medieval village · Château de Gruyères · fondue lunch",
-      "drive": "~80 mi",
+      "drive": "~130 km / 81 mi",
       "driveTime": "~2hrs",
       "bookings": "✓ Tiny House Diemtigtal (2nd night)",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruyères,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Jaun+Pass,+Switzerland/Gruy%C3%A8res,+Switzerland/Oey,+Diemtigtal,+Switzerland"
     },
     {
       "day": "5",
@@ -1439,7 +1440,7 @@
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Landhaus Lindenberg, Buchloe 🇩🇪",
       "highlights": "Grindelwald Firstbahn gondola · Cliff Walk · Bachalpsee hike · Lauterbrunnen village · Staubbach Falls · Mürren cliff village (optional)",
-      "drive": "~80 mi",
+      "drive": "~130 km / 81 mi",
       "driveTime": "~2hrs",
       "bookings": "✓ Landhaus Lindenberg #6026325459 · ✓ Gondola #238070 · ⏳ Oeschinensee 8:30am slot",
       "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Lauterbrunnen,+Switzerland/Landhaus+Lindenberg,+Buchloe,+Germany"
@@ -1451,10 +1452,10 @@
       "from": "Buchloe 🇩🇪",
       "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
       "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä · Wimbachklamm Gorge · Hintersee lake + Zauberwald (Magic Forest)",
-      "drive": "~126 mi",
-      "driveTime": "2h 20m",
+      "drive": "~200 km / 124 mi",
+      "driveTime": "~2h 20m",
       "bookings": "✓ Wurznwirt · ⏳ Königssee boat",
-      "mapUrl": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/Königssee,+Schönau+am+Königssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
+      "mapUrl": "https://www.google.com/maps/dir/Landhaus+Lindenberg,+Buchloe,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Wimbachklamm,+Ramsau+bei+Berchtesgaden,+Germany/Wurznwirt,+Schneizlreuth,+Germany"
     },
     {
       "day": "7",
@@ -1463,10 +1464,10 @@
       "from": "Schneizlreuth 🇩🇪",
       "nightStay": "Wurznwirt, Schneizlreuth 🇩🇪",
       "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road (Germany's highest road) · Jennerbahn cable car · Jenner summit 1,874m",
-      "drive": "~20 mi",
+      "drive": "~32 km / 20 mi",
       "driveTime": "~30min",
       "bookings": "✓ Wurznwirt (2nd night — check availability)",
-      "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panoramastraße,+Berchtesgaden,+Germany/Jennerbahn,+Schönau+am+Königssee,+Germany/Schneizlreuth,+Germany"
+      "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panoramastra%C3%9Fe,+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Schneizlreuth,+Germany"
     },
     {
       "day": "8",
@@ -1475,8 +1476,8 @@
       "from": "Schneizlreuth 🇩🇪",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
       "highlights": "Liechtensteinklamm Gorge (444 stairs) · Salzburg old town · Wolfgangsee St. Gilgen · Hallstatt evening walk",
-      "drive": "~150 mi",
-      "driveTime": "~3.5hrs",
+      "drive": "~240 km / 149 mi",
+      "driveTime": "~3h 30m",
       "bookings": "✓ HOMEBOUND",
       "mapUrl": "https://www.google.com/maps/dir/Schneizlreuth,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Bad+Goisern,+Austria"
     },
@@ -1487,7 +1488,7 @@
       "from": "Bad Goisern 🇦🇹",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
       "highlights": "Hallstatt village · Echern Valley · Waldbachstrub Waterfall · Beinhaus (1,200 painted skulls) · Dachstein Krippenstein · 5 Fingers · Giant Ice Cave",
-      "drive": "~20 mi",
+      "drive": "~35 km / 22 mi",
       "driveTime": "~30min",
       "bookings": "✓ HOMEBOUND",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Bad+Goisern,+Austria"
@@ -1499,10 +1500,10 @@
       "from": "Bad Goisern 🇦🇹",
       "nightStay": "Zell am See 🇦🇹 (need booking)",
       "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze (2,571m) · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
-      "drive": "~120 mi",
+      "drive": "~195 km / 121 mi",
       "driveTime": "~3hrs + Grossglockner",
       "bookings": "⏳ Zell am See hotel — BOOK NOW",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-Höhe,+Austria/Zell+am+See,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
     },
     {
       "day": "11",
@@ -1511,8 +1512,8 @@
       "from": "Zell am See 🇦🇹",
       "nightStay": "Near Innsbruck 🇦🇹 (need booking)",
       "highlights": "Lake Achensee · Karwendel cable car · Bärenkopf summit (1,991m) · full lake panorama · birthday lakeside dinner 🎂",
-      "drive": "~60 mi",
-      "driveTime": "~1.5hrs",
+      "drive": "~100 km / 62 mi",
+      "driveTime": "~1h 30m",
       "bookings": "⏳ Innsbruck area hotel — BOOK NOW",
       "mapUrl": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Innsbruck,+Austria"
     },
@@ -1523,10 +1524,10 @@
       "from": "Near Innsbruck 🇦🇹 via Ortisei 🇮🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
       "highlights": "Seceda cable car · Fermeda Towers ridgeline · Val di Funes · Santa Maddalena Church meadow viewpoint · Odle peaks · Lagazuoi 2,752m · WWI Galleries",
-      "drive": "~150 mi",
-      "driveTime": "~3.5hrs + Seceda + Val di Funes + Lagazuoi",
+      "drive": "~240 km / 149 mi",
+      "driveTime": "~3h 30m",
       "bookings": "✓ Das Auss.Zeit",
-      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Außervillgraten,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "13",
@@ -1535,10 +1536,10 @@
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
       "highlights": "Lago di Braies sunrise · Cadini di Misurina viewpoint · Tre Cime di Lavaredo loop (6.2mi) · Rifugio Locatelli · WWI caves at Sasso di Sesto",
-      "drive": "~120 mi",
-      "driveTime": "~2.5hrs + Lagazuoi",
+      "drive": "~190 km / 118 mi",
+      "driveTime": "~2h 30m",
       "bookings": "✓ Das Auss.Zeit · ⏳ Pre-book Tre Cime shuttle",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Außervillgraten,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "14",
@@ -1547,10 +1548,10 @@
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
       "highlights": "Cinque Torri · Scoiattoli chairlift · WWI open-air museum · Cortina d'Ampezzo · Lago di Sorapis glacial lake (optional)",
-      "drive": "~50 mi",
+      "drive": "~80 km / 50 mi",
       "driveTime": "~1h 30m",
       "bookings": "✓ Das Auss.Zeit",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Außervillgraten,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "15",
@@ -1559,10 +1560,10 @@
       "from": "Außervillgraten 🇦🇹",
       "nightStay": "Radisson Blu ZRH 🇨🇭",
       "highlights": "Nordkette OR Olpererhütte · Dornbirn (daytime) · Plansee optional · Vaduz Liechtenstein · Rhine Falls · Zurich Altstadt dinner · Hertz drop-off ZRH",
-      "drive": "~180 mi",
-      "driveTime": "~3.5hrs",
-      "bookings": "✓ Vienna House Dornbirn (daytime only — cancel overnight) · ⏳ Radisson Blu ZRH — book Jul 4",
-      "mapUrl": "https://www.google.com/maps/dir/Außervillgraten,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich,+Switzerland/Zurich+Airport,+Switzerland"
+      "drive": "~290 km / 180 mi",
+      "driveTime": "~4hrs",
+      "bookings": "✓ Vienna House Dornbirn (daytime) · ⏳ Radisson Blu ZRH — book Jul 4",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Schlegeis+Reservoir,+Ginzling,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
     },
     {
       "day": "16",
@@ -1574,7 +1575,7 @@
       "drive": "—",
       "driveTime": "—",
       "bookings": "✓ Icelandair FI571/FI689",
-      "mapUrl": ""
+      "mapUrl": "https://www.google.com/maps/place/Zurich+Airport,+Switzerland"
     }
   ],
   "title": "Europe Family Road Trip 2026 — Plan B",
