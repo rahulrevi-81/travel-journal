@@ -555,23 +555,5 @@ async function init() {
 
 init();
 </script>
-
-<script>
-// Plan B badge injection
-document.addEventListener('DOMContentLoaded', function() {
-  // Add Plan B badge after hero loads
-  setTimeout(function() {
-    const hero = document.querySelector('.hero');
-    if (hero) {
-      const badge = document.createElement('div');
-      badge.style.cssText = 'position:absolute;top:16px;right:20px;background:#c9a84c;color:#1a1a2e;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:2px;z-index:10;';
-      badge.textContent = 'PLAN B';
-      hero.style.position = 'relative';
-      hero.appendChild(badge);
-    }
-  }, 300);
-});
-</script>
-
 </body>
 </html>
