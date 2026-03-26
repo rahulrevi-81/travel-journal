@@ -127,37 +127,37 @@
       "status": "booked"
     },
     {
-      "nights": "3",
+      "nights": "3–4",
       "property": "Tiny House im schönen Diemtigtal 🇨🇭",
       "address": "Bächlen 362A, 3753 Oey, Diemtigtal",
-      "dates": "Jun 22–23",
-      "ref": "Airbnb · $255.92",
+      "dates": "Jun 22–24",
+      "ref": "Airbnb · $255.92 + extension",
       "freeCancel": null,
       "status": "confirmed"
     },
     {
-      "nights": "4",
+      "nights": "5",
       "property": "Escape by Landhaus Lindenberg 🇩🇪",
       "address": "Höfatsweg 3, 86807 Buchloe, Germany",
-      "dates": "Jun 23–24",
+      "dates": "Jun 24–25",
       "ref": "Booking.com #6026325459 · $202",
       "freeCancel": null,
       "status": "booked"
     },
     {
-      "nights": "5",
+      "nights": "6–7",
       "property": "Wurznwirt 🇩🇪",
       "address": "Schneizlreuth 4, 83458 Schneizlreuth, Germany",
-      "dates": "Jun 24–25",
+      "dates": "Jun 25–27",
       "ref": "#72072251742511",
       "stars": "9.0",
       "status": "booked"
     },
     {
-      "nights": "6–7",
+      "nights": "8–9",
       "property": "HOMEBOUND Apartments 🇦🇹",
       "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
-      "dates": "Jun 25–27",
+      "dates": "Jun 27–29",
       "ref": "#72072198804917",
       "stars": "9.6",
       "status": "booked"
@@ -167,9 +167,27 @@
       "property": "Pr' Matjon Pension 🇸🇮",
       "address": "Selo pri Bledu 35, 4260 Bled, Slovenia",
       "dates": "Jun 27–30",
-      "ref": "#72072265408188",
+      "ref": "#72072265408188 — CANCEL",
       "stars": "9.4",
-      "status": "booked"
+      "status": "cancelled"
+    },
+    {
+      "nights": "10",
+      "property": "Zell am See Hotel 🇦🇹",
+      "address": "Zell am See, Austria",
+      "dates": "Jun 29–30",
+      "ref": "⏳ Pending — book now",
+      "freeCancel": null,
+      "status": "pending"
+    },
+    {
+      "nights": "11",
+      "property": "Near Innsbruck / Pertisau 🇦🇹 🎂",
+      "address": "Innsbruck area or Pertisau am Achensee, Austria",
+      "dates": "Jun 30–Jul 1",
+      "ref": "⏳ Pending — Veena birthday night",
+      "freeCancel": null,
+      "status": "pending"
     },
     {
       "nights": "11–13",
@@ -185,9 +203,9 @@
       "property": "Vienna House Martinspark 🇦🇹",
       "address": "Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg",
       "dates": "Jul 3–4",
-      "ref": "#72072266618761",
+      "ref": "#72072266618761 — CANCEL overnight",
       "stars": "8.6",
-      "status": "booked"
+      "status": "cancelled"
     },
     {
       "nights": "15",
@@ -1142,9 +1160,9 @@
     },
     {
       "id": "vintgar",
-      "label": "🎟 Vintgar Gorge timed entry — Jun 29",
+      "label": "Cancel Vintgar Gorge entry PE01-BL0I-808 (Slovenia removed)",
       "status": "done",
-      "ref": "Invoice PE01-BL0I-808 · €40 · 10:00am entry",
+      "ref": "PE01-BL0I-808 — refund €40",
       "deadline": null,
       "link": null
     },
@@ -1158,7 +1176,7 @@
     },
     {
       "id": "konigssee",
-      "label": "⛵ Königssee boat — Jun 24",
+      "label": "⛵ Königssee boat — Jun 25",
       "status": "pending",
       "ref": null,
       "deadline": "Book ASAP",
@@ -1190,10 +1208,58 @@
     },
     {
       "id": "hertz",
-      "label": "🚗 Confirm Italy + Slovenia cross-border at Hertz ZRH",
+      "label": "🚗 Confirm Italy cross-border approval at Hertz ZRH (Slovenia removed)",
       "status": "pending",
       "ref": null,
       "deadline": "At pickup Jun 22",
+      "link": null
+    },
+    {
+      "id": "cancel_vienna",
+      "label": "Cancel Vienna House Dornbirn overnight #72072266618761",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Cancel ASAP — daytime stop only",
+      "link": null
+    },
+    {
+      "id": "shift_lindenberg",
+      "label": "Shift Landhaus Lindenberg dates Jun 23–24 → Jun 24–25",
+      "status": "urgent",
+      "ref": "#6026325459",
+      "deadline": "Contact Booking.com",
+      "link": null
+    },
+    {
+      "id": "shift_wurznwirt",
+      "label": "Shift + extend Wurznwirt Jun 24–25 → Jun 25–27 (2 nights)",
+      "status": "urgent",
+      "ref": "#72072251742511",
+      "deadline": "Contact property",
+      "link": null
+    },
+    {
+      "id": "shift_homebound",
+      "label": "Shift HOMEBOUND Bad Goisern Jun 25–27 → Jun 27–29",
+      "status": "urgent",
+      "ref": "#72072198804917",
+      "deadline": "Contact property",
+      "link": null
+    },
+    {
+      "id": "zell_am_see",
+      "label": "🏨 Book Zell am See hotel — Jun 29",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now",
+      "link": null
+    },
+    {
+      "id": "innsbruck_birthday",
+      "label": "🏨 Book Innsbruck / Pertisau hotel — Jun 30 (Veena birthday 🎂)",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now",
       "link": null
     }
   ],
@@ -1248,8 +1314,8 @@
       "paid": "$263.98"
     },
     {
-      "property": "Tiny House Diemtigtal, Oey 🇨🇭 · Night 3",
-      "paid": "$255.92"
+      "property": "Tiny House Diemtigtal, Oey 🇨🇭 · Nights 3–4",
+      "paid": "$255.92 + extension (Airbnb)"
     },
     {
       "property": "Escape by Landhaus Lindenberg, Buchloe 🇩🇪 · Night 4",
@@ -1447,7 +1513,7 @@
       "date": "Jun 23",
       "flag": "🇨🇭",
       "from": "Diemtigtal 🇨🇭",
-      "nightStay": "Tiny House Diemtigtal 🇨🇭",
+      "nightStay": "Tiny House Diemtigtal 🇨🇭 (Night 2)",
       "highlights": "Oeschinensee gondola · turquoise alpine lake · Grindelwald Firstbahn · First Cliff Walk · Bachalpsee hike",
       "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
