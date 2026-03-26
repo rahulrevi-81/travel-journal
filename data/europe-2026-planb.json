@@ -584,8 +584,8 @@
     {
       "dayLabel": "8",
       "date": "Jun 27",
-      "title": "Grossglockner → Lake Bled",
-      "meta": "Jun 27 · Bad Goisern → Slovenia",
+      "title": "Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 27 · Schneizlreuth → Bad Goisern",
       "flag": "🇦🇹🇸🇮",
       "mapLinks": [
         {
@@ -597,14 +597,12 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>10am</strong>",
-            "⚠️ <strong>Gosausee optional</strong> — 15 min from Bad Goisern · if energy allows, walk 2 min to the lake edge for the iconic Dachstein glacier reflection · skip the full loop if behind schedule · back on road by 10:45am",
-            "Drive south → <strong>Grossglockner High Alpine Road</strong> north entry · arrive <strong>~12:30pm</strong> · toll <strong>€46.50/car</strong> · pack warm layers",
-            "⭐ <strong>Fuscher Törl</strong> — first major viewpoint on the way up · memorial chapel overlooking the hairpin turns you just climbed · quick 15 min stop",
-            "⭐ <strong>Edelweißspitze detour</strong> — short cobblestone side road to the highest point on the road (2,571m) · 360° panorama of 30+ peaks over 3,000m · free · ~20 min",
-            "<strong>Kaiser-Franz-Josefs-Höhe</strong> — main glacier viewpoint · Pasterze glacier up close · walk to glacier viewing platform · ~1.5hrs at the top",
-            "Drive <strong>~2hrs 30min</strong> south and east → arrive <strong>Lake Bled ~8:30pm</strong> ✅",
-            "🧺 <strong>Laundry #2</strong> — hand bag to Pr' Matjon hosts on arrival (service laundry, not self-service)"
+            "Leave <strong>Schneizlreuth 8:30am</strong> · drive <strong>40 min</strong> → Liechtensteinklamm",
+            "⭐ <strong>Liechtensteinklamm</strong> — deepest gorge in the Alps · <strong>444 stairs</strong> up + helix staircase · roaring torrent at the base · massive 50m waterfall at the end · ~2.5hrs · €16/adult · helmet NOT required but wear good shoes",
+            "Drive <strong>45 min</strong> → <strong>Salzburg</strong> · quick lunch stop · Getreidegasse · Mozart's birthplace exterior · Mirabell Gardens · ~1.5hrs",
+            "Drive <strong>30 min</strong> → <strong>Wolfgangsee</strong> · St. Gilgen quick photo stop · ferry across the lake optional · 20 min max",
+            "Drive <strong>20 min</strong> → <strong>Hallstatt</strong> · arrive ~5:30pm · evening walk on the lakefront promenade · Hallstatt market square · best light for photos in the evening",
+            "Drive <strong>10 min</strong> → <strong>Bad Goisern</strong> · check in HOMEBOUND Apartments ✅ · 1st night"
           ]
         }
       ],
@@ -643,8 +641,8 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Lake Bled",
-      "meta": "Jun 28 · Bled base",
+      "title": "Hallstatt Full Day + Dachstein Krippenstein",
+      "meta": "Jun 28 · Bad Goisern base · Hallstatt + Dachstein",
       "flag": "🇸🇮",
       "mapLinks": [
         {
@@ -656,10 +654,13 @@
         {
           "heading": null,
           "items": [
-            "<strong>7:30am — Mala Osojnica + Ojstrica viewpoints</strong> — both at the same trailhead · <strong>Ojstrica first</strong> (lower, easier, most famous close-up island view) · then <strong>Mala Osojnica</strong> (steeper, 100-step metal staircase, ~35 min up · best panoramic view of Bled Island and the castle) · total ~1.5hrs for both",
-            "<strong>Bled Castle</strong> — clifftop fortress, panoramic views · ~1.5hrs · <strong>€19/adult · €7/child (2026)</strong> · one child under 14 free with two adults",
-            "<strong>Mostnica Gorge</strong> — forest gorge trail from Stara Fužina village · walk first <strong>2km to the second bridge</strong> (~1hr return) · pause on <strong>Devil's Bridge</strong> — river roars through a 20m deep slot below your feet · ⚠️ full walk to Voje Waterfall is 3hrs round trip — optional if energy allows",
-            "Drive <strong>~20 min</strong> to <strong>Vogel Cable Car</strong> at Ukanc, Lake Bohinj · <strong>arrive by 4:30pm latest</strong> (last ascent ~5pm in June) · panoramic Julian Alps views · <strong>Orlove Glave chairlift</strong> at summit often included in ticket — reaches 1,663m for 360° panorama"
+            "Drive <strong>10 min</strong> → Hallstatt · arrive by <strong>8:00am</strong> — get there early before tour buses arrive",
+            "⭐ <strong>Hallstatt village walk</strong> — UNESCO World Heritage village · lakefront walk · market square · Pfarrkirche church · Beinhaus (bone chapel with painted skulls — unique in the world) · ~1.5hrs",
+            "⭐ <strong>Echern Valley hike</strong> — trail behind the village climbs steeply into the Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up) · excellent views back over Hallstatt lake · ~1.5hrs return",
+            "Drive <strong>15 min</strong> → <strong>Dachstein Krippenstein</strong> cable car, Obertraun · ⚠️ pre-book tickets at dachstein.at",
+            "⭐ <strong>5 Fingers viewing platform</strong> (2,109m) — five glass-floored arms extending over a 400m cliff face · Hallstatt visible far below · one of the most dramatic viewpoints in Austria",
+            "⭐ <strong>Giant Ice Cave (Rieseneishöhle)</strong> — guided tour through massive underground ice formations · ~1.5hrs · included in cable car package · <strong>⚠️ Closed until Jun 30 2026</strong> — check dachstein.at before booking",
+            "Cable car back down · drive 10 min → <strong>Bad Goisern</strong> · 2nd night at HOMEBOUND ✅"
           ]
         }
       ],
@@ -694,8 +695,8 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Vintgar + Peričnik + Radovljica 🎂",
-      "meta": "Jun 29 · Bled base · Veena's Birthday! 🎉",
+      "title": "Grossglockner High Alpine Road → Zell am See",
+      "meta": "Jun 29 · Bad Goisern → Grossglockner → Zell am See",
       "flag": "🇸🇮",
       "birthday": "🎂 Happy Birthday Veena! — celebrated in one of the most beautiful places on Earth, Lake Bled, Slovenia.",
       "mapLinks": [
@@ -708,20 +709,13 @@
         {
           "heading": null,
           "items": [
-            "<strong>10:00am — Vintgar Gorge</strong> (pre-booked timed entry · ref PE01-BL0I-808) · helmet provided at entrance — <strong>mandatory, €50 fine</strong> if not worn · 1.6km boardwalk over blue-green water → <strong>Šum Waterfall</strong> (13m drop at the gorge end — follow signs, 5 min detour before the return trail)",
-            "⚠️ <strong>One-way system — cannot walk back on boardwalk</strong> · choose return trail at the end: <strong>King of Triglav trail (~45 min)</strong> recommended for the family — forest path with views toward Bled Castle · 'River of Trees' trail is 2hrs · expect to finish ~1:00pm total",
-            "⚠️ <strong>Savica Waterfall optional</strong> — 78m cascade, 558 steps up (~1.5hrs) · only if family has energy after the full Vintgar loop · if tired, skip and go straight to Radovljica",
-            "⭐ <strong>Peričnik Waterfall as Savica alternative</strong> — 25 min drive from Bled into Triglav National Park · double waterfall (upper 52m + lower 16m) · flat easy path · <strong>the trail goes directly behind the lower falls</strong> — you walk through the curtain of water · free · ~1hr · far less effort than Savica's 558 steps · perfect for a birthday morning",
-            "<strong>Radovljica old town</strong> — medieval town, gingerbread workshop at Lectar Museum (<strong>opens noon · book 2 days ahead for private workshop</strong>), beekeeping museum (~1hr)",
-            "Back to Bled for the birthday evening 🎂"
-          ]
-        },
-        {
-          "heading": "🎂 Birthday Extras",
-          "items": [
-            "<strong>Bled cream cake</strong> at Park Café — the iconic local dessert · ~€6.50–7.00 · birthday treat! 🎂",
-            "<strong>Pletna boat to Bled Island</strong> — traditional hand-rowed wooden boat · <strong>€20/adult 2026</strong> · on the island: <strong>ring the wishing bell 3 times</strong> — legend says it makes your wishes come true · perfect for Veena's birthday · church + bell tower separate €12",
-            "<strong>Special birthday dinner</strong> lakeside — try Vila Bled or Restavracija Belvedere for the occasion"
+            "Optional morning: <strong>Gosausee</strong> (20 min from Bad Goisern) — turquoise lake with Dachstein glacier backdrop · 45-min loop walk · worth it if leaving Bad Goisern by 8:30am",
+            "Drive <strong>1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
+            "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km, 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
+            "⭐ <strong>Fuscher Törl</strong> (2,428m) — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria",
+            "⭐ <strong>Kaiser-Franz-Josefs-Höhe</strong> (2,369m) — direct view of <strong>Grossglockner (3,798m)</strong>, Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
+            "Drive <strong>1hr</strong> south exit → <strong>Zell am See</strong> · arrive ~5:00pm · lakeside walk · town center · dinner by the lake",
+            "Check in <strong>Zell am See hotel</strong> ⏳ (need booking) · 1 night"
           ]
         }
       ],
@@ -759,9 +753,9 @@
     },
     {
       "dayLabel": "11",
-      "date": "Jun 30",
-      "title": "Drive → Dolomites via Lagazuoi",
-      "meta": "Jun 30 · Bled → Außervillgraten",
+      "date": "Jun 30 🎂",
+      "title": "Lake Achensee + Bärenkopf — Veena's Birthday",
+      "meta": "Jun 30 · Zell am See → Pertisau am Achensee → Innsbruck area",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -773,12 +767,13 @@
         {
           "heading": null,
           "items": [
-            "Early checkout <strong>10:30am</strong> · drive west via <strong>Passo Falzarego</strong> · arrive Lagazuoi cable car ~<strong>1:30pm</strong> (~125 mi, ~3hrs with photo stops)",
-            "🎟 <strong>Rent equipment first</strong> at Falzarego pass info-point — helmet + headlamp set ~<strong>€20/person</strong> · mandatory for WWI tunnels",
-            "<strong>Lagazuoi cable car</strong> — 3-min ride to 2,752m · <strong>~€27–30/adult return</strong> · last uphill 4:40pm · <strong>walk 5 min to Rifugio Lagazuoi</strong> for one of the best panoramic views in the entire Dolomites before heading to tunnels",
-            "⭐ <strong>Galleries of Piccolo Lagazuoi</strong> — hike DOWN through the WWI tunnels back to Falzarego pass (~2hrs, entirely downhill) · far more immersive than just viewing the summit · headlamp essential · emerges right at the cable car base",
-            "Drive <strong>25 min</strong> → <strong>Das Auss.Zeit, Außervillgraten</strong> · check in <strong>~6pm</strong> ✅",
-            "⚠️ <strong>Lago di Braies: save for Day 12 sunrise</strong> — parking fills fast regardless of season · 5am departure from Außervillgraten guarantees a spot and gives the magical mirror reflections that disappear when wind picks up mid-morning"
+            "Drive <strong>1hr 30min</strong> → <strong>Pertisau am Achensee</strong> · arrive ~9:30am · park near Karwendel cable car",
+            "⭐ <strong>Karwendel cable car</strong> (Karwendelbahn) — ride to <strong>Zwölferkopf (1,500m)</strong> · €18–22/adult return · opens ~8:30am",
+            "⭐ <strong>Bärenkopf summit hike (1,991m)</strong> — from cable car station follow signs to <strong>Bärenbad Alm</strong> (30 min, flat) · hut stop + Kaiserschmarrn · then <strong>steep trail to summit</strong> (1.5hrs) · <strong>the only place you can see the entire length of Achensee</strong> · narrow sections with fixed cables · sturdy shoes essential · total ~4hrs round trip",
+            "Pro tip: <strong>continue past the summit cross</strong> — 2 more minutes → secret viewpoint with no crowds where the full turquoise lake is visible including the southeast edge where the water is bluest",
+            "Cable car back down ~<strong>3:30pm</strong> · ⚠️ last cable car ~5pm — plan accordingly",
+            "Drive <strong>45 min</strong> → <strong>Innsbruck</strong> area · check in birthday night hotel ⏳ (need booking)",
+            "⭐ <strong>Birthday dinner</strong> 🎂 — Innsbruck old town · Goldenes Dachl area · lakeside dinner in Pertisau if staying there instead · celebratory evening for Veena"
           ]
         }
       ],
@@ -866,7 +861,7 @@
     {
       "dayLabel": "13",
       "date": "Jul 2",
-      "title": "Thurntaler + Cinque Torri + Lago di Sorapis",
+      "title": "Lago di Braies + Tre Cime di Lavaredo",
       "meta": "Jul 2 · Außervillgraten base",
       "flag": "🇮🇹",
       "mapLinks": [
