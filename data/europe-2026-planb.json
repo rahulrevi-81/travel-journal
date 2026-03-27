@@ -147,12 +147,12 @@
     },
     {
       "nights": "6",
-      "property": "Berchtesgaden Hotel 🇩🇪",
-      "address": "Berchtesgaden or Schönau am Königssee, Bavaria, Germany",
+      "property": "Pension-Café-Konditorei Mikl 🇦🇹",
+      "address": "2 Doktor-Albert-Eder-Straße, 5400 Hallein, Austria",
       "dates": "Jun 25–26",
-      "ref": "⏳ Yet to book — 1 night · Hotel Edelweiss / Hotel Vier Jahreszeiten / Alpensport-Hotel Seimler",
+      "ref": "✅ Airbnb booked · $219 / €190 · check-in 14:00–18:00 · check-out 08:00–11:00 · someone meets you",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "7–8",
@@ -567,41 +567,37 @@
             "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~2:00pm",
             "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop trail · free · one of the most romantic spots in Bavaria",
             "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · cable car up to 1,800m · ⭐ <strong>Jenner summit hike (1,874m)</strong> — 15–20 min from station · 360° panorama · Königssee far below · Eagle's Nest visible across the valley · cable car down ~<strong>5:30pm</strong>",
-            "Drive <strong>10 min</strong> → <strong>Berchtesgaden</strong> · check in hotel · arrive ~6:30pm · ⏳ yet to book",
-            "<strong>Afternoon rest</strong> — explore Berchtesgaden old town · early night · <strong>big day tomorrow</strong> — Eagle's Nest first bus 8:50am"
+            "Drive <strong>35 min</strong> north → <strong>Hallein</strong> · check in <strong>Pension-Café-Konditorei Mikl</strong> ✅ · 2 Doktor-Albert-Eder-Straße · check-in 14:00–18:00 · someone meets you · arrive ~6:30pm",
+            "⭐ <strong>Hallein old town optional evening</strong> — 15 min walk from Pension · Keltenmuseum (Celtic museum) · old salt mine (Salzbergwerk Hallein) · charming Salzach riverside · 15min from Salzburg"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⊙ Book Königssee boat at seenschifffahrt.de — arrive 9am, depart 9:30am · return to Salet ~€29/adult · €14.50/child"
+          "text": "💰 Eagle's Nest tomorrow — leave Hallein 8:00am · 40min to Obersalzberg · first bus 8:50am"
         },
         {
           "type": "alarm",
-          "text": "⚠️ Ride boat ALL THE WAY to Salet first — do NOT get off at St. Bartholomä · do St. Bartholomä on the way back"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Early night — Eagle's Nest first bus 8:50am tomorrow · leave hotel 7:30am"
+          "text": "⊙ Book Königssee boat at seenschifffahrt.de — return ticket to Salet ~€29/adult"
         },
         {
           "type": "booking",
-          "text": "⏳ Berchtesgaden / Schönau hotel Jun 25–26 — book now · Hotel Edelweiss / Alpensport-Hotel Seimler"
+          "text": "✅ Pension-Café-Konditorei Mikl, Hallein · Jun 25–26 · ~$219 · check-in 14:00–18:00"
         }
       ],
       "summary": {
         "highlights": "Königssee electric boat · Obersee + Röthbach Waterfall · St. Bartholomä lunch · Hintersee + Zauberwald · Jenner summit 1,874m",
         "drive": "~145 km / 90 mi",
         "from": "Munich area 🇩🇪",
-        "to": "Berchtesgaden 🇩🇪"
+        "to": "Hallein 🇦🇹"
       }
     },
     {
       "dayLabel": "7",
       "date": "Jun 26",
       "title": "Eagle's Nest + Liechtensteinklamm → Salzburg + Hohensalzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 26 · Berchtesgaden → Eagle's Nest → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 26 · Hallein → Eagle's Nest → Liechtensteinklamm → Salzburg + Hohensalzburg → Wolfgangsee → Hallstatt",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -654,7 +650,7 @@
       "summary": {
         "drive": "~220 km / 137 mi",
         "time": "~45m",
-        "from": "Berchtesgaden 🇩🇪",
+        "from": "Hallein 🇦🇹",
         "to": "Hallstatt 🇦🇹",
         "highlights": "Eagle's Nest 1,834m · Liechtensteinklamm 444 stairs · Salzburg old town · Hohensalzburg Fortress interior · Wolfgangsee · Hallstatt golden hour",
         "bookings": [
@@ -1635,22 +1631,22 @@
       "date": "Jun 25",
       "flag": "🇩🇪",
       "from": "Munich area 🇩🇪",
-      "nightStay": "Berchtesgaden / Schönau 🇩🇪 ⏳",
+      "nightStay": "Pension-Café-Konditorei Mikl, Hallein 🇦🇹 ✅",
       "highlights": "Königssee electric boat · Obersee + Röthbach Waterfall · St. Bartholomä lunch · Hintersee + Zauberwald Magic Forest · Jenner summit 1,874m",
       "drive": "~155 km / 96 mi",
       "driveTime": "~2hrs",
-      "bookings": "⏳ Berchtesgaden hotel Jun 25–26 · ⊙ Book Königssee boat",
+      "bookings": "✅ Pension Mikl confirmed · Airbnb $219 · check-in 14:00–18:00",
       "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Berchtesgaden,+Germany",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Berchtesgaden hotel · ⊙ Book Königssee boat"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "7",
       "date": "Jun 26",
       "flag": "🇩🇪",
-      "from": "Berchtesgaden 🇩🇪",
+      "from": "Hallein 🇦🇹",
       "nightStay": "Hallstatt 🇦🇹 ⏳",
       "highlights": "Eagle's Nest 1,834m · Liechtensteinklamm 444 stairs + 50m waterfall · Salzburg old town · Hohensalzburg Fortress interior · Wolfgangsee · Hallstatt golden hour",
       "drive": "~220 km / 137 mi",
