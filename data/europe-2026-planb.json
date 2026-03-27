@@ -137,12 +137,12 @@
     },
     {
       "nights": "5–6",
-      "property": "Salzburg Hotel 🇦🇹",
-      "address": "Salzburg, Austria",
-      "dates": "Jun 24–26",
-      "ref": "⏳ Pending — book now (2 nights)",
-      "freeCancel": null,
-      "status": "pending"
+      "property": "Wohlfühl Apartment Bad Reichenhall 🇩🇪",
+      "address": "Ludwig-Thoma-Straße 33, 83435 Bad Reichenhall, Germany",
+      "dates": "Jun 25–27",
+      "ref": "Booking.com #5205.018.552 · PIN 6202 · $330",
+      "freeCancel": "Free cancel until Jun 23 2026",
+      "status": "booked"
     },
     {
       "nights": "—",
@@ -455,7 +455,7 @@
       "dayLabel": "5",
       "date": "Jun 24",
       "title": "Lauterbrunnen + Burg Ehrenberg + Highline179",
-      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Reutte (Ehrenberg) → Salzburg",
+      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Reutte (Ehrenberg) → Bad Reichenhall",
       "flag": "🇨🇭",
       "mapLinks": [
         {
@@ -480,7 +480,7 @@
             "<strong>Lunch</strong> — Klause valley floor café or hut near castle (~1hr)",
             "⭐ <strong>Highline179 suspension bridge</strong> — 406-metre pedestrian bridge hanging 113m above the valley · connects Ehrenberg Castle ruins with Fort Claudia across the gorge · one of Europe's longest suspension bridges · thrilling for kids · ~30 min · included in combined ticket ~€18/adult",
             "⚠️ <strong>PLAN B (if pressed for time or kids want fairy-tale interior)</strong> — skip Ehrenberg · drive <strong>~45 min south</strong> → <strong>Neuschwanstein Castle, Füssen</strong> · ⚠️ requires pre-booked timed entry at neuschwanstein.de · guided tour only · ~€15/adult · June slots sell out months ahead",
-            "Drive <strong>~2hrs 45min</strong> → <strong>Salzburg</strong> · check in · Conf. #6026325459 ✅",
+            "Drive <strong>~2hrs 15min</strong> → <strong>Bad Reichenhall</strong> · check in · Conf. #6026325459 ✅",
             "<strong>Dinner</strong> — Buchloe or at hotel (~1hr)"
           ]
         }
@@ -504,10 +504,10 @@
         }
       ],
       "summary": {
-        "drive": "~330 km / 205 mi",
+        "drive": "~310 km / 193 mi",
         "time": "2h 20m",
         "from": "Diemtigtal 🇨🇭",
-        "to": "Salzburg 🇦🇹",
+        "to": "Wohlfühl Apt, Bad Reichenhall 🇩🇪",
         "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg ruins · Highline179 suspension bridge · (Plan B: Neuschwanstein)",
         "bookings": [
           {
@@ -525,7 +525,7 @@
       "dayLabel": "6",
       "date": "Jun 25",
       "title": "Königssee + Wimbachklamm + Hintersee",
-      "meta": "Jun 25 · Salzburg → Königssee → Wimbachklamm → Hintersee → Salzburg",
+      "meta": "Jun 25 · Bad Reichenhall → Königssee → Wimbachklamm → Hintersee → Bad Reichenhall",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -537,7 +537,7 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Salzburg 8:30am</strong> · drive <strong>~28 min</strong> → Königssee · buy tickets at dock",
+            "Leave <strong>Bad Reichenhall 8:30am</strong> · drive <strong>~20 min</strong> → Königssee · buy tickets at dock",
             "<strong>Boat departs ~9:30am</strong> — ride <strong>straight to Salet</strong> (55 min · don't get off at St. Bartholomä yet) · trumpet echo demo en route",
             "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest 470m) visible in distance · ~45 min return",
             "Board boat back to <strong>St. Bartholomä</strong> (20 min) · <strong>Lunch</strong> — beer garden at historic hunting lodge (~1hr)",
@@ -545,9 +545,9 @@
             "Drive <strong>16 min</strong> → <strong>Wimbachklamm Gorge</strong> — 1 mile gorge walk · carved limestone · rushing torrent · ~1hr · €4/person",
             "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop trail · free",
             "<strong>Drive ~40 min</strong> back → <strong>Salzburg</strong> · arrive ~6:00pm",
-            "⭐ <strong>Salzburg evening walk</strong> — Getreidegasse · Residenzplatz · old town (~1hr · crowds gone after 5pm)",
-            "<strong>Dinner</strong> — Salzburg old town · Café Tomaselli or Universitätsplatz market (~1hr)",
-            "<strong>2nd night — Salzburg hotel</strong> ✅"
+            "⭐ <strong>Bad Reichenhall evening</strong> — stroll the spa gardens · Rupertus Therme nearby · or 20 min to Salzburg for dinner",
+            "<strong>Dinner</strong> — Bad Reichenhall town center or drive 20 min to Salzburg old town (~1hr)",
+            "<strong>Wohlfühl Apartment Bad Reichenhall</strong> · Night 2 ✅"
           ]
         }
       ],
@@ -567,16 +567,16 @@
       ],
       "summary": {
         "highlights": "Königssee electric boat · Salet · Obersee · Röthbach Waterfall · St. Bartholomä lunch · Wimbachklamm · Hintersee + Zauberwald · Salzburg evening",
-        "drive": "~120 km / 75 mi",
-        "from": "Salzburg 🇦🇹",
-        "to": "Salzburg 🇦🇹"
+        "drive": "~90 km / 56 mi",
+        "from": "Bad Reichenhall 🇩🇪",
+        "to": "Wohlfühl Apt, Bad Reichenhall 🇩🇪"
       }
     },
     {
       "dayLabel": "7",
       "date": "Jun 26",
       "title": "Eagle's Nest + Rossfeld Panorama Road + Jenner",
-      "meta": "Jun 26 · Salzburg → Eagle's Nest → Rossfeld → Jenner → Salzburg",
+      "meta": "Jun 26 · Bad Reichenhall → Eagle's Nest → Rossfeld → Jenner → Bad Reichenhall",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -588,14 +588,14 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Salzburg 8:00am</strong> · drive <strong>~24 min</strong> → Berchtesgaden / Obersalzberg",
+            "Leave <strong>Bad Reichenhall 8:00am</strong> · drive <strong>~15 min</strong> → Berchtesgaden / Obersalzberg",
             "⭐ <strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels · ~45 min · €10/adult",
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · first bus ~8:50am · elevator through mountain · 1,834m · 360° panorama · Eagle's Nest visible later from Rossfeld · ~1.5hrs · €33/adult",
             "⭐ <strong>Rossfeld Panorama Road</strong> — Germany's highest road at 1,600m · start at <strong>Obersalzberg south entrance</strong> (same area as Eagle's Nest bus stop) · <strong>15km ring road</strong> · sweeping 360° views of Watzmann, Königssee, Salzburg and Austria · ~2hrs with photo stops · toll ~€9.50/car · Bavarian hut lunch at Panorama Restaurant at the top",
             "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong>, Schönau am Königssee · arrive ~1:30pm",
             "⭐ <strong>Route 4 loop (Rundwanderung Bergstation)</strong> — from mountain station descend to <strong>Carl-von-Stahl-Haus</strong> hut (just across Austrian border · cosy alpine hut · soup + beer stop) → continue to <strong>Schneibsteinhaus</strong> → ascent back up to mountain station · ~2.5hrs · crosses into Austria and back · far less crowded than summit trail",
             "⭐ <strong>Jennerbahn cable car</strong> → 1,800m · <strong>Jenner summit hike (1,874m)</strong> · 15–20 min · 360° panorama · Königssee below · Eagle's Nest and Rossfeld visible across the valley · afternoon light on the mountains",
-            "Cable car down ~<strong>4:00pm</strong> · drive <strong>~30 min</strong> → <strong>Salzburg</strong> · checkout tomorrow morning"
+            "Cable car down ~<strong>4:00pm</strong> · drive <strong>~15 min</strong> → <strong>Bad Reichenhall</strong> · checkout Jun 27 by 11:00am"
           ]
         }
       ],
@@ -614,10 +614,10 @@
         }
       ],
       "summary": {
-        "drive": "~80 km / 50 mi",
+        "drive": "~70 km / 43 mi",
         "time": "~45m",
-        "from": "Salzburg 🇦🇹",
-        "to": "Salzburg 🇦🇹",
+        "from": "Bad Reichenhall 🇩🇪",
+        "to": "Wohlfühl Apt, Bad Reichenhall 🇩🇪",
         "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Rossfeld Panorama Road · Jennerbahn · Jenner summit 1,874m · Route 4 loop via Carl-von-Stahl-Haus (Austria)",
         "bookings": [
           {
@@ -631,7 +631,7 @@
       "dayLabel": "8",
       "date": "Jun 27",
       "title": "Salzburg Old Town + Hohensalzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 27 · Salzburg → Salzburg old town → Wolfgangsee → Hallstatt → Bad Goisern",
+      "meta": "Jun 27 · Bad Reichenhall → Salzburg old town → Wolfgangsee → Bad Goisern",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -643,7 +643,7 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Salzburg hotel 8:30am</strong>",
+            "Checkout <strong>Bad Reichenhall apartment by 11:00am</strong> · drive <strong>~20 min</strong> → Salzburg",
             "⭐ <strong>Salzburg old town morning</strong> — <strong>Getreidegasse</strong> (Mozart's birthplace street) · <strong>Residenzplatz</strong> · <strong>Salzburg Cathedral</strong> (free · Mozart was baptised here) · <strong>Hohensalzburg Fortress</strong> — go inside (€16/adult · one of Europe's largest medieval fortresses · ~1hr 30min total)",
             "<strong>Lunch</strong> — Café Tomaselli (oldest coffee house in Austria) or Universitätsplatz market (~1hr)",
             "Drive <strong>~30 min</strong> east via Route 158 → <strong>Wolfgangsee (St. Gilgen)</strong>",
@@ -675,7 +675,7 @@
       "summary": {
         "drive": "~100 km / 62 mi",
         "time": "2h 33m +Grossglockner",
-        "from": "Salzburg 🇦🇹",
+        "from": "Bad Reichenhall 🇩🇪",
         "to": "HOMEBOUND, Bad Goisern 🇦🇹",
         "highlights": "Salzburg old town · Getreidegasse · Cathedral · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
         "bookings": [
@@ -1261,10 +1261,10 @@
     },
     {
       "id": "salzburg_hotel",
-      "label": "🏨 Book Salzburg hotel — Jun 24–26 (2 nights)",
-      "status": "urgent",
+      "label": "✅ Wohlfühl Apartment Bad Reichenhall — Jun 25–27 · #5205.018.552",
+      "status": "done",
       "ref": null,
-      "deadline": "Book now — replaces Buchloe + Schneizlreuth",
+      "deadline": "Free cancel until Jun 23",
       "link": "https://www.booking.com/city/at/salzburg.html"
     }
   ],
@@ -1542,11 +1542,11 @@
       "date": "Jun 25",
       "flag": "🇩🇪",
       "from": "Salzburg 🇦🇹",
-      "nightStay": "Salzburg Hotel 🇦🇹",
+      "nightStay": "Wohlfühl Apt, Bad Reichenhall 🇩🇪",
       "highlights": "Königssee electric boat · Obersee · Röthbach Waterfall · Wimbachklamm · Hintersee + Zauberwald",
       "drive": "~120 km / 75 mi",
       "driveTime": "~2hrs",
-      "bookings": "⏳ Königssee boat · ✅ Salzburg hotel",
+      "bookings": "✅ Bad Reichenhall #5205.018.552",
       "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Salzburg,+Austria"
     },
     {
@@ -1554,18 +1554,18 @@
       "date": "Jun 26",
       "flag": "🇩🇪",
       "from": "Salzburg 🇦🇹",
-      "nightStay": "Salzburg Hotel 🇦🇹",
+      "nightStay": "Wohlfühl Apt, Bad Reichenhall 🇩🇪",
       "highlights": "Eagle's Nest 1,834m · Rossfeld Panorama Road · Jennerbahn · Jenner summit 1,874m · Route 4 loop",
       "drive": "~80 km / 50 mi",
       "driveTime": "~1hr",
-      "bookings": "✅ Salzburg hotel",
+      "bookings": "✅ Bad Reichenhall #5205.018.552 · checkout Jun 27 by 11am",
       "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeld+Panorama%C3%9Ftra%C3%9Fe,+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Salzburg,+Austria"
     },
     {
       "day": "8",
       "date": "Jun 27",
       "flag": "🇦🇹",
-      "from": "Salzburg 🇦🇹",
+      "from": "Bad Reichenhall 🇩🇪",
       "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
       "highlights": "Salzburg old town · Getreidegasse · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
       "drive": "~100 km / 62 mi",
