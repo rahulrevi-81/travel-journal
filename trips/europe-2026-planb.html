@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Loading trip...</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -171,6 +172,12 @@
   .act-ok   { display:inline-block; font-size:10px; font-weight:600; padding:3px 8px; border-radius:20px; background:#eaf3de; color:#3b6d11; white-space:nowrap; }
   .act-pend { display:inline-block; font-size:10px; font-weight:600; padding:3px 8px; border-radius:20px; background:#faeeda; color:#854f0b; white-space:nowrap; }
   .act-red  { display:inline-block; font-size:10px; font-weight:600; padding:3px 8px; border-radius:20px; background:#fcebeb; color:#a32d2d; white-space:nowrap; }
+  .export-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+  .export-bar-title { font-family:'Playfair Display',serif; font-size:11px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); display:flex; align-items:center; gap:12px; }
+  .export-bar-title::after { content:''; flex:1; height:1px; background:var(--border); }
+  .btn-export { display:inline-flex; align-items:center; gap:7px; background:var(--ink); color:var(--cream); border:none; border-radius:3px; padding:8px 16px; font-size:12px; font-weight:500; letter-spacing:0.5px; cursor:pointer; font-family:'DM Sans',sans-serif; transition:opacity 0.15s; white-space:nowrap; flex-shrink:0; }
+  .btn-export:hover { opacity:0.82; }
+  .btn-export svg { width:14px; height:14px; fill:currentColor; flex-shrink:0; }
   .glance-table tr.row-action td { border-left: 3px solid #e24b4a; }
   .glance-table tr.row-pending td { border-left: 3px solid #ef9f27; }
   .glance-table tr.row-ok td { border-left: 3px solid #639922; }
@@ -223,6 +230,93 @@ function tagEl(tag) {
 }
 
 // ─── RENDER FUNCTIONS ───────────────────────────────────────────────────────
+// ── Export Trip at a Glance to Excel ─────────────────────────────────────────
+function exportGlanceToExcel(d) {
+  const rows = [
+    ['Day','Date','Country','Departing From','Night Stay','Highlights','Drive','Drive Time','Action / Status','Map Link']
+  ];
+
+  (d.glance || []).forEach(g => {
+    const action = g.action ? g.action.text : '✓ Booked';
+    // Strip emojis from flag for cleaner Excel
+    rows.push([
+      'Day ' + g.day,
+      g.date,
+      g.flag || '',
+      g.from || '',
+      g.nightStay || '',
+      g.highlights || '',
+      g.drive || '',
+      g.driveTime || '',
+      action,
+      g.mapUrl || ''
+    ]);
+  });
+
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+
+  // Column widths
+  ws['!cols'] = [
+    {wch:8},{wch:10},{wch:6},{wch:28},{wch:32},{wch:60},{wch:16},{wch:12},{wch:36},{wch:14}
+  ];
+
+  // Style header row bold — SheetJS CE supports basic cell props
+  const headerRange = XLSX.utils.decode_range(ws['!ref']);
+  for (let C = headerRange.s.c; C <= headerRange.e.c; C++) {
+    const cellAddr = XLSX.utils.encode_cell({r:0, c:C});
+    if (!ws[cellAddr]) continue;
+    ws[cellAddr].s = { font:{bold:true}, fill:{fgColor:{rgb:'1A1A2E'}}, alignment:{wrapText:true} };
+  }
+
+  // Wrap text for all cells
+  for (let R = 1; R <= headerRange.e.r; R++) {
+    for (let C = headerRange.s.c; C <= headerRange.e.c; C++) {
+      const addr = XLSX.utils.encode_cell({r:R, c:C});
+      if (ws[addr]) ws[addr].s = { alignment:{wrapText:true, vertical:'top'} };
+    }
+  }
+
+  // Add checklist sheet
+  const clRows = [['#','Item','Status','Reference','Deadline','Link']];
+  (d.checklist || []).forEach((item,i) => {
+    clRows.push([
+      i+1,
+      item.label || '',
+      item.status || '',
+      item.ref || '',
+      item.deadline || '',
+      item.link || ''
+    ]);
+  });
+  const wsCl = XLSX.utils.aoa_to_sheet(clRows);
+  wsCl['!cols'] = [{wch:4},{wch:48},{wch:10},{wch:32},{wch:16},{wch:40}];
+
+  // Add accommodation sheet
+  const accRows = [['Dates','Property','Address','Status','Reference','Free Cancel']];
+  (d.accommodation || []).forEach(a => {
+    if (a.status === 'cancelled') return;
+    accRows.push([
+      a.dates || '',
+      a.property || '',
+      a.address || '',
+      a.status || '',
+      a.ref || '',
+      a.freeCancel || ''
+    ]);
+  });
+  const wsAcc = XLSX.utils.aoa_to_sheet(accRows);
+  wsAcc['!cols'] = [{wch:14},{wch:40},{wch:36},{wch:10},{wch:44},{wch:22}];
+
+  XLSX.utils.book_append_sheet(wb, ws,    'Trip at a Glance');
+  XLSX.utils.book_append_sheet(wb, wsCl,  'Booking Checklist');
+  XLSX.utils.book_append_sheet(wb, wsAcc, 'Accommodation');
+
+  const filename = 'Europe-2026-PlanB-' + new Date().toISOString().slice(0,10) + '.xlsx';
+  XLSX.writeFile(wb, filename);
+}
+
+
 function renderHero(d) {
   const m = d.meta;
   document.title = `${m.title} — ${m.subtitle}`;
@@ -451,7 +545,15 @@ function renderDayCard(day, idx) {
 // ── UPDATED: Trip at a Glance — 8 columns ───────────────────────────────────
 function renderSummaryTable(d) {
   const wrap = div('');
-  wrap.appendChild(h('p', {class:'section-title', style:'margin-top:0'}, 'Trip at a Glance'));
+  // Export bar — title + button side by side
+  const exportBar = h('div', {class:'export-bar'});
+  const barTitle = h('p', {class:'section-title', style:'margin-top:0;margin-bottom:0;flex:1;'}, 'Trip at a Glance');
+  const btnExport = h('button', {class:'btn-export', title:'Download as Excel'});
+  btnExport.innerHTML = '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 17l2-3-2-3h1.5l1.25 2 1.25-2H13.5l-2 3 2 3H12l-1.25-2L9.5 17H8z"/></svg> Export to Excel';
+  btnExport.onclick = function() { exportGlanceToExcel(d); };
+  exportBar.appendChild(barTitle);
+  exportBar.appendChild(btnExport);
+  wrap.appendChild(exportBar);
   const tableWrap = h('div', {style:'overflow-x:auto;margin-bottom:32px;'});
   const tbl = h('table', {class:'glance-table'});
 
