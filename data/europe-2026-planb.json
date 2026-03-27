@@ -200,11 +200,11 @@
       "status": "cancelled"
     },
     {
-      "nights": "10–11",
+      "nights": "9–11",
       "property": "Das Auss.Zeit 🇦🇹",
       "address": "Außervillgraten 185, 9931 Außervillgraten, Tirol",
-      "dates": "Jun 29–Jul 1",
-      "ref": "#72072265941383 ⚠️ REBOOK — shorten to Jun 29–Jul 1 (2 nights, was Jun 30–Jul 3)",
+      "dates": "Jun 28–Jul 1",
+      "ref": "#72072265941383 ⚠️ REBOOK — change check-in to Jun 28 (3 nights: Jun 28–Jul 1)",
       "stars": "10.0",
       "status": "pending"
     },
@@ -717,13 +717,13 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Grossglockner High Alpine Road → Zell am See area",
-      "meta": "Jun 28 · Hallstatt → Grossglockner → Zell am See / Kaprun area overnight",
+      "title": "Grossglockner High Alpine Road → Außervillgraten",
+      "meta": "Jun 28 · Hallstatt → Grossglockner → Kaiser-Franz-Josefs-Höhe → Das Auss.Zeit, Außervillgraten",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Hallstatt → Grossglockner → Zell am See",
-          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
+          "label": "Day 9 Map — Hallstatt → Grossglockner → Außervillgraten",
+          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
@@ -735,10 +735,9 @@
             "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria · 360° panorama · wildflowers in June",
             "⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of <strong>Grossglockner (3,798m)</strong> Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
             "<strong>Lunch</strong> — restaurant at Kaiser-Franz-Josefs-Höhe (~1hr)",
-            "Drive <strong>~1hr</strong> north exit → <strong>Zell am See area</strong> · arrive ~5:30pm · lakeside town",
-            "⭐ <strong>Zell am See lakefront walk</strong> — turquoise Zeller See · town center · Schmittenhöhe backdrop · golden hour (~45 min)",
-            "<strong>Dinner</strong> — Zell am See lakeside restaurant (~1hr)",
-            "Check in <strong>Zell am See / Kaprun hotel</strong> · ⏳ user to book independently · 1 night"
+            "Drive <strong>~1hr south</strong> via Heiligenblut + Lienz → <strong>Außervillgraten</strong> · arrive ~6:00pm",
+            "Check in <strong>Das Auss.Zeit</strong> ✅ · #72072265941383 ⚠️ rebook check-in to Jun 28 · settle in · first evening in the Dolomites",
+            "<strong>Dinner</strong> — Das Auss.Zeit kitchen or local Gasthof in Außervillgraten · early night · <strong>Thurntaler summit hike in 2 days</strong>"
           ]
         }
       ],
@@ -749,19 +748,19 @@
         },
         {
           "type": "alarm",
-          "text": "⏰ Aim to enter Grossglockner by 10am for best clarity · road can cloud over by afternoon"
+          "text": "⏰ Aim to enter Grossglockner by 10am for best visibility · road can cloud over by afternoon"
         },
         {
           "type": "booking",
-          "text": "⏳ Jun 28 overnight near Zell am See / Kaprun — book independently · 1 night"
+          "text": "⚠️ Rebook Das Auss.Zeit check-in → Jun 28 · #72072265941383 · 3 nights Jun 28–Jul 1"
         }
       ],
       "summary": {
-        "drive": "~195 km / 121 mi",
+        "drive": "~230 km / 143 mi",
         "time": "~45m",
         "from": "Hallstatt 🇦🇹",
-        "to": "Zell am See area 🇦🇹",
-        "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
+        "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+        "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
         "bookings": [
           {
             "status": "booked",
@@ -777,43 +776,44 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Zell am See → Außervillgraten · Das Auss.Zeit Arrival",
-      "meta": "Jun 29 · Zell am See → Lienz → Außervillgraten · Das Auss.Zeit check-in",
+      "title": "Außervillgraten — Rest + Explore Villgratental",
+      "meta": "Jun 29 · Außervillgraten base · settle in · valley walks · rest before Thurntaler",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Zell am See → Lienz → Außervillgraten",
-          "url": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Lienz,+Austria/Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 10 Map — Außervillgraten valley",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innervillgraten,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Zell am See hotel 9:00am</strong> · drive <strong>~1hr 30min</strong> via Lienz → <strong>Außervillgraten</strong>",
-            "⭐ <strong>Lienz old town</strong> optional stop (15 min detour) — compact medieval market square · Tyrolean Alps backdrop · coffee stop",
-            "Check in <strong>Das Auss.Zeit</strong> ✅ · #72072265941383 ⚠️ rebook check-in to Jun 29 · early check-in likely possible · settle in",
-            "🥾 <strong>Afternoon village walk</strong> — Außervillgraten village · Villgratental valley · gentle introduction · recover legs before Thurntaler tomorrow",
-            "<strong>Dinner</strong> — Das Auss.Zeit kitchen or local Gasthof · early night"
+            "<strong>Relaxed morning</strong> — no driving today · breakfast at Das Auss.Zeit · take in the Villgraten mountain panorama",
+            "🥾 <strong>Villgratental valley walk</strong> — gentle trails through the Innervillgraten and Außervillgraten valleys · traditional Tyrolean farms · mountain panorama · ~2hrs · flat and restorative",
+            "⭐ <strong>Explore Außervillgraten village</strong> — one of the most authentic unspoilt villages in Tyrol · chapel · old farmhouses · locals' Austria far from tourist crowds",
+            "⭐ <strong>Optional: drive Thurntaler mountain road</strong> (toll-free) to Thurntaler Rast restaurant for lunch with panoramic views — get a preview of tomorrow's summit trail",
+            "<strong>Afternoon rest</strong> — Das Auss.Zeit · read · recover · early night",
+            "<strong>Dinner</strong> — Das Auss.Zeit kitchen · ⏰ <strong>set alarm early — Thurntaler summit hike tomorrow (Jun 30)</strong>"
           ]
         }
       ],
       "tags": [
         {
-          "type": "booking",
-          "text": "⚠️ Rebook Das Auss.Zeit check-in → Jun 29 · #72072265941383"
+          "type": "alarm",
+          "text": "⏰ Rest day intentional — Thurntaler 2,407m summit tomorrow requires fresh legs"
         },
         {
-          "type": "alarm",
-          "text": "⏰ Easy 1.5hr drive — rest day · Thurntaler summit hike tomorrow"
+          "type": "booking",
+          "text": "✅ Das Auss.Zeit · Night 2 · #72072265941383"
         }
       ],
       "summary": {
-        "drive": "~100 km / 62 mi",
+        "drive": "~10 km / 6 mi",
         "time": "~1h 00m",
-        "from": "Zell am See area 🇦🇹",
+        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Lienz optional · Das Auss.Zeit check-in · Villgratental village walk",
+        "highlights": "Villgratental valley walk · Außervillgraten village · optional Thurntaler road lunch preview · rest before Thurntaler summit",
         "bookings": [
           {
             "status": "booked",
@@ -1611,32 +1611,29 @@
       "date": "Jun 28",
       "flag": "🇦🇹",
       "from": "Hallstatt 🇦🇹",
-      "nightStay": "Zell am See area 🇦🇹 ⏳ (book independently)",
-      "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See lakefront",
-      "drive": "~195 km / 121 mi",
+      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹 ⚠️",
+      "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
+      "drive": "~230 km / 143 mi",
       "driveTime": "~3hrs + Grossglockner stops",
-      "bookings": "⏳ Book Jun 28 night near Zell am See independently · 💰 €46.50 cash toll",
-      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria",
+      "bookings": "⚠️ Rebook Das Auss.Zeit check-in → Jun 28",
+      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Jun 28 Zell am See hotel · 💰 €46.50 cash for Grossglockner"
+        "level": "action",
+        "text": "🔴 Rebook Das Auss.Zeit → Jun 28 check-in (3 nights)"
       }
     },
     {
       "day": "10",
       "date": "Jun 29",
       "flag": "🇦🇹",
-      "from": "Zell am See area 🇦🇹",
-      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹 ⚠️",
-      "highlights": "Lienz old town optional · Das Auss.Zeit check-in · Villgratental village walk · rest before Thurntaler",
-      "drive": "~100 km / 62 mi",
-      "driveTime": "~1h 30m",
-      "bookings": "⚠️ Rebook Das Auss.Zeit check-in → Jun 29 #72072265941383",
+      "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+      "highlights": "Villgratental valley walk · Außervillgraten village · optional Thurntaler road lunch preview · rest day",
+      "drive": "~10 km / 6 mi",
+      "driveTime": "~15min",
+      "bookings": "✅ Das Auss.Zeit Night 2",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
-      "action": {
-        "level": "action",
-        "text": "🔴 Rebook Das Auss.Zeit → check-in Jun 29"
-      }
+      "action": null
     },
     {
       "day": "11",
