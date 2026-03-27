@@ -772,36 +772,65 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Außervillgraten — Rest + Explore Villgratental",
-      "meta": "Jun 29 · Außervillgraten base · settle in · valley walks · rest before Thurntaler",
+      "title": "Außervillgraten — Oberstalleralm + Winkeltal + Heinfels · OR Lienz Osttirodler",
+      "meta": "Jun 29 · Das Auss.Zeit base · the valley that time forgot · two options · rest before Thurntaler tomorrow",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Außervillgraten — Rest + Explore Villgratental",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innervillgraten,+Austria/Au%C3%9Fervillgraten,+Austria"
+          "label": "Option A Map — Außervillgraten → Winkeltal → Oberstalleralm → Heinfels Castle",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Winkeltal,+Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Burg+Heinfels,+Sillian,+Austria"
+        },
+        {
+          "label": "Option B Map — Außervillgraten → Oberstalleralm → Lienz Osttirodler",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Osttirodler+Lienz,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
         {
-          "heading": null,
+          "heading": "Morning — both options start here",
           "items": [
-            "<strong>Relaxed morning</strong> — no driving today · breakfast at Das Auss.Zeit · take in the Villgraten mountain panorama",
-            "🥾 <strong>Villgratental valley walk</strong> — gentle trails through the Innervillgraten and Außervillgraten valleys · traditional Tyrolean farms · mountain panorama · ~2hrs · flat and restorative",
-            "⭐ <strong>Explore Außervillgraten village</strong> — one of the most authentic unspoilt villages in Tyrol · chapel · old farmhouses · locals' Austria far from tourist crowds",
-            "⭐ <strong>Optional: drive Thurntaler mountain road</strong> (toll-free) to Thurntaler Rast restaurant for lunch with panoramic views — get a preview of tomorrow's summit trail",
-            "<strong>Afternoon rest</strong> — Das Auss.Zeit · read · recover · early night",
-            "<strong>Dinner</strong> — Das Auss.Zeit kitchen · ⏰ <strong>set alarm early — Thurntaler summit hike tomorrow (Jun 30)</strong>"
+            "Relaxed start — breakfast at <strong>Das Auss.Zeit</strong> · recover legs after Grossglockner · take in the Villgraten mountain panorama",
+            "⭐ <strong>Kneipp Nature Path</strong> — 2 min walk from the hotel · barefoot water path + Gradieranlage salt-air wall · kids love it · restorative for tired feet · completely free",
+            "⭐ <strong>Außervillgraten village wander</strong> — Baroque chapel · centuries-old farmhouses · genuinely unspoilt Tyrolean village · <strong>Kunstgalerie Bachlechner</strong> (art gallery with Le Corbusier + others · surprisingly world-class) · ~45 min"
+          ]
+        },
+        {
+          "heading": "Option A — Mellow · Oberstalleralm + Winkeltal + Heinfels Castle",
+          "items": [
+            "Drive <strong>5 min</strong> → <strong>Winkeltal valley</strong> — a secret 12km side valley branching off from the village · untouched landscape of rustic alpine pastures + old larch forests · drive 5km in to <strong>Reiterstube restaurant</strong>",
+            "🥾 <strong>Short Winkeltal walk</strong> — gentle stroll from Reiterstube deeper into the valley · rushing mountain stream · complete silence · ~30 min · free",
+            "<strong>Lunch at Reiterstube</strong> — Villgrater and Tyrolean specialities · homemade pastries · lamb + game · sun terrace with mountain backdrop · (~1hr) · cash + card",
+            "Drive <strong>10 min</strong> → end of Villgratental → <strong>Unterstalleralm</strong> · park here",
+            "🥾 <strong>Oberstalleralm</strong> — 20 min walk up from Unterstalleralm · <strong>18 ancient sun-blackened wooden huts + tiny chapel</strong> · first mentioned 1675 · listed building · one of the most photographed authentic spots in all of Austria · looks like a film set · completely free · also: <strong>Klapfbachwasserfall viewpoint</strong> 10 min further — panorama of the Villgrater mountains",
+            "Drive <strong>15 min</strong> → <strong>Burg Heinfels</strong> — 13th-century castle complex towering above the Pustertal valley · newly reopened after years of closure · dramatic hilltop · sweeping valley views · ~45 min",
+            "Back at <strong>Das Auss.Zeit by 5pm</strong> · rest · early dinner · set alarm — <strong>Thurntaler summit tomorrow</strong>"
+          ]
+        },
+        {
+          "heading": "Option B — Thrills · Oberstalleralm + Lienz Osttirodler Alpine Coaster",
+          "items": [
+            "Drive <strong>10 min</strong> → <strong>Unterstalleralm</strong> · park here",
+            "🥾 <strong>Oberstalleralm</strong> — 20 min walk up · <strong>18 ancient sun-blackened huts + chapel (1675)</strong> · most atmospheric spot in East Tyrol · Klapfbachwasserfall viewpoint 10 min further · ~1hr total · free",
+            "Drive <strong>30 min</strong> → <strong>Lienz</strong> · Schlossbergbahn funicular up to Moosalm",
+            "⭐ <strong>Osttirodler Alpine Coaster</strong> — <strong>one of the longest alpine coasters in the world</strong> · 2.7km through forest + hairpin turns + spectacular loops · views of Schloss Bruck + Lienz Dolomites below · riders control their own speed · ~6 min ride · go twice! · Veda + Vaiga will love this",
+            "⭐ <strong>Moosalm adventure area</strong> — petting zoo · adventure playground · largest climbing park in East Tyrol · high-rope course · adventure golf · all on the mountain · (~1.5hrs for the kids)",
+            "<strong>Lunch/snack</strong> at Moosalm Berggasthaus · local Osttiroler food (~1hr)",
+            "Funicular back down → drive <strong>30 min</strong> → <strong>Das Auss.Zeit by 5pm</strong> · rest · early dinner · set alarm — <strong>Thurntaler summit tomorrow</strong>"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⏰ Rest day intentional — Thurntaler 2,407m summit tomorrow requires fresh legs"
+          "text": "⭐ Oberstalleralm is non-negotiable — 10min drive + 20min walk · one of the most photographed authentic spots in all of Austria · both options include it"
         },
         {
-          "type": "booking",
-          "text": "✅ Das Auss.Zeit · Night 2 · #72072265941383"
+          "type": "alarm",
+          "text": "🎢 Osttirodler open daily Jun–Sep · 9:00–16:45 · funicular ticket required · bring cash + card · minimum age/height restrictions apply · lienzer-bergbahnen.at"
+        },
+        {
+          "type": "alarm",
+          "text": "⏰ Early night essential — Thurntaler summit 2,407m hike tomorrow · aim in bed by 9:30pm"
         }
       ],
       "summary": {
@@ -809,7 +838,7 @@
         "time": "~1h 00m",
         "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Villgratental valley walk · Außervillgraten village · optional Thurntaler road lunch preview · rest before Thurntaler summit",
+        "highlights": "Außervillgraten village + Kneipp path · Oberstalleralm 18 ancient huts · Option A: Winkeltal + Reiterstube + Heinfels Castle · Option B: Lienz Osttirodler alpine coaster 2.7km + Moosalm adventure park",
         "bookings": [
           {
             "status": "booked",
@@ -1632,11 +1661,11 @@
       "flag": "🇦🇹",
       "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Villgratental valley walk · Außervillgraten village · optional Thurntaler road lunch preview · rest day",
+      "highlights": "Außervillgraten village · Oberstalleralm 18 ancient huts + chapel (1675) · Option A: Winkeltal + Heinfels Castle · Option B: Lienz Osttirodler coaster 2.7km + Moosalm kids park",
       "drive": "~10 km / 6 mi",
       "driveTime": "~15min",
       "bookings": "✅ Das Auss.Zeit Night 2",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innervillgraten,+Austria/Au%C3%9Fervillgraten,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Burg+Heinfels,+Sillian,+Austria",
       "action": null
     },
     {
