@@ -136,6 +136,15 @@
       "status": "confirmed"
     },
     {
+      "nights": "5",
+      "property": "Munich Hotel 🇩🇪",
+      "address": "Munich, Germany",
+      "dates": "Jun 24–25",
+      "ref": "⏳ Yet to book",
+      "freeCancel": null,
+      "status": "pending"
+    },
+    {
       "nights": "5–6",
       "property": "Wohlfühl Apartment Bad Reichenhall 🇩🇪",
       "address": "Ludwig-Thoma-Straße 33, 83435 Bad Reichenhall, Germany",
@@ -163,13 +172,22 @@
       "status": "cancelled"
     },
     {
-      "nights": "7–8",
+      "nights": "—",
       "property": "HOMEBOUND Apartments 🇦🇹",
       "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
       "dates": "Jun 27–29",
-      "ref": "#72072198804917",
+      "ref": "#72072198804917 — CANCELLED",
       "stars": "9.6",
-      "status": "booked"
+      "status": "cancelled"
+    },
+    {
+      "nights": "8–9",
+      "property": "Bad Goisern / Hallstatt area 🇦🇹",
+      "address": "Bad Goisern or Hallstatt, Austria",
+      "dates": "Jun 27–29",
+      "ref": "⏳ Pending — book now (2 nights)",
+      "freeCancel": null,
+      "status": "pending"
     },
     {
       "nights": "—",
@@ -1237,8 +1255,8 @@
     },
     {
       "id": "shift_homebound",
-      "label": "Shift HOMEBOUND Bad Goisern Jun 25–27 → Jun 27–29",
-      "status": "urgent",
+      "label": "Cancel HOMEBOUND Bad Goisern #72072198804917 — DONE",
+      "status": "done",
       "ref": "#72072198804917",
       "deadline": "Contact property",
       "link": null
@@ -1266,6 +1284,22 @@
       "ref": null,
       "deadline": "Free cancel until Jun 23",
       "link": "https://www.booking.com/city/at/salzburg.html"
+    },
+    {
+      "id": "bad_goisern_new",
+      "label": "🏨 Book replacement — Bad Goisern / Hallstatt area · Jun 27–29 (2 nights)",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now — peak season",
+      "link": "https://www.booking.com/searchresults.html?dest_id=-1995521&dest_type=region&checkin=2026-06-27&checkout=2026-06-29"
+    },
+    {
+      "id": "munich_hotel",
+      "label": "🏨 Book Munich hotel — Jun 24 night",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now — peak summer",
+      "link": "https://www.booking.com/city/de/munich.html"
     }
   ],
   "budget": [
@@ -1534,7 +1568,7 @@
       "highlights": "Lauterbrunnen · Staubbach Falls · Burg Ehrenberg · Highline179 bridge · Salzburg arrival",
       "drive": "~330 km / 205 mi",
       "driveTime": "~5hrs total",
-      "bookings": "⏳ Book Salzburg hotel Jun 24–26",
+      "bookings": "⚠️ Munich hotel yet to book · ✅ No booking needed for Ehrenberg",
       "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Burg+Ehrenberg,+Reutte,+Austria/Salzburg,+Austria"
     },
     {
@@ -1566,11 +1600,11 @@
       "date": "Jun 27",
       "flag": "🇦🇹",
       "from": "Bad Reichenhall 🇩🇪",
-      "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
+      "nightStay": "⏳ Bad Goisern / Hallstatt — book now",
       "highlights": "Salzburg old town · Getreidegasse · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
       "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
-      "bookings": "✅ HOMEBOUND #72072198804917",
+      "bookings": "⚠️ Book replacement Jun 27–29",
       "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Bad+Goisern,+Austria"
     },
     {
@@ -1578,11 +1612,11 @@
       "date": "Jun 28",
       "flag": "🇦🇹",
       "from": "Bad Goisern 🇦🇹",
-      "nightStay": "HOMEBOUND, Bad Goisern 🇦🇹",
+      "nightStay": "⏳ Bad Goisern / Hallstatt — book now",
       "highlights": "Hallstatt village · Echern Valley · Waldbachstrub Waterfall · Beinhaus (1,200 painted skulls) · Dachstein Krippenstein · 5 Fingers · Giant Ice Cave",
       "drive": "~35 km / 22 mi",
       "driveTime": "~30min",
-      "bookings": "✓ HOMEBOUND",
+      "bookings": "⚠️ Book replacement Jun 27–29",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Bad+Goisern,+Austria"
     },
     {
