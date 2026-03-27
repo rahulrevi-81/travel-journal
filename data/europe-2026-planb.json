@@ -156,12 +156,12 @@
     },
     {
       "nights": "7–8",
-      "property": "Hallstatt / Bad Goisern Hotel 🇦🇹",
-      "address": "Hallstatt or Bad Goisern, Salzkammergut, Austria",
+      "property": "Kaiserblick Goisern 🇦🇹",
+      "address": "38 Unterjoch, 4822 Bad Goisern, Austria",
       "dates": "Jun 26–28",
-      "ref": "⏳ Yet to book — 2 nights · Heritage Hotel Hallstatt / Seehotel Grüner Baum / Pension Hallberg",
+      "ref": "✅ Airbnb booked · $333 / €288.36 · 2 nights · check-in 14:00–20:00 · key box at entrance with code · Jun 26–28",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "—",
@@ -186,9 +186,9 @@
       "property": "HOMEBOUND Apartments 🇦🇹",
       "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
       "dates": "Jun 27–29",
-      "ref": "#72072198804917 — keep as backup, sort manually",
+      "ref": "❌ Cancelled — superseded by Kaiserblick Goisern · #72072198804917",
       "stars": "9.6",
-      "status": "Confirmed"
+      "status": "cancelled"
     },
     {
       "nights": "—",
@@ -621,18 +621,18 @@
             "⭐ <strong>Wolfgangsee photo stop</strong> — turquoise lake backed by Schafberg mountain · lakefront promenade (~20 min · free)",
             "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~6:35pm · ⚠️ P1/P2 parking or Obertraun + ferry",
             "⭐ <strong>Hallstatt golden hour lakefront</strong> — best light of the day · market square · lakeside walk · dinner",
-            "Check in <strong>Hallstatt / Bad Goisern hotel</strong> · ⏳ yet to book · 1 night"
+            "Drive <strong>10 min</strong> south → <strong>Kaiserblick Goisern, Bad Goisern</strong> ✅ · 38 Unterjoch · key box at entrance with code · check-in 14:00–20:00 · settle in · <strong>2 nights Jun 26–28</strong>"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "💰 Eagle's Nest €33/adult · first bus 8:50am · ⚠️ leave summit by 10:30am sharp"
+          "text": "💰 Eagle's Nest €33/adult · first bus 8:50am · leave Hallein 8:00am sharp"
         },
         {
           "type": "alarm",
-          "text": "💰 Liechtensteinklamm €16/adult · €9/child · no booking · opens 8am · bring packed lunch"
+          "text": "💰 Liechtensteinklamm €16/adult · €9/child · no booking needed · opens 8am"
         },
         {
           "type": "alarm",
@@ -640,11 +640,7 @@
         },
         {
           "type": "booking",
-          "text": "⏳ Hallstatt / Bad Goisern hotel Jun 26–27 — book now · Heritage Hotel Hallstatt / Seehotel Grüner Baum"
-        },
-        {
-          "type": "alarm",
-          "text": "🏰 Hohensalzburg interior €16/adult · funicular €5 · leave fortress by 4:45pm · last funicular down ~5pm"
+          "text": "✅ Kaiserblick Goisern, Bad Goisern · Jun 26–28 · $333 / €288 · key box code at entrance"
         }
       ],
       "summary": {
@@ -665,7 +661,7 @@
       "dayLabel": "8",
       "date": "Jun 27",
       "title": "Hallstatt Full Day — Gosausee · Salt Mine · Skywalk · Beinhaus · Echern Valley · Dachstein 5 Fingers",
-      "meta": "Jun 27 · Hallstatt — Salt Mine → Skywalk → Beinhaus → Echern Valley → Dachstein 5 Fingers → stay Hallstatt",
+      "meta": "Jun 27 · Kaiserblick Goisern → Hallstatt (Salt Mine + Skywalk + Beinhaus + Gosausee + Echern Valley + Dachstein 5 Fingers) → back to Kaiserblick",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -688,7 +684,7 @@
             "⭐ <strong>Dachstein 5 Fingers (2,109m)</strong> — five glass-floored arms extending over a 400m cliff face · Hallstatt visible far below · one of the most dramatic viewpoints in Austria · ~45 min · ⚠️ Giant Ice Cave closed until Jun 30 — skip ice cave on this visit · cable car down by 4:00pm",
             "📌 <strong>Giant Ice Cave (Rieseneishöhle)</strong> — noted but <strong>closed until Jun 30</strong> 2026 · same cable car station as 5 Fingers · massive underground ice formations · guided tour ~1.5hrs · consider if itinerary allows a revisit · check dachstein.at before trip",
             "Drive <strong>15 min</strong> → <strong>Hallstatt lakefront golden hour</strong> — best evening light · dinner lakeside (~1hr)",
-            "<strong>2nd night Hallstatt</strong> · ⏳ extend hotel booking Jun 26–28"
+            "<strong>2nd night Kaiserblick Goisern</strong> ✅ · already checked in · drive 10 min back from Hallstatt/Obertraun"
           ]
         }
       ],
@@ -703,18 +699,18 @@
         },
         {
           "type": "alarm",
-          "text": "⏰ Sequence is tight — Salt Mine must be done by 9:30am to fit everything"
+          "text": "⏰ Gosausee first — leave Kaiserblick 7:30am · 20min drive · back in Hallstatt by 9am for Salt Mine"
         },
         {
           "type": "booking",
-          "text": "⏳ Extend Hallstatt hotel to 2 nights Jun 26–28 · Heritage Hotel Hallstatt / Seehotel Grüner Baum"
+          "text": "✅ Kaiserblick Goisern · Night 2 · already checked in"
         }
       ],
       "summary": {
         "drive": "~30 km / 19 mi",
         "time": "2h 33m +Grossglockner",
-        "from": "Hallstatt 🇦🇹",
-        "to": "Hallstatt 🇦🇹",
+        "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
+        "to": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
         "highlights": "Gosausee glacier lake loop · Hallstatt Salt Mine · Skywalk 360° · Beinhaus 1,200 painted skulls · Echern Valley + Waldbachstrub · Dachstein 5 Fingers 2,109m · lakefront golden hour",
         "bookings": [
           {
@@ -740,7 +736,7 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Hallstatt hotel 8:30am</strong> · drive <strong>~1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
+            "Checkout <strong>Kaiserblick Goisern by 8:30am</strong> — check-out 08:00–10:00 · drive <strong>~1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
             "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km · 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
             "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria · 360° panorama · wildflowers in June",
             "⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of <strong>Grossglockner (3,798m)</strong> Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
@@ -768,7 +764,7 @@
       "summary": {
         "drive": "~230 km / 143 mi",
         "time": "~45m",
-        "from": "Hallstatt 🇦🇹",
+        "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
         "bookings": [
@@ -1647,38 +1643,38 @@
       "date": "Jun 26",
       "flag": "🇩🇪",
       "from": "Hallein 🇦🇹",
-      "nightStay": "Hallstatt 🇦🇹 ⏳",
+      "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
       "highlights": "Eagle's Nest 1,834m · Liechtensteinklamm 444 stairs + 50m waterfall · Salzburg old town · Hohensalzburg Fortress interior · Wolfgangsee · Hallstatt golden hour",
       "drive": "~220 km / 137 mi",
       "driveTime": "~3h 15m",
-      "bookings": "⏳ Hallstatt hotel Jun 26–27",
+      "bookings": "✅ Kaiserblick Goisern confirmed · Airbnb $333 · check-in 14:00–20:00 · key box",
       "mapUrl": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/Wolfgangsee,+St.+Gilgen,+Austria/Hallstatt,+Austria",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Hallstatt / Bad Goisern hotel Jun 26–27"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "8",
       "date": "Jun 27",
       "flag": "🇦🇹",
-      "from": "Hallstatt 🇦🇹",
-      "nightStay": "Hallstatt 🇦🇹 ⏳ (2nd night — extend booking)",
+      "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
+      "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
       "highlights": "Gosausee glacier lake loop · Hallstatt Salt Mine · Skywalk · Beinhaus 1,200 skulls · Echern Valley + Waldbachstrub · Dachstein 5 Fingers 2,109m · lakefront golden hour",
       "drive": "~30 km / 19 mi",
       "driveTime": "~45min total",
-      "bookings": "⏳ Extend Hallstatt hotel Jun 26–28 · ⊙ Book Salt Mine + Dachstein",
+      "bookings": "✅ Kaiserblick Goisern Night 2",
       "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria",
       "action": {
-        "level": "pending",
-        "text": "⏳ Extend Hallstatt hotel · ⊙ Book salzwelten.at + dachstein.at"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "9",
       "date": "Jun 28",
       "flag": "🇦🇹",
-      "from": "Hallstatt 🇦🇹",
+      "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹 ⚠️",
       "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
       "drive": "~230 km / 143 mi",
