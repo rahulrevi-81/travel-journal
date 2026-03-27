@@ -23,7 +23,8 @@
     ],
     "departure": "Jun 19",
     "return": "Jul 5",
-    "status": "upcoming"
+    "status": "upcoming",
+    "totalDays": 16
   },
   "bookingStrip": [
     {
@@ -145,7 +146,7 @@
       "status": "pending"
     },
     {
-      "nights": "5–6",
+      "nights": "6–7",
       "property": "Wohlfühl Apartment Bad Reichenhall 🇩🇪",
       "address": "Ludwig-Thoma-Straße 33, 83435 Bad Reichenhall, Germany",
       "dates": "Jun 25–27",
@@ -199,20 +200,11 @@
       "status": "cancelled"
     },
     {
-      "nights": "9",
+      "nights": "10",
       "property": "Zell am See Hotel 🇦🇹",
       "address": "Zell am See, Austria",
       "dates": "Jun 29–30",
       "ref": "⏳ Pending — book now",
-      "freeCancel": null,
-      "status": "pending"
-    },
-    {
-      "nights": "10",
-      "property": "Near Innsbruck / Pertisau 🇦🇹 🎂",
-      "address": "Innsbruck area or Pertisau am Achensee, Austria",
-      "dates": "Jun 30–Jul 1",
-      "ref": "⏳ Pending — Veena birthday night",
       "freeCancel": null,
       "status": "pending"
     },
@@ -236,6 +228,15 @@
     },
     {
       "nights": "14",
+      "property": "Mayrhofen / Zillertal Hotel 🇦🇹",
+      "address": "Mayrhofen im Zillertal, Tyrol, Austria",
+      "dates": "Jul 3–4",
+      "ref": "⏳ Yet to book — 1 night",
+      "freeCancel": null,
+      "status": "pending"
+    },
+    {
+      "nights": "15",
       "property": "Zurich / Airport 🇨🇭",
       "address": "Near ZRH Airport, Zurich, Switzerland",
       "dates": "Jul 4–5",
@@ -694,7 +695,7 @@
         "drive": "~100 km / 62 mi",
         "time": "2h 33m +Grossglockner",
         "from": "Bad Reichenhall 🇩🇪",
-        "to": "HOMEBOUND, Bad Goisern 🇦🇹",
+        "to": "Bad Goisern / Hallstatt area 🇦🇹",
         "highlights": "Salzburg old town · Getreidegasse · Cathedral · Hohensalzburg interior · Wolfgangsee · Hallstatt evening",
         "bookings": [
           {
@@ -744,7 +745,7 @@
         "drive": "~35 km / 22 mi",
         "time": "~45m",
         "from": "Lake Bled 🇸🇮",
-        "to": "Pr' Matjon, Lake Bled 🇸🇮",
+        "to": "Bad Goisern / Hallstatt area 🇦🇹",
         "highlights": "Ojstrica + Mala Osojnica viewpoints · Bled Castle · Mostnica Gorge + Devil's Bridge · Vogel Cable Car + Orlove Glave chairlift",
         "bookings": [
           {
@@ -761,7 +762,7 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Grossglockner High Alpine Road → Zell am See",
+      "title": "Grossglockner High Alpine Road → Zell am See 🎂",
       "meta": "Jun 29 · Bad Goisern → Grossglockner → Zell am See",
       "flag": "🇦🇹",
       "mapLinks": [
@@ -780,7 +781,8 @@
             "⭐ <strong>Fuscher Törl</strong> (2,428m) — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria",
             "⭐ <strong>Kaiser-Franz-Josefs-Höhe</strong> (2,369m) — direct view of <strong>Grossglockner (3,798m)</strong>, Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
             "Drive <strong>1hr</strong> south exit → <strong>Zell am See</strong> · arrive ~5:00pm · lakeside walk · town center · dinner by the lake",
-            "Check in <strong>Zell am See hotel</strong> ⏳ (need booking) · 1 night"
+            "Check in <strong>Zell am See hotel</strong> ⏳ (need booking) · 1 night",
+            "🎂 <strong>Veena's birthday dinner</strong> — special dinner in Zell am See · book a restaurant in advance"
           ]
         }
       ],
@@ -806,7 +808,7 @@
         "drive": "~195 km / 121 mi",
         "time": "~1h 00m",
         "from": "Lake Bled 🇸🇮",
-        "to": "Pr' Matjon, Lake Bled 🇸🇮",
+        "to": "Zell am See Hotel 🇦🇹",
         "highlights": "Vintgar Gorge + Šum waterfall · King of Triglav return trail · Peričnik Waterfall (walk behind falls) · optional Savica · Radovljica · Pletna boat + wishing bell · Veena's birthday dinner 🎉",
         "bookings": [
           {
@@ -817,59 +819,45 @@
       }
     },
     {
-      "dayLabel": "11",
-      "date": "Jun 30 🎂",
-      "title": "Lake Achensee + Bärenkopf — Veena's Birthday",
-      "meta": "Jun 30 · Zell am See → Achensee → Innsbruck 🎂",
-      "flag": "🇦🇹",
-      "mapLinks": [
-        {
-          "label": "Day 11 Map — Achensee + Bärenkopf",
-          "url": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Innsbruck,+Austria"
-        }
-      ],
+      "date": "Jun 30",
+      "dayNum": 12,
+      "title": "Zell am See → Außervillgraten · Das Auss.Zeit Check-in",
+      "meta": "Jun 30 · Zell am See → Außervillgraten · check in Das Auss.Zeit",
       "sections": [
         {
           "heading": null,
           "items": [
-            "Drive <strong>1hr 30min</strong> → <strong>Pertisau am Achensee</strong> · arrive ~9:30am · park near Karwendel cable car",
-            "⭐ <strong>Karwendel cable car</strong> (Karwendelbahn) — ride to <strong>Zwölferkopf (1,500m)</strong> · €18–22/adult return · opens ~8:30am",
-            "⭐ <strong>Bärenkopf summit hike (1,991m)</strong> — from cable car station follow signs to <strong>Bärenbad Alm</strong> (30 min, flat) · hut stop + Kaiserschmarrn · then <strong>steep trail to summit</strong> (1.5hrs) · <strong>the only place you can see the entire length of Achensee</strong> · narrow sections with fixed cables · sturdy shoes essential · total ~4hrs round trip",
-            "Pro tip: <strong>continue past the summit cross</strong> — 2 more minutes → secret viewpoint with no crowds where the full turquoise lake is visible including the southeast edge where the water is bluest",
-            "Cable car back down ~<strong>3:30pm</strong> · ⚠️ last cable car ~5pm — plan accordingly",
-            "Drive <strong>45 min</strong> → <strong>Innsbruck</strong> area · check in birthday night hotel ⏳ (need booking)",
-            "⭐ <strong>Birthday dinner</strong> 🎂 — Innsbruck old town · Goldenes Dachl area · lakeside dinner in Pertisau if staying there instead · celebratory evening for Veena"
+            "Checkout <strong>Zell am See hotel</strong> · morning at leisure · lake stroll",
+            "Drive <strong>~1hr 45min</strong> south via Lienz → <strong>Außervillgraten, East Tyrol, Italy border</strong> · arrive ~<strong>1:00pm</strong>",
+            "⭐ <strong>Check in — Das Auss.Zeit</strong> · ✅ #72072265941383 · ★10.0 · rated perfect · settle in · mountain views",
+            "🥾 <strong>Afternoon village walk</strong> — Villgratental valley · wildflower meadows · Außervillgraten village (~1hr · free)",
+            "<strong>Dinner</strong> — Das Auss.Zeit restaurant or village (~1hr)"
           ]
+        }
+      ],
+      "mapLinks": [
+        {
+          "label": "Day 12 Map — Zell am See → Außervillgraten",
+          "url": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "tags": [
         {
           "type": "booking",
-          "text": "✓ Das Auss.Zeit · Expedia #72072265941383 · 10.0★"
+          "text": "✅ Das Auss.Zeit · #72072265941383 · check-in from 3pm · ★10.0 rated"
         },
         {
           "type": "alarm",
-          "text": "⛑️ Rent helmet + headlamp at Falzarego pass info-point ~€20/person — mandatory for WWI tunnels"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Lago di Braies: skip Day 11 — save for Day 12 sunrise (5am, guaranteed parking + mirror reflections)"
+          "text": "🚗 Drive via Mittersill + Felbertauern tunnel (€12 toll) or Grossglockner High Alpine Road (€46.50 · more scenic)"
         }
       ],
       "summary": {
-        "drive": "~100 km / 62 mi",
-        "time": "3h 12m +Lagazuoi",
-        "from": "Lake Bled 🇸🇮",
+        "from": "Zell am See 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Passo Falzarego · Lagazuoi cable car · Rifugio panorama · Galleries WWI tunnel descent · Außervillgraten",
-        "bookings": [
-          {
-            "status": "booked",
-            "text": "✓ Das Auss.Zeit"
-          }
-        ]
-      },
-      "birthday": "🎂 Happy Birthday Veena!"
+        "drive": "~130 km / 81 mi",
+        "highlights": "Zell am See morning · scenic drive south · Das Auss.Zeit check-in · Villgratental valley walk",
+        "accommodation": "Das Auss.Zeit ✅"
+      }
     },
     {
       "dayLabel": "12",
@@ -986,53 +974,54 @@
     {
       "dayLabel": "14",
       "date": "Jul 3",
-      "title": "Cinque Torri + Lago di Sorapis",
-      "meta": "Jul 3 · Außervillgraten → Cinque Torri → Cortina → Sorapis",
+      "title": "Außervillgraten → Mayrhofen · Zillertal",
+      "meta": "Jul 3 · Außervillgraten → Mayrhofen · Zillertal valley · prep for Olpererhütte",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 14 Map — Cinque Torri + Sorapis",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 14 Map — Außervillgraten → Mayrhofen",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Mayrhofen,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Außervillgraten 8:30am</strong> · drive <strong>35 min</strong> → Cinque Torri · arrive ~9:05am",
-            "⭐ <strong>Cinque Torri + Scoiattoli chairlift</strong> — five dramatic rock towers · chairlift up · <strong>Cinque Torri loop (~3 miles)</strong> · all five towers from all angles · <strong>WWI open-air museum</strong> with original trenches, barbed wire and fortifications preserved in place · ~2.5hrs",
-            "Drive <strong>20 min</strong> → <strong>Cortina d'Ampezzo</strong> · lunch on Corso Italia · 🧺 <strong>Laundry #3</strong> — drop off at self-service laundrette (collect tomorrow) · ~1hr",
-            "Drive <strong>15 min</strong> → <strong>Passo Tre Croci trailhead</strong> · start no later than <strong>2:00pm</strong>",
-            "⭐ <strong>Lago di Sorapis hike</strong> (Trail 215) — <strong>2hrs each way</strong> · milky turquoise glacial lake hidden in the Dolomites · one of the most beautiful hikes in northern Italy · narrow trail with some exposed sections · sturdy shoes essential · turn around by 4:00pm regardless of position",
-            "⚠️ <strong>Natural cut point</strong> — if legs are tired after Cinque Torri, skip Sorapis and spend the afternoon in Cortina · the village itself is beautiful in the evening · back at Außervillgraten by 5:30pm",
-            "Back at <strong>Das Auss.Zeit</strong> ~<strong>6:30pm</strong> ✅ · last night in the Dolomites · pack for Innsbruck tomorrow"
+            "Checkout <strong>Das Auss.Zeit</strong> · last morning in the Dolomites · coffee on the terrace",
+            "Drive <strong>~1hr 45min</strong> north → <strong>Mayrhofen im Zillertal</strong> · arrive ~<strong>11:30am</strong>",
+            "⭐ <strong>Mayrhofen village</strong> — charming Tyrolean market town · Hauptstraße stroll · Penkenbahn gondola option (~2hrs · views of Zillertal) · or relax in town",
+            "<strong>Lunch</strong> — Gasthof Brücke or Mamma Mia Mayrhofen on Hauptstraße (~1hr)",
+            "⭐ <strong>Erlebnisbad Mayrhofen</strong> (optional) — adventure pool · slides · outdoor pool · kids love it · ~2hrs · ~€15/adult",
+            "⚠️ <strong>Prep for tomorrow</strong> — check toll road open at verbund.com · set alarm for 6:30am · pack hiking gear · bring €17 cash for Schlegeis toll · bring cash for hut (no cards at Olpererhütte)",
+            "<strong>Dinner</strong> — Zillertal restaurant in Mayrhofen · try Kaiserschmarrn tonight (~1hr)",
+            "<strong>Early night</strong> — big hike tomorrow"
           ]
         }
       ],
       "tags": [
         {
-          "type": "laundry",
-          "text": "👕 Laundry #4 — hotel is 24hr service (not same-day) · self-service laundromat in Dornbirn for same-evening wash"
+          "type": "alarm",
+          "text": "⚠️ Check Schlegeis toll road open: verbund.com/stauseen/schlegeisspeicher — early May to late October"
+        },
+        {
+          "type": "alarm",
+          "text": "💰 Bring €17 cash for Schlegeis road toll · bring extra cash for Olpererhütte hut (no cards)"
+        },
+        {
+          "type": "alarm",
+          "text": "🥾 Hiking shoes essential · trail is rocky and steep · 600m elevation gain"
         },
         {
           "type": "booking",
-          "text": "✓ Vienna House Martinspark · Expedia #72072266618761"
-        },
-        {
-          "type": "alarm",
-          "text": "💶 Nordkette: ~€50–56/adult return · last ascent 5pm · book online to skip queue"
-        },
-        {
-          "type": "alarm",
-          "text": "⚠️ Check S16 Arlberg Tunnel for 2026 maintenance closures before departing — detour via Arlberg Pass adds ~40 min"
+          "text": "⏳ Book Mayrhofen hotel tonight — 1 night Jul 3–4"
         }
       ],
       "summary": {
-        "drive": "~80 km / 50 mi",
+        "drive": "~90 km / 56 mi",
         "time": "3h 10m",
-        "from": "Außervillgraten 🇦🇹",
-        "to": "Vienna House Martinspark, Dornbirn 🇦🇹",
-        "highlights": "Nordkette 2,334m · Innsbruck Golden Roof · old town · Karren Cable Car over Rhine Valley",
+        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+        "to": "Mayrhofen, Zillertal 🇦🇹",
+        "highlights": "Goodbye Dolomites · scenic drive north · Mayrhofen village · prep for Olpererhütte",
         "bookings": [
           {
             "status": "booked",
@@ -1044,61 +1033,61 @@
     {
       "dayLabel": "15",
       "date": "Jul 4",
-      "title": "Innsbruck → Dornbirn → Liechtenstein → Rhine Falls → Zurich",
-      "meta": "Jul 4 · Außervillgraten → Innsbruck → Dornbirn → Vaduz → Rhine Falls → Zurich",
+      "title": "Olpererhütte + Kebema Bridge → Zurich",
+      "meta": "Jul 4 · Mayrhofen → Schlegeis → Olpererhütte → Zurich Airport",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 15 Map — Innsbruck → Vaduz → Rhine Falls → Zurich",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich,+Switzerland/Zurich+Airport,+Switzerland"
+          "label": "Day 15 Map — Mayrhofen → Olpererhütte → Zurich",
+          "url": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Schlegeis+Stausee,+Austria/Zurich+Airport,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Außervillgraten 8:00am</strong> · drive <strong>~53 min</strong> → Schlegeis Stausee reservoir via Schlegeis Alpine Road · toll ~€17 cash · park at reservoir base",
-            "⭐ <strong>PLAN A — Olpererhütte hike (2,388m)</strong> — trailhead at Schlegeis reservoir · Trail 502 · 3km · 600m elevation gain · ~1.5–2hrs up · rocky alpine ascent with continuous views of the emerald Schlegeis Stausee cradled by 3,000m+ Zillertal peaks · cash only at hut",
-            "⭐ <strong>Kebema Suspension Bridge</strong> — 5 min past the hut · the iconic floating suspension bridge over the reservoir · optical illusion — solid ground just below · genuinely spectacular · ~10 min queue for photo · lunch at Olpererhütte restaurant (Kaiserschmarrn · Schnitzel · Skiwasser) · ~1hr",
-            "⭐ <strong>Giant Swing at Schlegeis base</strong> (31m free fall) — on the way back down · perfect for the kids · descend ~1hr · drive ~1hr 30min → Innsbruck",
-            "⚠️ <strong>PLAN B (bad weather or time pressure)</strong> — skip Olpererhütte · drive directly 2hrs → Innsbruck · <strong>Nordkette</strong>: Hungerburgbahn → Seegrube (1,905m) → Hafelekar (2,334m) · ridge walk · panorama of Innsbruck + Inn Valley · ~1.5hrs total · book online · last ascent 5pm",
-            "<strong>Innsbruck old town</strong> (~45 min) — Goldenes Dachl · Maria-Theresien-Straße · Imperial Palace exterior · ⚠️ confirm Hertz drop-off at ZRH airport (not Dornbirn)",
-            "Drive <strong>1hr 30min</strong> → <strong>Dornbirn</strong> · daytime stop only (cancel overnight) · Karren Cable Car optional if energy allows",
-            "Drive <strong>1hr</strong> → <strong>Vaduz, Liechtenstein</strong> · passport stamp (CHF 3) · Vaduz Castle walk · Rhine Valley view · ~30 min",
-            "Drive <strong>45 min</strong> → <strong>Rhine Falls, Schaffhausen</strong> · Europe's largest waterfall · boat to the central rock · CHF 10.50/adult · ~1hr",
-            "Drive <strong>40 min</strong> → <strong>Zurich</strong> · park at Parkhaus Hohe Promenade · Altstadt walk · Fraumünster · Limmat riverfront · Lindenhof Hill · dinner at Zeughauskeller (book in advance!)",
-            "⭐ <strong>Hertz ZRH drop-off</strong> (24hr service, airport location) · check in <strong>Radisson Blu ZRH</strong> ~9:30pm · 5-min walk to terminal · <strong>set alarm 4:30am</strong>"
+            "Leave <strong>Mayrhofen 7:00am</strong> · drive <strong>~30 min</strong> via Ginzling → Schlegeis Alpine Road toll (€17 cash) → Schlegeis Stausee reservoir parking · arrive ~<strong>7:30am</strong>",
+            "⚠️ <strong>Park early</strong> — parking fills by 9am in summer · toll road opens 6am in July",
+            "⭐ <strong>Olpererhütte hike</strong> — trail 502 from reservoir · steep but steady · rocky path through pine forest · views of glacier-fed turquoise lake opening behind you · 600m elevation gain · ~1.5–2hrs up",
+            "⭐ <strong>Kebema suspension bridge (Olperer Panoramabrücke)</strong> — 3–4 min walk past the hut · the iconic Instagram shot · bridge appears to float above Schlegeis reservoir · one of Austria's most dramatic viewpoints",
+            "⭐ <strong>Olpererhütte restaurant</strong> (2,389m) — Kaiserschmarrn · Schnitzel · Almdudler with glacier views · refill water at hut spring · ~1hr",
+            "Descent via direct path (trail 535) — ~1hr down · arrive reservoir ~<strong>1:00pm</strong>",
+            "Drive <strong>~3hrs 30min</strong> → <strong>Zurich Airport area</strong> via A12/A14 · Arlberg · Feldkirch · arrive ~<strong>5:00pm</strong>",
+            "⭐ <strong>Rhine Falls / Schaffhausen</strong> (optional 30min detour) — Europe's largest waterfall · quick stop on route",
+            "<strong>Hertz car return</strong> at ZRH airport · Conf. L5350959316",
+            "<strong>Check in — ZRH Airport hotel</strong> · ⏳ book now · early checkout tomorrow",
+            "<strong>Dinner</strong> — hotel restaurant or airport (~1hr) · pack bags · set alarm for 4:30am"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "🏨 Book Radisson Blu ZRH now — 3–7 min walk to check-in via indoor terminal connection"
+          "text": "⏰ Leave Mayrhofen by 7:00am — parking at Schlegeis fills by 9am"
         },
         {
           "type": "alarm",
-          "text": "⏰ Set alarm 5:30am Jul 5 — Hertz drop-off 6:30am, flight 7:55am"
+          "text": "💰 €17 cash for Schlegeis toll · no cards at Olpererhütte hut"
         },
         {
           "type": "alarm",
-          "text": "💳 Rhine Falls boat 2026: CHF 10.50–11/adult to central rock"
+          "text": "🚗 Hertz return ZRH · Conf. L5350959316 · check fuel policy"
         },
         {
           "type": "alarm",
-          "text": "🍺 Zeughauskeller Zurich: book a table in advance — extremely popular, individual diners may have to queue without reservation"
+          "text": "✈️ FI571 departs ZRH 7:55am Jul 5 · check-in opens 4:00am · arrive airport by 5:30am"
         },
         {
-          "type": "alarm",
-          "text": "🅿️ Zurich: park in Parkhaus Hohe Promenade (near lake) or Parkhaus Urania (near centre) — do not drive into Altstadt"
+          "type": "booking",
+          "text": "⏳ Book ZRH Airport hotel — walkable to terminal · Radisson Blu / ibis / Mövenpick"
         }
       ],
       "summary": {
-        "drive": "~290 km / 180 mi",
+        "drive": "~280 km / 174 mi",
         "time": "2h 30m",
-        "from": "Dornbirn 🇦🇹",
+        "from": "Mayrhofen 🇦🇹",
         "to": "Zurich Airport Hotel 🇨🇭",
-        "highlights": "Olpererhütte 2,388m + Kebema suspension bridge (Plan A) · OR Nordkette 2,334m (Plan B) · Giant Swing at Schlegeis · Innsbruck old town · Dornbirn daytime · Vaduz 🇱🇮 · Rhine Falls · Zurich Altstadt dinner · Hertz drop-off ZRH",
+        "highlights": "Olpererhütte hike · Kebema suspension bridge · Schlegeis reservoir · drive to Zurich · Hertz return",
         "bookings": [
           {
             "status": "pending",
@@ -1263,15 +1252,7 @@
     },
     {
       "id": "zell_am_see",
-      "label": "🏨 Book Zell am See hotel — Jun 29",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Book now",
-      "link": null
-    },
-    {
-      "id": "innsbruck_birthday",
-      "label": "🏨 Book Innsbruck / Pertisau hotel — Jun 30 (Veena birthday 🎂)",
+      "label": "🏨 Book Zell am See hotel — Jun 29 🎂 (birthday dinner night)",
       "status": "urgent",
       "ref": null,
       "deadline": "Book now",
@@ -1300,6 +1281,22 @@
       "ref": null,
       "deadline": "Book now — peak summer",
       "link": "https://www.booking.com/city/de/munich.html"
+    },
+    {
+      "id": "mayrhofen_hotel",
+      "label": "🏨 Book Mayrhofen hotel — 1 night Jul 3–4",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book now — peak summer",
+      "link": "https://www.booking.com/city/at/mayrhofen.html"
+    },
+    {
+      "id": "olpererhutte",
+      "label": "🏔 Olpererhütte Jul 4 — check toll road open at verbund.com · €17 cash · park by 8am",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Check closer to date",
+      "link": "https://www.verbund.com/de-at/ueber-verbund/kraftwerke/wasserkraft/speicherkraftwerke/schlegeis"
     }
   ],
   "budget": [
@@ -1621,27 +1618,27 @@
     },
     {
       "day": "10",
-      "date": "Jun 29",
+      "date": "Jun 29 🎂",
       "flag": "🇦🇹",
       "from": "Bad Goisern 🇦🇹",
-      "nightStay": "Zell am See 🇦🇹 (need booking)",
+      "nightStay": "Zell am See 🇦🇹 🎂",
       "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze (2,571m) · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
       "drive": "~195 km / 121 mi",
       "driveTime": "~3hrs + Grossglockner",
-      "bookings": "⏳ Zell am See hotel — BOOK NOW",
+      "bookings": "⏳ Book Zell am See hotel · birthday dinner reservation",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
     },
     {
       "day": "11",
-      "date": "Jun 30 🎂",
+      "date": "Jun 30",
       "flag": "🇦🇹",
       "from": "Zell am See 🇦🇹",
-      "nightStay": "Near Innsbruck 🇦🇹 (need booking)",
-      "highlights": "Lake Achensee · Karwendel cable car · Bärenkopf summit (1,991m) · full lake panorama · birthday lakeside dinner 🎂",
-      "drive": "~100 km / 62 mi",
-      "driveTime": "~1h 30m",
-      "bookings": "⏳ Innsbruck area hotel — BOOK NOW",
-      "mapUrl": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Pertisau+am+Achensee,+Austria/Innsbruck,+Austria"
+      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+      "highlights": "Zell am See morning · drive south via Felbertauern · Das Auss.Zeit check-in · Villgratental walk",
+      "drive": "~130 km / 81 mi",
+      "driveTime": "~1hr 45min",
+      "bookings": "✅ Das Auss.Zeit #72072265941383",
+      "mapUrl": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "12",
@@ -1671,25 +1668,25 @@
       "day": "14",
       "date": "Jul 3",
       "flag": "🇮🇹",
-      "from": "Außervillgraten 🇦🇹",
-      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Cinque Torri · Scoiattoli chairlift · WWI open-air museum · Cortina d'Ampezzo · Lago di Sorapis glacial lake (optional)",
-      "drive": "~80 km / 50 mi",
-      "driveTime": "~1h 30m",
-      "bookings": "✓ Das Auss.Zeit",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Cinque+Torri,+Cortina+d'Ampezzo,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Tre+Croci,+Italy/Au%C3%9Fervillgraten,+Austria"
+      "from": "Das Auss.Zeit 🇦🇹",
+      "nightStay": "Mayrhofen, Zillertal 🇦🇹",
+      "highlights": "Goodbye Dolomites · drive north · Mayrhofen · prep Olpererhütte",
+      "drive": "~90 km / 56 mi",
+      "driveTime": "~1hr 45min",
+      "bookings": "⏳ Book Mayrhofen hotel Jul 3–4",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Mayrhofen,+Austria"
     },
     {
       "day": "15",
       "date": "Jul 4",
       "flag": "🇦🇹",
-      "from": "Außervillgraten 🇦🇹",
-      "nightStay": "Radisson Blu ZRH 🇨🇭",
-      "highlights": "Nordkette OR Olpererhütte · Dornbirn (daytime) · Plansee optional · Vaduz Liechtenstein · Rhine Falls · Zurich Altstadt dinner · Hertz drop-off ZRH",
-      "drive": "~290 km / 180 mi",
-      "driveTime": "~4hrs",
-      "bookings": "✓ Vienna House Dornbirn (daytime) · ⏳ Radisson Blu ZRH — book Jul 4",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Schlegeis+Reservoir,+Ginzling,+Austria/Innsbruck,+Austria/Dornbirn,+Austria/Vaduz,+Liechtenstein/Neuhausen+am+Rheinfall,+Switzerland/Zurich+Airport,+Switzerland"
+      "from": "Mayrhofen 🇦🇹",
+      "nightStay": "ZRH Airport Hotel 🇨🇭",
+      "highlights": "Olpererhütte hike · Kebema suspension bridge · Schlegeis reservoir · drive ZRH",
+      "drive": "~280 km / 174 mi",
+      "driveTime": "~4hrs total",
+      "bookings": "⏳ Book ZRH airport hotel · ✅ Hertz return L5350959316",
+      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Schlegeis+Stausee,+Austria/Zurich+Airport,+Switzerland"
     },
     {
       "day": "16",
