@@ -200,19 +200,10 @@
       "status": "cancelled"
     },
     {
-      "nights": "10",
-      "property": "Zell am See Hotel 🇦🇹",
-      "address": "Zell am See, Austria",
-      "dates": "Jun 29–30",
-      "ref": "⏳ Pending — book now",
-      "freeCancel": null,
-      "status": "pending"
-    },
-    {
-      "nights": "11–13",
+      "nights": "10–13",
       "property": "Das Auss.Zeit 🇦🇹",
       "address": "Außervillgraten 185, 9931 Außervillgraten, Tirol",
-      "dates": "Jun 30–Jul 3",
+      "dates": "Jun 29–Jul 3",
       "ref": "#72072265941383",
       "stars": "10.0",
       "status": "booked"
@@ -765,54 +756,45 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Grossglockner High Alpine Road → Zell am See 🎂",
-      "meta": "Jun 29 · Bad Goisern → Grossglockner → Zell am See",
+      "title": "Grossglockner High Alpine Road → Außervillgraten",
+      "meta": "Jun 29 · Bad Goisern → Gosausee optional → Grossglockner → Außervillgraten",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Grossglockner → Zell am See",
-          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
+          "label": "Day 10 Map — Bad Goisern → Grossglockner → Außervillgraten",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Optional morning: <strong>Gosausee</strong> (20 min from Bad Goisern) — turquoise lake with Dachstein glacier backdrop · 45-min loop walk · worth it if leaving Bad Goisern by 8:30am",
+            "Optional morning: <strong>Gosausee</strong> (20 min from Bad Goisern) — turquoise lake with Dachstein glacier backdrop · 45-min loop walk · worth it if leaving by 8:30am",
             "Drive <strong>1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
-            "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km, 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
-            "⭐ <strong>Fuscher Törl</strong> (2,428m) — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria",
-            "⭐ <strong>Kaiser-Franz-Josefs-Höhe</strong> (2,369m) — direct view of <strong>Grossglockner (3,798m)</strong>, Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
-            "Drive <strong>1hr</strong> south exit → <strong>Zell am See</strong> · arrive ~5:00pm · lakeside walk · town center · dinner by the lake",
-            "Check in <strong>Zell am See hotel</strong> ⏳ (need booking) · 1 night",
-            "🎂 <strong>Veena's birthday dinner</strong> — special dinner in Zell am See · book a restaurant in advance"
+            "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km · 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
+            "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria",
+            "⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of <strong>Grossglockner (3,798m)</strong>, Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
+            "Drive <strong>~1hr 30min</strong> south via Lienz → <strong>Außervillgraten</strong> · arrive ~6:00pm",
+            "<strong>Check in — Das Auss.Zeit</strong> ✅ · #72072265941383 · first night · dinner at the property or local (~1hr)"
           ]
         }
       ],
       "tags": [
         {
+          "type": "alarm",
+          "text": "💰 Grossglockner toll €46.50 cash only · pack warm layers at 2,500m even in June"
+        },
+        {
           "type": "booking",
-          "text": "✓ Vintgar Gorge · Invoice PE01-BL0I-808 · €40 · 10:00am entry Jun 29"
-        },
-        {
-          "type": "alarm",
-          "text": "⛑️ Vintgar helmets MANDATORY — provided at entrance · €50 fine if not worn"
-        },
-        {
-          "type": "alarm",
-          "text": "🔔 Pletna boat: €20/adult · ring the wishing bell 3 times on Bled Island — Veena's birthday wish!"
-        },
-        {
-          "type": "alarm",
-          "text": "🎂 Lectar gingerbread workshop opens noon · book 2 days in advance for private workshop"
+          "text": "✅ Das Auss.Zeit · #72072265941383 · check-in Jun 29"
         }
       ],
       "summary": {
         "drive": "~195 km / 121 mi",
         "time": "~1h 00m",
-        "from": "Lake Bled 🇸🇮",
-        "to": "Zell am See Hotel 🇦🇹",
-        "highlights": "Vintgar Gorge + Šum waterfall · King of Triglav return trail · Peričnik Waterfall (walk behind falls) · optional Savica · Radovljica · Pletna boat + wishing bell · Veena's birthday dinner 🎉",
+        "from": "Bad Goisern 🇦🇹",
+        "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+        "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze · Pasterze Glacier · Außervillgraten",
         "bookings": [
           {
             "status": "booked",
@@ -824,61 +806,64 @@
     {
       "date": "Jun 30",
       "dayNum": 12,
-      "title": "Zell am See → Außervillgraten · Das Auss.Zeit Check-in",
-      "meta": "Jun 30 · Zell am See → Außervillgraten · check in Das Auss.Zeit",
+      "title": "Außervillgraten · Thurntaler Summit Hike",
+      "meta": "Jun 30 · Außervillgraten base · Thurntaler 2,407m",
       "sections": [
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Zell am See hotel</strong> · morning at leisure · lake stroll",
-            "Drive <strong>~1hr 45min</strong> south via Lienz → <strong>Außervillgraten, East Tyrol, Italy border</strong> · arrive ~<strong>1:00pm</strong>",
-            "⭐ <strong>Check in — Das Auss.Zeit</strong> · ✅ #72072265941383 · ★10.0 · rated perfect · settle in · mountain views",
-            "🥾 <strong>Afternoon village walk</strong> — Villgratental valley · wildflower meadows · Außervillgraten village (~1hr · free)",
-            "<strong>Dinner</strong> — Das Auss.Zeit restaurant or village (~1hr)"
+            "Morning coffee at <strong>Das Auss.Zeit</strong> · settle in · take in the Villgraten mountain panorama",
+            "Drive toll-free mountain road from village → <strong>Thurntaler Rast restaurant</strong> · trailhead for Thurntaler hike",
+            "⭐ <strong>Thurntaler summit hike (2,407m)</strong> — Trail 7 from Thurntaler Rast · 360° panorama of Villgrater mountains · Carnic Alps · Lienz Dolomites · and <strong>Tre Cime from the Austrian side</strong> · ~2.5hrs up and back · moderate",
+            "<strong>Lunch</strong> — Thurntaler Rast mountain restaurant at the base · local Tyrolean food (~1hr)",
+            "Afternoon: explore <strong>Außervillgraten village</strong> — traditional Villgratental farmhouses · Baroque church · quiet valley walk · stream · completely car-free feel",
+            "<strong>Dinner</strong> — Das Auss.Zeit kitchen (~1hr) · 1st full day in the Dolomites base"
           ]
         }
       ],
       "mapLinks": [
         {
-          "label": "Day 12 Map — Zell am See → Außervillgraten",
-          "url": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 11 Map — Thurntaler hike from Außervillgraten",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "tags": [
         {
           "type": "booking",
-          "text": "✅ Das Auss.Zeit · #72072265941383 · check-in from 3pm · ★10.0 rated"
+          "text": "✅ Das Auss.Zeit · #72072265941383 · 2nd night"
         },
         {
           "type": "alarm",
-          "text": "🚗 Drive via Mittersill + Felbertauern tunnel (€12 toll) or Grossglockner High Alpine Road (€46.50 · more scenic)"
+          "text": "🏔 Thurntaler: toll-free mountain road from village centre · 6-seater cable car from Sillian also option"
         }
       ],
       "summary": {
-        "from": "Zell am See 🇦🇹",
+        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "drive": "~130 km / 81 mi",
-        "highlights": "Zell am See morning · scenic drive south · Das Auss.Zeit check-in · Villgratental valley walk",
+        "drive": "~10 km / 6 mi",
+        "highlights": "Thurntaler 2,407m summit · Tre Cime view from Austria · Villgratental valley walk",
         "accommodation": "Das Auss.Zeit ✅"
-      }
+      },
+      "dayLabel": "11",
+      "flag": "🇦🇹"
     },
     {
       "dayLabel": "12",
       "date": "Jul 1",
       "title": "Seceda + Val di Funes + Lagazuoi → Dolomites",
-      "meta": "Jul 1 · Innsbruck → Ortisei → Val di Funes → Passo Falzarego → Außervillgraten",
+      "meta": "Jul 1 · Außervillgraten → Ortisei (Seceda) → Val di Funes → Passo Falzarego → Außervillgraten",
       "flag": "🇮🇹",
       "mapLinks": [
         {
           "label": "Day 12 Map — Seceda + Val di Funes + Lagazuoi",
-          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Au%C3%9Fervillgraten,+Austria"
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Ortisei,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Innsbruck area 7:30am</strong> · drive <strong>1hr 10min</strong> → Ortisei, Val Gardena · ⚠️ <strong>Pre-book Seceda cable car tickets online before the trip</strong> (2026 requires timed entry slots) · park at Parkgarage Seceda",
+            "Leave <strong>Außervillgraten 8:30am</strong> · drive <strong>1hr 10min</strong> → Ortisei, Val Gardena · ⚠️ <strong>Pre-book Seceda cable car tickets online before the trip</strong> (2026 requires timed entry slots) · park at Parkgarage Seceda",
             "⭐ <strong>Seceda cable car</strong> (Ortisei → Furnes → Seceda) · <strong>15-min ride</strong> · €59/adult 2026 · arrive 2,519m · <strong>10-min walk to Forcella Pana ridgeline</strong> · Fermeda Towers (Torri di Fermeda) · most iconic jagged-peak view in the entire Dolomites · Sassolungo + Marmolada panorama",
             "Lunch at <strong>Rifugio Firenze</strong> on the ridge · cable car back down · depart Ortisei ~<strong>12:00pm</strong>",
             "Drive <strong>30 min</strong> → <strong>Val di Funes</strong> (Santa Maddalena) · ⚠️ park in village — road to church is now closed to cars (May 2026 barrier)",
@@ -902,7 +887,7 @@
       "summary": {
         "drive": "~240 km / 149 mi",
         "time": "~1h 00m",
-        "from": "Außervillgraten 🇮🇹",
+        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
         "highlights": "Lago di Braies sunrise · Cadini di Misurina viewpoint · Tre Cime loop · WWI caves at Sasso di Sesto",
         "bookings": [
@@ -1265,14 +1250,6 @@
       "link": null
     },
     {
-      "id": "zell_am_see",
-      "label": "🏨 Book Zell am See hotel — Jun 29 🎂 (birthday dinner night)",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Book now",
-      "link": null
-    },
-    {
       "id": "salzburg_hotel",
       "label": "✅ Wohlfühl Apartment Bad Reichenhall — Jun 25–27 · #5205.018.552",
       "status": "done",
@@ -1632,15 +1609,15 @@
     },
     {
       "day": "10",
-      "date": "Jun 29 🎂",
+      "date": "Jun 29",
       "flag": "🇦🇹",
       "from": "Bad Goisern 🇦🇹",
-      "nightStay": "Zell am See 🇦🇹 🎂",
-      "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze (2,571m) · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
+      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
+      "highlights": "Gosausee optional · Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze · Pasterze Glacier · Außervillgraten",
       "drive": "~195 km / 121 mi",
       "driveTime": "~3hrs + Grossglockner",
-      "bookings": "⏳ Book Zell am See hotel · birthday dinner reservation",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria"
+      "bookings": "✅ Das Auss.Zeit #72072265941383",
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "11",
@@ -1648,17 +1625,17 @@
       "flag": "🇦🇹",
       "from": "Zell am See 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Zell am See morning · drive south via Felbertauern · Das Auss.Zeit check-in · Villgratental walk",
-      "drive": "~130 km / 81 mi",
-      "driveTime": "~1hr 45min",
-      "bookings": "✅ Das Auss.Zeit #72072265941383",
-      "mapUrl": "https://www.google.com/maps/dir/Zell+am+See,+Austria/Au%C3%9Fervillgraten,+Austria"
+      "highlights": "Thurntaler 2,407m summit · Tre Cime view from Austrian side · Villgratental valley walk",
+      "drive": "~10 km / 6 mi",
+      "driveTime": "~15min",
+      "bookings": "✅ Das Auss.Zeit",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria"
     },
     {
       "day": "12",
       "date": "Jul 1",
       "flag": "🇮🇹",
-      "from": "Near Innsbruck 🇦🇹 via Ortisei 🇮🇹",
+      "from": "Außervillgraten 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
       "highlights": "Seceda cable car · Fermeda Towers ridgeline · Val di Funes · Santa Maddalena Church meadow viewpoint · Odle peaks · Lagazuoi 2,752m · WWI Galleries",
       "drive": "~240 km / 149 mi",
@@ -1718,7 +1695,7 @@
   "title": "Europe Family Road Trip 2026 — Plan B",
   "subtitle": "Plan B: No Slovenia · Extra Switzerland · Berchtesgaden · Lake Achensee",
   "planLabel": "Plan B",
-  "planNote": "Alternative itinerary skipping Slovenia. Adds Jaun Pass (Switzerland), Berchtesgaden Eagle's Nest, and Lake Achensee birthday hike. Less backtracking, more breathing room.",
+  "planNote": "Alternative itinerary skipping Slovenia. Adds Jaun Pass (Switzerland), Berchtesgaden Eagle's Nest, and Lake Achensee",
   "countries": [
     "Iceland",
     "Switzerland",
