@@ -186,9 +186,9 @@
       "property": "HOMEBOUND Apartments 🇦🇹",
       "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
       "dates": "Jun 27–29",
-      "ref": "❌ CANCEL — no longer needed · #72072198804917",
+      "ref": "#72072198804917 — keep as backup, sort manually",
       "stars": "9.6",
-      "status": "cancelled"
+      "status": "booked"
     },
     {
       "nights": "—",
@@ -198,15 +198,6 @@
       "ref": "#72072265408188 — CANCEL",
       "stars": "9.4",
       "status": "cancelled"
-    },
-    {
-      "nights": "9",
-      "property": "Zell am See / Kaprun Hotel 🇦🇹",
-      "address": "Zell am See or Kaprun, Salzburgerland, Austria",
-      "dates": "Jun 28–29",
-      "ref": "⏳ Yet to book — 1 night · near Grossglockner south exit · Hotel Zell am See / Kaprun resort area",
-      "freeCancel": null,
-      "status": "pending"
     },
     {
       "nights": "10–11",
@@ -657,13 +648,13 @@
     {
       "dayLabel": "8",
       "date": "Jun 27",
-      "title": "Hallstatt Full Day — Salt Mine · Skywalk · Beinhaus · Gosausee · Echern Valley",
-      "meta": "Jun 27 · Hallstatt — Salt Mine → Skywalk → Beinhaus → village → optional Gosausee/Echern → stay Hallstatt",
+      "title": "Hallstatt Full Day — Salt Mine · Skywalk · Beinhaus · Echern Valley · Dachstein 5 Fingers",
+      "meta": "Jun 27 · Hallstatt — Salt Mine → Skywalk → Beinhaus → Echern Valley → Dachstein 5 Fingers → stay Hallstatt",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 8 Map — Hallstatt + optional Gosausee",
-          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt,+Austria"
+          "label": "Day 8 Map — Hallstatt → Echern Valley → Dachstein → back",
+          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria"
         }
       ],
       "sections": [
@@ -671,37 +662,43 @@
           "heading": null,
           "items": [
             "<strong>Already in Hallstatt</strong> — walk straight out of hotel · no travel time · village wakes slowly before 9am",
-            "⭐ <strong>Hallstatt Salt Mine (Salzwelten)</strong> — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · <strong>book online at salzwelten.at</strong> · first entry 9am · go early before tour groups",
+            "🥾 <strong>Gosausee early morning optional</strong> — drive 20 min for sunrise on the glacier lake · back by 8:30am (only if energy allows — skip if resting)",
+            "⭐ <strong>Hallstatt Salt Mine (Salzwelten)</strong> — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · <strong>book online at salzwelten.at</strong> · first entry 9am sharp · arrive counter by 8:45am",
             "⭐ <strong>Hallstatt Skywalk viewpoint</strong> — 20 min walk up from village · 360° panorama of Hallstatt and the lake far below · best morning light · completely free",
             "⭐ <strong>Beinhaus (Bone Chapel)</strong> — painted skulls collection · unique in the world · 10 min walk from market square · small entry fee",
-            "⭐ <strong>Hallstatt village walk</strong> — UNESCO World Heritage · lakefront promenade · Pfarrkirche church · market square · browse the craft shops · <strong>lunch lakeside</strong> (~1hr)",
-            "🥾 <strong>Gosausee optional</strong> (drive 20 min) — turquoise lake with full Dachstein glacier backdrop · flat 4.5km loop · mirror reflections in morning light (~1hr · free)",
-            "🥾 <strong>Echern Valley + Waldbachstrub Waterfall optional</strong> — trail starts behind Hallstatt village · climb through the Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up) · excellent views back over the lake (~1.5hrs return)",
-            "⭐ <strong>Hallstatt lakefront golden hour</strong> — sunset light on the lake · best photos of the Hallstatt stay · dinner at lakeside restaurant (~1hr)",
-            "<strong>2nd night Hallstatt</strong> · ⏳ same hotel as Jun 26 — extend to 2 nights"
+            "⭐ <strong>Hallstatt village walk + lunch</strong> — lakefront promenade · Pfarrkirche church · market square · lakeside lunch (~1hr)",
+            "🥾 <strong>Echern Valley + Waldbachstrub Waterfall</strong> — trail starts directly behind the village · no drive · climb into the Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up · thundering cascade) · return (~1.5hrs total)",
+            "Drive <strong>15 min</strong> → <strong>Dachstein Krippenstein cable car, Obertraun</strong> · arrive ~2:15pm · ⚠️ pre-book at dachstein.at",
+            "⭐ <strong>Dachstein 5 Fingers (2,109m)</strong> — five glass-floored arms extending over a 400m cliff face · Hallstatt visible far below · one of the most dramatic viewpoints in Austria · ~45 min · cable car down by 4:00pm",
+            "Drive <strong>15 min</strong> → <strong>Hallstatt lakefront golden hour</strong> — best evening light · dinner lakeside (~1hr)",
+            "<strong>2nd night Hallstatt</strong> · ⏳ extend hotel booking Jun 26–28"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⛏ Salt Mine — book at salzwelten.at · ~€35/adult · first entry 9am · arrive at counter by 8:45am"
+          "text": "⛏ Salt Mine — book at salzwelten.at · €35/adult · first entry 9am · arrive by 8:45am"
         },
         {
           "type": "alarm",
-          "text": "🥾 Optional: Gosausee (20min drive) + Echern Valley hike — skip one or both if tired · Hallstatt itself is enough"
+          "text": "⛰ Dachstein cable car — pre-book at dachstein.at · last ascent ~5pm · arrive Obertraun by 2:15pm"
+        },
+        {
+          "type": "alarm",
+          "text": "⏰ Sequence is tight — Salt Mine must be done by 9:30am to fit everything"
         },
         {
           "type": "booking",
-          "text": "⏳ Hallstatt hotel — extend to 2 nights Jun 26–28 · Heritage Hotel Hallstatt / Seehotel Grüner Baum"
+          "text": "⏳ Extend Hallstatt hotel to 2 nights Jun 26–28 · Heritage Hotel Hallstatt / Seehotel Grüner Baum"
         }
       ],
       "summary": {
-        "drive": "~40 km / 25 mi (if Gosausee optional taken)",
+        "drive": "~30 km / 19 mi",
         "time": "2h 33m +Grossglockner",
         "from": "Hallstatt 🇦🇹",
         "to": "Hallstatt 🇦🇹",
-        "highlights": "Hallstatt Salt Mine · Skywalk 360° panorama · Beinhaus painted skulls · village + lakefront · optional Gosausee glacier lake · optional Echern Valley + Waldbachstrub",
+        "highlights": "Hallstatt Salt Mine · Skywalk · Beinhaus · village walk · Echern Valley + Waldbachstrub Waterfall · Dachstein 5 Fingers 2,109m · lakefront golden hour",
         "bookings": [
           {
             "status": "booked",
@@ -713,8 +710,8 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Grossglockner High Alpine Road → Zell am See",
-      "meta": "Jun 28 · Hallstatt → Grossglockner → Kaiser-Franz-Josefs-Höhe → Zell am See",
+      "title": "Grossglockner High Alpine Road → Zell am See area",
+      "meta": "Jun 28 · Hallstatt → Grossglockner → Zell am See / Kaprun area overnight",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -726,15 +723,15 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Hallstatt hotel 8:30am</strong> · drive <strong>1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
+            "Checkout <strong>Hallstatt hotel 8:30am</strong> · drive <strong>~1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
             "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km · 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
-            "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · panorama viewpoint · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria · wildflowers in June",
+            "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria · 360° panorama · wildflowers in June",
             "⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of <strong>Grossglockner (3,798m)</strong> Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
             "<strong>Lunch</strong> — restaurant at Kaiser-Franz-Josefs-Höhe (~1hr)",
-            "Drive <strong>~1hr</strong> north exit → <strong>Zell am See</strong> · arrive ~5:00pm · lakeside town · Schmittenhöhe backdrop",
-            "⭐ <strong>Zell am See lakefront walk</strong> — turquoise Zeller See · town center · Schmittenhöhe peaks reflected in the lake (~45 min)",
+            "Drive <strong>~1hr</strong> north exit → <strong>Zell am See area</strong> · arrive ~5:30pm · lakeside town",
+            "⭐ <strong>Zell am See lakefront walk</strong> — turquoise Zeller See · town center · Schmittenhöhe backdrop · golden hour (~45 min)",
             "<strong>Dinner</strong> — Zell am See lakeside restaurant (~1hr)",
-            "Check in <strong>Zell am See / Kaprun hotel</strong> · ⏳ yet to book · 1 night · ⚠️ cash for Grossglockner toll"
+            "Check in <strong>Zell am See / Kaprun hotel</strong> · ⏳ user to book independently · 1 night"
           ]
         }
       ],
@@ -745,19 +742,19 @@
         },
         {
           "type": "alarm",
-          "text": "⏰ Grossglockner road typically opens 5am · closes at night · aim to enter by 10am for best light"
+          "text": "⏰ Aim to enter Grossglockner by 10am for best clarity · road can cloud over by afternoon"
         },
         {
           "type": "booking",
-          "text": "⏳ Zell am See / Kaprun hotel Jun 28–29 — book now · 1 night"
+          "text": "⏳ Jun 28 overnight near Zell am See / Kaprun — book independently · 1 night"
         }
       ],
       "summary": {
         "drive": "~195 km / 121 mi",
         "time": "~45m",
         "from": "Hallstatt 🇦🇹",
-        "to": "Zell am See 🇦🇹",
-        "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Pasterze Glacier · Zell am See lakefront",
+        "to": "Zell am See area 🇦🇹",
+        "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
         "bookings": [
           {
             "status": "booked",
@@ -786,30 +783,30 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Zell am See 9:00am</strong> · drive <strong>~1hr 30min</strong> via Lienz → <strong>Außervillgraten</strong>",
+            "Checkout <strong>Zell am See hotel 9:00am</strong> · drive <strong>~1hr 30min</strong> via Lienz → <strong>Außervillgraten</strong>",
             "⭐ <strong>Lienz old town</strong> optional stop (15 min detour) — compact medieval market square · Tyrolean Alps backdrop · coffee stop",
-            "Check in <strong>Das Auss.Zeit</strong> ✅ · #72072265941383 · early check-in likely possible · settle in · first look at the Villgraten valley",
-            "🥾 <strong>Afternoon village walk</strong> — Außervillgraten village · Villgratental valley · dramatic mountain backdrop · gentle introduction to the Dolomites area",
-            "<strong>Dinner at Das Auss.Zeit</strong> — kitchen facilities · or local Gasthof in the village · early night — <strong>Thurntaler summit hike tomorrow</strong>"
+            "Check in <strong>Das Auss.Zeit</strong> ✅ · #72072265941383 ⚠️ rebook check-in to Jun 29 · early check-in likely possible · settle in",
+            "🥾 <strong>Afternoon village walk</strong> — Außervillgraten village · Villgratental valley · gentle introduction · recover legs before Thurntaler tomorrow",
+            "<strong>Dinner</strong> — Das Auss.Zeit kitchen or local Gasthof · early night"
           ]
         }
       ],
       "tags": [
         {
           "type": "booking",
-          "text": "✅ Das Auss.Zeit · #72072265941383 ⚠️ REBOOK check-in to Jun 29 (was Jun 30)"
+          "text": "⚠️ Rebook Das Auss.Zeit check-in → Jun 29 · #72072265941383"
         },
         {
           "type": "alarm",
-          "text": "⏰ Easy arrival day — ~1.5hr drive only · rest up for Thurntaler tomorrow"
+          "text": "⏰ Easy 1.5hr drive — rest day · Thurntaler summit hike tomorrow"
         }
       ],
       "summary": {
         "drive": "~100 km / 62 mi",
         "time": "~1h 00m",
-        "from": "Zell am See 🇦🇹",
+        "from": "Zell am See area 🇦🇹",
         "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Lienz optional stop · Das Auss.Zeit check-in · Villgratental village walk · arrival in the Dolomites",
+        "highlights": "Lienz optional · Das Auss.Zeit check-in · Villgratental village walk",
         "bookings": [
           {
             "status": "booked",
@@ -1592,14 +1589,14 @@
       "flag": "🇦🇹",
       "from": "Hallstatt 🇦🇹",
       "nightStay": "Hallstatt 🇦🇹 ⏳ (2nd night — extend booking)",
-      "highlights": "Hallstatt Salt Mine · Skywalk · Beinhaus · village walk · optional Gosausee + Echern Valley + Waldbachstrub · lakefront golden hour",
-      "drive": "~40 km / 25 mi",
-      "driveTime": "~1hr (if Gosausee)",
-      "bookings": "⏳ Extend Hallstatt hotel to 2 nights Jun 26–28 · ⊙ Book Salt Mine",
-      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Bad+Goisern,+Austria",
+      "highlights": "Hallstatt Salt Mine · Skywalk · Beinhaus · Echern Valley + Waldbachstrub Waterfall · Dachstein 5 Fingers 2,109m · lakefront golden hour",
+      "drive": "~30 km / 19 mi",
+      "driveTime": "~45min total",
+      "bookings": "⏳ Extend Hallstatt hotel Jun 26–28 · ⊙ Book Salt Mine + Dachstein",
+      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria",
       "action": {
         "level": "pending",
-        "text": "⏳ Extend Hallstatt hotel Jun 26–28 · ⊙ salzwelten.at"
+        "text": "⏳ Extend Hallstatt hotel · ⊙ Book salzwelten.at + dachstein.at"
       }
     },
     {
@@ -1607,31 +1604,31 @@
       "date": "Jun 28",
       "flag": "🇦🇹",
       "from": "Hallstatt 🇦🇹",
-      "nightStay": "Zell am See 🇦🇹 ⏳",
-      "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See",
+      "nightStay": "Zell am See area 🇦🇹 ⏳ (book independently)",
+      "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Zell am See lakefront",
       "drive": "~195 km / 121 mi",
       "driveTime": "~3hrs + Grossglockner stops",
-      "bookings": "⏳ Zell am See hotel Jun 28–29",
+      "bookings": "⏳ Book Jun 28 night near Zell am See independently · 💰 €46.50 cash toll",
       "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Zell+am+See,+Austria",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Zell am See hotel · 💰 €46.50 cash toll"
+        "text": "⏳ Book Jun 28 Zell am See hotel · 💰 €46.50 cash for Grossglockner"
       }
     },
     {
       "day": "10",
       "date": "Jun 29",
       "flag": "🇦🇹",
-      "from": "Zell am See 🇦🇹",
+      "from": "Zell am See area 🇦🇹",
       "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹 ⚠️",
-      "highlights": "Lienz old town optional · Das Auss.Zeit check-in · Villgratental village walk",
+      "highlights": "Lienz old town optional · Das Auss.Zeit check-in · Villgratental village walk · rest before Thurntaler",
       "drive": "~100 km / 62 mi",
       "driveTime": "~1h 30m",
-      "bookings": "⚠️ Das Auss.Zeit — rebook check-in Jun 29 #72072265941383",
+      "bookings": "⚠️ Rebook Das Auss.Zeit check-in → Jun 29 #72072265941383",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
       "action": {
         "level": "action",
-        "text": "🔴 Rebook Das Auss.Zeit check-in → Jun 29"
+        "text": "🔴 Rebook Das Auss.Zeit → check-in Jun 29"
       }
     },
     {
