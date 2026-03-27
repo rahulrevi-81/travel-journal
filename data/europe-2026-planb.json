@@ -716,8 +716,8 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Hallstatt Full Day + Dachstein Krippenstein",
-      "meta": "Jun 28 · Bad Goisern → Hallstatt → Dachstein Krippenstein",
+      "title": "Gosausee Morning + Hallstatt Full Day + Dachstein 5 Fingers",
+      "meta": "Jun 28 · Bad Goisern → Gosausee → Hallstatt → Dachstein Krippenstein → Bad Goisern",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -729,6 +729,10 @@
         {
           "heading": null,
           "items": [
+            "Leave <strong>Bad Goisern 7:30am</strong> · drive <strong>20 min</strong> → Gosau village",
+            "🥾 <strong>Gosausee lower lake loop</strong> — turquoise lake with full Dachstein glacier backdrop · flat 4.5km circuit · mirror reflections of the glacier in still morning light · <strong>one of the most scenic lake walks in Austria</strong> (~1hr · free)",
+            "🥾 <strong>Upper Gosausee optional</strong> — shuttle or 1.5hr hike up to the quieter upper lake · even closer to the Dachstein face · far fewer visitors than lower lake (~45 min extra if shuttle)",
+            "Drive <strong>20 min</strong> → Hallstatt · arrive by <strong>10:00am</strong> · still before peak tour bus crowds",
             "Drive <strong>10 min</strong> → Hallstatt · arrive by <strong>8:00am</strong> — get there early before tour buses arrive",
             "⭐ <strong>Hallstatt village walk</strong> — UNESCO World Heritage village · lakefront walk · market square · Pfarrkirche church · Beinhaus (bone chapel with painted skulls — unique in the world) · ~1.5hrs",
             "⭐ <strong>Echern Valley hike</strong> — trail behind the village climbs steeply into the Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up) · excellent views back over Hallstatt lake · ~1.5hrs return",
@@ -754,7 +758,7 @@
         "time": "~45m",
         "from": "Bad Goisern 🇦🇹",
         "to": "Bad Goisern / Hallstatt area 🇦🇹",
-        "highlights": "Ojstrica + Mala Osojnica viewpoints · Bled Castle · Mostnica Gorge + Devil's Bridge · Vogel Cable Car + Orlove Glave chairlift",
+        "highlights": "Gosausee glacier lake loop · Hallstatt village + Beinhaus · Echern Valley waterfall · Dachstein Krippenstein 5 Fingers",
         "bookings": [
           {
             "status": "booked",
@@ -1495,7 +1499,8 @@
       "drive": "~358 km / 222 mi",
       "driveTime": "~5.5hrs",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
-      "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland"
+      "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
+      "action": null
     },
     {
       "day": "2",
@@ -1507,7 +1512,8 @@
       "drive": "~290 km / 180 mi",
       "driveTime": "~5hrs",
       "bookings": "✓ BergOne",
-      "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
+      "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
+      "action": null
     },
     {
       "day": "3",
@@ -1519,7 +1525,8 @@
       "drive": "~174 km / 108 mi",
       "driveTime": "~2hrs",
       "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH",
-      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland",
+      "action": null
     },
     {
       "day": "4",
@@ -1531,7 +1538,8 @@
       "drive": "~130 km / 81 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Grindelwald First gondola #238070 · ⏰ Book Oeschinensee slot",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland",
+      "action": null
     },
     {
       "day": "5",
@@ -1543,7 +1551,11 @@
       "drive": "~260 km / 162 mi",
       "driveTime": "~3hrs 30m",
       "bookings": "⏳ Jun 24 hotel — no place decided yet",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Munich,+Germany"
+      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Munich,+Germany",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Munich hotel — no place decided"
+      }
     },
     {
       "day": "6",
@@ -1555,7 +1567,11 @@
       "drive": "~120 km / 75 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Bad Reichenhall #5205.018.552",
-      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Bad+Reichenhall,+Germany"
+      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Bad+Reichenhall,+Germany",
+      "action": {
+        "level": "action",
+        "text": "🔴 Consider Berchtesgaden vs Bad Reichenhall"
+      }
     },
     {
       "day": "7",
@@ -1567,7 +1583,11 @@
       "drive": "~180 km / 112 mi",
       "driveTime": "~2h 30m",
       "bookings": "⏳ Book Salzburg hotel Jun 26–27 · ⚠️ Cancel Bad Reichenhall 2nd night",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Reichenhall,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Salzburg,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Reichenhall,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Salzburg,+Austria",
+      "action": {
+        "level": "action",
+        "text": "🔴 Cancel BR 2nd night · ⏳ Book Salzburg hotel"
+      }
     },
     {
       "day": "8",
@@ -1579,7 +1599,11 @@
       "drive": "~140 km / 87 mi",
       "driveTime": "~2hrs",
       "bookings": "⚠️ Book replacement Jun 27–29",
-      "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Book Bad Goisern area 2 nights + Salt Mine"
+      }
     },
     {
       "day": "9",
@@ -1587,11 +1611,15 @@
       "flag": "🇦🇹",
       "from": "Bad Goisern 🇦🇹",
       "nightStay": "⏳ Bad Goisern / Hallstatt — book now",
-      "highlights": "Hallstatt village · Echern Valley · Waldbachstrub Waterfall · Beinhaus (1,200 painted skulls) · Dachstein Krippenstein · 5 Fingers · Giant Ice Cave",
+      "highlights": "Gosausee glacier lake loop · Hallstatt village · Beinhaus painted skulls · Echern Valley · Waldbachstrub Waterfall · Dachstein 5 Fingers 2,109m",
       "drive": "~35 km / 22 mi",
       "driveTime": "~30min",
       "bookings": "⚠️ Book replacement Jun 27–29",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Bad+Goisern,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Bad+Goisern,+Austria",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Night 2 same hotel"
+      }
     },
     {
       "day": "10",
@@ -1603,7 +1631,11 @@
       "drive": "~195 km / 121 mi",
       "driveTime": "~3hrs + Grossglockner",
       "bookings": "⚠️ Das Auss.Zeit #72072265941383 — VERIFY DATES before trip",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
+      "action": {
+        "level": "action",
+        "text": "🔴 Rebook Das Auss.Zeit → Jun 29–Jul 1"
+      }
     },
     {
       "day": "11",
@@ -1615,7 +1647,11 @@
       "drive": "~10 km / 6 mi",
       "driveTime": "~15min",
       "bookings": "⚠️ Das Auss.Zeit #72072265941383 — REBOOK Jun 29–Jul 1 (2 nights)",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria",
+      "action": {
+        "level": "action",
+        "text": "🔴 Last night at Das Auss.Zeit (rebook needed)"
+      }
     },
     {
       "day": "12",
@@ -1627,7 +1663,11 @@
       "drive": "~190 km / 118 mi",
       "driveTime": "~3h 30m + sights",
       "bookings": "⏳ Book Dobbiaco/Sesto hotel Jul 1–3",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Dobbiaco,+Italy"
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Dobbiaco,+Italy",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Book Dobbiaco hotel 2 nights"
+      }
     },
     {
       "day": "13",
@@ -1639,7 +1679,11 @@
       "drive": "~110 km / 68 mi",
       "driveTime": "~2hrs total",
       "bookings": "⏳ Dobbiaco hotel 2nd night",
-      "mapUrl": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Dobbiaco,+Italy"
+      "mapUrl": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Dobbiaco,+Italy",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Night 2 Dobbiaco · Pre-book Tre Cime"
+      }
     },
     {
       "day": "14",
@@ -1651,7 +1695,11 @@
       "drive": "~195 km / 121 mi",
       "driveTime": "~2h 15m + hike",
       "bookings": "⏳ Book Mayrhofen hotel 1 night",
-      "mapUrl": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Mayrhofen,+Austria"
+      "mapUrl": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Mayrhofen,+Austria",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Book Mayrhofen 1 night"
+      }
     },
     {
       "day": "15",
@@ -1663,7 +1711,11 @@
       "drive": "~330 km / 205 mi",
       "driveTime": "~5hrs total",
       "bookings": "⏳ Book ZRH airport hotel · ✅ Hertz return L5350959316",
-      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland/Zurich+Airport,+Switzerland"
+      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland/Zurich+Airport,+Switzerland",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Book ZRH Airport hotel"
+      }
     },
     {
       "day": "16",
@@ -1675,7 +1727,8 @@
       "drive": "—",
       "driveTime": "—",
       "bookings": "✓ Icelandair FI571/FI689",
-      "mapUrl": "https://www.google.com/maps/place/Zurich+Airport,+Switzerland"
+      "mapUrl": "https://www.google.com/maps/place/Zurich+Airport,+Switzerland",
+      "action": null
     }
   ],
   "title": "Europe Family Road Trip 2026 — Plan B",
