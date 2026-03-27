@@ -164,8 +164,34 @@
   .g-map a:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
   /* Highlight pills */
   .g-highlights { min-width: 300px; max-width: 420px; padding-top: 10px !important; padding-bottom: 10px !important; }
-  .hl-pills { display: flex; flex-wrap: wrap; gap: 4px; }
-  .hl-pill { display: inline-block; background: rgba(201,168,76,0.12); color: #6b5010; border: 1px solid rgba(201,168,76,0.3); border-radius: 20px; padding: 3px 10px; font-size: 10px; font-weight: 500; white-space: nowrap; letter-spacing: 0.2px; }
+  .hl-pills { display: flex; flex-wrap: wrap; gap: 4px; transition: background 0.2s; }
+  .hl-pill { display: inline-block; background: rgba(201,168,76,0.12); color: #6b5010; border: 1px solid rgba(201,168,76,0.3); border-radius: 20px; padding: 3px 10px; font-size: 10px; font-weight: 500; white-space: nowrap; letter-spacing: 0.2px; transition: opacity 0.15s, transform 0.15s, border-color 0.3s, background 0.3s; }
+  /* Draggable pill */
+  .hl-pill[draggable="true"] { cursor: grab; }
+  .hl-pill[draggable="true"]:active { cursor: grabbing; }
+  .hl-pill--dragging { opacity: 0.35; transform: scale(0.92); }
+  /* Drop target */
+  .hl-pills--drag-active { min-height: 30px; }
+  .hl-pills--drop-target { outline: 2px dashed var(--gold); outline-offset: 2px; background: rgba(201,168,76,0.06); border-radius: 4px; }
+  /* Geographic warning on pill */
+  .hl-pill--geo-warn { border-color: #c0392b !important; background: rgba(192,57,43,0.10) !important; color: #922 !important; animation: geoWarnPulse 0.6s ease; }
+  @keyframes geoWarnPulse { 0%,100%{ box-shadow:none; } 50%{ box-shadow:0 0 0 4px rgba(192,57,43,0.18); } }
+  /* Add highlight button */
+  .hl-add-btn { display:inline-flex; align-items:center; justify-content:center; width:24px; height:22px; border:1.5px dashed rgba(201,168,76,0.4); border-radius:999px; background:transparent; color:var(--gold); font-size:15px; font-weight:bold; cursor:pointer; transition:all 0.2s; flex-shrink:0; line-height:1; padding:0; }
+  .hl-add-btn:hover { background:rgba(201,168,76,0.12); border-color:var(--gold); }
+  /* Inline add input */
+  .hl-add-input { border:1.5px solid var(--gold); border-radius:999px; padding:2px 10px; font-size:10px; font-family:inherit; background:rgba(201,168,76,0.06); color:var(--ink); outline:none; min-width:110px; max-width:180px; height:22px; }
+  .hl-add-input:focus { box-shadow:0 0 0 2px rgba(201,168,76,0.2); }
+  /* Fade-in animation */
+  .hl-pill--just-added { animation: hlFadeIn 0.3s ease; }
+  @keyframes hlFadeIn { from{opacity:0;transform:translateX(-6px)} to{opacity:1;transform:translateX(0)} }
+  /* Toast */
+  .hl-toast { position:fixed; top:20px; left:50%; transform:translateX(-50%); background:var(--ink); color:#fff; padding:12px 22px; border-radius:8px; font-size:13px; box-shadow:0 4px 24px rgba(0,0,0,0.3); z-index:9999; animation:toastIn 0.3s ease; display:flex; align-items:center; gap:12px; max-width:600px; }
+  .hl-toast a { color:var(--gold-light); cursor:pointer; text-decoration:underline; font-weight:500; white-space:nowrap; }
+  @keyframes toastIn { from{opacity:0;transform:translateX(-50%) translateY(-12px)} to{opacity:1;transform:translateX(-50%) translateY(0)} }
+  /* Toolbar buttons */
+  .hl-ctrl-btn { padding:5px 14px; border:1px solid var(--border); border-radius:4px; background:white; color:var(--slate); font-size:11px; cursor:pointer; transition:all 0.15s; font-family:inherit; letter-spacing:0.3px; }
+  .hl-ctrl-btn:hover { background:var(--warm); color:var(--ink); border-color:var(--gold); }
   .bk-done    { color: #27ae60; font-weight: 600; font-size: 11px; }
   .bk-pending { color: #e67e22; font-weight: 600; font-size: 11px; }
   .g-action { min-width: 120px; vertical-align: middle !important; }
@@ -208,6 +234,211 @@
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
 const DATA_FILE = '../data/europe-2026-planb.json';
 
+// ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
+const STORAGE_KEY = 'trip-highlights-europe-2026-planb';
+let editableGlance = [];   // mutable copy with _highlights arrays
+let originalGlanceRef = null; // reference to original JSON data object
+let glanceContainer = null;   // DOM reference for re-rendering
+
+function loadGlance(original) {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    try { return JSON.parse(saved); } catch(e) { localStorage.removeItem(STORAGE_KEY); }
+  }
+  return JSON.parse(JSON.stringify(original));
+}
+function saveGlance() {
+  const cleaned = editableGlance.map(({_highlights, ...rest}) => ({...rest, highlights: _highlights.join(' · ')}));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(cleaned));
+}
+function resetGlance() {
+  localStorage.removeItem(STORAGE_KEY);
+  initEditableGlance(originalGlanceRef);
+}
+function initEditableGlance(glanceArr) {
+  editableGlance = loadGlance(glanceArr).map(g => ({
+    ...g,
+    _highlights: g.highlights ? g.highlights.split(' · ').map(s => s.trim()).filter(Boolean) : []
+  }));
+}
+
+// ─── GEOGRAPHIC LOOKUP ──────────────────────────────────────────────────────
+const PLACE_GEO = {
+  // Iceland
+  'Kerið Crater':'IS','Geysir (Strokkur)':'IS','Urriðafoss':'IS','Seljalandsfoss':'IS',
+  'Gljúfrabúi cave':'IS','Skógafoss':'IS','Reynisfjara black sand beach':'IS','Vík village':'IS',
+  'Dyrhólaey arch + puffins':'IS','Fjaðrárgljúfur Canyon':'IS','Svínafellsjökull Glacier walk':'IS',
+  'Jökulsárlón Glacier Lagoon':'IS','Diamond Beach':'IS','Reykjanes golden hour':'IS',
+  // Switzerland
+  'Lake Thun viewpoint':'CH','Spiez Castle':'CH','Oeschinensee 8:30am':'CH',
+  'Grindelwald First gondola #238070 ✅':'CH','Cliff Walk':'CH','Bachalpsee hike':'CH',
+  'Staubbach Falls':'CH','Lauterbrunnen valley walk':'CH','Trümmelbach Falls optional':'CH',
+  'Rhine Falls':'CH','Schaffhausen old town':'CH',
+  // Germany
+  'Königssee electric boat':'DE','Obersee + Röthbach Waterfall':'DE','St. Bartholomä lunch':'DE',
+  'Hintersee + Zauberwald Magic Forest':'DE','Jenner summit 1,874m':'DE',
+  "Eagle's Nest 1,834m":'DE',
+  // Austria
+  'Liechtensteinklamm 444 stairs + 50m waterfall':'AT','Salzburg old town':'AT',
+  'Hohensalzburg Fortress interior':'AT','Wolfgangsee':'AT','Hallstatt golden hour':'AT',
+  'Gosausee glacier lake loop':'AT','Hallstatt Salt Mine':'AT','Skywalk':'AT',
+  'Beinhaus 1,200 skulls':'AT','Echern Valley + Waldbachstrub':'AT',
+  'Dachstein 5 Fingers 2,109m':'AT','lakefront golden hour':'AT',
+  'Grossglockner High Alpine Road':'AT','Fuscher Törl':'AT','Edelweißspitze 2,571m':'AT',
+  'Kaiser-Franz-Josefs-Höhe':'AT','Pasterze Glacier':'AT',
+  'Villgratental valley walk':'AT','Außervillgraten village':'AT',
+  'optional Thurntaler road lunch preview':'AT','rest day':'AT',
+  'Thurntaler 2,407m summit':'AT','Tre Cime view from Austrian side':'AT',
+  'Seebensee lake':'AT','Drachensee Dragon Lake':'AT','Coburger Hütte':'AT',
+  // Italy
+  'Seceda cable car':'IT','Fermeda Towers ridgeline':'IT','Val di Funes':'IT',
+  'Santa Maddalena':'IT','Lagazuoi WWI → Dobbiaco':'IT',
+  'Lago di Braies 6am sunrise':'IT','Cadini di Misurina viewpoint':'IT',
+  'Tre Cime loop 6.2mi':'IT','Rifugio Locatelli':'IT',
+  'Goodbye Dolomites':'IT','Olpererhütte hike':'IT','Kebema suspension bridge':'IT',
+  'Giant Swing':'IT','Mayrhofen overnight':'AT',
+  // Liechtenstein
+  'Vaduz':'LI',
+};
+
+const FLAG_TO_ISO = {'🇮🇸':'IS','🇨🇭':'CH','🇩🇪':'DE','🇦🇹':'AT','🇮🇹':'IT','🇱🇮':'LI'};
+
+function getDayCountries(dayEntry) {
+  const codes = new Set();
+  const flagRe = /[\u{1F1E0}-\u{1F1FF}]{2}/gu;
+  [dayEntry.flag, dayEntry.from, dayEntry.nightStay].forEach(str => {
+    if (!str) return;
+    const matches = str.match(flagRe);
+    if (matches) matches.forEach(f => { if (FLAG_TO_ISO[f]) codes.add(FLAG_TO_ISO[f]); });
+  });
+  if (codes.size === 0 && dayEntry.flag) {
+    const f = dayEntry.flag.trim();
+    if (FLAG_TO_ISO[f]) codes.add(FLAG_TO_ISO[f]);
+  }
+  return [...codes];
+}
+
+function isGeoMismatch(place, dayEntry) {
+  const placeCountry = PLACE_GEO[place];
+  if (!placeCountry) return false; // unknown place → no warning
+  const dayCountries = getDayCountries(dayEntry);
+  return dayCountries.length > 0 && !dayCountries.includes(placeCountry);
+}
+
+// ─── DRAG & DROP STATE ──────────────────────────────────────────────────────
+let dragState = { sourceDayIdx: null, place: null, pillIdx: null };
+
+function onPillDragStart(e) {
+  const pill = e.currentTarget;
+  dragState.sourceDayIdx = parseInt(pill.dataset.dayIndex);
+  dragState.place = pill.dataset.place;
+  dragState.pillIdx = parseInt(pill.dataset.pillIndex);
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', pill.dataset.place);
+  pill.classList.add('hl-pill--dragging');
+  document.querySelectorAll('.hl-pills').forEach(el => el.classList.add('hl-pills--drag-active'));
+}
+function onPillDragEnd(e) {
+  e.currentTarget.classList.remove('hl-pill--dragging');
+  document.querySelectorAll('.hl-pills').forEach(el => {
+    el.classList.remove('hl-pills--drag-active','hl-pills--drop-target');
+  });
+  dragState = { sourceDayIdx: null, place: null, pillIdx: null };
+}
+function onPillDragOver(e) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; }
+function onPillDragEnter(e) { e.preventDefault(); e.currentTarget.classList.add('hl-pills--drop-target'); }
+function onPillDragLeave(e) {
+  if (!e.currentTarget.contains(e.relatedTarget)) e.currentTarget.classList.remove('hl-pills--drop-target');
+}
+function onPillDrop(e) {
+  e.preventDefault();
+  e.currentTarget.classList.remove('hl-pills--drop-target');
+  const targetIdx = parseInt(e.currentTarget.dataset.dayIndex);
+  const { sourceDayIdx, place, pillIdx } = dragState;
+  if (sourceDayIdx === null || place === null || sourceDayIdx === targetIdx) return;
+
+  editableGlance[sourceDayIdx]._highlights.splice(pillIdx, 1);
+  editableGlance[targetIdx]._highlights.push(place);
+  saveGlance();
+
+  const mismatch = isGeoMismatch(place, editableGlance[targetIdx]);
+  rerenderGlanceTable();
+
+  if (mismatch) showGeoWarning(place, sourceDayIdx, targetIdx);
+}
+
+// ─── ADD HIGHLIGHT ──────────────────────────────────────────────────────────
+function onAddHighlightClick(e) {
+  const btn = e.currentTarget;
+  const dayIdx = parseInt(btn.dataset.dayIndex);
+  const parent = btn.parentElement;
+  const input = document.createElement('input');
+  input.className = 'hl-add-input';
+  input.placeholder = 'Add place…';
+  input.type = 'text';
+  parent.replaceChild(input, btn);
+  input.focus();
+
+  let committed = false;
+  function commit() {
+    if (committed) return;
+    committed = true;
+    const val = input.value.trim();
+    if (val) {
+      editableGlance[dayIdx]._highlights.push(val);
+      saveGlance();
+    }
+    rerenderGlanceTable();
+  }
+  input.addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') { ev.preventDefault(); commit(); }
+    if (ev.key === 'Escape') { committed = true; rerenderGlanceTable(); }
+  });
+  input.addEventListener('blur', commit);
+}
+
+// ─── TOAST WARNING ──────────────────────────────────────────────────────────
+function showGeoWarning(place, srcIdx, tgtIdx) {
+  const srcDay = editableGlance[srcIdx];
+  const tgtDay = editableGlance[tgtIdx];
+  const placeCountry = PLACE_GEO[place] || '??';
+  const tgtCountries = getDayCountries(tgtDay).join('/') || '??';
+
+  // Mark the moved pill with geo-warn class
+  document.querySelectorAll('.hl-pills').forEach(container => {
+    if (parseInt(container.dataset.dayIndex) === tgtIdx) {
+      const pills = container.querySelectorAll('.hl-pill');
+      pills.forEach(p => { if (p.dataset.place === place) p.classList.add('hl-pill--geo-warn'); });
+    }
+  });
+
+  const toast = document.createElement('div');
+  toast.className = 'hl-toast';
+  toast.innerHTML = '<span>⚠️ Moved "<strong>' + place + '</strong>" to Day ' + tgtDay.day +
+    ' — place is in ' + placeCountry + ', but Day ' + tgtDay.day + ' is in ' + tgtCountries + '</span>' +
+    '<a class="hl-toast-undo">Undo</a>';
+  document.body.appendChild(toast);
+
+  toast.querySelector('.hl-toast-undo').addEventListener('click', () => {
+    const idx = editableGlance[tgtIdx]._highlights.indexOf(place);
+    if (idx !== -1) editableGlance[tgtIdx]._highlights.splice(idx, 1);
+    editableGlance[srcIdx]._highlights.push(place);
+    saveGlance();
+    rerenderGlanceTable();
+    toast.remove();
+  });
+  setTimeout(() => { if (toast.parentNode) toast.remove(); }, 6000);
+}
+
+// ─── RE-RENDER ──────────────────────────────────────────────────────────────
+function rerenderGlanceTable() {
+  if (!glanceContainer || !originalGlanceRef) return;
+  const parent = glanceContainer.parentElement;
+  const newEl = renderSummaryTable({glance: originalGlanceRef, checklist: window._tripChecklist, accommodation: window._tripAccommodation});
+  parent.replaceChild(newEl, glanceContainer);
+  glanceContainer = newEl;
+}
+
 // ─── HELPERS ────────────────────────────────────────────────────────────────
 const h = (tag, attrs, ...children) => {
   const el = document.createElement(tag);
@@ -236,16 +467,17 @@ function exportGlanceToExcel(d) {
     ['Day','Date','Country','Departing From','Night Stay','Highlights','Drive','Drive Time','Action / Status','Map Link']
   ];
 
-  (d.glance || []).forEach(g => {
+  // Use editableGlance (with user edits) for export
+  (editableGlance.length ? editableGlance : d.glance || []).forEach(g => {
     const action = g.action ? g.action.text : '✓ Booked';
-    // Strip emojis from flag for cleaner Excel
+    const highlights = g._highlights ? g._highlights.join(' · ') : (g.highlights || '');
     rows.push([
       'Day ' + g.day,
       g.date,
       g.flag || '',
       g.from || '',
       g.nightStay || '',
-      g.highlights || '',
+      highlights,
       g.drive || '',
       g.driveTime || '',
       action,
@@ -542,9 +774,25 @@ function renderDayCard(day, idx) {
   return card;
 }
 
-// ── UPDATED: Trip at a Glance — 8 columns ───────────────────────────────────
+// ── UPDATED: Trip at a Glance — 8 columns + interactive highlights ────────
 function renderSummaryTable(d) {
   const wrap = div('');
+
+  // Toolbar: Reset + Export highlights
+  const hasEdits = localStorage.getItem(STORAGE_KEY) !== null;
+  if (hasEdits) {
+    const toolbar = h('div', {style:'display:flex;gap:8px;justify-content:flex-end;margin-bottom:8px;'});
+    const resetBtn = h('button', {class:'hl-ctrl-btn'}, '↺ Reset highlights');
+    resetBtn.addEventListener('click', () => {
+      if (confirm('Discard all highlight edits and reload original data?')) {
+        resetGlance();
+        rerenderGlanceTable();
+      }
+    });
+    toolbar.appendChild(resetBtn);
+    wrap.appendChild(toolbar);
+  }
+
   // Export bar — title + button side by side
   const exportBar = h('div', {class:'export-bar'});
   const barTitle = h('p', {class:'section-title', style:'margin-top:0;margin-bottom:0;flex:1;'}, 'Trip at a Glance');
@@ -564,7 +812,7 @@ function renderSummaryTable(d) {
 
   const tbody = h('tbody');
 
-  (d.glance || []).forEach(g => {
+  editableGlance.forEach((g, i) => {
     const bkTd = h('td', {class:'g-bookings'});
     g.bookings.split(' · ').forEach(b => {
       const s = h('span', {style:'display:block'});
@@ -573,12 +821,33 @@ function renderSummaryTable(d) {
       bkTd.appendChild(s);
     });
 
-    // Render highlights as pills
+    // Render highlights as interactive draggable pills
     const hlTd = h('td', {class:'g-highlights'});
     const pillWrap = div('hl-pills');
-    g.highlights.split(' · ').forEach(place => {
-      if (place.trim()) pillWrap.appendChild(h('span', {class:'hl-pill'}, place.trim()));
+    pillWrap.dataset.dayIndex = i;
+
+    g._highlights.forEach((place, pi) => {
+      const pill = h('span', {class:'hl-pill', draggable:'true'}, place);
+      pill.dataset.dayIndex = i;
+      pill.dataset.pillIndex = pi;
+      pill.dataset.place = place;
+      pill.addEventListener('dragstart', onPillDragStart);
+      pill.addEventListener('dragend', onPillDragEnd);
+      pillWrap.appendChild(pill);
     });
+
+    // "+" add button
+    const addBtn = h('button', {class:'hl-add-btn', title:'Add highlight'}, '+');
+    addBtn.dataset.dayIndex = i;
+    addBtn.addEventListener('click', onAddHighlightClick);
+    pillWrap.appendChild(addBtn);
+
+    // Drop zone events
+    pillWrap.addEventListener('dragover', onPillDragOver);
+    pillWrap.addEventListener('dragenter', onPillDragEnter);
+    pillWrap.addEventListener('dragleave', onPillDragLeave);
+    pillWrap.addEventListener('drop', onPillDrop);
+
     hlTd.appendChild(pillWrap);
 
     // Map link
@@ -718,6 +987,12 @@ async function init() {
     app.appendChild(renderHero(d));
     app.appendChild(renderStrip(d));
 
+    // Initialize editable highlights
+    originalGlanceRef = d.glance;
+    window._tripChecklist = d.checklist;
+    window._tripAccommodation = d.accommodation;
+    initEditableGlance(d.glance);
+
     const container = div('container');
     container.appendChild(renderFlights(d));
     container.appendChild(renderCars(d));
@@ -725,7 +1000,8 @@ async function init() {
     container.appendChild(renderAccommodation(d));
 
     container.appendChild(h('p', {class:'section-title'}, 'Day-by-Day Itinerary'));
-    container.appendChild(renderSummaryTable(d));    // ← UPDATED: 8-column glance table
+    glanceContainer = renderSummaryTable(d);
+    container.appendChild(glanceContainer);          // ← UPDATED: interactive highlights
 
     const daysGrid = div('days-grid');
     let cardIdx = 0;
