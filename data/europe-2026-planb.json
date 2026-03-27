@@ -533,45 +533,42 @@
     {
       "dayLabel": "6",
       "date": "Jun 25",
-      "title": "Eagle's Nest + Königssee + Jenner Summit",
-      "meta": "Jun 25 · Munich → Eagle's Nest → Königssee → Jenner → Berchtesgaden",
+      "title": "Königssee + Obersee + Hintersee Zauberwald",
+      "meta": "Jun 25 · Munich → Königssee → Obersee → Hintersee → Berchtesgaden",
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 6 Map — Munich → Eagle's Nest → Königssee → Jenner → Berchtesgaden",
-          "url": "https://www.google.com/maps/dir/Munich,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Berchtesgaden,+Germany"
+          "label": "Day 6 Map — Munich → Königssee → Hintersee → Berchtesgaden",
+          "url": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Munich area 7:30am</strong> · drive <strong>~2hrs</strong> → Berchtesgaden / Obersalzberg · arrive ~9:30am",
-            "⭐ <strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels · ~45 min · €10/adult",
-            "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first bus ~8:50am</strong> · elevator through the mountain · 1,834m · 360° panorama of the Alps · ~1.5hrs · €33/adult · ⚠️ must leave by 11:30am to make Königssee boat",
-            "Drive <strong>15 min</strong> → <strong>Königssee dock</strong>, Schönau am Königssee · arrive ~12:15pm · buy boat tickets",
-            "⭐ <strong>Königssee electric boat departs ~12:30pm</strong> — ride straight to <strong>Salet</strong> (55 min · do NOT get off at St. Bartholomä yet) · trumpet echo demonstration en route",
-            "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest at 470m) visible towering above · (~45 min return)",
-            "Board boat back to <strong>St. Bartholomä</strong> (20 min) · <strong>Lunch</strong> — beer garden at historic hunting lodge restaurant on the lakeside (~45 min)",
-            "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~3:30pm",
-            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop · free",
-            "Drive <strong>10 min</strong> → <strong>Jennerbahn valley station</strong> · cable car up to 1,800m · <strong>Jenner summit hike (1,874m)</strong> · 15–20 min · 360° panorama · Königssee below · Eagle's Nest visible across the valley",
-            "Cable car down ~<strong>6:00pm</strong> · drive <strong>10 min</strong> → <strong>Berchtesgaden / Schönau hotel</strong> · check in · ⏳ yet to book"
+            "Leave <strong>Munich area 8:30am</strong> · drive <strong>~2hrs</strong> → Königssee dock, Schönau am Königssee · arrive ~9:00am · buy boat tickets at the dock",
+            "⭐ <strong>Königssee electric boat departs ~9:30am</strong> — ride straight to <strong>Salet</strong> (55 min · do NOT get off at St. Bartholomä yet) · trumpet echo demonstration en route",
+            "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · <strong>Röthbach Waterfall</strong> (Germany's highest at 470m) towering in the distance · (~45 min return)",
+            "Board boat back to <strong>St. Bartholomä</strong> (20 min) · <strong>Lunch</strong> — beer garden at the historic hunting lodge restaurant on the lakeside (~1hr)",
+            "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~2:00pm",
+            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald (Magic Forest)</strong> — crystal-clear turquoise lake · giant moss-covered boulders + ancient trees · 45-min loop trail · free · one of the most romantic spots in Bavaria",
+            "Drive <strong>10 min</strong> → <strong>Berchtesgaden</strong> · check in hotel · arrive ~4:00pm · ⏳ yet to book",
+            "<strong>Afternoon rest</strong> — explore Berchtesgaden old town · early night · <strong>big day tomorrow</strong> — Eagle's Nest first bus 8:50am"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "💰 Eagle's Nest €33/adult · bus ticket at Obersalzberg car park · first bus 8:50am"
+          "text": "⊙ Book Königssee boat at seenschifffahrt.de — arrive 9am, depart 9:30am · return to Salet ~€29/adult · €14.50/child"
         },
         {
           "type": "alarm",
-          "text": "⏰ Leave Eagle's Nest by 11:30am — Königssee boat midday, Jenner cable car closes ~5:30pm"
+          "text": "⚠️ Ride boat ALL THE WAY to Salet first — do NOT get off at St. Bartholomä · do St. Bartholomä on the way back"
         },
         {
           "type": "alarm",
-          "text": "⊙ Book Königssee boat at seenschifffahrt.de — return ticket to Salet ~€29/adult"
+          "text": "⏰ Early night — Eagle's Nest first bus 8:50am tomorrow · leave hotel 7:30am"
         },
         {
           "type": "booking",
@@ -579,38 +576,39 @@
         }
       ],
       "summary": {
-        "highlights": "Eagle's Nest 1,834m · Königssee electric boat · Obersee + Röthbach Waterfall · Hintersee Zauberwald · Jenner summit",
-        "drive": "~150 km / 93 mi",
+        "highlights": "Königssee electric boat · Salet · Obersee + Röthbach Waterfall · St. Bartholomä lunch · Hintersee + Zauberwald Magic Forest",
+        "drive": "~145 km / 90 mi",
         "from": "Munich area 🇩🇪",
-        "to": "Berchtesgaden / Schönau 🇩🇪"
+        "to": "Berchtesgaden 🇩🇪"
       }
     },
     {
       "dayLabel": "7",
       "date": "Jun 26",
-      "title": "Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 26 · Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "title": "Eagle's Nest + Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 26 · Berchtesgaden → Eagle's Nest → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 7 Map — Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria"
+          "label": "Day 7 Map — Eagle's Nest → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+          "url": "https://www.google.com/maps/dir/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Berchtesgaden 8:00am</strong> · drive <strong>45 min</strong> → Liechtensteinklamm, St. Johann im Pongau 🇦🇹",
-            "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · <strong>444 stairs</strong> up + helix staircase · roaring torrent at the base · massive <strong>50m waterfall</strong> at the end · ~2.5hrs · €16/adult · €9/child · no booking needed",
-            "Drive <strong>45 min</strong> north → <strong>Salzburg</strong> · park at Altstadtgarage B (carved into the rock · €3.30/hr) · arrive ~12:30pm",
-            "<strong>Lunch</strong> — Café Tomaselli (oldest coffee house in Austria · Residenzplatz) or Universitätsplatz market (~1hr)",
-            "⭐ <strong>Salzburg old town walk</strong> — <strong>Getreidegasse</strong> (Mozart's birthplace street) · <strong>Residenzplatz</strong> · <strong>Salzburg Cathedral</strong> · <strong>Mirabell Gardens</strong> · ~1.5hrs",
-            "Drive <strong>45 min</strong> east via Route 158 → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~3:30pm",
-            "⭐ <strong>Wolfgangsee photo stop</strong> — turquoise lake backed by Schafberg mountain · iconic Salzkammergut view · lakefront promenade walk (~30 min · free)",
-            "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~4:30pm · ⚠️ P1/P2 parking or Obertraun + ferry",
-            "⭐ <strong>Hallstatt lakefront evening</strong> — arrive before crowds thin · lakeside promenade · market square · golden hour light on the lake · best photos of the trip",
-            "<strong>Dinner</strong> — Hallstatt lakeside restaurant (~1hr)",
+            "Leave <strong>Berchtesgaden 7:30am</strong> · drive <strong>15 min</strong> → Obersalzberg",
+            "⭐ <strong>Dokumentation Obersalzberg</strong> — WWII museum + original bunker tunnels · ~45 min · €10/adult",
+            "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first bus ~8:50am</strong> · elevator through the mountain · 1,834m · 360° panorama · ~1.5hrs · €33/adult · ⚠️ leave by 10:30am — Liechtensteinklamm next",
+            "Drive <strong>45 min</strong> west → <strong>Liechtensteinklamm, St. Johann im Pongau 🇦🇹</strong> · arrive ~11:15am",
+            "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · <strong>444 stairs</strong> up + helix staircase · roaring torrent · massive <strong>50m waterfall</strong> at the end · ~2.5hrs · €16/adult · €9/child · packed lunch at gorge café",
+            "Drive <strong>45 min</strong> north → <strong>Salzburg</strong> · park Altstadtgarage B · arrive ~3:15pm",
+            "⭐ <strong>Salzburg quick walk</strong> — <strong>Getreidegasse</strong> · Mozart's birthplace exterior · <strong>Residenzplatz</strong> · Salzburg Cathedral · ~45 min · ⚠️ Hohensalzburg interior saved for Jun 27 morning",
+            "Drive <strong>45 min</strong> east → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~5:00pm",
+            "⭐ <strong>Wolfgangsee photo stop</strong> — turquoise lake backed by Schafberg mountain · lakefront promenade (~20 min · free)",
+            "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~5:50pm · ⚠️ P1/P2 parking or Obertraun + ferry",
+            "⭐ <strong>Hallstatt golden hour lakefront</strong> — best light of the day · market square · lakeside walk · dinner",
             "Check in <strong>Hallstatt / Bad Goisern hotel</strong> · ⏳ yet to book · 1 night"
           ]
         }
@@ -618,7 +616,11 @@
       "tags": [
         {
           "type": "alarm",
-          "text": "💰 Liechtensteinklamm €16/adult · €9/child · no booking needed · opens 8am"
+          "text": "💰 Eagle's Nest €33/adult · first bus 8:50am · ⚠️ leave summit by 10:30am sharp"
+        },
+        {
+          "type": "alarm",
+          "text": "💰 Liechtensteinklamm €16/adult · €9/child · no booking · opens 8am · bring packed lunch"
         },
         {
           "type": "alarm",
@@ -630,11 +632,11 @@
         }
       ],
       "summary": {
-        "drive": "~200 km / 124 mi",
+        "drive": "~220 km / 137 mi",
         "time": "~45m",
         "from": "Berchtesgaden 🇩🇪",
         "to": "Hallstatt 🇦🇹",
-        "highlights": "Liechtensteinklamm 444 stairs · Salzburg old town · Wolfgangsee · Hallstatt golden hour",
+        "highlights": "Eagle's Nest 1,834m · Obersalzberg bunkers · Liechtensteinklamm 444 stairs + 50m waterfall · Salzburg walk · Wolfgangsee · Hallstatt golden hour",
         "bookings": [
           {
             "status": "booked",
@@ -1547,14 +1549,14 @@
       "flag": "🇩🇪",
       "from": "Munich area 🇩🇪",
       "nightStay": "Berchtesgaden / Schönau 🇩🇪 ⏳",
-      "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Königssee boat → Obersee · Röthbach Waterfall · Hintersee Zauberwald · Jenner summit 1,874m",
-      "drive": "~150 km / 93 mi",
+      "highlights": "Königssee electric boat · Obersee + Röthbach Waterfall (470m) · St. Bartholomä beer garden lunch · Hintersee + Zauberwald Magic Forest",
+      "drive": "~145 km / 90 mi",
       "driveTime": "~2hrs",
-      "bookings": "⏳ Book Berchtesgaden hotel Jun 25–26",
-      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Berchtesgaden,+Germany",
+      "bookings": "⏳ Berchtesgaden hotel Jun 25–26 · ⊙ Book Königssee boat",
+      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Berchtesgaden hotel Jun 25–26"
+        "text": "⏳ Book Berchtesgaden hotel · ⊙ Book Königssee boat"
       }
     },
     {
@@ -1563,14 +1565,14 @@
       "flag": "🇩🇪",
       "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Hallstatt 🇦🇹 ⏳",
-      "highlights": "Liechtensteinklamm 444 stairs + 50m waterfall · Salzburg old town · Wolfgangsee · Hallstatt golden hour",
-      "drive": "~200 km / 124 mi",
-      "driveTime": "~2h 45m",
-      "bookings": "⏳ Book Hallstatt / Bad Goisern hotel Jun 26–27",
-      "mapUrl": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria",
+      "highlights": "Eagle's Nest 1,834m · Dokumentation Obersalzberg · Liechtensteinklamm 444 stairs · Salzburg old town walk · Wolfgangsee · Hallstatt golden hour",
+      "drive": "~220 km / 137 mi",
+      "driveTime": "~3h 15m",
+      "bookings": "⏳ Hallstatt hotel Jun 26–27",
+      "mapUrl": "https://www.google.com/maps/dir/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Hallstatt hotel Jun 26–27"
+        "text": "⏳ Book Hallstatt / Bad Goisern hotel Jun 26–27"
       }
     },
     {
