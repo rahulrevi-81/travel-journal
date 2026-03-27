@@ -1,8 +1,8 @@
 {
   "id": "europe-2026",
   "meta": {
-    "title": "Europe Family Trip",
-    "subtitle": "June 2026",
+    "title": "Europe Family Road Trip 2026",
+    "subtitle": "Iceland · Switzerland · Germany · Austria · Italy · Liechtenstein",
     "tagline": "Iceland · Switzerland · Germany · Austria · Italy · Liechtenstein",
     "flags": [
       "🇮🇸",
@@ -116,7 +116,7 @@
       "dates": "Jun 20–21",
       "ref": "Airbnb · $290.36",
       "freeCancel": "",
-      "status": "booked"
+      "status": "Confirmed"
     },
     {
       "nights": "2",
@@ -125,7 +125,7 @@
       "dates": "Jun 21–22",
       "ref": "Booking.com · $263.98",
       "freeCancel": "Free cancel Jun 19",
-      "status": "booked"
+      "status": "Confirmed"
     },
     {
       "nights": "3–4",
@@ -134,7 +134,7 @@
       "dates": "Jun 22–24",
       "ref": "Airbnb · $255.92 + extension",
       "freeCancel": null,
-      "status": "confirmed"
+      "status": "Confirmed"
     },
     {
       "nights": "5",
@@ -143,7 +143,7 @@
       "dates": "Jun 24–25",
       "ref": "⏳ Yet to book — no place decided",
       "freeCancel": null,
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "6",
@@ -152,7 +152,7 @@
       "dates": "Jun 25–26",
       "ref": "⏳ Yet to book — 1 night · Hotel Edelweiss / Hotel Vier Jahreszeiten / Alpensport-Hotel Seimler",
       "freeCancel": null,
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "7–8",
@@ -161,7 +161,7 @@
       "dates": "Jun 26–28",
       "ref": "⏳ Yet to book — 2 nights · Heritage Hotel Hallstatt / Seehotel Grüner Baum / Pension Hallberg",
       "freeCancel": null,
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "—",
@@ -188,7 +188,7 @@
       "dates": "Jun 27–29",
       "ref": "#72072198804917 — keep as backup, sort manually",
       "stars": "9.6",
-      "status": "booked"
+      "status": "Confirmed"
     },
     {
       "nights": "—",
@@ -206,7 +206,7 @@
       "dates": "Jun 28–Jul 1",
       "ref": "#72072265941383 ⚠️ REBOOK — change check-in to Jun 28 (3 nights: Jun 28–Jul 1)",
       "stars": "10.0",
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "—",
@@ -224,7 +224,7 @@
       "dates": "Jul 1–3",
       "ref": "⏳ Yet to book — 2 nights · Hotel Santer Dobbiaco / Garni Residence Dobbiaco / Sesto area",
       "freeCancel": null,
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "14",
@@ -233,7 +233,7 @@
       "dates": "Jul 3–4",
       "ref": "⏳ Yet to book — 1 night",
       "freeCancel": null,
-      "status": "pending"
+      "status": "Yet to book"
     },
     {
       "nights": "15",
@@ -242,7 +242,7 @@
       "dates": "Jul 4–5",
       "ref": "—",
       "stars": null,
-      "status": "pending"
+      "status": "Yet to book"
     }
   ],
   "days": [
@@ -254,12 +254,8 @@
       "flag": "🇮🇸",
       "mapLinks": [
         {
-          "label": "Day 1 Map — Golden Circle + South Coast",
-          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport/Keri%C3%B0+Crater+Lake,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Black+Sand+Beach/V%C3%ADk,+Iceland/Skeidflot+871,+Iceland"
-        },
-        {
-          "label": "Day 2 Map — South Coast + Glacier Lagoon",
-          "url": "https://www.google.com/maps/dir/Skeidflot+871,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Kirkjubæjarklaustur,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon/Diamond+Beach+Iceland/Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
+          "label": "Day 1–2 Map — Iceland — Reykjanes, Geysir & South Coast",
+          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Ker%C3%AD%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Beach,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n,+Iceland"
         }
       ],
       "sections": [
@@ -348,8 +344,8 @@
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 3 Map — ZRH → Lake Thun → Blausee → Diemtigtal",
-          "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Spiez,+Switzerland/Blausee+Nature+Park,+Kandergrund,+Switzerland/Oey,+3753+Diemtigen,+Switzerland"
+          "label": "Day 3 Map — Fly → Lake Thun → Diemtigtal",
+          "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Diemtigtal,+Switzerland"
         }
       ],
       "sections": [
@@ -412,8 +408,8 @@
       "warning": true,
       "mapLinks": [
         {
-          "label": "Day 4 Map — Oeschinensee + Grindelwald First",
-          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland"
+          "label": "Day 4 Map — Oeschinensee + Grindelwald First — Double Gondola ",
+          "url": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Diemtigtal,+Switzerland"
         }
       ],
       "sections": [
@@ -478,8 +474,8 @@
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 5 Map — Grindelwald + Lauterbrunnen → Munich",
-          "url": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Grindelwald,+Switzerland/Lauterbrunnen,+Switzerland/Munich,+Germany"
+          "label": "Day 5 Map — Lauterbrunnen + Bachalpsee → Munich area",
+          "url": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Staubbach+Falls,+Switzerland/Munich,+Germany"
         }
       ],
       "sections": [
@@ -505,7 +501,7 @@
         },
         {
           "type": "alarm",
-          "text": "⚠️ Plan B — Neuschwanstein: book NOW at neuschwanstein.de if switching · June sells out months ahead · guided tour only ~€15/adult"
+          "text": "⚠️  — Neuschwanstein: book NOW at neuschwanstein.de if switching · June sells out months ahead · guided tour only ~€15/adult"
         },
         {
           "type": "booking",
@@ -538,8 +534,8 @@
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 6 Map — Munich → Königssee → Hintersee → Berchtesgaden",
-          "url": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany"
+          "label": "Day 6 Map — Königssee + Obersee + Hintersee + Jenner Summit",
+          "url": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Berchtesgaden,+Germany"
         }
       ],
       "sections": [
@@ -591,8 +587,8 @@
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 7 Map — Eagle's Nest → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-          "url": "https://www.google.com/maps/dir/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria"
+          "label": "Day 7 Map — Eagle's Nest + Liechtensteinklamm → Salzburg + Hoh",
+          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/Wolfgangsee,+St.+Gilgen,+Austria/Hallstatt,+Austria"
         }
       ],
       "sections": [
@@ -659,8 +655,8 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 8 Map — Hallstatt → Echern Valley → Dachstein → back",
-          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria"
+          "label": "Day 8 Map — Hallstatt Full Day — Gosausee · Salt Mine · Skywal",
+          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria"
         }
       ],
       "sections": [
@@ -722,7 +718,7 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Hallstatt → Grossglockner → Außervillgraten",
+          "label": "Day 9 Map — Grossglockner High Alpine Road → Außervillgraten",
           "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
@@ -781,7 +777,7 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Außervillgraten valley",
+          "label": "Day 10 Map — Außervillgraten — Rest + Explore Villgratental",
           "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innervillgraten,+Austria/Au%C3%9Fervillgraten,+Austria"
         }
       ],
@@ -842,8 +838,8 @@
       ],
       "mapLinks": [
         {
-          "label": "Day 11 Map — Thurntaler hike from Außervillgraten",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 11 Map — Außervillgraten · Thurntaler Summit Hike",
+          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler,+Au%C3%9Fervillgraten,+Austria"
         }
       ],
       "tags": [
@@ -874,7 +870,7 @@
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 12 Map — Außervillgraten → Seceda → Val di Funes → Lagazuoi → Cortina → Dobbiaco",
+          "label": "Day 12 Map — Seceda + Val di Funes + Lagazuoi + Cortina d'Ampez",
           "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Dobbiaco,+Italy"
         }
       ],
@@ -942,7 +938,7 @@
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 13 Map — Dobbiaco → Braies → Prato Piazza → Tre Cime → Dobbiaco",
+          "label": "Day 13 Map — Lago di Braies Sunrise + Prato Piazza + Cadini + T",
           "url": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Lago+di+Braies,+Italy/Prato+Piazza,+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Dobbiaco,+Italy"
         }
       ],
@@ -1000,7 +996,7 @@
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 14 Map — Dobbiaco → Mayrhofen → Schlegeis (Olpererhütte)",
+          "label": "Day 14 Map — Außervillgraten → Olpererhütte + Kebema Bridge → M",
           "url": "https://www.google.com/maps/dir/Dobbiaco,+Italy/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Mayrhofen,+Austria"
         }
       ],
@@ -1056,8 +1052,8 @@
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 15 Map — Mayrhofen → Ehrwald → Rhine Falls → ZRH",
-          "url": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland/Zurich+Airport,+Switzerland"
+          "label": "Day 15 Map — Seebensee + Drachensee → Rhine Falls → Schaffhause",
+          "url": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Austria/Zurich+Airport,+Switzerland"
         }
       ],
       "sections": [
@@ -1164,14 +1160,6 @@
       "link": null
     },
     {
-      "id": "neuschwanstein",
-      "label": "🏰 Neuschwanstein timed entry — only if switching from Ehrenberg on Jun 24",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Only if Plan B chosen",
-      "link": "https://www.neuschwanstein.de/englisch/tourist/tickets.htm"
-    },
-    {
       "id": "kopavogur",
       "label": "Cancel Kópavogur booking",
       "status": "done",
@@ -1228,30 +1216,6 @@
       "link": null
     },
     {
-      "id": "cancel_vienna",
-      "label": "Cancel Vienna House Dornbirn overnight #72072266618761",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Cancel ASAP — daytime stop only",
-      "link": null
-    },
-    {
-      "id": "shift_homebound",
-      "label": "Cancel HOMEBOUND Bad Goisern #72072198804917 — DONE",
-      "status": "done",
-      "ref": "#72072198804917",
-      "deadline": "Contact property",
-      "link": null
-    },
-    {
-      "id": "salzburg_hotel",
-      "label": "✅ Wohlfühl Apartment Bad Reichenhall — Jun 25–27 · #5205.018.552",
-      "status": "done",
-      "ref": null,
-      "deadline": "Free cancel until Jun 23",
-      "link": "https://www.booking.com/city/at/salzburg.html"
-    },
-    {
       "id": "bad_goisern_new",
       "label": "🏨 Book replacement — Bad Goisern / Hallstatt area · Jun 27–29 (2 nights)",
       "status": "urgent",
@@ -1292,14 +1256,6 @@
       "link": "https://www.booking.com/searchresults.html?dest_id=-127748&dest_type=city&checkin=2026-07-01&checkout=2026-07-03"
     },
     {
-      "id": "rebook-bad-reichenhall",
-      "label": "🔴 Cancel Bad Reichenhall 2nd night (Jun 26–27) · Booking.com #5205.018.552 · free cancel before Jun 23",
-      "status": "urgent",
-      "ref": "#5205.018.552",
-      "deadline": "Before Jun 23 2026",
-      "link": "https://www.booking.com"
-    },
-    {
       "id": "rebook-hallstatt",
       "label": "⏳ Book Hallstatt hotel Jun 26–28 (2 nights) · Heritage Hotel Hallstatt / Seehotel Grüner Baum",
       "status": "pending",
@@ -1313,14 +1269,6 @@
       "status": "urgent",
       "ref": "#72072265941383",
       "deadline": "Before availability fills",
-      "link": "https://www.expedia.com"
-    },
-    {
-      "id": "rebook-homebound",
-      "label": "⚠️ HOMEBOUND Bad Goisern #72072198804917 — no longer needed · cancel or keep as backup · your decision",
-      "status": "pending",
-      "ref": "#72072198804917",
-      "deadline": "Check cancel policy",
       "link": "https://www.expedia.com"
     },
     {
@@ -1346,14 +1294,6 @@
       "ref": null,
       "deadline": "Book now — July peak",
       "link": "https://www.booking.com/searchresults.html?dest_id=-121488&dest_type=city&checkin=2026-07-01&checkout=2026-07-03"
-    },
-    {
-      "id": "book-mayrhofen",
-      "label": "⏳ Book Mayrhofen / Zillertal hotel Jul 3–4 (1 night)",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-1994512&dest_type=city&checkin=2026-07-03&checkout=2026-07-04"
     },
     {
       "id": "book-zrh",
@@ -1590,7 +1530,7 @@
       "drive": "~174 km / 108 mi",
       "driveTime": "~2hrs",
       "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH",
-      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez,+Switzerland/Oey,+Diemtigtal,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Diemtigtal,+Switzerland",
       "action": null
     },
     {
@@ -1603,7 +1543,7 @@
       "drive": "~130 km / 81 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Grindelwald First gondola #238070 · ⏰ Book Oeschinensee slot",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Kandersteg,+Switzerland/Grindelwald,+Switzerland/Oey,+Diemtigtal,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Diemtigtal,+Switzerland",
       "action": null
     },
     {
@@ -1616,7 +1556,7 @@
       "drive": "~260 km / 162 mi",
       "driveTime": "~3hrs 30m",
       "bookings": "⏳ Jun 24 hotel — no place decided yet",
-      "mapUrl": "https://www.google.com/maps/dir/Oey,+Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Munich,+Germany",
+      "mapUrl": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Staubbach+Falls,+Switzerland/Munich,+Germany",
       "action": {
         "level": "pending",
         "text": "⏳ Munich hotel — no place decided"
@@ -1632,7 +1572,7 @@
       "drive": "~155 km / 96 mi",
       "driveTime": "~2hrs",
       "bookings": "⏳ Berchtesgaden hotel Jun 25–26 · ⊙ Book Königssee boat",
-      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany",
+      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Jennerbahn,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Berchtesgaden,+Germany",
       "action": {
         "level": "pending",
         "text": "⏳ Book Berchtesgaden hotel · ⊙ Book Königssee boat"
@@ -1648,7 +1588,7 @@
       "drive": "~220 km / 137 mi",
       "driveTime": "~3h 15m",
       "bookings": "⏳ Hallstatt hotel Jun 26–27",
-      "mapUrl": "https://www.google.com/maps/dir/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/Wolfgangsee,+St.+Gilgen,+Austria/Hallstatt,+Austria",
       "action": {
         "level": "pending",
         "text": "⏳ Book Hallstatt / Bad Goisern hotel Jun 26–27"
@@ -1664,7 +1604,7 @@
       "drive": "~30 km / 19 mi",
       "driveTime": "~45min total",
       "bookings": "⏳ Extend Hallstatt hotel Jun 26–28 · ⊙ Book Salt Mine + Dachstein",
-      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria",
       "action": {
         "level": "pending",
         "text": "⏳ Extend Hallstatt hotel · ⊙ Book salzwelten.at + dachstein.at"
@@ -1696,7 +1636,7 @@
       "drive": "~10 km / 6 mi",
       "driveTime": "~15min",
       "bookings": "✅ Das Auss.Zeit Night 2",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Gosausee,+Gosau,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Innervillgraten,+Austria/Au%C3%9Fervillgraten,+Austria",
       "action": null
     },
     {
@@ -1709,7 +1649,7 @@
       "drive": "~10 km / 6 mi",
       "driveTime": "~15min",
       "bookings": "⚠️ Das Auss.Zeit #72072265941383 — REBOOK Jun 29–Jul 1 (2 nights)",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler+Rast,+Au%C3%9Fervillgraten,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler,+Au%C3%9Fervillgraten,+Austria",
       "action": {
         "level": "pending",
         "text": "⏳ Last night at Das Auss.Zeit (rebook needed)"
@@ -1773,7 +1713,7 @@
       "drive": "~330 km / 205 mi",
       "driveTime": "~5hrs total",
       "bookings": "⏳ Book ZRH airport hotel · ✅ Hertz return L5350959316",
-      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland/Zurich+Airport,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Austria/Zurich+Airport,+Switzerland",
       "action": {
         "level": "pending",
         "text": "⏳ Book ZRH Airport hotel"

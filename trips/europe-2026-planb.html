@@ -629,6 +629,13 @@ function renderTripMaps(d) {
   return wrap;
 }
 
+function statusColor(v) {
+  if (v === 'Confirmed')     return 'var(--sage)';
+  if (v === 'Pending')       return 'var(--gold)';
+  if (v === 'Need to adjust') return '#e74c3c';
+  return 'var(--slate)';
+}
+
 function renderAccommodation(d) {
   const wrap = div('', h('p', {class:'section-title'}, 'Accommodation'));
   const tableWrap = div('');
@@ -638,9 +645,21 @@ function renderAccommodation(d) {
     ...['Nights','Property','Dates','Ref','Status'].map(t => h('th',{},t))
   )));
   const tbody = h('tbody');
+  const validStatuses = ['Confirmed','Pending','Yet to book','Need to adjust'];
   d.accommodation.forEach(row => {
-    const statusMap   = { booked:'✓ Booked', confirmed:'✓ Confirmed', pending:'⏳ Pending' };
-    const statusClass = { booked:'booked', confirmed:'booked', pending:'pending' };
+    if (row.status === 'cancelled') return;
+    const statusTd = h('td',{});
+    const sel = document.createElement('select');
+    sel.style.cssText = 'font-size:12px;padding:4px 8px;border:0.5px solid var(--border);border-radius:3px;background:var(--cream);cursor:pointer;font-weight:500;';
+    validStatuses.forEach(v => {
+      const opt = document.createElement('option');
+      opt.value = v; opt.textContent = v;
+      if (v === row.status) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.style.color = statusColor(row.status);
+    sel.onchange = function() { row.status = this.value; this.style.color = statusColor(this.value); };
+    statusTd.appendChild(sel);
     tbody.appendChild(h('tr', {},
       h('td',{},row.nights),
       h('td',{}, h('span',{class:'prop'},row.property), h('br'), h('span',{class:'ref'},row.address)),
@@ -648,7 +667,7 @@ function renderAccommodation(d) {
       h('td',{}, h('span',{class:'ref', html: row.ref
         + (row.freeCancel ? ' <span style="color:var(--sage);font-size:10px">'+row.freeCancel+'</span>' : '')
         + (row.stars ? ' <span class="stars">'+row.stars+'★</span>' : '')})),
-      h('td',{}, h('span',{class:statusClass[row.status]}, statusMap[row.status]))
+      statusTd
     ));
   });
   tbl.appendChild(tbody);
@@ -663,7 +682,7 @@ function classifyItem(text) {
   if (t.includes('check in') || t.includes('check-in') || t.includes('night at') || t.includes('night —') || t.includes('✅')) return 'checkin';
   if (t.includes('lunch') || t.includes('dinner') || t.includes('breakfast') || t.includes('fondue') || t.includes('meal') || t.includes('eat')) return 'meal';
   if (t.includes('⭐') || t.includes('plan a') || t.includes('plan b') || t.includes('optional')) {
-    if (t.includes('plan b') || t.includes('backup')) return 'planb';
+    if (t.includes('backup')) return 'planb';
     return 'wow';
   }
   if (t.includes('hike') || t.includes('walk') || t.includes('trail') || t.includes('summit') || t.includes('gorge') || t.includes('climb') || t.includes('loop') || t.includes('ascent') || t.includes('gondola') || t.includes('cable car') || t.includes('trek')) return 'hike';
