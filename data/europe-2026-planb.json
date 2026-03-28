@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:15:22Z"
+    "_updated": "2026-03-28T06:22:10Z"
   },
   "bookingStrip": [
     {
@@ -247,10 +247,10 @@
     },
     {
       "nights": "14",
-      "property": "Ehrwald Hotel 🇦🇹",
-      "address": "Ehrwald, Zugspitz Arena, Tyrol, Austria — near Ehrwalder Almbahn",
+      "property": "Schaffhausen Hotel 🇨🇭",
+      "address": "Schaffhausen, Switzerland — near Rhine Falls / old town",
       "dates": "Jul 3–4",
-      "ref": "⏳ Yet to book — 1 night · Hotel Zugspitze / Gasthof Post Ehrwald · 5min to cable car",
+      "ref": "⏳ Yet to book — 1 night · Park Villa Schaffhausen / Hotel Kronenhof / near Rheinfall",
       "freeCancel": null,
       "status": "Yet to book"
     },
@@ -1016,49 +1016,52 @@
     {
       "dayLabel": "14",
       "date": "Jul 3",
-      "title": "Innsbruck — Golden Roof + Nordkette 2,334m → Ehrwald",
-      "meta": "Jul 3 · Innsbruck morning · Golden Roof · Nordkette cable car 2,334m · drive to Ehrwald · sleep Ehrwald",
+      "title": "Seebensee + Drachensee Dragon Lake → Rhine Falls → Schaffhausen",
+      "meta": "Jul 3 · Innsbruck checkout → Ehrwald → Seebensee + Drachensee → Rhine Falls golden hour → Schaffhausen",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day Map — Jul 3",
-          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Hafelekar,+Innsbruck,+Austria/Ehrwald,+Austria"
+          "label": "Day 14 Map — Innsbruck → Ehrwald → Seebensee/Drachensee → Rhine Falls → Schaffhausen",
+          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Morning stroll — <strong>Innsbruck old town</strong> · <strong>Golden Roof (Goldenes Dachl)</strong> · 2,738 fire-gilded copper tiles · built 1500 · Herzog-Friedrich-Straße medieval arcade · Hofburg Imperial Palace exterior · ~1hr",
-            "⭐ <strong>Nordkette cable car</strong> — Innsbruck Hungerburgbahn from Congress station (city centre) → Hungerburg → Seegrube → <strong>Hafelekar 2,334m</strong> · ~€37 return · the mountain rises directly above the city",
-            "⭐ <strong>Hafelekar summit (2,334m)</strong> — 360° panorama · Inn valley below · Karwendel Alps · on a clear day the entire Alpine chain · ridge walk to cross (~30min easy) · mountain goats",
-            "🥾 <strong>Seegrube area walk</strong> — alpine meadows between cable car stations · Nordkette restaurant lunch · ~1hr",
-            "<strong>Cable car back down</strong> by <strong>1:30pm</strong> · checkout Innsbruck hotel",
-            "Drive <strong>1hr</strong> → <strong>Ehrwald</strong> via Telfs → Lermoos · arrive ~3:00pm · check in · rest",
-            "⭐ <strong>Ehrwald village evening</strong> — Zugspitze directly above · Alpine village square · Tyrolean dinner · <strong>early night — Seebensee 8:30am tomorrow</strong>"
+            "Checkout <strong>Innsbruck 8:30am</strong> · drive <strong>1hr</strong> → <strong>Ehrwald</strong> · park at Ehrwalder Almbahn valley station · arrive ~9:30am",
+            "⭐ <strong>Ehrwalder Almbahn cable car</strong> up to mountain station · ~€21.50 return · views of Zugspitze massif on the ascent",
+            "⭐ <strong>Seebensee</strong> — easy <strong>45min gravel path</strong> from cable car top · turquoise glacial lake at 1,657m · Zugspitze massif reflected in still water · one of the most beautiful mountain lakes in Austria",
+            "🥾 <strong>Drachensee + Coburger Hütte</strong> — steep <strong>30–45min climb (260m)</strong> from Seebensee · 'Dragon Lake' of dark emerald colour · <strong>Coburger Hütte perched dramatically above</strong> · view straight up at Germany's highest peak",
+            "<strong>Lunch at Coburger Hütte</strong> — Kaiserschmarrn · Tiroler Gröstl · cash only · glacier views · ~1hr",
+            "Descent <strong>~1.5hrs</strong> · back at Ehrwald valley by <strong>2:30pm</strong>",
+            "Drive <strong>2hrs 30min</strong> west via Fernpass → Arlberg → Feldkirch → Schaffhausen",
+            "⭐ <strong>Rhine Falls (Rheinfall)</strong> — arrive ~5:00pm · <strong>Europe's largest waterfall</strong> · boat to the centre rock (~€7) · golden hour mist and spray · thundering curtain of water · ~1hr",
+            "Drive <strong>10 min</strong> → <strong>Schaffhausen</strong> · check in hotel · ⏳ yet to book · <strong>50km from ZRH</strong>",
+            "⭐ <strong>Schaffhausen old town evening</strong> — Munot fortress · medieval Altstadt · Rhine walk · dinner · early night · <strong>Stein am Rhein tomorrow morning</strong>"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⭐ Nordkette from city centre — Hungerburgbahn tram from Congress station · ~€37 return · first car 8:30am"
+          "text": "⏰ Leave Innsbruck 8:30am · Ehrwald 9:30am · back at valley 2:30pm · Rhine Falls by 5pm"
         },
         {
           "type": "alarm",
-          "text": "⏰ Back down by 1:30pm · checkout · drive 1hr to Ehrwald · arrive 3pm · rest before Seebensee"
+          "text": "💰 Ehrwalder Almbahn ~€21.50 return · Coburger Hütte cash only · Rhine Falls boat ~€7"
         },
         {
           "type": "booking",
-          "text": "⏳ Book Ehrwald hotel Jul 3–4 · Hotel Zugspitze / Gasthof Post / near Ehrwalder Almbahn"
+          "text": "⏳ Book Schaffhausen hotel Jul 3–4 · Park Villa / Hotel Kronenhof / near Rhine Falls"
         }
       ],
       "summary": {
-        "drive": "~90 km / 56 mi",
+        "drive": "~280 km / 174 mi",
         "time": "3h 10m",
         "from": "Innsbruck 🇦🇹",
-        "to": "Ehrwald 🇦🇹",
-        "highlights": "Innsbruck Golden Roof + old town · Nordkette cable car 2,334m · Hafelekar summit panorama · drive to Ehrwald · Zugspitze views",
+        "to": "Schaffhausen 🇨🇭",
+        "highlights": "Seebensee turquoise glacier lake · Drachensee Dragon Lake · Coburger Hütte · Rhine Falls golden hour · Schaffhausen old town",
         "bookings": [
           {
             "status": "booked",
@@ -1070,57 +1073,50 @@
     {
       "dayLabel": "15",
       "date": "Jul 4",
-      "title": "Seebensee + Drachensee → Rhine Falls → Stein am Rhein → ZRH",
-      "meta": "Jul 4 · Ehrwald → Seebensee + Drachensee → Rhine Falls → Stein am Rhein → ZRH airport",
+      "title": "Stein am Rhein → ZRH · Fly Home",
+      "meta": "Jul 4 · Schaffhausen → Stein am Rhein → ZRH Airport · last day · evening flight tomorrow",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
-          "label": "Day Map — Jul 4",
-          "url": "https://www.google.com/maps/dir/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland"
+          "label": "Day 15 Map — Schaffhausen → Stein am Rhein → ZRH Airport",
+          "url": "https://www.google.com/maps/dir/Schaffhausen,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave Ehrwald <strong>8:30am</strong> · walk/drive to <strong>Ehrwalder Almbahn</strong> valley station · cable car up · ~€21.50 return",
-            "⭐ <strong>Seebensee</strong> — easy 45min gravel path from cable car top station · turquoise glacial lake at 1,657m · Zugspitze massif reflected in still water · bring snacks",
-            "🥾 <strong>Drachensee + Coburger Hütte</strong> — steep 30–45min climb (260m) from Seebensee · 'Dragon Lake' of dark emerald colour · <strong>Coburger Hütte perched above</strong> · one of the most dramatic hut positions in the Alps",
-            "⭐ <strong>Zugspitze from Austrian side</strong> — from Coburger Hütte you look directly up at Germany's highest peak · dramatically different angle from any tourist route",
-            "<strong>Lunch at Coburger Hütte</strong> — Kaiserschmarrn · Tiroler Gröstl · cash only · glacier views · ~1hr",
-            "Descend ~<strong>1.5hrs</strong> · back at valley by <strong>2:00pm</strong> · return Hertz car ZRH · drive <strong>~2hrs 30min</strong> → Rhine Falls",
-            "⭐ <strong>Rhine Falls (Rheinfall), Neuhausen am Rheinfall</strong> — <strong>Europe's largest waterfall</strong> · boat to the centre rock · thundering curtain of water · mist spray · ~1hr · ~€7 boat",
-            "Drive <strong>15 min</strong> → <strong>Stein am Rhein</strong>",
-            "⭐ <strong>Stein am Rhein</strong> — one of Europe's best-preserved medieval towns · <strong>painted house facades</strong> on the market square (Rathausplatz) · Kloster St Georgen · Rhine waterfront promenade · ~1hr walk · free",
-            "Drive <strong>45 min</strong> → <strong>ZRH Airport hotel</strong> · check in · arrive ~8:00pm · pack for early flight",
-            "⚠️ <strong>FI571 departs 7:55am tomorrow</strong> · check in at ZRH by <strong>6:00am</strong> · alarm 5:00am"
+            "Relaxed morning — breakfast at hotel · no rush · <strong>Stein am Rhein is 15min away</strong>",
+            "Drive <strong>15 min</strong> → <strong>Stein am Rhein</strong> · park near the Rhine",
+            "⭐ <strong>Stein am Rhein</strong> — one of Europe's <strong>best-preserved medieval towns</strong> · Rathausplatz market square with <strong>painted house facades</strong> (every building a different fresco) · Kloster St Georgen · Rhine waterfront promenade · castle above the town · ~1.5hrs · free",
+            "⭐ <strong>Stroll the Rhine waterfront</strong> — watch the boats · coffee on the terrace · final Alps views to the south",
+            "Drive <strong>50 min</strong> → <strong>ZRH Airport</strong> · return Hertz car · check in hotel",
+            "⭐ <strong>Optional: Zurich city visit</strong> (30min from airport) — Bahnhofstrasse · Lindenhügel old town · Lake Zurich waterfront · if energy allows",
+            "<strong>Pack carefully</strong> · charge devices · set <strong>alarm 5:00am</strong>",
+            "⚠️ <strong>FI571 departs ZRH 7:55am</strong> → KEF → MCO 8:50pm · check in by <strong>6:00am</strong> · terminal walk ~20min from most airport hotels"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⏰ Leave Ehrwald 8:30am · back at valley by 2pm · no margin — flight tomorrow 7:55am"
+          "text": "⚠️ FI571 ZRH 7:55am — check in by 6:00am · alarm 5:00am · hotel at or near terminal"
         },
         {
           "type": "alarm",
-          "text": "💰 Ehrwalder Almbahn ~€21.50 return · Coburger Hütte cash only · Rhine Falls boat ~€7"
-        },
-        {
-          "type": "alarm",
-          "text": "⚠️ FI571 ZRH 7:55am — check in by 6am · alarm 5am · hotel must be at or near terminal"
+          "text": "🚗 Return Hertz car ZRH — confirm return terminal · check fuel policy · allow 30min"
         },
         {
           "type": "booking",
-          "text": "⏳ Book ZRH airport hotel Jul 4–5 · Radisson Blu ZRH / ibis Budget ZRH / Mövenpick ZRH"
+          "text": "⏳ Book ZRH airport hotel Jul 4–5 · Radisson Blu ZRH / ibis ZRH / Mövenpick ZRH"
         }
       ],
       "summary": {
-        "drive": "~330 km / 205 mi",
+        "drive": "~65 km / 40 mi",
         "time": "2h 30m",
-        "from": "Ehrwald 🇦🇹",
+        "from": "Schaffhausen 🇨🇭",
         "to": "ZRH Airport Hotel 🇨🇭",
-        "highlights": "Seebensee turquoise glacier lake · Drachensee Dragon Lake · Coburger Hütte · Zugspitze views · Rhine Falls boat · Stein am Rhein medieval town · ZRH",
+        "highlights": "Stein am Rhein painted medieval town · Rhine waterfront · ZRH · optional Zurich city · fly home",
         "bookings": [
           {
             "status": "pending",
@@ -1715,12 +1711,12 @@
       "date": "Jul 3",
       "flag": "🇮🇹",
       "from": "Innsbruck 🇦🇹",
-      "nightStay": "Ehrwald 🇦🇹 ⏳",
-      "highlights": "Innsbruck Golden Roof + old town · Nordkette cable car 2,334m · Hafelekar summit · drive to Ehrwald",
-      "drive": "~90 km / 56 mi",
-      "driveTime": "~1h",
+      "nightStay": "Schaffhausen 🇨🇭 ⏳",
+      "highlights": "Seebensee glacier lake · Drachensee Dragon Lake · Coburger Hütte · Rhine Falls golden hour · Schaffhausen old town",
+      "drive": "~280 km / 174 mi",
+      "driveTime": "~3h 30m",
       "bookings": "⏳ Book Mayrhofen hotel 1 night",
-      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Hafelekar,+Innsbruck,+Austria/Ehrwald,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland",
       "action": {
         "level": "pending",
         "text": "⏳ Book Mayrhofen 1 night"
@@ -1730,13 +1726,13 @@
       "day": "15",
       "date": "Jul 4",
       "flag": "🇦🇹",
-      "from": "Ehrwald 🇦🇹",
+      "from": "Schaffhausen 🇨🇭",
       "nightStay": "ZRH Airport Hotel 🇨🇭 ⏳",
-      "highlights": "Seebensee glacier lake · Drachensee Dragon Lake · Coburger Hütte · Rhine Falls boat · Stein am Rhein medieval town · ZRH",
-      "drive": "~330 km / 205 mi",
-      "driveTime": "~4h",
+      "highlights": "Stein am Rhein painted medieval town · Rhine waterfront · ZRH airport · optional Zurich · fly tomorrow",
+      "drive": "~65 km / 40 mi",
+      "driveTime": "~1h",
       "bookings": "⏳ Book ZRH airport hotel · ✅ Hertz return L5350959316",
-      "mapUrl": "https://www.google.com/maps/dir/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Schaffhausen,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland",
       "action": {
         "level": "pending",
         "text": "⏳ Book ZRH Airport hotel"
