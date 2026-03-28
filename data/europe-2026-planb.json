@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:24:42Z"
+    "_updated": "2026-03-28T06:25:52Z"
   },
   "bookingStrip": [
     {
@@ -955,7 +955,7 @@
     {
       "dayLabel": "13",
       "date": "Jul 2",
-      "title": "Olpererhütte + Kebema → Achensee → Swarovski Crystal Worlds → Innsbruck",
+      "title": "Olpererhütte + Kebema → Achensee → Swarovski → Innsbruck + Nordkette (optional evening)",
       "meta": "Jul 2 · Mayrhofen → Schlegeis (Olpererhütte) → Achensee → Wattens (Swarovski) → Innsbruck",
       "flag": "🇮🇹",
       "mapLinks": [
@@ -977,6 +977,9 @@
             "Drive <strong>40 min</strong> → <strong>Swarovski Crystal Worlds (Kristallwelten), Wattens</strong> · arrive ~5:30pm · open until 7pm",
             "⭐ <strong>Swarovski Crystal Worlds</strong> — giant's garden · 17 crystal chambers underground · largest crystal in the world · kids love the magic mirrors · ~€22/adult · ~€12/child · ~1hr",
             "Drive <strong>20 min</strong> → <strong>Innsbruck</strong> · check in hotel · arrive ~7:30pm",
+            "⭐ <strong>Nordkette cable car — optional evening</strong> · walk/tram 10 min from hotel → <strong>Hungerburgbahn Congress station</strong> · ride up to <strong>Hafelekar 2,334m</strong> · depart ~8:00pm · last car up ~10:30pm in July",
+            "⭐ <strong>Hafelekar summit at golden hour</strong> — 2,334m directly above Innsbruck · <strong>alpine glow on the Karwendel Alps</strong> · Inn valley glittering below · summer sunset doesn't fully darken until ~10pm · ~1hr at summit · ~€37 return",
+            "Cable car back down by <strong>9:30pm</strong> · late dinner in Innsbruck old town · this is a <strong>long day from 8am — judge energy levels on the day</strong>",
             "⭐ <strong>Innsbruck evening</strong> — <strong>Golden Roof</strong> (Goldenes Dachl) · Herzog-Friedrich-Straße medieval arcade · Maria-Theresien-Straße with Nordkette backdrop · dinner in old town"
           ]
         }
@@ -988,11 +991,15 @@
         },
         {
           "type": "alarm",
-          "text": "💰 Schlegeis toll €17 cash · Olpererhütte cash only · Swarovski ~€22/adult €12/child"
+          "text": "💰 Schlegeis toll €17 cash · Olpererhütte cash only · Swarovski ~€22/adult €12/child · Nordkette ~€37 return"
         },
         {
           "type": "alarm",
-          "text": "⛵ Achensee boat — Achensee Schifffahrt · check schedule at achensee.com · ~€15/adult"
+          "text": "⭐ Nordkette: Hungerburgbahn from Congress station · last cable car up ~10:30pm · judge energy on the day — optional"
+        },
+        {
+          "type": "alarm",
+          "text": "⛵ Achensee boat — achensee.com · ~€15/adult · check schedule"
         },
         {
           "type": "booking",
@@ -1004,7 +1011,7 @@
         "time": "~1h 30m",
         "from": "Mayrhofen, Zillertal 🇦🇹",
         "to": "Innsbruck 🇦🇹",
-        "highlights": "Olpererhütte 600m hike · Kebema suspension bridge · Achensee boat on Austria's largest mountain lake · Swarovski Crystal Worlds · Innsbruck Golden Roof evening",
+        "highlights": "Olpererhütte 600m hike · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Innsbruck Golden Roof · optional Nordkette 2,334m golden hour",
         "bookings": [
           {
             "status": "booked",
@@ -1704,7 +1711,7 @@
       "flag": "🇮🇹",
       "from": "Mayrhofen 🇦🇹",
       "nightStay": "Innsbruck 🇦🇹 ⏳",
-      "highlights": "Olpererhütte 600m · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Innsbruck Golden Roof evening",
+      "highlights": "Olpererhütte 600m · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Innsbruck Golden Roof · optional Nordkette 2,334m evening",
       "drive": "~120 km / 75 mi",
       "driveTime": "~2h",
       "bookings": "⏳ Dobbiaco hotel 2nd night",
