@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:15:08Z"
+    "_updated": "2026-03-28T06:15:22Z"
   },
   "bookingStrip": [
     {
@@ -334,7 +334,7 @@
         }
       ],
       "summary": {
-        "drive": "~90 mi Day 1 / ~95 mi Day 2",
+        "drive": "~358 km / 222 mi",
         "time": "~14hrs daylight each day",
         "from": "Reykjavík / KEF 🇮🇸",
         "to": "Room in Skeidflot → BergOne",
@@ -352,7 +352,8 @@
             "status": "booked",
             "text": "✓ Budget car KEF"
           }
-        ]
+        ],
+        "driveTime": "~2 days total"
       }
     },
     {
@@ -1520,7 +1521,7 @@
       "from": "Keflavík / KEF 🇮🇸",
       "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
       "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi cave · Skógafoss · Reynisfjara black sand beach · Vík village",
-      "drive": "~450 km / 280 mi",
+      "drive": "~358 km / 222 mi",
       "driveTime": "~2 days",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
       "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
@@ -1534,7 +1535,7 @@
       "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
       "highlights": "Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier walk · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
       "drive": "~230 km / 143 mi",
-      "driveTime": "~5hrs",
+      "driveTime": "~3h",
       "bookings": "✓ BergOne",
       "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
       "action": null
