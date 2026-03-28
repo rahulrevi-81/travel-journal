@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T19:45:52Z"
+    "_updated": "2026-03-28T21:06:15Z"
   },
   "bookingStrip": [
     {
@@ -220,12 +220,12 @@
     },
     {
       "nights": "12",
-      "property": "Mayrhofen / Zillertal Hotel 🇦🇹",
-      "address": "Mayrhofen im Zillertal, Tyrol, Austria",
+      "property": "Keyone Rooms Finkenberg 🇦🇹",
+      "address": "Dorf 131, 6292 Finkenberg, Austria",
       "dates": "Jul 1–2",
-      "ref": "⏳ Yet to book — 1 night",
+      "ref": "✅ Booking · $176 / €152.92 · check-in 16:00–00:00 · check-out 01:00–10:00",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "13",
@@ -897,8 +897,8 @@
     {
       "dayLabel": "12",
       "date": "Jul 1",
-      "title": "Full Day Alpe di Siusi → Mayrhofen",
-      "meta": "Jul 1 · Siusi → Alpe di Siusi full morning → drive to Mayrhofen · sleep Mayrhofen",
+      "title": "Full Day Alpe di Siusi → Finkenberg",
+      "meta": "Jul 1 · Siusi → Alpe di Siusi full morning → drive to Finkenberg · sleep Finkenberg",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -916,8 +916,8 @@
             "⭐ <strong>Rifugio Zallinger lunch</strong> — most scenic rifugio on the plateau · Sassolungo right behind the terrace · Kaiserschmarrn · cash · ~1hr",
             "🥾 <strong>Schlern massif approach</strong> (optional) — walk toward the dramatic flat-topped Schlern · Rifugio Bolzano views · ~1hr return",
             "⭐ <strong>Optional: e-bikes</strong> on the plateau — cover more ground · available at Compatsch top station · reserve in advance",
-            "Cable car back down by <strong>12:30pm</strong> · checkout Siusi hotel · drive <strong>1hr 30min</strong> → <strong>Mayrhofen</strong> via Bressanone → Brenner",
-            "Arrive Mayrhofen <strong>~2:30pm</strong> · check in hotel · walk Hauptstraße · Tyrolean dinner · <strong>early night</strong> — Olpererhütte hike tomorrow"
+            "Cable car back down by <strong>12:30pm</strong> · checkout Siusi hotel · drive <strong>1hr 30min</strong> → <strong>Finkenberg</strong> via Bressanone → Brenner",
+            "Arrive Finkenberg <strong>~2:30pm</strong> · check in hotel · walk Hauptstraße · Tyrolean dinner · <strong>early night</strong> — Olpererhütte hike tomorrow"
           ]
         }
       ],
@@ -932,23 +932,19 @@
         },
         {
           "type": "booking",
-          "text": "⏳ Book Mayrhofen hotel Jul 1–2 · Hotel Strass / Hotel Elisabeth / Gasthof"
+          "text": "⏳ Book Finkenberg hotel Jul 1–2 · Hotel Strass / Hotel Elisabeth / Gasthof"
         }
       ],
       "summary": {
         "drive": "~120 km / 75 mi",
         "time": "~1h 00m",
         "from": "Siusi allo Sciliar 🇮🇹",
-        "to": "Mayrhofen, Zillertal 🇦🇹",
-        "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger · optional Schlern · drive to Mayrhofen",
+        "to": "Finkenberg, Zillertal 🇦🇹",
+        "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger · optional Schlern · drive to Finkenberg",
         "bookings": [
           {
             "status": "booked",
-            "text": "✓ Das Auss.Zeit"
-          },
-          {
-            "status": "pending",
-            "text": "⏳ Pre-book Tre Cime shuttle"
+            "text": "✓ Keyone Rooms Finkenberg · €152.92 · check-in 16:00"
           }
         ]
       }
@@ -957,7 +953,7 @@
       "dayLabel": "13",
       "date": "Jul 2",
       "title": "Olpererhütte + Kebema → Achensee → Swarovski → Innsbruck + Nordkette (optional evening)",
-      "meta": "Jul 2 · Mayrhofen → Schlegeis (Olpererhütte) → Achensee → Wattens (Swarovski) → Innsbruck",
+      "meta": "Jul 2 · Finkenberg → Schlegeis (Olpererhütte) → Achensee → Wattens (Swarovski) → Innsbruck",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -969,7 +965,7 @@
         {
           "heading": null,
           "items": [
-            "Leave Mayrhofen <strong>8:00am</strong> · drive <strong>30 min</strong> → Schlegeis reservoir · ⚠️ park before 9am",
+            "Leave Finkenberg <strong>8:00am</strong> · drive <strong>30 min</strong> → Schlegeis reservoir · ⚠️ park before 9am",
             "⭐ <strong>Olpererhütte hike (Trail 502)</strong> — 3km · 600m elevation gain · ~1.5–2hrs up · rocky alpine ascent · Olperer glacier face above · Schlegeis turquoise far below",
             "⭐ <strong>Kebema Suspension Bridge (Olperer Panoramabrücke)</strong> — 3–4 min past the hut · floats in mid-air above the glacier valley · one of the most dramatic viewpoints in the Alps",
             "<strong>Lunch at Olpererhütte</strong> — Kaiserschmarrn · cash only · ~1hr · refill water at hut spring",
@@ -1010,7 +1006,7 @@
       "summary": {
         "drive": "~120 km / 75 mi",
         "time": "~1h 30m",
-        "from": "Mayrhofen, Zillertal 🇦🇹",
+        "from": "Finkenberg, Zillertal 🇦🇹",
         "to": "Innsbruck 🇦🇹",
         "highlights": "Olpererhütte 600m hike · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Innsbruck Golden Roof · optional Nordkette 2,334m golden hour",
         "bookings": [
@@ -1695,31 +1691,31 @@
       "date": "Jul 1",
       "flag": "🇮🇹",
       "from": "Siusi allo Sciliar 🇮🇹",
-      "nightStay": "Mayrhofen, Zillertal 🇦🇹 ⏳",
+      "nightStay": "Keyone Rooms, Finkenberg 🇦🇹 ✅",
       "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger lunch · drive to Mayrhofen",
       "drive": "~120 km / 75 mi",
       "driveTime": "~1h 30m",
-      "bookings": "⏳ Book Dobbiaco/Sesto hotel Jul 1–3",
-      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy/Mayrhofen,+Austria",
+      "bookings": "✅ Keyone Rooms Finkenberg · €152.92 · check-in 16:00",
+      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy/Finkenberg,+Austria",
       "action": {
-        "level": "pending",
-        "text": "⏳ Siusi Night 3 · book e-bikes in advance"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "13",
       "date": "Jul 2",
       "flag": "🇮🇹",
-      "from": "Mayrhofen 🇦🇹",
+      "from": "Finkenberg, Zillertal 🇦🇹",
       "nightStay": "Innsbruck 🇦🇹 ⏳",
       "highlights": "Olpererhütte 600m · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Innsbruck Golden Roof · optional Nordkette 2,334m evening",
       "drive": "~120 km / 75 mi",
       "driveTime": "~2h",
-      "bookings": "⏳ Dobbiaco hotel 2nd night",
-      "mapUrl": "https://www.google.com/maps/dir/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Achensee,+Pertisau,+Austria/Swarovski+Kristallwelten,+Wattens,+Austria/Innsbruck,+Austria",
+      "bookings": "⏳ Book Innsbruck hotel Jul 2–3",
+      "mapUrl": "https://www.google.com/maps/dir/Finkenberg,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Achensee,+Pertisau,+Austria/Swarovski+Kristallwelten,+Wattens,+Austria/Innsbruck,+Austria",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Mayrhofen hotel Jul 2–3"
+        "text": "⏳ Book Innsbruck hotel"
       }
     },
     {
