@@ -200,15 +200,6 @@
       "status": "cancelled"
     },
     {
-      "nights": "9–11",
-      "property": "Das Auss.Zeit 🇦🇹",
-      "address": "Außervillgraten 185, 9931 Außervillgraten, Tirol",
-      "dates": "Jun 28–Jul 1",
-      "ref": "#72072265941383 ⚠️ Rebook check-in Jun 28, checkout Jul 1 (3 nights)",
-      "stars": "10.0",
-      "status": "Yet to book"
-    },
-    {
       "nights": "—",
       "property": "Vienna House Martinspark 🇦🇹",
       "address": "Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg",
@@ -218,37 +209,28 @@
       "status": "cancelled"
     },
     {
+      "nights": "9",
+      "property": "Villabassa (Niederdorf) Hotel 🇮🇹",
+      "address": "Villabassa (Niederdorf), Val Pusteria, South Tyrol, Italy",
+      "dates": "Jun 28–29",
+      "ref": "⏳ Yet to book — 1 night · Hotel Post Niederdorf / Residence Dolomiten / B&B · book now — July peak season",
+      "freeCancel": null,
+      "status": "Yet to book"
+    },
+    {
+      "nights": "10–11",
+      "property": "Siusi allo Sciliar Hotel 🇮🇹",
+      "address": "Siusi allo Sciliar (Seis am Schlern), South Tyrol, Italy — near cable car station",
+      "dates": "Jun 29–Jul 2",
+      "ref": "⏳ Yet to book — 3 nights · near Alpe di Siusi cable car · book now — peak season",
+      "freeCancel": null,
+      "status": "Yet to book"
+    },
+    {
       "nights": "12",
-      "property": "Ortisei / Val Gardena Hotel 🇮🇹",
-      "address": "Ortisei (St. Ulrich), Val Gardena, South Tyrol, Italy",
-      "dates": "Jun 30–Jul 1",
-      "ref": "⏳ Yet to book — 1 night · Hotel Adler / Gardena Grödnerhof / any Ortisei centre hotel",
-      "freeCancel": null,
-      "status": "Yet to book"
-    },
-    {
-      "nights": "13",
-      "property": "Lago di Braies area Hotel 🇮🇹",
-      "address": "Lago di Braies / Pragser Wildsee, South Tyrol, Italy",
-      "dates": "Jul 1–2",
-      "ref": "⏳ Yet to book — 1 night · Hotel Lago di Braies / nearby Braies/Dobbiaco area",
-      "freeCancel": null,
-      "status": "Yet to book"
-    },
-    {
-      "nights": "14",
-      "property": "Innsbruck Hotel 🇦🇹",
-      "address": "Innsbruck old town, Tyrol, Austria",
-      "dates": "Jul 2–3",
-      "ref": "⏳ Yet to book — 1 night · Hotel Weisses Kreuz / Goldener Adler / Central Innsbruck",
-      "freeCancel": null,
-      "status": "Yet to book"
-    },
-    {
-      "nights": "14",
       "property": "Mayrhofen / Zillertal Hotel 🇦🇹",
       "address": "Mayrhofen im Zillertal, Tyrol, Austria",
-      "dates": "Jul 3–4",
+      "dates": "Jul 2–3",
       "ref": "⏳ Yet to book — 1 night",
       "freeCancel": null,
       "status": "Yet to book"
@@ -723,50 +705,44 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Grossglockner High Alpine Road → Außervillgraten",
-      "meta": "Jun 28 · Hallstatt → Grossglockner → Kaiser-Franz-Josefs-Höhe → Das Auss.Zeit, Außervillgraten",
+      "title": "Hallstatt → Villabassa (Niederdorf) · Dolomites Arrival",
+      "meta": "Jun 28 · Kaiserblick Goisern → Villabassa, Val Pusteria, South Tyrol · arrival day",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Grossglockner High Alpine Road → Außervillgraten",
-          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 9 Map — Bad Goisern → Brenner → Villabassa",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Bressanone,+Italy/Villabassa,+Val+Pusteria,+Italy"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Kaiserblick Goisern by 8:30am</strong> — check-out 08:00–10:00 · drive <strong>~1hr 15min</strong> → Grossglockner Hochalpenstraße entrance at <strong>Bruck an der Glocknerstraße</strong>",
-            "⭐ <strong>Grossglockner High Alpine Road</strong> — Austria's most famous mountain road · 48km · 36 hairpin bends · €46.50 toll — <strong>cash only</strong>",
-            "⭐ <strong>Fuscher Törl (2,428m)</strong> — first major high point · <strong>Edelweißspitze (2,571m)</strong> — short walk to the highest point accessible by car in Austria · 360° panorama · wildflowers in June",
-            "⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — direct view of <strong>Grossglockner (3,798m)</strong> Austria's highest peak · <strong>Pasterze Glacier</strong> overlook · museum + restaurant · ~1.5hrs",
-            "<strong>Lunch</strong> — restaurant at Kaiser-Franz-Josefs-Höhe (~1hr)",
-            "Drive <strong>~1hr south</strong> via Heiligenblut + Lienz → <strong>Außervillgraten</strong> · arrive ~6:00pm",
-            "Check in <strong>Das Auss.Zeit</strong> ✅ · #72072265941383 ⚠️ rebook check-in to Jun 28 · settle in · first evening in the Dolomites",
-            "<strong>Dinner</strong> — Das Auss.Zeit kitchen or local Gasthof in Außervillgraten · early night · <strong>Thurntaler summit hike in 2 days</strong>"
+            "Checkout <strong>Kaiserblick Goisern by 8:30am</strong> — check-out 08:00–10:00",
+            "Drive <strong>~3.5hrs</strong> → <strong>Villabassa (Niederdorf)</strong>, Val Pusteria, South Tyrol 🇮🇹 · via Salzburg Autobahn → Brenner → Brixen → Val Pusteria",
+            "⭐ <strong>Optional lunch stop in Brixen / Bressanone</strong> (30 min detour) — beautiful cathedral square · oldest town in South Tyrol · worth the stop",
+            "Check in <strong>Villabassa hotel</strong> · ⏳ yet to book · medieval village lanes · Baroque church · fountain square · charming and quiet",
+            "⭐ <strong>Optional: drive 15 min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · rent a rowing boat · <strong>Località Braies di Sotto 1, 39030 Braies (Prags), South Tyrol</strong> · GPS 46.6944°N 12.0853°E",
+            "<strong>Dinner in Villabassa</strong> · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "💰 Grossglockner toll €46.50/car — CASH ONLY · pack warm layers at 2,500m even in June"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Aim to enter Grossglockner by 10am for best visibility · road can cloud over by afternoon"
+          "text": "⏰ Checkout Kaiserblick 8:30am · alarm 5am tomorrow for Braies sunrise"
         },
         {
           "type": "booking",
-          "text": "⚠️ Rebook Das Auss.Zeit check-in → Jun 28 · #72072265941383 · 3 nights Jun 28–Jul 1"
+          "text": "⏳ Book Villabassa hotel Jun 28–29 · Hotel Post Niederdorf / Residence Dolomiten · peak season — book now"
         }
       ],
       "summary": {
-        "drive": "~230 km / 143 mi",
+        "drive": "~350 km / 218 mi",
         "time": "~45m",
         "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
-        "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
+        "to": "Villabassa (Niederdorf) 🇮🇹",
+        "highlights": "Kaiserblick checkout · drive via Brenner · optional Brixen lunch · Villabassa arrival · optional Braies afternoon preview",
         "bookings": [
           {
             "status": "booked",
@@ -782,73 +758,60 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "Außervillgraten — Oberstalleralm + Winkeltal + Heinfels · OR Lienz Osttirodler",
-      "meta": "Jun 29 · Das Auss.Zeit base · the valley that time forgot · two options · rest before Thurntaler tomorrow",
+      "title": "East Dolomites — Braies Sunrise + Prato Piazza + Croda del Becco → Siusi",
+      "meta": "Jun 29 · Villabassa → Braies → Prato Piazza → Croda del Becco → Siusi allo Sciliar",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Option A Map — Außervillgraten → Winkeltal → Oberstalleralm → Heinfels Castle",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Winkeltal,+Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Burg+Heinfels,+Sillian,+Austria"
-        },
-        {
-          "label": "Option B Map — Außervillgraten → Oberstalleralm → Lienz Osttirodler",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Osttirodler+Lienz,+Austria/Au%C3%9Fervillgraten,+Austria"
+          "label": "Day 10 Map — Villabassa → Braies → Prato Piazza → Cadini → Croda del Becco → Siusi",
+          "url": "https://www.google.com/maps/dir/Villabassa,+Italy/Lago+di+Braies,+Italy/Prato+Piazza,+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Siusi+allo+Sciliar,+Italy"
         }
       ],
       "sections": [
         {
-          "heading": "Morning — both options start here",
+          "heading": null,
           "items": [
-            "Relaxed start — breakfast at <strong>Das Auss.Zeit</strong> · recover legs after Grossglockner · take in the Villgraten mountain panorama",
-            "⭐ <strong>Kneipp Nature Path</strong> — 2 min walk from the hotel · barefoot water path + Gradieranlage salt-air wall · kids love it · restorative for tired feet · completely free",
-            "⭐ <strong>Außervillgraten village wander</strong> — Baroque chapel · centuries-old farmhouses · genuinely unspoilt Tyrolean village · <strong>Kunstgalerie Bachlechner</strong> (art gallery with Le Corbusier + others · surprisingly world-class) · ~45 min"
-          ]
-        },
-        {
-          "heading": "Option A — Mellow · Oberstalleralm + Winkeltal + Heinfels Castle",
-          "items": [
-            "Drive <strong>5 min</strong> → <strong>Winkeltal valley</strong> — a secret 12km side valley branching off from the village · untouched landscape of rustic alpine pastures + old larch forests · drive 5km in to <strong>Reiterstube restaurant</strong>",
-            "🥾 <strong>Short Winkeltal walk</strong> — gentle stroll from Reiterstube deeper into the valley · rushing mountain stream · complete silence · ~30 min · free",
-            "<strong>Lunch at Reiterstube</strong> — Villgrater and Tyrolean specialities · homemade pastries · lamb + game · sun terrace with mountain backdrop · (~1hr) · cash + card",
-            "Drive <strong>10 min</strong> → end of Villgratental → <strong>Unterstalleralm</strong> · park here",
-            "🥾 <strong>Oberstalleralm</strong> — 20 min walk up from Unterstalleralm · <strong>18 ancient sun-blackened wooden huts + tiny chapel</strong> · first mentioned 1675 · listed building · one of the most photographed authentic spots in all of Austria · looks like a film set · completely free · also: <strong>Klapfbachwasserfall viewpoint</strong> 10 min further — panorama of the Villgrater mountains",
-            "Drive <strong>15 min</strong> → <strong>Burg Heinfels</strong> — 13th-century castle complex towering above the Pustertal valley · newly reopened after years of closure · dramatic hilltop · sweeping valley views · ~45 min",
-            "Back at <strong>Das Auss.Zeit by 5pm</strong> · rest · early dinner · set alarm — <strong>Thurntaler summit tomorrow</strong>"
-          ]
-        },
-        {
-          "heading": "Option B — Thrills · Oberstalleralm + Lienz Osttirodler Alpine Coaster",
-          "items": [
-            "Drive <strong>10 min</strong> → <strong>Unterstalleralm</strong> · park here",
-            "🥾 <strong>Oberstalleralm</strong> — 20 min walk up · <strong>18 ancient sun-blackened huts + chapel (1675)</strong> · most atmospheric spot in East Tyrol · Klapfbachwasserfall viewpoint 10 min further · ~1hr total · free",
-            "Drive <strong>30 min</strong> → <strong>Lienz</strong> · Schlossbergbahn funicular up to Moosalm",
-            "⭐ <strong>Osttirodler Alpine Coaster</strong> — <strong>one of the longest alpine coasters in the world</strong> · 2.7km through forest + hairpin turns + spectacular loops · views of Schloss Bruck + Lienz Dolomites below · riders control their own speed · ~6 min ride · go twice! · Veda + Vaiga will love this",
-            "⭐ <strong>Moosalm adventure area</strong> — petting zoo · adventure playground · largest climbing park in East Tyrol · high-rope course · adventure golf · all on the mountain · (~1.5hrs for the kids)",
-            "<strong>Lunch/snack</strong> at Moosalm Berggasthaus · local Osttiroler food (~1hr)",
-            "Funicular back down → drive <strong>30 min</strong> → <strong>Das Auss.Zeit by 5pm</strong> · rest · early dinner · set alarm — <strong>Thurntaler summit tomorrow</strong>"
+            "<strong>5:00am alarm</strong> · drive <strong>15 min</strong> → <strong>Lago di Braies</strong> · arrive 5:30am · gate opens 7:30am but you're already inside · walk to the lake",
+            "⭐ <strong>Lago di Braies sunrise</strong> — emerald mirror lake · iconic boathouse · Dolomite peaks reflected in still water · one of the most beautiful lakes in Italy",
+            "🥾 <strong>Braies lake circuit</strong> — 3.5km · flat · ~1hr · pure silence · nobody there",
+            "Drive <strong>20 min</strong> → <strong>Prato Piazza plateau</strong> · arrive ~7:30am · park at Rifugio Prato Piazza",
+            "⭐ <strong>Prato Piazza</strong> — open alpine plateau above the treeline · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
+            "🥾 <strong>Prato Piazza easy walk</strong> — 1hr loop across the plateau · flat · Tre Cime from the north · free",
+            "Drive <strong>20 min</strong> → <strong>Rifugio Auronzo</strong> · €30 toll road · arrive ~9:30am",
+            "⭐ <strong>Cadini di Misurina viewpoint</strong> — 20 min hike from Rifugio Auronzo · the classic Tre Cime postcard from above · jaw-dropping · do this before going back to Braies",
+            "Drive back <strong>25 min</strong> → <strong>Braies lake trailhead</strong>",
+            "🥾 <strong>Croda del Becco (Seekofel) hike — 2,810m</strong> — trail climbs from Braies lake up to the summit · <strong>look DOWN on Braies from 2,810m</strong> · extraordinary perspective · ~2hrs up · moderate-strenuous · Rifugio Seekofel at the top",
+            "<strong>Lunch at Rifugio Seekofel</strong> — mountain hut lunch with Braies far below · cash · ~1hr",
+            "Descend ~1.5hrs · back at Braies ~2:30pm",
+            "Drive <strong>1hr 15min</strong> west → <strong>Siusi allo Sciliar</strong> · check in hotel · arrive ~4:00pm · ⏳ yet to book · near cable car station",
+            "⭐ <strong>Siusi village evening</strong> — Schlern massif views · flat-topped mountain directly above · dinner in village · early night"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⭐ Oberstalleralm is non-negotiable — 10min drive + 20min walk · one of the most photographed authentic spots in all of Austria · both options include it"
+          "text": "⏰ 5am alarm · Braies 15min from hotel · arrive before gate (7:30am)"
         },
         {
           "type": "alarm",
-          "text": "🎢 Osttirodler open daily Jun–Sep · 9:00–16:45 · funicular ticket required · bring cash + card · minimum age/height restrictions apply · lienzer-bergbahnen.at"
+          "text": "💰 Tre Cime toll road €30/car · Rifugio Auronzo parking · Cadini viewpoint only (no full loop today)"
         },
         {
           "type": "alarm",
-          "text": "⏰ Early night essential — Thurntaler summit 2,407m hike tomorrow · aim in bed by 9:30pm"
+          "text": "🥾 Croda del Becco: moderate-strenuous · 600m+ gain · bring layers · cash for Rifugio Seekofel"
+        },
+        {
+          "type": "booking",
+          "text": "⏳ Book Siusi hotel Jun 29–Jul 2 (3 nights) · near cable car station · book now"
         }
       ],
       "summary": {
-        "drive": "~10 km / 6 mi",
+        "drive": "~120 km / 75 mi",
         "time": "~1h 00m",
-        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "to": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "highlights": "Außervillgraten village + Kneipp path · Oberstalleralm 18 ancient huts · Option A: Winkeltal + Reiterstube + Heinfels Castle · Option B: Lienz Osttirodler alpine coaster 2.7km + Moosalm adventure park",
+        "from": "Villabassa 🇮🇹",
+        "to": "Siusi allo Sciliar 🇮🇹",
+        "highlights": "Braies sunrise · Prato Piazza plateau · Cadini di Misurina · Croda del Becco 2,810m (look down on Braies) · arrive Siusi",
         "bookings": [
           {
             "status": "booked",
@@ -860,66 +823,51 @@
     {
       "date": "Jun 30",
       "dayNum": 12,
-      "title": "Option A: Thurntaler 2,407m  ·  Option B: Helm/Monte Elmo → Val di Funes golden hour",
-      "meta": "Jun 30 · Das Auss.Zeit → Thurntaler/Helm → Val di Funes (Santa Maddalena) → sleep Ortisei area",
+      "title": "West Dolomites — Seceda + Val di Funes + Passo Gardena + Lagazuoi + Cortina",
+      "meta": "Jun 30 · Siusi → Ortisei (Seceda) → Val di Funes → Passo Gardena → Lagazuoi → Cortina → back to Siusi",
       "sections": [
         {
-          "heading": "Option A — The Summit · Thurntaler 2,407m (Strenuous)",
+          "heading": null,
           "items": [
-            "Leave <strong>Das Auss.Zeit 8:00am</strong> · drive toll-free mountain road from village → <strong>Thurntaler Rast restaurant</strong> trailhead · ~15min",
-            "🥾 <strong>Thurntaler summit hike (2,407m)</strong> — <strong>Trail 7</strong> from Thurntaler Rast · 600m elevation gain · ~2hrs up · rocky but well-marked · off the tourist radar · village-start hike",
-            "⭐ <strong>Summit panorama</strong> — 360° sweep: Villgrater mountains · Carnic Alps · Hohe Tauern + <strong>Grossglockner</strong> · AND the <strong>Dolomites including Tre Cime visible to the south</strong>",
-            "<strong>Lunch at Thurntaler Rast</strong> — Tyrolean food · cash only · sun terrace · ~1hr",
-            "Drive <strong>45 min</strong> west → <strong>Val di Funes (Santa Maddalena)</strong> · arrive ~4:30pm",
-            "⭐ <strong>Santa Maddalena golden hour</strong> — Panoramaweg walk up (~30 min) · stone church in emerald meadow · Odle/Geisler peaks in late afternoon light · <strong>best light of the entire trip for this shot</strong>",
-            "Drive <strong>20 min</strong> → <strong>Ortisei / Val Gardena</strong> · check in hotel · ⏳ 1 night · <strong>5 min from Seceda cable car tomorrow morning</strong>",
-            "Dinner Ortisei · early night · <strong>Seceda first cable car tomorrow</strong>"
-          ]
-        },
-        {
-          "heading": "Option B — The Preview · Helm/Monte Elmo Cable Car (Easy, Family-Friendly)",
-          "items": [
-            "Drive <strong>15 min</strong> → <strong>Sillian</strong> · Helm (Monte Elmo) cable car valley station",
-            "⭐ <strong>Helm cable car up to ~2,000m</strong> · panoramic cabin · top station in ~10min",
-            "🥾 <strong>Hike 45min to Sillianer Hütte (Rifugio Sillianer)</strong> — easy ridge walk · <strong>direct eye-level view of the Tre Cime from the north</strong> · also the Sesto Sundial range of peaks · this is the most dramatic Dolomite panorama accessible this easily anywhere",
-            "⭐ <strong>Sillianer Hütte lunch</strong> — mountain hut with Tre Cime framed in the window · ~1hr · cash",
-            "⭐ <strong>Olperls Bergwelt adventure park</strong> — at the top station · rope bridges · zip lines · kids activities · Veda + Vaiga will love this · ~1hr",
-            "Drive <strong>30 min</strong> → <strong>Val di Funes (Santa Maddalena)</strong> · arrive ~4:00pm",
-            "⭐ <strong>Santa Maddalena golden hour</strong> — Panoramaweg walk up (~30 min) · stone church in emerald meadow · Odle/Geisler peaks in late afternoon light · <strong>best light of the entire trip for this shot</strong>",
-            "Drive <strong>20 min</strong> → <strong>Ortisei / Val Gardena</strong> · check in hotel · ⏳ 1 night · <strong>5 min from Seceda cable car tomorrow morning</strong>",
-            "Dinner Ortisei · early night · <strong>Seceda first cable car tomorrow</strong>"
+            "Leave <strong>Siusi 8:00am</strong> · drive <strong>20 min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ pre-book Seceda timed slots at seceda.it",
+            "⭐ <strong>Seceda cable car</strong> (Ortisei → 2,519m) · 15-min ride · €59/adult · Fermeda Towers + Sassolungo panorama · most iconic jagged-peak view in the entire Dolomites",
+            "🥾 <strong>Forcella Pana ridgeline walk</strong> — 10 min from top station · Fermeda Towers close-up · Sassolungo panorama · ~1hr · easy",
+            "<strong>Lunch at Rifugio Firenze</strong> on the Seceda ridge (~1hr) · cable car back down · depart Ortisei ~1:00pm",
+            "Drive <strong>30 min</strong> → <strong>Val di Funes (Santa Maddalena)</strong> · park in village · afternoon light is perfect for this shot",
+            "⭐ <strong>Santa Maddalena Church viewpoint</strong> — most photographed scene in South Tyrol · stone church in emerald meadow + jagged Odle peaks · Panoramaweg walk (~1hr return · free)",
+            "Drive via <strong>Passo Gardena (2,121m)</strong> → Passo Falzarego · SS243 · do NOT take SS49 highway · Sella Massif + Cir Peaks · one of the world's most beautiful passes · adds 25 min",
+            "⭐ <strong>Lagazuoi cable car (2,752m)</strong> — arrive <strong>Passo Falzarego by 4:00pm</strong> · Rifugio Lagazuoi · WWI tunnel galleries (helmet + headlamp ~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm",
+            "Drive <strong>25 min</strong> east → <strong>Cortina d'Ampezzo</strong> · arrive ~5:45pm",
+            "⭐ <strong>Cortina d'Ampezzo</strong> — Corso Italia piazza · Tofane peaks · best espresso of the trip · <strong>no rush today</strong> · 45 min",
+            "Drive <strong>1hr 10min</strong> → <strong>Siusi</strong> · arrive ~8:00pm · dinner · Night 2"
           ]
         }
       ],
       "mapLinks": [
         {
-          "label": "Option A — Thurntaler → Val di Funes → Ortisei",
-          "url": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Thurntaler,+Au%C3%9Fervillgraten,+Austria/Santa+Maddalena,+Val+di+Funes,+Italy/Ortisei,+Val+Gardena,+Italy"
-        },
-        {
-          "label": "Option B — Helm/Monte Elmo → Val di Funes → Ortisei",
-          "url": "https://www.google.com/maps/dir/Sillian,+Austria/Helm+Monte+Elmo,+Sillian,+Austria/Santa+Maddalena,+Val+di+Funes,+Italy/Ortisei,+Val+Gardena,+Italy"
+          "label": "Day 11 Map — Siusi → Seceda → Val di Funes → Passo Gardena → Lagazuoi → Cortina → Siusi",
+          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Siusi+allo+Sciliar,+Italy"
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "🌅 Val di Funes golden hour 4–6pm — best light for Santa Maddalena church + Odle peaks · do NOT miss this"
+          "text": "⚠️ Pre-book Seceda timed slots at seceda.it · €59/adult · 2026 requires advance booking"
         },
         {
           "type": "alarm",
-          "text": "⭐ Sleep Ortisei — 5min to Seceda cable car tomorrow morning · saves 1hr 10min of driving on Day 12"
+          "text": "⏰ Arrive Lagazuoi by 4pm · last cable car down 5:30pm · comfortable with Siusi base"
         },
         {
-          "type": "booking",
-          "text": "⏳ Book Ortisei hotel Jun 30–Jul 1 (1 night) · Hotel Adler / Gardena Grödnerhof / any Ortisei centre hotel"
+          "type": "alarm",
+          "text": "💰 Passo Gardena SS243 — do NOT take the highway · 25min extra · obligatory"
         }
       ],
       "summary": {
-        "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-        "to": "Ortisei, Val Gardena 🇮🇹",
-        "drive": "~75 km / 47 mi",
-        "highlights": "Option A: Thurntaler 2,407m · OR Option B: Helm/Monte Elmo + Tre Cime preview → Val di Funes Santa Maddalena golden hour → sleep Ortisei",
+        "from": "Siusi allo Sciliar 🇮🇹",
+        "to": "Siusi allo Sciliar 🇮🇹",
+        "drive": "~220 km / 137 mi",
+        "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Santa Maddalena golden hour · Passo Gardena · Lagazuoi 2,752m WWI galleries · Cortina d'Ampezzo",
         "accommodation": "Das Auss.Zeit ✅"
       },
       "dayLabel": "11",
@@ -928,57 +876,50 @@
     {
       "dayLabel": "12",
       "date": "Jul 1",
-      "title": "Seceda + Passo Gardena + Lagazuoi + Cortina + Prato Piazza → Braies area",
-      "meta": "Jul 1 · Ortisei → Seceda → Passo Gardena → Lagazuoi → Cortina → Prato Piazza → Lago di Braies area",
+      "title": "Full Day Alpe di Siusi — Europe's Largest Alpine Meadow",
+      "meta": "Jul 1 · Siusi base · Alpe di Siusi full day · cable car from hotel · Bullaccia loop · Schlern views · Rifugio Zallinger",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 12 Map — Ortisei → Passo Gardena → Lagazuoi → Cortina → Prato Piazza → Braies",
-          "url": "https://www.google.com/maps/dir/Ortisei,+Val+Gardena,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Prato+Piazza,+Braies,+Italy/Lago+di+Braies,+Italy"
+          "label": "Alpe di Siusi map — plateau walks from Siusi cable car",
+          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy/Rifugio+Bullaccia,+Italy/Rifugio+Zallinger,+Italy"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Drive <strong>1hr 10min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ Pre-book Seceda timed slots at seceda.it",
-            "⭐ <strong>Seceda cable car</strong> (Ortisei → Furnes → Seceda) · 15-min ride · €59/adult · arrive 2,519m · most iconic jagged-peak Dolomites view · Fermeda Towers + Sassolungo panorama",
-            "🥾 <strong>Forcella Pana ridgeline walk</strong> — 10 min from top station · Fermeda Towers up close · Sassolungo panorama · ~1hr · easy ridge walk · completely free",
-            "<strong>Lunch at Rifugio Firenze</strong> on the ridge (~1hr) · cable car back down · depart Ortisei ~1:00pm",
-            "⭐ <strong>Lagazuoi cable car (2,752m)</strong> — Rifugio Lagazuoi · <strong>WWI Galleries</strong> (tunnels · helmet + headlamp ~€20) · summit panorama over 8 Dolomite groups · ~1.5hrs · last cable car up ~5pm",
-            "Drive <strong>25 min</strong> east → <strong>Cortina d'Ampezzo</strong> · arrive ~5:45pm",
-            "⭐ <strong>Cortina d'Ampezzo</strong> — the most glamorous town in the Dolomites · <strong>Corso Italia piazza stroll</strong> · Tofane peaks backdrop · best espresso of the trip · ~45 min · free",
-            "Drive <strong>30 min</strong> east → <strong>Prato Piazza plateau</strong> · arrive ~6:30pm · park at Rifugio Prato Piazza",
-            "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best non-technical Dolomites viewpoint · evening light on the peaks · coffee at Rifugio · ~45 min · free",
-            "Drive <strong>25 min</strong> → <strong>Lago di Braies area</strong> · check in hotel · arrive ~8:00pm · ⏳ 1 night near Braies · <strong>lake is 5 min away tomorrow morning</strong>",
-            "Dinner nearby · early night · <strong>5:30am alarm — Braies sunrise</strong>"
+            "Walk <strong>5 min</strong> to <strong>Siusi cable car station</strong> · ride up to <strong>Alpe di Siusi plateau (1,850m)</strong> · ~€20 return · opens 8:00am",
+            "⭐ <strong>Alpe di Siusi (Seiser Alm)</strong> — <strong>Europe's largest high alpine meadow</strong> · rolling green plateau · Sassolungo + Sassopiatto towers above · Sciliar/Schlern massif behind · wildflowers in July · completely different feel from any other day",
+            "🥾 <strong>Bullaccia plateau loop</strong> — moderate 2hr walk · 360° panorama of the entire Dolomites from above the meadow · Rifugio Bullaccia for coffee stop · well marked",
+            "⭐ <strong>Rifugio Zallinger lunch</strong> — most scenic rifugio on the plateau · Sassolungo right behind the terrace · Kaiserschmarrn + local South Tyrolean cuisine · cash (~1.5hrs)",
+            "🥾 <strong>Afternoon: Schlern massif approach trail</strong> — walk toward the dramatic flat-topped Schlern (2,563m) · <strong>Rifugio Bolzano / Schlernhaus</strong> · the most dramatic near-summit view on the plateau without a full ascent · optional (~1.5hrs return from Zallinger)",
+            "⭐ <strong>Optional: rent e-bikes</strong> on the plateau — cover more ground effortlessly · electric mountain bikes available at Compatsch · ideal for the kids",
+            "Cable car back down by <strong>5:00pm</strong> · Siusi village dinner · Night 3",
+            "<strong>Pack bags tonight</strong> — checkout tomorrow · drive to Mayrhofen for Olpererhütte"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⭐ Starting from Ortisei saves 1hr 10min vs Außervillgraten — first cable car at 9am"
+          "text": "⭐ Cable car from hotel — 5min walk · opens 8am · last descent 6pm · buy multi-day pass if staying 2+ nights"
         },
         {
           "type": "alarm",
-          "text": "⚠️ Pre-book Seceda timed slots at seceda.it — 2026 requires advance booking · €59/adult"
-        },
-        {
-          "type": "alarm",
-          "text": "💰 Passo Gardena (SS243) between Val Gardena and Corvara — do NOT take SS49 highway · adds 25min · worth every minute"
+          "text": "🚲 E-bikes at Compatsch (top cable car station) · reserve in advance in July · ideal for covering the plateau with kids"
         },
         {
           "type": "booking",
-          "text": "⏳ Book hotel near Lago di Braies Jul 1–2 (1 night) · Hotel Lago di Braies / Pragser Wildsee area"
+          "text": "✅ Siusi hotel Night 3 · same property"
         }
       ],
       "summary": {
-        "drive": "~165 km / 103 mi",
+        "drive": "~0 km (cable car from hotel)",
         "time": "~1h 00m",
-        "from": "Ortisei, Val Gardena 🇮🇹",
-        "to": "Lago di Braies area 🇮🇹",
-        "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Passo Gardena · Lagazuoi 2,752m WWI galleries · Cortina d'Ampezzo · Prato Piazza evening · sleep near Braies",
+        "from": "Siusi allo Sciliar 🇮🇹",
+        "to": "Siusi allo Sciliar 🇮🇹",
+        "highlights": "Alpe di Siusi full day · Bullaccia plateau loop · Rifugio Zallinger lunch · Schlern massif approach · optional e-bikes · Europe's largest alpine meadow",
         "bookings": [
           {
             "status": "booked",
@@ -994,54 +935,49 @@
     {
       "dayLabel": "13",
       "date": "Jul 2",
-      "title": "Braies Sunrise + Cadini + Tre Cime → Val Fiscalina → Innsbruck",
-      "meta": "Jul 2 · Lago di Braies → Tre Cime → Val Fiscalina (optional) → Innsbruck overnight",
+      "title": "Siusi → Mayrhofen · Olpererhütte + Kebema Bridge",
+      "meta": "Jul 2 · Siusi checkout → Mayrhofen → Schlegeis → Olpererhütte → Mayrhofen overnight",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 13 Map — Braies → Tre Cime → Val Fiscalina → Innsbruck",
-          "url": "https://www.google.com/maps/dir/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Dobbiaco,+Italy/Sesto,+Italy/Innsbruck,+Austria"
+          "label": "Day 13 Map — Siusi → Mayrhofen → Schlegeis (Olpererhütte)",
+          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Mayrhofen,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "<strong>5:30am alarm</strong> · drive <strong>25 min</strong> → <strong>Lago di Braies</strong> · arrive by 6:00am — before gate restrictions (7:30am) · guaranteed parking",
-            "⭐ <strong>Lago di Braies sunrise</strong> — mirror reflections on the emerald-green lake · iconic Dolomite boathouse · <strong>one of the most beautiful lakes in Italy</strong> · walk the full 3.5km circuit (~1hr)",
-            "Drive <strong>30 min</strong> → <strong>Rifugio Auronzo</strong> via Misurina · arrive ~9:00am · toll road €30/car · ⚠️ fills by 9am in peak season — arrive early · pre-book at auronzo.it",
-            "⭐ <strong>Cadini di Misurina viewpoint</strong> — 20-min hike from Rifugio Auronzo · the classic Tre Cime postcard shot from above · jaw-dropping · do this BEFORE the main loop",
-            "⭐ <strong>Tre Cime di Lavaredo loop (6.2mi / 10km)</strong> — circumnavigation of the three iconic peaks · <strong>Rifugio Locatelli</strong> · north face close-up · WWI caves at Sasso di Sesto · ~3.5hrs",
-            "<strong>Lunch at Rifugio Locatelli or Auronzo</strong> (~1hr) · cash only at huts",
-            "Drive <strong>30 min</strong> back → Dobbiaco · arrive ~4:00pm",
-            "Drive <strong>15 min</strong> north → <strong>Dobbiaco</strong> · checkout hotel (if needed) · ⏳ pack and go",
-            "🌅 <strong>Val Fiscalina optional</strong> (30 min total) — drive 15 min south to Sexten · park at Fischleinboden · <strong>Cima Una looms over open meadows</strong> · 'most beautiful valley in the world' · no hike needed · free",
-            "Drive <strong>2hr 15min</strong> north via Brenner → <strong>Innsbruck</strong> · check in hotel · arrive ~5:30pm · ⏳ 1 night",
-            "⭐ <strong>Innsbruck evening</strong> — Golden Roof · Hofburg palace · Herzog-Friedrich-Straße · Maria-Theresien-Straße · best Austrian city of the trip · dinner in old town (~1.5hrs)",
-            "Early night · <strong>Olpererhütte hike tomorrow</strong>"
+            "Checkout <strong>Siusi 9:00am</strong> · drive <strong>1hr 30min</strong> → <strong>Mayrhofen</strong> via Bressanone → Brenner · arrive ~10:30am",
+            "Drop bags at hotel · drive <strong>30 min</strong> → <strong>Schlegeis reservoir</strong> · ⚠️ park before 11am if possible",
+            "⭐ <strong>Olpererhütte hike (Trail 502)</strong> — 3km · 600m elevation gain · ~1.5–2hrs up · rocky alpine ascent · Schlegeis far below · Olperer glacier face above",
+            "⭐ <strong>Kebema Suspension Bridge (Olperer Panoramabrücke)</strong> — 3–4 min past the hut · appears to float in mid-air above the glacier valley",
+            "<strong>Lunch at Olpererhütte</strong> — Kaiserschmarrn · cash only · ~1hr · refill water at hut spring",
+            "⭐ <strong>Giant Swing at Schlegeis base</strong> (optional · 31m free fall · ~€15) · descent ~1hr · back at car ~4:00pm",
+            "Drive <strong>30 min</strong> → Mayrhofen · check in hotel · Tyrolean dinner on Hauptstraße · early night"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⭐ Sleeping at Braies = no 5:30am drive · walk to the lake · arrive before any other visitor"
+          "text": "⏰ Leave Siusi 9am · arrive Mayrhofen 10:30am · Schlegeis by 11am · park early"
         },
         {
           "type": "alarm",
-          "text": "💰 Tre Cime toll road €30/car · arrive Rifugio Auronzo before 9am · fills fast in July"
+          "text": "💰 Schlegeis road toll €17 cash · Olpererhütte cash only"
         },
         {
           "type": "booking",
-          "text": "⏳ Book Innsbruck hotel Jul 2–3 (1 night) · Hotel Weisses Kreuz / Goldener Adler / Central Innsbruck"
+          "text": "⏳ Book Mayrhofen hotel Jul 2–3 (1 night) · Hotel Strass / Hotel Elisabeth"
         }
       ],
       "summary": {
-        "drive": "~210 km / 130 mi",
+        "drive": "~130 km / 81 mi",
         "time": "~1h 30m",
-        "from": "Lago di Braies 🇮🇹",
-        "to": "Innsbruck 🇦🇹",
-        "highlights": "Braies sunrise (already there!) · Cadini di Misurina viewpoint · Tre Cime loop 6.2mi · optional Val Fiscalina + Cima Una · Innsbruck Golden Roof + old town evening",
+        "from": "Siusi allo Sciliar 🇮🇹",
+        "to": "Mayrhofen, Zillertal 🇦🇹",
+        "highlights": "Siusi → Mayrhofen 1.5hrs · Olpererhütte 600m hike · Kebema suspension bridge · Giant Swing",
         "bookings": [
           {
             "status": "booked",
@@ -1674,77 +1610,80 @@
       "day": "9",
       "date": "Jun 28",
       "flag": "🇦🇹",
-      "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
-      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹 ⚠️",
-      "highlights": "Grossglockner High Alpine Road · Fuscher Törl · Edelweißspitze 2,571m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · arrive Das Auss.Zeit",
-      "drive": "~230 km / 143 mi",
-      "driveTime": "~3hrs + Grossglockner stops",
+      "from": "Kaiserblick Goisern 🇦🇹",
+      "nightStay": "Villabassa (Niederdorf) 🇮🇹 ⏳",
+      "highlights": "Drive via Brenner · optional Brixen lunch · Villabassa arrival · optional Braies afternoon preview",
+      "drive": "~350 km / 218 mi",
+      "driveTime": "~3h 30m",
       "bookings": "⚠️ Rebook Das Auss.Zeit check-in → Jun 28",
-      "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Au%C3%9Fervillgraten,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Bressanone,+Italy/Villabassa,+Val+Pusteria,+Italy",
       "action": {
         "level": "pending",
-        "text": "⏳ Rebook Das Auss.Zeit → Jun 28 check-in (3 nights)"
+        "text": "⏳ Book Villabassa hotel Jun 28–29"
       }
     },
     {
       "day": "10",
       "date": "Jun 29",
       "flag": "🇦🇹",
-      "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "nightStay": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "highlights": "Außervillgraten village · Oberstalleralm 18 ancient huts + chapel (1675) · Option A: Winkeltal + Heinfels Castle · Option B: Lienz Osttirodler coaster 2.7km + Moosalm kids park",
-      "drive": "~10 km / 6 mi",
-      "driveTime": "~15min",
+      "from": "Villabassa 🇮🇹",
+      "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
+      "highlights": "Braies sunrise · Prato Piazza plateau · Cadini di Misurina · Croda del Becco 2,810m (look down on Braies!) · arrive Siusi",
+      "drive": "~120 km / 75 mi",
+      "driveTime": "~2h 30m",
       "bookings": "✅ Das Auss.Zeit Night 2",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Unterstalleralm,+Innervillgraten,+Austria/Burg+Heinfels,+Sillian,+Austria",
-      "action": null
+      "mapUrl": "https://www.google.com/maps/dir/Villabassa,+Italy/Lago+di+Braies,+Italy/Prato+Piazza,+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Siusi+allo+Sciliar,+Italy",
+      "action": {
+        "level": "pending",
+        "text": "⏳ Book Siusi hotel Jun 29–Jul 2 (3 nights)"
+      }
     },
     {
       "day": "11",
       "date": "Jun 30",
       "flag": "🇦🇹",
-      "from": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "nightStay": "Ortisei, Val Gardena 🇮🇹 ⏳",
-      "highlights": "Thurntaler 2,407m OR Helm/Monte Elmo cable car + Tre Cime preview · Val di Funes Santa Maddalena golden hour · sleep Ortisei (5min to Seceda!)",
-      "drive": "~75 km / 47 mi",
-      "driveTime": "~1h 30m",
+      "from": "Siusi allo Sciliar 🇮🇹",
+      "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
+      "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Val di Funes Santa Maddalena · Passo Gardena · Lagazuoi 2,752m WWI · Cortina d'Ampezzo · back to Siusi",
+      "drive": "~220 km / 137 mi",
+      "driveTime": "~4h",
       "bookings": "⚠️ Das Auss.Zeit #72072265941383 — REBOOK Jun 29–Jul 1 (2 nights)",
-      "mapUrl": "https://www.google.com/maps/dir/Au%C3%9Fervillgraten,+Austria/Santa+Maddalena,+Val+di+Funes,+Italy/Ortisei,+Val+Gardena,+Italy",
+      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
         "level": "pending",
-        "text": "⏳ Last night at Das Auss.Zeit (rebook needed)"
+        "text": "⏳ Book Siusi hotel · ⚠️ pre-book Seceda"
       }
     },
     {
       "day": "12",
       "date": "Jul 1",
       "flag": "🇮🇹",
-      "from": "Ortisei, Val Gardena 🇮🇹",
-      "nightStay": "Lago di Braies area 🇮🇹 ⏳",
-      "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Passo Gardena · Lagazuoi 2,752m WWI · Cortina d'Ampezzo · Prato Piazza evening · sleep near Braies",
-      "drive": "~165 km / 103 mi",
-      "driveTime": "~3h",
+      "from": "Siusi allo Sciliar 🇮🇹",
+      "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
+      "highlights": "Alpe di Siusi full day · cable car from hotel · Bullaccia plateau loop · Rifugio Zallinger lunch · Schlern massif approach · optional e-bikes",
+      "drive": "~0 km (cable car)",
+      "driveTime": "5min walk",
       "bookings": "⏳ Book Dobbiaco/Sesto hotel Jul 1–3",
-      "mapUrl": "https://www.google.com/maps/dir/Ortisei,+Val+Gardena,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Prato+Piazza,+Braies,+Italy/Lago+di+Braies,+Italy",
+      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Dobbiaco hotel 2 nights"
+        "text": "⏳ Siusi Night 3 · book e-bikes in advance"
       }
     },
     {
       "day": "13",
       "date": "Jul 2",
       "flag": "🇮🇹",
-      "from": "Lago di Braies 🇮🇹",
-      "nightStay": "Innsbruck 🇦🇹 ⏳",
-      "highlights": "Braies sunrise (already there — walk to lake!) · Cadini di Misurina · Tre Cime loop 6.2mi · optional Val Fiscalina · Innsbruck Golden Roof + old town evening",
-      "drive": "~210 km / 130 mi",
-      "driveTime": "~2h 30m",
+      "from": "Siusi allo Sciliar 🇮🇹",
+      "nightStay": "Mayrhofen, Zillertal 🇦🇹 ⏳",
+      "highlights": "Siusi → Mayrhofen 1.5hrs · Olpererhütte 600m hike · Kebema suspension bridge · Giant Swing",
+      "drive": "~130 km / 81 mi",
+      "driveTime": "~2h",
       "bookings": "⏳ Dobbiaco hotel 2nd night",
-      "mapUrl": "https://www.google.com/maps/dir/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Dobbiaco,+Italy/Innsbruck,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Mayrhofen,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Mayrhofen,+Austria",
       "action": {
         "level": "pending",
-        "text": "⏳ Night 2 Dobbiaco · Pre-book Tre Cime"
+        "text": "⏳ Book Mayrhofen hotel Jul 2–3"
       }
     },
     {
