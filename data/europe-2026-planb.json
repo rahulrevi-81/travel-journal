@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T17:40:05Z"
+    "_updated": "2026-03-28T17:43:00Z"
   },
   "bookingStrip": [
     {
@@ -1564,38 +1564,38 @@
       "date": "Jun 22",
       "flag": "🇨🇭",
       "from": "Zurich ZRH 🇨🇭",
-      "nightStay": "Tiny House Diemtigtal",
-      "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · arrive Tiny House Diemtigtal 5:30pm",
+      "nightStay": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
+      "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · arrive Camping Jungfrau Lauterbrunnen",
       "drive": "~174 km / 108 mi",
       "driveTime": "~2hrs",
-      "bookings": "✓ Diemtigtal Airbnb · ✓ Hertz ZRH",
-      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Diemtigtal,+Switzerland",
+      "bookings": "✅ Camping Jungfrau (Booking · $499 / CHF 398) · ✅ Hertz ZRH",
+      "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null
     },
     {
       "day": "4",
       "date": "Jun 23",
       "flag": "🇨🇭",
-      "from": "Diemtigtal 🇨🇭",
-      "nightStay": "Tiny House Diemtigtal 🇨🇭 (Night 2)",
+      "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
+      "nightStay": "Camping Jungfrau, Lauterbrunnen 🇨🇭 (Night 2)",
       "highlights": "Oeschinensee 8:30am · Grindelwald First gondola #238070 ✅ · Cliff Walk · Bachalpsee hike",
       "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Grindelwald First gondola #238070 · ⏰ Book Oeschinensee slot",
-      "mapUrl": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Diemtigtal,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null
     },
     {
       "day": "5",
       "date": "Jun 24",
       "flag": "🇨🇭",
-      "from": "Diemtigtal 🇨🇭",
+      "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
       "nightStay": "Munich area 🇩🇪 — ⏳ yet to book",
-      "highlights": "Staubbach Falls · Lauterbrunnen valley walk · Trümmelbach Falls optional · drive to Munich area",
+      "highlights": "Staubbach Falls (walkable from camp) · Lauterbrunnen valley walk · Trümmelbach Falls · drive to Munich area",
       "drive": "~260 km / 162 mi",
       "driveTime": "~3hrs 30m",
       "bookings": "⏳ Jun 24 hotel — no place decided yet",
-      "mapUrl": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Staubbach+Falls,+Switzerland/Munich,+Germany",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Trummelbach+Falls,+Lauterbrunnen,+Switzerland/Munich,+Germany",
       "action": {
         "level": "pending",
         "text": "⏳ Munich hotel — no place decided"
@@ -1654,31 +1654,31 @@
       "date": "Jun 28",
       "flag": "🇦🇹",
       "from": "Kaiserblick Goisern 🇦🇹",
-      "nightStay": "Villabassa (Niederdorf) 🇮🇹 ⏳",
-      "highlights": "Grossglockner High Alpine Road 2,504m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Lienz · Villabassa",
+      "nightStay": "Hotel Schwarzer Adler, Sillian 🇦🇹 ✅",
+      "highlights": "Grossglockner High Alpine Road 2,504m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Heiligenblut · Lienz · Sillian",
       "drive": "~280 km / 174 mi",
       "driveTime": "~4h (including stops)",
-      "bookings": "⚠️ Rebook Das Auss.Zeit check-in → Jun 28",
-      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Villabassa,+Italy",
+      "bookings": "✅ Hotel Schwarzer Adler Sillian · $115 / €99.40 · check-in 16:00–21:00",
+      "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Sillian,+Austria",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Villabassa hotel Jun 28–29"
+        "level": "ok",
+        "text": "✅ Confirmed"
       }
     },
     {
       "day": "10",
       "date": "Jun 29",
       "flag": "🇦🇹",
-      "from": "Villabassa 🇮🇹",
+      "from": "Sillian 🇦🇹",
       "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
-      "highlights": "Braies sunrise · Croda del Becco from shore · Cadini di Misurina viewpoint · Prato Piazza plateau · arrive Siusi",
-      "drive": "~140 km / 87 mi",
-      "driveTime": "~2h 45m",
-      "bookings": "✅ Das Auss.Zeit Night 2",
-      "mapUrl": "https://www.google.com/maps/dir/Villabassa,+Italy/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Siusi+allo+Sciliar,+Italy",
+      "highlights": "Braies sunrise · Cadini di Misurina viewpoint · Prato Piazza plateau · Cortina d'Ampezzo · Falzarego Pass · Gardena Pass · arrive Siusi",
+      "drive": "~200 km / 124 mi",
+      "driveTime": "~3h 30m",
+      "bookings": "⏳ Book Siusi hotel Jun 29–Jul 1 (2 nights)",
+      "mapUrl": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Siusi hotel Jun 29–Jul 2 (3 nights)"
+        "text": "⏳ Book Siusi hotel Jun 29–Jul 1"
       }
     },
     {
@@ -1687,14 +1687,14 @@
       "flag": "🇦🇹",
       "from": "Siusi allo Sciliar 🇮🇹",
       "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
-      "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Val di Funes Santa Maddalena · Passo Gardena · Lagazuoi 2,752m WWI · Cortina d'Ampezzo · back to Siusi",
-      "drive": "~220 km / 137 mi",
-      "driveTime": "~4h",
-      "bookings": "⚠️ Das Auss.Zeit #72072265941383 — REBOOK Jun 29–Jul 1 (2 nights)",
-      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Siusi+allo+Sciliar,+Italy",
+      "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Val di Funes Santa Maddalena · Lagazuoi 2,752m WWI galleries · back to Siusi",
+      "drive": "~180 km / 112 mi",
+      "driveTime": "~3h 30m",
+      "bookings": "⏳ Book Siusi hotel · ⚠️ Pre-book Seceda timed slots at seceda.it",
+      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
         "level": "pending",
-        "text": "⏳ Book Siusi hotel · ⚠️ pre-book Seceda"
+        "text": "⏳ Book Siusi hotel · pre-book Seceda"
       }
     },
     {
