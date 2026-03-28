@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:44:55Z"
+    "_updated": "2026-03-28T17:40:05Z"
   },
   "bookingStrip": [
     {
@@ -130,10 +130,10 @@
     },
     {
       "nights": "3–4",
-      "property": "Tiny House im schönen Diemtigtal 🇨🇭",
-      "address": "Bächlen 362A, 3753 Oey, Diemtigtal",
+      "property": "Camping Jungfrau 🇨🇭",
+      "address": "Weid 406, 3822 Lauterbrunnen, Switzerland",
       "dates": "Jun 22–24",
-      "ref": "Airbnb · $255.92 + extension",
+      "ref": "Booking · $499 / CHF 398 · 2 nights",
       "freeCancel": null,
       "status": "Confirmed"
     },
@@ -211,12 +211,12 @@
     },
     {
       "nights": "9",
-      "property": "Villabassa (Niederdorf) Hotel 🇮🇹",
-      "address": "Villabassa (Niederdorf), Val Pusteria, South Tyrol, Italy",
+      "property": "Hotel Schwarzer Adler Sillian 🇦🇹",
+      "address": "Sillian 12, 9920 Sillian, Austria",
       "dates": "Jun 28–29",
-      "ref": "⏳ Yet to book — 1 night · Hotel Post Niederdorf / Residence Dolomiten / B&B · book now — July peak season",
+      "ref": "Booking · $115 / €99.40 · 1 night",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "10–11",
@@ -725,13 +725,13 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Grossglockner High Alpine Road → Villabassa · Dolomites Arrival",
-      "meta": "Jun 28 · Bad Goisern → Grossglockner High Alpine Road → Lienz → Val Pusteria → Villabassa",
+      "title": "Grossglockner High Alpine Road → Sillian · Dolomites Gateway",
+      "meta": "Jun 28 · Bad Goisern → Grossglockner High Alpine Road → Lienz → Sillian, Austria",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Bad Goisern → Grossglockner → Lienz → Villabassa",
-          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Villabassa,+Italy"
+          "label": "Day 9 Map — Bad Goisern → Grossglockner → Lienz → Sillian",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Sillian,+Austria"
         }
       ],
       "sections": [
@@ -744,10 +744,10 @@
             "⭐ <strong>Kaiser-Franz-Josefs-Höhe</strong> — stop here for the glacier view · Pasterze Glacier platform · ibex sometimes visible on the rocks · ~45min",
             "Continue south over the pass → <strong>Heiligenblut</strong> · stunning Baroque church against the mountains · quick stop",
             "Drive <strong>1hr</strong> south → <strong>Lienz</strong> · gateway to East Tyrol · optional lunch stop (~45min)",
-            "Drive <strong>45min</strong> east → <strong>Villabassa (Niederdorf)</strong>, Val Pusteria, South Tyrol 🇮🇹 · arrive ~4:00pm",
-            "Check in <strong>Villabassa hotel</strong> · ⏳ yet to book · medieval village lanes · Baroque church · fountain square",
-            "⭐ <strong>Optional: drive 15min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · <strong>Località Braies di Sotto 1, 39030 Braies (Prags)</strong> · GPS 46.6944°N 12.0853°E",
-            "Dinner in Villabassa · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
+            "Drive <strong>1hr</strong> east → <strong>Sillian</strong>, East Tyrol, Austria 🇦🇹 · arrive ~3:30pm",
+            "Check in <strong>Hotel Schwarzer Adler Sillian</strong> · ✅ Confirmed · $115 / €99.40 · check-in 16:00–21:00 · Sillian 12, 9920 Sillian",
+            "⭐ <strong>Optional: drive 25min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · <strong>Località Braies di Sotto 1, 39030 Braies (Prags)</strong> · GPS 46.6944°N 12.0853°E",
+            "Dinner in Sillian · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
           ]
         }
       ],
@@ -758,7 +758,7 @@
         },
         {
           "type": "alarm",
-          "text": "⏰ Leave Bad Goisern 8:30am · Grossglockner entrance ~9:45am · Villabassa by 4pm · alarm 5am tomorrow"
+          "text": "⏰ Leave Bad Goisern 8:30am · Grossglockner entrance ~9:45am · Sillian by 3:30pm · alarm 5am tomorrow"
         },
         {
           "type": "alarm",
@@ -766,23 +766,19 @@
         },
         {
           "type": "booking",
-          "text": "⏳ Book Villabassa hotel Jun 28–29 · Hotel Post Niederdorf / Residence Dolomiten"
+          "text": "✅ Hotel Schwarzer Adler Sillian · Confirmed · $115 · check-in 16:00–21:00"
         }
       ],
       "summary": {
         "drive": "~280 km / 174 mi",
         "time": "~45m",
         "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
-        "to": "Villabassa (Niederdorf) 🇮🇹",
-        "highlights": "Grossglockner High Alpine Road 2,504m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Heiligenblut · Lienz · Villabassa arrival · optional Braies preview",
+        "to": "Sillian 🇦🇹",
+        "highlights": "Grossglockner High Alpine Road 2,504m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Heiligenblut · Lienz · Sillian arrival · optional Braies preview",
         "bookings": [
           {
             "status": "booked",
-            "text": "✓ Pr' Matjon"
-          },
-          {
-            "status": "booked",
-            "text": "✓ Vintgar entry · PE01-BL0I-808"
+            "text": "✓ Hotel Schwarzer Adler Sillian · $115 · Confirmed"
           }
         ]
       }
@@ -790,20 +786,20 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "East Dolomites — Braies Sunrise + Cadini di Misurina + Prato Piazza → Siusi",
-      "meta": "Jun 29 · Villabassa → Braies sunrise → Cadini di Misurina → Prato Piazza → Siusi",
+      "title": "East Dolomites — Braies Sunrise + Cadini + Prato Piazza + Cortina + Falzarego + Gardena → Siusi",
+      "meta": "Jun 29 · Sillian → Braies sunrise → Cadini di Misurina → Prato Piazza → Cortina d'Ampezzo → Falzarego Pass → Gardena Pass → Siusi",
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Villabassa → Braies → Cadini di Misurina → Prato Piazza → Siusi",
-          "url": "https://www.google.com/maps/dir/Villabassa,+Italy/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Siusi+allo+Sciliar,+Italy"
+          "label": "Day 10 Map — Sillian → Braies → Cadini → Prato Piazza → Cortina → Falzarego → Gardena → Siusi",
+          "url": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "<strong>5:00am alarm</strong> · drive <strong>15 min</strong> → Lago di Braies · arrive 5:30am · gate opens 7:30am but you're already inside",
+            "<strong>5:00am alarm</strong> · drive <strong>25 min</strong> → Lago di Braies · arrive 5:30am · gate opens 7:30am but you're already inside",
             "⭐ <strong>Lago di Braies sunrise</strong> — emerald mirror lake · iconic boathouse · Dolomite peaks reflected in still water · most beautiful lake in Italy",
             "🥾 <strong>Braies lake circuit</strong> — 3.5km · flat · ~1hr · pure silence · nobody there · <strong>Croda del Becco (2,810m) towers directly above</strong> — admire it from the shore, not the summit",
             "Drive <strong>30 min</strong> → <strong>Rifugio Auronzo</strong> via Misurina · €30 toll road · arrive ~7:45am · park early before crowds",
@@ -813,8 +809,12 @@
             "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
             "🥾 <strong>Prato Piazza easy walk</strong> — 1hr loop · flat · free · morning light on Tre Cime",
             "<strong>Lunch</strong> at Rifugio Prato Piazza (~1hr) · cash",
-            "Drive <strong>1hr 15min</strong> west → <strong>Siusi allo Sciliar</strong> · check in hotel · arrive ~1:30pm · ⏳ yet to book · near cable car station",
-            "⭐ <strong>Siusi afternoon</strong> — Schlern massif views · village walk · rest · Seceda and the west Dolomites tomorrow"
+            "Drive <strong>45 min</strong> west → <strong>Cortina d’Ampezzo</strong> · Corso Italia piazza · Tofane peaks framing the town · espresso stop · ~45 min",
+            "⭐ <strong>Cortina d’Ampezzo</strong> — the queen of the Dolomites · elegant mountain town · a perfect coffee break after a big morning",
+            "Drive <strong>20 min</strong> west → <strong>Passo Falzarego (2,105m)</strong> · dramatic rock formations · Lagazuoi massif · quick photo stop · 15 min",
+            "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
+            "Drive <strong>45 min</strong> → <strong>Siusi allo Sciliar</strong> · check in hotel · arrive ~5:00pm · ⏳ yet to book · near cable car station",
+            "⭐ <strong>Siusi evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow"
           ]
         }
       ],
@@ -837,15 +837,15 @@
         }
       ],
       "summary": {
-        "drive": "~140 km / 87 mi",
+        "drive": "~200 km / 124 mi",
         "time": "~1h 00m",
-        "from": "Villabassa 🇮🇹",
+        "from": "Sillian 🇦🇹",
         "to": "Siusi allo Sciliar 🇮🇹",
-        "highlights": "Braies sunrise · Croda del Becco viewed from lake shore · Cadini di Misurina hike · Prato Piazza plateau · arrive Siusi",
+        "highlights": "Braies sunrise · Cadini di Misurina hike · Prato Piazza plateau · Cortina d’Ampezzo · Falzarego Pass · Gardena Pass · arrive Siusi",
         "bookings": [
           {
-            "status": "booked",
-            "text": "✓ Vintgar entry · PE01-BL0I-808 · 10:00am"
+            "status": "pending",
+            "text": "⏳ Book Siusi hotel Jun 29–Jul 1 (2 nights) · near cable car"
           }
         ]
       }
@@ -853,8 +853,8 @@
     {
       "date": "Jun 30",
       "dayNum": 12,
-      "title": "West Dolomites — Seceda + Val di Funes + Passo Gardena + Lagazuoi + Cortina",
-      "meta": "Jun 30 · Siusi → Ortisei (Seceda) → Val di Funes → Passo Gardena → Lagazuoi → Cortina → back to Siusi",
+      "title": "West Dolomites — Seceda + Val di Funes + Lagazuoi",
+      "meta": "Jun 30 · Siusi → Ortisei (Seceda) → Val di Funes → Passo Falzarego (Lagazuoi) → back to Siusi",
       "sections": [
         {
           "heading": null,
@@ -865,18 +865,16 @@
             "<strong>Lunch at Rifugio Firenze</strong> on the Seceda ridge (~1hr) · cable car back down · depart Ortisei ~1:00pm",
             "Drive <strong>30 min</strong> → <strong>Val di Funes (Santa Maddalena)</strong> · park in village · afternoon light is perfect for this shot",
             "⭐ <strong>Santa Maddalena Church viewpoint</strong> — most photographed scene in South Tyrol · stone church in emerald meadow + jagged Odle peaks · Panoramaweg walk (~1hr return · free)",
-            "Drive via <strong>Passo Gardena (2,121m)</strong> → Passo Falzarego · SS243 · do NOT take SS49 highway · Sella Massif + Cir Peaks · one of the world's most beautiful passes · adds 25 min",
+            "Drive <strong>1hr</strong> west via SS242 → <strong>Passo Falzarego</strong> · scenic route through Corvara · arrive by 4:00pm",
             "⭐ <strong>Lagazuoi cable car (2,752m)</strong> — arrive <strong>Passo Falzarego by 4:00pm</strong> · Rifugio Lagazuoi · WWI tunnel galleries (helmet + headlamp ~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm",
-            "Drive <strong>25 min</strong> east → <strong>Cortina d'Ampezzo</strong> · arrive ~5:45pm",
-            "⭐ <strong>Cortina d'Ampezzo</strong> — Corso Italia piazza · Tofane peaks · best espresso of the trip · <strong>no rush today</strong> · 45 min",
-            "Drive <strong>1hr 10min</strong> → <strong>Siusi</strong> · arrive ~8:00pm · dinner · Night 2"
+            "Drive <strong>1hr 20min</strong> → <strong>Siusi</strong> · arrive ~7:30pm · dinner · Night 2"
           ]
         }
       ],
       "mapLinks": [
         {
-          "label": "Day Map — Jun 30",
-          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Gardena,+Italy/Passo+Falzarego,+Italy/Cortina+d'Ampezzo,+Italy/Siusi+allo+Sciliar,+Italy"
+          "label": "Day 11 Map — Siusi → Seceda → Val di Funes → Lagazuoi → Siusi",
+          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Siusi+allo+Sciliar,+Italy"
         }
       ],
       "tags": [
@@ -896,8 +894,8 @@
       "summary": {
         "from": "Siusi allo Sciliar 🇮🇹",
         "to": "Siusi allo Sciliar 🇮🇹",
-        "drive": "~220 km / 137 mi",
-        "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Santa Maddalena golden hour · Passo Gardena · Lagazuoi 2,752m WWI galleries · Cortina d'Ampezzo",
+        "drive": "~180 km / 112 mi",
+        "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Santa Maddalena viewpoint · Lagazuoi 2,752m WWI galleries",
         "accommodation": "Das Auss.Zeit ✅"
       },
       "dayLabel": "11",
