@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:22:10Z"
+    "_updated": "2026-03-28T06:24:42Z"
   },
   "bookingStrip": [
     {
@@ -247,10 +247,10 @@
     },
     {
       "nights": "14",
-      "property": "Schaffhausen Hotel 🇨🇭",
-      "address": "Schaffhausen, Switzerland — near Rhine Falls / old town",
+      "property": "Bregenz Hotel 🇦🇹",
+      "address": "Bregenz, Lake Constance (Bodensee), Vorarlberg, Austria",
       "dates": "Jul 3–4",
-      "ref": "⏳ Yet to book — 1 night · Park Villa Schaffhausen / Hotel Kronenhof / near Rheinfall",
+      "ref": "⏳ Yet to book — 1 night · Hotel Weißes Kreuz Bregenz / Messmer Boutique Hotel · near lake · 130km from ZRH",
       "freeCancel": null,
       "status": "Yet to book"
     },
@@ -1016,13 +1016,13 @@
     {
       "dayLabel": "14",
       "date": "Jul 3",
-      "title": "Seebensee + Drachensee Dragon Lake → Rhine Falls → Schaffhausen",
-      "meta": "Jul 3 · Innsbruck checkout → Ehrwald → Seebensee + Drachensee → Rhine Falls golden hour → Schaffhausen",
+      "title": "Seebensee + Drachensee Dragon Lake → Bregenz · Lake Constance",
+      "meta": "Jul 3 · Innsbruck checkout → Ehrwald → Seebensee + Drachensee → Bregenz, Lake Constance",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 14 Map — Innsbruck → Ehrwald → Seebensee/Drachensee → Rhine Falls → Schaffhausen",
-          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland"
+          "label": "Day 14 Map — Innsbruck → Ehrwald → Seebensee/Drachensee → Bregenz",
+          "url": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Bregenz,+Austria"
         }
       ],
       "sections": [
@@ -1030,38 +1030,42 @@
           "heading": null,
           "items": [
             "Checkout <strong>Innsbruck 8:30am</strong> · drive <strong>1hr</strong> → <strong>Ehrwald</strong> · park at Ehrwalder Almbahn valley station · arrive ~9:30am",
-            "⭐ <strong>Ehrwalder Almbahn cable car</strong> up to mountain station · ~€21.50 return · views of Zugspitze massif on the ascent",
-            "⭐ <strong>Seebensee</strong> — easy <strong>45min gravel path</strong> from cable car top · turquoise glacial lake at 1,657m · Zugspitze massif reflected in still water · one of the most beautiful mountain lakes in Austria",
-            "🥾 <strong>Drachensee + Coburger Hütte</strong> — steep <strong>30–45min climb (260m)</strong> from Seebensee · 'Dragon Lake' of dark emerald colour · <strong>Coburger Hütte perched dramatically above</strong> · view straight up at Germany's highest peak",
-            "<strong>Lunch at Coburger Hütte</strong> — Kaiserschmarrn · Tiroler Gröstl · cash only · glacier views · ~1hr",
+            "⭐ <strong>Ehrwalder Almbahn cable car</strong> up to mountain station · ~€21.50 return · Zugspitze massif looms directly above",
+            "⭐ <strong>Seebensee</strong> — easy <strong>45min gravel path</strong> from top station · turquoise glacial lake at 1,657m · Zugspitze reflected in still water · bring snacks",
+            "🥾 <strong>Drachensee + Coburger Hütte</strong> — steep <strong>30–45min climb (260m)</strong> from Seebensee · Dragon Lake of dark emerald colour · Coburger Hütte perched dramatically above · look straight up at Germany's highest peak",
+            "<strong>Lunch at Coburger Hütte</strong> — Kaiserschmarrn · Tiroler Gröstl · cash only · glacier and valley views · ~1hr",
             "Descent <strong>~1.5hrs</strong> · back at Ehrwald valley by <strong>2:30pm</strong>",
-            "Drive <strong>2hrs 30min</strong> west via Fernpass → Arlberg → Feldkirch → Schaffhausen",
-            "⭐ <strong>Rhine Falls (Rheinfall)</strong> — arrive ~5:00pm · <strong>Europe's largest waterfall</strong> · boat to the centre rock (~€7) · golden hour mist and spray · thundering curtain of water · ~1hr",
-            "Drive <strong>10 min</strong> → <strong>Schaffhausen</strong> · check in hotel · ⏳ yet to book · <strong>50km from ZRH</strong>",
-            "⭐ <strong>Schaffhausen old town evening</strong> — Munot fortress · medieval Altstadt · Rhine walk · dinner · early night · <strong>Stein am Rhein tomorrow morning</strong>"
+            "Drive <strong>1hr 30min</strong> west via Fernpass → Bludenz → Bregenz · arrive <strong>~4:30pm</strong>",
+            "⭐ <strong>Bregenz, Lake Constance (Bodensee)</strong> — Austria's westernmost town · Bodensee waterfront promenade · <strong>Festspielhaus floating stage</strong> (world's largest lake opera stage) · old upper town (Oberstadt) · Vorarlberg Museum",
+            "⭐ <strong>Optional: swim in Lake Constance</strong> — Strandbad Bregenz · turquoise lake water · Alps backdrop · kids will love it",
+            "<strong>Dinner on the Bodensee waterfront</strong> · early night · Rhine Falls + Stein am Rhein tomorrow"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⏰ Leave Innsbruck 8:30am · Ehrwald 9:30am · back at valley 2:30pm · Rhine Falls by 5pm"
+          "text": "⏰ Leave Innsbruck 8:30am · Ehrwald 9:30am · back at valley 2:30pm · Bregenz by 4:30pm"
         },
         {
           "type": "alarm",
-          "text": "💰 Ehrwalder Almbahn ~€21.50 return · Coburger Hütte cash only · Rhine Falls boat ~€7"
+          "text": "💰 Ehrwalder Almbahn ~€21.50 return · Coburger Hütte cash only"
+        },
+        {
+          "type": "alarm",
+          "text": "🏊 Strandbad Bregenz — swimming in Lake Constance · €5 entry · open until 8pm in July"
         },
         {
           "type": "booking",
-          "text": "⏳ Book Schaffhausen hotel Jul 3–4 · Park Villa / Hotel Kronenhof / near Rhine Falls"
+          "text": "⏳ Book Bregenz hotel Jul 3–4 · Hotel Weißes Kreuz / Messmer Boutique · near Bodensee"
         }
       ],
       "summary": {
-        "drive": "~280 km / 174 mi",
+        "drive": "~230 km / 143 mi",
         "time": "3h 10m",
         "from": "Innsbruck 🇦🇹",
-        "to": "Schaffhausen 🇨🇭",
-        "highlights": "Seebensee turquoise glacier lake · Drachensee Dragon Lake · Coburger Hütte · Rhine Falls golden hour · Schaffhausen old town",
+        "to": "Bregenz, Lake Constance 🇦🇹",
+        "highlights": "Seebensee turquoise glacier lake · Drachensee Dragon Lake · Coburger Hütte · Bregenz Lake Constance waterfront · Festspielhaus · optional lake swim",
         "bookings": [
           {
             "status": "booked",
@@ -1073,38 +1077,42 @@
     {
       "dayLabel": "15",
       "date": "Jul 4",
-      "title": "Stein am Rhein → ZRH · Fly Home",
-      "meta": "Jul 4 · Schaffhausen → Stein am Rhein → ZRH Airport · last day · evening flight tomorrow",
+      "title": "Bregenz → Rhine Falls → Stein am Rhein → ZRH · Fly Home",
+      "meta": "Jul 4 · Bregenz → Rhine Falls → Stein am Rhein → ZRH Airport · final day",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 15 Map — Schaffhausen → Stein am Rhein → ZRH Airport",
-          "url": "https://www.google.com/maps/dir/Schaffhausen,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland"
+          "label": "Day 15 Map — Bregenz → Rhine Falls → Stein am Rhein → ZRH",
+          "url": "https://www.google.com/maps/dir/Bregenz,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Relaxed morning — breakfast at hotel · no rush · <strong>Stein am Rhein is 15min away</strong>",
-            "Drive <strong>15 min</strong> → <strong>Stein am Rhein</strong> · park near the Rhine",
-            "⭐ <strong>Stein am Rhein</strong> — one of Europe's <strong>best-preserved medieval towns</strong> · Rathausplatz market square with <strong>painted house facades</strong> (every building a different fresco) · Kloster St Georgen · Rhine waterfront promenade · castle above the town · ~1.5hrs · free",
-            "⭐ <strong>Stroll the Rhine waterfront</strong> — watch the boats · coffee on the terrace · final Alps views to the south",
-            "Drive <strong>50 min</strong> → <strong>ZRH Airport</strong> · return Hertz car · check in hotel",
-            "⭐ <strong>Optional: Zurich city visit</strong> (30min from airport) — Bahnhofstrasse · Lindenhügel old town · Lake Zurich waterfront · if energy allows",
-            "<strong>Pack carefully</strong> · charge devices · set <strong>alarm 5:00am</strong>",
-            "⚠️ <strong>FI571 departs ZRH 7:55am</strong> → KEF → MCO 8:50pm · check in by <strong>6:00am</strong> · terminal walk ~20min from most airport hotels"
+            "Checkout <strong>Bregenz 9:00am</strong> · drive <strong>1hr 20min</strong> → <strong>Rhine Falls (Rheinfall), Neuhausen am Rheinfall</strong>",
+            "⭐ <strong>Rhine Falls</strong> — <strong>Europe's largest waterfall</strong> · 23m drop · 150m wide · thundering curtain of water · <strong>boat to the centre rock</strong> (~€7) · mist spray · ~1hr",
+            "Drive <strong>15 min</strong> → <strong>Stein am Rhein</strong>",
+            "⭐ <strong>Stein am Rhein</strong> — one of Europe's <strong>best-preserved medieval towns</strong> · Rathausplatz market square with <strong>painted house facades</strong> (every building a different fresco) · Kloster St Georgen · Rhine waterfront · castle above the town · ~1hr · free",
+            "Drive <strong>50 min</strong> → <strong>ZRH Airport</strong> · return Hertz car · arrive ~1:30pm",
+            "⭐ <strong>Optional: Zurich old town</strong> (30min from airport) — Bahnhofstrasse · Lindenhügel · Lake Zurich · if energy allows",
+            "Check in airport hotel · pack carefully · charge all devices",
+            "⚠️ <strong>FI571 departs ZRH 7:55am</strong> → KEF → MCO 8:50pm · check in by <strong>6:00am</strong> · alarm <strong>5:00am</strong>"
           ]
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⚠️ FI571 ZRH 7:55am — check in by 6:00am · alarm 5:00am · hotel at or near terminal"
+          "text": "⚠️ FI571 ZRH 7:55am — check in by 6:00am · alarm 5:00am · hotel must be at/near terminal"
         },
         {
           "type": "alarm",
           "text": "🚗 Return Hertz car ZRH — confirm return terminal · check fuel policy · allow 30min"
+        },
+        {
+          "type": "alarm",
+          "text": "💰 Rhine Falls boat ~€7 · Stein am Rhein free · Hertz return included"
         },
         {
           "type": "booking",
@@ -1112,11 +1120,11 @@
         }
       ],
       "summary": {
-        "drive": "~65 km / 40 mi",
+        "drive": "~185 km / 115 mi",
         "time": "2h 30m",
-        "from": "Schaffhausen 🇨🇭",
+        "from": "Bregenz, Lake Constance 🇦🇹",
         "to": "ZRH Airport Hotel 🇨🇭",
-        "highlights": "Stein am Rhein painted medieval town · Rhine waterfront · ZRH · optional Zurich city · fly home",
+        "highlights": "Rhine Falls boat · Stein am Rhein painted medieval facades · ZRH · optional Zurich old town · fly home",
         "bookings": [
           {
             "status": "pending",
@@ -1711,12 +1719,12 @@
       "date": "Jul 3",
       "flag": "🇮🇹",
       "from": "Innsbruck 🇦🇹",
-      "nightStay": "Schaffhausen 🇨🇭 ⏳",
-      "highlights": "Seebensee glacier lake · Drachensee Dragon Lake · Coburger Hütte · Rhine Falls golden hour · Schaffhausen old town",
-      "drive": "~280 km / 174 mi",
-      "driveTime": "~3h 30m",
+      "nightStay": "Bregenz, Lake Constance 🇦🇹 ⏳",
+      "highlights": "Seebensee glacier lake · Drachensee Dragon Lake · Coburger Hütte · Bregenz Bodensee waterfront · Festspielhaus · optional lake swim",
+      "drive": "~230 km / 143 mi",
+      "driveTime": "~2h 30m",
       "bookings": "⏳ Book Mayrhofen hotel 1 night",
-      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Schaffhausen,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Innsbruck,+Austria/Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Bregenz,+Austria",
       "action": {
         "level": "pending",
         "text": "⏳ Book Mayrhofen 1 night"
@@ -1726,13 +1734,13 @@
       "day": "15",
       "date": "Jul 4",
       "flag": "🇦🇹",
-      "from": "Schaffhausen 🇨🇭",
+      "from": "Bregenz 🇦🇹",
       "nightStay": "ZRH Airport Hotel 🇨🇭 ⏳",
-      "highlights": "Stein am Rhein painted medieval town · Rhine waterfront · ZRH airport · optional Zurich · fly tomorrow",
-      "drive": "~65 km / 40 mi",
-      "driveTime": "~1h",
+      "highlights": "Rhine Falls boat · Stein am Rhein painted medieval town · ZRH airport · optional Zurich old town · fly home",
+      "drive": "~185 km / 115 mi",
+      "driveTime": "~2h 30m",
       "bookings": "⏳ Book ZRH airport hotel · ✅ Hertz return L5350959316",
-      "mapUrl": "https://www.google.com/maps/dir/Schaffhausen,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland",
+      "mapUrl": "https://www.google.com/maps/dir/Bregenz,+Austria/Rheinfall,+Neuhausen+am+Rheinfall,+Switzerland/Stein+am+Rhein,+Switzerland/Zurich+Airport,+Switzerland",
       "action": {
         "level": "pending",
         "text": "⏳ Book ZRH Airport hotel"
