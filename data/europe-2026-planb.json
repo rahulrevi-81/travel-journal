@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T17:43:00Z"
+    "_updated": "2026-03-28T19:45:52Z"
   },
   "bookingStrip": [
     {
@@ -138,22 +138,22 @@
       "status": "Confirmed"
     },
     {
-      "nights": "5",
-      "property": "Jun 24 Hotel 🇩🇪",
-      "address": "Munich area or en-route — yet to decide",
-      "dates": "Jun 24–25",
-      "ref": "⏳ Yet to book — no place decided",
+      "nights": "5–6",
+      "property": "One-Bedroom Apartment, Berchtesgaden 🇩🇪",
+      "address": "Kälbersteinstraße 4, 83471 Berchtesgaden, Germany",
+      "dates": "Jun 24–26",
+      "ref": "✅ Booking · €310 total · check-in 16:00–20:00 · check-out 08:00–11:00 · free cancel until May 24",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "6",
       "property": "Pension-Café-Konditorei Mikl 🇦🇹",
       "address": "2 Doktor-Albert-Eder-Straße, 5400 Hallein, Austria",
       "dates": "Jun 25–26",
-      "ref": "✅ Airbnb booked · $219 / €190 · check-in 14:00–18:00 · check-out 08:00–11:00 · someone meets you",
+      "ref": "✅ Airbnb booked · $219 / €190 · check-in 14:00–18:00 · check-out 08:00–11:00 · someone meets you — CANCELLED (replaced by Berchtesgaden)",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "cancelled"
     },
     {
       "nights": "7–8",
@@ -163,15 +163,6 @@
       "ref": "✅ Airbnb booked · $333 / €288.36 · 2 nights · check-in 14:00–20:00 · key box at entrance with code · Jun 26–28",
       "freeCancel": null,
       "status": "Confirmed"
-    },
-    {
-      "nights": "—",
-      "property": "Escape by Landhaus Lindenberg 🇩🇪",
-      "address": "Höfatsweg 3, 86807 Buchloe, Germany",
-      "dates": "Jun 24–25",
-      "ref": "#6026325459 — CANCELLED",
-      "freeCancel": null,
-      "status": "cancelled"
     },
     {
       "nights": "—",
@@ -489,13 +480,13 @@
     {
       "dayLabel": "5",
       "date": "Jun 24",
-      "title": "Lauterbrunnen + Bachalpsee → Munich area",
-      "meta": "Jun 24 · Diemtigtal → Lauterbrunnen → Munich area",
+      "title": "Lauterbrunnen → Berchtesgaden",
+      "meta": "Jun 24 · Lauterbrunnen → Staubbach Falls → Trümmelbach Falls → Berchtesgaden",
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 5 Map — Lauterbrunnen + Bachalpsee → Munich area",
-          "url": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Lauterbrunnen,+Switzerland/Staubbach+Falls,+Switzerland/Munich,+Germany"
+          "label": "Day 5 Map — Lauterbrunnen → Trümmelbach → Berchtesgaden",
+          "url": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Trummelbach+Falls,+Lauterbrunnen,+Switzerland/Berchtesgaden,+Germany"
         }
       ],
       "sections": [
@@ -505,8 +496,8 @@
             "Leave <strong>Diemtigtal 8:30am</strong> · drive <strong>45 min</strong> → Lauterbrunnen · park in village",
             "⭐ <strong>Lauterbrunnen valley</strong> — 72 waterfalls · <strong>Staubbach Falls</strong> (300m freefall over the village · 15 min walk to base · free) · valley floor stroll (~1hr)",
             "⭐ <strong>Trümmelbach Falls</strong> (optional) — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
-            "Drive <strong>~3hrs</strong> northeast → <strong>Munich area</strong> · check in · ⏳ hotel yet to book · no place decided",
-            "<strong>Dinner</strong> — Munich (~1hr)"
+            "Drive <strong>~3hrs</strong> northeast → <strong>Berchtesgaden</strong> · check in · ⏳ hotel yet to book · no place decided",
+            "<strong>Dinner</strong> — Berchtesgaden (~1hr)"
           ]
         }
       ],
@@ -532,16 +523,12 @@
         "drive": "~260 km / 162 mi",
         "time": "2h 20m",
         "from": "Diemtigtal 🇨🇭",
-        "to": "Munich area 🇩🇪",
-        "highlights": "Staubbach Falls · Lauterbrunnen valley · drive to Munich area",
+        "to": "Berchtesgaden 🇩🇪",
+        "highlights": "Staubbach Falls · Lauterbrunnen valley · Trümmelbach Falls · drive to Berchtesgaden",
         "bookings": [
           {
             "status": "booked",
-            "text": "✓ Wurznwirt"
-          },
-          {
-            "status": "pending",
-            "text": "⏳ Königssee boat"
+            "text": "✓ Berchtesgaden apartment · €310 · check-in 16:00–20:00"
           }
         ]
       }
@@ -550,7 +537,7 @@
       "dayLabel": "6",
       "date": "Jun 25",
       "title": "Königssee + Eagle's Nest + Hintersee → Hallein",
-      "meta": "Jun 25 · Munich area → Königssee boat → Eagle's Nest → Hintersee → Jenner (optional) → Hallein",
+      "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle's Nest → Hintersee → Jenner (optional) → Hallein",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -562,7 +549,7 @@
         {
           "heading": null,
           "items": [
-            "Leave Munich area <strong>7:00am</strong> · drive <strong>~2hrs</strong> → <strong>Königssee dock, Schönau am Königssee</strong> · arrive ~9:00am",
+            "Leave Berchtesgaden area <strong>7:00am</strong> · drive <strong>~2hrs</strong> → <strong>Königssee dock, Schönau am Königssee</strong> · arrive ~9:00am",
             "⭐ <strong>Königssee electric boat</strong> departs ~9:15am — ride straight to <strong>Salet</strong> (55 min · do NOT get off at St. Bartholomä yet)",
             "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · the quietest corner of Berchtesgaden · ~45min",
             "Board boat back to <strong>St. Bartholomä</strong> (20 min) · quick beer garden lunch at the historic hunting lodge (~45min)",
@@ -578,7 +565,7 @@
       "tags": [
         {
           "type": "alarm",
-          "text": "⏰ Leave Munich 7am · Königssee boat 9:15am · Eagle's Nest afternoon bus ~1pm · Hallein by 6pm"
+          "text": "⏰ Leave Berchtesgaden 7am · Königssee boat 9:15am · Eagle's Nest afternoon bus ~1pm · Berchtesgaden by 6pm"
         },
         {
           "type": "alarm",
@@ -590,21 +577,27 @@
         },
         {
           "type": "booking",
-          "text": "✅ Pension-Café-Konditorei Mikl, Hallein · confirmed · check-in 14:00–18:00"
+          "text": "✅ Pension-Café-Konditorei Mikl, Berchtesgaden · confirmed · check-in 14:00–18:00"
         }
       ],
       "summary": {
         "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
         "drive": "~155 km / 96 mi",
-        "from": "Munich area 🇩🇪",
-        "to": "Hallein 🇦🇹"
+        "from": "Berchtesgaden 🇩🇪",
+        "to": "Hallein 🇦🇹",
+        "bookings": [
+          {
+            "status": "booked",
+            "text": "✓ Berchtesgaden apartment Night 2 · checkout 08:00–11:00"
+          }
+        ]
       }
     },
     {
       "dayLabel": "7",
       "date": "Jun 26",
       "title": "Liechtensteinklamm → Salzburg + Hohensalzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 26 · Hallein → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 26 · Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -646,7 +639,7 @@
       "summary": {
         "drive": "~220 km / 137 mi",
         "time": "~45m",
-        "from": "Hallein 🇦🇹",
+        "from": "Berchtesgaden 🇩🇪",
         "to": "Hallstatt 🇦🇹",
         "highlights": "Liechtensteinklamm gorge · Salzburg old town + Hohensalzburg Fortress · Wolfgangsee · Hallstatt golden hour",
         "bookings": [
@@ -1588,30 +1581,30 @@
     {
       "day": "5",
       "date": "Jun 24",
-      "flag": "🇨🇭",
+      "flag": "🇩🇪",
       "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
-      "nightStay": "Munich area 🇩🇪 — ⏳ yet to book",
-      "highlights": "Staubbach Falls (walkable from camp) · Lauterbrunnen valley walk · Trümmelbach Falls · drive to Munich area",
+      "nightStay": "Berchtesgaden Apartment 🇩🇪 ✅",
+      "highlights": "Staubbach Falls · Lauterbrunnen valley · Trümmelbach Falls · drive to Berchtesgaden",
       "drive": "~260 km / 162 mi",
       "driveTime": "~3hrs 30m",
-      "bookings": "⏳ Jun 24 hotel — no place decided yet",
-      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Trummelbach+Falls,+Lauterbrunnen,+Switzerland/Munich,+Germany",
+      "bookings": "✅ Berchtesgaden apartment · €310 · check-in 16:00–20:00",
+      "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Trummelbach+Falls,+Lauterbrunnen,+Switzerland/Berchtesgaden,+Germany",
       "action": {
-        "level": "pending",
-        "text": "⏳ Munich hotel — no place decided"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "6",
       "date": "Jun 25",
       "flag": "🇩🇪",
-      "from": "Munich area 🇩🇪",
-      "nightStay": "Pension-Café-Konditorei Mikl, Hallein 🇦🇹 ✅",
+      "from": "Berchtesgaden 🇩🇪",
+      "nightStay": "Berchtesgaden Apartment 🇩🇪 ✅ (Night 2)",
       "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
       "drive": "~155 km / 96 mi",
       "driveTime": "~2hrs",
-      "bookings": "✅ Pension Mikl confirmed · Airbnb $219 · check-in 14:00–18:00",
-      "mapUrl": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Hallein,+Austria",
+      "bookings": "✅ Berchtesgaden apartment Night 2 · checkout 08:00–11:00",
+      "mapUrl": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany",
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
@@ -1621,7 +1614,7 @@
       "day": "7",
       "date": "Jun 26",
       "flag": "🇩🇪",
-      "from": "Hallein 🇦🇹",
+      "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
       "highlights": "Liechtensteinklamm gorge 444 stairs · Salzburg old town · Hohensalzburg Fortress · Wolfgangsee · Hallstatt golden hour",
       "drive": "~220 km / 137 mi",
