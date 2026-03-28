@@ -236,23 +236,33 @@ const DATA_FILE = '../data/europe-2026-planb.json';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
 const STORAGE_KEY = 'trip-highlights-europe-2026-planb';
+function getVersionedKey(d) {
+  const v = (d.meta && d.meta._updated) ? d.meta._updated.slice(0,10) : 'v1';
+  return STORAGE_KEY + '-' + v;
+}
 let editableGlance = [];   // mutable copy with _highlights arrays
 let originalGlanceRef = null; // reference to original JSON data object
 let glanceContainer = null;   // DOM reference for re-rendering
 
 function loadGlance(original) {
-  const saved = localStorage.getItem(STORAGE_KEY);
+  const key = getVersionedKey(window._tripData || {});
+  // Clear all older version keys
+  Object.keys(localStorage).filter(k => k.startsWith(STORAGE_KEY) && k !== key)
+    .forEach(k => localStorage.removeItem(k));
+  const saved = localStorage.getItem(key);
   if (saved) {
-    try { return JSON.parse(saved); } catch(e) { localStorage.removeItem(STORAGE_KEY); }
+    try { return JSON.parse(saved); } catch(e) { localStorage.removeItem(key); }
   }
   return JSON.parse(JSON.stringify(original));
 }
 function saveGlance() {
+  const key = getVersionedKey(window._tripData || {});
   const cleaned = editableGlance.map(({_highlights, ...rest}) => ({...rest, highlights: _highlights.join(' · ')}));
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(cleaned));
+  localStorage.setItem(key, JSON.stringify(cleaned));
 }
 function resetGlance() {
-  localStorage.removeItem(STORAGE_KEY);
+  const key = getVersionedKey(window._tripData || {});
+  localStorage.removeItem(key);
   initEditableGlance(originalGlanceRef);
 }
 function initEditableGlance(glanceArr) {
@@ -818,6 +828,9 @@ function renderSummaryTable(d) {
   const btnExport = h('button', {class:'btn-export', title:'Download as Excel'});
   btnExport.innerHTML = '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 17l2-3-2-3h1.5l1.25 2 1.25-2H13.5l-2 3 2 3H12l-1.25-2L9.5 17H8z"/></svg> Export to Excel';
   btnExport.onclick = function() { exportGlanceToExcel(d); };
+  const btnReset = h('button', {class:'btn-export', title:'Reset highlights to latest data', style:'margin-left:8px;opacity:0.7;'});
+  btnReset.innerHTML = '<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg> Reset glance';
+  btnReset.onclick = function() { resetGlance(); };
   exportBar.appendChild(barTitle);
   exportBar.appendChild(btnExport);
   wrap.appendChild(exportBar);
