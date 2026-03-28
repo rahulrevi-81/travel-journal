@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T06:11:35Z"
+    "_updated": "2026-03-28T06:15:08Z"
   },
   "bookingStrip": [
     {
@@ -589,7 +589,7 @@
       ],
       "summary": {
         "highlights": "Königssee electric boat · Obersee + Röthbach Waterfall · St. Bartholomä lunch · Hintersee + Zauberwald · Jenner summit 1,874m",
-        "drive": "~145 km / 90 mi",
+        "drive": "~155 km / 96 mi",
         "from": "Munich area 🇩🇪",
         "to": "Hallein 🇦🇹"
       }
@@ -1520,8 +1520,8 @@
       "from": "Keflavík / KEF 🇮🇸",
       "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
       "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi cave · Skógafoss · Reynisfjara black sand beach · Vík village",
-      "drive": "~358 km / 222 mi",
-      "driveTime": "~5.5hrs",
+      "drive": "~450 km / 280 mi",
+      "driveTime": "~2 days",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
       "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
       "action": null
@@ -1533,7 +1533,7 @@
       "from": "Skeidflot, Mýrdalur 🇮🇸",
       "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
       "highlights": "Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier walk · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
-      "drive": "~290 km / 180 mi",
+      "drive": "~230 km / 143 mi",
       "driveTime": "~5hrs",
       "bookings": "✓ BergOne",
       "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
@@ -1559,7 +1559,7 @@
       "from": "Diemtigtal 🇨🇭",
       "nightStay": "Tiny House Diemtigtal 🇨🇭 (Night 2)",
       "highlights": "Oeschinensee 8:30am · Grindelwald First gondola #238070 ✅ · Cliff Walk · Bachalpsee hike",
-      "drive": "~130 km / 81 mi",
+      "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Grindelwald First gondola #238070 · ⏰ Book Oeschinensee slot",
       "mapUrl": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Diemtigtal,+Switzerland",
