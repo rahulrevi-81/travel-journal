@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-29T05:07:29Z"
+    "_updated": "2026-03-29T11:50:10Z"
   },
   "bookingStrip": [
     {
@@ -1819,10 +1819,10 @@
       "action": null
     }
   ],
-  "title": "Europe Family Road Trip 2026 — Plan B",
-  "subtitle": "Plan B: No Slovenia · Extra Switzerland · Berchtesgaden · Lake Achensee",
-  "planLabel": "Plan B",
-  "planNote": "Alternative itinerary skipping Slovenia. Adds Jaun Pass (Switzerland), Berchtesgaden Eagle's Nest, and Lake Achensee",
+  "title": "Europe Family Road Trip 2026",
+  "subtitle": "Iceland · Switzerland · Germany · Austria · Italy",
+  "planLabel": "",
+  "planNote": "",
   "countries": [
     "Iceland",
     "Switzerland",
