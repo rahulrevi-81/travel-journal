@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-28T22:14:34Z"
+    "_updated": "2026-03-29T05:07:29Z"
   },
   "bookingStrip": [
     {
@@ -1180,163 +1180,211 @@
   "checklist": [
     {
       "id": "flights",
-      "label": "Icelandair flights × 4",
+      "label": "✈️ Icelandair flights × 4",
       "status": "done",
       "ref": "Ref A77762 · $4,087.92",
       "deadline": null,
       "link": null
     },
     {
-      "id": "gondola",
-      "label": "🎿 Grindelwald First gondola — Jun 23 ✅",
+      "id": "hertz",
+      "label": "🚗 Hertz ZRH car rental Jun 22–Jul 5",
       "status": "done",
-      "ref": "Booking #238070 · Jun 23 confirmed",
-      "deadline": "Rebook ASAP",
+      "ref": "Conf. L5350959316",
+      "deadline": null,
       "link": null
     },
     {
-      "id": "kopavogur",
-      "label": "Cancel Kópavogur booking",
+      "id": "gondola",
+      "label": "🚡 Grindelwald First gondola — Jun 23",
       "status": "done",
-      "ref": "Done",
+      "ref": "Booking #238070",
       "deadline": null,
       "link": null
     },
     {
       "id": "passports",
-      "label": "Check 4 passports (valid Oct 2026+)",
+      "label": "🛂 Check 4 passports (valid Oct 2026+)",
       "status": "done",
       "ref": "Done",
       "deadline": null,
       "link": null
     },
     {
-      "id": "bank",
-      "label": "Notify bank of travel dates",
+      "id": "acc_skeidflot",
+      "label": "🏠 Room in Skeidflot, Mýrdalur — Jun 20–21",
       "status": "done",
-      "ref": "Done",
+      "ref": "Airbnb · $290",
       "deadline": null,
       "link": null
     },
     {
-      "id": "konigssee",
-      "label": "⛵ Königssee boat — Jun 25",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book ASAP",
-      "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/"
+      "id": "acc_bergone",
+      "label": "🏠 BergOne, Ytri-Njarðvík — Jun 21–22",
+      "status": "done",
+      "ref": "Booking · $264",
+      "deadline": null,
+      "link": null
     },
     {
-      "id": "oeschinen",
-      "label": "🏔 Oeschinensee boarding pass slot",
-      "status": "pending",
+      "id": "acc_camping",
+      "label": "🏕 Camping Jungfrau, Lauterbrunnen — Jun 22–24",
+      "status": "done",
+      "ref": "Booking · $499 / CHF 398",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_berchtesgaden",
+      "label": "🏠 Apartment Berchtesgaden — Jun 24–26",
+      "status": "done",
+      "ref": "Booking · €310 · check-in 16:00",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_goisern",
+      "label": "🏠 Kaiserblick Goisern, Bad Goisern — Jun 26–28",
+      "status": "done",
+      "ref": "Airbnb · $333 · key box",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_sillian",
+      "label": "🏠 Hotel Schwarzer Adler, Sillian — Jun 28–29",
+      "status": "done",
+      "ref": "Booking · $115 / €99.40",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_finkenberg",
+      "label": "🏠 Keyone Rooms, Finkenberg — Jul 1–2",
+      "status": "done",
+      "ref": "Booking · $176 / €152.92",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_bichlbach",
+      "label": "🏠 Landhaus Bichlbach — Jul 2–4 (2 nights)",
+      "status": "done",
+      "ref": "Booking · $467 / €405",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "acc_zrh",
+      "label": "🏨 Airport Hotel Zurich, Glattbrugg — Jul 4–5",
+      "status": "done",
+      "ref": "Booking · $198 / CHF 157.62",
+      "deadline": null,
+      "link": null
+    },
+    {
+      "id": "siusi_hotel",
+      "label": "🏨 Book Siusi allo Sciliar hotel — Jun 29–Jul 1 (2 nights) · near cable car",
+      "status": "urgent",
       "ref": null,
-      "deadline": "Confirm #238070",
-      "link": "https://oeschinensee.skiperformance.com/en/store"
+      "deadline": "Book NOW — peak season",
+      "link": "https://www.booking.com/searchresults.html?dest_id=-128535&dest_type=city&checkin=2026-06-29&checkout=2026-07-01"
+    },
+    {
+      "id": "neuschwanstein",
+      "label": "🏰 Neuschwanstein Castle tickets — Jul 4 · 9:30am entry slot",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book NOW — July sells out weeks ahead",
+      "link": "https://tickets.hohenschwangau.de"
+    },
+    {
+      "id": "seceda",
+      "label": "🚡 Seceda cable car timed slots — Jun 30 · €59/adult",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Book NOW — limited slots",
+      "link": "https://www.seceda.it"
     },
     {
       "id": "vignette",
       "label": "🇦🇹 Austrian digital vignette",
       "status": "urgent",
       "ref": null,
-      "deadline": "Buy by Jun 6",
+      "deadline": "Buy before Jun 6",
       "link": "https://www.asfinag.at"
+    },
+    {
+      "id": "oeschinen",
+      "label": "🏔 Oeschinensee timed slot — Jun 23 · 8:30am",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book soon",
+      "link": "https://oeschinensee.skiperformance.com/en/store"
+    },
+    {
+      "id": "konigssee",
+      "label": "⛵ Königssee electric boat — Jun 25 · 9:15am",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book soon",
+      "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/"
+    },
+    {
+      "id": "gosaukamm",
+      "label": "🚡 Gosaukammbahn cable car — Jun 27",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book soon",
+      "link": "https://www.gosaukammbahn.at"
+    },
+    {
+      "id": "saltmine",
+      "label": "⛏ Hallstatt Salt Mine — Jun 27",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book soon",
+      "link": "https://www.salzwelten.at/en/hallstatt"
+    },
+    {
+      "id": "dachstein",
+      "label": "🏔 Dachstein 5 Fingers cable car — Jun 27",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book soon",
+      "link": "https://www.dachstein.at"
+    },
+    {
+      "id": "achensee",
+      "label": "⛴ Achensee steamboat — Jul 2",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Book before trip",
+      "link": "https://www.achensee.com"
+    },
+    {
+      "id": "ebikes",
+      "label": "🚵 Siusi e-bikes — Jul 1 morning · Alpe di Siusi",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Reserve in advance",
+      "link": null
+    },
+    {
+      "id": "eagles_nest",
+      "label": "🦅 Eagle's Nest bus — Jun 25 · ~1pm from Obersalzberg",
+      "status": "pending",
+      "ref": null,
+      "deadline": "Check obersalzberg.de",
+      "link": "https://www.obersalzberg.de"
     },
     {
       "id": "insurance",
       "label": "🛡 Travel insurance × 4",
       "status": "pending",
       "ref": null,
-      "deadline": "By May 15",
+      "deadline": "Before departure",
       "link": null
-    },
-    {
-      "id": "bad_goisern_new",
-      "label": "🏨 Book replacement — Bad Goisern / Hallstatt area · Jun 27–29 (2 nights)",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Book now — peak season",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-1995521&dest_type=region&checkin=2026-06-27&checkout=2026-06-29"
-    },
-    {
-      "id": "munich_hotel",
-      "label": "🏨 Book Munich hotel — Jun 24 night",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Book now — peak summer",
-      "link": "https://www.booking.com/city/de/munich.html"
-    },
-    {
-      "id": "mayrhofen_hotel",
-      "label": "🏨 Book Mayrhofen hotel — 1 night Jul 3–4",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Book now — peak summer",
-      "link": "https://www.booking.com/city/at/mayrhofen.html"
-    },
-    {
-      "id": "olpererhutte",
-      "label": "🏔 Olpererhütte Jul 4 — check toll road open at verbund.com · €17 cash · park by 8am",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Check closer to date",
-      "link": "https://www.verbund.com/de-at/ueber-verbund/kraftwerke/wasserkraft/speicherkraftwerke/schlegeis"
-    },
-    {
-      "id": "dobbiaco",
-      "label": "🏔 Book Dobbiaco/Sesto hotel — Jul 1–3 (2 nights)",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now — July peak season fills fast",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-127748&dest_type=city&checkin=2026-07-01&checkout=2026-07-03"
-    },
-    {
-      "id": "rebook-hallstatt",
-      "label": "⏳ Book Hallstatt hotel Jun 26–28 (2 nights) · Heritage Hotel Hallstatt / Seehotel Grüner Baum",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now — peak season",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-1995198&dest_type=city&checkin=2026-06-26&checkout=2026-06-28"
-    },
-    {
-      "id": "rebook-ausszeit",
-      "label": "🔴 Rebook Das Auss.Zeit check-in → Jun 28 (3 nights: Jun 28–Jul 1) · was Jun 29–Jul 1 · #72072265941383",
-      "status": "urgent",
-      "ref": "#72072265941383",
-      "deadline": "Before availability fills",
-      "link": "https://www.expedia.com"
-    },
-    {
-      "id": "book-berchtesgaden",
-      "label": "⏳ Book Berchtesgaden / Schönau hotel Jun 25–26 (1 night) · Hotel Edelweiss / Alpensport-Hotel Seimler",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-1776285&dest_type=city&checkin=2026-06-25&checkout=2026-06-26"
-    },
-    {
-      "id": "book-jun24",
-      "label": "⏳ Book Munich area hotel Jun 24–25 (1 night) · no place decided yet",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now",
-      "link": null
-    },
-    {
-      "id": "book-dobbiaco",
-      "label": "⏳ Book Dobbiaco / Sesto hotel Jul 1–3 (2 nights) · Hotel Santer Dobbiaco / Garni Residence",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now — July peak",
-      "link": "https://www.booking.com/searchresults.html?dest_id=-121488&dest_type=city&checkin=2026-07-01&checkout=2026-07-03"
-    },
-    {
-      "id": "book-zrh",
-      "label": "⏳ Book ZRH Airport hotel Jul 4–5 (1 night) · Radisson Blu ZRH recommended · 3–7 min walk to terminal",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book now",
-      "link": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-zurich-airport"
     }
   ],
   "budget": [
