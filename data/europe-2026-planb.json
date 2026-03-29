@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-29T11:50:10Z"
+    "_updated": "2026-03-29T18:41:47Z"
   },
   "bookingStrip": [
     {
@@ -211,12 +211,12 @@
     },
     {
       "nights": "10–11",
-      "property": "Siusi allo Sciliar Hotel 🇮🇹",
-      "address": "Siusi allo Sciliar (Seis am Schlern), South Tyrol, Italy — near cable car station",
+      "property": "Kaiserau 1907, Collalbo 🇮🇹",
+      "address": "Via Peter Mayr, 65, 39054 Collalbo (Renon), Italy",
       "dates": "Jun 29–Jul 1",
-      "ref": "⏳ Yet to book — 2 nights · near Alpe di Siusi cable car · book now — peak season",
+      "ref": "✅ Booking · $408 / €354.56 · 2 nights · check-in 15:00–22:00 · check-out 05:00–10:30",
       "freeCancel": null,
-      "status": "Yet to book"
+      "status": "Confirmed"
     },
     {
       "nights": "12",
@@ -816,7 +816,7 @@
             "Drive <strong>20 min</strong> west → <strong>Passo Falzarego (2,105m)</strong> · dramatic rock formations · Lagazuoi massif · quick photo stop · 15 min",
             "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
             "Drive <strong>45 min</strong> → <strong>Siusi allo Sciliar</strong> · check in hotel · arrive ~5:00pm · ⏳ yet to book · near cable car station",
-            "⭐ <strong>Siusi evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow"
+            "⭐ <strong>Collalbo / Renon plateau evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow · ~50min drive to Ortisei"
           ]
         }
       ],
@@ -835,19 +835,19 @@
         },
         {
           "type": "booking",
-          "text": "⏳ Book Siusi hotel Jun 29–Jul 1 (2 nights) · near cable car · book now — peak season"
+          "text": "⏳ Book Kaiserau 1907 Collalbo Jun 29–Jul 1 (2 nights) · near cable car · book now — peak season"
         }
       ],
       "summary": {
         "drive": "~200 km / 124 mi",
         "time": "~1h 00m",
         "from": "Sillian 🇦🇹",
-        "to": "Siusi allo Sciliar 🇮🇹",
-        "highlights": "Braies sunrise · Cadini di Misurina hike · Prato Piazza plateau · Cortina d’Ampezzo · Falzarego Pass · Gardena Pass · arrive Siusi",
+        "to": "Collalbo, Renon 🇮🇹",
+        "highlights": "Braies sunrise · Cadini di Misurina hike · Prato Piazza plateau · Cortina d’Ampezzo · Falzarego Pass · Gardena Pass · arrive Collalbo (Renon plateau)",
         "bookings": [
           {
-            "status": "pending",
-            "text": "⏳ Book Siusi hotel Jun 29–Jul 1 (2 nights) · near cable car"
+            "status": "booked",
+            "text": "✓ Kaiserau 1907, Collalbo · €354.56 · check-in 15:00–22:00"
           }
         ]
       }
@@ -856,12 +856,12 @@
       "date": "Jun 30",
       "dayNum": 12,
       "title": "West Dolomites — Seceda + Val di Funes + Lagazuoi",
-      "meta": "Jun 30 · Siusi → Ortisei (Seceda) → Val di Funes → Passo Falzarego (Lagazuoi) → back to Siusi",
+      "meta": "Jun 30 · Collalbo → Ortisei (Seceda) → Val di Funes → Passo Falzarego (Lagazuoi) → back to Collalbo",
       "sections": [
         {
           "heading": null,
           "items": [
-            "Leave <strong>Siusi 8:00am</strong> · drive <strong>20 min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ pre-book Seceda timed slots at seceda.it",
+            "Leave <strong>Collalbo 7:30am</strong> · drive <strong>20 min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ pre-book Seceda timed slots at seceda.it",
             "⭐ <strong>Seceda cable car</strong> (Ortisei → 2,519m) · 15-min ride · €59/adult · Fermeda Towers + Sassolungo panorama · most iconic jagged-peak view in the entire Dolomites",
             "🥾 <strong>Forcella Pana ridgeline walk</strong> — 10 min from top station · Fermeda Towers close-up · Sassolungo panorama · ~1hr · easy",
             "<strong>Lunch at Rifugio Firenze</strong> on the Seceda ridge (~1hr) · cable car back down · depart Ortisei ~1:00pm",
@@ -875,8 +875,8 @@
       ],
       "mapLinks": [
         {
-          "label": "Day 11 Map — Siusi → Seceda → Val di Funes → Lagazuoi → Siusi",
-          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Siusi+allo+Sciliar,+Italy"
+          "label": "Day 11 Map — Collalbo → Seceda → Val di Funes → Lagazuoi → Collalbo",
+          "url": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Collalbo,+Italy"
         }
       ],
       "tags": [
@@ -894,11 +894,17 @@
         }
       ],
       "summary": {
-        "from": "Siusi allo Sciliar 🇮🇹",
-        "to": "Siusi allo Sciliar 🇮🇹",
+        "from": "Collalbo, Renon 🇮🇹",
+        "to": "Collalbo, Renon 🇮🇹 (Night 2)",
         "drive": "~180 km / 112 mi",
         "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Santa Maddalena viewpoint · Lagazuoi 2,752m WWI galleries",
-        "accommodation": "Das Auss.Zeit ✅"
+        "accommodation": "Das Auss.Zeit ✅",
+        "bookings": [
+          {
+            "status": "booked",
+            "text": "✓ Kaiserau 1907 Night 2 · checkout 05:00–10:30"
+          }
+        ]
       },
       "dayLabel": "11",
       "flag": "🇦🇹"
@@ -906,26 +912,26 @@
     {
       "dayLabel": "12",
       "date": "Jul 1",
-      "title": "Full Day Alpe di Siusi → Finkenberg",
-      "meta": "Jul 1 · Siusi → Alpe di Siusi full morning → drive to Finkenberg · sleep Finkenberg",
+      "title": "Full Day Collalbo → Finkenberg",
+      "meta": "Jul 1 · Collalbo → Alpe di Collalbo full morning → drive to Finkenberg · sleep Finkenberg",
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day Map — Jul 1",
-          "url": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy/Mayrhofen,+Austria"
+          "label": "Day 12 Map — Collalbo → Finkenberg",
+          "url": "https://www.google.com/maps/dir/Collalbo,+Italy/Finkenberg,+Austria"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "Walk <strong>5 min</strong> to Siusi cable car station · ride up to <strong>Alpe di Siusi plateau (1,850m)</strong> · ~€20 return · opens 8:00am",
-            "⭐ <strong>Alpe di Siusi (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
+            "Walk <strong>5 min</strong> to Collalbo cable car station · ride up to <strong>Alpe di Collalbo plateau (1,850m)</strong> · ~€20 return · opens 8:00am",
+            "⭐ <strong>Alpe di Collalbo (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
             "🥾 <strong>Bullaccia plateau loop</strong> — 2hr moderate walk · 360° panorama of the entire Dolomites from the meadow · Rifugio Bullaccia coffee stop",
             "⭐ <strong>Rifugio Zallinger lunch</strong> — most scenic rifugio on the plateau · Sassolungo right behind the terrace · Kaiserschmarrn · cash · ~1hr",
             "🥾 <strong>Schlern massif approach</strong> (optional) — walk toward the dramatic flat-topped Schlern · Rifugio Bolzano views · ~1hr return",
             "⭐ <strong>Optional: e-bikes</strong> on the plateau — cover more ground · available at Compatsch top station · reserve in advance",
-            "Cable car back down by <strong>12:30pm</strong> · checkout Siusi hotel · drive <strong>1hr 30min</strong> → <strong>Finkenberg</strong> via Bressanone → Brenner",
+            "Cable car back down by <strong>12:30pm</strong> · checkout Collalbo hotel · drive <strong>1hr 30min</strong> → <strong>Finkenberg</strong> via Bressanone → Brenner",
             "Arrive Finkenberg <strong>~2:30pm</strong> · check in hotel · walk Hauptstraße · Tyrolean dinner · <strong>early night</strong> — Olpererhütte hike tomorrow"
           ]
         }
@@ -947,7 +953,7 @@
       "summary": {
         "drive": "~120 km / 75 mi",
         "time": "~1h 00m",
-        "from": "Siusi allo Sciliar 🇮🇹",
+        "from": "Collalbo, Renon 🇮🇹",
         "to": "Finkenberg, Zillertal 🇦🇹",
         "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger · optional Schlern · drive to Finkenberg",
         "bookings": [
@@ -1714,44 +1720,44 @@
       "date": "Jun 29",
       "flag": "🇦🇹",
       "from": "Sillian 🇦🇹",
-      "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
+      "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅",
       "highlights": "Braies sunrise · Cadini di Misurina viewpoint · Prato Piazza plateau · Cortina d'Ampezzo · Falzarego Pass · Gardena Pass · arrive Siusi",
       "drive": "~200 km / 124 mi",
       "driveTime": "~3h 30m",
-      "bookings": "⏳ Book Siusi hotel Jun 29–Jul 1 (2 nights)",
+      "bookings": "✅ Kaiserau 1907 · €354.56 · check-in 15:00–22:00",
       "mapUrl": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Siusi hotel Jun 29–Jul 1"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "11",
       "date": "Jun 30",
       "flag": "🇦🇹",
-      "from": "Siusi allo Sciliar 🇮🇹",
-      "nightStay": "Siusi allo Sciliar 🇮🇹 ⏳",
+      "from": "Collalbo, Renon 🇮🇹",
+      "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅ (Night 2)",
       "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Val di Funes Santa Maddalena · Lagazuoi 2,752m WWI galleries · back to Siusi",
       "drive": "~180 km / 112 mi",
       "driveTime": "~3h 30m",
-      "bookings": "⏳ Book Siusi hotel · ⚠️ Pre-book Seceda timed slots at seceda.it",
-      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Siusi+allo+Sciliar,+Italy",
+      "bookings": "✅ Kaiserau 1907 Night 2 · checkout 05:00–10:30",
+      "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Collalbo,+Italy",
       "action": {
-        "level": "pending",
-        "text": "⏳ Book Siusi hotel · pre-book Seceda"
+        "level": "ok",
+        "text": "✓ Confirmed"
       }
     },
     {
       "day": "12",
       "date": "Jul 1",
       "flag": "🇮🇹",
-      "from": "Siusi allo Sciliar 🇮🇹",
+      "from": "Collalbo, Renon 🇮🇹",
       "nightStay": "Keyone Rooms, Finkenberg 🇦🇹 ✅",
       "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger lunch · drive to Mayrhofen",
       "drive": "~120 km / 75 mi",
       "driveTime": "~1h 30m",
       "bookings": "✅ Keyone Rooms Finkenberg · €152.92 · check-in 16:00",
-      "mapUrl": "https://www.google.com/maps/dir/Siusi+allo+Sciliar,+Italy/Alpe+di+Siusi,+Italy/Finkenberg,+Austria",
+      "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Finkenberg,+Austria",
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
