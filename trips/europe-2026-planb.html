@@ -204,6 +204,31 @@
   .btn-export { display:inline-flex; align-items:center; gap:7px; background:var(--ink); color:var(--cream); border:none; border-radius:3px; padding:8px 16px; font-size:12px; font-weight:500; letter-spacing:0.5px; cursor:pointer; font-family:'DM Sans',sans-serif; transition:opacity 0.15s; white-space:nowrap; flex-shrink:0; }
   .btn-export:hover { opacity:0.82; }
   .btn-export svg { width:14px; height:14px; fill:currentColor; flex-shrink:0; }
+
+  /* PDF button in hero */
+  .btn-pdf { display:inline-flex; align-items:center; gap:8px; background:transparent; color:rgba(250,248,243,0.75); border:1px solid rgba(250,248,243,0.3); border-radius:3px; padding:9px 20px; font-size:12px; font-weight:500; letter-spacing:1px; text-transform:uppercase; cursor:pointer; font-family:'DM Sans',sans-serif; transition:all 0.2s; margin-top:28px; }
+  .btn-pdf:hover { background:rgba(250,248,243,0.1); color:var(--cream); border-color:rgba(250,248,243,0.6); }
+  .btn-pdf svg { width:15px; height:15px; fill:currentColor; flex-shrink:0; }
+
+  /* ── PRINT / PDF STYLES ── */
+  @media print {
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn, .booking-strip,
+    .export-bar button, [class*="reset"] { display:none !important; }
+    body { background:#fff; font-size:11px; line-height:1.5; }
+    .hero { padding:32px 24px 24px; page-break-after:avoid; }
+    .hero h1 { font-size:32px; }
+    .container { padding:0 16px; max-width:100%; }
+    .section-title { margin-top:24px; }
+    .day-card { page-break-inside:avoid; margin-bottom:16px; border:1px solid #ddd; }
+    .day-header { padding:12px 16px; }
+    .day-body { padding:12px 16px; }
+    .glance-table td, .glance-table th { font-size:10px; padding:5px 8px; }
+    .accom-table td, .accom-table th { font-size:10px; padding:5px 8px; }
+    a[href]:after { content:" (" attr(href) ")"; font-size:9px; color:#666; }
+    .map-link a:after { content:" → google.com/maps"; font-size:9px; }
+    h2, h3 { page-break-after:avoid; }
+  }
   .glance-table tr.row-action td { border-left: 3px solid #e24b4a; }
   .glance-table tr.row-pending td { border-left: 3px solid #ef9f27; }
   .glance-table tr.row-ok td { border-left: 3px solid #639922; }
@@ -563,6 +588,12 @@ function renderHero(d) {
   const m = d.meta;
   document.title = `${m.title} — ${m.subtitle}`;
   document.getElementById('nav-label').textContent = m.flags.slice(1,4).join(' ') + ' · ' + m.departure.split(' ')[1] + '–' + m.return.split(' ')[1] + ' 2026';
+  const pdfBtn = h('button', {class:'btn-pdf'});
+  pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)';
+  pdfBtn.onclick = function() {
+    pdfBtn.textContent = 'Preparing…';
+    setTimeout(function() { window.print(); pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)'; }, 300);
+  };
   return h('div', {class: 'hero'},
     p('hero-flags', m.flags.join(' ')),
     h('h1', {html: m.title + '<br><em>' + m.subtitle + '</em>'}),
@@ -572,7 +603,8 @@ function renderHero(d) {
         [m.days,'Days'],[m.countries,'Countries'],[m.travellers,'Travellers'],
         [m.departure,'Departure'],[m.return,'Return']
       ].map(([n,l]) => div('stat', h('span',{class:'stat-num'},String(n)), h('span',{class:'stat-label'},l)))
-    )
+    ),
+    pdfBtn
   );
 }
 
