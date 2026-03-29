@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Emergency Info — VR Family Travels</title>
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#c0392b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e; --cream: #faf8f3; --warm: #f5efe6;
+    --gold: #c9a84c; --gold-light: #e8d5a3;
+    --slate: #4a5568; --border: #e2d9cc;
+    --red: #c0392b; --red-light: #ffebee; --red-border: #ef9a9a;
+    --green: #27ae60; --green-light: #e8f5e9; --green-border: #a5d6a7;
+    --blue: #2980b9; --blue-light: #e3f2fd; --blue-border: #90caf9;
+    --orange: #e67e22; --orange-light: #fff3e0; --orange-border: #ffcc02;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); font-size:15px; line-height:1.6; }
+
+  nav { background:var(--ink); padding:14px 20px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+  .nav-logo { font-family:'Playfair Display',serif; font-size:16px; color:var(--cream); text-decoration:none; }
+  .nav-logo em { color:var(--gold-light); font-style:italic; }
+  .nav-links { display:flex; gap:16px; }
+  .nav-links a { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(250,248,243,0.5); text-decoration:none; }
+  .nav-links a.active { color:#ff6b6b; }
+
+  /* SOS HEADER */
+  .sos-header { background:var(--red); padding:24px 20px; color:white; text-align:center; }
+  .sos-icon { font-size:48px; margin-bottom:8px; }
+  .sos-title { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; margin-bottom:4px; }
+  .sos-sub { font-size:13px; opacity:0.85; }
+
+  /* EU EMERGENCY BANNER */
+  .eu-banner { background:var(--red); border-top:2px solid rgba(255,255,255,0.3); }
+  .eu-call { display:flex; align-items:center; justify-content:center; gap:16px; padding:16px 20px; }
+  .eu-num { font-size:42px; font-weight:700; color:white; font-family:'Playfair Display',serif; letter-spacing:2px; }
+  .eu-label { color:rgba(255,255,255,0.85); font-size:12px; line-height:1.4; }
+  .eu-label strong { display:block; font-size:14px; color:white; }
+  .btn-call { display:flex; align-items:center; justify-content:center; gap:8px; width:calc(100% - 40px); margin:0 20px 16px; padding:16px; background:white; color:var(--red); border:none; border-radius:8px; font-size:18px; font-weight:700; font-family:'DM Sans',sans-serif; cursor:pointer; text-decoration:none; letter-spacing:1px; }
+  .btn-call:active { opacity:0.9; }
+
+  /* CONTENT */
+  .content { padding:16px 20px; max-width:600px; margin:0 auto; }
+
+  /* SECTION */
+  .section-label { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--slate); margin:20px 0 10px; font-weight:500; }
+
+  /* COUNTRY CARDS */
+  .country-card { background:white; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; overflow:hidden; }
+  .country-header { padding:10px 14px; background:var(--warm); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .country-flag { font-size:22px; }
+  .country-name { font-weight:600; font-size:14px; }
+  .country-body { padding:12px 14px; }
+  .num-row { display:flex; align-items:center; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); }
+  .num-row:last-child { border-bottom:none; }
+  .num-label { font-size:13px; color:var(--slate); }
+  .num-val { font-size:15px; font-weight:600; }
+  .btn-tel { display:inline-flex; align-items:center; gap:6px; padding:7px 14px; background:var(--green); color:white; border:none; border-radius:20px; font-size:13px; font-weight:500; font-family:'DM Sans',sans-serif; cursor:pointer; text-decoration:none; }
+  .btn-tel:active { opacity:0.85; }
+
+  /* INFO CARDS */
+  .info-card { background:white; border:1px solid var(--border); border-radius:8px; padding:14px; margin-bottom:10px; }
+  .info-card-title { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--slate); margin-bottom:10px; font-weight:500; }
+  .info-row { display:flex; justify-content:space-between; align-items:flex-start; padding:7px 0; border-bottom:1px solid var(--border); gap:12px; }
+  .info-row:last-child { border-bottom:none; }
+  .info-label { font-size:12px; color:var(--slate); flex-shrink:0; }
+  .info-val { font-size:13px; font-weight:500; text-align:right; line-height:1.4; }
+  .info-val.placeholder { color:var(--red); font-style:italic; font-weight:400; }
+
+  /* ALERT BOXES */
+  .alert { padding:12px 14px; border-radius:8px; font-size:13px; margin-bottom:10px; display:flex; gap:10px; align-items:flex-start; line-height:1.5; }
+  .alert.red { background:var(--red-light); border:1px solid var(--red-border); }
+  .alert.green { background:var(--green-light); border:1px solid var(--green-border); }
+  .alert.blue { background:var(--blue-light); border:1px solid var(--blue-border); }
+  .alert.orange { background:var(--orange-light); border:1px solid var(--orange-border); }
+  .alert-icon { font-size:16px; flex-shrink:0; margin-top:1px; }
+  .alert-body { flex:1; }
+  .alert-body strong { display:block; margin-bottom:2px; font-size:14px; }
+
+  /* EMBASSY */
+  .embassy-card { background:white; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; overflow:hidden; }
+  .embassy-header { padding:10px 14px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px; }
+  .embassy-flag { font-size:20px; }
+  .embassy-title { font-size:13px; font-weight:600; }
+  .embassy-body { padding:12px 14px; }
+  .embassy-addr { font-size:12px; color:var(--slate); margin-bottom:8px; line-height:1.5; }
+  .embassy-btns { display:flex; gap:8px; flex-wrap:wrap; }
+  .btn-sm { display:inline-flex; align-items:center; gap:5px; padding:7px 12px; border:1px solid var(--border); border-radius:20px; font-size:12px; font-family:'DM Sans',sans-serif; cursor:pointer; text-decoration:none; color:var(--ink); background:var(--warm); }
+  .btn-sm:active { background:var(--border); }
+
+  /* MEDICAL */
+  .phrase-row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); gap:12px; }
+  .phrase-row:last-child { border-bottom:none; }
+  .phrase-en { font-size:12px; color:var(--slate); }
+  .phrase-local { font-size:13px; font-weight:500; text-align:right; }
+
+  @media(max-width:380px) { .eu-num { font-size:36px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">Rahul & <em>Veena's</em> Travels</a>
+  <div class="nav-links">
+    <a href="europe-2026-planb.html">Itinerary</a>
+    <a href="today.html">Today</a>
+    <a href="emergency.html" class="active">🆘 SOS</a>
+  </div>
+</nav>
+
+<!-- SOS HEADER -->
+<div class="sos-header">
+  <div class="sos-icon">🆘</div>
+  <div class="sos-title">Emergency Info</div>
+  <div class="sos-sub">Europe 2026 · Works Offline · Save this page</div>
+</div>
+
+<!-- EU 112 BANNER -->
+<div class="eu-banner">
+  <div class="eu-call">
+    <div class="eu-num">112</div>
+    <div class="eu-label">
+      <strong>EU Emergency Number</strong>
+      Works in all countries on this trip<br>
+      Police · Fire · Ambulance · Free call
+    </div>
+  </div>
+  <a class="btn-call" href="tel:112">📞 Call 112 Now</a>
+</div>
+
+<div class="content">
+
+  <!-- QUICK NUMBERS -->
+  <div class="section-label">Emergency Numbers by Country</div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇮🇸</span><span class="country-name">Iceland · Jun 20–22</span></div>
+    <div class="country-body">
+      <div class="num-row"><span class="num-label">All emergencies</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Police (non-emergency)</span><a class="btn-tel" href="tel:+3545690500">📞 +354 569-0500</a></div>
+      <div class="num-row"><span class="num-label">Medical helpline</span><a class="btn-tel" href="tel:1770">📞 1770</a></div>
+    </div>
+  </div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇨🇭</span><span class="country-name">Switzerland · Jun 22–24, Jul 4–5</span></div>
+    <div class="country-body">
+      <div class="num-row"><span class="num-label">All emergencies</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Police</span><a class="btn-tel" href="tel:117">📞 117</a></div>
+      <div class="num-row"><span class="num-label">Ambulance</span><a class="btn-tel" href="tel:144">📞 144</a></div>
+      <div class="num-row"><span class="num-label">Fire</span><a class="btn-tel" href="tel:118">📞 118</a></div>
+      <div class="num-row"><span class="num-label">Mountain rescue (REGA)</span><a class="btn-tel" href="tel:1414">📞 1414</a></div>
+    </div>
+  </div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇩🇪</span><span class="country-name">Germany · Jun 24–26, Jul 4</span></div>
+    <div class="country-body">
+      <div class="num-row"><span class="num-label">All emergencies</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Police</span><a class="btn-tel" href="tel:110">📞 110</a></div>
+      <div class="num-row"><span class="num-label">ADAC breakdown</span><a class="btn-tel" href="tel:222222">📞 222 222</a></div>
+    </div>
+  </div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇦🇹</span><span class="country-name">Austria · Jun 26–29, Jul 2–4</span></div>
+    <div class="country-body">
+      <div class="num-row"><span class="num-label">All emergencies</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Police</span><a class="btn-tel" href="tel:133">📞 133</a></div>
+      <div class="num-row"><span class="num-label">Ambulance</span><a class="btn-tel" href="tel:144">📞 144</a></div>
+      <div class="num-row"><span class="num-label">Mountain rescue</span><a class="btn-tel" href="tel:140">📞 140</a></div>
+      <div class="num-row"><span class="num-label">ÖAMTC breakdown</span><a class="btn-tel" href="tel:120">📞 120</a></div>
+    </div>
+  </div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇮🇹</span><span class="country-name">Italy · Jun 29–Jul 1</span></div>
+    <div class="country-body">
+      <div class="num-row"><span class="num-label">All emergencies</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Police (Carabinieri)</span><a class="btn-tel" href="tel:112">📞 112</a></div>
+      <div class="num-row"><span class="num-label">Ambulance</span><a class="btn-tel" href="tel:118">📞 118</a></div>
+      <div class="num-row"><span class="num-label">Mountain rescue (CNSAS)</span><a class="btn-tel" href="tel:118">📞 118</a></div>
+      <div class="num-row"><span class="num-label">ACI breakdown</span><a class="btn-tel" href="tel:803116">📞 803 116</a></div>
+    </div>
+  </div>
+
+  <!-- US EMBASSIES -->
+  <div class="section-label">US Embassies & Consulates</div>
+
+  <div class="embassy-card">
+    <div class="embassy-header"><span class="embassy-flag">🇮🇸</span><span class="embassy-title">US Embassy — Reykjavik, Iceland</span></div>
+    <div class="embassy-body">
+      <div class="embassy-addr">Laufásvegur 21, 101 Reykjavik</div>
+      <div class="embassy-btns">
+        <a class="btn-sm" href="tel:+3545195100">📞 +354 595-2200</a>
+        <a class="btn-sm" href="https://is.usembassy.gov" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="embassy-card">
+    <div class="embassy-header"><span class="embassy-flag">🇨🇭</span><span class="embassy-title">US Embassy — Bern, Switzerland</span></div>
+    <div class="embassy-body">
+      <div class="embassy-addr">Sulgeneckstrasse 19, 3007 Bern</div>
+      <div class="embassy-btns">
+        <a class="btn-sm" href="tel:+41313577011">📞 +41 31 357-7011</a>
+        <a class="btn-sm" href="https://ch.usembassy.gov" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="embassy-card">
+    <div class="embassy-header"><span class="embassy-flag">🇩🇪</span><span class="embassy-title">US Consulate — Munich, Germany</span></div>
+    <div class="embassy-body">
+      <div class="embassy-addr">Königinstrasse 5, 80539 Munich</div>
+      <div class="embassy-btns">
+        <a class="btn-sm" href="tel:+4989288800">📞 +49 89 2888-0</a>
+        <a class="btn-sm" href="https://de.usembassy.gov" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="embassy-card">
+    <div class="embassy-header"><span class="embassy-flag">🇦🇹</span><span class="embassy-title">US Embassy — Vienna, Austria</span></div>
+    <div class="embassy-body">
+      <div class="embassy-addr">Boltzmanngasse 16, 1090 Vienna</div>
+      <div class="embassy-btns">
+        <a class="btn-sm" href="tel:+431313390">📞 +43 1 313-39</a>
+        <a class="btn-sm" href="https://at.usembassy.gov" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="embassy-card">
+    <div class="embassy-header"><span class="embassy-flag">🇮🇹</span><span class="embassy-title">US Consulate — Milan, Italy</span></div>
+    <div class="embassy-body">
+      <div class="embassy-addr">Via Principe Amedeo 2/10, 20121 Milan</div>
+      <div class="embassy-btns">
+        <a class="btn-sm" href="tel:+390229035">📞 +39 02 290-351</a>
+        <a class="btn-sm" href="https://it.usembassy.gov" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING REFERENCES -->
+  <div class="section-label">Key Booking References</div>
+
+  <div class="info-card">
+    <div class="info-card-title">✈️ Flights</div>
+    <div class="info-row"><span class="info-label">Icelandair ref</span><span class="info-val">A77762</span></div>
+    <div class="info-row"><span class="info-label">Departure</span><span class="info-val">FI571 · ZRH 7:55am · Jul 5</span></div>
+    <div class="info-row"><span class="info-label">Icelandair support</span><span class="info-val"><a href="tel:+3545050300" style="color:var(--blue)">+354 505-0300</a></span></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-title">🚗 Hertz Car Rental</div>
+    <div class="info-row"><span class="info-label">Confirmation</span><span class="info-val">L5350959316</span></div>
+    <div class="info-row"><span class="info-label">Pickup</span><span class="info-val">ZRH Airport · Jun 22</span></div>
+    <div class="info-row"><span class="info-label">Return</span><span class="info-val">ZRH Airport · Jul 5</span></div>
+    <div class="info-row"><span class="info-label">Hertz roadside</span><span class="info-val"><a href="tel:+41448282828" style="color:var(--blue)">+41 44 828-2828</a></span></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-title">🛡️ Travel Insurance</div>
+    <div class="info-row"><span class="info-label">Provider</span><span class="info-val placeholder">⚠️ Add before departure</span></div>
+    <div class="info-row"><span class="info-label">Policy number</span><span class="info-val placeholder">⚠️ Add before departure</span></div>
+    <div class="info-row"><span class="info-label">Emergency line</span><span class="info-val placeholder">⚠️ Add before departure</span></div>
+  </div>
+
+  <!-- CAR BREAKDOWN -->
+  <div class="section-label">If the Car Breaks Down</div>
+
+  <div class="alert orange">
+    <span class="alert-icon">🚗</span>
+    <div class="alert-body">
+      <strong>Hertz 24hr breakdown: Call Hertz roadside first</strong>
+      They arrange local assistance. Keep conf. L5350959316 ready. 
+      In Germany use ADAC (222 222) · Austria use ÖAMTC (120) · Switzerland/Italy call Hertz directly.
+    </div>
+  </div>
+
+  <!-- MEDICAL PHRASES -->
+  <div class="section-label">Essential Medical Phrases</div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇩🇪</span><span class="country-name">German (Austria + Germany)</span></div>
+    <div class="country-body">
+      <div class="phrase-row"><span class="phrase-en">Help!</span><span class="phrase-local">Hilfe! (HIL-feh)</span></div>
+      <div class="phrase-row"><span class="phrase-en">I need a doctor</span><span class="phrase-local">Ich brauche einen Arzt</span></div>
+      <div class="phrase-row"><span class="phrase-en">Call an ambulance</span><span class="phrase-local">Rufen Sie einen Krankenwagen</span></div>
+      <div class="phrase-row"><span class="phrase-en">My child is hurt</span><span class="phrase-local">Mein Kind ist verletzt</span></div>
+      <div class="phrase-row"><span class="phrase-en">Allergy</span><span class="phrase-local">Allergie</span></div>
+    </div>
+  </div>
+
+  <div class="country-card">
+    <div class="country-header"><span class="country-flag">🇮🇹</span><span class="country-name">Italian (Dolomites)</span></div>
+    <div class="country-body">
+      <div class="phrase-row"><span class="phrase-en">Help!</span><span class="phrase-local">Aiuto! (eye-OO-toh)</span></div>
+      <div class="phrase-row"><span class="phrase-en">I need a doctor</span><span class="phrase-local">Ho bisogno di un medico</span></div>
+      <div class="phrase-row"><span class="phrase-en">Call an ambulance</span><span class="phrase-local">Chiami un'ambulanza</span></div>
+      <div class="phrase-row"><span class="phrase-en">My child is hurt</span><span class="phrase-local">Il mio bambino è ferito</span></div>
+    </div>
+  </div>
+
+  <!-- GENERAL TIPS -->
+  <div class="section-label">Important Reminders</div>
+
+  <div class="alert green">
+    <span class="alert-icon">✅</span>
+    <div class="alert-body">
+      <strong>112 works everywhere on this trip</strong>
+      Iceland, Switzerland, Germany, Austria, Italy — one number for police, fire, and ambulance. Free from any phone including no-SIM phones.
+    </div>
+  </div>
+  <div class="alert blue">
+    <span class="alert-icon">💳</span>
+    <div class="alert-body">
+      <strong>Cards work across Europe</strong>
+      Visa/Mastercard accepted widely. Keep some cash for mountain huts (rifugios, hüttes) — cash only. ATMs widely available in all towns.
+    </div>
+  </div>
+  <div class="alert orange">
+    <span class="alert-icon">⛰️</span>
+    <div class="alert-body">
+      <strong>Mountain safety</strong>
+      If someone is injured on a hike: call 112, stay calm, give your GPS coordinates. Most phones show coordinates in compass app. Mountain rescue is free in Austria and Italy.
+    </div>
+  </div>
+  <div class="alert red">
+    <span class="alert-icon">🏥</span>
+    <div class="alert-body">
+      <strong>Nearest hospitals to key stops</strong>
+      Berchtesgaden → Klinikum Berchtesgadener Land (+49 8651 772-0) ·
+      Hallstatt → Krankenhaus Gmunden (+43 7612 694-0) ·
+      Bolzano/Bozen (Dolomites) → Ospedale di Bolzano (+39 0471 908-111) ·
+      Innsbruck → Landeskrankenhaus Innsbruck (+43 512 504-0)
+    </div>
+  </div>
+
+  <div style="text-align:center;padding:24px 0 32px;font-size:12px;color:var(--slate);">
+    This page is cached for offline use · <a href="today.html" style="color:var(--gold);">← Back to Today</a>
+  </div>
+
+</div>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../sw.js').catch(e => console.warn(e));
+}
+</script>
+</body>
+</html>

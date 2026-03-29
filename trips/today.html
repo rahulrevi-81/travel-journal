@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Today — VR Family Travels</title>
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --cream: #faf8f3;
+    --warm: #f5efe6;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --rust: #b85c38;
+    --sage: #6b8f71;
+    --slate: #4a5568;
+    --border: #e2d9cc;
+    --red: #c0392b;
+    --green: #27ae60;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink); font-size:15px; line-height:1.6; min-height:100vh; }
+
+  /* NAV */
+  nav { background:var(--ink); padding:14px 20px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+  .nav-logo { font-family:'Playfair Display',serif; font-size:16px; color:var(--cream); text-decoration:none; }
+  .nav-logo em { color:var(--gold-light); font-style:italic; }
+  .nav-links { display:flex; gap:16px; }
+  .nav-links a { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(250,248,243,0.5); text-decoration:none; }
+  .nav-links a.active { color:var(--gold-light); }
+
+  /* HEADER */
+  .today-header { background:var(--ink); padding:24px 20px 20px; color:var(--cream); }
+  .today-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
+  .today-title { font-family:'Playfair Display',serif; font-size:26px; font-weight:700; line-height:1.2; }
+  .today-meta { font-size:13px; color:rgba(250,248,243,0.6); margin-top:6px; }
+  .today-date-display { font-size:12px; color:var(--gold-light); margin-top:4px; letter-spacing:0.5px; }
+
+  /* DAY SELECTOR */
+  .day-selector { background:var(--ink); border-top:1px solid rgba(255,255,255,0.08); padding:12px 20px; display:flex; gap:8px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .day-selector::-webkit-scrollbar { display:none; }
+  .day-btn { flex-shrink:0; padding:7px 14px; border-radius:20px; border:1px solid rgba(250,248,243,0.2); background:transparent; color:rgba(250,248,243,0.5); font-size:11px; font-family:'DM Sans',sans-serif; cursor:pointer; white-space:nowrap; transition:all 0.15s; letter-spacing:0.3px; }
+  .day-btn.active { background:var(--gold); border-color:var(--gold); color:var(--ink); font-weight:600; }
+  .day-btn.today-btn { border-color:var(--sage); color:var(--sage); }
+  .day-btn.today-btn.active { background:var(--sage); border-color:var(--sage); color:white; }
+
+  /* CONTENT */
+  .content { padding:16px 20px; max-width:600px; margin:0 auto; }
+
+  /* CARDS */
+  .card { background:white; border:1px solid var(--border); border-radius:8px; margin-bottom:14px; overflow:hidden; }
+  .card-header { padding:12px 16px; background:var(--warm); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .card-icon { font-size:18px; flex-shrink:0; }
+  .card-title { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--slate); font-weight:500; }
+  .card-body { padding:14px 16px; }
+
+  /* TONIGHT HOTEL */
+  .hotel-name { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; margin-bottom:4px; }
+  .hotel-address { font-size:13px; color:var(--slate); margin-bottom:10px; line-height:1.4; }
+  .hotel-ref { font-size:12px; color:var(--slate); background:var(--warm); padding:6px 10px; border-radius:4px; margin-bottom:12px; }
+  .hotel-times { display:flex; gap:12px; margin-bottom:14px; flex-wrap:wrap; }
+  .time-chip { font-size:12px; padding:5px 12px; border-radius:20px; background:var(--warm); border:1px solid var(--border); }
+  .time-chip strong { color:var(--ink); }
+  .btn-map { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:12px; background:var(--ink); color:var(--cream); border:none; border-radius:6px; font-size:13px; font-weight:500; font-family:'DM Sans',sans-serif; cursor:pointer; text-decoration:none; letter-spacing:0.3px; }
+  .btn-map:active { opacity:0.8; }
+
+  /* TODAY HIGHLIGHTS */
+  .highlight-item { display:flex; align-items:flex-start; gap:10px; padding:8px 0; border-bottom:1px solid var(--border); }
+  .highlight-item:last-child { border-bottom:none; }
+  .hi-icon { font-size:16px; flex-shrink:0; margin-top:1px; }
+  .hi-text { font-size:13px; line-height:1.5; }
+  .hi-text strong { font-weight:500; }
+
+  /* DRIVING */
+  .drive-row { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .drive-arrow { color:var(--gold); font-size:18px; }
+  .drive-info { flex:1; }
+  .drive-from { font-size:12px; color:var(--slate); }
+  .drive-to { font-size:14px; font-weight:500; }
+  .drive-stats { display:flex; gap:16px; margin-top:8px; }
+  .drive-stat { text-align:center; padding:8px 16px; background:var(--warm); border-radius:6px; flex:1; }
+  .drive-stat-val { font-size:16px; font-weight:600; color:var(--ink); }
+  .drive-stat-label { font-size:10px; color:var(--slate); text-transform:uppercase; letter-spacing:1px; }
+  .btn-nav { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:12px; background:var(--sage); color:white; border:none; border-radius:6px; font-size:13px; font-weight:500; font-family:'DM Sans',sans-serif; cursor:pointer; text-decoration:none; margin-top:12px; }
+
+  /* TAGS / ALERTS */
+  .alert { padding:10px 14px; border-radius:6px; font-size:13px; margin-bottom:8px; display:flex; gap:10px; align-items:flex-start; line-height:1.5; }
+  .alert.warn { background:#fff8e1; border:1px solid #ffe082; }
+  .alert.info { background:#e8f5e9; border:1px solid #a5d6a7; }
+  .alert.urgent { background:#ffebee; border:1px solid #ef9a9a; }
+  .alert-icon { font-size:15px; flex-shrink:0; margin-top:1px; }
+
+  /* QUICK LINKS */
+  .quick-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .quick-btn { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:16px 12px; background:white; border:1px solid var(--border); border-radius:8px; text-decoration:none; cursor:pointer; transition:all 0.15s; text-align:center; }
+  .quick-btn:active { background:var(--warm); }
+  .quick-icon { font-size:24px; }
+  .quick-label { font-size:11px; letter-spacing:0.5px; color:var(--slate); font-weight:500; }
+  .quick-sublabel { font-size:10px; color:var(--gold); }
+
+  /* NO DAY STATE */
+  .no-day { text-align:center; padding:40px 20px; color:var(--slate); }
+  .no-day-icon { font-size:48px; margin-bottom:16px; }
+  .no-day h3 { font-family:'Playfair Display',serif; font-size:20px; color:var(--ink); margin-bottom:8px; }
+
+  /* OFFLINE BADGE */
+  .offline-badge { display:none; background:var(--rust); color:white; font-size:11px; padding:4px 12px; text-align:center; letter-spacing:1px; }
+  body.offline .offline-badge { display:block; }
+
+  @media(max-width:400px) {
+    .quick-grid { grid-template-columns:1fr 1fr; }
+    .today-title { font-size:22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="offline-badge">⚡ OFFLINE MODE — Showing cached data</div>
+
+<nav>
+  <a class="nav-logo" href="../index.html">Rahul & <em>Veena's</em> Travels</a>
+  <div class="nav-links">
+    <a href="europe-2026-planb.html">Full Trip</a>
+    <a href="emergency.html">🆘 SOS</a>
+    <a href="today.html" class="active">Today</a>
+  </div>
+</nav>
+
+<div class="today-header">
+  <div class="today-eyebrow">Europe 2026 · Quick Access</div>
+  <div class="today-title" id="today-title">Loading…</div>
+  <div class="today-meta" id="today-meta"></div>
+  <div class="today-date-display" id="today-date-display"></div>
+</div>
+
+<div class="day-selector" id="day-selector"></div>
+
+<div class="content" id="content">
+  <div class="no-day">
+    <div class="no-day-icon">🗺️</div>
+    <h3>Loading itinerary…</h3>
+    <p>Fetching your trip data</p>
+  </div>
+</div>
+
+<!-- QUICK LINKS (always visible) -->
+<div style="padding:0 20px 16px;max-width:600px;margin:0 auto;">
+  <div class="card-header" style="border-radius:8px 8px 0 0;margin-bottom:0;">
+    <span class="card-icon">⚡</span>
+    <span class="card-title">Quick Access</span>
+  </div>
+  <div style="background:white;border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;padding:14px;">
+    <div class="quick-grid">
+      <a class="quick-btn" href="europe-2026-planb.html">
+        <span class="quick-icon">📅</span>
+        <span class="quick-label">Full Itinerary</span>
+        <span class="quick-sublabel">All 16 days</span>
+      </a>
+      <a class="quick-btn" href="emergency.html">
+        <span class="quick-icon">🆘</span>
+        <span class="quick-label">Emergency</span>
+        <span class="quick-sublabel">Numbers & Embassy</span>
+      </a>
+      <a class="quick-btn" href="https://www.google.com/maps" target="_blank">
+        <span class="quick-icon">🗺️</span>
+        <span class="quick-label">Google Maps</span>
+        <span class="quick-sublabel">Navigate</span>
+      </a>
+      <a class="quick-btn" href="https://translate.google.com" target="_blank">
+        <span class="quick-icon">🌐</span>
+        <span class="quick-label">Translate</span>
+        <span class="quick-sublabel">Google Translate</span>
+      </a>
+      <a class="quick-btn" href="https://www.xe.com/currencyconverter/" target="_blank">
+        <span class="quick-icon">💱</span>
+        <span class="quick-label">Currency</span>
+        <span class="quick-sublabel">USD · EUR · CHF</span>
+      </a>
+      <a class="quick-btn" href="tel:112">
+        <span class="quick-icon">🚨</span>
+        <span class="quick-label">Call 112</span>
+        <span class="quick-sublabel">EU Emergency</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:0 20px 32px;font-size:11px;color:var(--slate);">
+  Add to home screen for offline access · <a href="europe-2026-planb.html" style="color:var(--gold);">View full itinerary →</a>
+</div>
+
+<script>
+const DATA_FILE = '../data/europe-2026-planb.json';
+
+// Trip date range: Jun 20 – Jul 5, 2026
+const TRIP_START = new Date('2026-06-20');
+const TRIP_END   = new Date('2026-07-05');
+
+// Map JSON date strings to actual calendar dates
+const DATE_MAP = {
+  'Jun 20–21': '2026-06-20', 'Jun 22': '2026-06-22', 'Jun 23': '2026-06-23',
+  'Jun 24': '2026-06-24',   'Jun 25': '2026-06-25', 'Jun 26': '2026-06-26',
+  'Jun 27': '2026-06-27',   'Jun 28': '2026-06-28', 'Jun 29': '2026-06-29',
+  'Jun 30': '2026-06-30',   'Jul 1':  '2026-07-01', 'Jul 2':  '2026-07-02',
+  'Jul 3':  '2026-07-03',   'Jul 4':  '2026-07-04', 'Jul 5':  '2026-07-05'
+};
+
+function stripHtml(html) {
+  const d = document.createElement('div');
+  d.innerHTML = html;
+  return d.textContent || '';
+}
+
+function findTodayIndex(days) {
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  let closest = 0;
+  let minDiff = Infinity;
+  days.forEach((day, i) => {
+    const dateStr = DATE_MAP[day.date];
+    if (!dateStr) return;
+    const d = new Date(dateStr);
+    const diff = Math.abs(d - today);
+    if (diff < minDiff) { minDiff = diff; closest = i; }
+  });
+  return closest;
+}
+
+function findAccommodation(accommodation, dayDate) {
+  // Find the accommodation for tonight based on day date
+  const dateStr = DATE_MAP[dayDate];
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  
+  return accommodation.find(a => {
+    if (a.status === 'cancelled') return false;
+    const dates = a.dates || '';
+    // Match patterns like "Jun 29–Jul 1", "Jul 1–2", "Jun 22–24"
+    const ref = DATE_MAP[dayDate];
+    // Simple: check if the date string contains the day's month/date
+    const dayNum = d.getDate();
+    const monthStr = d.toLocaleDateString('en',{month:'short'});
+    return dates.includes(monthStr + ' ' + dayNum) || 
+           dates.startsWith(monthStr + ' ' + dayNum) ||
+           (dates.includes('–') && isDateInRange(d, dates));
+  });
+}
+
+function isDateInRange(date, dateStr) {
+  // Try to parse ranges like "Jun 22–24", "Jun 29–Jul 1", "Jul 2–4"
+  try {
+    const year = 2026;
+    const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+    const parts = dateStr.split('–');
+    if (parts.length < 2) return false;
+    
+    const startParts = parts[0].trim().split(' ');
+    const startMonth = months[startParts[0]];
+    const startDay = parseInt(startParts[1]);
+    const start = new Date(year, startMonth, startDay);
+    
+    let endMonth = startMonth;
+    let endDay;
+    const endParts = parts[1].trim().split(' ');
+    if (endParts.length === 2) {
+      endMonth = months[endParts[0]];
+      endDay = parseInt(endParts[1]);
+    } else {
+      endDay = parseInt(endParts[0]);
+    }
+    const end = new Date(year, endMonth, endDay);
+    
+    return date >= start && date < end;
+  } catch(e) { return false; }
+}
+
+function renderDay(day, accommodation, dayIndex, totalDays) {
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  const summary = day.summary || {};
+  const tags = day.tags || [];
+
+  // ── TONIGHT'S HOTEL ────────────────────────────────────────────────────
+  const acc = findAccommodation(accommodation, day.date);
+  if (acc && acc.status !== 'cancelled') {
+    const card = document.createElement('div');
+    card.className = 'card';
+    
+    const checkinTime = acc.ref && acc.ref.match(/check-in\s*([\d:]+–[\d:]+)/i);
+    const checkoutTime = acc.ref && acc.ref.match(/check-out\s*([\d:]+–[\d:]+)/i);
+    
+    // Build maps URL from address
+    const mapsUrl = 'https://www.google.com/maps/search/' + encodeURIComponent(acc.address || acc.property);
+    
+    card.innerHTML = `
+      <div class="card-header">
+        <span class="card-icon">🏨</span>
+        <span class="card-title">Tonight's Stay</span>
+      </div>
+      <div class="card-body">
+        <div class="hotel-name">${acc.property.replace(/🇮🇸|🇨🇭|🇩🇪|🇦🇹|🇮🇹/g,'').trim()}</div>
+        <div class="hotel-address">${acc.address || ''}</div>
+        <div class="hotel-ref">📋 ${acc.ref || 'See booking confirmation'}</div>
+        <div class="hotel-times">
+          ${checkinTime ? `<div class="time-chip">🔑 Check-in <strong>${checkinTime[1]}</strong></div>` : ''}
+          ${checkoutTime ? `<div class="time-chip">🚪 Out <strong>${checkoutTime[1]}</strong></div>` : ''}
+        </div>
+        <a class="btn-map" href="${mapsUrl}" target="_blank">
+          📍 Navigate to Hotel
+        </a>
+      </div>`;
+    content.appendChild(card);
+  }
+
+  // ── DRIVING ─────────────────────────────────────────────────────────────
+  if (summary.from && summary.to && summary.from !== summary.to) {
+    const mapUrl = day.mapLinks && day.mapLinks[0] ? day.mapLinks[0].url : 
+      'https://www.google.com/maps/dir/' + encodeURIComponent(summary.from) + '/' + encodeURIComponent(summary.to);
+    
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-header">
+        <span class="card-icon">🚗</span>
+        <span class="card-title">Today's Drive</span>
+      </div>
+      <div class="card-body">
+        <div class="drive-row">
+          <div class="drive-info">
+            <div class="drive-from">From: ${stripHtml(summary.from)}</div>
+            <div class="drive-to">To: ${stripHtml(summary.to)}</div>
+          </div>
+        </div>
+        <div class="drive-stats">
+          ${summary.drive ? `<div class="drive-stat"><div class="drive-stat-val">${summary.drive.split('/')[0].trim()}</div><div class="drive-stat-label">Distance</div></div>` : ''}
+          ${summary.drive ? `<div class="drive-stat"><div class="drive-stat-val">${summary.drive.includes('/') ? summary.drive.split('/')[1].trim() : ''}</div><div class="drive-stat-label">Miles</div></div>` : ''}
+        </div>
+        <a class="btn-nav" href="${mapUrl}" target="_blank">
+          🗺️ Open Route in Google Maps
+        </a>
+      </div>`;
+    content.appendChild(card);
+  }
+
+  // ── TODAY'S HIGHLIGHTS ──────────────────────────────────────────────────
+  const items = day.sections && day.sections[0] ? day.sections[0].items : [];
+  if (items.length) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    let html = `<div class="card-header"><span class="card-icon">⭐</span><span class="card-title">Today's Plan</span></div><div class="card-body">`;
+    items.forEach(item => {
+      const text = stripHtml(item);
+      const icon = text.startsWith('⭐') ? '⭐' : text.startsWith('🥾') ? '🥾' : text.startsWith('Drive') ? '🚗' : text.startsWith('Lunch') || text.startsWith('Dinner') ? '🍽️' : text.includes('alarm') || text.includes('Checkout') ? '⏰' : text.includes('cable car') ? '🚡' : '📍';
+      html += `<div class="highlight-item"><span class="hi-icon">${icon}</span><span class="hi-text">${text.replace(/^[⭐🥾]/,'').trim()}</span></div>`;
+    });
+    html += '</div>';
+    card.innerHTML = html;
+    content.appendChild(card);
+  }
+
+  // ── ALERTS / REMINDERS ──────────────────────────────────────────────────
+  if (tags.length) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    let html = `<div class="card-header"><span class="card-icon">⚠️</span><span class="card-title">Reminders</span></div><div class="card-body">`;
+    tags.forEach(tag => {
+      const type = tag.text.includes('Book') || tag.text.includes('⏳') ? 'urgent' : tag.text.includes('✅') ? 'info' : 'warn';
+      html += `<div class="alert ${type}"><span class="alert-icon">${type==='urgent'?'🔴':type==='info'?'✅':'⚠️'}</span><span>${stripHtml(tag.text)}</span></div>`;
+    });
+    html += '</div>';
+    card.innerHTML = html;
+    content.appendChild(card);
+  }
+}
+
+function buildDaySelector(days, activeIndex) {
+  const selector = document.getElementById('day-selector');
+  selector.innerHTML = '';
+  const todayIdx = findTodayIndex(days);
+  
+  days.forEach((day, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'day-btn' + (i === todayIdx ? ' today-btn' : '') + (i === activeIndex ? ' active' : '');
+    btn.textContent = (i === todayIdx ? '📍 ' : '') + day.date;
+    btn.onclick = () => selectDay(days, window._tripData.accommodation, i);
+    selector.appendChild(btn);
+  });
+  
+  // Scroll active into view
+  setTimeout(() => {
+    const active = selector.querySelector('.active');
+    if (active) active.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+  }, 100);
+}
+
+function selectDay(days, accommodation, idx) {
+  window._selectedDayIdx = idx;
+  const day = days[idx];
+  const todayIdx = findTodayIndex(days);
+  const isToday = idx === todayIdx;
+  
+  // Update header
+  const now = new Date();
+  document.getElementById('today-title').textContent = day.title.replace(/\u2192/g,'→');
+  document.getElementById('today-meta').textContent = day.meta || '';
+  document.getElementById('today-date-display').textContent = isToday 
+    ? '📍 Today · ' + now.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric'})
+    : day.date + ' · ' + (new Date(DATE_MAP[day.date] || '')).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+
+  buildDaySelector(days, idx);
+  renderDay(day, accommodation, idx, days.length);
+}
+
+async function init() {
+  // Offline detection
+  window.addEventListener('offline', () => document.body.classList.add('offline'));
+  window.addEventListener('online', () => document.body.classList.remove('offline'));
+  if (!navigator.onLine) document.body.classList.add('offline');
+
+  try {
+    const res = await fetch(DATA_FILE);
+    const d = await res.json();
+    window._tripData = d;
+    
+    const todayIdx = findTodayIndex(d.days);
+    selectDay(d.days, d.accommodation, todayIdx);
+  } catch(e) {
+    document.getElementById('content').innerHTML = `
+      <div class="no-day">
+        <div class="no-day-icon">📵</div>
+        <h3>Offline</h3>
+        <p>Could not load trip data. Make sure you visited this page while online first to cache it.</p>
+      </div>`;
+    console.error(e);
+  }
+}
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../sw.js').then(reg => {
+    console.log('[SW] Registered:', reg.scope);
+  }).catch(err => console.warn('[SW] Registration failed:', err));
+}
+
+init();
+</script>
+</body>
+</html>
