@@ -289,38 +289,6 @@
   .grad-future { background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%); }
 
   /* WORLD MAP */
-  .map-section { background: var(--ink); padding: 0; position: relative; overflow: hidden; }
-  .map-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.06) 0%, transparent 70%); pointer-events: none; }
-  .map-wrap { position: relative; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-  .map-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); padding: 32px 0 12px; text-align: center; }
-  #world-svg { width: 100%; height: auto; display: block; }
-  .map-path { fill: #252840; stroke: #32365a; stroke-width: 0.4; }
-  .map-path.visited { fill: #1a3d30; }
-  .map-path.upcoming { fill: #2e2510; }
-  .map-pins { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
-  .pin { position: absolute; transform: translate(-50%, -100%); pointer-events: all; cursor: pointer; z-index: 10; text-align: center; }
-  .pin-flag { font-size: 18px; line-height: 1; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5)); transition: transform 0.2s; }
-  .pin:hover .pin-flag { transform: scale(1.3) translateY(-3px); }
-  .pin-dot { width: 6px; height: 6px; border-radius: 50%; margin: 2px auto 0; }
-  .pin-dot.gold { background: var(--gold); box-shadow: 0 0 6px rgba(201,168,76,0.6); }
-  .pin-dot.sage { background: var(--sage); box-shadow: 0 0 6px rgba(107,143,113,0.6); }
-  .pin-tip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: rgba(20,20,40,0.95); color: var(--cream); font-size: 11px; padding: 5px 12px; border-radius: 20px; white-space: nowrap; border: 1px solid rgba(201,168,76,0.3); opacity: 0; transition: opacity 0.15s; pointer-events: none; margin-top: 4px; z-index: 20; }
-  .pin:hover .pin-tip { opacity: 1; }
-  .map-legend { display: flex; justify-content: center; gap: 24px; padding: 14px 0 28px; flex-wrap: wrap; }
-  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 11px; color: rgba(250,248,243,0.45); }
-  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
-  .legend-dot.gold { background: var(--gold); }
-  .legend-dot.sage { background: var(--sage); }
-
-  /* FOOTER */
-  footer {
-    background: var(--ink);
-    color: rgba(250,248,243,0.35);
-    text-align: center;
-    padding: 40px;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
   footer strong { color: var(--gold-light); }
   footer a { color: var(--gold); text-decoration: none; }
 
@@ -357,60 +325,6 @@
   </div>
 </div>
 
-
-<!-- WORLD MAP -->
-<div class="map-section">
-  <div class="map-wrap">
-    <div class="map-label">Our Family&#39;s Global Footprint</div>
-    <div style="position:relative;">
-      <!-- Simplified world map SVG -->
-      <svg id="world-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-        <!-- North America -->
-        <path class="map-path visited" d="M 100 80 L 200 70 L 250 90 L 240 130 L 220 160 L 200 180 L 180 200 L 160 220 L 140 210 L 120 190 L 100 160 L 90 130 Z"/>
-        <!-- Alaska -->
-        <path class="map-path visited" d="M 60 60 L 100 50 L 110 70 L 100 80 L 70 85 Z"/>
-        <!-- Central America -->
-        <path class="map-path visited" d="M 160 220 L 180 200 L 190 230 L 175 250 L 160 240 Z"/>
-        <!-- South America -->
-        <path class="map-path visited" d="M 175 250 L 210 240 L 240 260 L 250 300 L 240 360 L 220 400 L 200 420 L 180 400 L 165 360 L 160 300 L 170 270 Z"/>
-        <!-- Europe -->
-        <path class="map-path upcoming" d="M 440 60 L 510 55 L 530 70 L 520 100 L 500 110 L 480 105 L 460 95 L 445 85 Z"/>
-        <!-- Iceland -->
-        <path class="map-path upcoming" d="M 390 48 L 415 44 L 420 56 L 405 62 L 390 58 Z"/>
-        <!-- UK -->
-        <path class="map-path" d="M 430 70 L 445 65 L 448 78 L 435 82 Z"/>
-        <!-- Scandinavia -->
-        <path class="map-path" d="M 470 40 L 500 35 L 510 55 L 495 60 L 475 55 Z"/>
-        <!-- Africa -->
-        <path class="map-path" d="M 450 130 L 520 120 L 560 140 L 570 200 L 550 260 L 520 300 L 490 310 L 460 290 L 440 250 L 430 200 L 440 160 Z"/>
-        <!-- Middle East -->
-        <path class="map-path" d="M 530 100 L 580 95 L 600 115 L 590 140 L 560 140 L 530 125 Z"/>
-        <!-- Central Asia -->
-        <path class="map-path" d="M 580 70 L 680 60 L 710 80 L 700 110 L 650 115 L 600 110 L 580 95 Z"/>
-        <!-- South Asia -->
-        <path class="map-path" d="M 620 115 L 680 110 L 700 130 L 690 165 L 660 180 L 635 170 L 620 145 Z"/>
-        <!-- Southeast Asia -->
-        <path class="map-path" d="M 700 130 L 760 120 L 780 145 L 760 165 L 730 170 L 705 155 Z"/>
-        <!-- East Asia -->
-        <path class="map-path" d="M 710 70 L 800 60 L 830 80 L 820 120 L 780 130 L 740 125 L 710 105 Z"/>
-        <!-- Japan -->
-        <path class="map-path" d="M 820 80 L 840 75 L 845 95 L 830 100 L 818 92 Z"/>
-        <!-- Australia -->
-        <path class="map-path" d="M 730 280 L 820 270 L 850 295 L 845 350 L 820 370 L 780 365 L 745 345 L 730 315 Z"/>
-        <!-- Russia -->
-        <path class="map-path" d="M 490 30 L 700 20 L 850 25 L 870 55 L 820 60 L 700 60 L 580 65 L 500 55 Z"/>
-      </svg>
-
-      <!-- PINS -->
-      <div class="map-pins" id="map-pins"></div>
-    </div>
-
-    <div class="map-legend">
-      <div class="legend-item"><div class="legend-dot gold"></div> Upcoming</div>
-      <div class="legend-item"><div class="legend-dot sage"></div> Completed</div>
-    </div>
-  </div>
-</div>
 
 <div class="container">
 
@@ -563,8 +477,6 @@ const PINS = [
   { label: 'Hawaii 🇺🇸 · 2022', flag: '🏝️', x: 5.0, y: 42.0, type: 'sage', href: null },
 ];
 
-const container = document.getElementById('map-pins');
-const svg = document.getElementById('world-svg');
 
 function placePins() {
   const rect = svg.getBoundingClientRect();
