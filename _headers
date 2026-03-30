@@ -1,0 +1,7 @@
+/trips/*
+  Content-Type: text/html; charset=utf-8
+  Cache-Control: no-cache
+
+/data/*
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: no-cache
