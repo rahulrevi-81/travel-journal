@@ -1,7 +1,7 @@
 // VR Family Travels — Service Worker
 // Caches all key pages and data for offline access
 
-const CACHE_NAME = 'vr-travels-v1';
+const CACHE_NAME = 'vr-travels-v2';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
@@ -18,7 +18,6 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       console.log('[SW] Caching app shell');
-      // Cache what we can, don't fail on external resources
       return Promise.allSettled(
         URLS_TO_CACHE.map(url => cache.add(url).catch(e => console.warn('[SW] Could not cache:', url, e)))
       );
@@ -35,17 +34,22 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch — cache-first for our assets, network-first for external
+// Fetch — cache-first for our assets, network-first for JSON
 self.addEventListener('fetch', event => {
+  // Only handle GET requests
+  if (event.request.method !== 'GET') return;
+
   const url = new URL(event.request.url);
 
-  // Always try network first for JSON data (keeps it fresh when online)
+  // Always network-first for JSON (keeps data fresh)
   if (url.pathname.endsWith('.json')) {
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { redirect: 'follow' })
         .then(response => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
           return response;
         })
         .catch(() => caches.match(event.request))
@@ -53,22 +57,23 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Cache-first for everything else (HTML, CSS, fonts)
+  // Cache-first for HTML and other assets
   event.respondWith(
     caches.match(event.request).then(cached => {
       if (cached) return cached;
-      return fetch(event.request).then(response => {
-        if (response && response.status === 200 && response.type !== 'opaque') {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-        }
-        return response;
-      }).catch(() => {
-        // Offline fallback
-        if (event.request.destination === 'document') {
-          return caches.match('/trips/europe-2026.html');
-        }
-      });
+      return fetch(event.request, { redirect: 'follow' })
+        .then(response => {
+          if (response && response.status === 200 && response.type !== 'opaque') {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => {
+          if (event.request.destination === 'document') {
+            return caches.match('/trips/europe-2026.html');
+          }
+        });
     })
   );
 });
