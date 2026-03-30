@@ -5,10 +5,10 @@ const CACHE_NAME = 'vr-travels-v1';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
-  '/trips/europe-2026-planb.html',
+  '/trips/europe-2026.html',
   '/trips/today.html',
   '/trips/emergency.html',
-  '/data/europe-2026-planb.json',
+  '/data/europe-2026.json',
   'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'
 ];
@@ -66,7 +66,7 @@ self.addEventListener('fetch', event => {
       }).catch(() => {
         // Offline fallback
         if (event.request.destination === 'document') {
-          return caches.match('/trips/europe-2026-planb.html');
+          return caches.match('/trips/europe-2026.html');
         }
       });
     })

@@ -98,7 +98,7 @@
   .sched-item.meal  { background: #faf8f4; border-left: 3px solid var(--border); }
   .sched-item.drive { background: #f8f8fc; border-left: 3px solid #b0b8d4; }
   .sched-item.checkin { background: #f8faf8; border-left: 3px solid var(--sage); }
-  .sched-item.planb { background: #fdf8f0; border-left: 3px solid #e67e22; }
+  .sched-item.alt-route { background: #fdf8f0; border-left: 3px solid #e67e22; }
   .sched-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
   .sched-text { flex: 1; line-height: 1.5; color: #2a2a3e; }
   .sched-text strong { font-weight: 500; color: var(--ink); }
@@ -271,10 +271,10 @@ if ('serviceWorker' in navigator) {
 
 <script>
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
-const DATA_FILE = '../data/europe-2026-planb.json';
+const DATA_FILE = '../data/europe-2026.json';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
-const STORAGE_KEY = 'trip-highlights-europe-2026-planb';
+const STORAGE_KEY = 'trip-highlights-europe-2026';
 function getVersionedKey(d) {
   const v = (d.meta && d.meta._updated) ? d.meta._updated.slice(0,10) : 'v1';
   return STORAGE_KEY + '-' + v;
@@ -759,7 +759,7 @@ function classifyItem(text) {
   if (t.includes('check in') || t.includes('check-in') || t.includes('night at') || t.includes('night —') || t.includes('✅')) return 'checkin';
   if (t.includes('lunch') || t.includes('dinner') || t.includes('breakfast') || t.includes('fondue') || t.includes('meal') || t.includes('eat')) return 'meal';
   if (t.includes('⭐') || t.includes('plan a') || t.includes('plan b') || t.includes('optional')) {
-    if (t.includes('backup')) return 'planb';
+    if (t.includes('backup')) return 'alt-route';
     return 'wow';
   }
   if (t.includes('hike') || t.includes('walk') || t.includes('trail') || t.includes('summit') || t.includes('gorge') || t.includes('climb') || t.includes('loop') || t.includes('ascent') || t.includes('gondola') || t.includes('cable car') || t.includes('trek')) return 'hike';
@@ -776,7 +776,7 @@ function iconForType(type, text) {
     return '🍽';
   }
   if (type === 'wow') return '⭐';
-  if (type === 'planb') return '⚠️';
+  if (type === 'alt-route') return '⚠️';
   if (type === 'hike') return '🥾';
   if (type === 'drive') {
     if (t.includes('fly') || t.includes('flight') || t.includes('board')) return '✈️';

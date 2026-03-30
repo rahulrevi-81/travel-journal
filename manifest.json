@@ -2,7 +2,7 @@
   "name": "VR Family Travels — Europe 2026",
   "short_name": "VR Travels",
   "description": "Rahul & Veena's Europe 2026 family road trip itinerary",
-  "start_url": "/trips/europe-2026-planb.html",
+  "start_url": "/trips/europe-2026.html",
   "display": "standalone",
   "background_color": "#1a1a2e",
   "theme_color": "#1a1a2e",
