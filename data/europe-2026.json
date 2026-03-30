@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-30T15:52:16Z"
+    "_updated": "2026-03-30T19:24:33Z"
   },
   "bookingStrip": [
     {
@@ -480,8 +480,8 @@
             "text": "✓ Gondola #238070"
           },
           {
-            "status": "pending",
-            "text": "⏳ Oeschinensee 8:30am slot"
+            "status": "booked",
+            "text": "✓ Oeschinensee cable car · CHF 125 · 08:30–10:00 · Order 254-SK2MH6"
           }
         ]
       }
@@ -1635,7 +1635,7 @@
       "highlights": "Oeschinensee 8:30am · Grindelwald First gondola #238070 ✅ · Cliff Walk · Bachalpsee hike",
       "drive": "~100 km / 62 mi",
       "driveTime": "~2hrs",
-      "bookings": "✅ Grindelwald First gondola #238070 · ⏰ Book Oeschinensee slot",
+      "bookings": "✅ Grindelwald First gondola #238070 · ✅ Oeschinensee booked · Order 254-SK2MH6 · 08:30–10:00",
       "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null
     },
