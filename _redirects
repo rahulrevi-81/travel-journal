@@ -1,7 +1,2 @@
-/trips/europe-2026.html /trips/europe-2026.html 200
-/trips/today.html /trips/today.html 200
-/trips/emergency.html /trips/emergency.html 200
-/trips/alaska-2025.html /trips/alaska-2025.html 200
-/trips/peru-2025.html /trips/peru-2025.html 200
 /trips/* /trips/:splat 200
 /data/* /data/:splat 200
