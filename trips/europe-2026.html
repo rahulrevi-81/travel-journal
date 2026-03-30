@@ -219,13 +219,14 @@
   @media print {
     * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn, .booking-strip,
-    .export-bar button, [class*="reset"] { display:none !important; }
+    .export-bar button, [class*="reset"], .item-cb { display:none !important; }
     body { background:#fff; font-size:11px; line-height:1.5; }
     .hero { padding:32px 24px 24px; page-break-after:avoid; }
     .hero h1 { font-size:32px; }
     .container { padding:0 16px; max-width:100%; }
     .section-title { margin-top:24px; }
     .day-card { page-break-inside:avoid; margin-bottom:16px; border:1px solid #ddd; }
+    .day-body { display:block !important; }  /* force expand all */
     .day-header { padding:12px 16px; }
     .day-body { padding:12px 16px; }
     .glance-table td, .glance-table th { font-size:10px; padding:5px 8px; }
@@ -237,6 +238,21 @@
   .glance-table tr.row-action td { border-left: 3px solid #e24b4a; }
   .glance-table tr.row-pending td { border-left: 3px solid #ef9f27; }
   .glance-table tr.row-ok td { border-left: 3px solid #639922; }
+
+
+  /* ── ITEM CHECKBOXES ── */
+  .sched-item { position: relative; }
+  .item-cb { width: 15px; height: 15px; border: 1.5px solid #ccc; border-radius: 3px; cursor: pointer; flex-shrink: 0; appearance: none; -webkit-appearance: none; background: white; margin-top: 2px; transition: all 0.15s; }
+  .item-cb:checked { background: var(--sage); border-color: var(--sage); }
+  .item-cb:checked::after { content: '✓'; position: absolute; color: white; font-size: 10px; font-weight: bold; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+  .item-cb:checked + .sched-icon + .sched-text,
+  .item-cb:checked ~ .sched-text { text-decoration: line-through; opacity: 0.45; }
+  .sched-item.item-done .sched-text { text-decoration: line-through; opacity: 0.45; }
+  .sched-item.item-done .item-cb { background: var(--sage); border-color: var(--sage); }
+  @media print {
+    .item-cb { display: none !important; }
+    .sched-item.item-done .sched-text { text-decoration: line-through; opacity: 0.6; }
+  }
 
   /* FOOTER */
   footer { background: var(--ink); color: rgba(250,248,243,0.4); text-align: center; padding: 32px; margin-top: 80px; font-size: 12px; letter-spacing: 1px; }
@@ -606,25 +622,21 @@ function renderHero(d) {
   pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)';
   pdfBtn.onclick = function() {
     var svgIcon = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>';
-    pdfBtn.innerHTML = svgIcon + '&nbsp; Generating…';
+    // Expand all day cards for print
+    var cards = document.querySelectorAll('.day-card');
+    var wasOpen = [];
+    cards.forEach(function(c, i) { wasOpen[i] = c.classList.contains('open'); c.classList.add('open'); });
+    pdfBtn.innerHTML = svgIcon + '&nbsp; Preparing…';
     pdfBtn.disabled = true;
-    var el = document.getElementById('main-content') || document.body;
-    var opt = {
-      margin: [10, 8, 10, 8],
-      filename: 'Europe-2026-VRFamilyTravels.pdf',
-      image: { type: 'jpeg', quality: 0.92 },
-      html2canvas: { scale: 1.5, useCORS: true, allowTaint: true, scrollY: 0 },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-    html2pdf().set(opt).from(el).save().then(function() {
-      pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
-      pdfBtn.disabled = false;
-    }).catch(function() {
+    setTimeout(function() {
       window.print();
-      pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
-      pdfBtn.disabled = false;
-    });
+      // Restore original open/closed state after print dialog
+      setTimeout(function() {
+        cards.forEach(function(c, i) { if (!wasOpen[i]) c.classList.remove('open'); });
+        pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
+        pdfBtn.disabled = false;
+      }, 1000);
+    }, 300);
   };
 
 
@@ -831,6 +843,18 @@ function renderDayCard(day, idx) {
       const icon = iconForType(type, item);
       const timeCell = h('div', {class:'sched-time'}, '');
       const itemCell = h('div', {class:'sched-item' + (type ? ' ' + type : '')});
+      // Checkbox for done/not-done
+      const cbKey = 'item-done-' + day.date + '-' + idx + '-' + sec.items.indexOf(item);
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.className = 'item-cb';
+      cb.checked = localStorage.getItem(cbKey) === '1';
+      if (cb.checked) itemCell.classList.add('item-done');
+      cb.addEventListener('change', function() {
+        if (cb.checked) { localStorage.setItem(cbKey, '1'); itemCell.classList.add('item-done'); }
+        else { localStorage.removeItem(cbKey); itemCell.classList.remove('item-done'); }
+      });
+      itemCell.appendChild(cb);
       itemCell.appendChild(h('span', {class:'sched-icon'}, icon));
       const textEl = h('span', {class:'sched-text', html: item});
       itemCell.appendChild(textEl);
