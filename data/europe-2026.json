@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T18:34:18Z"
+    "_updated": "2026-03-31T18:35:13Z"
   },
   "bookingStrip": [
     {
@@ -524,10 +524,6 @@
         {
           "type": "booking",
           "text": "✓ Landhaus Lindenberg, Buchloe · Conf. #6026325459 · $202"
-        },
-        {
-          "type": "tip",
-          "text": "🌧️ <strong>Rainy day in Berchtesgaden?</strong> — Watzmann Therme · thermal pools + sauna + 80m waterslide · open 10am–10pm · €14.20/adult (2hrs) · Bergwerkstraße 54 · watzmann-therme.de"
         }
       ],
       "summary": {
@@ -568,7 +564,6 @@
             "Drive <strong>10 min</strong> → <strong>Obersalzberg</strong> · park · walk to Dokumentation Obersalzberg WWII museum (~30min · €10/adult)",
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first afternoon bus ~1:00pm</strong> · elevator through the mountain · summit 1,834m · panoramic view over Berchtesgaden, Königssee and the Alps · <strong>~2hrs</strong>",
             "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald</strong> (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
-            "➕ <strong>Optional: Watzmann Therme</strong> — if back by 5pm · family-friendly thermal spa · outdoor pool with Watzmann massif views · 80m waterslide (kids love it) · sauna · perfect evening wind-down after a big day · open until 10pm · €14.20/adult (2hrs) · family discount 20% · Bergwerkstraße 54 · no booking needed",
             "🏠 <strong>Night 2 Berchtesgaden Apartment</strong> ✅ · check-in 16:00–20:00 · Kälbersteinstraße 4"
           ]
         }
@@ -589,10 +584,6 @@
         {
           "type": "booking",
           "text": "✅ Pension-Café-Konditorei Mikl, Berchtesgaden · confirmed · check-in 14:00–18:00"
-        },
-        {
-          "type": "tip",
-          "text": "🌊 <strong>Watzmann Therme</strong> — also perfect rainy-day backup if Eagle’s Nest bus is cancelled · open 10am–10pm · watzmann-therme.de"
         }
       ],
       "summary": {
@@ -1680,7 +1671,7 @@
       "flag": "🇩🇪",
       "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Berchtesgaden Apartment 🇩🇪 ✅ (Night 2)",
-      "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein · Watzmann Therme optional evening",
+      "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
       "drive": "~155 km / 96 mi",
       "driveTime": "~2hrs",
       "bookings": "✅ Berchtesgaden apartment Night 2 · checkout 08:00–11:00",
