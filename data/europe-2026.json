@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T21:48:20Z"
+    "_updated": "2026-03-31T21:51:59Z"
   },
   "bookingStrip": [
     {
@@ -392,7 +392,7 @@
         }
       ],
       "summary": {
-        "drive": "~174 km / 108 mi",
+        "drive": "~144 km / 90 mi",
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
         "to": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
@@ -406,7 +406,8 @@
             "status": "booked",
             "text": "✓ Hertz ZRH"
           }
-        ]
+        ],
+        "driveTime": "~1h 45m"
       },
       "keyDecisions": [
         "✅ Hertz pickup — allow 60–90min at ZRH Arrivals",
@@ -475,7 +476,8 @@
             "status": "booked",
             "text": "✓ Oeschinensee cable car · CHF 125 · 08:30–10:00 · Order 254-SK2MH6"
           }
-        ]
+        ],
+        "driveTime": "~2h 30m incl. mountain roads"
       },
       "keyDecisions": [
         "✅ Oeschinensee 8:30am slot — pre-booked, don't be late",
@@ -527,7 +529,7 @@
         }
       ],
       "summary": {
-        "drive": "~260 km / 162 mi",
+        "drive": "~595 km / 370 mi",
         "time": "2h 20m",
         "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
         "to": "Berchtesgaden 🇩🇪",
@@ -537,7 +539,8 @@
             "status": "booked",
             "text": "✓ Berchtesgaden apartment · €310 · check-in 16:00–20:00"
           }
-        ]
+        ],
+        "driveTime": "~6h non-stop · longest drive day"
       },
       "keyDecisions": [
         "✅ Staubbach + valley walk — 1hr, free, unmissable",
@@ -590,7 +593,7 @@
       ],
       "summary": {
         "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
-        "drive": "~155 km / 96 mi",
+        "drive": "~80 km / 50 mi",
         "from": "Berchtesgaden 🇩🇪",
         "to": "Berchtesgaden 🇩🇪 (Night 2)",
         "bookings": [
@@ -598,7 +601,8 @@
             "status": "booked",
             "text": "✓ Berchtesgaden apartment Night 2 · checkout 08:00–11:00"
           }
-        ]
+        ],
+        "driveTime": "~2h total · short loops around Berchtesgaden"
       },
       "keyDecisions": [
         "✅ Königssee boat 9:15am — go to Salet first, not St. Bartholomä",
@@ -651,7 +655,7 @@
         }
       ],
       "summary": {
-        "drive": "~220 km / 137 mi",
+        "drive": "~180 km / 112 mi",
         "time": "~45m",
         "from": "Berchtesgaden 🇩🇪",
         "to": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
@@ -661,7 +665,8 @@
             "status": "booked",
             "text": "✓ HOMEBOUND"
           }
-        ]
+        ],
+        "driveTime": "~3h 30m incl. Salzburg parking"
       },
       "keyDecisions": [
         "✅ Liechtensteinklamm — arrive early, before tour groups",
@@ -722,7 +727,7 @@
         }
       ],
       "summary": {
-        "drive": "~30 km / 19 mi",
+        "drive": "~40 km / 25 mi",
         "time": "2h 33m +Grossglockner",
         "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
         "to": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
@@ -732,7 +737,8 @@
             "status": "booked",
             "text": "✓ Pr' Matjon"
           }
-        ]
+        ],
+        "driveTime": "~1h total · very local day"
       },
       "keyDecisions": [
         "✅ Gosausee 7:30am — best morning light on glacier",
@@ -799,7 +805,8 @@
             "status": "booked",
             "text": "✓ Hotel Schwarzer Adler Sillian · $115 · Confirmed"
           }
-        ]
+        ],
+        "driveTime": "~4h 30m incl. Grossglockner slow drive"
       },
       "keyDecisions": [
         "✅ Checkout 8:30am — long drive day",
@@ -867,7 +874,7 @@
         }
       ],
       "summary": {
-        "drive": "~210 km / 130 mi",
+        "drive": "~200 km / 124 mi",
         "time": "~1h 00m",
         "from": "Sillian 🇦🇹",
         "to": "Collalbo, Renon 🇮🇹",
@@ -877,7 +884,8 @@
             "status": "booked",
             "text": "✓ Kaiserau 1907, Collalbo · €354.56 · check-in 15:00–22:00"
           }
-        ]
+        ],
+        "driveTime": "~5h total driving · many short hops"
       },
       "keyDecisions": [
         "✅ 5am alarm — Braies gate opens 7:30am, be inside before",
@@ -935,7 +943,7 @@
       "summary": {
         "from": "Collalbo, Renon 🇮🇹",
         "to": "Collalbo, Renon 🇮🇹 (Night 2)",
-        "drive": "~120 km / 75 mi",
+        "drive": "~80 km / 50 mi",
         "highlights": "Seceda 2,519m · Trail 1 summit · Santa Maddalena viewpoint · Adolf Munkel Trail 35 out-and-back 4.4mi · Rifugio Odle/Geisler Alm · Collalbo",
         "accommodation": "Das Auss.Zeit ✅",
         "bookings": [
@@ -943,7 +951,8 @@
             "status": "booked",
             "text": "✓ Kaiserau 1907 Night 2 · checkout 05:00–10:30"
           }
-        ]
+        ],
+        "driveTime": "~2h total · Collalbo loop day"
       },
       "dayLabel": "11",
       "flag": "🇦🇹",
@@ -1006,7 +1015,8 @@
             "status": "booked",
             "text": "✓ Keyone Rooms Finkenberg · €152.92 · check-in 16:00"
           }
-        ]
+        ],
+        "driveTime": "~1h 45m · Collalbo → Finkenberg via Brenner"
       },
       "keyDecisions": [
         "✅ Cable car up by 8:30am — back down by 12:30pm",
@@ -1066,7 +1076,7 @@
         }
       ],
       "summary": {
-        "drive": "~120 km / 75 mi",
+        "drive": "~150 km / 93 mi",
         "time": "~1h 30m",
         "from": "Finkenberg, Zillertal 🇦🇹",
         "to": "Bichlbach, Tyrol 🇦🇹",
@@ -1076,7 +1086,8 @@
             "status": "booked",
             "text": "✓ Landhaus Bichlbach · €405/2 nights · check-in 15:00"
           }
-        ]
+        ],
+        "driveTime": "~2h 30m incl. Achensee + Swarovski stops"
       },
       "keyDecisions": [
         "✅ Schlegeis — park before 9am to avoid toll queue",
@@ -1130,7 +1141,7 @@
         }
       ],
       "summary": {
-        "drive": "~230 km / 143 mi",
+        "drive": "~20 km / 12 mi",
         "time": "3h 10m",
         "from": "Bichlbach 🇦🇹",
         "to": "Bichlbach 🇦🇹 (Night 2)",
@@ -1140,7 +1151,8 @@
             "status": "booked",
             "text": "✓ Landhaus Bichlbach Night 2 · checkout 08:00-10:00 tomorrow"
           }
-        ]
+        ],
+        "driveTime": "~30m · just Bichlbach ↔ Ehrwald"
       },
       "keyDecisions": [
         "✅ Ehrwalder Almbahn up — 5min drive from Bichlbach",
@@ -1204,7 +1216,7 @@
         }
       ],
       "summary": {
-        "drive": "~290 km / 180 mi",
+        "drive": "~280 km / 174 mi",
         "time": "2h 30m",
         "from": "Bichlbach 🇦🇹",
         "to": "ZRH Airport Hotel 🇨🇭",
@@ -1218,7 +1230,8 @@
             "status": "booked",
             "text": "✓ Airport Hotel Zurich · CHF 157.62 · check-in 15:00"
           }
-        ]
+        ],
+        "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH"
       },
       "keyDecisions": [
         "✅ Checkout 8am — 45min drive to Neuschwanstein",
@@ -1256,7 +1269,8 @@
             "status": "booked",
             "text": "✓ Hertz drop-off"
           }
-        ]
+        ],
+        "driveTime": "—"
       },
       "keyDecisions": [
         "✅ Alarm 5am — FI571 departs 7:55am, check-in by 6am",
@@ -1672,8 +1686,8 @@
       "from": "Keflavík / KEF 🇮🇸",
       "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
       "highlights": "Kerið Crater · Geysir (Strokkur) · Urriðafoss · Seljalandsfoss · Gljúfrabúi cave · Skógafoss · Reynisfjara black sand beach · Vík village",
-      "drive": "~358 km / 222 mi",
-      "driveTime": "~2 days",
+      "drive": "~300 km / 185 mi",
+      "driveTime": "~3h pure drive · full day with stops",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
       "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
       "action": null
@@ -1686,7 +1700,7 @@
       "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
       "highlights": "Dyrhólaey arch + puffins · Fjaðrárgljúfur Canyon · Svínafellsjökull Glacier walk · Jökulsárlón Glacier Lagoon · Diamond Beach · Reykjanes golden hour",
       "drive": "~230 km / 143 mi",
-      "driveTime": "~3h",
+      "driveTime": "~3h pure drive · full day with stops",
       "bookings": "✓ BergOne",
       "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
       "action": null
@@ -1698,8 +1712,8 @@
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
       "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · arrive Camping Jungfrau Lauterbrunnen",
-      "drive": "~174 km / 108 mi",
-      "driveTime": "~2hrs",
+      "drive": "~144 km / 90 mi",
+      "driveTime": "~1h 45m",
       "bookings": "✅ Camping Jungfrau (Booking · $499 / CHF 398) · ✅ Hertz ZRH",
       "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null
@@ -1712,7 +1726,7 @@
       "nightStay": "Camping Jungfrau, Lauterbrunnen 🇨🇭 (Night 2)",
       "highlights": "Oeschinensee 8:30am · Grindelwald First gondola #238070 ✅ · Cliff Walk · Bachalpsee hike",
       "drive": "~100 km / 62 mi",
-      "driveTime": "~2hrs",
+      "driveTime": "~2h 30m incl. mountain roads",
       "bookings": "✅ Grindelwald First gondola #238070 · ✅ Oeschinensee booked · Order 254-SK2MH6 · 08:30–10:00",
       "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null
@@ -1724,8 +1738,8 @@
       "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
       "nightStay": "Berchtesgaden Apartment 🇩🇪 ✅",
       "highlights": "Staubbach Falls · Lauterbrunnen valley · Trümmelbach Falls · drive to Berchtesgaden",
-      "drive": "~260 km / 162 mi",
-      "driveTime": "~3hrs 30m",
+      "drive": "~595 km / 370 mi",
+      "driveTime": "~6h non-stop · longest drive day",
       "bookings": "✅ Berchtesgaden apartment · €310 · check-in 16:00–20:00",
       "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Trummelbach+Falls,+Lauterbrunnen,+Switzerland/Berchtesgaden,+Germany",
       "action": {
@@ -1740,8 +1754,8 @@
       "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Berchtesgaden Apartment 🇩🇪 ✅ (Night 2)",
       "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
-      "drive": "~155 km / 96 mi",
-      "driveTime": "~2hrs",
+      "drive": "~80 km / 50 mi",
+      "driveTime": "~2h total · short loops around Berchtesgaden",
       "bookings": "✅ Berchtesgaden apartment Night 2 · checkout 08:00–11:00",
       "mapUrl": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Berchtesgaden,+Germany",
       "action": {
@@ -1756,8 +1770,8 @@
       "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
       "highlights": "Liechtensteinklamm gorge 444 stairs · Salzburg old town · Hohensalzburg Fortress · Wolfgangsee · Hallstatt golden hour",
-      "drive": "~220 km / 137 mi",
-      "driveTime": "~3h 15m",
+      "drive": "~180 km / 112 mi",
+      "driveTime": "~3h 30m incl. Salzburg parking",
       "bookings": "✅ Kaiserblick Goisern confirmed · Airbnb $333 · check-in 14:00–20:00 · key box",
       "mapUrl": "https://www.google.com/maps/dir/Hallein,+Austria/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria",
       "action": {
@@ -1772,8 +1786,8 @@
       "from": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
       "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
       "highlights": "Gosausee glacier lake loop · Hallstatt Salt Mine · Skywalk · Beinhaus 1,200 skulls · Echern Valley + Waldbachstrub · Dachstein 5 Fingers 2,109m · lakefront golden hour",
-      "drive": "~30 km / 19 mi",
-      "driveTime": "~45min total",
+      "drive": "~40 km / 25 mi",
+      "driveTime": "~1h total · very local day",
       "bookings": "✅ Kaiserblick Goisern Night 2",
       "mapUrl": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria",
       "action": {
@@ -1789,7 +1803,7 @@
       "nightStay": "Hotel Schwarzer Adler, Sillian 🇦🇹 ✅",
       "highlights": "Grossglockner High Alpine Road 2,504m · Kaiser-Franz-Josefs-Höhe · Pasterze Glacier · Heiligenblut · Lienz · Sillian",
       "drive": "~280 km / 174 mi",
-      "driveTime": "~4h (including stops)",
+      "driveTime": "~4h 30m incl. Grossglockner slow drive",
       "bookings": "✅ Hotel Schwarzer Adler Sillian · $115 / €99.40 · check-in 16:00–21:00",
       "mapUrl": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Sillian,+Austria",
       "action": {
@@ -1805,7 +1819,7 @@
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅",
       "highlights": "Braies sunrise · Lago di Misurina · Trail 117 Cadini · Tre Cime optional · Prato Piazza · Cortina · Lagazuoi optional · Falzarego · Gardena · Collalbo",
       "drive": "~200 km / 124 mi",
-      "driveTime": "~3h 30m",
+      "driveTime": "~5h total driving · many short hops",
       "bookings": "✅ Kaiserau 1907 · €354.56 · check-in 15:00–22:00",
       "mapUrl": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
@@ -1820,8 +1834,8 @@
       "from": "Collalbo, Renon 🇮🇹",
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅ (Night 2)",
       "highlights": "Seceda 2,519m · Trail 1 summit · Santa Maddalena viewpoint · Adolf Munkel Trail 35 · Rifugio Odle/Geisler Alm · Collalbo",
-      "drive": "~180 km / 112 mi",
-      "driveTime": "~3h 30m",
+      "drive": "~80 km / 50 mi",
+      "driveTime": "~2h total · Collalbo loop day",
       "bookings": "✅ Kaiserau 1907 Night 2 · checkout 05:00–10:30",
       "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Zanser+Alm,+Val+di+Funes,+Italy/Collalbo,+Italy",
       "action": {
@@ -1837,7 +1851,7 @@
       "nightStay": "Keyone Rooms, Finkenberg 🇦🇹 ✅",
       "highlights": "Alpe di Siusi full morning · Bullaccia plateau loop · Rifugio Zallinger lunch · drive to Mayrhofen",
       "drive": "~120 km / 75 mi",
-      "driveTime": "~1h 30m",
+      "driveTime": "~1h 45m · Collalbo → Finkenberg via Brenner",
       "bookings": "✅ Keyone Rooms Finkenberg · €152.92 · check-in 16:00",
       "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Finkenberg,+Austria",
       "action": {
@@ -1852,8 +1866,8 @@
       "from": "Finkenberg, Zillertal 🇦🇹",
       "nightStay": "Landhaus Bichlbach 🇦🇹 ✅",
       "highlights": "Olpererhuette hike 600m · Kebema bridge · Achensee boat · Swarovski Crystal Worlds · Bichlbach",
-      "drive": "~120 km / 75 mi",
-      "driveTime": "~2h",
+      "drive": "~150 km / 93 mi",
+      "driveTime": "~2h 30m incl. Achensee + Swarovski stops",
       "bookings": "✅ Landhaus Bichlbach · €405/2 nights · check-in 15:00",
       "mapUrl": "https://www.google.com/maps/dir/Finkenberg,+Austria/Schlegeis+Stausee,+Ginzling,+Austria/Achensee,+Pertisau,+Austria/Swarovski+Kristallwelten,+Wattens,+Austria/Bichlbach,+Austria",
       "action": {
@@ -1868,8 +1882,8 @@
       "from": "Bichlbach 🇦🇹",
       "nightStay": "Landhaus Bichlbach 🇦🇹 ✅ (Night 2)",
       "highlights": "Ehrwalder Almbahn · Seebensee glacier lake 1,657m · Drachensee Dragon Lake · Coburger Huette · back to Bichlbach",
-      "drive": "~230 km / 143 mi",
-      "driveTime": "~2h 30m",
+      "drive": "~20 km / 12 mi",
+      "driveTime": "~30m · just Bichlbach ↔ Ehrwald",
       "bookings": "✅ Landhaus Bichlbach Night 2 · checkout 08:00–10:00",
       "mapUrl": "https://www.google.com/maps/dir/Bichlbach,+Austria/Ehrwald,+Austria/Seebensee,+Ehrwald,+Austria/Coburger+H%C3%BCtte,+Ehrwald,+Austria/Bichlbach,+Austria",
       "action": {
@@ -1884,8 +1898,8 @@
       "from": "Bichlbach 🇦🇹",
       "nightStay": "Airport Hotel Zurich 🇨🇭 ✅",
       "highlights": "Neuschwanstein Castle · Ebenalp cable car · Aescher cliff restaurant · (Rhine Falls optional) · ZRH",
-      "drive": "~185 km / 115 mi",
-      "driveTime": "~2h 30m",
+      "drive": "~280 km / 174 mi",
+      "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH",
       "bookings": "✅ Airport Hotel Zurich · CHF 157.62 · check-in 15:00 · ⚠️ Book Neuschwanstein NOW",
       "mapUrl": "https://www.google.com/maps/dir/Bichlbach,+Austria/Neuschwanstein+Castle,+Schwangau,+Germany/Wasserauen,+Switzerland/Zurich+Airport,+Switzerland",
       "action": {
