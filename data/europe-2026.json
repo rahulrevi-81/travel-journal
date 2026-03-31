@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T03:32:48Z"
+    "_updated": "2026-03-31T03:34:26Z"
   },
   "bookingStrip": [
     {
@@ -1418,14 +1418,9 @@
       "confirmed": true
     },
     {
-      "cat": "Accommodation — 9 nights ✅",
-      "amount": "$2,676",
+      "cat": "Accommodation — 15 nights ✅",
+      "amount": "$3,032",
       "confirmed": true
-    },
-    {
-      "cat": "Accommodation — Zurich ⏳",
-      "amount": "~$200 est.",
-      "confirmed": false
     },
     {
       "cat": "Car Rentals ✅",
@@ -1449,49 +1444,49 @@
     }
   ],
   "budgetSummary": {
-    "confirmed": "$7,746",
-    "estimated": "~$11,500–$13,600"
+    "confirmed": "$8,302",
+    "estimated": "~$11,602–$12,902"
   },
   "accommodationBreakdown": [
     {
-      "property": "Room in Skeidflot 🇮🇸 · Night 1",
-      "paid": "$290.36"
+      "property": "Room in Skeidflot, Mýrdalur 🇮🇸 · Night 1",
+      "paid": "$290"
     },
     {
       "property": "BergOne, Ytri-Njarðvík 🇮🇸 · Night 2",
-      "paid": "$263.98"
+      "paid": "$264"
     },
     {
-      "property": "Tiny House Diemtigtal, Oey 🇨🇭 · Nights 3–4",
-      "paid": "$255.92 + extension (Airbnb)"
+      "property": "Camping Jungfrau, Lauterbrunnen 🇨🇭 · Nights 3–4",
+      "paid": "$499"
     },
     {
-      "property": "Escape by Landhaus Lindenberg, Buchloe 🇩🇪 · Night 4",
-      "paid": "$202 ✅ #6026325459"
+      "property": "Apartment, Berchtesgaden 🇩🇪 · Nights 5–6",
+      "paid": "$338"
     },
     {
-      "property": "Wurznwirt, Schneizlreuth 🇩🇪",
-      "paid": "$156.88"
+      "property": "Kaiserblick Goisern, Bad Goisern 🇦🇹 · Nights 7–8",
+      "paid": "$333"
     },
     {
-      "property": "HOMEBOUND Apartments, Bad Goisern 🇦🇹",
-      "paid": "$429.83"
+      "property": "Hotel Schwarzer Adler, Sillian 🇦🇹 · Night 9",
+      "paid": "$115"
     },
     {
-      "property": "Pr' Matjon Pension, Bled 🇸🇮",
-      "paid": "$467.57"
+      "property": "Kaiserau 1907, Collalbo 🇮🇹 · Nights 10–11",
+      "paid": "$352"
     },
     {
-      "property": "Das Auss.Zeit, Außervillgraten 🇦🇹",
-      "paid": "€515.38 (~$562)"
+      "property": "Keyone Rooms, Finkenberg 🇦🇹 · Night 12",
+      "paid": "$176"
     },
     {
-      "property": "Vienna House Martinspark, Dornbirn 🇦🇹",
-      "paid": "€162.00 (~$177)"
+      "property": "Landhaus Bichlbach 🇦🇹 · Nights 13–14",
+      "paid": "$467"
     },
     {
-      "property": "Zurich / Airport 🇨🇭",
-      "paid": "⏳ ~$200 est."
+      "property": "Airport Hotel Zurich 🇨🇭 · Night 15",
+      "paid": "$198"
     }
   ],
   "cash": [
