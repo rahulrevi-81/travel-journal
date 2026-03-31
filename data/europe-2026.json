@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T01:51:20Z"
+    "_updated": "2026-03-31T01:54:14Z"
   },
   "bookingStrip": [
     {
@@ -359,8 +359,8 @@
     {
       "dayLabel": "3",
       "date": "Jun 22",
-      "title": "Fly → Lake Thun → Diemtigtal",
-      "meta": "Jun 22 · ZRH → Lake Thun → Diemtigtal",
+      "title": "Fly KEF→ZRH · Lake Thun · Lauterbrunnen",
+      "meta": "Jun 22 · ZRH → Lake Thun → Spiez Castle → Camping Jungfrau, Lauterbrunnen",
       "flag": "🇨🇭",
       "mapLinks": [
         {
@@ -405,8 +405,8 @@
         "drive": "~174 km / 108 mi",
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
-        "to": "Tiny House Diemtigtal",
-        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Grimmimutz Discovery Trail · Diemtigtal village stroll",
+        "to": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
+        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Grimmimutz Discovery Trail · Lauterbrunnen village stroll",
         "bookings": [
           {
             "status": "booked",
@@ -423,7 +423,7 @@
       "dayLabel": "4",
       "date": "Jun 23",
       "title": "Oeschinensee + Grindelwald First — Double Gondola Day",
-      "meta": "Jun 23 · Diemtigtal → Kandersteg (Oeschinensee) → Grindelwald First → Diemtigtal",
+      "meta": "Jun 23 · Lauterbrunnen → Kandersteg (Oeschinensee) → Grindelwald First → Lauterbrunnen",
       "flag": "🇨🇭",
       "warning": true,
       "mapLinks": [
@@ -467,8 +467,8 @@
         "drive": "~100 km / 62 mi",
         "time": "6h 40m",
         "heavy": true,
-        "from": "Diemtigtal 🇨🇭",
-        "to": "Tiny House Diemtigtal 🇨🇭",
+        "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
+        "to": "Camping Jungfrau, Lauterbrunnen 🇨🇭 (Night 2)",
         "highlights": "Oeschinensee turquoise lake · Grindelwald First gondola ✅ · First Cliff Walk · Bachalpsee hike",
         "bookings": [
           {
@@ -531,7 +531,7 @@
       "summary": {
         "drive": "~260 km / 162 mi",
         "time": "2h 20m",
-        "from": "Diemtigtal 🇨🇭",
+        "from": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
         "to": "Berchtesgaden 🇩🇪",
         "highlights": "Staubbach Falls · Lauterbrunnen valley · Trümmelbach Falls · drive to Berchtesgaden",
         "bookings": [
@@ -593,7 +593,7 @@
         "highlights": "Königssee electric boat · Obersee · Eagle's Nest 1,834m · Hintersee Zauberwald · Hallein",
         "drive": "~155 km / 96 mi",
         "from": "Berchtesgaden 🇩🇪",
-        "to": "Hallein 🇦🇹",
+        "to": "Berchtesgaden 🇩🇪 (Night 2)",
         "bookings": [
           {
             "status": "booked",
@@ -649,7 +649,7 @@
         "drive": "~220 km / 137 mi",
         "time": "~45m",
         "from": "Berchtesgaden 🇩🇪",
-        "to": "Hallstatt 🇦🇹",
+        "to": "Kaiserblick Goisern, Bad Goisern 🇦🇹",
         "highlights": "Liechtensteinklamm gorge · Salzburg old town + Hohensalzburg Fortress · Wolfgangsee · Hallstatt golden hour",
         "bookings": [
           {
@@ -1733,7 +1733,7 @@
       "flag": "🇦🇹",
       "from": "Sillian 🇦🇹",
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅",
-      "highlights": "Braies sunrise · Cadini di Misurina viewpoint · Prato Piazza plateau · Cortina d'Ampezzo · Falzarego Pass · Gardena Pass · arrive Siusi",
+      "highlights": "Braies sunrise · Lago di Misurina · Trail 117 Cadini · Tre Cime Forcella Lavaredo · Prato Piazza · Cortina · Falzarego · Gardena · Collalbo",
       "drive": "~200 km / 124 mi",
       "driveTime": "~3h 30m",
       "bookings": "✅ Kaiserau 1907 · €354.56 · check-in 15:00–22:00",
@@ -1829,7 +1829,7 @@
       "flag": "🇱🇮🇨🇭",
       "from": "ZRH Airport Hotel 🇨🇭",
       "nightStay": "✈ Home — Orlando MCO",
-      "highlights": "Walk to ZRH terminal · Check-in 5:00am · FI571 departs 7:00am ZRH→KEF→MCO",
+      "highlights": "Walk to ZRH terminal · Check-in by 6:00am · FI571 departs 7:55am ZRH→KEF→MCO 8:50pm",
       "drive": "—",
       "driveTime": "—",
       "bookings": "✓ Icelandair FI571/FI689",
