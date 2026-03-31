@@ -160,8 +160,8 @@
   .glance-table tr:hover td { background: #f0f7f1; }
   .g-day  { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold); white-space: nowrap; font-size: 15px; vertical-align: middle !important; min-width: 50px; }
   .g-date { white-space: nowrap; color: var(--slate); font-size: 11px; vertical-align: middle !important; min-width: 70px; }
-  .g-from { font-size: 11px; white-space: nowrap; vertical-align: middle !important; min-width: 100px; max-width: 130px; }
-  .g-stay { font-size: 11px; color: var(--slate); white-space: nowrap; vertical-align: middle !important; min-width: 120px; max-width: 160px; }
+  .g-from { font-size: 11px; white-space: normal; vertical-align: middle !important; min-width: 90px; max-width: 120px; }
+  .g-stay { font-size: 11px; color: var(--slate); white-space: normal; vertical-align: middle !important; min-width: 110px; max-width: 150px; }
   .g-drive { text-align: center; font-size: 12px; white-space: nowrap; font-weight: 500; vertical-align: middle !important; min-width: 130px; }
   .g-time  { text-align: center; font-size: 11px; color: var(--slate); white-space: nowrap; vertical-align: middle !important; min-width: 110px; }
   .g-bookings { font-size: 11px; line-height: 1.9; min-width: 200px; white-space: normal; }
@@ -1090,20 +1090,6 @@ function renderBudget(d) {
   grid.appendChild(total);
   wrap.appendChild(grid);
 
-  wrap.appendChild(h('p',{class:'section-title',style:'margin-top:32px'},'Accommodation Breakdown'));
-  const tableWrap = h('div',{style:'overflow-x:auto'});
-  const tbl = h('table',{class:'accom-table'});
-  tbl.appendChild(h('thead',{},h('tr',{},h('th',{},'Property'),h('th',{},'Paid'))));
-  const tbody = h('tbody');
-  d.accommodationBreakdown.forEach(row =>
-    tbody.appendChild(h('tr',{},h('td',{},row.property),h('td',{html:row.paid})))
-  );
-  tbody.appendChild(h('tr',{style:'background:var(--warm)'},
-    h('td',{},h('strong',{},'Total')),h('td',{},h('strong',{},'~$2,888'))
-  ));
-  tbl.appendChild(tbody);
-  tableWrap.appendChild(tbl);
-  wrap.appendChild(tableWrap);
   return wrap;
 }
 
