@@ -9,7 +9,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -619,23 +620,62 @@ function renderHero(d) {
   document.getElementById('nav-label').textContent = m.flags.slice(1,4).join(' ') + ' · ' + m.departure.split(' ')[1] + '–' + m.return.split(' ')[1] + ' 2026';
   const pdfBtn = h('button', {class:'btn-pdf'});
   pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)';
-  pdfBtn.onclick = function() {
+  pdfBtn.onclick = async function() {
     var svgIcon = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>';
-    // Expand all day cards for print
+    // Expand all day cards
     var cards = document.querySelectorAll('.day-card');
     var wasOpen = [];
     cards.forEach(function(c, i) { wasOpen[i] = c.classList.contains('open'); c.classList.add('open'); });
-    pdfBtn.innerHTML = svgIcon + '&nbsp; Preparing…';
+    pdfBtn.innerHTML = svgIcon + '&nbsp; Generating PDF…';
     pdfBtn.disabled = true;
-    setTimeout(function() {
+    var restore = function() {
+      cards.forEach(function(c, i) { if (!wasOpen[i]) c.classList.remove('open'); });
+      pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
+      pdfBtn.disabled = false;
+    };
+    try {
+      // Wait for layout to settle after expanding cards
+      await new Promise(function(r) { setTimeout(r, 400); });
+      var el = document.getElementById('app') || document.body;
+      var canvas = await html2canvas(el, {
+        scale: 1.2,
+        useCORS: true,
+        allowTaint: true,
+        logging: false,
+        scrollX: 0,
+        scrollY: 0,
+        windowWidth: 1200,
+        onclone: function(doc) {
+          // Hide checkboxes and buttons in PDF clone
+          doc.querySelectorAll('.item-cb, .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn').forEach(function(el) { el.style.display = 'none'; });
+          // Ensure all day bodies visible
+          doc.querySelectorAll('.day-body').forEach(function(el) { el.style.display = 'block'; });
+        }
+      });
+      var imgData = canvas.toDataURL('image/jpeg', 0.92);
+      var { jsPDF } = window.jspdf;
+      var pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      var pageW = pdf.internal.pageSize.getWidth();
+      var pageH = pdf.internal.pageSize.getHeight();
+      var imgW = pageW;
+      var imgH = (canvas.height * pageW) / canvas.width;
+      var position = 0;
+      var remaining = imgH;
+      // Add pages
+      while (remaining > 0) {
+        pdf.addImage(imgData, 'JPEG', 0, position, imgW, imgH);
+        remaining -= pageH;
+        position -= pageH;
+        if (remaining > 0) pdf.addPage();
+      }
+      pdf.save('Europe-2026-VRFamilyTravels.pdf');
+      restore();
+    } catch(err) {
+      console.error('PDF error:', err);
+      // Fallback to print
       window.print();
-      // Restore original open/closed state after print dialog
-      setTimeout(function() {
-        cards.forEach(function(c, i) { if (!wasOpen[i]) c.classList.remove('open'); });
-        pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
-        pdfBtn.disabled = false;
-      }, 1000);
-    }, 300);
+      restore();
+    }
   };
 
 
