@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T03:34:26Z"
+    "_updated": "2026-03-31T03:43:38Z"
   },
   "bookingStrip": [
     {
@@ -1540,59 +1540,63 @@
   "reminders": [
     {
       "icon": "🧥",
-      "text": "Bring <strong>waterproof jackets</strong> for Iceland — especially Seljalandsfoss (walk behind the falls)"
+      "text": "Bring <strong>waterproof jackets</strong> for Iceland — especially Seljalandsfoss and Skógafoss · also useful for Rhine Falls"
     },
     {
       "icon": "😴",
-      "text": "Late June Iceland = 24hr daylight — bring <strong>eye masks</strong>"
+      "text": "Late June Iceland = 24hr daylight — bring <strong>eye masks</strong> for sleeping"
     },
     {
       "icon": "🏔️",
-      "text": "<strong>Grossglockner toll €46.50/car</strong> — pack warm layers at 2,504m even in summer"
-    },
-    {
-      "icon": "🚌",
-      "text": "<strong>Tre Cime</strong>: always take Misurina shuttle (€10), fills by 9am"
+      "text": "<strong>Grossglockner toll €37/car</strong> · pack warm layers at 2,504m even in June · check road status at grossglockner.at"
     },
     {
       "icon": "⏰",
-      "text": "<strong>Hallstatt</strong>: arrive before 9am, crowds arrive fast"
-    },
-    {
-      "icon": "🌤️",
-      "text": "<strong>Nordkette Innsbruck</strong>: weather-dependent — go first before old town"
+      "text": "<strong>Hallstatt</strong>: arrive before 9am · crowds arrive fast · Salt Mine + Dachstein pre-booked"
     },
     {
       "icon": "🛂",
-      "text": "<strong>ETIAS</strong>: currently projected Q4 2026 — <strong>verify at europa.eu 30 days before departure (May 20)</strong>. If launched early, each traveller needs online authorisation (~€7–20)"
+      "text": "<strong>ETIAS</strong>: EU entry authorisation — verify status at europa.eu <strong>30 days before departure</strong> · currently projected Q4 2026"
     },
     {
       "icon": "🇦🇹",
-      "text": "<strong>Austrian digital vignette</strong> — buy at <a href='https://www.asfinag.at' style='color:inherit'>asfinag.at</a> by <strong>June 6</strong> (18-day waiting period before Jun 24 entry)"
+      "text": "<strong>Austrian digital vignette</strong> — buy on Jun 22 at asfinag.at after Hertz pickup · need licence plate · ~€16.50"
     },
     {
       "icon": "🏥",
-      "text": "<strong>Travel insurance</strong>: Schengen requires minimum €30,000 medical coverage per person — carry printed proof from your provider"
+      "text": "<strong>Travel insurance</strong>: Schengen requires minimum €30,000 medical coverage per person · book before departure"
     },
     {
       "icon": "📱",
-      "text": "<strong>Download offline maps</strong> before leaving home (Google Maps or maps.me) for all 7 countries — signal is patchy in the Dolomites and Julian Alps"
+      "text": "<strong>Download offline maps</strong> before leaving home (Google Maps or maps.me) for all 7 countries · cell signal patchy in Dolomites + mountain passes"
     },
     {
       "icon": "🧺",
-      "text": "<strong>Pack detergent sheets</strong> (lightweight, TSA-safe) for 4 laundry stops — many European apartment washers don't provide free soap"
-    },
-    {
-      "icon": "🏨",
-      "text": "<strong>Zurich Airport hotel</strong> still needed (Jul 4–5). Radisson Blu ZRH is 3–7 min walk to check-in counters via indoor terminal connection. Worth the extra $50 vs a 4:30am shuttle."
-    },
-    {
-      "icon": "🍳",
-      "text": "Use the <strong>HOMEBOUND</strong> (Bad Goisern) and <strong>Das Auss.Zeit</strong> (Außervillgraten) kitchens for dinners — a single restaurant dinner in Switzerland for 4 easily hits $180"
+      "text": "<strong>Pack detergent sheets</strong> (lightweight, TSA-safe) · plan 3–4 laundry stops · most European apartments have washing machines"
     },
     {
       "icon": "🏰",
-      "text": "<strong>Liechtenstein passport stamp</strong> CHF 3 / €3.30 at Vaduz tourist office — worth every cent!"
+      "text": "<strong>Neuschwanstein tickets</strong> — must pre-book at tickets.hohenschwangau.de · 9:30am Jul 4 · July sells out weeks ahead — book NOW"
+    },
+    {
+      "icon": "🧐",
+      "text": "<strong>Gardena Card</strong> (1 day €20/adult · €10/child) covers Seceda + other Val Gardena lifts · buy at Seceda valley station Jun 30"
+    },
+    {
+      "icon": "🏰",
+      "text": "<strong>Liechtenstein passport stamp</strong> CHF 3 / €3.30 at Vaduz tourist office — passing through on Jun 28 route"
+    },
+    {
+      "icon": "🧳",
+      "text": "<strong>Pack cash (EUR + CHF)</strong> · many mountain rifugios + cable cars are cash-only · Rifugio Prato Piazza, Coburger Hütte, Olpererhütte all cash"
+    },
+    {
+      "icon": "🚗",
+      "text": "Hertz ZRH pickup Jun 22 — <strong>confirm child seat booking</strong> for 2 kids · Conf. L5350959316 · return Jul 5 before 7:55am flight"
+    },
+    {
+      "icon": "☀️",
+      "text": "<strong>Aescher cliff restaurant (Jul 4)</strong> is first-come first-served · no reservations · arrive by 1:30pm · busy on weekends · have Rhine Falls as Plan B"
     }
   ],
   "glance": [

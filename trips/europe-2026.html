@@ -152,7 +152,7 @@
   .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 
   /* SUMMARY / GLANCE TABLE — 8 columns */
-  .glance-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 1500px; }
+  .glance-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 900px; }
   .glance-table th { background: var(--ink); color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 16px; text-align: left; white-space: nowrap; font-size: 10px; }
   .glance-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
   .glance-table tr:nth-child(odd) td  { background: var(--warm); }
@@ -620,7 +620,7 @@ function renderHero(d) {
   document.getElementById('nav-label').textContent = m.flags.slice(1,4).join(' ') + ' · ' + m.departure.split(' ')[1] + '–' + m.return.split(' ')[1] + ' 2026';
   const pdfBtn = h('button', {class:'btn-pdf'});
   pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)';
-  pdfBtn.onclick = async function() {
+  pdfBtn.addEventListener('click', async function() {
     var svgIcon = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>';
     // Expand all day cards
     var cards = document.querySelectorAll('.day-card');
@@ -676,9 +676,7 @@ function renderHero(d) {
       window.print();
       restore();
     }
-  };
-
-
+  });
 
   return h('div', {class: 'hero'},
     p('hero-flags', m.flags.join(' ')),
@@ -770,7 +768,7 @@ function renderAccommodation(d) {
   tableWrap.style.overflowX = 'auto';
   const tbl = h('table', {class:'accom-table'});
   tbl.appendChild(h('thead', {}, h('tr', {},
-    ...['Nights','Property','Dates','Ref','Status'].map(t => h('th',{},t))
+    ...['Nights','Property','Dates','Booking Ref'].map(t => h('th',{},t))
   )));
   const tbody = h('tbody');
   const validStatuses = ['Confirmed','Pending','Yet to book','Need to adjust'];
@@ -794,8 +792,7 @@ function renderAccommodation(d) {
       h('td',{},row.dates),
       h('td',{}, h('span',{class:'ref', html: row.ref
         + (row.freeCancel ? ' <span style="color:var(--sage);font-size:10px">'+row.freeCancel+'</span>' : '')
-        + (row.stars ? ' <span class="stars">'+row.stars+'★</span>' : '')})),
-      statusTd
+        + (row.stars ? ' <span class="stars">'+row.stars+'★</span>' : '')}))
     ));
   });
   tbl.appendChild(tbody);
@@ -968,7 +965,7 @@ function renderSummaryTable(d) {
   const tbl = h('table', {class:'glance-table'});
 
   tbl.appendChild(h('thead', {}, h('tr', {},
-    ...['Day','Date','Starting Place','Night Stay','Highlights','Drive','Drive Time','Action','Map']
+    ...['Day','Date','From','Night Stay','Highlights','Drive & Time','Map']
       .map(t => h('th',{},t))
   )));
 
@@ -1035,15 +1032,15 @@ function renderSummaryTable(d) {
     } else {
       actTd.appendChild(h('span', {class:'act-ok'}, '✓ Booked'));
     }
+    const driveCell = h('td', {class:'g-drive', style:'white-space:nowrap;font-size:12px;'});
+    driveCell.innerHTML = (g.drive || '—') + '<br><span style="color:var(--slate);font-size:11px">' + (g.driveTime || '') + '</span>';
     tbody.appendChild(h('tr', {class: rowClass},
       h('td', {class:'g-day'},   g.day),
-      h('td', {class:'g-date'},  g.date),
-      h('td', {class:'g-from'},  g.from),
-      h('td', {class:'g-stay'},  g.nightStay),
+      h('td', {class:'g-date', style:'white-space:nowrap;'},  g.date),
+      h('td', {class:'g-from', style:'font-size:12px;'},  g.from),
+      h('td', {class:'g-stay', style:'font-size:12px;'},  g.nightStay),
       hlTd,
-      h('td', {class:'g-drive'}, g.drive),
-      h('td', {class:'g-time'},  g.driveTime),
-      actTd,
+      driveCell,
       mapTd
     ));
   });
@@ -1158,12 +1155,11 @@ async function init() {
     const container = div('container');
     container.appendChild(renderFlights(d));
     container.appendChild(renderCars(d));
-    container.appendChild(renderTripMaps(d));        // ← NEW: Full Route Maps
-    container.appendChild(renderAccommodation(d));
+    container.appendChild(renderTripMaps(d));
 
     container.appendChild(h('p', {class:'section-title'}, 'Day-by-Day Itinerary'));
     glanceContainer = renderSummaryTable(d);
-    container.appendChild(glanceContainer);          // ← UPDATED: interactive highlights
+    container.appendChild(glanceContainer);
 
     const daysGrid = div('days-grid');
     let cardIdx = 0;
@@ -1190,6 +1186,7 @@ async function init() {
     });
     container.appendChild(daysGrid);
 
+    container.appendChild(renderAccommodation(d));
     container.appendChild(renderChecklist(d));
     container.appendChild(renderBudget(d));
     container.appendChild(renderCash(d));
