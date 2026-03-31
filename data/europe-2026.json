@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T00:05:35Z"
+    "_updated": "2026-03-31T01:51:20Z"
   },
   "bookingStrip": [
     {
@@ -214,7 +214,7 @@
       "property": "Kaiserau 1907, Collalbo 🇮🇹",
       "address": "Via Peter Mayr, 65, 39054 Collalbo (Renon), Italy",
       "dates": "Jun 29–Jul 1",
-      "ref": "✅ Booking · $408 / €354.56 · 2 nights · check-in 15:00–22:00 · check-out 05:00–10:30",
+      "ref": "✅ Booking · $352 / €354.56 · 2 nights · check-in 15:00–22:00 · check-out 05:00–10:30",
       "freeCancel": null,
       "status": "Confirmed"
     },
@@ -1304,7 +1304,7 @@
       "id": "siusi_hotel",
       "label": "🏨 Kaiserau 1907, Collalbo — Jun 29–Jul 1 (2 nights)",
       "status": "done",
-      "ref": "Booking · $408 / €354.56 · check-in 15:00–22:00",
+      "ref": "Booking · $352 / €354.56 · check-in 15:00–22:00",
       "deadline": null,
       "link": null
     },
