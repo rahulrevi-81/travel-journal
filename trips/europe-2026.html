@@ -712,7 +712,8 @@ function renderStrip(d) {
 }
 
 function renderFlights(d) {
-  const wrap = div('', h('p', {class:'section-title'}, 'Flights'));
+  const wrap = div('');
+  wrap.appendChild(h('p', {class:'section-title'}, 'Flights'));
   const box = h('div', {style:'background:white;border:1px solid var(--border);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;'});
   d.flights.forEach(f => {
     const row = h('div', {style:'display:flex;align-items:center;gap:14px;flex-wrap:wrap;'});
@@ -730,7 +731,8 @@ function renderFlights(d) {
 }
 
 function renderCars(d) {
-  const wrap = div('', h('p', {class:'section-title'}, 'Car Rentals'));
+  const wrap = div('');
+  wrap.appendChild(h('p', {class:'section-title'}, 'Car Rentals'));
   const box = h('div', {style:'background:white;border:1px solid var(--border);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;'});
   d.cars.forEach(c => {
     const row = h('div', {style:'display:flex;align-items:center;gap:14px;flex-wrap:wrap;'});
@@ -755,8 +757,8 @@ function renderTripMaps(d) {
     const card = h('a', {class:'trip-map-card', href: m.url, target:'_blank', rel:'noopener'});
     card.appendChild(h('div', {class:'trip-map-icon'}, '🗺️'));
     const info = div('');
-    info.appendChild(h('div', {class:'trip-map-label'}, m.label));
-    info.appendChild(h('div', {class:'trip-map-desc'}, m.description));
+    info.appendChild(h('div', {class:'trip-map-label'}, (m.flag ? m.flag + ' ' : '') + (m.title || m.label || '')));
+    info.appendChild(h('div', {class:'trip-map-desc'}, m.subtitle || m.description || ''));
     card.appendChild(info);
     card.appendChild(h('div', {class:'trip-map-arrow'}, '↗'));
     grid.appendChild(card);
@@ -1176,8 +1178,11 @@ async function init() {
     initEditableGlance(d.glance);
 
     const container = div('container');
-    container.appendChild(renderFlights(d));
-    container.appendChild(renderCars(d));
+    // Flights + Cars side by side
+    const logisticsRow = h('div', {style:'display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;'});
+    logisticsRow.appendChild(renderFlights(d));
+    logisticsRow.appendChild(renderCars(d));
+    container.appendChild(logisticsRow);
     container.appendChild(renderTripMaps(d));
 
     container.appendChild(h('p', {class:'section-title'}, 'Day-by-Day Itinerary'));
