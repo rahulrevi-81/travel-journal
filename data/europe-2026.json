@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T01:54:14Z"
+    "_updated": "2026-03-31T03:27:21Z"
   },
   "bookingStrip": [
     {
@@ -809,17 +809,18 @@
             "Drive <strong>10 min</strong> → <strong>Rifugio Auronzo</strong> via toll road · €30 · arrive ~8:30am · park early before crowds",
             "⭐ <strong>Cadini di Misurina viewpoint — Trail 117</strong> — <strong>20 min hike from Rifugio Auronzo</strong> · follow signs for path 117/Fonda Savio heading east · rocky ridgeline traverse · famous “ski jump” viewpoint of the spires · Lord of the Rings scenery · jaw-dropping · do this FIRST while legs are fresh · <a href='https://www.alltrails.com/trail/italy/veneto/rifugio-auronzo-cadini-di-misurina' target='_blank'>AllTrails ↗</a>",
             "🥾 <strong>Trail 117 — Cadini hike</strong> — 4–5 km round trip · 40–45 min each way · rocky + narrow exposed final section · moderate difficulty · completely worth it · best view of the entire trip",
-            "🥾 <strong>Short Tre Cime loop — Forcella Lavaredo viewpoint</strong> — walk counterclockwise from Rifugio Auronzo · ~0.5–1 mile · 20–25 min to Forcella Lavaredo (2,454m) · the highest point on the full circuit · iconic front-on view of all three peaks · turn back here · no need for the full 10km loop",
+            "➕ <strong>Optional: Short Tre Cime loop — Forcella Lavaredo viewpoint</strong> — Trail 101 · walk counterclockwise from Rifugio Auronzo · ~0.5–1 mile · 20–25 min to Forcella Lavaredo (2,454m) · the highest point on the full circuit · iconic front-on view of all three peaks · turn back here · no need for the full 10km loop",
             "⭐ <strong>Forcella Lavaredo</strong> — best single viewpoint in the entire Dolomites · all three Cime framed perfectly · ~40–50 min round trip from car park",
             "Drive back <strong>30 min</strong> → <strong>Prato Piazza plateau</strong> · park at Rifugio Prato Piazza · arrive ~11:00am",
             "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
-            "🥾 <strong>Prato Piazza easy walk</strong> — 1hr loop · flat · free · morning light on Tre Cime",
+            "➕ <strong>Optional: Prato Piazza loop walk</strong> — 1hr · flat · free · or just coffee at Rifugio + views · skip if short on time",
             "<strong>Lunch</strong> at Rifugio Prato Piazza (~1hr) · cash",
             "Drive <strong>45 min</strong> west → <strong>Cortina d’Ampezzo</strong> · Corso Italia piazza · Tofane peaks framing the town · espresso stop · ~45 min",
             "⭐ <strong>Cortina d’Ampezzo</strong> — the queen of the Dolomites · elegant mountain town · a perfect coffee break after a big morning",
             "Drive <strong>20 min</strong> west → <strong>Passo Falzarego (2,105m)</strong> · dramatic rock formations · Lagazuoi massif · quick photo stop · 15 min",
+            "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — if energy allows after a 5am start · Rifugio Lagazuoi · WWI tunnel galleries (~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm · adds ~1.5hrs",
             "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
-            "Drive <strong>45 min</strong> → <strong>Siusi allo Sciliar</strong> · check in hotel · arrive ~5:00pm · ⏳ yet to book · near cable car station",
+            "Drive <strong>45 min</strong> → <strong>Collalbo, Renon</strong> · check in Kaiserau 1907 · arrive ~5:30pm · ✅ Confirmed · check-in 15:00–22:00",
             "⭐ <strong>Collalbo / Renon plateau evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow · ~50min drive to Ortisei"
           ]
         }
@@ -859,49 +860,54 @@
     {
       "date": "Jun 30",
       "dayNum": 12,
-      "title": "West Dolomites — Seceda + Val di Funes + Lagazuoi",
-      "meta": "Jun 30 · Collalbo → Ortisei (Seceda) → Val di Funes → Passo Falzarego (Lagazuoi) → back to Collalbo",
+      "title": "West Dolomites — Seceda + Val di Funes + Adolf Munkel Trail",
+      "meta": "Jun 30 · Collalbo → Ortisei (Seceda) → Val di Funes (Santa Maddalena) → Adolf Munkel Trail 35 → Collalbo",
       "sections": [
         {
           "heading": null,
           "items": [
             "Leave <strong>Collalbo 7:30am</strong> · drive <strong>20 min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ pre-book Seceda timed slots at seceda.it",
-            "⭐ <strong>Seceda cable car</strong> (Ortisei → 2,519m) · 15-min ride · €59/adult · Fermeda Towers + Sassolungo panorama · most iconic jagged-peak view in the entire Dolomites",
-            "🥾 <strong>Forcella Pana ridgeline walk</strong> — 10 min from top station · Fermeda Towers close-up · Sassolungo panorama · ~1hr · easy",
+            "⭐ <strong>Seceda cable car</strong> (Ortisei → 2,519m) · 15-min ride · €59/adult · Fermeda Towers + Sassolungo panorama · most iconic jagged-peak view in the entire Dolomites · hike Trail 1 to Seceda summit (10 min from top station)",
+            "⚠️ <strong>Forcella Pana ridgeline (Trail 2)</strong> — <em>currently closed due to landslide activity</em> · check val-gardena.com before visiting · if open: 10 min from top station · Fermeda Towers close-up · Sassolungo panorama · ~1hr easy",
             "<strong>Lunch at Rifugio Firenze</strong> on the Seceda ridge (~1hr) · cable car back down · depart Ortisei ~1:00pm",
             "Drive <strong>30 min</strong> → <strong>Val di Funes (Santa Maddalena)</strong> · park in village · afternoon light is perfect for this shot",
             "⭐ <strong>Santa Maddalena Church viewpoint</strong> — most photographed scene in South Tyrol · stone church in emerald meadow + jagged Odle peaks · Panoramaweg walk (~1hr return · free)",
-            "Drive <strong>1hr</strong> west via SS242 → <strong>Passo Falzarego</strong> · scenic route through Corvara · arrive by 4:00pm",
-            "⭐ <strong>Lagazuoi cable car (2,752m)</strong> — arrive <strong>Passo Falzarego by 4:00pm</strong> · Rifugio Lagazuoi · WWI tunnel galleries (helmet + headlamp ~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm",
-            "Drive <strong>1hr 20min</strong> → <strong>Siusi</strong> · arrive ~7:30pm · dinner · Night 2"
+            "Drive <strong>6 km</strong> further up valley → <strong>Parkplatz Zanser Alm / Malga Zannes</strong> · trailhead for Adolf Munkel Trail · paid parking",
+            "🥾 <strong>Adolf Munkel Trail — Trail 35 (Via delle Odle)</strong> — 9.2km loop · ~3hrs · easy-moderate · Trail #6 → Trail #35 → Trail #36 back to car park · forest + alpine meadows · directly below the jagged Odle/Geisler peaks · one of the finest hikes in the Dolomites",
+            "⭐ <strong>Rifugio Odle / Geisler Alm (1,986m)</strong> — halfway point on Trail 35 · Geislerkino viewpoint · best seats in the Dolomites · Kaiserschmarrn · cash · lunch here · open Jun–Oct",
+            "Drive <strong>45 min</strong> → <strong>Collalbo</strong> · arrive ~7:00pm · dinner · Night 2"
           ]
         }
       ],
       "mapLinks": [
         {
-          "label": "Day 11 Map — Collalbo → Seceda → Val di Funes → Lagazuoi → Collalbo",
-          "url": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Collalbo,+Italy"
+          "label": "Day 11 Map — Collalbo → Seceda → Val di Funes → Adolf Munkel → Collalbo",
+          "url": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Zanser+Alm,+Val+di+Funes,+Italy/Collalbo,+Italy"
         }
       ],
       "tags": [
         {
           "type": "alarm",
-          "text": "⚠️ Pre-book Seceda timed slots at seceda.it · €59/adult · 2026 requires advance booking"
+          "text": "⚠️ Pre-book Seceda timed slots at seceda.it · €59/adult · 2026 requires advance booking · OR buy Gardena Card (1 day €20/adult ·10/child) at valley station"
         },
         {
           "type": "alarm",
-          "text": "⏰ Arrive Lagazuoi by 4pm · last cable car down 5:30pm · comfortable with Siusi base"
+          "text": "⚠️ Forcella Pana (Trail 2) currently closed due to landslide · check val-gardena.com/en before visiting"
         },
         {
           "type": "alarm",
-          "text": "💰 Passo Gardena SS243 — do NOT take the highway · 25min extra · obligatory"
+          "text": "💰 Adolf Munkel trailhead: Parkplatz Zanser Alm · paid parking · fills early in July · arrive by 1pm for afternoon light on Odle peaks"
+        },
+        {
+          "type": "alarm",
+          "text": "⚠️ Passo Gardena SS243 — do NOT take the highway on Jun 29 · scenic drive obligatory"
         }
       ],
       "summary": {
         "from": "Collalbo, Renon 🇮🇹",
         "to": "Collalbo, Renon 🇮🇹 (Night 2)",
-        "drive": "~180 km / 112 mi",
-        "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Santa Maddalena viewpoint · Lagazuoi 2,752m WWI galleries",
+        "drive": "~120 km / 75 mi",
+        "highlights": "Seceda cable car 2,519m · Trail 1 summit · Santa Maddalena viewpoint · Adolf Munkel Trail 35 · Rifugio Odle/Geisler Alm · back to Collalbo",
         "accommodation": "Das Auss.Zeit ✅",
         "bookings": [
           {
@@ -1733,7 +1739,7 @@
       "flag": "🇦🇹",
       "from": "Sillian 🇦🇹",
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅",
-      "highlights": "Braies sunrise · Lago di Misurina · Trail 117 Cadini · Tre Cime Forcella Lavaredo · Prato Piazza · Cortina · Falzarego · Gardena · Collalbo",
+      "highlights": "Braies sunrise · Lago di Misurina · Trail 117 Cadini · Tre Cime optional · Prato Piazza · Cortina · Lagazuoi optional · Falzarego · Gardena · Collalbo",
       "drive": "~200 km / 124 mi",
       "driveTime": "~3h 30m",
       "bookings": "✅ Kaiserau 1907 · €354.56 · check-in 15:00–22:00",
@@ -1749,11 +1755,11 @@
       "flag": "🇦🇹",
       "from": "Collalbo, Renon 🇮🇹",
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅ (Night 2)",
-      "highlights": "Seceda cable car 2,519m · Forcella Pana ridgeline · Val di Funes Santa Maddalena · Lagazuoi 2,752m WWI galleries · back to Siusi",
+      "highlights": "Seceda 2,519m · Trail 1 summit · Santa Maddalena viewpoint · Adolf Munkel Trail 35 · Rifugio Odle/Geisler Alm · Collalbo",
       "drive": "~180 km / 112 mi",
       "driveTime": "~3h 30m",
       "bookings": "✅ Kaiserau 1907 Night 2 · checkout 05:00–10:30",
-      "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Passo+Falzarego,+Italy/Collalbo,+Italy",
+      "mapUrl": "https://www.google.com/maps/dir/Collalbo,+Italy/Ortisei,+Val+Gardena,+Italy/Santa+Maddalena,+Val+di+Funes,+Italy/Zanser+Alm,+Val+di+Funes,+Italy/Collalbo,+Italy",
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
