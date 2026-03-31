@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T22:03:41Z"
+    "_updated": "2026-03-31T22:05:24Z"
   },
   "bookingStrip": [
     {
@@ -101,8 +101,8 @@
     {
       "flag": "🇮🇸",
       "title": "Iceland — Full Route Map",
-      "subtitle": "Days 1–2 · KEF → Golden Circle → South Coast → Jökulsárlón → Reykjanes",
-      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Skeidflot,+M%C3%BDrdalur,+Iceland/Dyrhólaey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull+Glacier,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/Diamond+Beach,+Iceland/Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
+      "subtitle": "Days 1–2 · KEF → Kerið → Geysir → Seljalandsfoss → Skógafoss → Reynisfjara → Vík → Dyrhólaey → Fjaðrárgljúfur → Jökulsárlón → Diamond Beach → BergOne",
+      "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Urri%C3%B0afoss,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Beach,+Iceland/V%C3%ADk+%C3%AD+M%C3%BDrdal,+Iceland/Skeidflot,+M%C3%BDrdalur,+Iceland/Dyrhólaey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n,+Iceland/Diamond+Beach,+Iceland/Ytri-Njar%C3%B0v%C3%ADk,+Iceland"
     },
     {
       "flag": "🌍",
