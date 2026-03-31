@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T03:43:38Z"
+    "_updated": "2026-03-31T04:08:26Z"
   },
   "bookingStrip": [
     {
@@ -377,9 +377,7 @@
             "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
             "Drive <strong>~1hr</strong> → <strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval <strong>Spiez Castle</strong> on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min)",
             "Drive <strong>45 min</strong> → <strong>Tiny House Diemtigtal</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
-            "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow",
-            "Evening ~<strong>6:00pm</strong>: walk the <strong>Grimmimutz Discovery Trail</strong> from Oey — family-themed trail through the valley with illustrated markers telling the story of the forest dwarf Grimmimutz and the pepper witch · ~45–60 min · free · starts right at the village",
-            "Stroll through <strong>Diemtigtal village</strong> — traditional wooden chalets · Wakker Prize-winning intact villagescape · largest alpine farming valley in Switzerland · cowbells, wild roses, mountain backdrop · 20 min · free"
+            "Dinner locally or cook in the Tiny House kitchen · early night — big Day 4 tomorrow"
           ]
         }
       ],
@@ -545,8 +543,8 @@
     {
       "dayLabel": "6",
       "date": "Jun 25",
-      "title": "Königssee + Eagle's Nest + Hintersee → Hallein",
-      "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle's Nest → Hintersee → Jenner (optional) → Hallein",
+      "title": "Königssee + Eagle’s Nest + Hintersee → Berchtesgaden Night 2",
+      "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle’s Nest → Hintersee → Berchtesgaden",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -566,8 +564,7 @@
             "Drive <strong>10 min</strong> → <strong>Obersalzberg</strong> · park · walk to Dokumentation Obersalzberg WWII museum (~30min · €10/adult)",
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first afternoon bus ~1:00pm</strong> · elevator through the mountain · summit 1,834m · panoramic view over Berchtesgaden, Königssee and the Alps · <strong>~2hrs</strong>",
             "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald</strong> (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
-            "Drive <strong>35 min</strong> north → <strong>Hallein</strong> · check in <strong>Pension-Café-Konditorei Mikl</strong> ✅ · 2 Doktor-Albert-Eder-Straße · check-in 14:00–18:00",
-            "⭐ <strong>Hallein old town optional evening</strong> — 15 min walk from Pension · Keltenmuseum · Salzach riverside · 15min from Salzburg"
+            "🏠 <strong>Night 2 Berchtesgaden Apartment</strong> ✅ · check-in 16:00–20:00 · Kälbersteinstraße 4"
           ]
         }
       ],
@@ -923,7 +920,7 @@
       "dayLabel": "12",
       "date": "Jul 1",
       "title": "Full Day Collalbo → Finkenberg",
-      "meta": "Jul 1 · Collalbo → Alpe di Collalbo full morning → drive to Finkenberg · sleep Finkenberg",
+      "meta": "Jul 1 · Collalbo → Alpe di Siusi morning → drive to Finkenberg",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -935,8 +932,8 @@
         {
           "heading": null,
           "items": [
-            "Walk <strong>5 min</strong> to Collalbo cable car station · ride up to <strong>Alpe di Collalbo plateau (1,850m)</strong> · ~€20 return · opens 8:00am",
-            "⭐ <strong>Alpe di Collalbo (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
+            "Walk <strong>5 min</strong> to Siusi/Seis cable car station · ride up to <strong>Alpe di Siusi (Compatsch, 1,844m)</strong> · ~€20 return · opens 8:00am",
+            "⭐ <strong>Alpe di Siusi (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
             "🥾 <strong>Bullaccia Loop — Trail PU (Puflatschumrundung)</strong> — <strong>4 miles / 6.4km</strong> · ~2hrs · easy · start from Bullaccia cable car top station · 360° panorama: Sciliar, Sassolungo, Sassopiatto, Odle peaks · passes Witches’ Benches (Hexenbänke) rock formations · Rifugio Bullaccia coffee stop · suitable for all ages",
             "⭐ <strong>Rifugio Zallinger lunch</strong> — most scenic rifugio on the plateau · Sassolungo right behind the terrace · Kaiserschmarrn · cash · ~1hr",
             "🥾 <strong>Schlern massif approach</strong> (optional) — walk toward the dramatic flat-topped Schlern · Rifugio Bolzano views · ~1hr return",

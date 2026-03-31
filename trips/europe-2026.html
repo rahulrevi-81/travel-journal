@@ -235,9 +235,23 @@
     .day-card { page-break-inside:avoid; margin-bottom:12px; border:1px solid #ccc; break-inside:avoid; }
     .day-body { display:block !important; }
     .day-header { padding:8px 12px; }
-    .sched-grid { font-size:10px; }
-    .sched-item { padding:5px 10px; min-height:auto; }
-    .sched-time { display:none; }
+    /* Schedule grid — collapse to single readable column */
+    .sched-grid { display:block !important; }
+    .sched-time { display:none !important; }
+    .sched-item { display:flex !important; padding:5px 10px; min-height:auto; font-size:10px; border-bottom:1px solid #eee; page-break-inside:avoid; }
+    .sched-icon { font-size:12px; flex-shrink:0; margin-right:6px; margin-top:1px; }
+    .sched-text { flex:1; line-height:1.4; }
+    /* Budget + reminders grid */
+    .budget-grid { display:block !important; }
+    .budget-item { margin-bottom:6px; border:1px solid #eee; padding:6px 10px; border-radius:3px; }
+    .reminders-grid { display:block !important; columns:2; column-gap:16px; }
+    .reminder-item { break-inside:avoid; margin-bottom:8px; font-size:9px; }
+    /* Day header */
+    .day-header { background:#1a1a2e !important; color:#fff !important; padding:8px 12px; }
+    .day-num { font-size:18px !important; }
+    /* Tags */
+    .tags { display:flex; flex-wrap:wrap; gap:4px; padding:6px 12px; }
+    .tag { font-size:9px; padding:2px 6px; }
     /* Tables */
     .glance-table { min-width:0 !important; width:100%; font-size:9px; }
     .glance-table td, .glance-table th { padding:4px 6px; }
