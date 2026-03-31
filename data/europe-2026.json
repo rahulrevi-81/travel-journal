@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T18:35:13Z"
+    "_updated": "2026-03-31T20:14:58Z"
   },
   "bookingStrip": [
     {
@@ -415,7 +415,13 @@
             "text": "✓ Hertz ZRH"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Hertz pickup — allow 60–90min at ZRH Arrivals",
+        "✅ Lake Thun + Spiez Castle quick stop en route",
+        "🤔 Grimmimutz trail — optional evening only if not too tired"
+      ],
+      "timeline": "7:20am ▸ KEF→ZRH ▸ 1pm ZRH land ▸ 2:30pm drive ▸ Spiez ▸ 5:30pm Lauterbrunnen"
     },
     {
       "dayLabel": "4",
@@ -482,7 +488,13 @@
             "text": "✓ Oeschinensee cable car · CHF 125 · 08:30–10:00 · Order 254-SK2MH6"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Oeschinensee 8:30am slot — pre-booked, don't be late",
+        "✅ Grindelwald First gondola — booked #238070",
+        "🤔 Bachalpsee loop — only if kids have energy after Oeschinensee"
+      ],
+      "timeline": "8am ▸ drive Kandersteg ▸ 8:30am Oeschinensee ▸ 11:30am Grindelwald ▸ Cliff Walk ▸ Bachalpsee ▸ 6:30pm back"
     },
     {
       "dayLabel": "5",
@@ -538,7 +550,13 @@
             "text": "✓ Berchtesgaden apartment · €310 · check-in 16:00–20:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Staubbach + valley walk — 1hr, free, unmissable",
+        "✅ Trümmelbach Falls — kids absolutely love it",
+        "❌ Skip Highline179 — too far out of route"
+      ],
+      "timeline": "8:30am ▸ Lauterbrunnen ▸ Staubbach ▸ Trümmelbach ▸ 12pm drive ▸ 3:30pm Berchtesgaden"
     },
     {
       "dayLabel": "6",
@@ -597,7 +615,13 @@
             "text": "✓ Berchtesgaden apartment Night 2 · checkout 08:00–11:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Königssee boat 9:15am — go to Salet first, not St. Bartholomä",
+        "✅ Eagle's Nest — afternoon bus ~1pm from Obersalzberg",
+        "🤔 Hintersee Zauberwald — quick 30min stop, worth it"
+      ],
+      "timeline": "7am ▸ Königssee 9:15am ▸ Salet + Obersee ▸ St. Bartholomä ▸ Eagle's Nest 1pm ▸ Hintersee ▸ 5pm back"
     },
     {
       "dayLabel": "7",
@@ -654,7 +678,13 @@
             "text": "✓ HOMEBOUND"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Liechtensteinklamm — arrive early, before tour groups",
+        "✅ Hohensalzburg fortress interior — don't just do exterior",
+        "🤔 Wolfgangsee — 30min coffee stop, not a hike"
+      ],
+      "timeline": "8:30am ▸ Liechtensteinklamm ▸ 11am Salzburg ▸ Hohensalzburg ▸ 4pm Wolfgangsee ▸ 5pm Hallstatt ▸ Goisern"
     },
     {
       "dayLabel": "8",
@@ -719,7 +749,13 @@
             "text": "✓ Pr' Matjon"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Gosausee 7:30am — best morning light on glacier",
+        "✅ Salt Mine + Skywalk + Beinhaus — all three in Hallstatt",
+        "✅ Dachstein 5 Fingers — pre-booked, arrive Obertraun by 2:15pm"
+      ],
+      "timeline": "7:30am ▸ Gosausee ▸ cable car ▸ 10:30am Salt Mine ▸ Skywalk ▸ Beinhaus ▸ 2:15pm Dachstein ▸ Hallstatt golden hour"
     },
     {
       "dayLabel": "9",
@@ -780,7 +816,13 @@
             "text": "✓ Hotel Schwarzer Adler Sillian · $115 · Confirmed"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Checkout 8:30am — long drive day",
+        "✅ Grossglockner — Kaiser-Franz-Josefs-Höhe is the main stop",
+        "🤔 Lago di Braies afternoon preview — only if arrive Sillian before 4pm"
+      ],
+      "timeline": "8:30am ▸ drive ▸ 9:45am Grossglockner toll ▸ KFJ Höhe ▸ Heiligenblut ▸ Lienz ▸ 3:30pm Sillian"
     },
     {
       "dayLabel": "10",
@@ -852,7 +894,13 @@
             "text": "✓ Kaiserau 1907, Collalbo · €354.56 · check-in 15:00–22:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ 5am alarm — Braies gate opens 7:30am, be inside before",
+        "✅ Cadini Trail 117 — do this FIRST while legs are fresh",
+        "🤔 Lagazuoi cable car — only if energy allows after 12hrs on feet"
+      ],
+      "timeline": "5am ▸ Braies sunrise ▸ Misurina ▸ 8:30am Cadini ▸ Prato Piazza ▸ Cortina ▸ Falzarego ▸ Gardena ▸ 5:30pm Collalbo"
     },
     {
       "date": "Jun 30",
@@ -914,7 +962,13 @@
         ]
       },
       "dayLabel": "11",
-      "flag": "🇦🇹"
+      "flag": "🇦🇹",
+      "keyDecisions": [
+        "✅ Seceda — pre-book timed slot at seceda.it",
+        "⚠️ Forcella Pana (Trail 2) closed — do not attempt",
+        "✅ Adolf Munkel Trail 35 — out-and-back to Rifugio Odle, 4.4mi"
+      ],
+      "timeline": "7:30am ▸ Ortisei ▸ Seceda cable car ▸ Trail 1 ▸ Rifugio Firenze lunch ▸ 1pm Val di Funes ▸ Adolf Munkel ▸ 7pm Collalbo"
     },
     {
       "dayLabel": "12",
@@ -969,7 +1023,13 @@
             "text": "✓ Keyone Rooms Finkenberg · €152.92 · check-in 16:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Cable car up by 8:30am — back down by 12:30pm",
+        "✅ Bullaccia Trail PU — 4mi loop from cable car top",
+        "🤔 Schlern approach — only if time after Rifugio Zallinger lunch"
+      ],
+      "timeline": "8:30am ▸ Siusi cable car ▸ Bullaccia loop ▸ Rifugio Zallinger lunch ▸ 12:30pm down ▸ drive 1.5hrs ▸ 2:30pm Finkenberg"
     },
     {
       "dayLabel": "13",
@@ -1033,7 +1093,13 @@
             "text": "✓ Landhaus Bichlbach · €405/2 nights · check-in 15:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Schlegeis — park before 9am to avoid toll queue",
+        "✅ Olpererhütte Trail 502 — 600m gain, allow 2hrs up",
+        "🤔 Swarovski Crystal Worlds — kids enjoy it, ~1hr enough"
+      ],
+      "timeline": "8am ▸ Finkenberg ▸ Schlegeis ▸ Olpererhütte hike ▸ 2:30pm Achensee ▸ Swarovski ▸ 7:30pm Bichlbach"
     },
     {
       "dayLabel": "14",
@@ -1091,7 +1157,13 @@
             "text": "✓ Landhaus Bichlbach Night 2 · checkout 08:00-10:00 tomorrow"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Ehrwalder Almbahn up — 5min drive from Bichlbach",
+        "✅ Seebensee + Drachensee — short hike, both worth it",
+        "✅ Pack tonight — early start tomorrow for Neuschwanstein"
+      ],
+      "timeline": "8:30am ▸ Ehrwald ▸ cable car ▸ Seebensee ▸ Drachensee ▸ Coburger Hütte lunch ▸ 2:30pm back ▸ pack ▸ early night"
     },
     {
       "dayLabel": "15",
@@ -1163,7 +1235,13 @@
             "text": "✓ Airport Hotel Zurich · CHF 157.62 · check-in 15:00"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Checkout 8am — 45min drive to Neuschwanstein",
+        "✅ Marienbrücke — 10min walk above castle, the iconic shot",
+        "🤔 Rhine Falls vs Ebenalp — pick one, not both"
+      ],
+      "timeline": "8am ▸ checkout ▸ 8:45am Neuschwanstein ▸ 11:30am drive ▸ 1pm Ebenalp ▸ Aescher ▸ 3pm drive ▸ 4:15pm ZRH hotel"
     },
     {
       "dayLabel": "16",
@@ -1195,7 +1273,13 @@
             "text": "✓ Hertz drop-off"
           }
         ]
-      }
+      },
+      "keyDecisions": [
+        "✅ Alarm 5am — FI571 departs 7:55am, check-in by 6am",
+        "✅ Print boarding passes night before",
+        "✅ Hertz drop-off previous evening already done"
+      ],
+      "timeline": "5am ▸ wake ▸ walk to terminal ▸ 6am check-in ▸ 7:55am FI571 ZRH→KEF→MCO ▸ 8:50pm Orlando"
     }
   ],
   "checklist": [

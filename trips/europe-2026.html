@@ -248,6 +248,9 @@
     .reminder-item { break-inside:avoid; margin-bottom:8px; font-size:9px; }
     /* Day header */
     .day-header { background:#1a1a2e !important; color:#fff !important; padding:8px 12px; }
+    .day-timeline { display:none !important; }
+    .key-decisions { padding:6px 10px; margin-bottom:4px; }
+    .key-decisions li { font-size:9px; }
     .day-num { font-size:18px !important; }
     /* Tags */
     .tags { display:flex; flex-wrap:wrap; gap:4px; padding:6px 12px; }
@@ -293,6 +296,17 @@
     .day-body { padding: 16px; }
     .trip-map-card { min-width: 100%; }
   }
+
+  /* ── Timeline strip ── */
+  .day-timeline { font-size:11px; color:rgba(250,248,243,0.7); padding:4px 20px 10px; letter-spacing:0.2px; line-height:1.4; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  /* ── Key Decisions block ── */
+  .key-decisions { background:linear-gradient(135deg,#f8f6ef,#fdf9f0); border-left:3px solid var(--gold); padding:10px 16px; margin:0 0 0 0; }
+  .key-decisions-title { font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--slate); font-weight:600; margin-bottom:6px; }
+  .key-decisions ul { margin:0; padding:0; list-style:none; }
+  .key-decisions li { font-size:12px; color:var(--ink); padding:2px 0; line-height:1.4; }
+  /* ── MUST badge ── */
+  .badge-must { background:#2d6a4f; color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; padding:2px 6px; border-radius:2px; text-transform:uppercase; flex-shrink:0; margin-left:auto; align-self:flex-start; margin-top:2px; }
+  .sched-badge { flex-shrink:0; margin-left:auto; align-self:flex-start; margin-top:2px; }
 </style>
 </head>
 <body>
@@ -852,10 +866,25 @@ function renderDayCard(day, idx) {
   flagToggle.appendChild(div('day-toggle', '▾'));
   header.appendChild(flagToggle);
   card.appendChild(header);
+  // Timeline strip — visible when card is collapsed
+  if (day.timeline) {
+    const tl = h('div', {class:'day-timeline'}, '⏱ ' + day.timeline);
+    card.appendChild(tl);
+  }
 
   // Body
   const body = div('day-body');
   if (day.birthday) body.appendChild(h('div', {class:'birthday-banner', html: '🎂 ' + day.birthday}));
+
+  // Key Decisions block
+  if (day.keyDecisions && day.keyDecisions.length) {
+    const kd = div('key-decisions');
+    kd.appendChild(h('div', {class:'key-decisions-title'}, '⚡ Key Decisions'));
+    const ul = h('ul');
+    day.keyDecisions.forEach(dec => ul.appendChild(h('li', {html: dec})));
+    kd.appendChild(ul);
+    body.appendChild(kd);
+  }
 
   // Map links row
   if (day.mapLinks && day.mapLinks.length) {
@@ -894,7 +923,15 @@ function renderDayCard(day, idx) {
       itemCell.appendChild(h('span', {class:'sched-icon'}, icon));
       const textEl = h('span', {class:'sched-text', html: item});
       itemCell.appendChild(textEl);
-      if (type === 'wow') itemCell.appendChild(h('span', {class:'sched-badge badge-wow'}, 'WOW'));
+      if (type === 'wow') {
+        // MUST badge for items with double star ⭐⭐ or explicit WOW
+        const isMust = item.includes('⭐ ⭐') || (item.includes('WOW') && !item.includes('Optional') && !item.includes('optional'));
+        if (isMust) {
+          itemCell.appendChild(h('span', {class:'sched-badge badge-must'}, 'MUST'));
+        } else {
+          itemCell.appendChild(h('span', {class:'sched-badge badge-wow'}, 'WOW'));
+        }
+      }
       if (type === 'hike') itemCell.appendChild(h('span', {class:'sched-badge badge-hike'}, 'HIKE'));
       grid.appendChild(timeCell);
       grid.appendChild(itemCell);
