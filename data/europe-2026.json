@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T20:14:58Z"
+    "_updated": "2026-03-31T21:48:20Z"
   },
   "bookingStrip": [
     {
@@ -383,20 +383,12 @@
       ],
       "tags": [
         {
-          "type": "booking",
-          "text": "✓ Tiny House im schönen Diemtigtal · Airbnb · $255.92 · Jun 22–23 · 1 night"
+          "type": "alarm",
+          "text": "🏷 At Hertz: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Austria · inspect car before leaving"
         },
         {
-          "type": "alarm",
-          "text": "🏷 At Hertz: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Slovenia · inspect car before leaving"
-        },
-        {
-          "type": "alarm",
-          "text": "💙 Blausee tickets: buy online at blausee.ch to skip queue · CHF 12 adult / CHF 6 child"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Book Oeschinensee 8:30am slot tonight at oeschinensee.skiperformance.com — fills up fast in summer"
+          "type": "done",
+          "text": "✅ <strong>Camping Jungfrau, Lauterbrunnen</strong> — Nights 3–4 · $499 / CHF 398 · check-in 15:00–18:30 · Weid 406, 3822 Lauterbrunnen"
         }
       ],
       "summary": {
@@ -455,16 +447,12 @@
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Book Oeschinensee 8:30am slot at oeschinensee.skiperformance.com — fills fast in summer"
+          "type": "done",
+          "text": "✅ <strong>Oeschinensee 8:30am</strong> — pre-booked · Order 254-SK2MH6 · CHF 125 · 08:30–10:00 Jun 23 · arrive Kandersteg by 8:15am"
         },
         {
           "type": "booking",
           "text": "✅ Grindelwald First gondola #238070 · Jun 23 · 2 adults + 2 children"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Oeschinensee 8:30am slot — book at oeschinensee.skiperformance.com if not already done"
         }
       ],
       "summary": {
@@ -598,10 +586,6 @@
         {
           "type": "alarm",
           "text": "⛵ Königssee boat — book at seenschifffahrt.de · reserve in advance for Jun 25"
-        },
-        {
-          "type": "booking",
-          "text": "✅ Pension-Café-Konditorei Mikl, Berchtesgaden · confirmed · check-in 14:00–18:00"
         }
       ],
       "summary": {
