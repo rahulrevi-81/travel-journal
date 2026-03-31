@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T00:03:09Z"
+    "_updated": "2026-03-31T00:05:35Z"
   },
   "bookingStrip": [
     {
@@ -1345,7 +1345,7 @@
       "label": "⛵ Königssee electric boat — Jun 25 · 9:15am",
       "status": "pending",
       "ref": null,
-      "deadline": "Book day before (Jun 24) or morning of · seenschifffahrt.de",
+      "deadline": "Book 1–2 weeks before Jun 25 (non-refundable · pick time you are confident about) · seenschifffahrt.de",
       "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/"
     },
     {
@@ -1377,7 +1377,7 @@
       "label": "⛴ Achensee steamboat — Jul 2",
       "status": "pending",
       "ref": null,
-      "deadline": "Book day before (Jul 1) or morning of · achensee.com",
+      "deadline": "Day-of or day-before fine · large boats · no timed slots · achensee.com",
       "link": "https://www.achensee.com"
     },
     {
