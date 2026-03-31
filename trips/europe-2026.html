@@ -9,8 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -218,22 +217,37 @@
 
   /* ── PRINT / PDF STYLES ── */
   @media print {
-    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; box-sizing: border-box; }
+    /* Hide interactive elements */
     .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn, .booking-strip,
-    .export-bar button, [class*="reset"], .item-cb { display:none !important; }
-    body { background:#fff; font-size:11px; line-height:1.5; }
-    .hero { padding:32px 24px 24px; page-break-after:avoid; }
-    .hero h1 { font-size:32px; }
-    .container { padding:0 16px; max-width:100%; }
-    .section-title { margin-top:24px; }
-    .day-card { page-break-inside:avoid; margin-bottom:16px; border:1px solid #ddd; }
-    .day-body { display:block !important; padding:12px 16px; }  /* force expand all */
-    .day-header { padding:12px 16px; }
-    .glance-table td, .glance-table th { font-size:10px; padding:5px 8px; }
-    .accom-table td, .accom-table th { font-size:10px; padding:5px 8px; }
-    a[href]:after { content:" (" attr(href) ")"; font-size:9px; color:#666; }
-    .map-link a:after { content:" → google.com/maps"; font-size:9px; }
+    .export-bar button, nav, [class*="reset"], .item-cb,
+    .hl-add-btn, .day-toggle, .day-map-row { display:none !important; }
+    /* Page setup */
+    @page { margin: 15mm 12mm; }
+    body { background:#fff; font-size:10px; line-height:1.4; color:#222; }
+    /* Hero */
+    .hero { padding:20px; page-break-after:always; background:#1a1a2e !important; color:#fff !important; }
+    .hero h1 { font-size:24px; }
+    /* Container */
+    .container { padding:0; max-width:100%; }
+    .section-title { margin-top:16px; margin-bottom:8px; font-size:9px; }
+    /* Day cards — force expand */
+    .day-card { page-break-inside:avoid; margin-bottom:12px; border:1px solid #ccc; break-inside:avoid; }
+    .day-body { display:block !important; }
+    .day-header { padding:8px 12px; }
+    .sched-grid { font-size:10px; }
+    .sched-item { padding:5px 10px; min-height:auto; }
+    .sched-time { display:none; }
+    /* Tables */
+    .glance-table { min-width:0 !important; width:100%; font-size:9px; }
+    .glance-table td, .glance-table th { padding:4px 6px; }
+    .accom-table { width:100%; font-size:9px; }
+    .accom-table td, .accom-table th { padding:4px 6px; }
+    /* Hide map links in print */
+    .g-map, .g-map * { display:none !important; }
+    a[href]:after { content:""; }
     h2, h3 { page-break-after:avoid; }
+    .days-grid { display:block; }
   }
   .glance-table tr.row-action td { border-left: 3px solid #e24b4a; }
   .glance-table tr.row-pending td { border-left: 3px solid #ef9f27; }
@@ -620,62 +634,24 @@ function renderHero(d) {
   document.getElementById('nav-label').textContent = m.flags.slice(1,4).join(' ') + ' · ' + m.departure.split(' ')[1] + '–' + m.return.split(' ')[1] + ' 2026';
   const pdfBtn = h('button', {class:'btn-pdf'});
   pdfBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>&nbsp; Download PDF (Offline)';
-  pdfBtn.addEventListener('click', async function() {
-    var svgIcon = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;flex-shrink:0"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>';
+  pdfBtn.addEventListener('click', function() {
     // Expand all day cards
     var cards = document.querySelectorAll('.day-card');
     var wasOpen = [];
-    cards.forEach(function(c, i) { wasOpen[i] = c.classList.contains('open'); c.classList.add('open'); });
-    pdfBtn.innerHTML = svgIcon + '&nbsp; Generating PDF…';
-    pdfBtn.disabled = true;
-    var restore = function() {
-      cards.forEach(function(c, i) { if (!wasOpen[i]) c.classList.remove('open'); });
-      pdfBtn.innerHTML = svgIcon + '&nbsp; Download PDF (Offline)';
-      pdfBtn.disabled = false;
-    };
-    try {
-      // Wait for layout to settle after expanding cards
-      await new Promise(function(r) { setTimeout(r, 400); });
-      var el = document.getElementById('app') || document.body;
-      var canvas = await html2canvas(el, {
-        scale: 1.2,
-        useCORS: true,
-        allowTaint: true,
-        logging: false,
-        scrollX: 0,
-        scrollY: 0,
-        windowWidth: 1200,
-        onclone: function(doc) {
-          // Hide checkboxes and buttons in PDF clone
-          doc.querySelectorAll('.item-cb, .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn').forEach(function(el) { el.style.display = 'none'; });
-          // Ensure all day bodies visible
-          doc.querySelectorAll('.day-body').forEach(function(el) { el.style.display = 'block'; });
-        }
-      });
-      var imgData = canvas.toDataURL('image/jpeg', 0.92);
-      var { jsPDF } = window.jspdf;
-      var pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-      var pageW = pdf.internal.pageSize.getWidth();
-      var pageH = pdf.internal.pageSize.getHeight();
-      var imgW = pageW;
-      var imgH = (canvas.height * pageW) / canvas.width;
-      var position = 0;
-      var remaining = imgH;
-      // Add pages
-      while (remaining > 0) {
-        pdf.addImage(imgData, 'JPEG', 0, position, imgW, imgH);
-        remaining -= pageH;
-        position -= pageH;
-        if (remaining > 0) pdf.addPage();
-      }
-      pdf.save('Europe-2026-VRFamilyTravels.pdf');
-      restore();
-    } catch(err) {
-      console.error('PDF error:', err);
-      // Fallback to print
+    cards.forEach(function(c, i) {
+      wasOpen[i] = c.classList.contains('open');
+      c.classList.add('open');
+    });
+    // Small delay to let DOM update, then print
+    setTimeout(function() {
       window.print();
-      restore();
-    }
+      // Restore card states after print dialog closes
+      setTimeout(function() {
+        cards.forEach(function(c, i) {
+          if (!wasOpen[i]) c.classList.remove('open');
+        });
+      }, 1000);
+    }, 350);
   });
 
   return h('div', {class: 'hero'},
