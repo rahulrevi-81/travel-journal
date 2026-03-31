@@ -221,7 +221,7 @@
     /* Hide interactive elements */
     .btn-pdf, .btn-export, .hl-ctrl-btn, .hl-add-btn, .booking-strip,
     .export-bar button, nav, [class*="reset"], .item-cb,
-    .hl-add-btn, .day-toggle, .day-map-row { display:none !important; }
+    .hl-add-btn, .day-toggle, .day-map-row, .pdf-bar { display:none !important; }
     /* Page setup */
     @page { margin: 15mm 12mm; }
     body { background:#fff; font-size:10px; line-height:1.4; color:#222; }
@@ -654,7 +654,7 @@ function renderHero(d) {
     }, 350);
   });
 
-  return h('div', {class: 'hero'},
+  const heroEl = h('div', {class: 'hero'},
     p('hero-flags', m.flags.join(' ')),
     h('h1', {html: m.title + '<br><em>' + m.subtitle + '</em>'}),
     p('hero-sub', m.tagline),
@@ -663,9 +663,15 @@ function renderHero(d) {
         [m.days,'Days'],[m.countries,'Countries'],[m.travellers,'Travellers'],
         [m.departure,'Departure'],[m.return,'Return']
       ].map(([n,l]) => div('stat', h('span',{class:'stat-num'},String(n)), h('span',{class:'stat-label'},l)))
-    ),
-    pdfBtn
+    )
   );
+  // PDF button in its own bar below hero
+  const pdfBar = h('div', {style:'background:var(--ink);padding:12px 40px;display:flex;justify-content:flex-end;'});
+  pdfBar.appendChild(pdfBtn);
+  const heroWrap = h('div', {});
+  heroWrap.appendChild(heroEl);
+  heroWrap.appendChild(pdfBar);
+  return heroWrap;
 }
 
 function renderStrip(d) {
@@ -1110,7 +1116,7 @@ async function init() {
 
     const app = document.getElementById('app');
     app.appendChild(renderHero(d));
-    app.appendChild(renderStrip(d));
+    // booking strip removed
 
     // Initialize editable highlights
     originalGlanceRef = d.glance;
