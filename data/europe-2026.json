@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-04-01T20:37:01Z",
+    "_updated": "2026-04-01T21:33:51Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1158,6 +1158,10 @@
         {
           "type": "booking",
           "text": "⏳ Book Bregenz hotel Jul 3–4 · Hotel Weißes Kreuz / Messmer Boutique · near Bodensee"
+        },
+        {
+          "type": "tip",
+          "text": "💶 <strong>Coburger Hütte is cash only</strong> — bring €40–50 before the hike · ATM in Bichlbach or Ehrwald village the evening before · Kaiserschmarrn ~€12 · Tiroler Gröstl ~€14"
         }
       ],
       "summary": {
