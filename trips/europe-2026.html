@@ -1018,7 +1018,7 @@ function renderSummaryTable(d) {
   const tbl = h('table', {class:'glance-table'});
 
   tbl.appendChild(h('thead', {}, h('tr', {},
-    ...['Day','Date','From','Night Stay','Highlights','Check-in','Drive & Time','Map']
+    ...['Day','Date','From','Night Stay','Highlights','Drive & Time','Map']
       .map(t => h('th',{},t))
   )));
 
@@ -1087,14 +1087,12 @@ function renderSummaryTable(d) {
     }
     const driveCell = h('td', {class:'g-drive', style:'white-space:nowrap;font-size:12px;'});
     driveCell.innerHTML = (g.drive || '—') + '<br><span style="color:var(--slate);font-size:11px">' + (g.driveTime || '') + '</span>';
-    var ciTd=h('td',{style:'font-size:11px;color:var(--slate);white-space:nowrap;'},g.checkin||'—');
     tbody.appendChild(h('tr', {class: rowClass},
       h('td', {class:'g-day'},   g.day),
       h('td', {class:'g-date', style:'white-space:nowrap;'},  g.date),
       h('td', {class:'g-from', style:'font-size:12px;'},  g.from),
       h('td', {class:'g-stay', style:'font-size:12px;'},  g.nightStay),
       hlTd,
-      ciTd,
       driveCell,
       mapTd
     ));
