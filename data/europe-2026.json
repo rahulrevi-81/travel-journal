@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-03-31T22:05:24Z"
+    "_updated": "2026-03-31T23:57:39Z"
   },
   "bookingStrip": [
     {
@@ -119,7 +119,8 @@
       "dates": "Jun 20–21",
       "ref": "Airbnb · $290.36",
       "freeCancel": "",
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+354 xxx xxxx · Airbnb message host"
     },
     {
       "nights": "2",
@@ -128,7 +129,8 @@
       "dates": "Jun 21–22",
       "ref": "Booking.com · $263.98",
       "freeCancel": "Free cancel Jun 19",
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+354 xxx xxxx · Booking.com message host"
     },
     {
       "nights": "3–4",
@@ -137,7 +139,8 @@
       "dates": "Jun 22–24",
       "ref": "Booking · $499 / CHF 398 · 2 nights",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+41 33 856 20 10 · reception@camping-jungfrau.ch"
     },
     {
       "nights": "5–6",
@@ -146,7 +149,8 @@
       "dates": "Jun 24–26",
       "ref": "✅ Booking · €310 total · check-in 16:00–20:00 · check-out 08:00–11:00 · free cancel until May 24",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+49 8652 xxx · Booking.com message host"
     },
     {
       "nights": "6",
@@ -164,7 +168,8 @@
       "dates": "Jun 26–28",
       "ref": "✅ Airbnb booked · $333 / €288.36 · 2 nights · check-in 14:00–20:00 · key box at entrance with code · Jun 26–28",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+43 xxx · Airbnb message host · key box on arrival"
     },
     {
       "nights": "—",
@@ -209,7 +214,8 @@
       "dates": "Jun 28–29",
       "ref": "Booking · $115 / €99.40 · 1 night",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+43 4842 6214 · info@schwarzeradler-sillian.at"
     },
     {
       "nights": "10–11",
@@ -218,7 +224,8 @@
       "dates": "Jun 29–Jul 1",
       "ref": "✅ Booking · $352 / €354.56 · 2 nights · check-in 15:00–22:00 · check-out 05:00–10:30",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+39 0471 356 xxx · Booking.com · check-in 15:00–22:00"
     },
     {
       "nights": "12",
@@ -227,7 +234,8 @@
       "dates": "Jul 1–2",
       "ref": "✅ Booking · $176 / €152.92 · check-in 16:00–00:00 · check-out 01:00–10:00",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+43 5285 xxx · Booking.com · check-in from 16:00"
     },
     {
       "nights": "13-14-15",
@@ -236,7 +244,8 @@
       "dates": "Jul 2–4",
       "ref": "✅ Booking · $467 / €405 · 2 nights · check-in 15:00–18:00 · check-out 08:00–10:00",
       "freeCancel": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+43 5674 xxx · Booking.com · check-in 15:00–18:00"
     },
     {
       "nights": "13",
@@ -263,7 +272,8 @@
       "dates": "Jul 4–5",
       "ref": "✅ Booking · $198 / CHF 157.62 · check-in 15:00–00:00 · check-out 06:00–12:00",
       "stars": null,
-      "status": "Confirmed"
+      "status": "Confirmed",
+      "phone": "+41 44 808 00 00 · Lindbergh-Platz 1, Glattbrugg"
     }
   ],
   "days": [
@@ -356,7 +366,13 @@
           }
         ],
         "driveTime": "~2 days total"
-      }
+      },
+      "keyDecisions": [
+        "✅ Pick up Iceland car at KEF by 10:30am — Budget counter in Arrivals",
+        "✅ Kerið + Geysir early — beat tour buses · leave Geysir by 2pm",
+        "✅ Day 2: Dyrhólaey before 8am — puffins most active · then head east to Jökulsárlón"
+      ],
+      "timeline": "Day 1: 10:30am KEF ▸ Kerið ▸ Geysir ▸ Seljalandsfoss ▸ Skógafoss ▸ Reynisfjara ▸ 9:30pm Skeidflot | Day 2: 7am ▸ Dyrhólaey ▸ Canyon ▸ Glacier ▸ Lagoon ▸ Diamond Beach ▸ 5pm BergOne"
     },
     {
       "dayLabel": "3",
@@ -1692,7 +1708,8 @@
       "driveTime": "~3h pure drive · full day with stops",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
       "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
-      "action": null
+      "action": null,
+      "checkin": ""
     },
     {
       "day": "2",
@@ -1705,7 +1722,8 @@
       "driveTime": "~3h pure drive · full day with stops",
       "bookings": "✓ BergOne",
       "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
-      "action": null
+      "action": null,
+      "checkin": ""
     },
     {
       "day": "3",
@@ -1718,7 +1736,8 @@
       "driveTime": "~1h 45m",
       "bookings": "✅ Camping Jungfrau (Booking · $499 / CHF 398) · ✅ Hertz ZRH",
       "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Lauterbrunnen,+Switzerland",
-      "action": null
+      "action": null,
+      "checkin": "Check-in 15:00–18:30"
     },
     {
       "day": "4",
@@ -1731,7 +1750,8 @@
       "driveTime": "~2h 30m incl. mountain roads",
       "bookings": "✅ Grindelwald First gondola #238070 · ✅ Oeschinensee booked · Order 254-SK2MH6 · 08:30–10:00",
       "mapUrl": "https://www.google.com/maps/dir/Lauterbrunnen,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Lauterbrunnen,+Switzerland",
-      "action": null
+      "action": null,
+      "checkin": ""
     },
     {
       "day": "5",
@@ -1747,7 +1767,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": "Check-in 16:00–20:00"
     },
     {
       "day": "6",
@@ -1763,7 +1784,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": ""
     },
     {
       "day": "7",
@@ -1779,7 +1801,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": "Check-in 14:00–20:00"
     },
     {
       "day": "8",
@@ -1795,7 +1818,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": ""
     },
     {
       "day": "9",
@@ -1811,7 +1835,8 @@
       "action": {
         "level": "ok",
         "text": "✅ Confirmed"
-      }
+      },
+      "checkin": "Check-in 16:00–21:00"
     },
     {
       "day": "10",
@@ -1827,7 +1852,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": "Check-in 15:00–22:00"
     },
     {
       "day": "11",
@@ -1843,7 +1869,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": ""
     },
     {
       "day": "12",
@@ -1859,7 +1886,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": "Check-in 16:00"
     },
     {
       "day": "13",
@@ -1875,7 +1903,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": "Check-in 15:00–18:00"
     },
     {
       "day": "14",
@@ -1891,7 +1920,8 @@
       "action": {
         "level": "ok",
         "text": "✓ Confirmed"
-      }
+      },
+      "checkin": ""
     },
     {
       "day": "15",
@@ -1907,7 +1937,8 @@
       "action": {
         "level": "ok",
         "text": "⚠️ Still book Neuschwanstein tickets"
-      }
+      },
+      "checkin": "Check-in 15:00"
     },
     {
       "day": "16",
@@ -1920,7 +1951,8 @@
       "driveTime": "—",
       "bookings": "✓ Icelandair FI571/FI689",
       "mapUrl": "https://www.google.com/maps/place/Zurich+Airport,+Switzerland",
-      "action": null
+      "action": null,
+      "checkin": ""
     }
   ],
   "title": "Europe Family Road Trip 2026",
@@ -1933,5 +1965,63 @@
     "Italy",
     "Liechtenstein"
   ],
-  "countryCount": 6
+  "countryCount": 6,
+  "parkingSpots": {
+    "Jun 29": [
+      {
+        "name": "Lago di Braies gate",
+        "gps": "46.6944°N 12.0853°E",
+        "maps": "https://maps.google.com/?q=46.6944,12.0853",
+        "note": "Arrive by 5:30am · gate opens 7:30am but walk in before"
+      },
+      {
+        "name": "Rifugio Auronzo toll road",
+        "gps": "46.6167°N 12.3103°E",
+        "maps": "https://maps.google.com/?q=46.6167,12.3103",
+        "note": "€30 toll · park at the rifugio"
+      },
+      {
+        "name": "Prato Piazza plateau",
+        "gps": "46.6478°N 12.2317°E",
+        "maps": "https://maps.google.com/?q=46.6478,12.2317",
+        "note": "Free parking at Rifugio Prato Piazza"
+      }
+    ],
+    "Jun 30": [
+      {
+        "name": "Parkgarage Seceda, Ortisei",
+        "gps": "46.5756°N 11.6719°E",
+        "maps": "https://maps.google.com/?q=46.5756,11.6719",
+        "note": "€2.80/hr · fills by 9am in July"
+      },
+      {
+        "name": "Parkplatz Zanser Alm (Adolf Munkel)",
+        "gps": "46.6503°N 11.7417°E",
+        "maps": "https://maps.google.com/?q=46.6503,11.7417",
+        "note": "Paid parking · fills early · arrive by 1pm"
+      }
+    ],
+    "Jul 2": [
+      {
+        "name": "Schlegeis Stausee toll gate",
+        "gps": "47.0389°N 11.7289°E",
+        "maps": "https://maps.google.com/?q=47.0389,11.7289",
+        "note": "€17 cash · arrive before 9am"
+      }
+    ],
+    "Jul 4": [
+      {
+        "name": "Neuschwanstein ticket centre",
+        "gps": "47.5574°N 10.7498°E",
+        "maps": "https://maps.google.com/?q=47.5574,10.7498",
+        "note": "Parking €7 · 10min uphill walk to castle"
+      },
+      {
+        "name": "Wasserauen Ebenalp parking",
+        "gps": "47.2833°N 9.4167°E",
+        "maps": "https://maps.google.com/?q=47.2833,9.4167",
+        "note": "Schwendetalstrasse 82 · free parking"
+      }
+    ]
+  }
 }

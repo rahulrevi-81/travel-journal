@@ -878,6 +878,20 @@ function renderDayCard(day, idx) {
   const body = div('day-body');
   if (day.birthday) body.appendChild(h('div', {class:'birthday-banner', html: '🎂 ' + day.birthday}));
 
+  if (day.date && window._parkingSpots && window._parkingSpots[day.date] && window._parkingSpots[day.date].length) {
+    var psW=h('div',{style:'background:#f0f7f0;border-left:3px solid #4a7c2f;padding:8px 16px;'});
+    psW.appendChild(h('div',{style:'font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#4a7c2f;font-weight:600;margin-bottom:5px;'},'Parking & GPS'));
+    (window._parkingSpots[day.date]||[]).forEach(function(spot){
+      var pr=h('div',{style:'font-size:11px;margin-bottom:3px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;'});
+      pr.appendChild(h('strong',{},spot.name));
+      pr.appendChild(h('span',{style:'color:#666;'},'Â· '+spot.gps));
+      pr.appendChild(h('a',{href:spot.maps,target:'_blank',rel:'noopener',style:'color:var(--sage);font-size:10px;font-weight:500;'},'[map]'));
+      if(spot.note) pr.appendChild(h('span',{style:'color:#888;font-size:10px;'},'Â· '+spot.note));
+      psW.appendChild(pr);
+    });
+    body.appendChild(psW);
+  }
+
   // Key Decisions block
   if (day.keyDecisions && day.keyDecisions.length) {
     const kd = div('key-decisions');
@@ -1004,7 +1018,7 @@ function renderSummaryTable(d) {
   const tbl = h('table', {class:'glance-table'});
 
   tbl.appendChild(h('thead', {}, h('tr', {},
-    ...['Day','Date','From','Night Stay','Highlights','Drive & Time','Map']
+    ...['Day','Date','From','Night Stay','Highlights','Check-in','Drive & Time','Map']
       .map(t => h('th',{},t))
   )));
 
@@ -1073,12 +1087,14 @@ function renderSummaryTable(d) {
     }
     const driveCell = h('td', {class:'g-drive', style:'white-space:nowrap;font-size:12px;'});
     driveCell.innerHTML = (g.drive || '—') + '<br><span style="color:var(--slate);font-size:11px">' + (g.driveTime || '') + '</span>';
+    var ciTd=h('td',{style:'font-size:11px;color:var(--slate);white-space:nowrap;'},g.checkin||'—');
     tbody.appendChild(h('tr', {class: rowClass},
       h('td', {class:'g-day'},   g.day),
       h('td', {class:'g-date', style:'white-space:nowrap;'},  g.date),
       h('td', {class:'g-from', style:'font-size:12px;'},  g.from),
       h('td', {class:'g-stay', style:'font-size:12px;'},  g.nightStay),
       hlTd,
+      ciTd,
       driveCell,
       mapTd
     ));
@@ -1092,10 +1108,11 @@ function renderSummaryTable(d) {
 
 function renderChecklist(d) {
   const wrap = div('', h('p', {class:'section-title'}, 'Booking Checklist'));
+  var dc2=d.checklist.filter(function(x){return x.status==='done';}).length;var sd=false;var tBtn=h('button',{style:'font-size:11px;letter-spacing:1px;text-transform:uppercase;background:transparent;border:1px solid var(--border);border-radius:3px;padding:4px 12px;cursor:pointer;color:var(--slate);margin-bottom:12px;'},'Show completed ('+dc2+')');tBtn.addEventListener('click',function(){sd=!sd;wrap.querySelectorAll('.cl-done').forEach(function(e){e.style.display=sd?'':'none';});tBtn.textContent=sd?'Hide completed':'Show completed ('+dc2+')';});wrap.appendChild(tBtn);
   const list = div('checklist');
   d.checklist.forEach(item => {
     const iconClass = {done:'done',pending:'pending',urgent:'urgent'}[item.status]||'pending';
-    const row = div('check-item',
+    const row = div('check-item'+(item.status==='done'?' cl-done':''),
       h('div',{class:'check-icon '+iconClass}, item.status==='done'?'✓':'!'),
       h('div',{class:'check-main'},item.label)
     );
@@ -1175,6 +1192,7 @@ async function init() {
     originalGlanceRef = d.glance;
     window._tripChecklist = d.checklist;
     window._tripAccommodation = d.accommodation;
+    window._parkingSpots = d.parkingSpots || {};
     initEditableGlance(d.glance);
 
     const container = div('container');
@@ -1222,6 +1240,7 @@ async function init() {
     app.appendChild(container);
 
     const m = d.meta;
+    (function(){var mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];var n=new Date();var ts=mo[n.getMonth()]+' '+n.getDate();document.querySelectorAll('.day-card').forEach(function(card){var de=card.querySelector('.day-date-small');if(de&&de.textContent.trim()===ts){card.classList.add('open');card.style.borderColor='var(--gold)';card.style.boxShadow='0 0 0 3px var(--gold)';setTimeout(function(){card.scrollIntoView({behavior:'smooth',block:'start'});},700);}});})();
     app.appendChild(h('footer',{},
       h('strong',{}, m.title+' · '+m.departure.split(' ')[1]+' '+m.departure.split(' ')[0]+' – '+m.return.split(' ')[1]+' '+m.return.split(' ')[0]+', 2026'),
       h('br'),
