@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-04-03T19:46:30Z",
+    "_updated": "2026-04-03T19:53:28Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -155,15 +155,6 @@
       "phone": "+49 8652 xxx · Booking.com message host"
     },
     {
-      "nights": "6",
-      "property": "Pension-Café-Konditorei Mikl 🇦🇹",
-      "address": "2 Doktor-Albert-Eder-Straße, 5400 Hallein, Austria",
-      "dates": "Jun 25–26",
-      "ref": "✅ Airbnb booked · $219 / €190 · check-in 14:00–18:00 · check-out 08:00–11:00 · someone meets you — CANCELLED (replaced by Berchtesgaden)",
-      "freeCancel": null,
-      "status": "cancelled"
-    },
-    {
       "nights": "7–8",
       "property": "Kaiserblick Goisern 🇦🇹",
       "address": "38 Unterjoch, 4822 Bad Goisern, Austria",
@@ -172,42 +163,6 @@
       "freeCancel": null,
       "status": "Confirmed",
       "phone": "+43 xxx · Airbnb message host · key box on arrival"
-    },
-    {
-      "nights": "—",
-      "property": "Wurznwirt 🇩🇪",
-      "address": "Schneizlreuth 4, 83458 Schneizlreuth, Germany",
-      "dates": "Jun 25–27",
-      "ref": "#72072251742511 — CANCELLED",
-      "stars": "9.0",
-      "status": "cancelled"
-    },
-    {
-      "nights": "8–9",
-      "property": "HOMEBOUND Apartments 🇦🇹",
-      "address": "Schmiedgasse 15, 4822 Bad Goisern, Austria",
-      "dates": "Jun 27–29",
-      "ref": "❌ Cancelled — superseded by Kaiserblick Goisern · #72072198804917",
-      "stars": "9.6",
-      "status": "cancelled"
-    },
-    {
-      "nights": "—",
-      "property": "Pr' Matjon Pension 🇸🇮",
-      "address": "Selo pri Bledu 35, 4260 Bled, Slovenia",
-      "dates": "Jun 27–30",
-      "ref": "#72072265408188 — CANCEL",
-      "stars": "9.4",
-      "status": "cancelled"
-    },
-    {
-      "nights": "—",
-      "property": "Vienna House Martinspark 🇦🇹",
-      "address": "Mozartstrasse 2, A-6850 Dornbirn, Vorarlberg",
-      "dates": "Jul 3–4",
-      "ref": "#72072266618761 — CANCEL overnight",
-      "stars": "8.6",
-      "status": "cancelled"
     },
     {
       "nights": "9",
@@ -248,24 +203,6 @@
       "freeCancel": null,
       "status": "Confirmed",
       "phone": "+43 5674 xxx · Booking.com · check-in 15:00–18:00"
-    },
-    {
-      "nights": "13",
-      "property": "Innsbruck Hotel 🇦🇹",
-      "address": "Innsbruck old town, Tyrol, Austria — near Golden Roof",
-      "dates": "Jul 2–3",
-      "ref": "⏳ Yet to book — 1 night · Hotel Weisses Kreuz / Goldener Adler / Penz Hotel",
-      "freeCancel": null,
-      "status": "cancelled"
-    },
-    {
-      "nights": "14",
-      "property": "Bregenz Hotel 🇦🇹",
-      "address": "Bregenz, Lake Constance (Bodensee), Vorarlberg, Austria",
-      "dates": "Jul 3–4",
-      "ref": "⏳ Yet to book — 1 night · Hotel Weißes Kreuz Bregenz / Messmer Boutique Hotel · near lake · 130km from ZRH",
-      "freeCancel": null,
-      "status": "cancelled"
     },
     {
       "nights": "15",
@@ -1328,6 +1265,14 @@
   ],
   "checklist": [
     {
+      "id": "accommodation_all",
+      "label": "🏠 All accommodation — 10 properties confirmed",
+      "status": "done",
+      "ref": "All 10 nights booked · see Accommodation section below",
+      "deadline": null,
+      "link": null
+    },
+    {
       "id": "flights",
       "label": "✈️ Icelandair flights × 4",
       "status": "done",
@@ -1356,86 +1301,6 @@
       "label": "🛂 Check 4 passports (valid Oct 2026+)",
       "status": "done",
       "ref": "Done",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_skeidflot",
-      "label": "🏠 Room in Skeidflot, Mýrdalur — Jun 20–21",
-      "status": "done",
-      "ref": "Airbnb · $290",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_bergone",
-      "label": "🏠 BergOne, Ytri-Njarðvík — Jun 21–22",
-      "status": "done",
-      "ref": "Booking · $264",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_camping",
-      "label": "🏕 Camping Jungfrau, Lauterbrunnen — Jun 22–24",
-      "status": "done",
-      "ref": "Booking · $499 / CHF 398",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_berchtesgaden",
-      "label": "🏠 Apartment Berchtesgaden — Jun 24–26",
-      "status": "done",
-      "ref": "Booking · €310 · check-in 16:00",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_goisern",
-      "label": "🏠 Kaiserblick Goisern, Bad Goisern — Jun 26–28",
-      "status": "done",
-      "ref": "Airbnb · $333 · key box",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_sillian",
-      "label": "🏠 Hotel Schwarzer Adler, Sillian — Jun 28–29",
-      "status": "done",
-      "ref": "Booking · $115 / €99.40",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_finkenberg",
-      "label": "🏠 Keyone Rooms, Finkenberg — Jul 1–2",
-      "status": "done",
-      "ref": "Booking · $176 / €152.92",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_bichlbach",
-      "label": "🏠 Landhaus Bichlbach — Jul 2–4 (2 nights)",
-      "status": "done",
-      "ref": "Booking · $467 / €405",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "acc_zrh",
-      "label": "🏨 Airport Hotel Zurich, Glattbrugg — Jul 4–5",
-      "status": "done",
-      "ref": "Booking · $198 / CHF 157.62",
-      "deadline": null,
-      "link": null
-    },
-    {
-      "id": "siusi_hotel",
-      "label": "🏨 Kaiserau 1907, Collalbo — Jun 29–Jul 1 (2 nights)",
-      "status": "done",
-      "ref": "Booking · $352 / €354.56 · check-in 15:00–22:00",
       "deadline": null,
       "link": null
     },
@@ -1510,14 +1375,6 @@
       "ref": null,
       "deadline": "Day-of or day-before fine · large boats · no timed slots · achensee.com",
       "link": "https://www.achensee.com"
-    },
-    {
-      "id": "ebikes",
-      "label": "🚵 Siusi e-bikes — Jul 1 morning · Alpe di Siusi",
-      "status": "done",
-      "ref": "N/A — not staying at Siusi · removed",
-      "deadline": null,
-      "link": null
     },
     {
       "id": "eagles_nest",
