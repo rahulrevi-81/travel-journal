@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-04-03T19:45:14Z",
+    "_updated": "2026-04-03T19:46:30Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -559,7 +559,7 @@
         },
         {
           "type": "tip",
-          "text": "🛒 <strong>Stock up here for Austria</strong> — Rewe (Maximilianstr. 26) or Aldi (Salzburger Str. 4) · this is your biggest shop of the trip · German prices much cheaper · buy enough for Jun 24–30"
+          "text": "💰 <strong>Grocery strategy</strong> — 🇨🇭 Aldi Interlaken Jun 22 (Swiss days only) · 🇩🇪 Rewe/Aldi Berchtesgaden Jun 24 (big shop, German prices) · 🇦🇹 Hofer Bad Goisern Jun 27 (second big shop, Austria + Dolomites days)"
         }
       ],
       "summary": {
@@ -719,6 +719,10 @@
         {
           "label": "Day 8 Map — Hallstatt Full Day — Gosausee · Salt Mine · Skywal",
           "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria"
+        },
+        {
+          "label": "Hofer Bad Goisern",
+          "url": "https://maps.google.com/?q=HOFER+Bad+Goisern+Hofrat-Renner-Weg+1"
         }
       ],
       "sections": [
@@ -758,6 +762,10 @@
         {
           "type": "alarm",
           "text": "⏰ Gosausee 7:30am → cable car → Salt Mine 10:30am → Skywalk → Dachstein 2:15pm"
+        },
+        {
+          "type": "tip",
+          "text": "🛒 <strong>Hofer = Aldi Austria</strong> — discount prices · buy enough for 5 nights: Jun 27 Hallstatt area · Jun 28 Grossglockner · Jun 29–Jul 1 Dolomites · next reliable shop is Spar Villabassa/Brunico in Italy"
         }
       ],
       "summary": {
