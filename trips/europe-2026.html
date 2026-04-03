@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Europe 2026 — VR Family Travels</title>
 <link rel="manifest" href="../manifest.json">
 <meta name="theme-color" content="#1a1a2e">
@@ -24,7 +24,7 @@
     --border: #e2d9cc;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 15px; line-height: 1.7; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 15px; line-height: 1.7; -webkit-text-size-adjust: 100%; }
 
   /* HERO */
   .hero { background: var(--ink); color: var(--cream); padding: 80px 40px 60px; text-align: center; position: relative; overflow: hidden; }
@@ -33,14 +33,14 @@
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.1; margin-bottom: 16px; position: relative; }
   .hero h1 em { font-style: italic; color: var(--gold-light); }
   .hero-sub { font-size: 15px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.6); margin-bottom: 40px; position: relative; }
-  .hero-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; position: relative; }
+  .hero-stats { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; position: relative; }
   .stat { text-align: center; }
   .stat-num { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: var(--gold-light); display: block; line-height: 1; }
   .stat-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.5); margin-top: 4px; }
 
   /* LAYOUT */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; margin-top: 56px; display: flex; align-items: center; gap: 12px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; margin-top: 56px; display: flex; align-items: center; gap: 12px; }
   .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
   /* BOOKING STRIP */
@@ -73,7 +73,7 @@
   /* DAY CARDS — schedule style */
   .days-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
   .day-card { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-  .day-header { display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: 16px; padding: 14px 20px; cursor: pointer; background: var(--ink); color: var(--cream); user-select: none; }
+  .day-header { display: grid; grid-template-columns: 60px 1fr auto; align-items: center; gap: 10px; padding: 12px 14px; cursor: pointer; background: var(--ink); color: var(--cream); user-select: none; }
   .day-num-wrap { display: flex; flex-direction: column; }
   .day-num { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 900; color: var(--gold); line-height: 1; }
   .day-date-small { font-size: 10px; color: rgba(250,248,243,0.45); font-weight: 400; margin-top: 2px; letter-spacing: 0.5px; }
@@ -84,13 +84,13 @@
   .day-flag { font-size: 20px; }
   .day-toggle { color: rgba(250,248,243,0.5); font-size: 16px; transition: transform 0.2s; }
   .day-card.open .day-toggle { transform: rotate(180deg); }
-  .day-body { display: none; background: white; }
+  .day-body { display: none; background: white; overflow-x: hidden; }
   .day-card.open .day-body { display: block; }
   .day-map-row { padding: 10px 16px; background: #f8f5ef; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; }
-  .day-map-link { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); text-decoration: none; border: 1px solid var(--border); padding: 4px 10px; border-radius: 2px; transition: all 0.15s; background: white; }
+  .day-map-link { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--slate); text-decoration: none; border: 1px solid var(--border); padding: 8px 12px; border-radius: 2px; transition: all 0.15s; background: white; min-height: 36px; }
   .day-map-link:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-  .sched-grid { display: grid; grid-template-columns: 72px 1fr; }
-  .sched-time { background: #f8f5ef; border-right: 2px solid var(--border); padding: 10px; font-size: 11px; font-weight: 500; color: #2b6cb0; letter-spacing: 0.3px; border-bottom: 1px solid #ece8df; display: flex; align-items: flex-start; padding-top: 12px; }
+  .sched-grid { display: grid; grid-template-columns: 0px 1fr; }
+  .sched-time { display: none; background: #f8f5ef; border-right: 2px solid var(--border); padding: 10px; font-size: 11px; font-weight: 500; color: #2b6cb0; letter-spacing: 0.3px; border-bottom: 1px solid #ece8df; display: flex; align-items: flex-start; padding-top: 12px; }
   .sched-item { padding: 9px 14px; border-bottom: 1px solid #f0ece4; display: flex; align-items: flex-start; gap: 8px; min-height: 40px; font-size: 13px; }
   .sched-item:last-child { border-bottom: none; }
   .sched-item.wow   { background: linear-gradient(135deg,#fffdf0,#fef9e7); border-left: 3px solid var(--gold); }
@@ -289,30 +289,74 @@
   footer { background: var(--ink); color: rgba(250,248,243,0.4); text-align: center; padding: 32px; margin-top: 80px; font-size: 12px; letter-spacing: 1px; }
   footer strong { color: var(--gold-light); }
 
-  @media (max-width: 600px) {
-    .hero { padding: 50px 20px 40px; }
-    .hero-stats { gap: 24px; }
-    .booking-strip { padding: 16px 20px; gap: 16px; }
-    .day-body { padding: 16px; }
+  @media (max-width: 768px) {
+    /* Nav */
+    .container { padding: 16px 12px; }
+    /* Hero */
+    .hero { padding: 40px 16px 32px; }
+    .hero-stats { gap: 16px; flex-wrap: wrap; }
+    .hero-stat-num { font-size: 24px; }
+    /* Day cards */
+    .day-header { grid-template-columns: 54px 1fr auto; gap: 8px; padding: 11px 12px; }
+    .day-num { font-size: 18px !important; }
+    .day-title { font-size: 13px; }
+    .day-body { padding: 0; }
+    .day-flag { font-size: 20px; }
+    /* Schedule items */
+    .sched-item { padding: 10px 10px; gap: 6px; }
+    .sched-text { font-size: 13px; line-height: 1.5; }
+    .sched-icon { font-size: 14px; }
+    /* Tags */
     .trip-map-card { min-width: 100%; }
+    .booking-strip { padding: 12px 16px; gap: 12px; }
+    /* Accommodation table */
+    .accom-table { font-size: 11px; }
+    /* Budget */
+    .budget-item { padding: 14px; }
+    /* Checklist */
+    .check-item { padding: 12px; gap: 10px; }
+    .check-main { font-size: 13px; }
+    /* Maps row */
+    .day-map-row { padding: 8px 12px; gap: 6px; flex-wrap: wrap; }
+    .day-map-link { font-size: 11px; padding: 4px 10px; }
+    /* Key decisions */
+    .key-decisions { padding: 10px 12px; }
+    .key-decisions li { font-size: 13px; padding: 3px 0; }
+    /* Glance table — make it scroll horizontally cleanly */
+    .glance-wrap { -webkit-overflow-scrolling: touch; border-radius: 4px; }
+    .glance-table { font-size: 11px; min-width: 700px; }
+    /* Logistics side-by-side — stack on mobile */
+    div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+    /* Full route maps — stack */
+    .trip-maps-grid { flex-direction: column; }
+    /* Footer */
+    footer { padding: 24px 16px; font-size: 12px; }
+  }
+  @media (max-width: 480px) {
+    .day-header { grid-template-columns: 48px 1fr auto; gap: 6px; padding: 10px 10px; }
+    .day-num { font-size: 16px !important; }
+    .day-title { font-size: 12px; }
+    .sched-text { font-size: 12px; }
+    .day-timeline { font-size: 10px; }
+    .hero-stat-num { font-size: 20px; }
   }
 
   /* ── Timeline strip ── */
-  .day-timeline { font-size:11px; color:rgba(250,248,243,0.7); padding:4px 20px 10px; letter-spacing:0.2px; line-height:1.4; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .day-timeline { font-size:11px; color:rgba(250,248,243,0.7); padding:4px 12px 8px; letter-spacing:0.1px; line-height:1.5; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   /* ── Key Decisions block ── */
-  .key-decisions { background:linear-gradient(135deg,#f8f6ef,#fdf9f0); border-left:3px solid var(--gold); padding:10px 16px; margin:0 0 0 0; }
+  .key-decisions { background:linear-gradient(135deg,#f8f6ef,#fdf9f0); border-left:3px solid var(--gold); padding:10px 12px; margin:0; }
   .key-decisions-title { font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--slate); font-weight:600; margin-bottom:6px; }
   .key-decisions ul { margin:0; padding:0; list-style:none; }
   .key-decisions li { font-size:12px; color:var(--ink); padding:2px 0; line-height:1.4; }
   /* ── MUST badge ── */
   .badge-must { background:#2d6a4f; color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; padding:2px 6px; border-radius:2px; text-transform:uppercase; flex-shrink:0; margin-left:auto; align-self:flex-start; margin-top:2px; }
-  .sched-badge { flex-shrink:0; margin-left:auto; align-self:flex-start; margin-top:2px; }
+  .sched-badge { flex-shrink:0; margin-left:4px; align-self:flex-start; margin-top:2px; }
 </style>
 </head>
 <body>
 
-<nav style="background:#1a1a2e;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;">
-  <a href="../index.html" style="font-family:'Playfair Display',serif;font-size:16px;color:#faf8f3;text-decoration:none;letter-spacing:0.5px;">← Rahul & <em style="color:#e8d5a3;font-style:italic;">Veena's</em> Travel Journal</a>
+<nav style="background:#1a1a2e;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;">
+  <a href="../index.html" style="font-family:'Playfair Display',serif;font-size:14px;color:#faf8f3;text-decoration:none;letter-spacing:0.3px;">← Rahul & <em style="color:#e8d5a3;font-style:italic;">Veena's</em> Travel Journal</a>
   <div style="display:flex;align-items:center;gap:16px;">
     <a href="https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing" target="_blank" rel="noopener" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,243,0.5);text-decoration:none;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);border-radius:3px;padding:4px 10px;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">📊 Live Sheet</a>
     <a href="today.html" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,243,0.5);text-decoration:none;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">📍 Today</a>
