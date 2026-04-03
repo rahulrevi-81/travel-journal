@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-04-01T21:33:51Z",
+    "_updated": "2026-04-03T19:43:40Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -386,6 +386,10 @@
         {
           "label": "Day 3 Map — Fly → Lake Thun → Diemtigtal",
           "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Diemtigtal,+Switzerland"
+        },
+        {
+          "label": "Coop Interlaken",
+          "url": "https://maps.google.com/?cid=8809502879425570603"
         }
       ],
       "sections": [
@@ -396,6 +400,7 @@
             "Land ZRH <strong>1:05pm</strong> · clear Non-Schengen → Schengen passport control · pick up <strong>Hertz rental car</strong> at Arrivals Hall desk · Conf. <strong>L5350959316</strong> · Jeep Compass or similar · allow <strong>60–90 min</strong> for immigration + car pickup",
             "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
             "Drive <strong>~1hr</strong> → <strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval <strong>Spiez Castle</strong> on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min)",
+            "🛒 <strong>Coop Interlaken</strong> — Marktgasse 1, Interlaken · stock up for the full 2-week trip here · open Mon 7:30am–10pm ✅ · 5 min off route between Spiez and Lauterbrunnen · allow ~45min · Migros + Coop Interlaken Ost are closed Mondays — this is the only large store open",
             "Drive <strong>~1h 45m</strong> → <strong>Camping Jungfrau, Lauterbrunnen</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
             "Dinner at campsite or nearby Lauterbrunnen village · early night — big Day 4 tomorrow"
           ]
@@ -409,6 +414,10 @@
         {
           "type": "done",
           "text": "✅ <strong>Camping Jungfrau, Lauterbrunnen</strong> — Nights 3–4 · $499 / CHF 398 · check-in 15:00–18:30 · Weid 406, 3822 Lauterbrunnen"
+        },
+        {
+          "type": "tip",
+          "text": "🛒 <strong>Coop Interlaken tip</strong> — buy snacks + trail food for ALL hikes here · Swiss Coop has great trail mix, Farmer bars, cheese, cold cuts · CHF accepts cards · next major shop won’t be until Germany"
         }
       ],
       "summary": {
@@ -432,7 +441,8 @@
       "keyDecisions": [
         "✅ Hertz pickup — allow 60–90min at ZRH Arrivals",
         "✅ Lake Thun + Spiez Castle quick stop en route",
-        "🤔 Grimmimutz trail — optional evening only if not too tired"
+        "🤔 Grimmimutz trail — optional evening only if not too tired",
+        "🛒 Grocery stop at Coop Interlaken — only large store open Mon · stock for full 2 weeks"
       ],
       "timeline": "7:20am ▸ KEF→ZRH ▸ 1pm ZRH land ▸ 2:30pm drive ▸ Spiez ▸ 5:30pm Lauterbrunnen"
     },
