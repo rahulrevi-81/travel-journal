@@ -618,88 +618,161 @@ function tagEl(tag) {
 // ─── RENDER FUNCTIONS ───────────────────────────────────────────────────────
 // ── Export Trip at a Glance to Excel ─────────────────────────────────────────
 function exportGlanceToExcel(d) {
-  const rows = [
-    ['Day','Date','Country','Departing From','Night Stay','Highlights','Drive','Drive Time','Action / Status','Map Link']
-  ];
-
-  // Use editableGlance (with user edits) for export
-  (editableGlance.length ? editableGlance : d.glance || []).forEach(g => {
-    const action = g.action ? g.action.text : '✓ Booked';
-    const highlights = g._highlights ? g._highlights.join(' · ') : (g.highlights || '');
-    rows.push([
-      'Day ' + g.day,
-      g.date,
-      g.flag || '',
-      g.from || '',
-      g.nightStay || '',
-      highlights,
-      g.drive || '',
-      g.driveTime || '',
-      action,
-      g.mapUrl || ''
-    ]);
-  });
-
   const wb = XLSX.utils.book_new();
-  const ws = XLSX.utils.aoa_to_sheet(rows);
 
-  // Column widths
-  ws['!cols'] = [
-    {wch:8},{wch:10},{wch:6},{wch:28},{wch:32},{wch:60},{wch:16},{wch:12},{wch:36},{wch:14}
-  ];
-
-  // Style header row bold — SheetJS CE supports basic cell props
-  const headerRange = XLSX.utils.decode_range(ws['!ref']);
-  for (let C = headerRange.s.c; C <= headerRange.e.c; C++) {
-    const cellAddr = XLSX.utils.encode_cell({r:0, c:C});
-    if (!ws[cellAddr]) continue;
-    ws[cellAddr].s = { font:{bold:true}, fill:{fgColor:{rgb:'1A1A2E'}}, alignment:{wrapText:true} };
+  // Helper: clean HTML tags
+  function stripHtml(s) { return (s||'').replace(/<[^>]+>/g,'').trim(); }
+  function classify(text) {
+    var t = text.toLowerCase();
+    if (/drive |fly |flight|depart|checkout|check-out|pick up/.test(t)) return 'DRIVE';
+    if (/hike|trail|loop|climb|summit/.test(t)) return 'HIKE';
+    if (/lunch|dinner|breakfast|café|rifugio|meal/.test(t)) return 'MEAL';
+    if (/🏠|🏕|check in|check-in|✅ nights|✅ confirmed/.test(t)) return 'HOTEL';
+    if (/⚠️|pre-book|must pre-book/.test(t)) return 'WARN';
+    if (/📸|photo stop/.test(t)) return 'PHOTO';
+    if (/🛒|grocery|aldi|rewe|hofer/.test(t)) return 'SHOP';
+    return 'STOP';
   }
 
-  // Wrap text for all cells
-  for (let R = 1; R <= headerRange.e.r; R++) {
-    for (let C = headerRange.s.c; C <= headerRange.e.c; C++) {
-      const addr = XLSX.utils.encode_cell({r:R, c:C});
-      if (ws[addr]) ws[addr].s = { alignment:{wrapText:true, vertical:'top'} };
+  // ── TAB 1: Detailed Itinerary ─────────────────────────────────────────
+  var itinRows = [['Day','Date','Type','Optional','Activity · Details','Key Info','Address / Contact']];
+  var icelandSections = {};
+  d.days.forEach(function(day) {
+    var label = day.dayLabel;
+    var date  = day.date;
+    var drive = (day.summary||{}).drive||'';
+    var dtime = (day.summary||{}).driveTime||'';
+    var kd    = (day.keyDecisions||[]).join(' | ');
+    var tl    = day.timeline||'';
+
+    function addDay(num, dt, title, items, timeline, decisions, tags) {
+      // Day header
+      itinRows.push(['DAY '+num, dt, '—', '—',
+        title + (drive ? '  |  🚗 '+drive+' '+dtime : ''), '', '']);
+      // Timeline
+      if (timeline) itinRows.push(['', dt, 'TIMELINE', '', timeline, '', '']);
+      // Key decisions
+      if (decisions) itinRows.push(['', dt, 'DECISIONS', '', '⚡ '+decisions, '', '']);
+      // Items
+      (items||[]).forEach(function(item) {
+        var text = stripHtml(item);
+        if (!text) return;
+        var typ = classify(text);
+        var isOpt = item.indexOf('➕') >= 0 ? 'Yes' : '';
+        // Extract costs/times
+        var keys = (text.match(/€[\d.,]+|CHF\s?[\d.]+|\$[\d.]+|~?\d+\s?min|~?\d+\s?hr|~?\d+\s?km|\d+\.\d+\s?mi|\d+:\d+[apm]+/gi)||[]).slice(0,3).join(' · ');
+        // Extract address for hotels
+        var addr = '';
+        if (typ === 'HOTEL') {
+          var am = text.match(/📍\s*([^·📞\n]+)/); var pm = text.match(/📞\s*([^·\n]+)/);
+          if (am) addr += am[1].trim().substring(0,45);
+          if (pm) addr += (addr?' · ':'')+pm[1].trim().substring(0,25);
+        }
+        itinRows.push(['', dt, typ, isOpt, text.substring(0,220), keys, addr]);
+      });
+      // Tags
+      (tags||[]).forEach(function(tag) {
+        var text = stripHtml(tag.text||'');
+        if (text.length > 4) itinRows.push(['', dt, 'TIP', '', text.substring(0,260), '', '']);
+      });
+      // Spacer
+      itinRows.push(['','','','','','','']);
     }
+
+    if (label === '1–2') {
+      addDay('1','Jun 20','Iceland Day 1 — Golden Circle + South Coast',
+        day.sections[0].items,
+        'Day 1: 10:30am KEF ▸ Kerið ▸ Geysir ▸ Seljalandsfoss ▸ Skógafoss ▸ Reynisfjara ▸ 9:30pm Skeidflot',
+        '✅ Pick up Iceland car 10:30am | ✅ Kerið + Geysir early | 🤔 Urriðafoss optional',
+        [{text:'✓ Night 1: Room in Skeidflot · Skeidflot 871, Mýrdalur · $290'}]);
+      addDay('2','Jun 21','Iceland Day 2 — South Coast Full Push',
+        day.sections[1].items,
+        'Day 2: 7am ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Glacier ▸ Jökulsárlón ▸ Diamond Beach ▸ 5pm BergOne',
+        '✅ Dyrhólaey before 8am — puffins | ✅ Jökulsárlón + Diamond Beach | 🤔 Fjaðrárgljúfur optional',
+        [{text:'🐦 Puffins at Dyrhólaey lower area · before 10am'},
+         {text:'✓ Night 2: BergOne · 1 Bergás, 260 Ytri-Njarðvík · $264'}]);
+    } else {
+      var allItems = [];
+      day.sections.forEach(function(s){ allItems = allItems.concat(s.items); });
+      addDay(label, date, day.title, allItems, tl, kd, day.tags||[]);
+    }
+  });
+  var wsItin = XLSX.utils.aoa_to_sheet(itinRows);
+  wsItin['!cols'] = [{wch:7},{wch:10},{wch:9},{wch:8},{wch:70},{wch:24},{wch:28}];
+  // Style header
+  for (var C=0; C<7; C++) {
+    var ca = XLSX.utils.encode_cell({r:0,c:C});
+    if (wsItin[ca]) wsItin[ca].s = {font:{bold:true,color:{rgb:'FFFFFF'}},fill:{fgColor:{rgb:'2D3561'}},alignment:{wrapText:true}};
   }
+  XLSX.utils.book_append_sheet(wb, wsItin, '🗺 Detailed Itinerary');
 
-  // Add checklist sheet
-  const clRows = [['#','Item','Status','Reference','Deadline','Link']];
-  (d.checklist || []).forEach((item,i) => {
-    clRows.push([
-      i+1,
-      item.label || '',
-      item.status || '',
-      item.ref || '',
-      item.deadline || '',
-      item.link || ''
-    ]);
+  // ── TAB 2: Trip at a Glance ───────────────────────────────────────────
+  var glanceRows = [['Day','Date','From','Night Stay','Highlights','Drive','Drive Time']];
+  (editableGlance.length ? editableGlance : d.glance||[]).forEach(function(g) {
+    var hl = g._highlights ? g._highlights.join(' · ') : (g.highlights||'');
+    glanceRows.push(['Day '+g.day, g.date, g.from||'', g.nightStay||'', hl, g.drive||'', g.driveTime||'']);
   });
-  const wsCl = XLSX.utils.aoa_to_sheet(clRows);
-  wsCl['!cols'] = [{wch:4},{wch:48},{wch:10},{wch:32},{wch:16},{wch:40}];
+  var wsG = XLSX.utils.aoa_to_sheet(glanceRows);
+  wsG['!cols'] = [{wch:8},{wch:10},{wch:28},{wch:28},{wch:55},{wch:20},{wch:22}];
+  XLSX.utils.book_append_sheet(wb, wsG, '🗓 Trip at a Glance');
 
-  // Add accommodation sheet
-  const accRows = [['Dates','Property','Address','Status','Reference','Free Cancel']];
-  (d.accommodation || []).forEach(a => {
-    if (a.status === 'cancelled') return;
-    accRows.push([
-      a.dates || '',
-      a.property || '',
-      a.address || '',
-      a.status || '',
-      a.ref || '',
-      a.freeCancel || ''
-    ]);
+  // ── TAB 3: Daily Tracker ──────────────────────────────────────────────
+  var trackerRows = [['Day','Date','Where Tonight','Highlights','Status','Notes & Updates']];
+  d.days.forEach(function(day) {
+    if (day.dayLabel==='1–2') {
+      trackerRows.push(['Day 1','Jun 20','Skeidflot, Mýrdalur 🇮🇸','Kerið · Geysir · Seljalandsfoss · Skógafoss · Reynisfjara','⚪ Upcoming','']);
+      trackerRows.push(['Day 2','Jun 21','BergOne, Ytri-Njarðvík 🇮🇸','Dyrhólaey · Fjaðrárgljúfur · Jökulsárlón · Diamond Beach','⚪ Upcoming','']);
+    } else {
+      var s = day.summary||{};
+      var where = (s.to||'').replace(/[\uD800-\uDFFF]/g,'').trim();
+      var hl = (s.highlights||'').split(' · ').slice(0,4).join(' · ');
+      trackerRows.push(['Day '+day.dayLabel, day.date, where, hl, '⚪ Upcoming', '']);
+    }
   });
-  const wsAcc = XLSX.utils.aoa_to_sheet(accRows);
-  wsAcc['!cols'] = [{wch:14},{wch:40},{wch:36},{wch:10},{wch:44},{wch:22}];
+  var wsTr = XLSX.utils.aoa_to_sheet(trackerRows);
+  wsTr['!cols'] = [{wch:8},{wch:10},{wch:28},{wch:50},{wch:14},{wch:42}];
+  XLSX.utils.book_append_sheet(wb, wsTr, '📅 Daily Tracker');
 
-  XLSX.utils.book_append_sheet(wb, ws,    'Trip at a Glance');
-  XLSX.utils.book_append_sheet(wb, wsCl,  'Booking Checklist');
-  XLSX.utils.book_append_sheet(wb, wsAcc, 'Accommodation');
+  // ── TAB 4: Booking Checklist ──────────────────────────────────────────
+  var clRows = [['Status','Item','Reference / Confirmation','Deadline / Notes','☑']];
+  (d.checklist||[]).forEach(function(item) {
+    var lbl = {done:'✅ Done',urgent:'🔴 Urgent',pending:'⏳ Pending'}[item.status]||item.status;
+    clRows.push([lbl, item.label||'', item.ref||'', item.deadline||'', item.status==='done'?'☑':'☐']);
+  });
+  var wsCl = XLSX.utils.aoa_to_sheet(clRows);
+  wsCl['!cols'] = [{wch:14},{wch:50},{wch:38},{wch:42},{wch:5}];
+  XLSX.utils.book_append_sheet(wb, wsCl, '✅ Booking Checklist');
 
-  const filename = 'Europe-2026-PlanB-' + new Date().toISOString().slice(0,10) + '.xlsx';
+  // ── TAB 5: Accommodation ──────────────────────────────────────────────
+  var accRows = [['Nights','Dates','Property','Address','Check-in','Cost','Phone / Contact']];
+  (d.accommodation||[]).filter(function(a){return a.status!=='cancelled';}).forEach(function(a) {
+    var ref = a.ref||'';
+    var ci = (ref.match(/check-in\s*([\d:–\-]+)/i)||[])[1]||'—';
+    var cost = (ref.match(/(\$[\d,]+|CHF[\s\d.]+|€[\d.]+)/i)||[])[1]||'—';
+    var prop = (a.property||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
+    accRows.push([a.nights||'', a.dates||'', prop, a.address||'', ci, cost, a.phone||'']);
+  });
+  var wsAcc = XLSX.utils.aoa_to_sheet(accRows);
+  wsAcc['!cols'] = [{wch:8},{wch:14},{wch:30},{wch:40},{wch:14},{wch:12},{wch:30}];
+  XLSX.utils.book_append_sheet(wb, wsAcc, '🏨 Accommodation');
+
+  // ── TAB 6: Budget ─────────────────────────────────────────────────────
+  var budgetRows = [
+    ['Category','Estimated','Actual Spent','Notes'],
+    ['Flights ×4 ✅','$4,088','$4,088','Icelandair A77762 · Economy Light'],
+    ['Accommodation 15 nights ✅','$3,032','$3,032','All 10 properties confirmed'],
+    ['Car Rental ZRH + Budget KEF ✅','$1,182','$1,182','Hertz L5350959316 + Budget #42334482US1'],
+    ['Food & Drinks','$1,850','','Update daily · rifugios + hüttes = cash only'],
+    ['Activities & Entry Fees','$1,100','','Cable cars · boat trips · castle entries'],
+    ['Fuel & Tolls','$1,000','','Grossglockner €37 · Schlegeis €17 · Rossfeld €9 · Auronzo €30'],
+    ['Shopping & Misc','$400','',''],
+    ['TOTAL CONFIRMED','$8,302','','vs est. ~$11,600–$12,900'],
+  ];
+  var wsBg = XLSX.utils.aoa_to_sheet(budgetRows);
+  wsBg['!cols'] = [{wch:32},{wch:16},{wch:16},{wch:44}];
+  XLSX.utils.book_append_sheet(wb, wsBg, '💰 Budget');
+
+  var filename = 'Europe-2026-VRFamilyTravels-' + new Date().toISOString().slice(0,10) + '.xlsx';
   XLSX.writeFile(wb, filename);
 }
 
