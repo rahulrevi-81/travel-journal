@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T03:05:41Z",
+    "_updated": "2026-05-12T03:19:12Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1291,6 +1291,14 @@
       "link": null
     },
     {
+      "id": "iceland_car",
+      "label": "🚗 Budget car — Keflavik KEF · Jun 20–22",
+      "status": "done",
+      "ref": "Conf. #42334482US1 · $289 · pay at pickup",
+      "deadline": null,
+      "link": null
+    },
+    {
       "id": "gondola",
       "label": "🚡 Grindelwald First gondola — Jun 23",
       "status": "done",
@@ -1407,6 +1415,29 @@
       "status": "pending",
       "ref": "autobrennero.it · cameras read plate · skip queue · needed Jun 30→Jul 1",
       "deadline": "Buy before Jun 30"
+    },
+    {
+      "id": "rifugio_auronzo",
+      "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime toll road",
+      "status": "urgent",
+      "ref": "Book at auronzo.it · Municipality of Auronzo · €30 · cameras enforce no-shows · fills weeks ahead in July",
+      "deadline": "Book ASAP — Jul dates sell out fast",
+      "link": null
+    },
+    {
+      "id": "seceda_parking",
+      "label": "🅿️ Parkgarage Seceda, Ortisei — Jun 30",
+      "status": "urgent",
+      "ref": "Book at ortisei.info or parkgarage-seceda.it · fills by 9am in July · arrive early",
+      "deadline": "Book before departure",
+      "link": null
+    },
+    {
+      "id": "siusi_ebikes",
+      "label": "🚲 Siusi Alm e-bikes — Jul 1 · optional",
+      "status": "pending",
+      "ref": "Reserve at Compatsch top station · available on the day but fills in peak July",
+      "deadline": "Optional — book a few days before if wanted"
     }
   ],
   "budget": [
