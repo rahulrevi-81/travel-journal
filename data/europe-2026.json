@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T02:57:18Z",
+    "_updated": "2026-05-12T03:03:37Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -220,7 +220,7 @@
       "dayLabel": "1–2",
       "date": "Jun 20–21",
       "title": "Iceland — Reykjanes, Geysir & South Coast",
-      "meta": "Jun 20–21 · Selfoss base",
+      "meta": "Jun 20–21 · Selfoss base · 🚗 358 km / 222 mi · ~2 days total",
       "flag": "🇮🇸",
       "mapLinks": [
         {
@@ -317,7 +317,7 @@
       "dayLabel": "3",
       "date": "Jun 22",
       "title": "Fly KEF→ZRH · Lake Thun · Lauterbrunnen",
-      "meta": "Jun 22 · ZRH → Lake Thun → Spiez Castle → Camping Jungfrau, Lauterbrunnen",
+      "meta": "Jun 22 · ZRH → Lake Thun → Spiez Castle → Camping Jungfrau, Lauterbrunnen · 🚗 144 km / 90 mi · ~1h 45m",
       "flag": "🇨🇭",
       "mapLinks": [
         {
@@ -387,7 +387,7 @@
       "dayLabel": "4",
       "date": "Jun 23",
       "title": "Oeschinensee + Grindelwald First — Double Gondola Day",
-      "meta": "Jun 23 · Lauterbrunnen → Kandersteg (Oeschinensee) → Grindelwald First → Lauterbrunnen",
+      "meta": "Jun 23 · Lauterbrunnen → Kandersteg (Oeschinensee) → Grindelwald First → Lauterbrunnen · 🚗 100 km / 62 mi · ~2h 30m incl. mountain roads",
       "flag": "🇨🇭",
       "warning": true,
       "mapLinks": [
@@ -457,7 +457,7 @@
       "dayLabel": "5",
       "date": "Jun 24",
       "title": "Lauterbrunnen → Berchtesgaden",
-      "meta": "Jun 24 · Lauterbrunnen → Staubbach Falls → Trümmelbach Falls → Berchtesgaden",
+      "meta": "Jun 24 · Lauterbrunnen → Staubbach Falls → Trümmelbach Falls → Berchtesgaden · 🚗 595 km / 370 mi · ~6h non-stop",
       "flag": "🇨🇭",
       "mapLinks": [
         {
@@ -470,6 +470,10 @@
           "heading": null,
           "items": [
             "Leave <strong>Camping Jungfrau 8:30am</strong> · walk/drive <strong>5 min</strong> → Lauterbrunnen village · park",
+            "📸 <strong>Lauterbrunnen valley exit viewpoint</strong> — pull over on the B532 heading north out of the village · waterfalls cascading down both valley walls with Jungfrau framing the scene · best shot looking south back into the valley · free · 5 min · zero detour",
+            "➕ <strong>Optional: Lake Thun / Spiez viewpoint</strong> — Route 6 via Spiez · classic shot: Eiger + Mönch + Jungfrau reflected in turquoise Thunersee · pull off near Spiez town viewpoint · 10 min · only if arriving Berchtesgaden before 4pm",
+            "📸 <strong>Chiemsee — Bernau lakeshore</strong> — exit A8 at Bernau (Exit 106) · drive 2km to Felden lakeshore · Bavaria's largest lake = \"Bavarian Sea\" · Alps reflected in flat water · Fraueninsel visible · allow 15min · free parking at shore",
+            "📸 <strong>Hintersee lake, Berchtesgaden</strong> — 15min drive from Berchtesgaden town · turquoise lake with Watzmann massif + giant moss-covered boulders (Zauberwald) · one of the most photogenic spots in Bavaria · free · allow 20min · park at Seeklause car park",
             "⭐ <strong>Trümmelbach Falls</strong> — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
             "🏠 <strong>One-Bedroom Apartment, Berchtesgaden</strong> — ✅ Nights 5–6 · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · 📞 Booking.com message host · Check-in 16:00–20:00",
             "<strong>Dinner</strong> — Berchtesgaden (~1hr)"
@@ -513,17 +517,17 @@
         "driveTime": "~6h non-stop · longest drive day"
       },
       "keyDecisions": [
-        "✅ Staubbach Falls done Jun 22 evening — no need to stop again",
-        "✅ Trümmelbach Falls — kids absolutely love it · do this first",
-        "✅ Big grocery shop at Rewe/Aldi Berchtesgaden · German prices 35% cheaper"
+        "📸 Valley exit photo stop before leaving Lauterbrunnen — 5min · zero detour",
+        "📸 Chiemsee Bernau + Hintersee on arrival — best photo stops on this drive day",
+        "✅ Big grocery shop at Rewe/Aldi Berchtesgaden on arrival"
       ],
-      "timeline": "8:30am ▸ Lauterbrunnen ▸ Staubbach ▸ Trümmelbach ▸ 12pm drive ▸ 3:30pm Berchtesgaden"
+      "timeline": "8:30am ▸ Lauterbrunnen valley photo ▸ Trümmelbach ▸ 12pm drive ▸ Chiemsee stop ▸ Hintersee photo ▸ 4pm Berchtesgaden"
     },
     {
       "dayLabel": "6",
       "date": "Jun 25",
       "title": "Königssee + Eagle’s Nest + Hintersee → Berchtesgaden Night 2",
-      "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle’s Nest → Hintersee → Berchtesgaden",
+      "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle’s Nest → Hintersee → Berchtesgaden · 🚗 80 km / 50 mi · ~2h total",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -586,7 +590,7 @@
       "dayLabel": "7",
       "date": "Jun 26",
       "title": "Liechtensteinklamm → Salzburg + Hohensalzburg → Wolfgangsee → Hallstatt",
-      "meta": "Jun 26 · Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
+      "meta": "Jun 26 · Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt · 🚗 180 km / 112 mi · ~3h 30m incl. Salzburg parking",
       "flag": "🇩🇪",
       "mapLinks": [
         {
@@ -650,7 +654,7 @@
       "dayLabel": "8",
       "date": "Jun 27",
       "title": "Hallstatt Full Day — Gosausee · Salt Mine · Skywalk · Beinhaus · Echern Valley · Dachstein 5 Fingers",
-      "meta": "Jun 27 · Kaiserblick Goisern → Hallstatt (Salt Mine + Skywalk + Beinhaus + Gosausee + Echern Valley + Dachstein 5 Fingers) → back to Kaiserblick",
+      "meta": "Jun 27 · Kaiserblick Goisern → Hallstatt (Salt Mine + Skywalk + Beinhaus + Gosausee + Echern Valley + Dachstein 5 Fingers) → back to Kaiserblick · 🚗 40 km / 25 mi · ~1h total",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -727,7 +731,7 @@
       "dayLabel": "9",
       "date": "Jun 28",
       "title": "Grossglockner High Alpine Road → Sillian · Dolomites Gateway",
-      "meta": "Jun 28 · Bad Goisern → Grossglockner High Alpine Road → Lienz → Sillian, Austria",
+      "meta": "Jun 28 · Bad Goisern → Grossglockner High Alpine Road → Lienz → Sillian, Austria · 🚗 280 km / 174 mi · ~4h 30m incl. Grossglockner slow drive",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -793,7 +797,7 @@
       "dayLabel": "10",
       "date": "Jun 29",
       "title": "East Dolomites — Braies Sunrise + Cadini + Prato Piazza + Cortina + Falzarego + Gardena → Siusi",
-      "meta": "Jun 29 · Sillian → Braies sunrise → Cadini di Misurina → Prato Piazza → Cortina d'Ampezzo → Falzarego Pass → Gardena Pass → Siusi",
+      "meta": "Jun 29 · Sillian → Braies sunrise → Cadini di Misurina → Prato Piazza → Cortina d'Ampezzo → Falzarego Pass → Gardena Pass → Siusi · 🚗 200 km / 124 mi · ~5h total driving",
       "flag": "🇦🇹",
       "mapLinks": [
         {
@@ -871,7 +875,7 @@
       "date": "Jun 30",
       "dayNum": 12,
       "title": "West Dolomites — Seceda + Val di Funes + Adolf Munkel Trail",
-      "meta": "Jun 30 · Collalbo → Ortisei (Seceda) → Val di Funes (Santa Maddalena) → Adolf Munkel Trail 35 → Collalbo",
+      "meta": "Jun 30 · Collalbo → Ortisei (Seceda) → Val di Funes (Santa Maddalena) → Adolf Munkel Trail 35 → Collalbo · 🚗 80 km / 50 mi · ~2h total",
       "sections": [
         {
           "heading": null,
@@ -942,7 +946,7 @@
       "dayLabel": "12",
       "date": "Jul 1",
       "title": "Full Day Collalbo → Finkenberg",
-      "meta": "Jul 1 · Collalbo → Alpe di Siusi morning → drive to Finkenberg",
+      "meta": "Jul 1 · Collalbo → Alpe di Siusi morning → drive to Finkenberg · 🚗 120 km / 75 mi · ~1h 45m",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -1006,7 +1010,7 @@
       "dayLabel": "13",
       "date": "Jul 2",
       "title": "Olpererhütte + Kebema → Achensee → Swarovski → Bichlbach",
-      "meta": "Jul 2 · Finkenberg → Schlegeis → Olpererhütte → Achensee → Swarovski → Bichlbach",
+      "meta": "Jul 2 · Finkenberg → Schlegeis → Olpererhütte → Achensee → Swarovski → Bichlbach · 🚗 150 km / 93 mi · ~2h 30m incl. Achensee + Swarovski stops",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -1077,7 +1081,7 @@
       "dayLabel": "14",
       "date": "Jul 3",
       "title": "Seebensee + Drachensee Dragon Lake → Bichlbach Night 2",
-      "meta": "Jul 3 · Bichlbach → Ehrwald → Seebensee → Drachensee → back to Bichlbach",
+      "meta": "Jul 3 · Bichlbach → Ehrwald → Seebensee → Drachensee → back to Bichlbach · 🚗 20 km / 12 mi · ~30m",
       "flag": "🇮🇹",
       "mapLinks": [
         {
@@ -1147,7 +1151,7 @@
       "dayLabel": "15",
       "date": "Jul 4",
       "title": "Bichlbach → Neuschwanstein → Ebenalp & Aescher Cliff → ZRH",
-      "meta": "Jul 4 · Bichlbach → Neuschwanstein → Ebenalp/Wasserauen → (Rhine Falls optional) → ZRH Airport",
+      "meta": "Jul 4 · Bichlbach → Neuschwanstein → Ebenalp/Wasserauen → (Rhine Falls optional) → ZRH Airport · 🚗 280 km / 174 mi · ~3h 30m",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
