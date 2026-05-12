@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T03:19:12Z",
+    "_updated": "2026-05-12T14:20:21Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -821,11 +821,11 @@
             "⭐ <strong>Forcella Lavaredo</strong> — best single viewpoint in the entire Dolomites · all three Cime framed perfectly · ~40–50 min round trip from car park",
             "Drive back <strong>30 min</strong> → <strong>Prato Piazza plateau</strong> · park at Rifugio Prato Piazza · arrive ~11:00am",
             "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
-            "➕ <strong>Optional: Prato Piazza loop walk</strong> — 1hr flat walk · best free non-technical Dolomites viewpoint · Tre Cime looming ahead · skip if short on time",
+            "➕ <strong>Optional: Prato Piazza loop walk</strong> — ~1hr flat walk around the plateau · only if time allows after Cadini · the viewpoint itself is worth it without the walk",
             "<strong>Lunch</strong> at Rifugio Prato Piazza (~1hr) · cash",
-            "➕ <strong>Optional: Cortina d'Ampezzo</strong> — elegant mountain town · espresso on Corso Italia · Tofane peaks framing the piazza · add 45min if energy allows · skip if running late for Collalbo check-in",
-            "➕ <strong>Optional: Passo Falzarego photo stop</strong> — 2,105m · dramatic rock formations · quick 10min stop · ⚠️ Lagazuoi cable car moved to Day 11 optional — better fit with Seceda day",
-            "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — if energy allows after a 5am start · Rifugio Lagazuoi · WWI tunnel galleries (~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm · adds ~1.5hrs",
+            "➕ <strong>Optional: Cortina d'Ampezzo</strong> — elegant mountain town · espresso on Corso Italia · 20min detour + 30min town walk · ⚠️ Skip Cortina if doing Lagazuoi — not enough time for both",
+            "➕ <strong>Optional: Passo Falzarego photo stop (2,105m)</strong> — quick 10min pull-over · dramatic rock formations · this is the base for Lagazuoi cable car · even without the cable car the pass views are stunning",
+            "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — do this INSTEAD of Cortina if energy allows · highest accessible viewpoint in Western Dolomites · WWI tunnel galleries carved into the rock · Marmolada glacier + all major Dolomite groups visible · €22/adult return · 30min up + 30min down + 30min at top · only realistic before 3pm given 5am start",
             "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
             "🏠 <strong>Kaiserau 1907, Collalbo</strong> — ✅ Confirmed · $352 / €354.56 · 📍 Via Peter Mayr 65, 39054 Collalbo (Renon), Italy · 📞 +39 0471 356 xxx · Booking.com · Check-in 15:00–22:00 · arrive ~5:30pm",
             "⭐ <strong>Collalbo / Renon plateau evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow · ~50min drive to Ortisei"
@@ -865,9 +865,9 @@
         "driveTime": "~5h total driving · many short hops"
       },
       "keyDecisions": [
-        "✅ PRE-BOOK Rifugio Auronzo parking NOW at auronzo.it — cameras turn away cars without reservation",
-        "✅ Lago di Braies 5am · Cadini Trail 117 · Prato Piazza",
-        "🤔 Cortina d'Ampezzo + Lagazuoi (Day 11) — optional · skip if tired after 5am start"
+        "✅ PRE-BOOK Rifugio Auronzo parking NOW at auronzo.it — cameras turn away cars",
+        "✅ Braies 5am · Cadini Trail 117 · Prato Piazza (confirmed stop)",
+        "🤔 Lagazuoi OR Cortina — not both · Lagazuoi is better · only if energy after 5am start"
       ],
       "timeline": "5am ▸ Braies sunrise ▸ Misurina ▸ 8:30am Cadini ▸ Prato Piazza ▸ Cortina ▸ Falzarego ▸ Gardena ▸ 5:30pm Collalbo"
     },
