@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-04-03T19:54:46Z",
+    "_updated": "2026-05-12T02:16:27Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -237,13 +237,23 @@
             "Drive <strong>15 min</strong> → <strong>Lunch in Selfoss</strong> — Kaffi Krús or Almar Bakari · <strong>1:15pm</strong> (~45 min)",
             "Drive <strong>35 min</strong> → <strong>Geysir</strong> — Strokkur erupts every 5–10 min · watch 2–3 eruptions and leave · <strong>2:45pm</strong> (~45 min)",
             "⚠️ <strong>Gullfoss optional</strong> (10 min from Geysir) — Iceland's most powerful two-tier waterfall · add 45 min if energy allows · <strong>3:45pm</strong>",
-            "Drive <strong>45 min south</strong> → <strong>Urriðafoss</strong> — Iceland's most voluminous waterfall · 2 min off Route 1 · ground trembles from the force · almost nobody here · <strong>5:30pm</strong> (~20 min · free)",
+            "➕ <strong>Optional:</strong> Drive 45 min south → Urriðafoss — Iceland's most voluminous waterfall · 2 min off Route 1 · ground trembles from the force · almost nobody here · 5:30pm (~20 min · free)",
             "Drive <strong>15 min</strong> → <strong>Seljalandsfoss</strong> — walk behind the falls · bring waterproofs! · <strong>6:15pm</strong> (~1hr)",
             "<strong>Gljúfrabúi</strong> — hidden canyon waterfall 5 min walk from Seljalandsfoss · most tour buses skip it · genuinely magical (~30 min)",
             "Drive <strong>20 min</strong> → <strong>Skógafoss</strong> — climb the 527 steps for the top view · evening light is spectacular · <strong>8:15pm</strong> (~45 min)",
             "Drive <strong>15 min east</strong> → <strong>Reynisfjara black sand beach</strong> — basalt columns, Reynisdrangar sea stacks · stunning in evening light · (~25 min)",
             "Drive <strong>10 min</strong> → <strong>Vík village</strong> — red-roofed church viewpoint · quick stop (~15 min)",
-            "Drive <strong>10 min east</strong> → <strong>Room in Skeidflot, Skeidflot 871</strong> — check in <strong>~9:30pm</strong> · hosted by Arnar · Airbnb ✅"
+            "Drive <strong>10 min east</strong> → <strong>Room in Skeidflot, Skeidflot 871</strong> — check in <strong>~9:30pm</strong> · hosted by Arnar · Airbnb ✅",
+            "Leave Skeidflot <strong>7:00am</strong> — already deep on the South Coast, 10km from Dyrhólaey",
+            "<strong>Dyrhólaey arch</strong> — clifftop viewpoint over black sand coast and sea arch · puffins nesting on Lágey islet in June · head to the lower road for the arch · arrive before 8am · (~30 min)",
+            "➕ <strong>Optional:</strong> Drive 45 min east → Fjaðrárgljúfur Canyon — 100m deep moss-covered canyon · Game of Thrones Season 8 Episode 1 dragon flight location · ISK 1000 Parka fee · walk the full rim (~1.5hrs)",
+            "<strong>Lunch in Kirkjubæjarklaustur</strong> — 10 min from canyon · quick stop ~30 min",
+            "Drive <strong>30 min east</strong> → <strong>Svínafellsjökull Glacier</strong> — 2km side road off Ring Road · 15–20 min walk to viewpoint · deep blue glacial ice + jagged black peaks · Game of Thrones S7 + Interstellar filming location · ⚠️ viewpoint only (rockfall risk advisory) · free · ~45 min total",
+            "Drive <strong>1hr east</strong> → <strong>Jökulsárlón Glacier Lagoon</strong> — floating blue icebergs at the edge of Vatnajökull · walk the lagoon shore · seals basking on the ice · truly otherworldly · (~45 min)",
+            "Cross the road → <strong>Diamond Beach</strong> — ice diamonds scattered across jet-black volcanic sand · every piece unique · constantly changing with the tides · free · (~30 min)",
+            "Drive <strong>~2hrs west</strong> back along Ring Road → <strong>BergOne, Ytri-Njarðvík</strong> · check in <strong>~5:00pm</strong> ✅",
+            "Evening <strong>6:30pm</strong>: drive 20 min → <strong>Reykjanes Peninsula golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents · 24hr June daylight · spectacular late light",
+            "Early night — <strong>5:15am alarm</strong> tomorrow for KEF"
           ]
         },
         {
@@ -307,9 +317,9 @@
         "driveTime": "~2 days total"
       },
       "keyDecisions": [
-        "✅ Pick up Iceland car at KEF by 10:30am — Budget counter in Arrivals",
-        "✅ Kerið + Geysir early — beat tour buses · leave Geysir by 2pm",
-        "✅ Day 2: Dyrhólaey before 8am — puffins most active · then head east to Jökulsárlón"
+        "✅ Kerið + Geysir early — leave KEF by 10:30am · beat tour buses",
+        "🤔 Urriðafoss — optional 2min off Route 1 · add if driving time allows",
+        "🤔 Day 2: Fjaðrárgljúfur — optional · stunning but ISK 1000 park fee · skip if pressed for time"
       ],
       "timeline": "Day 1: 10:30am KEF ▸ Kerið ▸ Geysir ▸ Seljalandsfoss ▸ Skógafoss ▸ Reynisfjara ▸ 9:30pm Skeidflot | Day 2: 7am ▸ Dyrhólaey ▸ Canyon ▸ Glacier ▸ Lagoon ▸ Diamond Beach ▸ 5pm BergOne"
     },
@@ -336,9 +346,10 @@
             "Return Iceland car at KEF · board <strong>7:20am FI568</strong>",
             "Land ZRH <strong>1:05pm</strong> · clear Non-Schengen → Schengen passport control · pick up <strong>Hertz rental car</strong> at Arrivals Hall desk · Conf. <strong>L5350959316</strong> · Jeep Compass or similar · allow <strong>60–90 min</strong> for immigration + car pickup",
             "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
-            "Drive <strong>~1hr</strong> → <strong>Lake Thun (Thunersee) viewpoint</strong> near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval <strong>Spiez Castle</strong> on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min)",
+            "➕ <strong>Optional:</strong> Drive ~1hr → Lake Thun (Thunersee) viewpoint near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval Spiez Castle on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min) · only if arriving Lauterbrunnen before 6pm",
             "🛒 <strong>Aldi Suisse, Interlaken</strong> — Lindenallee, Interlaken · cheapest supermarket in Switzerland · open Mon 8am–8pm ✅ · 5 min off route · buy Swiss days only (Jun 22–24) · do the BIG shop in Berchtesgaden Germany Jun 24 — prices 35% cheaper · allow ~45min",
             "Drive <strong>~1h 45m</strong> → <strong>Camping Jungfrau, Lauterbrunnen</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
+            "⭐ <strong>Staubbach Falls, Lauterbrunnen</strong> — 300m freefall straight over the village · walk to the base in 10 min from campsite · golden hour light hits the falls perfectly · free · do this evening on arrival — saves Day 5 morning time",
             "Dinner at campsite or nearby Lauterbrunnen village · early night — big Day 4 tomorrow"
           ]
         }
@@ -377,9 +388,8 @@
       },
       "keyDecisions": [
         "✅ Hertz pickup — allow 60–90min at ZRH Arrivals",
-        "✅ Lake Thun + Spiez Castle quick stop en route",
-        "🤔 Grimmimutz trail — optional evening only if not too tired",
-        "🛒 Aldi Interlaken — cheapest in CH · buy Swiss days only · big shop in Germany Jun 24"
+        "🤔 Spiez Castle — optional quick stop · only if arriving Lauterbrunnen before 6pm",
+        "✅ Staubbach Falls this evening — 10min walk from campsite · saves Day 5 morning"
       ],
       "timeline": "7:20am ▸ KEF→ZRH ▸ 1pm ZRH land ▸ 2:30pm drive ▸ Spiez ▸ 5:30pm Lauterbrunnen"
     },
@@ -402,7 +412,7 @@
           "items": [
             "Leave <strong>Camping Jungfrau 8:00am</strong> · drive <strong>~45 min</strong> → Kandersteg",
             "⭐ <strong>Oeschinensee gondola 8:30am slot</strong> — pre-booked timed entry · turquoise alpine lake at 1,578m enclosed by sheer 2,000m cliffs · ~CHF 35/adult · <strong>⚠️ book slot tonight at oeschinensee.skiperformance.com</strong>",
-            "🥾 <strong>Oeschinensee lake walk</strong> — 25 min down to shore from gondola station · panorama trail or direct path · rowing boats available · summer toboggan run at mountain station · ~1.5hrs at lake · gondola down by <strong>10:30am</strong>",
+            "🥾 <strong>Oeschinensee Panoramic Trail</strong> — take the <em>upper</em> panoramic path not the direct route · ridge walk with full Blüemlisalp massif panorama · ~1.5hr loop · more dramatic views than lakeside path · descend to lake edge for rowing boats + photos",
             "Drive <strong>~1hr</strong> → Grindelwald · park at Firstbahn Talstation · arrive ~<strong>11:30am</strong>",
             "⭐ <strong>Grindelwald Firstbahn gondola #238070 ✅</strong> — ride to <strong>First (2,168m)</strong> · Eiger directly opposite · spectacular arrival on the ridge",
             "⭐ <strong>First Cliff Walk</strong> — suspended steel & glass walkway bolted to the sheer cliff face · vertigo-inducing views over the valley · ~30 min · free with gondola ticket",
@@ -447,9 +457,9 @@
         "driveTime": "~2h 30m incl. mountain roads"
       },
       "keyDecisions": [
-        "✅ Oeschinensee 8:30am slot — pre-booked, don't be late",
-        "✅ Grindelwald First gondola — booked #238070",
-        "🤔 Bachalpsee loop — only if kids have energy after Oeschinensee"
+        "✅ Oeschinensee 8:30am — take UPPER panoramic trail not direct path · better views",
+        "✅ Grindelwald First gondola #238070 — ride to First (2,168m)",
+        "❌ Skip Grindelwald village — saves 30min · nothing essential there"
       ],
       "timeline": "8am ▸ drive Kandersteg ▸ 8:30am Oeschinensee ▸ 11:30am Grindelwald ▸ Cliff Walk ▸ Bachalpsee ▸ 6:30pm back"
     },
@@ -470,7 +480,6 @@
           "heading": null,
           "items": [
             "Leave <strong>Camping Jungfrau 8:30am</strong> · walk/drive <strong>5 min</strong> → Lauterbrunnen village · park",
-            "⭐ <strong>Lauterbrunnen valley</strong> — 72 waterfalls · <strong>Staubbach Falls</strong> (300m freefall over the village · 15 min walk to base · free) · valley floor stroll (~1hr)",
             "⭐ <strong>Trümmelbach Falls</strong> (optional) — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
             "Drive <strong>~3hrs</strong> northeast → <strong>Berchtesgaden</strong> · check in · ⏳ hotel yet to book · no place decided",
             "<strong>Dinner</strong> — Berchtesgaden (~1hr)"
@@ -514,9 +523,9 @@
         "driveTime": "~6h non-stop · longest drive day"
       },
       "keyDecisions": [
-        "✅ Staubbach + valley walk — 1hr, free, unmissable",
-        "✅ Trümmelbach Falls — kids absolutely love it",
-        "❌ Skip Highline179 — too far out of route"
+        "✅ Staubbach Falls done Jun 22 evening — no need to stop again",
+        "✅ Trümmelbach Falls — kids absolutely love it · do this first",
+        "✅ Big grocery shop at Rewe/Aldi Berchtesgaden · German prices 35% cheaper"
       ],
       "timeline": "8:30am ▸ Lauterbrunnen ▸ Staubbach ▸ Trümmelbach ▸ 12pm drive ▸ 3:30pm Berchtesgaden"
     },
@@ -543,7 +552,8 @@
             "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~12:30pm",
             "Drive <strong>10 min</strong> → <strong>Obersalzberg</strong> · park · walk to Dokumentation Obersalzberg WWII museum (~30min · €10/adult)",
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first afternoon bus ~1:00pm</strong> · elevator through the mountain · summit 1,834m · panoramic view over Berchtesgaden, Königssee and the Alps · <strong>~2hrs</strong>",
-            "Drive <strong>15 min</strong> → <strong>Hintersee + Zauberwald</strong> (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
+            "➕ <strong>Optional:</strong> Drive 15 min → Hintersee + Zauberwald (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
+            "⭐ <strong>Rossfeld Panorama Road</strong> (Roßfeldpanoramastraße) — Germany's highest panoramic toll road · 1,570m · 15.4km loop · €9/car toll · pay at north tollbooth Roßfeldstraße 150 · 360° views: Hoher Göll · Kehlstein · Watzmann · Berchtesgaden valley · clear days: see Salzburg · straddle the D/Ö border stone at the summit car park · allow ~1hr incl. stops · do after Eagle's Nest — same area · no booking needed",
             "🏠 <strong>Night 2 Berchtesgaden Apartment</strong> ✅ · check-in 16:00–20:00 · Kälbersteinstraße 4"
           ]
         }
@@ -576,9 +586,9 @@
         "driveTime": "~2h total · short loops around Berchtesgaden"
       },
       "keyDecisions": [
-        "✅ Königssee boat 9:15am — go to Salet first, not St. Bartholomä",
-        "✅ Eagle's Nest — afternoon bus ~1pm from Obersalzberg",
-        "🤔 Hintersee Zauberwald — quick 30min stop, worth it"
+        "✅ Königssee boat 9:15am · Eagle's Nest afternoon bus ~1pm",
+        "✅ Rossfeld Panorama Road after Eagle's Nest — same area · €9 toll · Germany's highest road",
+        "🤔 Hintersee/Zauberwald + Hallein + Salt Mine — all optional · only if time allows"
       ],
       "timeline": "7am ▸ Königssee 9:15am ▸ Salet + Obersee ▸ St. Bartholomä ▸ Eagle's Nest 1pm ▸ Hintersee ▸ 5pm back"
     },
@@ -602,7 +612,7 @@
             "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · 444 stairs up + helix staircase · thundering waterfalls · narrow slot canyon · ~€8/adult · ~1.5hrs",
             "Drive <strong>45 min</strong> north → <strong>Salzburg</strong> · park Altstadtgarage B · arrive ~11:15am",
             "⭐ <strong>Salzburg old town</strong> — Getreidegasse · Mozart's birthplace exterior · Residenzplatz · Dom cathedral · ~1hr",
-            "⭐ <strong>Hohensalzburg Fortress interior</strong> — funicular up · one of Europe's largest medieval fortresses · Fürstenzimmer state rooms · city panorama · ~1.5hrs · €16/adult",
+            "➕ <strong>Optional:</strong> Hohensalzburg Fortress interior — funicular up · one of Europe's largest medieval fortresses · Fürstenzimmer state rooms · city panorama · ~1.5hrs · €16/adult · €16/adult · skip interior if time tight · exterior + funicular view alone worth it",
             "Drive <strong>45 min</strong> east → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~4:00pm",
             "⭐ <strong>Wolfgangsee</strong> — turquoise lake · Schafberg mountain backdrop · lakefront promenade · coffee · 30min",
             "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~5:00pm · ⚠️ P1/P2 parking or Obertraun + ferry",
@@ -641,8 +651,8 @@
       },
       "keyDecisions": [
         "✅ Liechtensteinklamm — arrive early, before tour groups",
-        "✅ Hohensalzburg fortress interior — don't just do exterior",
-        "🤔 Wolfgangsee — 30min coffee stop, not a hike"
+        "✅ Salzburg old town + Mönchsberg ridge walk to fortress",
+        "🤔 Hohensalzburg interior — optional · €16/adult · exterior + funicular view free"
       ],
       "timeline": "8:30am ▸ Liechtensteinklamm ▸ 11am Salzburg ▸ Hohensalzburg ▸ 4pm Wolfgangsee ▸ 5pm Hallstatt ▸ Goisern"
     },
@@ -666,19 +676,12 @@
         {
           "heading": null,
           "items": [
-            "<strong>Already in Hallstatt</strong> — walk straight out of hotel · no travel time · village wakes slowly before 9am",
-            "Drive <strong>20 min</strong> from Hallstatt → <strong>Gosausee (Gosau Lake)</strong> · turquoise lake with full Dachstein glacier wall reflected in still water · arrive ~7:30am",
-            "⭐ <strong>Gosaukammbahn cable car</strong> — ride up from the lake to <strong>~1,650m</strong> · ~€28 return · <strong>aerial view of Dachstein glacier from above</strong> · Gosaukamm ridge · far fewer visitors than Dachstein Krippenstein · ~1.5hrs total including ridge walk",
-            "🥾 <strong>Gosaukamm ridge walk</strong> — from top station · dramatic limestone towers · glacier panorama · easy 45min walk along the ridge · return by cable car",
-            "⭐ <strong>Hallstatt Salt Mine (Salzwelten)</strong> — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · <strong>book online at salzwelten.at</strong> · first entry 9am sharp · arrive counter by 8:45am",
+            "⭐ <strong>Dachstein Krippenstein cable car, Obertraun</strong> — START HERE by 8:40am (first cable car) · 3-section cable car to 2,109m · Sections 1+2 = €44.90/adult · <strong>5 Fingers viewpoint</strong> is 20min walk from top station — glass-floored arms over 400m cliff · Krippenstein = the whole mountain experience · 5 Fingers = the specific platform at the top · same ticket covers both · allow 2.5hrs minimum · descend by 11:30am to reach Gosausee by noon",
+            "⭐ <strong>Gosausee — Glacier Lake</strong> · drive 20min from Obertraun · turquoise lake with full Dachstein glacier wall reflected · Gosaukammbahn cable car up to 1,650m for glacier panorama · ~€28 return · ridge walk at top · allow 2hrs total",
+            "🚢 <strong>Ferry to Hallstatt from accommodation area</strong> — NAVIA runs daily trips Obertraun→Hallstatt→Bad Goisern · departs Obertraun Seecafé · ~15min crossing · €4/person one way (cash only) · much nicer arrival into Hallstatt than by road · schedules at hallstattschifffahrt.at · ⚠️ Hallstatt station ferry (train side) suspended Apr 20–May 22 2026 — but resumes by Jun 27 ✅",
             "⭐ <strong>Hallstatt Skywalk viewpoint</strong> — 20 min walk up from village · 360° panorama of Hallstatt and the lake far below · best morning light · completely free",
             "⭐ <strong>Beinhaus (Bone Chapel)</strong> — over <strong>1,200 painted skulls</strong> decorated with names, dates and flowers · unique in the world · 10 min walk from market square · small entry fee · eerie and deeply moving",
-            "⭐ <strong>Hallstatt village walk + lunch</strong> — lakefront promenade · Pfarrkirche church · market square · lakeside lunch (~1hr)",
-            "🥾 <strong>Echern Valley + Waldbachstrub Waterfall</strong> — trail starts directly behind the village · no drive · climb into the Dachstein foothills · <strong>Waldbachstrub Waterfall</strong> (30 min up · thundering cascade) · return (~1.5hrs total)",
-            "Drive <strong>15 min</strong> → <strong>Dachstein Krippenstein cable car, Obertraun</strong> · arrive ~2:15pm · ⚠️ pre-book at dachstein.at",
-            "⭐ <strong>Dachstein 5 Fingers (2,109m)</strong> — five glass-floored arms extending over a 400m cliff face · Hallstatt visible far below · one of the most dramatic viewpoints in Austria · ~45 min · ⚠️ Giant Ice Cave closed until Jun 30 — skip ice cave on this visit · cable car down by 4:00pm",
-            "📌 <strong>Giant Ice Cave (Rieseneishöhle)</strong> — noted but <strong>closed until Jun 30</strong> 2026 · same cable car station as 5 Fingers · massive underground ice formations · guided tour ~1.5hrs · consider if itinerary allows a revisit · check dachstein.at before trip",
-            "Drive <strong>15 min</strong> → <strong>Hallstatt lakefront golden hour</strong> — best evening light · dinner lakeside (~1hr)",
+            "➕ <strong>Optional:</strong> Hallstatt Salt Mine (Salzwelten) — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · book online at salzwelten.at · first entry 9am sharp · arrive counter by 8:45am",
             "<strong>2nd night Kaiserblick Goisern</strong> ✅ · already checked in · drive 10 min back from Hallstatt/Obertraun"
           ]
         }
@@ -703,6 +706,10 @@
         {
           "type": "tip",
           "text": "🛒 <strong>Hofer = Aldi Austria</strong> — discount prices · buy enough for 5 nights: Jun 27 Hallstatt area · Jun 28 Grossglockner · Jun 29–Jul 1 Dolomites · next reliable shop is Spar Villabassa/Brunico in Italy"
+        },
+        {
+          "type": "tip",
+          "text": "🚢 <strong>Ferry tip</strong> — Take NAVIA boat from Obertraun to Hallstatt village (~€4 cash) · far more scenic than driving · schedules at hallstattschifffahrt.at · departs Obertraun Seecafé"
         }
       ],
       "summary": {
@@ -720,9 +727,9 @@
         "driveTime": "~1h total · very local day"
       },
       "keyDecisions": [
-        "✅ Gosausee 7:30am — best morning light on glacier",
-        "✅ Salt Mine + Skywalk + Beinhaus — all three in Hallstatt",
-        "✅ Dachstein 5 Fingers — pre-booked, arrive Obertraun by 2:15pm"
+        "✅ Start at Dachstein Krippenstein 8:40am (first cable) — 5 Fingers is on Section 2 · same ticket",
+        "✅ Gosausee (Glacier Lake) after — turquoise lake with Dachstein glacier reflection",
+        "🤔 Hallstatt Salt Mine — optional · do only if energy after Dachstein + Gosausee"
       ],
       "timeline": "7:30am ▸ Gosausee ▸ cable car ▸ 10:30am Salt Mine ▸ Skywalk ▸ Beinhaus ▸ 2:15pm Dachstein ▸ Hallstatt golden hour"
     },
@@ -743,12 +750,11 @@
           "heading": null,
           "items": [
             "Checkout <strong>Kaiserblick Goisern by 8:30am</strong> — check-out 08:00–10:00",
-            "Drive <strong>1hr 15min</strong> south → <strong>Grossglockner Hochalpenstraße entrance</strong> at <strong>Bruck an der Glocknerstraße</strong> · toll €37/car · opens 5am daily",
-            "⭐ <strong>Grossglockner High Alpine Road</strong> — 48km of switchbacks to 2,504m · Austria's highest paved road · Kaiser-Franz-Josefs-Höhe viewpoint (2,369m) · <strong>direct view of the Grossglockner 3,798m</strong> · Pasterze Glacier walk · one of the world's great scenic drives",
-            "⭐ <strong>Kaiser-Franz-Josefs-Höhe</strong> — stop here for the glacier view · Pasterze Glacier platform · ibex sometimes visible on the rocks · ~45min",
-            "Continue south over the pass → <strong>Heiligenblut</strong> · stunning Baroque church against the mountains · quick stop",
-            "Drive <strong>1hr</strong> south → <strong>Lienz</strong> · gateway to East Tyrol · optional lunch stop (~45min)",
+            "⭐ <strong>Grossglockner High Alpine Road</strong> — 48km of switchbacks · €37/car toll (cash or card) · enter at Bruck an der Glocknerstraße · drive south: stop 1 = Edelweiß-Spitze · stop 2 = Kaiser-Franz-Josefs-Höhe · allow 3.5hrs for the full road including stops",
+            "⭐ ⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — MUST STOP · glacier viewing platform · Pasterze Glacier (Austria's longest) · ibex often visible on the rocks · Austria's most dramatic viewpoint · allow 45min",
+            "⭐ ⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — MUST STOP · glacier viewing platform · Pasterze Glacier (Austria's longest) · ibex often visible on the rocks · Austria's most dramatic viewpoint · allow 45min",
             "Drive <strong>1hr</strong> east → <strong>Sillian</strong>, East Tyrol, Austria 🇦🇹 · arrive ~3:30pm",
+            "☕ <strong>Loacker Café, Piazza Walther, Bolzano</strong> — ➕ Optional detour on drive to Sillian · iconic South Tyrolean wafer + chocolate brand · flagship café on Piazza Walther · espresso + Loacker wafers + krapfen pastries · kid favourite · Piazza Walther 11, Bolzano · open Mon–Sat 8am–7pm · adds ~30min + 20min detour off route",
             "Check in <strong>Hotel Schwarzer Adler Sillian</strong> · ✅ Confirmed · $115 / €99.40 · check-in 16:00–21:00 · Sillian 12, 9920 Sillian",
             "⭐ <strong>Optional: drive 25min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · <strong>Località Braies di Sotto 1, 39030 Braies (Prags)</strong> · GPS 46.6944°N 12.0853°E",
             "Dinner in Sillian · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
@@ -788,9 +794,9 @@
         "driveTime": "~4h 30m incl. Grossglockner slow drive"
       },
       "keyDecisions": [
-        "✅ Checkout 8:30am — long drive day",
-        "✅ Grossglockner — Kaiser-Franz-Josefs-Höhe is the main stop",
-        "🤔 Lago di Braies afternoon preview — only if arrive Sillian before 4pm"
+        "✅ MUST: Edelweiß-Spitze (2,571m) — highest car-accessible point · 37 peaks visible",
+        "✅ MUST: Kaiser-Franz-Josefs-Höhe — Pasterze Glacier platform · ibex on the rocks",
+        "🤔 Loacker Café Bolzano — optional espresso + wafer stop on drive to Sillian"
       ],
       "timeline": "8:30am ▸ drive ▸ 9:45am Grossglockner toll ▸ KFJ Höhe ▸ Heiligenblut ▸ Lienz ▸ 3:30pm Sillian"
     },
@@ -815,18 +821,18 @@
             "🥾 <strong>Braies lake circuit</strong> — <strong>3.5km / 2.2mi</strong> · flat · ~1hr · pure silence · nobody there · <strong>Croda del Becco (2,810m) towers directly above</strong> — admire it from the shore, not the summit",
             "Drive <strong>20 min</strong> → <strong>Lago di Misurina</strong> · quick stop on the way · turquoise lake mirroring the Tre Cime · the “pearl of the Dolomites” · photos from the shore · 10 min",
             "⭐ <strong>Lago di Misurina</strong> — calm emerald waters · Sorapis massif reflection · one of the most photographed lakes in the Dolomites · no hiking needed",
-            "Drive <strong>10 min</strong> → <strong>Rifugio Auronzo</strong> via toll road · €30 · arrive ~8:30am · park early before crowds",
+            "⚠️ <strong>Rifugio Auronzo parking — MUST PRE-BOOK</strong> — book at auronzo.it (Municipality of Auronzo website) · €30 toll · cameras read your plate at the gate · without reservation you WILL be turned away even before 9am · book weeks in advance for July · includes parking at the rifugio",
             "⭐ <strong>Cadini di Misurina viewpoint — Trail 117</strong> — <strong>20 min hike from Rifugio Auronzo</strong> · follow signs for path 117/Fonda Savio heading east · rocky ridgeline traverse · famous “ski jump” viewpoint of the spires · Lord of the Rings scenery · jaw-dropping · do this FIRST while legs are fresh · <a href='https://www.alltrails.com/trail/italy/veneto/rifugio-auronzo-cadini-di-misurina' target='_blank'>AllTrails ↗</a>",
             "🥾 <strong>Trail 117 — Cadini hike</strong> — <strong>4–5km / 2.5–3.1mi RT</strong> · 40–45 min each way · rocky + narrow exposed final section · moderate difficulty · completely worth it · best view of the entire trip",
             "➕ <strong>Optional: Short Tre Cime loop — Forcella Lavaredo viewpoint</strong> — Trail 101 · walk counterclockwise from Rifugio Auronzo · <strong>~1.6km / ~1mi RT</strong> · 20–25 min to Forcella Lavaredo (2,454m) · the highest point on the full circuit · iconic front-on view of all three peaks · turn back here · no need for the full 10km loop",
             "⭐ <strong>Forcella Lavaredo</strong> — best single viewpoint in the entire Dolomites · all three Cime framed perfectly · ~40–50 min round trip from car park",
             "Drive back <strong>30 min</strong> → <strong>Prato Piazza plateau</strong> · park at Rifugio Prato Piazza · arrive ~11:00am",
             "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
-            "➕ <strong>Optional: Prato Piazza loop walk</strong> — 1hr · flat · free · or just coffee at Rifugio + views · skip if short on time",
+            "➕ <strong>Optional: Prato Piazza loop walk</strong> — 1hr flat walk · best free non-technical Dolomites viewpoint · Tre Cime looming ahead · skip if short on time",
             "<strong>Lunch</strong> at Rifugio Prato Piazza (~1hr) · cash",
-            "Drive <strong>45 min</strong> west → <strong>Cortina d’Ampezzo</strong> · Corso Italia piazza · Tofane peaks framing the town · espresso stop · ~45 min",
-            "⭐ <strong>Cortina d’Ampezzo</strong> — the queen of the Dolomites · elegant mountain town · a perfect coffee break after a big morning",
-            "Drive <strong>20 min</strong> west → <strong>Passo Falzarego (2,105m)</strong> · dramatic rock formations · Lagazuoi massif · quick photo stop · 15 min",
+            "➕ <strong>Optional: Cortina d'Ampezzo</strong> — elegant mountain town · espresso on Corso Italia · Tofane peaks framing the piazza · add 45min if energy allows · skip if running late for Collalbo check-in",
+            "➕ <strong>Optional: Cortina d'Ampezzo</strong> — elegant mountain town · espresso on Corso Italia · Tofane peaks framing the piazza · add 45min if energy allows · skip if running late for Collalbo check-in",
+            "➕ <strong>Optional: Passo Falzarego photo stop</strong> — 2,105m · dramatic rock formations · quick 10min stop · ⚠️ Lagazuoi cable car moved to Day 11 optional — better fit with Seceda day",
             "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — if energy allows after a 5am start · Rifugio Lagazuoi · WWI tunnel galleries (~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm · adds ~1.5hrs",
             "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
             "Drive <strong>45 min</strong> → <strong>Collalbo, Renon</strong> · check in Kaiserau 1907 · arrive ~5:30pm · ✅ Confirmed · check-in 15:00–22:00",
@@ -867,9 +873,9 @@
         "driveTime": "~5h total driving · many short hops"
       },
       "keyDecisions": [
-        "✅ 5am alarm — Braies gate opens 7:30am, be inside before",
-        "✅ Cadini Trail 117 — do this FIRST while legs are fresh",
-        "🤔 Lagazuoi cable car — only if energy allows after 12hrs on feet"
+        "✅ PRE-BOOK Rifugio Auronzo parking NOW at auronzo.it — cameras turn away cars without reservation",
+        "✅ Lago di Braies 5am · Cadini Trail 117 · Prato Piazza",
+        "🤔 Cortina d'Ampezzo + Lagazuoi (Day 11) — optional · skip if tired after 5am start"
       ],
       "timeline": "5am ▸ Braies sunrise ▸ Misurina ▸ 8:30am Cadini ▸ Prato Piazza ▸ Cortina ▸ Falzarego ▸ Gardena ▸ 5:30pm Collalbo"
     },
@@ -882,6 +888,7 @@
         {
           "heading": null,
           "items": [
+            "➕ <strong>Optional: Lagazuoi cable car (2,752m) + Falzarego</strong> — if driving from Sillian → Ortisei add 30min detour via Passo Falzarego · Lagazuoi = highest accessible viewpoint in Western Dolomites · WWI tunnel galleries · allow 1.5hrs total · only do this if departing Sillian by 6:30am",
             "Leave <strong>Collalbo 7:30am</strong> · drive <strong>20 min</strong> → <strong>Ortisei, Val Gardena</strong> · park at Parkgarage Seceda · ⚠️ pre-book Seceda timed slots at seceda.it",
             "⭐ <strong>Seceda cable car</strong> (Ortisei → 2,519m) · 15-min ride · €59/adult · Fermeda Towers + Sassolungo panorama · most iconic jagged-peak view in the entire Dolomites · hike Trail 1 to Seceda summit (10 min from top station)",
             "⚠️ <strong>Forcella Pana ridgeline (Trail 2)</strong> — <em>currently closed due to landslide activity</em> · check val-gardena.com before visiting · if open: 10 min from top station · Fermeda Towers close-up · Sassolungo panorama · ~1hr easy",
@@ -891,6 +898,7 @@
             "Drive <strong>6 km</strong> further up valley → <strong>Parkplatz Zanser Alm / Malga Zannes</strong> · trailhead for Adolf Munkel Trail · paid parking",
             "🥾 <strong>Adolf Munkel Trail — Trail 35 (Via delle Odle)</strong> — <strong>out-and-back to Rifugio Odle</strong> · ~3.5km each way · <strong>4.4 miles / 7km RT</strong> · easy-moderate · Trail #6 from Zanser Alm → Trail #35 to Rifugio Odle · return same way (Trail #35 → #6) · forest + alpine meadows · directly below jagged Odle/Geisler peaks",
             "⭐ <strong>Rifugio Odle / Geisler Alm (1,986m)</strong> — halfway point on Trail 35 · Geislerkino viewpoint · best seats in the Dolomites · Kaiserschmarrn · cash · lunch here · open Jun–Oct",
+            "⭐ <strong>Renon Earth Pyramids (Erdpyramiden)</strong> — start from Collalbo · Trail 24 · 2.9mi / 4.7km RT · easy · ~1.5hrs · 25,000-year-old glacial clay pinnacles — highest + most dramatic in Europe · trail flat enough for a stroller · Dolomites + Schlern backdrop · perfect evening walk right from the hotel · no car needed · free",
             "Drive <strong>45 min</strong> → <strong>Collalbo</strong> · arrive ~7:00pm · dinner · Night 2"
           ]
         }
@@ -936,9 +944,9 @@
       "dayLabel": "11",
       "flag": "🇦🇹",
       "keyDecisions": [
-        "✅ Seceda — pre-book timed slot at seceda.it",
-        "⚠️ Forcella Pana (Trail 2) closed — do not attempt",
-        "✅ Adolf Munkel Trail 35 — out-and-back to Rifugio Odle, 4.4mi"
+        "✅ Seceda timed slot — pre-book at seceda.it · park at Parkgarage Seceda Ortisei",
+        "✅ Adolf Munkel Trail 35 — out-and-back to Rifugio Odle · 4.4mi · afternoon",
+        "✅ Renon Earth Pyramids evening walk — Trail 24 from Collalbo · 1.5hrs · free · no car"
       ],
       "timeline": "7:30am ▸ Ortisei ▸ Seceda cable car ▸ Trail 1 ▸ Rifugio Firenze lunch ▸ 1pm Val di Funes ▸ Adolf Munkel ▸ 7pm Collalbo"
     },
@@ -958,6 +966,8 @@
         {
           "heading": null,
           "items": [
+            "⚠️ <strong>P2 Compatsch parking — PRE-BOOK REQUIRED 2026</strong> — book online before arrival · €30/day · cameras at gate read your plate · no reservation = turned away even before 9am · book at seiseralm.it or skiarea.it · new system from summer 2026 · fills quickly in July",
+            "💳 <strong>Brenner Pass Digital Flex Toll (if returning via Brenner)</strong> — purchase \"Digital Flex\" toll online in advance at brenner.com · cameras read your plate · drive through green \"Video Toll\" lanes without stopping · saves 20–30min queuing · needed on the drive Collalbo → Finkenberg via Brenner today · buy at autobrennero.it before Jun 30",
             "Walk <strong>5 min</strong> to Siusi/Seis cable car station · ride up to <strong>Alpe di Siusi (Compatsch, 1,844m)</strong> · ~€20 return · opens 8:00am",
             "⭐ <strong>Alpe di Siusi (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
             "🥾 <strong>Bullaccia Loop — Trail PU (Puflatschumrundung)</strong> — <strong>4 miles / 6.4km</strong> · ~2hrs · easy · start from Bullaccia cable car top station · 360° panorama: Sciliar, Sassolungo, Sassopiatto, Odle peaks · passes Witches’ Benches (Hexenbänke) rock formations · Rifugio Bullaccia coffee stop · suitable for all ages",
@@ -998,9 +1008,9 @@
         "driveTime": "~1h 45m · Collalbo → Finkenberg via Brenner"
       },
       "keyDecisions": [
-        "✅ Cable car up by 8:30am — back down by 12:30pm",
-        "✅ Bullaccia Trail PU — 4mi loop from cable car top",
-        "🤔 Schlern approach — only if time after Rifugio Zallinger lunch"
+        "⚠️ P2 Compatsch parking — pre-book at seiseralm.it · €30 · cameras enforce · no walk-ups",
+        "💳 Buy Brenner Digital Flex toll before trip at autobrennero.it · saves 30min at border",
+        "✅ Bullaccia Loop Trail PU · Rifugio Zallinger lunch · cable car down by 12:30pm"
       ],
       "timeline": "8:30am ▸ Siusi cable car ▸ Bullaccia loop ▸ Rifugio Zallinger lunch ▸ 12:30pm down ▸ drive 1.5hrs ▸ 2:30pm Finkenberg"
     },
@@ -1025,7 +1035,7 @@
             "⭐ <strong>Kebema Suspension Bridge (Olperer Panoramabrücke)</strong> — 3–4 min past the hut · floats in mid-air above the glacier valley · one of the most dramatic viewpoints in the Alps",
             "<strong>Lunch at Olpererhütte</strong> — Kaiserschmarrn · cash only · ~1hr · refill water at hut spring",
             "Descent <strong>~1hr</strong> · back at car <strong>~2:30pm</strong> · drive <strong>45 min</strong> → <strong>Achensee</strong>",
-            "⭐ <strong>Achensee — Austria's largest mountain lake</strong> · electric turquoise water · dramatic cliffs · Pertisau village · <strong>historic steam boat trip</strong> (Achenseebahn/Achensee Schifffahrt) · ~1hr on the water · completely different feel after the Dolomites",
+            "➕ <strong>Optional: Achensee steamboat</strong> — Austria's largest mountain lake · day-of tickets fine · no pre-booking needed · skip if short on time after Olpererhütte descent · Pertisau village instead",
             "Drive <strong>40 min</strong> → <strong>Swarovski Crystal Worlds (Kristallwelten), Wattens</strong> · arrive ~5:30pm · open until 7pm",
             "⭐ <strong>Swarovski Crystal Worlds</strong> — giant's garden · 17 crystal chambers underground · largest crystal in the world · kids love the magic mirrors · ~€22/adult · ~€12/child · ~1hr",
             "Drive <strong>45 min</strong> west → <strong>Bichlbach</strong> · arrive ~7:30pm · check in Landhaus Bichlbach · ✅ Confirmed · early night · Seebensee tomorrow"
@@ -1069,9 +1079,9 @@
         "driveTime": "~2h 30m incl. Achensee + Swarovski stops"
       },
       "keyDecisions": [
-        "✅ Schlegeis — park before 9am to avoid toll queue",
-        "✅ Olpererhütte Trail 502 — 600m gain, allow 2hrs up",
-        "🤔 Swarovski Crystal Worlds — kids enjoy it, ~1hr enough"
+        "✅ Schlegeis €17 — park before 9am · Olpererhütte hike Trail 502",
+        "🤔 Achensee steamboat — optional · day-of fine · skip if tired",
+        "✅ Swarovski Crystal Worlds (~5:30pm) · drive to Bichlbach"
       ],
       "timeline": "8am ▸ Finkenberg ▸ Schlegeis ▸ Olpererhütte hike ▸ 2:30pm Achensee ▸ Swarovski ▸ 7:30pm Bichlbach"
     },
@@ -1094,10 +1104,11 @@
             "Leave <strong>Bichlbach 8:30am</strong> · drive <strong>5 min</strong> → Ehrwald · park at Ehrwalder Almbahn valley station · arrive ~8:35am",
             "⭐ <strong>Ehrwalder Almbahn cable car</strong> up to mountain station · ~€21.50 return · Zugspitze massif looms directly above · 10 min ride",
             "⭐ <strong>Seebensee</strong> — Trail · <strong>~1.5km / ~1mi</strong> easy gravel path from top station · turquoise glacial lake at 1,657m · Zugspitze reflected in the water · wildflower meadows · bench at the shore",
-            "🥾 <strong>Drachensee + Coburger Hütte</strong> — Trail · <strong>~1km / ~0.6mi</strong> steep 30–45min climb (260m) from Seebensee · Dragon Lake of dark emerald colour · dramatic boulder-strewn landscape · Coburger Hütte refuge at the top",
-            "Lunch at Coburger Hütte — Kaiserschmarrn · Tiroler Gröstl · cash only · glacier and valley views · ~1hr",
+            "⭐ ⭐ <strong>Lunch at Coburger Hütte (2,026m)</strong> — MUST · Kaiserschmarrn here is legendary — fluffy shredded pancake with rum raisins + powdered sugar · Tiroler Gröstl also excellent · cash only · glacier + valley views · one of the best mountain lunches in the Alps · allow 1hr · ⚠️ bring €40–50 cash · ATM in Bichlbach or Ehrwald evening before",
+            "⭐ ⭐ <strong>Lunch at Coburger Hütte (2,026m)</strong> — MUST · Kaiserschmarrn here is legendary — fluffy shredded pancake with rum raisins + powdered sugar · Tiroler Gröstl also excellent · cash only · glacier + valley views · one of the best mountain lunches in the Alps · allow 1hr · ⚠️ bring €40–50 cash · ATM in Bichlbach or Ehrwald evening before",
             "Descent ~1.5hrs · back at Ehrwald valley by 2:30pm",
-            "Drive <strong>5 min</strong> → <strong>Bichlbach</strong> · back at Landhaus by 3:00pm · relax · pack bags · early dinner · alarm 7:00am tomorrow · Neuschwanstein + Rhine Falls + ZRH"
+            "Drive <strong>5 min</strong> → <strong>Bichlbach</strong> · back at Landhaus by 3:00pm · relax · pack bags · early dinner · alarm 7:00am tomorrow · Neuschwanstein + Rhine Falls + ZRH",
+            "⭐ <strong>Sunset at Heiterwanger See</strong> — easy 20min walk from Bichlbach along Panoramaweg · crystal-clear turquoise lake · Zugspitze massif reflected in still water · free · flat path around the lake · golden hour from western shore · perfect last evening wind-down before the big Day 15 drive · Hotel Fischer am See terrace for a drink"
           ]
         }
       ],
@@ -1138,9 +1149,9 @@
         "driveTime": "~30m · just Bichlbach ↔ Ehrwald"
       },
       "keyDecisions": [
-        "✅ Ehrwalder Almbahn up — 5min drive from Bichlbach",
-        "✅ Seebensee + Drachensee — short hike, both worth it",
-        "✅ Pack tonight — early start tomorrow for Neuschwanstein"
+        "✅ Ehrwalder Almbahn up · Seebensee · push to Drachensee if energy",
+        "✅ Coburger Hütte Kaiserschmarrn — bring cash · legendary mountain lunch",
+        "✅ Heiterwanger See sunset walk — 20min from hotel · pack tonight · alarm 7am"
       ],
       "timeline": "8:30am ▸ Ehrwald ▸ cable car ▸ Seebensee ▸ Drachensee ▸ Coburger Hütte lunch ▸ 2:30pm back ▸ pack ▸ early night"
     },
@@ -1170,7 +1181,7 @@
             "⭐ <strong>Berggasthaus Aescher</strong> — iconic restaurant wedged into a 100m vertical cliff since 1860 · featured on National Geographic cover · Appenzeller cheese dishes · no reservations · first come first served · ~1hr",
             "Walk back up to Ebenalp top station (~25 min) · cable car down · depart Wasserauen <strong>3:00pm</strong>",
             "➕ <strong>Optional: Rhine Falls</strong> — drive <strong>45 min</strong> north → Rheinfall, Neuhausen am Rheinfall · Europe’s largest waterfall · boat to centre rock ~€7 · adds 1hr total · skip if tired",
-            "Drive <strong>1hr 15min</strong> → <strong>ZRH Airport</strong> · return Hertz car (Conf. L5350959316) · arrive ~4:15pm (or ~5:15pm if Rhine Falls)",
+            "➕ <strong>Optional: Rhine Falls</strong> — Drive 1hr 15min → ZRH Airport · return Hertz car (Conf. L5350959316) · arrive ~4:15pm (or ~5:15pm if Rhine Falls)",
             "Check in <strong>Airport Hotel Zurich</strong> · ✅ Confirmed · Lindbergh-Platz 1, Glattbrugg · pack carefully · charge all devices · early dinner",
             "⚠️ <strong>FI571 departs ZRH 7:55am → KEF → MCO 8:50pm</strong> · check in by 6:00am · <strong>alarm 5:00am</strong>"
           ]
@@ -1217,9 +1228,9 @@
         "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH"
       },
       "keyDecisions": [
-        "✅ Checkout 8am — 45min drive to Neuschwanstein",
-        "✅ Marienbrücke — 10min walk above castle, the iconic shot",
-        "🤔 Rhine Falls vs Ebenalp — pick one, not both"
+        "✅ Checkout 8am · 45min drive to Neuschwanstein · 9:30am entry booked",
+        "✅ Marienbrücke — 10min walk above castle · the iconic photo",
+        "🤔 Rhine Falls vs Ebenalp — pick one · Rhine Falls adds 45min detour north"
       ],
       "timeline": "8am ▸ checkout ▸ 8:45am Neuschwanstein ▸ 11:30am drive ▸ 1pm Ebenalp ▸ Aescher ▸ 3pm drive ▸ 4:15pm ZRH hotel"
     },
@@ -1391,6 +1402,20 @@
       "ref": null,
       "deadline": "Before departure",
       "link": null
+    },
+    {
+      "id": "compatsch_parking",
+      "label": "🅿️ P2 Compatsch parking — pre-book online · Jul 1",
+      "status": "urgent",
+      "ref": "Book at seiseralm.it · €30/day · cameras enforce · new summer 2026 system",
+      "deadline": "Book ASAP — Jul 1 is summer peak"
+    },
+    {
+      "id": "brenner_toll",
+      "label": "💳 Brenner Pass Digital Flex toll — buy online",
+      "status": "pending",
+      "ref": "autobrennero.it · cameras read plate · skip queue · needed Jun 30→Jul 1",
+      "deadline": "Buy before Jun 30"
     }
   ],
   "budget": [
