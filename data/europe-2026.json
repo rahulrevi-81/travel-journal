@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T02:47:06Z",
+    "_updated": "2026-05-12T02:57:18Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -243,7 +243,7 @@
             "Drive <strong>20 min</strong> → <strong>Skógafoss</strong> — climb the 527 steps for the top view · evening light is spectacular · <strong>8:15pm</strong> (~45 min)",
             "Drive <strong>15 min east</strong> → <strong>Reynisfjara black sand beach</strong> — basalt columns, Reynisdrangar sea stacks · stunning in evening light · (~25 min)",
             "Drive <strong>10 min</strong> → <strong>Vík village</strong> — red-roofed church viewpoint · quick stop (~15 min)",
-            "Drive <strong>10 min east</strong> → <strong>Room in Skeidflot, Skeidflot 871</strong> — check in <strong>~9:30pm</strong> · hosted by Arnar · Airbnb ✅"
+            "🏠 <strong>Room in Skeidflot</strong> — ✅ Night 1 · 📍 Skeidflot 871, Mýrdalur, Iceland · 📞 Airbnb · check in ~9:30pm · hosted by Arnar"
           ]
         },
         {
@@ -256,7 +256,7 @@
             "Drive <strong>30 min east</strong> → <strong>Svínafellsjökull Glacier</strong> — 2km side road off Ring Road · 15–20 min walk to viewpoint · deep blue glacial ice + jagged black peaks · Game of Thrones S7 + Interstellar filming location · ⚠️ viewpoint only (rockfall risk advisory) · free · ~45 min total",
             "Drive <strong>1hr east</strong> → <strong>Jökulsárlón Glacier Lagoon</strong> — floating blue icebergs at the edge of Vatnajökull · walk the lagoon shore · seals basking on the ice · truly otherworldly · (~45 min)",
             "Cross the road → <strong>Diamond Beach</strong> — ice diamonds scattered across jet-black volcanic sand · every piece unique · constantly changing with the tides · free · (~30 min)",
-            "Drive <strong>~2hrs west</strong> back along Ring Road → <strong>BergOne, Ytri-Njarðvík</strong> · check in <strong>~5:00pm</strong> ✅",
+            "🏠 <strong>BergOne, Ytri-Njarðvík</strong> — ✅ Night 2 · 📍 1 Bergás, 260 Ytri-Njarðvík, Iceland · 📞 Booking.com · check in ~5:00pm",
             "Evening <strong>6:30pm</strong>: drive 20 min → <strong>Reykjanes Peninsula golden hour</strong> — Reykjanesviti lighthouse + Bridge Between Continents · 24hr June daylight · spectacular late light",
             "Early night — <strong>5:15am alarm</strong> tomorrow for KEF"
           ]
@@ -338,7 +338,7 @@
             "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
             "➕ <strong>Optional:</strong> Drive ~1hr → Lake Thun (Thunersee) viewpoint near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval Spiez Castle on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min) · only if arriving Lauterbrunnen before 6pm",
             "🛒 <strong>Aldi Suisse, Interlaken</strong> — Lindenallee, Interlaken · cheapest supermarket in Switzerland · open Mon 8am–8pm ✅ · 5 min off route · buy Swiss days only (Jun 22–24) · do the BIG shop in Berchtesgaden Germany Jun 24 — prices 35% cheaper · allow ~45min",
-            "Drive <strong>~1h 45m</strong> → <strong>Camping Jungfrau, Lauterbrunnen</strong> · check in · arrive <strong>~5:30–6:00pm</strong> ✅",
+            "🏕 <strong>Camping Jungfrau, Lauterbrunnen</strong> — ✅ Nights 3–4 · 📍 Weid 406, 3822 Lauterbrunnen, Switzerland · 📞 +41 33 856 20 10 · reception@camping-jungfrau.ch · Check-in 15:00–18:30 · arrive ~5:30pm",
             "⭐ <strong>Staubbach Falls, Lauterbrunnen</strong> — 300m freefall straight over the village · walk to the base in 10 min from campsite · golden hour light hits the falls perfectly · free · do this evening on arrival — saves Day 5 morning time",
             "Dinner at campsite or nearby Lauterbrunnen village · early night — big Day 4 tomorrow"
           ]
@@ -471,7 +471,7 @@
           "items": [
             "Leave <strong>Camping Jungfrau 8:30am</strong> · walk/drive <strong>5 min</strong> → Lauterbrunnen village · park",
             "⭐ <strong>Trümmelbach Falls</strong> — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
-            "Drive ~3hrs northeast → Berchtesgaden · check in One-Bedroom Apartment ✅ · Kälbersteinstraße 4 · check-in 16:00–20:00",
+            "🏠 <strong>One-Bedroom Apartment, Berchtesgaden</strong> — ✅ Nights 5–6 · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · 📞 Booking.com message host · Check-in 16:00–20:00",
             "<strong>Dinner</strong> — Berchtesgaden (~1hr)"
           ]
         }
@@ -544,7 +544,7 @@
             "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first afternoon bus ~1:00pm</strong> · elevator through the mountain · summit 1,834m · panoramic view over Berchtesgaden, Königssee and the Alps · <strong>~2hrs</strong>",
             "➕ <strong>Optional:</strong> Drive 15 min → Hintersee + Zauberwald (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
             "⭐ <strong>Rossfeld Panorama Road</strong> (Roßfeldpanoramastraße) — Germany's highest panoramic toll road · 1,570m · 15.4km loop · €9/car toll · pay at north tollbooth Roßfeldstraße 150 · 360° views: Hoher Göll · Kehlstein · Watzmann · Berchtesgaden valley · clear days: see Salzburg · straddle the D/Ö border stone at the summit car park · allow ~1hr incl. stops · do after Eagle's Nest — same area · no booking needed",
-            "🏠 <strong>Night 2 Berchtesgaden Apartment</strong> ✅ · check-in 16:00–20:00 · Kälbersteinstraße 4"
+            "🏠 <strong>Night 2 — Berchtesgaden Apartment</strong> — ✅ Already checked in · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · Check-in 16:00–20:00"
           ]
         }
       ],
@@ -607,7 +607,7 @@
             "⭐ <strong>Wolfgangsee</strong> — turquoise lake · Schafberg mountain backdrop · lakefront promenade · coffee · 30min",
             "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~5:00pm · ⚠️ P1/P2 parking or Obertraun + ferry",
             "⭐ <strong>Hallstatt golden hour lakefront</strong> — best light of the day · market square · lakeside walk · dinner",
-            "Drive <strong>10 min</strong> south → <strong>Kaiserblick Goisern</strong> ✅ · key box at entrance · <strong>Night 1 of 2</strong>"
+            "🏠 <strong>Kaiserblick Goisern</strong> — ✅ Night 1 of 2 · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 📞 Airbnb · key box at entrance · Check-in 14:00–20:00"
           ]
         }
       ],
@@ -672,7 +672,7 @@
             "⭐ <strong>Hallstatt Skywalk viewpoint</strong> — 20 min walk up from village · 360° panorama of Hallstatt and the lake far below · best morning light · completely free",
             "⭐ <strong>Beinhaus (Bone Chapel)</strong> — over <strong>1,200 painted skulls</strong> decorated with names, dates and flowers · unique in the world · 10 min walk from market square · small entry fee · eerie and deeply moving",
             "➕ <strong>Optional:</strong> Hallstatt Salt Mine (Salzwelten) — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · book online at salzwelten.at · first entry 9am sharp · arrive counter by 8:45am",
-            "<strong>2nd night Kaiserblick Goisern</strong> ✅ · already checked in · drive 10 min back from Hallstatt/Obertraun"
+            "🏠 <strong>Night 2 — Kaiserblick Goisern</strong> — ✅ Already checked in · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 📞 Airbnb · drive 10 min back from Hallstatt/Obertraun"
           ]
         }
       ],
@@ -744,7 +744,7 @@
             "⭐ ⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — MUST STOP · Pasterze Glacier viewing platform · Austria's longest glacier · ibex often visible on the rocks · Austria's most dramatic alpine viewpoint · allow 45min",
             "Drive <strong>1hr</strong> east → <strong>Sillian</strong>, East Tyrol, Austria 🇦🇹 · arrive ~3:30pm",
             "➕ <strong>Optional: Loacker Café, Piazza Walther, Bolzano</strong> — South Tyrolean wafer + chocolate brand · flagship café · espresso + Loacker wafers + krapfen · Piazza Walther 11, Bolzano · open Mon–Sat 8am–7pm · adds ~30min + 20min detour off route",
-            "Check in <strong>Hotel Schwarzer Adler Sillian</strong> · ✅ Confirmed · $115 / €99.40 · check-in 16:00–21:00 · Sillian 12, 9920 Sillian",
+            "🏠 <strong>Hotel Schwarzer Adler, Sillian</strong> — ✅ Confirmed · $115 / €99.40 · 📍 Sillian 12, 9920 Sillian, Austria · 📞 +43 4842 6214 · info@schwarzeradler-sillian.at · Check-in 16:00–21:00",
             "⭐ <strong>Optional: drive 25min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · <strong>Località Braies di Sotto 1, 39030 Braies (Prags)</strong> · GPS 46.6944°N 12.0853°E",
             "Dinner in Sillian · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
           ]
@@ -823,7 +823,7 @@
             "➕ <strong>Optional: Passo Falzarego photo stop</strong> — 2,105m · dramatic rock formations · quick 10min stop · ⚠️ Lagazuoi cable car moved to Day 11 optional — better fit with Seceda day",
             "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — if energy allows after a 5am start · Rifugio Lagazuoi · WWI tunnel galleries (~€20) · panorama over 8 Dolomite groups · last cable car ~5:30pm · adds ~1.5hrs",
             "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
-            "Drive <strong>45 min</strong> → <strong>Collalbo, Renon</strong> · check in Kaiserau 1907 · arrive ~5:30pm · ✅ Confirmed · check-in 15:00–22:00",
+            "🏠 <strong>Kaiserau 1907, Collalbo</strong> — ✅ Confirmed · $352 / €354.56 · 📍 Via Peter Mayr 65, 39054 Collalbo (Renon), Italy · 📞 +39 0471 356 xxx · Booking.com · Check-in 15:00–22:00 · arrive ~5:30pm",
             "⭐ <strong>Collalbo / Renon plateau evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow · ~50min drive to Ortisei"
           ]
         }
@@ -963,7 +963,7 @@
             "🥾 <strong>Schlern massif approach</strong> (optional) — walk toward the dramatic flat-topped Schlern · Rifugio Bolzano views · ~1hr return",
             "⭐ <strong>Optional: e-bikes</strong> on the plateau — cover more ground · available at Compatsch top station · reserve in advance",
             "Cable car back down by <strong>12:30pm</strong> · checkout Collalbo hotel · drive <strong>1hr 30min</strong> → <strong>Finkenberg</strong> via Bressanone → Brenner",
-            "Arrive Finkenberg <strong>~2:30pm</strong> · check in hotel · walk Hauptstraße · Tyrolean dinner · <strong>early night</strong> — Olpererhütte hike tomorrow"
+            "🏠 <strong>Keyone Rooms, Finkenberg</strong> — ✅ Confirmed · $176 / €152.92 · 📍 Dorf 131, 6292 Finkenberg, Austria · 📞 +43 5285 xxx · Booking.com · Check-in 16:00 · arrive ~2:30pm"
           ]
         }
       ],
@@ -1026,7 +1026,7 @@
             "➕ <strong>Optional: Achensee steamboat</strong> — Austria's largest mountain lake · day-of tickets fine · no pre-booking needed · skip if short on time after Olpererhütte descent · Pertisau village instead",
             "Drive <strong>40 min</strong> → <strong>Swarovski Crystal Worlds (Kristallwelten), Wattens</strong> · arrive ~5:30pm · open until 7pm",
             "⭐ <strong>Swarovski Crystal Worlds</strong> — giant's garden · 17 crystal chambers underground · largest crystal in the world · kids love the magic mirrors · ~€22/adult · ~€12/child · ~1hr",
-            "Drive <strong>45 min</strong> west → <strong>Bichlbach</strong> · arrive ~7:30pm · check in Landhaus Bichlbach · ✅ Confirmed · early night · Seebensee tomorrow"
+            "🏠 <strong>Landhaus Bichlbach</strong> — ✅ Confirmed · $467 / €405 · 📍 Siedlung 159, 6621 Bichlbach, Austria · 📞 +43 5674 xxx · Booking.com · Check-in 15:00–18:00 · arrive ~7:30pm"
           ]
         }
       ],
@@ -1169,7 +1169,7 @@
             "⭐ <strong>Berggasthaus Aescher</strong> — iconic restaurant wedged into a 100m vertical cliff since 1860 · featured on National Geographic cover · Appenzeller cheese dishes · no reservations · first come first served · ~1hr",
             "Walk back up to Ebenalp top station (~25 min) · cable car down · depart Wasserauen <strong>3:00pm</strong>",
             "➕ <strong>Optional: Rhine Falls</strong> — drive 45min north from Wasserauen → Rheinfall, Neuhausen am Rheinfall · Europe's largest waterfall by flow · boat ride to the rock in the middle · adds ~2hrs · only do this if skipping Ebenalp/Aescher · not both",
-            "Check in <strong>Airport Hotel Zurich</strong> · ✅ Confirmed · Lindbergh-Platz 1, Glattbrugg · pack carefully · charge all devices · early dinner",
+            "🏠 <strong>Airport Hotel Zurich</strong> — ✅ Confirmed · $198 / CHF 157.62 · 📍 Lindbergh-Platz 1, 8152 Glattbrugg, Switzerland · 📞 +41 44 808 00 00 · Check-in 15:00 · 5 min walk to ZRH terminal",
             "⚠️ <strong>FI571 departs ZRH 7:55am → KEF → MCO 8:50pm</strong> · check in by 6:00am · <strong>alarm 5:00am</strong>"
           ]
         }
