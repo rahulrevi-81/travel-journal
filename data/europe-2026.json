@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T14:20:21Z",
+    "_updated": "2026-05-12T16:54:46Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1405,9 +1405,9 @@
     {
       "id": "compatsch_parking",
       "label": "🅿️ P2 Compatsch parking — pre-book online · Jul 1",
-      "status": "urgent",
-      "ref": "Book at seiseralm.it · €30/day · cameras enforce · new summer 2026 system",
-      "deadline": "Book ASAP — Jul 1 is summer peak"
+      "status": "pending",
+      "ref": "Book at seiseralm.it · €30/day · cameras enforce · new summer 2026 system · opens late May",
+      "deadline": "Available from end of May 2026 · book immediately when open · seiseralm.it"
     },
     {
       "id": "brenner_toll",
@@ -1419,9 +1419,9 @@
     {
       "id": "rifugio_auronzo",
       "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime toll road",
-      "status": "urgent",
-      "ref": "Book at auronzo.it · Municipality of Auronzo · €30 · cameras enforce no-shows · fills weeks ahead in July",
-      "deadline": "Book ASAP — Jul dates sell out fast",
+      "status": "pending",
+      "ref": "Book at auronzo.it · Municipality of Auronzo · €30 · cameras enforce · opens early June",
+      "deadline": "Booking opens early June 2026 · book immediately when open · auronzo.it",
       "link": null
     },
     {
