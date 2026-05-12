@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-12T03:03:37Z",
+    "_updated": "2026-05-12T03:05:41Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -602,7 +602,7 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Hallein by 8:00am</strong> — check-out 08:00–11:00 · drive <strong>35 min</strong> west → <strong>Liechtensteinklamm, St. Johann im Pongau</strong> · arrive ~8:40am",
+            "Checkout <strong>Berchtesgaden Apartment</strong> by 8:00am — check-out 08:00–11:00 · drive 35 min west → Liechtensteinklamm, St. Johann im Pongau",
             "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · 444 stairs up + helix staircase · thundering waterfalls · narrow slot canyon · ~€8/adult · ~1.5hrs",
             "Drive <strong>45 min</strong> north → <strong>Salzburg</strong> · park Altstadtgarage B · arrive ~11:15am",
             "⭐ <strong>Salzburg old town</strong> — Getreidegasse · Mozart's birthplace exterior · Residenzplatz · Dom cathedral · ~1hr",
@@ -618,7 +618,7 @@
       "tags": [
         {
           "type": "alarm",
-          "text": "⏰ Checkout Hallein 8am · Liechtensteinklamm opens 8am · arrive early before tour groups"
+          "text": "⏰ Checkout Berchtesgaden 8am · Liechtensteinklamm opens 8am · arrive early before tour groups"
         },
         {
           "type": "alarm",
@@ -1099,7 +1099,7 @@
             "🥾 <strong>Drachensee (Dragon Lake)</strong> — Trail · ~1km / ~0.6mi steep 30–45min climb (260m) from Seebensee · glacial dragon lake in a high cirque · Zugspitze looming overhead · one of the most dramatic mountain lakes in Austria · push on if legs allow",
             "⭐ ⭐ <strong>Lunch at Coburger Hütte (2,026m)</strong> — MUST · Kaiserschmarrn here is legendary — fluffy shredded pancake with rum raisins + powdered sugar · Tiroler Gröstl also excellent · cash only · glacier + valley views · one of the best mountain lunches in the Alps · allow 1hr · ⚠️ bring €40–50 cash · ATM in Bichlbach or Ehrwald evening before",
             "Descent ~1.5hrs · back at Ehrwald valley by 2:30pm",
-            "Drive <strong>5 min</strong> → <strong>Bichlbach</strong> · back at Landhaus by 3:00pm · relax · pack bags · early dinner · alarm 7:00am tomorrow · Neuschwanstein + Rhine Falls + ZRH",
+            "Drive <strong>5 min</strong> → <strong>Bichlbach</strong> · back at Landhaus by 3:00pm · relax · pack bags · early dinner · alarm 7:00am · Neuschwanstein checkout · Neuschwanstein + Rhine Falls + ZRH",
             "⭐ <strong>Sunset at Heiterwanger See</strong> — easy 20min walk from Bichlbach along Panoramaweg · crystal-clear turquoise lake · Zugspitze massif reflected in still water · free · flat path around the lake · golden hour from western shore · perfect last evening wind-down before the big Day 15 drive · Hotel Fischer am See terrace for a drink"
           ]
         }
