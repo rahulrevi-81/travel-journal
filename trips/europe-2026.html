@@ -31,7 +31,7 @@
   .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 30%, rgba(107,143,113,0.1) 0%, transparent 50%); }
   .hero-flags { font-size: 28px; letter-spacing: 6px; margin-bottom: 20px; position: relative; }
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.1; margin-bottom: 16px; position: relative; }
-  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero h1 em { font-style: italic; color: var(--slate); }
   .hero-sub { font-size: 15px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; color: rgba(250,248,243,0.6); margin-bottom: 40px; position: relative; }
   .hero-stats { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; position: relative; }
   .stat { text-align: center; }
@@ -56,7 +56,7 @@
   .accom-table td { padding: 12px 12px; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: top; }
   .accom-table tr:hover td { background: var(--warm); }
   .accom-table .booked { color: var(--sage); font-weight: 500; font-size: 11px; }
-  .accom-table .pending { color: var(--gold); font-weight: 500; font-size: 11px; }
+  .accom-table .pending { color: var(--slate); font-weight: 500; font-size: 11px; }
   .accom-table .prop { font-weight: 500; }
   .accom-table .ref { font-size: 11px; color: var(--slate); }
   .stars { color: var(--gold); font-size: 11px; }
@@ -124,7 +124,7 @@
   .check-main { flex: 1; font-weight: 500; }
   .check-deadline { font-size: 11px; color: var(--slate); }
   .check-status-done    { font-size: 11px; color: var(--sage); font-weight: 500; }
-  .check-status-pending { font-size: 11px; color: var(--gold); }
+  .check-status-pending { font-size: 11px; color: #92400e; }
   .check-status-urgent  { font-size: 11px; color: var(--rust); font-weight: 600; }
   .check-link { font-size: 11px; color: var(--slate); text-decoration: none; }
   .check-link:hover { color: var(--ink); }
@@ -157,7 +157,7 @@
   .glance-table tr:nth-child(odd) td  { background: var(--warm); }
   .glance-table tr:nth-child(even) td { background: white; }
   .glance-table tr:hover td { background: #f0f7f1; }
-  .g-day  { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold); white-space: nowrap; font-size: 15px; vertical-align: middle !important; min-width: 50px; }
+  .g-day  { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ink); white-space: nowrap; font-size: 15px; vertical-align: middle !important; min-width: 50px; }
   .g-date { white-space: nowrap; color: var(--slate); font-size: 11px; vertical-align: middle !important; min-width: 70px; }
   .g-from { font-size: 11px; white-space: normal; vertical-align: middle !important; min-width: 90px; max-width: 120px; }
   .g-stay { font-size: 11px; color: var(--slate); white-space: normal; vertical-align: middle !important; min-width: 110px; max-width: 150px; }
@@ -374,7 +374,7 @@ if ('serviceWorker' in navigator) {
 
 <script>
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
-const DATA_FILE = '../data/europe-2026.json?v=20260512023141';
+const DATA_FILE = '../data/europe-2026.json?v=20260512024706';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
 const STORAGE_KEY = 'trip-highlights-europe-2026';
