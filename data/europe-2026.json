@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:47:16Z",
+    "_updated": "2026-05-13T00:50:11Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1120,7 +1120,7 @@
     {
       "dayLabel": "13",
       "date": "Jul 2",
-      "title": "Olpererhütte + Kebema → Achensee → Swarovski → Bichlbach",
+      "title": "High Bridges & Deep Lakes — Olpererhütte · Achensee · Swarovski → Bichlbach",
       "meta": "Jul 2 · Finkenberg → Schlegeis → Olpererhütte → Achensee → Swarovski → Bichlbach · 🚗 150 km / 93 mi · ~2h 30m incl. Achensee + Swarovski stops",
       "flag": "🇮🇹",
       "mapLinks": [
@@ -1133,38 +1133,41 @@
         {
           "heading": null,
           "items": [
-            "Leave Finkenberg <strong>8:00am</strong> · drive <strong>30 min</strong> → Schlegeis reservoir · ⚠️ park before 9am",
-            "⭐ <strong>Olpererhütte hike (Trail 502)</strong> — <strong>3km / 1.9mi</strong> each way · <strong>6km / 3.7mi RT</strong> · 600m elevation gain · ~1.5–2hrs up · rocky alpine ascent · Olperer glacier face above · Schlegeis turquoise far below",
-            "⭐ <strong>Kebema Suspension Bridge (Olperer Panoramabrücke)</strong> — 3–4 min past the hut · floats in mid-air above the glacier valley · one of the most dramatic viewpoints in the Alps",
-            "<strong>Lunch at Olpererhütte</strong> — Kaiserschmarrn · cash only · ~1hr · refill water at hut spring",
-            "Descent <strong>~1hr</strong> · back at car <strong>~2:30pm</strong> · drive <strong>45 min</strong> → <strong>Achensee</strong>",
-            "➕ <strong>Optional: Achensee steamboat</strong> — Austria's largest mountain lake · day-of tickets fine · no pre-booking needed · skip if short on time after Olpererhütte descent · Pertisau village instead",
-            "Drive <strong>40 min</strong> → <strong>Swarovski Crystal Worlds (Kristallwelten), Wattens</strong> · arrive ~5:30pm · open until 7pm",
-            "⭐ <strong>Swarovski Crystal Worlds</strong> — giant's garden · 17 crystal chambers underground · largest crystal in the world · kids love the magic mirrors · ~€22/adult · ~€12/child · ~1hr",
-            "🏠 <strong>Landhaus Bichlbach</strong> — ✅ Confirmed · $467 / €405 · 📍 Siedlung 159, 6621 Bichlbach, Austria · 📞 +43 5674 xxx · Booking.com · Check-in 15:00–18:00 · arrive ~7:30pm"
+            "⏰ <strong>8:00am — Depart Finkenberg</strong> — 20 min drive to the Schlegeis toll station · ⚠️ The Schlegeis road uses traffic lights for one-way tunnel sections · red light = up to 15 min wait · factor this into timing · aim to be at the dam by 8:45am",
+            "💳 <strong>8:30am — Schlegeis Alpine Road toll</strong> — €17 · pay at the gate (cash or card) · drive the tunnels to the dam (Stausee Schlegeis) · park at the dam car park · free once toll paid · 📸 arriving by 8:45am means reaching the Kebema bridge by ~10:15am — beats the midday photo queue which can be 45+ min long",
+            "🥾 <strong>9:00am — Olpererhütte Hike (Trail 502)</strong> — 3km / 1.9mi each way · 600m elevation gain · ~1.5hrs up · entirely uphill with no shade — bring plenty of water + sunblock · well-maintained trail · views of Schlegeis reservoir below grow with every step",
+            "⭐ ⭐ <strong>10:30am — Kebema Suspension Bridge (Olperer Panoramabrücke)</strong> — 3–4 min past the hut · floats in mid-air above the turquoise reservoir 600m below · \"the Instagram bridge of Austria\" · by midday the photo queue is 45+ min — arriving at 10:30am you beat the crowds · allow 20–30 min for photos",
+            "🍽️ <strong>11:00am — Lunch at Olpererhütte</strong> — private mountain hut · Kaiserschmarrn + Tiroler Gröstl · cash preferred (but Wi-Fi available — check your Neuschwanstein booking!) · allow 1hr · terrace has direct glacier views",
+            "🥾 <strong>1:30pm — Descent to the dam</strong> — ~1hr back down same trail · easier on the knees than going up · back at car ~2:30pm",
+            "⭐ <strong>Swarovski Crystal Worlds (Wattens)</strong> — 🌧️ <strong>Weather-dependent:</strong> if raining — go here · 17 underground crystal chambers · giant's garden · ~€22/adult · allow 1.5–2hrs · open until 7pm · no booking needed · if clear — skip it · your itinerary is already nature-heavy and you pass it en route anyway · 5 min off the A12 at Wattens exit",
+            "➕ <strong>Optional: Achensee steamboat (Pertisau)</strong> — 50 min drive north from Schlegeis · stunningly turquoise · Austria's largest mountain lake · ~€22/adult · day-of tickets fine · if kids are tired: skip the boat · instead: park in Pertisau + walk the lakeside promenade toward Gaisalm trail (20 min) — free · same turquoise views · no schedule pressure",
+            "⚠️ <strong>Fern Pass warning on drive to Bichlbach</strong> — one of the most congested roads in the Alps · slow-moving trucks in 2026 · expect delays on the pass itself · do not make a restaurant reservation in Bichlbach — aim for flexible evening · village Gasthäuser are relaxed about timing",
+            "🏠 <strong>~7:30pm — Landhaus Bichlbach</strong> — ✅ Confirmed · $467 / €405 · 📍 Siedlung 159, 6621 Bichlbach, Austria · 📞 +43 5674 xxx · check-in 15:00–18:00 · quiet village · perfect rest before Neuschwanstein · Heiterwanger See lake is a 20 min evening walk from the hotel",
+            "⭐ <strong>Heiterwanger See sunset walk</strong> — easy 20 min walk from Landhaus along Panoramaweg · crystal-clear turquoise lake · Zugspitze massif reflected in still water · flat path around the lake · golden hour from the western shore · perfect last evening wind-down before the final big day",
+            "🍔 <strong>Dinner + pack bags</strong> — Gasthof Bichlbach or hotel restaurant · pack bags tonight — checkout is 8am tomorrow · alarm 7am · Neuschwanstein 9:30am"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Leave Mayrhofen 8am · Schlegeis before 9am · back at car 2:30pm · keeps afternoon schedule"
+          "type": "warn",
+          "text": "⚠️ <strong>Schlegeis tunnel traffic lights</strong> — one-way sections · red light = up to 15 min wait · factor into morning timing · aim to be at the dam car park by 8:45am"
         },
         {
-          "type": "alarm",
-          "text": "💰 Schlegeis toll €17 cash · Olpererhütte cash only · Swarovski ~€22/adult €12/child · Nordkette ~€37 return"
+          "type": "warn",
+          "text": "⚠️ <strong>Fern Pass congestion 2026</strong> — slow trucks · one of the most congested alpine roads · flexible dinner only — no reservations · Bichlbach Gasthäuser are relaxed about timing"
         },
         {
-          "type": "alarm",
-          "text": "⭐ Nordkette: Hungerburgbahn from Congress station · last cable car up ~10:30pm · judge energy on the day — optional"
+          "type": "tip",
+          "text": "📱 <strong>At Olpererhütte: check Neuschwanstein booking</strong> — the hut has excellent Wi-Fi · confirm your 9:30am slot for tomorrow · cash preferred for food but cards accepted"
         },
         {
-          "type": "alarm",
-          "text": "⛵ Achensee boat — achensee.com · ~€15/adult · check schedule"
+          "type": "tip",
+          "text": "💰 <strong>Day 13 costs</strong> — Schlegeis toll €17 · Olpererhütte lunch ~€15–20pp (cash) · Achensee boat ~€22/adult (optional) · Swarovski ~€22/adult (weather backup) · Heiterwanger See free"
         },
         {
-          "type": "booking",
-          "text": "⏳ Book Innsbruck hotel Jul 2–3 · Hotel Weisses Kreuz / Goldener Adler / Penz Hotel"
+          "type": "done",
+          "text": "✅ Landhaus Bichlbach · Nights 1–2 · Siedlung 159, 6621 Bichlbach · check-in 15:00–18:00"
         }
       ],
       "summary": {
@@ -1182,11 +1185,11 @@
         "driveTime": "~2h 30m incl. Achensee + Swarovski stops"
       },
       "keyDecisions": [
-        "✅ Schlegeis €17 — park before 9am · Olpererhütte hike Trail 502",
-        "🤔 Achensee steamboat — optional · day-of fine · skip if tired",
-        "✅ Swarovski Crystal Worlds (~5:30pm) · drive to Bichlbach"
+        "✅ Arrive dam by 8:45am — reach Kebema bridge 10:30am · beats 45min photo queue by midday",
+        "🌧️ Swarovski: go if raining · skip if clear · 5min off A12 at Wattens · no booking needed",
+        "🤔 Achensee: if kids tired → skip boat · park Pertisau + Gaisalm promenade walk (free, same views)"
       ],
-      "timeline": "8am ▸ Finkenberg ▸ Schlegeis ▸ Olpererhütte hike ▸ 2:30pm Achensee ▸ Swarovski ▸ 7:30pm Bichlbach"
+      "timeline": "8am Finkenberg ▸ 8:30am Schlegeis toll €17 ▸ 9am Olpererhütte hike ▸ 10:30am Kebema bridge ▸ 11am lunch ▸ 1:30pm descent ▸ Swarovski (if rain) ▸ Achensee optional ▸ Fern Pass ▸ 7:30pm Bichlbach ▸ Heiterwanger See sunset"
     },
     {
       "dayLabel": "14",
