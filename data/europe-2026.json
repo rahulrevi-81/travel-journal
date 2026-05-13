@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:24:45Z",
+    "_updated": "2026-05-13T00:28:25Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -416,7 +416,7 @@
     {
       "dayLabel": "4",
       "date": "Jun 23",
-      "title": "Oeschinensee + Grindelwald First — Double Gondola Day",
+      "title": "Oeschinensee Heuberg Ridge + Grindelwald First — Double Gondola Day",
       "meta": "Jun 23 · Lauterbrunnen → Kandersteg (Oeschinensee) → Grindelwald First → Lauterbrunnen · 🚗 100 km / 62 mi · ~2h 30m incl. mountain roads",
       "flag": "🇨🇭",
       "warning": true,
@@ -430,27 +430,47 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Camping Jungfrau 8:00am</strong> · drive <strong>~45 min</strong> → Kandersteg",
-            "⭐ <strong>Oeschinensee gondola 8:30am slot</strong> — pre-booked timed entry · turquoise alpine lake at 1,578m enclosed by sheer 2,000m cliffs · ~CHF 35/adult · <strong>⚠️ book slot tonight at oeschinensee.skiperformance.com</strong>",
-            "🥾 <strong>Oeschinensee Panoramic Trail</strong> — take the <em>upper</em> panoramic path not the direct route · ridge walk with full Blüemlisalp massif panorama · ~1.5hr loop · more dramatic views than lakeside path · descend to lake edge for rowing boats + photos",
-            "Drive <strong>~1hr</strong> → Grindelwald · park at Firstbahn Talstation · arrive ~<strong>11:30am</strong>",
-            "⭐ <strong>Grindelwald Firstbahn gondola #238070 ✅</strong> — ride to <strong>First (2,168m)</strong> · Eiger directly opposite · spectacular arrival on the ridge",
-            "⭐ <strong>First Cliff Walk</strong> — suspended steel & glass walkway bolted to the sheer cliff face · vertigo-inducing views over the valley · ~30 min · free with gondola ticket",
-            "<strong>Lunch</strong> — Restaurant First on the ridge (~1hr)",
-            "🥾 <strong>Bachalpsee hike</strong> — Trail from First station · <strong>6km / 3.7mi RT</strong> to the iconic alpine lake · Eiger/Mönch/Jungfrau reflected in the water · <strong>6km / 3.7mi RT</strong> · ~1.5hrs",
-            "Gondola down · drive <strong>~1h</strong> back to <strong>Camping Jungfrau, Lauterbrunnen</strong> · arrive ~<strong>6:30pm</strong>",
-            "<strong>Dinner</strong> — campsite kitchen or Airtime Restaurant, Lauterbrunnen (~1hr)"
+            "⏰ <strong>7:30am — Depart Lauterbrunnen</strong> — 45 min scenic drive to Kandersteg via the Kandertal valley · bring packed picnic from Coop — fresh bread + Swiss cheese + fruit · no restaurant stop until Grindelwald",
+            "🚗 <strong>8:15am — Park at Oeschinen Talstation</strong> — Oeschinenstrasse 50, Kandersteg · parking ~CHF 8 · arrive early to guarantee a space · car park fills by 10am in summer",
+            "⭐ ⭐ <strong>8:30am — Oeschinensee gondola</strong> — ✅ Pre-booked · Order 254-SK2MH6 · CHF 125 · arrive at talstation by 8:15am · first lift = best chance of mirror-like reflections on the lake before the wind picks up",
+            "🥾 <strong>Heuberg Ridge Hike — Trail #8 (Priority)</strong> — from the gondola top follow signs for <em>Läger</em> then <em>Heuberg</em> · moderate · ~3hrs full loop · NOT the direct lakeside path · ⚠️ Some steep drop-offs near the cliffs — if anyone has severe vertigo stick to lower Trail #1 · the upper route gives the famous \"bird's eye\" view of the turquoise lake — far more dramatic",
+            "⭐ ⭐ <strong>10:00am — Heuberg Panoramic Viewpoint</strong> — arrive at the Heuberg cliffs · the lake appears 400m below you in full turquoise glory · Blüemlisalp glacier massif fills the horizon · one of the most dramatic alpine viewpoints in Switzerland · perfect picnic spot · allow 30 min",
+            "🥾 <strong>11:00am — Descent to lakeside</strong> — hike down to the shore · touch the glacial water (ice cold even in June) · rowing boats available to hire · picnic lunch here · allow 1hr total",
+            "🚗 <strong>12:00pm — Depart Kandersteg → Grindelwald</strong> — cable car down first · 1hr 15min drive · park at <strong>Parkhaus Eiger+</strong> or <strong>Sportzentrum</strong> near Firstbahn · ~CHF 10–15 · if both full: Grindelwald Grund → short train/bus up to Firstbahn · arrive ~1:15pm",
+            "⭐ ⭐ <strong>1:45pm — Grindelwald Firstbahn gondola</strong> — ✅ Booking #238070 · 2 adults + 2 children · ride to First (2,168m) · Eiger north face directly opposite · spectacular Bernese Alps panorama",
+            "⭐ ⭐ <strong>2:15pm — First Cliff Walk</strong> — suspended steel + glass walkway bolted to the sheer cliff face · Tissot-sponsored glass floor section — walk over 45m of air · vertigo-inducing but perfectly safe · allow 30 min · views of Grindelwald valley + Eiger + Wetterhorn",
+            "🥾 <strong>2:45pm — Bachalpsee hike</strong> — Trail from First station · 3km / 1.9mi one-way · gentle gravel path · ~45 min each way · ☁️ Even in late June: small snow patches possible — wear hiking boots with grip · cows with cowbells in the meadows by this date — classic Swiss mountain atmosphere",
+            "⭐ <strong>3:45pm — Bachalpsee \"Blue Jewel\"</strong> — Schreckhorn + Finsteraarhorn reflected in the still water · sit on the bank · allow 30–45 min · on calm days the Eiger reflection is perfect · turn back by 4:30pm latest to make the last gondola",
+            "⚠️ <strong>5:00pm — Back at First station</strong> — LAST gondola down is <strong>6:00pm</strong> — do not miss it · allow 45 min walk back from Bachalpsee · leave the lake by 4:30pm at the absolute latest",
+            "🚗 <strong>5:30pm — Gondola down → drive back</strong> — 20 min drive to Camping Jungfrau, Lauterbrunnen · arrive ~6:30pm",
+            "🍔 <strong>Dinner</strong> — campsite kitchen with Coop groceries · or <strong>Airtime Restaurant</strong> in Lauterbrunnen village (10 min walk) · early night — Day 5 is the long drive to Berchtesgaden"
           ]
         }
       ],
       "tags": [
         {
           "type": "done",
-          "text": "✅ <strong>Oeschinensee 8:30am</strong> — pre-booked · Order 254-SK2MH6 · CHF 125 · 08:30–10:00 Jun 23 · arrive Kandersteg by 8:15am"
+          "text": "✅ Oeschinensee gondola 8:30am · Order 254-SK2MH6 · CHF 125 · arrive Kandersteg by 8:15am"
         },
         {
-          "type": "booking",
-          "text": "✅ Grindelwald First gondola #238070 · Jun 23 · 2 adults + 2 children"
+          "type": "done",
+          "text": "✅ Grindelwald Firstbahn #238070 · Jun 23 · 2 adults + 2 children"
+        },
+        {
+          "type": "warn",
+          "text": "⚠️ <strong>Heuberg Trail #8 — steep drop-offs</strong> — moderate difficulty · if severe vertigo in the family, take lower Trail #1 to lake directly · Trail #8 has exposed cliff sections near the viewpoint"
+        },
+        {
+          "type": "tip",
+          "text": "🦶 <strong>Bachalpsee in late June</strong> — small snow patches still possible on the trail · hiking boots with grip essential · cows with cowbells in the meadows · bring layers — 2,168m = cold even in June"
+        },
+        {
+          "type": "tip",
+          "text": "🚗 <strong>Grindelwald parking 2026</strong> — very busy · Parkhaus Eiger+ or Sportzentrum first · if full: Grindelwald Grund → short train/bus to Firstbahn · CHF 10–15 either way"
+        },
+        {
+          "type": "tip",
+          "text": "🧺 <strong>Pack picnic tonight</strong> — Coop Lauterbrunnen · fresh bread + Swiss mountain cheese + fruit + water · eat at Heuberg viewpoint 10am · far better than any restaurant on the mountain"
         }
       ],
       "summary": {
@@ -477,11 +497,11 @@
         "driveTime": "~2h 30m incl. mountain roads"
       },
       "keyDecisions": [
-        "✅ Oeschinensee 8:30am — take UPPER panoramic trail not direct path · better views",
-        "✅ Grindelwald First gondola #238070 — ride to First (2,168m)",
-        "❌ Skip Grindelwald village — saves 30min · nothing essential there"
+        "✅ Heuberg Ridge Trail #8 — follow signs Läger → Heuberg · bird's-eye lake view · NOT the direct path",
+        "⚠️ Last gondola down from First is 6:00pm — leave Bachalpsee by 4:30pm latest",
+        "✅ Packed picnic at Heuberg viewpoint — bread + Swiss cheese from Coop last night"
       ],
-      "timeline": "8am ▸ drive Kandersteg ▸ 8:30am Oeschinensee ▸ 11:30am Grindelwald ▸ Cliff Walk ▸ Bachalpsee ▸ 6:30pm back"
+      "timeline": "7:30am Lauterbrunnen ▸ 8:15am Kandersteg park ▸ 8:30am Oeschinensee gondola ▸ Heuberg Ridge Trail #8 ▸ 10am viewpoint ▸ 11am lakeside picnic ▸ 12pm drive Grindelwald ▸ 1:45pm Firstbahn ▸ Cliff Walk ▸ Bachalpsee ▸ 4:30pm turn back ▸ 5pm First station ▸ 6:30pm Lauterbrunnen"
     },
     {
       "dayLabel": "5",
