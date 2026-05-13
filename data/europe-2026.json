@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:57:47Z",
+    "_updated": "2026-05-13T01:01:35Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1270,7 +1270,7 @@
     {
       "dayLabel": "15",
       "date": "Jul 4",
-      "title": "Bichlbach → Neuschwanstein → Ebenalp & Aescher Cliff → ZRH",
+      "title": "The Fairy Tale Finale — Neuschwanstein · Ebenalp · Aescher → ZRH",
       "meta": "Jul 4 · Bichlbach → Neuschwanstein → Ebenalp/Wasserauen → (Rhine Falls optional) → ZRH Airport · 🚗 280 km / 174 mi · ~3h 30m",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
@@ -1283,41 +1283,47 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Landhaus Bichlbach by 8:00am</strong> · check-out 08:00–10:00",
-            "Drive <strong>45 min</strong> → <strong>Neuschwanstein Castle</strong>, Schwangau 🇩🇪 · arrive ~8:45am · ⚠️ pre-book 9:30am entry at tickets.hohenschwangau.de",
-            "⭐ <strong>Neuschwanstein Castle</strong> — King Ludwig II fairy-tale castle · most visited castle in Germany · interior tour ~35min · €15/adult · €13/child",
-            "⭐ <strong>Marienbruecke (Mary's Bridge)</strong> — 10min walk above castle · classic postcard view of Neuschwanstein framed by gorge + Alps · must do",
-            "Depart Neuschwanstein <strong>11:30am</strong> · drive <strong>1hr 30min</strong> southeast → <strong>Wasserauen</strong>, Appenzell 🇨🇭 · park at Schwendetalstrasse 82 · arrive ~1:00pm",
-            "⭐ <strong>Ebenalp cable car</strong> — Wasserauen → Ebenalp (1,590m) · 6 min ride · CHF 31/adult · CHF 12/child (6–16) · runs every 15 min · views of Alpstein massif + Lake Constance",
-            "🥾 <strong>Wildkirchli caves → Aescher cliff restaurant</strong> — 25 min walk down from cable car top station · path through prehistoric Neanderthal caves · old hermit chapel · wooden walkway built into the cliff face",
-            "⭐ <strong>Berggasthaus Aescher</strong> — iconic restaurant wedged into a 100m vertical cliff since 1860 · featured on National Geographic cover · Appenzeller cheese dishes · no reservations · first come first served · ~1hr",
-            "Walk back up to Ebenalp top station (~25 min) · cable car down · depart Wasserauen <strong>3:00pm</strong>",
-            "➕ <strong>Optional: Rhine Falls</strong> — drive 45min north from Wasserauen → Rheinfall, Neuhausen am Rheinfall · Europe's largest waterfall by flow · boat ride to the rock in the middle · adds ~2hrs · only do this if skipping Ebenalp/Aescher · not both",
-            "🏠 <strong>Airport Hotel Zurich</strong> — ✅ Confirmed · $198 / CHF 157.62 · 📍 Lindbergh-Platz 1, 8152 Glattbrugg, Switzerland · 📞 +41 44 808 00 00 · Check-in 15:00 · 5 min walk to ZRH terminal",
-            "⚠️ <strong>FI571 departs ZRH 7:55am → KEF → MCO 8:50pm</strong> · check in by 6:00am · <strong>alarm 5:00am</strong>"
+            "⏰ <strong>7:30am — Checkout Landhaus Bichlbach + depart</strong> — 30 min earlier than original plan · Saturday morning traffic toward Neuschwanstein · check-out 08:00–10:00 — arrange early checkout with host tonight · 45 min drive to Schwangau · arrive ~8:15am",
+            "💳 <strong>Swiss vignette check</strong> — you re-enter Switzerland today at Bregenz · ensure the Hertz vignette sticker from Day 3 is still on the windscreen · cameras trigger a CHF 200 fine if missing",
+            "🚗 <strong>8:15am — Park in P4, Schwangau</strong> — P4 is the closest lot to the castle · €7 parking · 10 min walk uphill to the ticket centre · walk straight past the ticket centre — you have pre-booked tickets · head directly to <strong>Marienbrücke first</strong> before the tour",
+            "⭐ ⭐ <strong>8:30am — Marienbrücke (Mary's Bridge) — go here FIRST</strong> — 10 min walk above the castle · classic postcard view: Neuschwanstein framed by alpine forest · arrive before 9am = virtually no queue for the bridge · by 10am it is shoulder-to-shoulder · allow 20–30 min for photos · then walk down to the castle gate",
+            "⚠️ <strong>9:20am — At the castle gate — CRITICAL</strong> — entry is strictly timed at 9:30am · <strong>you must be at the castle gate (not the ticket centre)</strong> by 9:20am · being at the ticket centre at 9:30am is too late — the guide will not wait · €17.50/adult incl. booking fee",
+            "⭐ ⭐ <strong>9:30am — Neuschwanstein Castle interior tour</strong> — King Ludwig II fairy-tale castle · most visited castle in Germany · guided tour 35–40 min inside · Throne Room + Singer's Hall are the highlights · photography not allowed inside",
+            "🚗 <strong>11:30am — Depart Neuschwanstein → Wasserauen</strong> — 1hr 30min drive · use the Bregenz tunnel to bypass lake traffic · cross into Switzerland · ⚠️ Saturday = absolute peak crowds on all German/Swiss roads · add 30 min buffer to every estimate",
+            "🚗 <strong>1:15pm — Park at Wasserauen cable car</strong> — Schwendetalstraße 82 · free parking · buy Ebenalp cable car tickets online to skip the window · CHF 36/adult return (2026 rate) · runs every 15 min",
+            "⭐ <strong>1:30pm — Ebenalp cable car (Wasserauen → 1,590m)</strong> — 6 min ride · last descent typically 6:00pm in early July · walk 25 min down from the top station through Wildkirchli caves to Aescher · ⚠️ <strong>Wildkirchli cave tip</strong>: 30°C outside but 10°C inside the caves · have a light layer in your daypack for the 5 min cave walk",
+            "⭐ ⭐ <strong>2:00pm — Berggasthaus Aescher</strong> — iconic restaurant wedged into a 100m vertical cliff since 1860 · first-come-first-served · no reservations · 🎷 <strong>Aescher Swing event Jul 4 from 5:00pm</strong> — arriving at 1:30–2:00pm is your best window · eat and leave before the event crowd arrives · <strong>Order:</strong> Chäs-Chnöpfli (Swiss mac and cheese with Appenzeller) or Rösti · if terrace full: grab a Siedwurst at the kiosk + eat on the wooden benches — same cliff view · allow 1.5hrs",
+            "🚗 <strong>4:00pm — Cable car down + drive to ZRH</strong> — walk 25 min back up to Ebenalp top station · cable car down · ~2hr drive to Zurich Airport area",
+            "❌ <strong>Rhine Falls — SKIP TODAY</strong> — you've seen spectacular falls in Iceland + Lauterbrunnen · adding 45 min detour north on a peak Saturday risks missing car return window · not worth it on the last day",
+            "🏠 <strong>6:00pm — Airport Hotel Zurich + car return</strong> — ✅ Confirmed · $198 / CHF 157.62 · 📍 Lindbergh-Platz 1, 8152 Glattbrugg · 📞 +41 44 808 00 00 · 5 min walk to ZRH terminal · 🚗 <strong>Pro move: return car TONIGHT</strong> — drop bags at hotel · drive the car 5 min to ZRH Airport Car Return · take the Hilton shuttle back · eliminates the \"gas + return\" stress at 5:30am tomorrow · Hertz ZRH is open until midnight",
+            "⚠️ <strong>Tonight — final checks</strong> — print boarding passes or screenshot to phone · set TWO alarms for 5:00am · FI571 departs 7:55am · check-in opens 5:30am · hotel is 5 min walk to terminal · no shuttle needed"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Alarm 7:00am · Neuschwanstein 8:45am (pre-book 9:30am entry) · Ebenalp 1:00pm · depart 3:00pm · ZRH ~4:15pm"
+          "type": "warn",
+          "text": "⚠️ <strong>Castle gate 9:20am</strong> — be at the GATE not the ticket centre by 9:20am · €17.50/adult incl. booking fee · guide does not wait · strictly timed entry"
         },
         {
-          "type": "alarm",
-          "text": "⚠️ Book Neuschwanstein NOW at tickets.hohenschwangau.de · July sells out weeks ahead · 9:30am slot"
+          "type": "warn",
+          "text": "🎷 <strong>Aescher Swing event Jul 4 from 5pm</strong> — restaurant will be extremely crowded for the evening event · arrive 1:30–2:00pm · eat + leave before 4pm · if terrace full: Siedwurst at the kiosk + wooden bench · same views"
         },
         {
-          "type": "alarm",
-          "text": "💰 Neuschwanstein €15/adult · Ebenalp cable car CHF 31/adult CHF 12/child · Aescher no reservation needed · Rhine Falls optional ~€7/person"
+          "type": "tip",
+          "text": "🧥 <strong>Wildkirchli caves</strong> — 30°C outside · 10°C inside the caves · pack a light layer in your daypack · 5 min walk through the cave on the path to Aescher"
         },
         {
-          "type": "alarm",
-          "text": "⚠️ Aescher restaurant is first-come-first-served · no reservations · can get very busy on weekends · arrive by 1:30pm for best chance"
+          "type": "tip",
+          "text": "🚗 <strong>Return car tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Hertz ZRH car return · take Hilton shuttle back · Hertz open until midnight · eliminates 5:30am stress tomorrow"
         },
         {
-          "type": "alarm",
-          "text": "⚠️ Alarm 5:00am Jul 5 · FI571 departs 7:55am · check in by 6:00am"
+          "type": "tip",
+          "text": "🍴 <strong>Aescher food</strong> — Chäs-Chnöpfli (Swiss mac and cheese with Appenzeller) · or Rösti · or Siedwurst at the kiosk if terrace full · same cliff view from the wooden benches outside"
+        },
+        {
+          "type": "warn",
+          "text": "⚠️ <strong>5:00am alarm Jul 5</strong> — set two alarms · FI571 departs 7:55am · check-in opens 5:30am · hotel is 5 min walk to terminal · boarding passes on phone tonight"
         }
       ],
       "summary": {
@@ -1339,11 +1345,11 @@
         "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH"
       },
       "keyDecisions": [
-        "✅ Checkout 8am · 45min drive to Neuschwanstein · 9:30am entry booked",
-        "✅ Marienbrücke — 10min walk above castle · the iconic photo",
-        "🤔 Rhine Falls vs Ebenalp — pick one · Rhine Falls adds 45min detour north"
+        "✅ Marienbrücke BEFORE the tour — go at 8:30am · virtually no queue · by 10am it's packed",
+        "⚠️ Castle gate by 9:20am — NOT the ticket centre · guide will not wait for latecomers",
+        "🚗 Return car TONIGHT — drop bags at hotel · 5 min to Hertz ZRH · open until midnight · eliminates 5:30am stress"
       ],
-      "timeline": "8am ▸ checkout ▸ 8:45am Neuschwanstein ▸ 11:30am drive ▸ 1pm Ebenalp ▸ Aescher ▸ 3pm drive ▸ 4:15pm ZRH hotel"
+      "timeline": "7:30am Bichlbach checkout ▸ 8:15am P4 Neuschwanstein ▸ 8:30am Marienbrücke FIRST ▸ 9:20am castle gate ▸ 9:30am tour ▸ 11:30am drive Bregenz tunnel ▸ 1:15pm Wasserauen ▸ 1:30pm Ebenalp cable car ▸ 2pm Aescher (before Swing event 5pm) ▸ 4pm descent ▸ 6pm ZRH hotel + return car tonight ▸ 5am alarm tomorrow"
     },
     {
       "dayLabel": "16",
@@ -1438,7 +1444,7 @@
       "id": "neuschwanstein",
       "label": "🏰 Neuschwanstein Castle tickets — Jul 4 · 9:30am entry slot",
       "status": "urgent",
-      "ref": null,
+      "ref": "€17.50/adult incl. booking fee · tickets.hohenschwangau.de · be at GATE (not ticket centre) by 9:20am",
       "deadline": "Book NOW — July sells out weeks ahead",
       "link": "https://tickets.hohenschwangau.de"
     },
