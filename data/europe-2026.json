@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:40:01Z",
+    "_updated": "2026-05-13T00:42:38Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -892,7 +892,7 @@
     {
       "dayLabel": "10",
       "date": "Jun 29",
-      "title": "East Dolomites — Braies Sunrise + Cadini + Prato Piazza + Cortina + Falzarego + Gardena → Siusi",
+      "title": "The Iconic Dolomites — Braies Sunrise · Tre Cime · Prato Piazza · Gardena",
       "meta": "Jun 29 · Sillian → Braies sunrise → Cadini di Misurina → Prato Piazza → Cortina d'Ampezzo → Falzarego Pass → Gardena Pass → Siusi · 🚗 200 km / 124 mi · ~5h total driving",
       "flag": "🇦🇹",
       "mapLinks": [
@@ -905,45 +905,41 @@
         {
           "heading": null,
           "items": [
-            "<strong>5:00am alarm</strong> · drive <strong>25 min</strong> → Lago di Braies · arrive 5:30am · gate opens 7:30am but you're already inside",
-            "⭐ <strong>Lago di Braies sunrise</strong> — emerald mirror lake · iconic boathouse · Dolomite peaks reflected in still water · most beautiful lake in Italy",
-            "🥾 <strong>Braies lake circuit</strong> — <strong>3.5km / 2.2mi</strong> · flat · ~1hr · pure silence · nobody there · <strong>Croda del Becco (2,810m) towers directly above</strong> — admire it from the shore, not the summit",
-            "Drive <strong>20 min</strong> → <strong>Lago di Misurina</strong> · quick stop on the way · turquoise lake mirroring the Tre Cime · the “pearl of the Dolomites” · photos from the shore · 10 min",
-            "⭐ <strong>Lago di Misurina</strong> — calm emerald waters · Sorapis massif reflection · one of the most photographed lakes in the Dolomites · no hiking needed",
-            "⚠️ <strong>Rifugio Auronzo parking — MUST PRE-BOOK</strong> — book at auronzo.it (Municipality of Auronzo website) · €30 toll · cameras read your plate at the gate · without reservation you WILL be turned away even before 9am · book weeks in advance for July · includes parking at the rifugio",
-            "⭐ <strong>Cadini di Misurina viewpoint — Trail 117</strong> — <strong>20 min hike from Rifugio Auronzo</strong> · follow signs for path 117/Fonda Savio heading east · rocky ridgeline traverse · famous “ski jump” viewpoint of the spires · Lord of the Rings scenery · jaw-dropping · do this FIRST while legs are fresh · <a href='https://www.alltrails.com/trail/italy/veneto/rifugio-auronzo-cadini-di-misurina' target='_blank'>AllTrails ↗</a>",
-            "🥾 <strong>Trail 117 — Cadini hike</strong> — <strong>4–5km / 2.5–3.1mi RT</strong> · 40–45 min each way · rocky + narrow exposed final section · moderate difficulty · completely worth it · best view of the entire trip",
-            "➕ <strong>Optional: Short Tre Cime loop — Forcella Lavaredo viewpoint</strong> — Trail 101 · walk counterclockwise from Rifugio Auronzo · <strong>~1.6km / ~1mi RT</strong> · 20–25 min to Forcella Lavaredo (2,454m) · the highest point on the full circuit · iconic front-on view of all three peaks · turn back here · no need for the full 10km loop",
-            "⭐ <strong>Forcella Lavaredo</strong> — best single viewpoint in the entire Dolomites · all three Cime framed perfectly · ~40–50 min round trip from car park",
-            "Drive back <strong>30 min</strong> → <strong>Prato Piazza plateau</strong> · park at Rifugio Prato Piazza · arrive ~11:00am",
-            "⭐ <strong>Prato Piazza</strong> — open alpine plateau · <strong>Tre Cime looming directly ahead</strong> · best free non-technical Dolomites viewpoint · coffee at the Rifugio",
-            "➕ <strong>Optional: Prato Piazza loop walk</strong> — ~1hr flat walk around the plateau · only if time allows after Cadini · the viewpoint itself is worth it without the walk",
-            "<strong>Lunch</strong> at Rifugio Prato Piazza (~1hr) · cash",
-            "➕ <strong>Optional: Cortina d'Ampezzo</strong> — elegant mountain town · espresso on Corso Italia · 20min detour + 30min town walk · ⚠️ Skip Cortina if doing Lagazuoi — not enough time for both",
-            "➕ <strong>Optional: Passo Falzarego photo stop (2,105m)</strong> — quick 10min pull-over · dramatic rock formations · this is the base for Lagazuoi cable car · even without the cable car the pass views are stunning",
-            "➕ <strong>Optional: Lagazuoi cable car (2,752m)</strong> — do this INSTEAD of Cortina if energy allows · highest accessible viewpoint in Western Dolomites · WWI tunnel galleries carved into the rock · Marmolada glacier + all major Dolomite groups visible · €22/adult return · 30min up + 30min down + 30min at top · only realistic before 3pm given 5am start",
-            "Continue via <strong>Passo Gardena (2,121m)</strong> · SS243 · Sella Massif · Cir Peaks · one of the world’s most beautiful mountain passes · photo stop",
-            "🏠 <strong>Kaiserau 1907, Collalbo</strong> — ✅ Confirmed · $352 / €354.56 · 📍 Via Peter Mayr 65, 39054 Collalbo (Renon), Italy · 📞 +39 0471 356 xxx · Booking.com · Check-in 15:00–22:00 · arrive ~5:30pm",
-            "⭐ <strong>Collalbo / Renon plateau evening</strong> — Schlern massif views · village walk · rest · Seceda and Val di Funes tomorrow · ~50min drive to Ortisei"
+            "⏰ <strong>5:00am — Depart Sillian</strong> — 30 min drive to Lago di Braies · arrive 5:30am · ⚠️ Prato Piazza pivot: if Braies is completely cloudy at 5:30am — drive instead to Prato Piazza (same direction) · high-alpine plateau · zero crowds · incredible Croda Rossa view · then Braies later when it clears",
+            "⭐ ⭐ <strong>5:30am — Lago di Braies sunrise</strong> — park in P3 (~€12 · no reservation needed before 8am) · ⚠️ <strong>2026 access rules:</strong> road is blocked 9am–4pm in peak season · arriving at 5:30am bypasses all gate drama + gets the best light · emerald mirror lake · iconic boathouse · Croda del Becco (2,810m) reflected in the still water · 1,000+ people arrive at 10am — you'll have it almost to yourself",
+            "🥾 <strong>Braies lake circuit</strong> — 3.5km / 2.2mi · flat · ~1hr · walk the full circuit while it's silent · rowing boats available for hire · leave by 8:30am at the latest — before the 9am gate closure",
+            "🚗 <strong>8:30am — Depart Braies</strong> — leave before the 9:00am road closure begins · drive 20 min to Lago di Misurina",
+            "📸 <strong>9:30am — Lago di Misurina</strong> — quick coffee stop · mirror-reflection of the Tre Cime in the lake · the \"perfect postcard\" shot · Rifugio Misurina café on the lakeside · allow 20 min · then drive 9km up the toll road",
+            "⚠️ <strong>10:00am — Tre Cime toll road — use your pre-booked slot</strong> — ⚠️ Book at <strong>pass.auronzo.info</strong> (NOT auronzo.it) · exactly 30 days before = <strong>May 30, 2026</strong> · cost: €40 per car (12-hour slot) · cameras read your plate — without reservation you WILL be turned away · if rental car: leave plate blank when booking · update the night before (tonight) in Sillian",
+            "⭐ ⭐ <strong>10:30am — Cadini di Misurina — Trail 117</strong> — from Rifugio Auronzo follow Trail 117 south · 30–40 min to the \"Mordor\" viewpoint · most dramatic jagged peak view in the entire Dolomites · gets crowded by midday — go now · ⚠️ Final 50m is a very narrow ridge — if anyone has heights issues: the <strong>secondary viewpoint 20m before</strong> the narrow section is 95% as good and completely safe · 4–5km RT · allow 1.5hrs total",
+            "🍴 <strong>12:30pm — Lunch at Rifugio Auronzo</strong> — traditional South Tyrolean dumplings (Knödel) with a view of the Tre Cime · hearty mountain lunch · cash preferred · allow 1hr",
+            "🥾 <strong>1:30pm — Tre Cime partial loop</strong> — walk flat path to <strong>Rifugio Lavaredo</strong> (20 min each way) · the side-profile view of all three Cime together · this section is flat and straightforward · do NOT attempt the full 10km loop — too much time + energy after the 5am start · allow 1hr total",
+            "⭐ <strong>Prato Piazza plateau</strong> — ✅ Confirmed stop · 20 min off the route back · open alpine meadow with Tre Cime looming directly north · best free Dolomites panorama · park at Rifugio Prato Piazza · allow 20–30 min",
+            "⭐ ⭐ <strong>Passo Gardena (2,121m) — drive to Collalbo</strong> — SS243 · one of the most scenic alpine drives in the world · Sella Massif + Cir Peaks on both sides · ⚠️ Heavy cyclist traffic — use low gear on the descent · ➕ Optional: Lagazuoi cable car (2,752m) near Falzarego on this route · ~€22/adult · WWI tunnels + highest Dolomites viewpoint · only if energy allows after 5am start",
+            "🏠 <strong>6:30pm — Kaiserau 1907, Collalbo</strong> — ✅ Confirmed · $352 / €354.56 · 📍 Via Peter Mayr 65, 39054 Collalbo (Renon), Italy · 📞 +39 0471 356 xxx · check-in 15:00–22:00 · Schlern massif views from the Renon plateau · Seceda and Val di Funes tomorrow"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ 5am alarm · Braies 25min · arrive before gate (7:30am) · Misurina stop ~8am · Auronzo by 8:30am · Cadini + Tre Cime by 10:30am · Prato Piazza by 11am"
+          "type": "warn",
+          "text": "⚠️ <strong>Braies 2026 access</strong> — road blocked 9am–4pm in peak season · arrive by 5:30am · P3 no reservation before 8am · €12 · leave before 8:30am · pivot to Prato Piazza if cloudy"
         },
         {
-          "type": "alarm",
-          "text": "💰 Tre Cime toll road €30/car · Cadini viewpoint free · Prato Piazza free"
+          "type": "warn",
+          "text": "⚠️ <strong>Auronzo toll road 2026</strong> — book at pass.auronzo.info · €40/car · 12-hour slot · book May 30 (exactly 30 days before) · rental plate: leave blank · update night before at Sillian hotel"
         },
         {
-          "type": "alarm",
-          "text": "⭐ Croda del Becco viewed from Braies shore — 2,810m towers directly above · the summit hike is 6-8hrs, do not attempt with the rest of this day"
+          "type": "tip",
+          "text": "📸 <strong>Cadini viewpoint tip</strong> — final 50m is a narrow ridge · secondary viewpoint 20m before the narrow section · 95% as good · go early — very crowded by midday · most dramatic jagged peak view in the Dolomites"
         },
         {
-          "type": "booking",
-          "text": "⏳ Book Kaiserau 1907 Collalbo Jun 29–Jul 1 (2 nights) · near cable car · book now — peak season"
+          "type": "tip",
+          "text": "💰 <strong>Day 10 costs</strong> — Braies P3 ~€12 · Auronzo toll €40 · Misurina coffee ~€5 · Rifugio lunch ~€15–20pp · Gardena pass free · Lagazuoi optional €22/adult"
+        },
+        {
+          "type": "done",
+          "text": "✅ Kaiserau 1907 Collalbo · Nights 10–11 · Via Peter Mayr 65, Collalbo · check-in 15:00–22:00"
         }
       ],
       "summary": {
@@ -961,11 +957,11 @@
         "driveTime": "~5h total driving · many short hops"
       },
       "keyDecisions": [
-        "✅ PRE-BOOK Rifugio Auronzo parking NOW at auronzo.it — cameras turn away cars",
-        "✅ Braies 5am · Cadini Trail 117 · Prato Piazza (confirmed stop)",
-        "🤔 Lagazuoi OR Cortina — not both · Lagazuoi is better · only if energy after 5am start"
+        "✅ Arrive Braies 5:30am — P3 €12 no reservation · bypass 9am gate · best light · 1000 fewer people",
+        "⚠️ Auronzo booking: pass.auronzo.info · May 30 = exactly 30 days before · €40 · update plate night before",
+        "⚠️ Cadini final 50m narrow ridge — secondary viewpoint 20m back is 95% as good if heights are an issue"
       ],
-      "timeline": "5am ▸ Braies sunrise ▸ Misurina ▸ 8:30am Cadini ▸ Prato Piazza ▸ Cortina ▸ Falzarego ▸ Gardena ▸ 5:30pm Collalbo"
+      "timeline": "5am depart Sillian ▸ 5:30am Braies sunrise P3 ▸ 8:30am depart before gate ▸ 9:30am Misurina coffee ▸ 10am Auronzo slot ▸ 10:30am Cadini Trail 117 ▸ 12:30pm Rifugio Auronzo lunch ▸ 1:30pm Tre Cime partial loop ▸ Prato Piazza ▸ Gardena pass ▸ 6:30pm Collalbo"
     },
     {
       "date": "Jun 30",
@@ -1516,8 +1512,8 @@
       "id": "rifugio_auronzo",
       "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime toll road",
       "status": "pending",
-      "ref": "Book at auronzo.it · Municipality of Auronzo · €30 · cameras enforce · opens early June",
-      "deadline": "Booking opens early June 2026 · book immediately when open · auronzo.it",
+      "ref": "Book at pass.auronzo.info · €40/car · 12-hour slot · book May 30 (30 days before) · update rental plate night before",
+      "deadline": "May 30, 2026 — exactly 30 days before Jun 29 · opens at midnight",
       "link": null
     },
     {
