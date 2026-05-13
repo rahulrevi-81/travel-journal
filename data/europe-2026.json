@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:45:00Z",
+    "_updated": "2026-05-13T00:47:16Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1042,7 +1042,7 @@
     {
       "dayLabel": "12",
       "date": "Jul 1",
-      "title": "Full Day Collalbo → Finkenberg",
+      "title": "Alpe di Siusi + Brenner Pass → Finkenberg — The Plateau & The Pass",
       "meta": "Jul 1 · Collalbo → Alpe di Siusi morning → drive to Finkenberg · 🚗 120 km / 75 mi · ~1h 45m",
       "flag": "🇮🇹",
       "mapLinks": [
@@ -1055,31 +1055,45 @@
         {
           "heading": null,
           "items": [
-            "⚠️ <strong>P2 Compatsch parking — PRE-BOOK REQUIRED 2026</strong> — book online before arrival · €30/day · cameras at gate read your plate · no reservation = turned away even before 9am · book at seiseralm.it or skiarea.it · new system from summer 2026 · fills quickly in July",
-            "💳 <strong>Brenner Pass Digital Flex Toll (if returning via Brenner)</strong> — purchase \"Digital Flex\" toll online in advance at brenner.com · cameras read your plate · drive through green \"Video Toll\" lanes without stopping · saves 20–30min queuing · needed on the drive Collalbo → Finkenberg via Brenner today · buy at autobrennero.it before Jun 30",
-            "Walk <strong>5 min</strong> to Siusi/Seis cable car station · ride up to <strong>Alpe di Siusi (Compatsch, 1,844m)</strong> · ~€20 return · opens 8:00am",
-            "⭐ <strong>Alpe di Siusi (Seiser Alm)</strong> — Europe's largest high alpine meadow · Sassolungo + Sassopiatto towering above · Sciliar/Schlern massif · wildflowers in July",
-            "🥾 <strong>Bullaccia Loop — Trail PU (Puflatschumrundung)</strong> — <strong>4 miles / 6.4km</strong> · ~2hrs · easy · start from Bullaccia cable car top station · 360° panorama: Sciliar, Sassolungo, Sassopiatto, Odle peaks · passes Witches’ Benches (Hexenbänke) rock formations · Rifugio Bullaccia coffee stop · suitable for all ages",
-            "⭐ <strong>Rifugio Zallinger lunch</strong> — most scenic rifugio on the plateau · Sassolungo right behind the terrace · Kaiserschmarrn · cash · ~1hr",
-            "🥾 <strong>Schlern massif approach</strong> (optional) — walk toward the dramatic flat-topped Schlern · Rifugio Bolzano views · ~1hr return",
-            "⭐ <strong>Optional: e-bikes</strong> on the plateau — cover more ground · available at Compatsch top station · reserve in advance",
-            "Cable car back down by <strong>12:30pm</strong> · checkout Collalbo hotel · drive <strong>1hr 30min</strong> → <strong>Finkenberg</strong> via Bressanone → Brenner",
-            "🏠 <strong>Keyone Rooms, Finkenberg</strong> — ✅ Confirmed · $176 / €152.92 · 📍 Dorf 131, 6292 Finkenberg, Austria · 📞 +43 5285 xxx · Booking.com · Check-in 16:00 · arrive ~2:30pm"
+            "⏰ <strong>7:45am — Depart Collalbo</strong> — 40 min drive to the Alpe di Siusi St. Valentin gate · checkout Kaiserau 1907 before leaving · luggage in the car",
+            "⚠️ <strong>CRITICAL: St. Valentin Gate — must pass before 9:00am</strong> — electronic barrier closes to private cars at exactly 9:00am · arrive at 9:01am = barrier will NOT open · forced to turn back + pay €120+ for family cable car tickets from the valley · leave Collalbo by 7:45am to arrive by 8:30am with buffer",
+            "🚗 <strong>8:45am — P2 Compatsch parking</strong> — ✅ Pre-booked slot · €30/day · cameras at the gate read your plate · walk 5 min to the Telemix lift · pay at the machine or app before leaving",
+            "🥾 <strong>9:15am — Bullaccia (Puflatsch) Loop</strong> — take the Telemix lift up from Compatsch · Trail PU (Puflatschumrundung) · 4 miles / 6.4km · ~2hrs · easy · 360° views: Sassolungo + Sassopiatto + Sciliar + Langkofel · Europe's largest high-alpine meadow stretching below",
+            "⭐ <strong>Hexenbänke — Witches' Benches</strong> — on the Bullaccia ridge look for the giant stone rock formations · local legend: witches used these as chairs to watch the valley · highest point of the plateau · best 360° photo spot on the entire hike · signed from the trail",
+            "🍽️ <strong>12:00pm — Lunch: Tschötsch Alm or Arnika Hütte</strong> — ⚠️ <strong>Do NOT go to Rifugio Zallinger</strong> — it's deep in the plateau: 4-hour RT hike or two extra lifts + internal bus · completely impractical when driving to Austria this afternoon · instead: Tschötsch Alm or Arnika Hütte on the Bullaccia ridge — incredible food + same dramatic Sassolungo views · saves 3 hours of logistics · Kaiserschmarrn + Gulasch · allow 1hr",
+            "🚗 <strong>1:30pm — Depart Alpe di Siusi</strong> — drive back down through the gate (unrestricted descent — no time limit going down) · head north toward Brenner Pass (A13)",
+            "⚠️ <strong>Brenner Pass (A13) — Lueg Bridge construction 2026</strong> — Lueg Bridge near the Brenner is under renovation in July 2026 · single-lane traffic · expect 30–45 min delay · <strong>Digital Flex Toll</strong> pre-booked at autobrennero.it — drive through green \"Video Toll\" lanes without stopping · €11.50 · without it: add another hour in manual payment lines on top of the construction delay",
+            "💳 <strong>Austrian vignette still valid?</strong> — bought on Day 3 at asfinag.at · 10-day vignette covers Jun 22 → Jul 2 — still valid today ✅ · cameras on A13 read the plate automatically",
+            "🛒 <strong>M-Preis Supermarket, Mayrhofen</strong> — stop here BEFORE heading up to Finkenberg · Austrian supermarket chain · pick up breakfast items for Day 13 · Finkenberg is up a winding road — nothing open nearby in the evening · allow 20 min · on the main road through Mayrhofen",
+            "🏠 <strong>4:30pm — Keyone Rooms, Finkenberg</strong> — ✅ Confirmed · $176 / €152.92 · 📍 Dorf 131, 6292 Finkenberg, Austria · 📞 +43 5285 xxx · check-in from 16:00 · ⚠️ Driveway can be steep — take it slowly on the approach · modern rooms · Zillertal views",
+            "🍔 <strong>Dinner in Finkenberg or Mayrhofen</strong> — Gasthof Finkenberger Alm (in the village) · or drive 5 min down to Mayrhofen for more options · early night — Schlegeis + Olpererhütte hike tomorrow"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⭐ Cable car 5min walk from hotel · opens 8am · back down by 12:30pm latest"
+          "type": "warn",
+          "text": "🚨 <strong>9:00am St. Valentin gate — non-negotiable</strong> — electronic barrier closes to private cars at exactly 9am · 9:01am = turned back · €120+ family cable car alternative · leave Collalbo by 7:45am"
         },
         {
-          "type": "alarm",
-          "text": "🚲 E-bikes at Compatsch top station · reserve in advance · ideal for kids"
+          "type": "warn",
+          "text": "⚠️ <strong>Brenner Lueg Bridge 2026</strong> — single-lane renovation · 30–45 min delay expected · Digital Flex toll at autobrennero.it · €11.50 · green Video Toll lanes · saves 1hr vs manual queue"
         },
         {
-          "type": "booking",
-          "text": "⏳ Book Finkenberg hotel Jul 1–2 · Hotel Strass / Hotel Elisabeth / Gasthof"
+          "type": "tip",
+          "text": "🧙 <strong>Hexenbänke — Witches' Benches</strong> — giant stone formations on the Bullaccia ridge · highest point of the plateau · best 360° photo spot · signed from the trail · kids love the legend"
+        },
+        {
+          "type": "tip",
+          "text": "🛒 <strong>M-Preis Mayrhofen</strong> — stop before Finkenberg · buy breakfast for Day 13 · nothing open near Keyone in evenings · steep winding road to Finkenberg — take slowly"
+        },
+        {
+          "type": "tip",
+          "text": "💰 <strong>Day 12 costs</strong> — P2 Compatsch €30 · Telemix lift ~€20 return/adult · Brenner Digital Flex €11.50 · lunch ~€15–20pp · Bullaccia loop free once on plateau"
+        },
+        {
+          "type": "done",
+          "text": "✅ Keyone Rooms Finkenberg · Night 1 · Dorf 131, 6292 Finkenberg · check-in 16:00"
         }
       ],
       "summary": {
@@ -1097,11 +1111,11 @@
         "driveTime": "~1h 45m · Collalbo → Finkenberg via Brenner"
       },
       "keyDecisions": [
-        "⚠️ P2 Compatsch parking — pre-book at seiseralm.it · €30 · cameras enforce · no walk-ups",
-        "💳 Buy Brenner Digital Flex toll before trip at autobrennero.it · saves 30min at border",
-        "✅ Bullaccia Loop Trail PU · Rifugio Zallinger lunch · cable car down by 12:30pm"
+        "🚨 St. Valentin gate closes 9:00am SHARP — leave Collalbo 7:45am · arrive 8:30am · no exceptions",
+        "❌ Skip Rifugio Zallinger — 4hr RT or 2 extra lifts · impractical · eat at Tschötsch Alm instead",
+        "⚠️ Brenner Lueg Bridge construction 2026 — 30–45 min delay · Digital Flex toll essential"
       ],
-      "timeline": "8:30am ▸ Siusi cable car ▸ Bullaccia loop ▸ Rifugio Zallinger lunch ▸ 12:30pm down ▸ drive 1.5hrs ▸ 2:30pm Finkenberg"
+      "timeline": "7:45am Collalbo ▸ 8:30am St. Valentin gate (must be before 9am) ▸ 8:45am P2 Compatsch ▸ 9:15am Bullaccia loop ▸ Hexenbänke viewpoint ▸ 12pm Tschötsch Alm lunch ▸ 1:30pm depart ▸ Brenner construction ▸ M-Preis Mayrhofen ▸ 4:30pm Keyone Rooms Finkenberg"
     },
     {
       "dayLabel": "13",
