@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:34:21Z",
+    "_updated": "2026-05-13T00:36:40Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -731,7 +731,7 @@
     {
       "dayLabel": "8",
       "date": "Jun 27",
-      "title": "Hallstatt Full Day — Gosausee · Salt Mine · Skywalk · Beinhaus · Echern Valley · Dachstein 5 Fingers",
+      "title": "Dachstein Krippenstein · Gosausee · Hallstatt Evening — The High-Alpine Day",
       "meta": "Jun 27 · Kaiserblick Goisern → Hallstatt (Salt Mine + Skywalk + Beinhaus + Gosausee + Echern Valley + Dachstein 5 Fingers) → back to Kaiserblick · 🚗 40 km / 25 mi · ~1h total",
       "flag": "🇦🇹",
       "mapLinks": [
@@ -748,40 +748,45 @@
         {
           "heading": null,
           "items": [
-            "⭐ <strong>Dachstein Krippenstein cable car, Obertraun</strong> — START HERE by 8:40am (first cable car) · 3-section cable car to 2,109m · Sections 1+2 = €44.90/adult · <strong>5 Fingers viewpoint</strong> is 20min walk from top station — glass-floored arms over 400m cliff · Krippenstein = the whole mountain experience · 5 Fingers = the specific platform at the top · same ticket covers both · allow 2.5hrs minimum · descend by 11:30am to reach Gosausee by noon",
-            "⭐ <strong>Gosausee — Glacier Lake</strong> · drive 20min from Obertraun · turquoise lake with full Dachstein glacier wall reflected · Gosaukammbahn cable car up to 1,650m for glacier panorama · ~€28 return · ridge walk at top · allow 2hrs total",
-            "🚢 <strong>Ferry to Hallstatt from accommodation area</strong> — NAVIA runs daily trips Obertraun→Hallstatt→Bad Goisern · departs Obertraun Seecafé · ~15min crossing · €4/person one way (cash only) · much nicer arrival into Hallstatt than by road · schedules at hallstattschifffahrt.at · ⚠️ Hallstatt station ferry (train side) suspended Apr 20–May 22 2026 — but resumes by Jun 27 ✅",
-            "⭐ <strong>Hallstatt Skywalk viewpoint</strong> — 20 min walk up from village · 360° panorama of Hallstatt and the lake far below · best morning light · completely free",
-            "⭐ <strong>Beinhaus (Bone Chapel)</strong> — over <strong>1,200 painted skulls</strong> decorated with names, dates and flowers · unique in the world · 10 min walk from market square · small entry fee · eerie and deeply moving",
-            "➕ <strong>Optional:</strong> Hallstatt Salt Mine (Salzwelten) — world's oldest salt mine · wooden mine slide · underground salt lake · ~1.5hrs · €35/adult · book online at salzwelten.at · first entry 9am sharp · arrive counter by 8:45am",
-            "🏠 <strong>Night 2 — Kaiserblick Goisern</strong> — ✅ Already checked in · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 📞 Airbnb · drive 10 min back from Hallstatt/Obertraun"
+            "🚨 <strong>2026 Alert: Hallstatt Salt Mine + Skywalk CLOSED Jun 27</strong> — major renovation underway · scheduled to reopen June 30, 2026 · do not attempt to book these for today · alternative: <strong>Salzwelten Altaussee</strong> (25 min from Bad Goisern) — active mine · considered the most authentic by locals · only if you really want a salt mine",
+            "⏰ <strong>8:15am — Depart Bad Goisern</strong> — 20 min drive to Obertraun · arrive by 8:40am · park at the Dachstein Krippenstein cable car base station in Obertraun",
+            "⭐ ⭐ <strong>8:45am — Dachstein Krippenstein cable car</strong> — Sections 1 + 2 up to 2,109m · €44.90/adult · take BOTH sections — 5 Fingers is at the Section 2 top station · incredible views of Hallstatt lake 1,000m below from the cable car",
+            "⭐ ⭐ <strong>9:30am — 5 Fingers Viewpoint</strong> — 20 min walk from the Section 2 top station · 5 metal fingers cantilevered 400m over the cliff face · glass-floored — look straight down at Hallstatt village below · free once you have the cable car ticket · far more dramatic than the Hallstatt Skywalk — higher + direct view into the village · allow 45 min at the top",
+            "➕ <strong>Optional: Giant Ice Cave (Section 1)</strong> — if the kids want to see ice formations underground · accessible from Section 1 midstation · extra cost ~€10/adult · allow 45 min · bring warm jacket — freezing inside even in June · skip if you want more time at 5 Fingers or Gosausee",
+            "🍴 <strong>1:30pm — Lunch in Obertraun</strong> — lakeside lunch at Gasthof Obertraun or Strandbad Obertraun café · far quieter than Hallstatt · beautiful lake setting · allow 1hr · 🏖️ <strong>Strandbad Obertraun</strong>: if kids need a reset — flat grassy park with playground + lake swimming access · free · perfect energy break between the two mountain lifts",
+            "⭐ ⭐ <strong>3:00pm — Vorderer Gosausee — the Mirror Lake</strong> — 25 min drive from Obertraun · turquoise glacial lake with the Dachstein glacier wall reflected directly across · best photos in the afternoon — sun hits the glacier face-on at this hour · walk to the far end of the lake for the full panorama · free lakeside · allow 30 min",
+            "⭐ <strong>3:30pm — Gosaukammbahn cable car</strong> — lift up to Zwieselalm (1,477m) · ~€28 return/adult · panoramic view of the Dachstein glacier from above · ridge walk at the top · allow 1.5hrs total incl. walk · book at gosaukammbahn.at",
+            "⭐ ⭐ <strong>6:00pm — Hallstatt village evening</strong> — mine renovation crowds have gone by now · best time to be in Hallstatt: quiet, golden light, day-trippers departed · walk the market square · lakeside promenade · dinner at Bräugasthof Hallstatt or Gasthof Simony · allow 1.5hrs",
+            "⚠️ <strong>Saturday parking warning</strong> — Jun 27 is a Saturday — Hallstatt will be very busy · check digital signs on the road from Bad Goisern · if P1/P2 show \"Full\": park in Obertraun (5 min drive) + take the ferry across · NAVIA ferry: €4 cash · 10 min crossing · much more scenic entry into the village",
+            "⭐ <strong>Beinhaus (Bone Chapel)</strong> — over 1,200 painted skulls decorated with names, dates and flowers · unique in Europe · €1.50/adult · 10 min · haunting and unforgettable",
+            "🏠 <strong>Night 2 — Kaiserblick Goisern</strong> — ✅ Already checked in · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 15 min drive from Hallstatt"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⭐ Gosaukammbahn cable car ~€28 return · opens 9am · do this FIRST before salt mine — best morning light"
-        },
-        {
-          "type": "alarm",
-          "text": "⛏ Salt Mine — salzwelten.at · €35/adult · book in advance · first entry 9am · arrive by 10:30am after cable car"
-        },
-        {
-          "type": "alarm",
-          "text": "⛰ Dachstein 5 Fingers — pre-book at dachstein.at · last ascent ~5pm · arrive Obertraun by 2:15pm"
-        },
-        {
-          "type": "alarm",
-          "text": "⏰ Gosausee 7:30am → cable car → Salt Mine 10:30am → Skywalk → Dachstein 2:15pm"
+          "type": "warn",
+          "text": "🚨 <strong>Salt Mine + Skywalk CLOSED Jun 27</strong> — major renovation · reopens Jun 30, 2026 · alternative: Salzwelten Altaussee (25 min from Bad Goisern) · active mine · most authentic"
         },
         {
           "type": "tip",
-          "text": "🛒 <strong>Hofer = Aldi Austria</strong> — discount prices · buy enough for 5 nights: Jun 27 Hallstatt area · Jun 28 Grossglockner · Jun 29–Jul 1 Dolomites · next reliable shop is Spar Villabassa/Brunico in Italy"
+          "text": "💰 <strong>Day 8 costs</strong> — Krippenstein Sections 1+2 ~€44.90/adult · Ice Cave optional ~€10 · Gosaukammbahn ~€28 return/adult · Beinhaus €1.50 · Hallstatt ferry €4 cash (if needed) · family total approx. €300–340 for activities"
         },
         {
           "type": "tip",
-          "text": "🚢 <strong>Ferry tip</strong> — Take NAVIA boat from Obertraun to Hallstatt village (~€4 cash) · far more scenic than driving · schedules at hallstattschifffahrt.at · departs Obertraun Seecafé"
+          "text": "⚠️ <strong>5 Fingers vs Skywalk</strong> — 5 Fingers on Krippenstein is higher, more dramatic, free with cable car ticket · direct aerial view down into Hallstatt village · Skywalk is closed anyway — 5 Fingers is the better experience"
+        },
+        {
+          "type": "tip",
+          "text": "🌊 <strong>Gosausee afternoon tip</strong> — best photos happen when the sun hits the Dachstein glacier face-on in the afternoon · go at 3pm not morning for the mirror reflection shot"
+        },
+        {
+          "type": "done",
+          "text": "✅ Kaiserblick Goisern · Night 2 of 2 · 38 Unterjoch, 4822 Bad Goisern · key box"
+        },
+        {
+          "type": "tip",
+          "text": "🛒 <strong>Hofer (Aldi) Bad Goisern</strong> — stock up this morning or evening · discount prices · buy for Jun 27–Jul 1: Grossglockner · Sillian · Dolomites 3 nights · Hofrat-Renner-Weg 1 · open Tue 7:15am"
         }
       ],
       "summary": {
@@ -799,11 +804,11 @@
         "driveTime": "~1h total · very local day"
       },
       "keyDecisions": [
-        "✅ Start at Dachstein Krippenstein 8:40am (first cable) — 5 Fingers is on Section 2 · same ticket",
-        "✅ Gosausee (Glacier Lake) after — turquoise lake with Dachstein glacier reflection",
-        "🤔 Hallstatt Salt Mine — optional · do only if energy after Dachstein + Gosausee"
+        "🚨 Salt Mine + Skywalk CLOSED Jun 27 — reopens Jun 30 · do not book these",
+        "✅ Dachstein Krippenstein 8:45am — Sections 1+2 · 5 Fingers free with ticket · more dramatic than Skywalk",
+        "⚠️ Saturday = busy Hallstatt · check digital signs · if Full → park Obertraun + NAVIA ferry €4"
       ],
-      "timeline": "7:30am ▸ Gosausee ▸ cable car ▸ 10:30am Salt Mine ▸ Skywalk ▸ Beinhaus ▸ 2:15pm Dachstein ▸ Hallstatt golden hour"
+      "timeline": "8:15am depart Bad Goisern ▸ 8:45am Krippenstein cable car ▸ 9:30am 5 Fingers viewpoint ▸ Ice Cave optional ▸ 1:30pm Obertraun lunch + Strandbad ▸ 3pm Gosausee Mirror Lake ▸ 3:30pm Gosaukammbahn ▸ 6pm Hallstatt golden hour + dinner ▸ Beinhaus ▸ ~8pm Kaiserblick Goisern"
     },
     {
       "dayLabel": "9",
@@ -1443,16 +1448,16 @@
     {
       "id": "saltmine",
       "label": "⛏ Hallstatt Salt Mine — Jun 27",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book soon",
+      "status": "done",
+      "ref": "🚨 CLOSED Jun 27 — renovations · reopens Jun 30 · skip for this trip",
+      "deadline": "N/A — closed during our visit",
       "link": "https://www.salzwelten.at/en/hallstatt"
     },
     {
       "id": "dachstein",
       "label": "🏔 Dachstein 5 Fingers cable car — Jun 27",
       "status": "pending",
-      "ref": null,
+      "ref": "Included with Krippenstein cable car ticket · Sections 1+2 · book dachstein.at",
       "deadline": "Book soon",
       "link": "https://www.dachstein.at"
     },
