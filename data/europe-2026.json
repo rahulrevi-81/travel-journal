@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T01:01:35Z",
+    "_updated": "2026-05-13T01:03:22Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1354,7 +1354,7 @@
     {
       "dayLabel": "16",
       "date": "Jul 5",
-      "title": "Fly home ZRH → KEF → MCO",
+      "title": "Homebound — ZRH → KEF → MCO · The Final Leg",
       "meta": "Jul 5 · Walk to terminal · depart 7:00am",
       "flag": "✈️",
       "mapLinks": [],
@@ -1362,13 +1362,36 @@
         {
           "heading": null,
           "items": [
-            "Wake <strong>4:30am</strong> · walk 5 min to ZRH terminal",
-            "Check-in opens ~<strong>5:00am</strong> for 7:00am departure · Icelandair FI571 · ZRH → KEF → MCO",
-            "⚠️ <strong>Print boarding passes the night before</strong> · Hertz already dropped off previous evening · passport + tickets ready"
+            "✅ <strong>Night before (Jul 4 Saturday evening) — final prep</strong> — (1) Check in on the Icelandair app — download digital boarding passes to Apple/Google Wallet · (2) Check Hertz email — confirm car return was closed out correctly · (3) Confirm hotel shuttle seat for 5:30am at the front desk · (4) Pack passports in hand-carry bag — NOT the suitcase · (5) Set TWO alarms for 5:00am",
+            "⏰ <strong>5:00am — Wake up</strong> — perfect timing · do not wake earlier unless extra bags need special handling · hotel breakfast starts at 5:30am if needed",
+            "⚠️ <strong>5:30am — Hilton shuttle to terminal</strong> — ❌ <strong>Do NOT walk</strong> — the Hilton Zurich Airport is in Glattbrugg, ~2km from Terminal 2 · not walkable with luggage · hotel shuttle: ~CHF 7/person · ~CHF 21–28 family total · shuttle runs every 15–30 min from 4:30am · confirm your 5:30am seat at the front desk on Saturday evening",
+            "✈️ <strong>5:45am — Arrive Terminal 2</strong> — Icelandair uses <strong>Check-in 2, Row 3</strong> for FI571 · bag drop opens exactly 2hr 30min before departure = 5:25am · digital boarding pass already on phone — bag drop is fast · allow 15 min for bag drop",
+            "🛂 <strong>6:00am — Security + passport control</strong> — head straight through security after bag drop · Sunday mornings at ZRH are busy with leisure travelers · allow 30–45 min · Icelandair US-bound flights depart from <strong>E Gates</strong> · accessible via the Skymetro train from the main terminal · extra security check at the E Gate is standard for US-bound flights",
+            "💵 <strong>Spend remaining Swiss Francs</strong> — airport shops + cafés open by 6:00am · CHF coins and small bills are hard to exchange back in the US · spend them on breakfast, coffee, or airport gifts here",
+            "✈️ <strong>7:55am — FI571 departs ZRH → KEF</strong> — Icelandair · ref A77762 · economy light · layover in Reykjavik KEF ~1.5–2hrs · you do NOT clear US customs in Iceland — customs at Orlando MCO on arrival",
+            "🇮🇸 <strong>KEF layover tip</strong> — 1.5–2hr layover is just enough time · grab a <strong>Pylsur</strong> (Icelandic hot dog — the best in the world) · or a Skyr yoghurt · duty-free is excellent here if you missed anything · do not leave the transit area",
+            "🏠 <strong>8:50pm — Arrive Orlando MCO</strong> — clear US Customs + Immigration at MCO · allow 45–60 min for customs on Sunday evening · Global Entry if you have it · welcome home after 16 days and 6 countries 🎉"
           ]
         }
       ],
-      "tags": [],
+      "tags": [
+        {
+          "type": "warn",
+          "text": "⚠️ <strong>Do NOT walk to terminal</strong> — Hilton Zurich Airport is ~2km from Terminal 2 in Glattbrugg · take the hotel shuttle · CHF 7/person · confirm 5:30am seat at front desk on Saturday evening"
+        },
+        {
+          "type": "tip",
+          "text": "📱 <strong>Saturday night app check-in</strong> — Icelandair app · download boarding passes to Apple/Google Wallet · check Hertz email for car return confirmation · passports in hand-carry bag · two alarms set"
+        },
+        {
+          "type": "tip",
+          "text": "🇨🇭 <strong>ZRH Terminal 2 details</strong> — Icelandair Check-in 2, Row 3 · E Gates for US-bound flights · Skymetro train from main terminal · extra security check at E Gate is standard · allow 45 min total at airport before gate"
+        },
+        {
+          "type": "tip",
+          "text": "🇮🇸 <strong>KEF layover</strong> — 1.5–2hrs · Pylsur hot dog (best in the world) · Skyr yoghurt · duty-free is excellent · US customs at MCO not here · do not leave transit"
+        }
+      ],
       "summary": {
         "drive": "—",
         "time": "—",
@@ -1384,11 +1407,11 @@
         "driveTime": "—"
       },
       "keyDecisions": [
-        "✅ Alarm 5am — FI571 departs 7:55am, check-in by 6am",
-        "✅ Print boarding passes night before",
-        "✅ Hertz drop-off previous evening already done"
+        "✅ Take hotel shuttle NOT walk — Hilton is 2km from terminal · not walkable with luggage · CHF 7/person",
+        "✅ Icelandair app check-in Saturday night — digital boarding pass · fast bag drop at Check-in 2 Row 3",
+        "✅ US Customs at MCO not KEF — do not leave transit area in Iceland"
       ],
-      "timeline": "5am ▸ wake ▸ walk to terminal ▸ 6am check-in ▸ 7:55am FI571 ZRH→KEF→MCO ▸ 8:50pm Orlando"
+      "timeline": "Sat night: app check-in ▸ confirm shuttle ▸ 5am wake ▸ 5:30am Hilton shuttle (NOT walk) ▸ 5:45am Terminal 2 · Check-in Row 3 ▸ 6am security + E Gate Skymetro ▸ 7:55am FI571 ZRH→KEF ▸ KEF Pylsur layover ▸ 8:50pm MCO home 🎉"
     }
   ],
   "checklist": [
