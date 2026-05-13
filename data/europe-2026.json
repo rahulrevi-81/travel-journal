@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:28:25Z",
+    "_updated": "2026-05-13T00:30:31Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -506,7 +506,7 @@
     {
       "dayLabel": "5",
       "date": "Jun 24",
-      "title": "Lauterbrunnen → Berchtesgaden",
+      "title": "Lauterbrunnen → Berchtesgaden — The Cross-Country Push",
       "meta": "Jun 24 · Lauterbrunnen → Staubbach Falls → Trümmelbach Falls → Berchtesgaden · 🚗 595 km / 370 mi · ~6h non-stop",
       "flag": "🇨🇭",
       "mapLinks": [
@@ -519,37 +519,47 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Camping Jungfrau 8:30am</strong> · walk/drive <strong>5 min</strong> → Lauterbrunnen village · park",
-            "📸 <strong>Lauterbrunnen valley exit viewpoint</strong> — pull over on the B532 heading north out of the village · waterfalls cascading down both valley walls with Jungfrau framing the scene · best shot looking south back into the valley · free · 5 min · zero detour",
-            "➕ <strong>Optional: Lake Thun / Spiez viewpoint</strong> — Route 6 via Spiez · classic shot: Eiger + Mönch + Jungfrau reflected in turquoise Thunersee · pull off near Spiez town viewpoint · 10 min · only if arriving Berchtesgaden before 4pm",
-            "📸 <strong>Chiemsee — Bernau lakeshore</strong> — exit A8 at Bernau (Exit 106) · drive 2km to Felden lakeshore · Bavaria's largest lake = \"Bavarian Sea\" · Alps reflected in flat water · Fraueninsel visible · allow 15min · free parking at shore",
-            "📸 <strong>Hintersee lake, Berchtesgaden</strong> — 15min drive from Berchtesgaden town · turquoise lake with Watzmann massif + giant moss-covered boulders (Zauberwald) · one of the most photogenic spots in Bavaria · free · allow 20min · park at Seeklause car park",
-            "⭐ <strong>Trümmelbach Falls</strong> — glacial meltwater thundering through gorge inside the mountain · €12/adult · ~45 min · kids love it",
-            "🏠 <strong>One-Bedroom Apartment, Berchtesgaden</strong> — ✅ Nights 5–6 · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · 📞 Booking.com message host · Check-in 16:00–20:00",
-            "<strong>Dinner</strong> — Berchtesgaden (~1hr)"
+            "⏰ <strong>8:30am — Checkout Camping Jungfrau</strong> — pack the car the night before · long drive day — be on the road by 8:30am · walk to Trümmelbach Falls first (3 min drive or 15 min walk from the campsite)",
+            "⭐ ⭐ <strong>8:30am — Trümmelbach Falls</strong> — be first at the gate when it opens at 9:00am · 10 subterranean glacial waterfalls thundering inside the mountain · lift takes you up inside the rock · spray is intense — wear waterproofs · ~€12/adult · allow 45 min · unlike anything else in the Alps · only 3 min drive from Camping Jungfrau — no excuse to skip this",
+            "📸 <strong>Lauterbrunnen valley exit photo stop</strong> — pull over on the B532 heading north out of the village · look back south into the valley — 72 waterfalls cascading down both walls with Jungfrau behind · 5 min · zero detour · your last look at the Bernese Alps",
+            "☕ <strong>10:00am — Final Lauterbrunnen coffee</strong> — quick espresso in the village before the motorway · Airtime Café or Camping Jungfrau café · allow 20 min",
+            "🚗 <strong>10:45am — Depart Lauterbrunnen → Berchtesgaden</strong> — ~595 km · ~6hrs driving · longest drive day of the trip · route: Interlaken → Bern → Zurich → Bregenz → Munich area → Berchtesgaden",
+            "⚠️ <strong>Austrian Pfändertunnel near Bregenz</strong> — you clip a corner of Austria near Bregenz on the standard route · your <strong>Austrian Digital Vignette</strong> (bought Day 3 at asfinag.at) is required here · without it: heavy on-the-spot fine · cameras check automatically · no toll booth to stop at",
+            "⛽ <strong>Fuel strategy</strong> — fill up in Austria or Germany — Swiss fuel is significantly more expensive · first opportunity: Bregenz area (Austria) · last cheap option before Berchtesgaden: Rosenheim or Bad Reichenhall (Germany)",
+            "📍 <strong>12:30pm — Lunch stop: Vaduz, Liechtenstein</strong> — 45 min \"Country #3\" stop · walk the main square (Städtle) · Vaduz Castle visible on the hill above — official residence of the Prince · lunch at a café in the centre · Liechtenstein is one of only two doubly-landlocked countries in the world — kids will love the stamp · get your passport stamped at the tourist office for 3 CHF · allow 45 min total",
+            "⚠️ <strong>A8 Construction Warning 2026</strong> — A8 between Ulm and Munich is under major renovation in 2026 · check Google Maps live before Munich · if showing 60+ min red delay: switch to the <strong>scenic B31/B12 southern route</strong> (Deutsche Alpenstraße) through the German Alps · slower but beautiful — avoids stop-and-go misery · Wednesday = moderate traffic risk (not as bad as Fri/Sat)",
+            "🛒 <strong>Grocery stop — REWE or Lidl, Lindau or Berchtesgaden</strong> — cross into Germany at Lindau — first stop after Switzerland · German groceries 30–40% cheaper than Swiss · stock up for Days 5–6 (two nights in Berchtesgaden) · or use REWE Berchtesgaden on arrival (Maximilianstr. 26) · open until 8pm",
+            "📸 <strong>Chiemsee photo stop — Bernau Exit 106</strong> — exit A8 at Bernau · 2km to Felden lakeshore · Bavaria's largest lake — \"Bavarian Sea\" · Alps reflected in flat water · Fraueninsel visible · allow 15 min · worth the detour on this long drive",
+            "📸 <strong>~5:00pm — Hintersee lake photo stop</strong> — 15 min drive from Berchtesgaden town · turquoise lake + Watzmann massif + giant moss-covered Zauberwald boulders · one of the most photogenic spots in Bavaria · free · allow 20 min · park at Seeklause car park",
+            "🏠 <strong>~5:30pm — Check-in: One-Bedroom Apartment, Berchtesgaden</strong> — ✅ Nights 5–6 · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · 📞 Booking.com message host · check-in 16:00–20:00",
+            "🍔 <strong>Dinner — Berchtesgaden</strong> — <strong>Bräustüberl Berchtesgaden</strong> (historic brewery restaurant, Bräuhausstraße 13) · or Gasthof Neuhaus · allow 1hr · early night — Königssee at 9:15am tomorrow"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "🏰 Ehrenberg + Highline179 combined ticket ~€18/adult · no booking needed · buy on site · opens 9am"
+          "type": "warn",
+          "text": "⚠️ <strong>Austrian vignette at Pfändertunnel</strong> — cameras check automatically near Bregenz · no booth to stop at · instant fine if not purchased · should be bought at asfinag.at on Day 3 evening"
         },
         {
-          "type": "alarm",
-          "text": "🌉 Highline179: 406m suspension bridge · 113m above valley · connects Ehrenberg ruins to Fort Claudia · genuinely thrilling for kids"
-        },
-        {
-          "type": "alarm",
-          "text": "⚠️  — Neuschwanstein: book NOW at neuschwanstein.de if switching · June sells out months ahead · guided tour only ~€15/adult"
-        },
-        {
-          "type": "booking",
-          "text": "✓ Landhaus Lindenberg, Buchloe · Conf. #6026325459 · $202"
+          "type": "warn",
+          "text": "⚠️ <strong>A8 2026 construction</strong> — major roadworks Ulm–Munich · check Google Maps before Munich · alternative: B31/B12 Deutsche Alpenstraße — beautiful but adds 45 min"
         },
         {
           "type": "tip",
-          "text": "💰 <strong>Grocery strategy</strong> — 🇨🇭 Aldi Interlaken Jun 22 (Swiss days only) · 🇩🇪 Rewe/Aldi Berchtesgaden Jun 24 (big shop, German prices) · 🇦🇹 Hofer Bad Goisern Jun 27 (second big shop, Austria + Dolomites days)"
+          "text": "⛽ <strong>Fuel</strong> — fill in Austria (Bregenz area) or Germany · never in Switzerland · Rosenheim or Bad Reichenhall last cheap before Berchtesgaden"
+        },
+        {
+          "type": "tip",
+          "text": "🇱🇮 <strong>Liechtenstein passport stamp</strong> — tourist office in Vaduz · CHF 3 per passport · one of the rarest stamps in Europe · great for the kids"
+        },
+        {
+          "type": "done",
+          "text": "✅ One-Bedroom Apartment, Berchtesgaden · Nights 5–6 · Kälbersteinstraße 4, 83471 Berchtesgaden · check-in 16:00–20:00"
+        },
+        {
+          "type": "tip",
+          "text": "🛒 <strong>Grocery</strong> — REWE Berchtesgaden (Maximilianstr. 26) · open until 8pm · German prices 30–40% cheaper than Swiss · stock up for 2 nights here"
         }
       ],
       "summary": {
@@ -567,11 +577,11 @@
         "driveTime": "~6h non-stop · longest drive day"
       },
       "keyDecisions": [
-        "📸 Valley exit photo stop before leaving Lauterbrunnen — 5min · zero detour",
-        "📸 Chiemsee Bernau + Hintersee on arrival — best photo stops on this drive day",
-        "✅ Big grocery shop at Rewe/Aldi Berchtesgaden on arrival"
+        "✅ Trümmelbach Falls first — opens 9am · 3 min from campsite · wear waterproofs · do not skip",
+        "📍 Vaduz/Liechtenstein lunch stop — Country #3 · passport stamp CHF 3 · 45 min total",
+        "⚠️ Check A8 before Munich — if 60+ min delay switch to B31/B12 Deutsche Alpenstraße"
       ],
-      "timeline": "8:30am ▸ Lauterbrunnen valley photo ▸ Trümmelbach ▸ 12pm drive ▸ Chiemsee stop ▸ Hintersee photo ▸ 4pm Berchtesgaden"
+      "timeline": "8:30am Trümmelbach Falls ▸ 10am coffee ▸ 10:45am depart ▸ 12:30pm Vaduz/Liechtenstein lunch ▸ Germany border ▸ A8 Munich area ▸ Chiemsee stop ▸ Hintersee photo ▸ 5:30pm Berchtesgaden"
     },
     {
       "dayLabel": "6",
