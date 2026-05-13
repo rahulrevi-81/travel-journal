@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:37:52Z",
+    "_updated": "2026-05-13T00:40:01Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -812,7 +812,7 @@
     {
       "dayLabel": "9",
       "date": "Jun 28",
-      "title": "Grossglockner High Alpine Road → Sillian · Dolomites Gateway",
+      "title": "The Roof of Austria — Grossglockner High Alpine Road → Sillian",
       "meta": "Jun 28 · Bad Goisern → Grossglockner High Alpine Road → Lienz → Sillian, Austria · 🚗 280 km / 174 mi · ~4h 30m incl. Grossglockner slow drive",
       "flag": "🇦🇹",
       "mapLinks": [
@@ -825,33 +825,47 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Kaiserblick Goisern by 8:30am</strong> — check-out 08:00–10:00",
-            "⭐ ⭐ <strong>Edelweiß-Spitze (2,571m)</strong> — MUST STOP · highest car-accessible point on Grossglockner road · 37 mountain peaks visible including the Grossglockner (3,798m) · border stone D/Ö at summit car park · allow 20min · arrive early",
-            "⭐ ⭐ <strong>Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — MUST STOP · Pasterze Glacier viewing platform · Austria's longest glacier · ibex often visible on the rocks · Austria's most dramatic alpine viewpoint · allow 45min",
-            "Drive <strong>1hr</strong> east → <strong>Sillian</strong>, East Tyrol, Austria 🇦🇹 · arrive ~3:30pm",
-            "➕ <strong>Optional: Loacker Café, Piazza Walther, Bolzano</strong> — South Tyrolean wafer + chocolate brand · flagship café · espresso + Loacker wafers + krapfen · Piazza Walther 11, Bolzano · open Mon–Sat 8am–7pm · adds ~30min + 20min detour off route",
-            "🏠 <strong>Hotel Schwarzer Adler, Sillian</strong> — ✅ Confirmed · $115 / €99.40 · 📍 Sillian 12, 9920 Sillian, Austria · 📞 +43 4842 6214 · info@schwarzeradler-sillian.at · Check-in 16:00–21:00",
-            "⭐ <strong>Optional: drive 25min → Lago di Braies afternoon preview</strong> — see the lake before the sunrise crowds tomorrow · <strong>Località Braies di Sotto 1, 39030 Braies (Prags)</strong> · GPS 46.6944°N 12.0853°E",
-            "Dinner in Sillian · in bed by <strong>9pm</strong> · alarm 5:00am tomorrow · Braies sunrise"
+            "⏰ <strong>8:00am — Checkout Kaiserblick Goisern</strong> — check-out 08:00–10:00 · pack the car the night before · 1.5hr drive to the Ferleiten toll gate via the B311 · download offline maps for the Dolomites tonight if not done yet",
+            "⭐ ⭐ <strong>Grossglockner High Alpine Road</strong> — 48km of switchbacks across the highest surfaced alpine pass in Austria · Hohe Tauern National Park · road open from 5:30am — last entry 45 min before 9pm closing · check road status at grossglockner.at before departing — occasional snow closures in June",
+            "💳 <strong>9:30am — Ferleiten Toll Gate</strong> — 2026 rate: <strong>€46.50/car</strong> · buy a \"Day Ticket\" online in advance at grossglockner.at to skip the payment queue · card accepted · start the 36 hairpin turns · first stop: Edelweiß-Spitze — go there FIRST before the motorcycles arrive",
+            "📍 <strong>Haus Alpine Naturschau — natural history museum</strong> — ➕ Optional · 15 min · halfway up the road · modern museum about the High Alpine ecology of Hohe Tauern National Park · great context for the kids before reaching the summit",
+            "⭐ ⭐ <strong>10:15am — Edelweiß-Spitze (2,571m)</strong> — MUST STOP · dead-end cobblestone branch road — go here FIRST · if you wait until afternoon the narrow road is congested with motorcycles · highest car-accessible point on the entire road · 37 mountain peaks visible on a clear day including the Grossglockner (3,798m) · straddle the viewing platform for 360° panorama · allow 20 min",
+            "📸 <strong>11:30am — Hochtor Tunnel (2,504m)</strong> — highest point of the road surface · stop for a photo at the border between the provinces of Salzburg and Carinthia · a small stone marks the exact boundary · 10 min stop",
+            "⭐ ⭐ <strong>12:15pm — Kaiser-Franz-Josefs-Höhe (2,369m)</strong> — the grand finale · Pasterze Glacier viewing platform · Austria's longest glacier (8km) stretching toward the Grossglockner · ⚠️ 2026: glacier has receded significantly — to touch the ice take the Gletscherbahn funicular down + hike 30–45 min · if tired from Day 8 just enjoy the view from the terrace · ibex often visible on the rocks · allow 1hr",
+            "🐺 <strong>Marmot & ibex spotting — Gamsgrubenweg</strong> — from Kaiser-Franz-Josefs-Höhe: follow the Gamsgrubenweg tunnel path for 10 min · best place on the entire road to see wild marmots up close · occasionally ibex too · kids will love this · free · bring binoculars if you have them",
+            "🍴 <strong>1:30pm — Lunch at Kaiser-Franz-Josefs-Höhe</strong> — Restauration Kaiser-Franz-Josefs-Höhe · Tiroler Gröstl + Gulasch · panoramic terrace facing the glacier · watch for marmots on the rocks while eating · allow 1hr",
+            "⚠️ <strong>Descent toward Heiligenblut — brake warning</strong> — use engine braking (low gear) on the descent · do NOT ride the brakes continuously — they will overheat and smoke before the bottom · shift down to 2nd or 3rd gear and let the engine slow you",
+            "⭐ <strong>3:30pm — Heiligenblut village</strong> — iconic pilgrimage church with Grossglockner in the background · 📸 Best photo: upper car park near the cemetery · Grossglockner peak frames perfectly behind the church spire · 4pm light is ideal · allow 30 min · inside the church: sacred blood relic from which the village takes its name",
+            "➕ <strong>Optional: Loacker Café, Bolzano</strong> — only worth doing if arriving Sillian before 5pm · South Tyrolean wafer + chocolate brand · flagship café on Piazza Walther · espresso + Loacker wafers + krapfen · 20 min detour off route",
+            "🏠 <strong>5:30pm — Hotel Schwarzer Adler, Sillian</strong> — ✅ Confirmed · $115 / €99.40 · 📍 Sillian 12, 9920 Sillian, Austria · 📞 +43 4842 6214 · info@schwarzeradler-sillian.at · check-in 16:00–21:00",
+            "🍴 <strong>Dinner in Sillian</strong> — hotel restaurant or village gasthaus · in bed by 9pm · alarm 5:00am tomorrow · 📱 Download offline Dolomites maps tonight (Maps.me or Google Maps) · check Rifugio Auronzo parking booking confirmation"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "💰 Grossglockner toll €37/car · road opens 5am · allow 3hrs for the full alpine road section"
+          "type": "warn",
+          "text": "💳 <strong>Grossglockner toll 2026: €46.50/car</strong> — buy Day Ticket online at grossglockner.at to skip queue · road open 5:30am–9pm · last entry 45 min before closing · check road status for snow/closures before departing"
         },
         {
-          "type": "alarm",
-          "text": "⏰ Leave Bad Goisern 8:30am · Grossglockner entrance ~9:45am · Sillian by 3:30pm · alarm 5am tomorrow"
+          "type": "warn",
+          "text": "⚠️ <strong>Pasterze Glacier 2026</strong> — glacier has receded significantly · to touch the ice: Gletscherbahn funicular down + 30–45 min hike · terrace view is still spectacular without going down"
         },
         {
-          "type": "alarm",
-          "text": "⚠️ Check road status at grossglockner.at — occasional closures due to snow/weather in June"
+          "type": "warn",
+          "text": "⚠️ <strong>Brake warning on descent</strong> — Heiligenblut descent is steep and long · use 2nd/3rd gear engine braking · continuous brake use = overheating + brake fade = dangerous"
         },
         {
-          "type": "booking",
-          "text": "✅ Hotel Schwarzer Adler Sillian · Confirmed · $115 · check-in 16:00–21:00"
+          "type": "tip",
+          "text": "📸 <strong>Heiligenblut church photo</strong> — upper car park near the cemetery · Grossglockner peak frames behind the church spire · 4pm light is ideal · one of the most iconic shots in Austria"
+        },
+        {
+          "type": "tip",
+          "text": "📱 <strong>Tonight: prep for Dolomites</strong> — download offline maps (Google Maps or Maps.me) for the Dolomites · confirm Rifugio Auronzo parking booking · 5am alarm tomorrow · Braies gate opens 7:30am"
+        },
+        {
+          "type": "done",
+          "text": "✅ Hotel Schwarzer Adler · Sillian · $115 / €99.40 · check-in 16:00–21:00 · +43 4842 6214"
         }
       ],
       "summary": {
@@ -869,11 +883,11 @@
         "driveTime": "~4h 30m incl. Grossglockner slow drive"
       },
       "keyDecisions": [
-        "✅ MUST: Edelweiß-Spitze (2,571m) — highest car-accessible point · 37 peaks visible",
-        "✅ MUST: Kaiser-Franz-Josefs-Höhe — Pasterze Glacier platform · ibex on the rocks",
-        "🤔 Loacker Café Bolzano — optional espresso + wafer stop on drive to Sillian"
+        "✅ Edelweiß-Spitze FIRST — go before motorcycles arrive · dead-end road congests by afternoon",
+        "✅ Gamsgrubenweg 10 min from KFJ-Höhe — best marmot spotting on the road · kids will love it",
+        "⚠️ Descent: engine brake in low gear · do NOT ride the brakes · they will overheat"
       ],
-      "timeline": "8:30am ▸ drive ▸ 9:45am Grossglockner toll ▸ KFJ Höhe ▸ Heiligenblut ▸ Lienz ▸ 3:30pm Sillian"
+      "timeline": "8:00am checkout ▸ 9:30am Ferleiten toll €46.50 ▸ 10:15am Edelweiß-Spitze ▸ 11:30am Hochtor tunnel ▸ 12:15pm KFJ-Höhe + marmots ▸ 1:30pm glacier lunch ▸ 3:30pm Heiligenblut church photo ▸ 5:30pm Sillian ▸ alarm 5am"
     },
     {
       "dayLabel": "10",
