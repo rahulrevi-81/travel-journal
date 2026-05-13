@@ -288,6 +288,49 @@
     .sched-item.item-done .sched-text { text-decoration: line-through; opacity: 0.6; }
   }
 
+  /* DETAIL TOGGLE — mobile compact view */
+  .day-detail-toggle { display:none; width:100%; background:#f4f1ea; border:none; border-top:1px solid var(--border); padding:8px 14px; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--slate); cursor:pointer; text-align:left; font-family:'DM Sans',sans-serif; display:flex; align-items:center; gap:6px; }
+  .day-detail-toggle:hover { background:var(--warm); color:var(--ink); }
+  .day-detail-toggle .dtoggle-arrow { margin-left:auto; transition:transform 0.2s; font-size:10px; }
+  .day-detail-toggle.expanded .dtoggle-arrow { transform:rotate(180deg); }
+  /* Compact summary chips — shown when detail is collapsed on mobile */
+  .day-compact-strip { display:none; padding:8px 12px; background:white; border-bottom:1px solid #f0ece4; flex-wrap:wrap; gap:5px; }
+  .compact-chip { display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:4px 9px; border-radius:20px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.25); color:#6b5010; white-space:nowrap; }
+  .compact-chip.chip-drive { background:rgba(100,120,200,0.08); border-color:rgba(100,120,200,0.25); color:#3a4a8a; }
+  .compact-chip.chip-hike  { background:rgba(74,124,47,0.1);  border-color:rgba(74,124,47,0.3);  color:#2e5a18; }
+  .compact-chip.chip-wow   { background:rgba(201,168,76,0.13); border-color:rgba(201,168,76,0.35); color:#6b5010; }
+  .compact-chip.chip-meal  { background:rgba(184,92,56,0.08);  border-color:rgba(184,92,56,0.25); color:#7a3820; }
+  .compact-chip.chip-stay  { background:rgba(107,143,113,0.1); border-color:rgba(107,143,113,0.3); color:#3a6042; }
+  /* On mobile: show compact strip + toggle; full detail hidden until expanded */
+  @media (max-width: 768px) {
+    .day-compact-strip { display:flex; }
+    .day-detail-toggle { display:flex; }
+    .day-full-detail { display:none; }
+    .day-full-detail.detail-open { display:block; }
+  }
+
+  /* PACKING LIST */
+  .pack-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; margin-top:8px; }
+  .pack-category { background:white; border:1px solid var(--border); border-radius:4px; overflow:hidden; }
+  .pack-cat-header { display:flex; align-items:center; gap:10px; padding:12px 16px; background:var(--ink); color:var(--cream); cursor:pointer; user-select:none; }
+  .pack-cat-icon { font-size:18px; flex-shrink:0; }
+  .pack-cat-title { font-family:'Playfair Display',serif; font-size:13px; font-weight:700; flex:1; }
+  .pack-cat-count { font-size:10px; color:var(--gold-light); letter-spacing:1px; }
+  .pack-cat-arrow { font-size:11px; color:rgba(250,248,243,0.6); transition:transform 0.2s; }
+  .pack-category.pack-open .pack-cat-arrow { transform:rotate(180deg); }
+  .pack-items { display:none; padding:4px 0; }
+  .pack-category.pack-open .pack-items { display:block; }
+  .pack-item { display:flex; align-items:flex-start; gap:10px; padding:8px 16px; border-bottom:1px solid #f4f0ea; font-size:13px; }
+  .pack-item:last-child { border-bottom:none; }
+  .pack-cb { width:16px; height:16px; border:1.5px solid #ccc; border-radius:3px; cursor:pointer; flex-shrink:0; appearance:none; -webkit-appearance:none; background:white; margin-top:2px; transition:all 0.15s; }
+  .pack-cb:checked { background:var(--sage); border-color:var(--sage); }
+  .pack-item-text { flex:1; line-height:1.4; }
+  .pack-item-text .pack-note { font-size:11px; color:var(--slate); display:block; margin-top:1px; }
+  .pack-item.pack-checked .pack-item-text { text-decoration:line-through; opacity:0.45; }
+  .pack-progress { height:3px; background:#eee; }
+  .pack-progress-bar { height:3px; background:var(--sage); transition:width 0.3s; }
+  @media (max-width:768px) { .pack-grid { grid-template-columns:1fr; } }
+
   /* FOOTER */
   footer { background: var(--ink); color: rgba(250,248,243,0.4); text-align: center; padding: 32px; margin-top: 80px; font-size: 12px; letter-spacing: 1px; }
   footer strong { color: var(--gold-light); }
@@ -377,7 +420,7 @@ if ('serviceWorker' in navigator) {
 
 <script>
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
-const DATA_FILE = '../data/europe-2026.json?v=20260513011639';
+const DATA_FILE = '../data/europe-2026.json?v=20260513120000';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
 const STORAGE_KEY = 'trip-highlights-europe-2026';
@@ -1032,11 +1075,25 @@ function renderDayCard(day, idx) {
     body.appendChild(mapRow);
   }
 
-  // Schedule grid — items from all sections
+  // Build all schedule items + collect compact chips
   const grid = div('sched-grid');
+  const compactItems = []; // {icon, label, chipClass}
+
+  function stripHtmlForChip(html) {
+    return html.replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+  }
+  function shortLabel(text, type) {
+    // Extract the bold part (between first <strong>…</strong>) as the chip label
+    const m = text.match(/<strong>([^<]+)<\/strong>/);
+    if (m) {
+      // Trim time prefix like "8:30am — " from the label
+      return m[1].replace(/^\d+:\d+[ap]m\s*[—–-]\s*/i,'').substring(0,34);
+    }
+    return stripHtmlForChip(text).substring(0,34);
+  }
+
   day.sections.forEach(sec => {
     if (sec.heading && day.sections.length > 1) {
-      // Section heading spans both columns
       const headingEl = h('div', {style:'grid-column:1/-1;', class:'sec-heading'}, sec.heading);
       grid.appendChild(headingEl);
     }
@@ -1061,7 +1118,6 @@ function renderDayCard(day, idx) {
       const textEl = h('span', {class:'sched-text', html: item});
       itemCell.appendChild(textEl);
       if (type === 'wow') {
-        // MUST badge for items with double star ⭐⭐ or explicit WOW
         const isMust = item.includes('⭐ ⭐') || (item.includes('WOW') && !item.includes('Optional') && !item.includes('optional'));
         if (isMust) {
           itemCell.appendChild(h('span', {class:'sched-badge badge-must'}, 'MUST'));
@@ -1072,9 +1128,37 @@ function renderDayCard(day, idx) {
       if (type === 'hike') itemCell.appendChild(h('span', {class:'sched-badge badge-hike'}, 'HIKE'));
       grid.appendChild(timeCell);
       grid.appendChild(itemCell);
+
+      // Collect chips for compact strip — only meaningful types
+      if (['wow','hike','drive','meal','checkin'].includes(type)) {
+        const chipClass = type === 'checkin' ? 'chip-stay' : 'chip-' + type;
+        compactItems.push({ icon, label: shortLabel(item, type), chipClass });
+      }
     });
   });
-  body.appendChild(grid);
+
+  // Compact strip — shown on mobile before full detail
+  if (compactItems.length) {
+    const strip = div('day-compact-strip');
+    compactItems.slice(0,8).forEach(ci => {
+      strip.appendChild(h('span', {class:'compact-chip ' + ci.chipClass}, ci.icon + ' ' + ci.label));
+    });
+    body.appendChild(strip);
+  }
+
+  // Full detail wrapper — collapsible on mobile
+  const fullDetail = div('day-full-detail');
+  fullDetail.appendChild(grid);
+  body.appendChild(fullDetail);
+
+  // Toggle button (only visible on mobile via CSS)
+  const dtBtn = h('button', {class:'day-detail-toggle'}, '📋 Full Schedule', h('span',{class:'dtoggle-arrow'},'▾'));
+  dtBtn.addEventListener('click', function() {
+    const open = fullDetail.classList.toggle('detail-open');
+    dtBtn.classList.toggle('expanded', open);
+    dtBtn.childNodes[0].textContent = open ? '📋 Collapse ' : '📋 Full Schedule ';
+  });
+  body.appendChild(dtBtn);
 
   // Tags row
   if (day.tags && day.tags.length) {
@@ -1225,6 +1309,180 @@ function renderSummaryTable(d) {
   return wrap;
 }
 
+function renderPacking(d) {
+  const PACK_KEY = 'trip-packing-europe-2026';
+  function loadChecked() { try { return JSON.parse(localStorage.getItem(PACK_KEY)||'{}'); } catch(e){return{};} }
+  function saveChecked(obj) { localStorage.setItem(PACK_KEY, JSON.stringify(obj)); }
+
+  const categories = [
+    { icon:'🎒', title:'Bags & Carry-on Essentials', items:[
+      { t:'Carry-on bag (22 lbs max per person)', n:'Icelandair strict — weigh before you leave' },
+      { t:'Personal item / day pack', n:'Double duty: plane underseat + daily hiking pack' },
+      { t:'Packing cubes', n:'One per person, color-coded helps' },
+      { t:'Laundry dry bag', n:'For Day 6 (Bad Goisern) and Day 9 (Sillian) laundry nights' },
+      { t:'Reusable grocery tote', n:'For Migros / REWE / Hofer stops' },
+    ]},
+    { icon:'👕', title:'Clothing (4 persons × carry-on only)', items:[
+      { t:'3–4 merino/quick-dry T-shirts per person', n:'Merino washes and dries overnight' },
+      { t:'1 fleece or mid-layer per person', n:'Alps mornings are cold even in July' },
+      { t:'1 waterproof shell jacket per person', n:'Essential — Iceland + Alps weather is unpredictable' },
+      { t:'2 hiking pants / zip-offs per person', n:'Also works for casual evenings' },
+      { t:'1 pair jeans or smart casual', n:'For dinners / Swarovski visit Jul 2' },
+      { t:'Thermal base layer per person', n:'For Iceland and high-altitude days' },
+      { t:'Swimwear per person', n:'Lake Achensee, Lake Braies, mountain lakes' },
+      { t:'Underwear × 5 per person + socks × 5', n:'Quick-dry only' },
+      { t:'Light sleepwear per person', n:'Camping Jungfrau nights can be chilly' },
+      { t:'Hat (sun) per person' },
+      { t:'Warm beanie per person', n:'Seebensee hike, Grossglockner, Iceland' },
+      { t:'Gloves (light) per adult', n:'Grossglockner can be below 10°C in July' },
+    ]},
+    { icon:'🥾', title:'Footwear', items:[
+      { t:'Waterproof hiking boots (worn on plane)', n:'Heaviest item — wear to save bag weight' },
+      { t:'Trail runners or light sneakers', n:'Second shoe option for easy days / towns' },
+      { t:'Flip flops or camp sandals', n:'Campsite, hotel room, lake days' },
+    ]},
+    { icon:'🩺', title:'Health, First Aid & Safety', items:[
+      { t:'Travel insurance cards × 4', n:'Print + save PDF offline — book before Jun 19' },
+      { t:'EHIC / travel health cards', n:'EU countries — useful as backup' },
+      { t:'Prescription meds (full trip + 1 week buffer)' },
+      { t:'Ibuprofen + Paracetamol', n:'European brand names differ — bring from home' },
+      { t:'Antihistamines', n:'Alpine meadow pollen is significant' },
+      { t:'Altitude / motion sickness tabs', n:'Grossglockner switchbacks, cable cars' },
+      { t:'Blister kit + moleskin', n:'Critical for long hike days — Tre Cime, Seebensee' },
+      { t:'Bandages, antiseptic wipes, gauze', n:'Basic hiking first aid' },
+      { t:'Sunscreen SPF 50+', n:'High UV at altitude — restock en route if needed' },
+      { t:'Lip balm with SPF' },
+      { t:'Insect repellent', n:'Iceland midges + Austrian/Italian forest trails' },
+      { t:'Hand sanitiser × 2 small bottles' },
+    ]},
+    { icon:'🔌', title:'Electronics & Power', items:[
+      { t:'EU/CH power adapters × 2', n:'Type C + J (Switzerland uses J) — bring both' },
+      { t:'Universal power bank × 2', n:'20,000mAh each — GPS + phone drain fast on hikes' },
+      { t:'USB-C charging cables × 4' },
+      { t:'Phone car charger (12V dual USB)', n:'For the Hertz rental — navigation drains fast' },
+      { t:'Wireless earbuds per person', n:'Long drives + kids entertainment' },
+      { t:'Tablet or laptop (1 family)', n:'Evening trip planning + kids entertainment' },
+      { t:'Downloaded offline maps (Maps.me / Google)', n:'Cell coverage gaps in Alps and Dolomites' },
+      { t:'Downloaded entertainment for kids', n:'Long driving days — Iceland to Zurich leg' },
+    ]},
+    { icon:'📄', title:'Documents & Money', items:[
+      { t:'Passports × 4 (valid 6+ months beyond Jul 5)' },
+      { t:'Flight confirmation — Ref A77762', n:'FI686 / FI568 / FI571+FI689' },
+      { t:'Car rental confirmations printed', n:'Budget #42334482US1 · Hertz L5350959316' },
+      { t:'All accommodation booking refs printed' },
+      { t:'Activity booking refs (Oeschinensee, Grindelwald, etc.)' },
+      { t:'Austrian vignette receipt', n:'Buy at asfinag.at on Jun 22 at ZRH' },
+      { t:'Cash — ISK for Iceland', n:'Grab from ATM at KEF airport on arrival' },
+      { t:'Cash — CHF ~100', n:'Oeschinensee parking + Swiss tolls' },
+      { t:'Cash — EUR ~€300 total', n:'€150 Austria · €100 Germany · €40–50 Coburger Hütte tip · misc Italy' },
+      { t:'Credit cards × 2 (Visa + Mastercard)', n:'Notify bank of travel dates before departing' },
+    ]},
+    { icon:'🍱', title:'Food & Snacks', items:[
+      { t:'High-protein trail snacks × 3 days worth', n:'Buy extra at Migros/REWE for hike days' },
+      { t:'Reusable water bottles × 4', n:'Alpine springs are drinkable — saves money' },
+      { t:'Collapsible soft cooler', n:'For grocery strategy — Migros ZRH + REWE stops' },
+      { t:'Snack stash for kids (long drives)', n:'Day 3 ZRH→Lauterbrunnen, Day 7 long drive days' },
+    ]},
+    { icon:'🧴', title:'Toiletries (100ml rule for carry-on)', items:[
+      { t:'Shampoo + conditioner (solid bars or 100ml)', n:'Saves liquids bag space' },
+      { t:'Body wash × 1 shared (100ml)' },
+      { t:'Toothbrush × 4 + toothpaste (100ml)' },
+      { t:'Deodorant × 4 (solid or 100ml roll-on)' },
+      { t:'Razor + shaving gel' },
+      { t:'Feminine hygiene products', n:'Stock up before remote Dolomites days' },
+      { t:'Quick-dry travel towel × 4', n:'Camping Jungfrau may have limited towels' },
+      { t:'Microfiber face cloth × 4' },
+    ]},
+    { icon:'🎯', title:'Activities & Misc', items:[
+      { t:'Trekking poles (collapsible, checked if flying)', n:'Seebensee/Drachensee + Tre Cime are steep' },
+      { t:'Binoculars', n:'Puffins at Dyrhólaey · Eagle\'s Nest wildlife' },
+      { t:'Sunglasses × 4', n:'Glacier glare + high-altitude UV' },
+      { t:'Kids\' entertainment for driving', n:'Cards, small games, downloaded content' },
+      { t:'Dry bags (waterproof) × 2', n:'Königssee boat + wet Iceland days' },
+      { t:'Lightweight picnic mat', n:'For lakeside lunch days — Braies, Achensee' },
+      { t:'Coburger Hütte cash tip', n:'€40–50 ready for Day 14 — Bichlbach base' },
+      { t:'Emergency whistle × 2', n:'Remote hike days — standard alpine safety' },
+    ]},
+  ];
+
+  const wrap = div('', h('p', {class:'section-title'}, 'Essential Packing List'));
+  const note = h('p',{style:'font-size:12px;color:var(--slate);margin-bottom:14px;'},'Carry-on only · 22 lbs / person · Icelandair Economy Light. Tap any category to expand. Check items off as you pack.');
+  wrap.appendChild(note);
+
+  const checked = loadChecked();
+  // Summary bar — total items vs checked
+  const allItems = categories.flatMap(c => c.items);
+  const totalCount = allItems.length;
+  const checkedCount = Object.values(checked).filter(Boolean).length;
+  const summaryBar = h('div',{style:'display:flex;align-items:center;gap:12px;margin-bottom:14px;'});
+  const progressWrap = h('div',{style:'flex:1;background:#eee;border-radius:3px;overflow:hidden;height:6px;'});
+  const progressFill = h('div',{style:'height:6px;background:var(--sage);border-radius:3px;transition:width 0.3s;width:'+(Math.round(checkedCount/totalCount*100)||0)+'%'});
+  progressWrap.appendChild(progressFill);
+  const progressLabel = h('span',{style:'font-size:12px;color:var(--slate);white-space:nowrap;'},checkedCount+' / '+totalCount+' packed');
+  const clearBtn = h('button',{style:'font-size:11px;background:transparent;border:1px solid var(--border);border-radius:3px;padding:3px 10px;cursor:pointer;color:var(--slate);font-family:inherit;letter-spacing:0.5px;'},'Clear all');
+  clearBtn.addEventListener('click',function(){
+    localStorage.removeItem(PACK_KEY);
+    wrap.querySelectorAll('.pack-cb').forEach(cb=>{ cb.checked=false; cb.closest('.pack-item').classList.remove('pack-checked'); });
+    progressFill.style.width='0%'; progressLabel.textContent='0 / '+totalCount+' packed';
+  });
+  summaryBar.appendChild(progressWrap);
+  summaryBar.appendChild(progressLabel);
+  summaryBar.appendChild(clearBtn);
+  wrap.appendChild(summaryBar);
+
+  function updateProgress() {
+    const c = wrap.querySelectorAll('.pack-cb:checked').length;
+    progressFill.style.width=Math.round(c/totalCount*100)+'%';
+    progressLabel.textContent=c+' / '+totalCount+' packed';
+  }
+
+  const grid = div('pack-grid');
+  let itemIdx = 0;
+  categories.forEach((cat, catIdx) => {
+    const catEl = div('pack-category' + (catIdx < 2 ? ' pack-open' : ''));
+    // Progress bar per category
+    const catCheckedCount = cat.items.filter((_,i) => checked['i'+(itemIdx+i)]).length;
+    const header = div('pack-cat-header');
+    header.appendChild(h('span',{class:'pack-cat-icon'},cat.icon));
+    header.appendChild(h('span',{class:'pack-cat-title'},cat.title));
+    header.appendChild(h('span',{class:'pack-cat-count'},cat.items.length+' items'));
+    header.appendChild(h('span',{class:'pack-cat-arrow'},'▾'));
+    header.addEventListener('click',()=>catEl.classList.toggle('pack-open'));
+    catEl.appendChild(header);
+    const progBar = h('div',{class:'pack-progress'});
+    const progFill = h('div',{class:'pack-progress-bar',style:'width:'+(catCheckedCount/cat.items.length*100)+'%'});
+    progBar.appendChild(progFill);
+    catEl.appendChild(progBar);
+    const itemsEl = div('pack-items');
+    cat.items.forEach((item) => {
+      const key = 'i'+itemIdx;
+      const row = div('pack-item'+(checked[key]?' pack-checked':''));
+      const cb = document.createElement('input');
+      cb.type='checkbox'; cb.className='pack-cb'; cb.checked=!!checked[key];
+      cb.addEventListener('change',function(){
+        const obj=loadChecked(); obj[key]=cb.checked?1:0;
+        if(!obj[key]) delete obj[key];
+        saveChecked(obj);
+        row.classList.toggle('pack-checked',cb.checked);
+        const catChecked=itemsEl.querySelectorAll('.pack-cb:checked').length;
+        progFill.style.width=(catChecked/cat.items.length*100)+'%';
+        updateProgress();
+      });
+      const textWrap = div('pack-item-text');
+      textWrap.appendChild(document.createTextNode(item.t));
+      if (item.n) textWrap.appendChild(h('span',{class:'pack-note'},item.n));
+      row.appendChild(cb);
+      row.appendChild(textWrap);
+      itemsEl.appendChild(row);
+      itemIdx++;
+    });
+    catEl.appendChild(itemsEl);
+    grid.appendChild(catEl);
+  });
+  wrap.appendChild(grid);
+  return wrap;
+}
+
 function renderChecklist(d) {
   const wrap = div('', h('p', {class:'section-title'}, 'Booking Checklist'));
   var dc2=d.checklist.filter(function(x){return x.status==='done';}).length;var sd=false;var tBtn=h('button',{style:'font-size:11px;letter-spacing:1px;text-transform:uppercase;background:transparent;border:1px solid var(--border);border-radius:3px;padding:4px 12px;cursor:pointer;color:var(--slate);margin-bottom:12px;'},'Show completed ('+dc2+')');tBtn.addEventListener('click',function(){sd=!sd;wrap.querySelectorAll('.cl-done').forEach(function(e){e.style.display=sd?'':'none';});tBtn.textContent=sd?'Hide completed':'Show completed ('+dc2+')';});wrap.appendChild(tBtn);
@@ -1353,6 +1611,7 @@ async function init() {
 
     container.appendChild(renderAccommodation(d));
     container.appendChild(renderChecklist(d));
+    container.appendChild(renderPacking(d));
     container.appendChild(renderBudget(d));
     container.appendChild(renderCash(d));
     container.appendChild(renderReminders(d));
