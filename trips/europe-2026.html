@@ -409,7 +409,8 @@
 <nav style="background:#1a1a2e;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;">
   <a href="../index.html" style="font-family:'Playfair Display',serif;font-size:14px;color:#faf8f3;text-decoration:none;letter-spacing:0.3px;">← Rahul & <em style="color:#e8d5a3;font-style:italic;">Veena's</em> Travel Journal</a>
   <div style="display:flex;align-items:center;gap:16px;">
-    <a href="https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing" target="_blank" rel="noopener" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,243,0.5);text-decoration:none;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);border-radius:3px;padding:4px 10px;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">📊 Live Sheet</a>
+    <a href="https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing" target="_blank" rel="noopener" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,243,0.5);text-decoration:none;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);border-radius:3px;padding:8px 12px;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">🌐 Google Sheet</a>
+    <button id="nav-export-btn" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;color:rgba(250,248,243,0.5);background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);border-radius:3px;padding:8px 12px;font-family:inherit;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">📥 Download Sheet</button>
     <a href="today.html" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,243,0.5);text-decoration:none;" onmouseover="this.style.color='#e8d5a3'" onmouseout="this.style.color='rgba(250,248,243,0.5)'">📍 Today</a>
     <a href="emergency.html" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,107,107,0.7);text-decoration:none;" onmouseover="this.style.color='#ff6b6b'" onmouseout="this.style.color='rgba(255,107,107,0.7)'">🆘 SOS</a>
     <span id="nav-label" style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(250,248,243,0.7);"></span>
@@ -425,7 +426,7 @@ if ('serviceWorker' in navigator) {
 
 <script>
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
-const DATA_FILE = '../data/europe-2026.json?v=20260513120000';
+const DATA_FILE = '../data/europe-2026.json?v=20260513011639';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
 const STORAGE_KEY = 'trip-highlights-europe-2026';
@@ -1218,6 +1219,9 @@ function renderSummaryTable(d) {
   const btnExport = h('button', {class:'btn-export', title:'Download as Excel'});
   btnExport.innerHTML = '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 17l2-3-2-3h1.5l1.25 2 1.25-2H13.5l-2 3 2 3H12l-1.25-2L9.5 17H8z"/></svg> Export to Excel';
   btnExport.onclick = function() { exportGlanceToExcel(d); };
+    // Wire nav download button
+    var navBtn = document.getElementById('nav-export-btn');
+    if (navBtn) navBtn.onclick = function() { exportGlanceToExcel(d); };
   const btnReset = h('button', {class:'btn-export', title:'Reset highlights to latest data', style:'margin-left:8px;opacity:0.7;'});
   btnReset.innerHTML = '<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg> Reset glance';
   btnReset.onclick = function() { resetGlance(); };
