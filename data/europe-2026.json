@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:50:11Z",
+    "_updated": "2026-05-13T00:57:47Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1194,7 +1194,7 @@
     {
       "dayLabel": "14",
       "date": "Jul 3",
-      "title": "Seebensee + Drachensee Dragon Lake → Bichlbach Night 2",
+      "title": "The Lakes of the Dragon — Seebensee · Drachensee · Coburger Hütte",
       "meta": "Jul 3 · Bichlbach → Ehrwald → Seebensee → Drachensee → back to Bichlbach · 🚗 20 km / 12 mi · ~30m",
       "flag": "🇮🇹",
       "mapLinks": [
@@ -1207,37 +1207,43 @@
         {
           "heading": null,
           "items": [
-            "Leave <strong>Bichlbach 8:30am</strong> · drive <strong>5 min</strong> → Ehrwald · park at Ehrwalder Almbahn valley station · arrive ~8:35am",
-            "⭐ <strong>Ehrwalder Almbahn cable car</strong> up to mountain station · ~€21.50 return · Zugspitze massif looms directly above · 10 min ride",
-            "⭐ <strong>Seebensee</strong> — Trail · <strong>~1.5km / ~1mi</strong> easy gravel path from top station · turquoise glacial lake at 1,657m · Zugspitze reflected in the water · wildflower meadows · bench at the shore",
-            "🥾 <strong>Drachensee (Dragon Lake)</strong> — Trail · ~1km / ~0.6mi steep 30–45min climb (260m) from Seebensee · glacial dragon lake in a high cirque · Zugspitze looming overhead · one of the most dramatic mountain lakes in Austria · push on if legs allow",
-            "⭐ ⭐ <strong>Lunch at Coburger Hütte (2,026m)</strong> — MUST · Kaiserschmarrn here is legendary — fluffy shredded pancake with rum raisins + powdered sugar · Tiroler Gröstl also excellent · cash only · glacier + valley views · one of the best mountain lunches in the Alps · allow 1hr · ⚠️ bring €40–50 cash · ATM in Bichlbach or Ehrwald evening before",
-            "Descent ~1.5hrs · back at Ehrwald valley by 2:30pm",
-            "Drive <strong>5 min</strong> → <strong>Bichlbach</strong> · back at Landhaus by 3:00pm · relax · pack bags · early dinner · alarm 7:00am · Neuschwanstein checkout · Neuschwanstein + Rhine Falls + ZRH",
-            "⭐ <strong>Sunset at Heiterwanger See</strong> — easy 20min walk from Bichlbach along Panoramaweg · crystal-clear turquoise lake · Zugspitze massif reflected in still water · free · flat path around the lake · golden hour from western shore · perfect last evening wind-down before the big Day 15 drive · Hotel Fischer am See terrace for a drink"
+            "🏦 <strong>Tonight (Jul 2 evening): ATM in Ehrwald</strong> — Raiffeisenbank ATM in Ehrwald village · withdraw €60–80 cash for the family · Coburger Hütte is cash only — no card reader on the mountain",
+            "⏰ <strong>8:30am — Depart Bichlbach</strong> — 5 min drive to the Ehrwalder Almbahn valley station · free parking for cable car guests · arrive ~8:35am",
+            "⭐ <strong>8:45am — Ehrwalder Almbahn cable car</strong> — ~€26/adult return (2026 rate) · Zugspitze massif looms directly ahead · 📸 <strong>Zugspitze panoramic platform at the top station</strong> — take 5 min to look north toward Germany · you see the \"other side\" of the Zugspitze — same peak as seen from Garmisch · worth the brief stop before walking",
+            "⭐ ⭐ <strong>9:15am — Seebensee</strong> — easy 1.5km / 1mi gravel path from the top station · turquoise glacial lake at 1,657m · Zugspitze massif reflected perfectly · 📸 <strong>Mirror reflection window: before 10:30am</strong> — mountain winds create ripples by midday · early start pays off here · allow 30 min at the lake",
+            "🥾 <strong>10:15am — Drachensee ascent (The Challenge)</strong> — ~1km / 0.6mi steep 30–45 min climb · 260m gain from Seebensee · ⚠️ Path can be slippery if it rained on Jul 2 — wear your best-grip hiking boots today · glacial dragon lake in a high cirque · Zugspitze overhead · one of the most dramatic mountain lakes in Austria",
+            "⭐ ⭐ <strong>11:30am — Coburger Hütte (2,026m) — legendary Kaiserschmarrn</strong> — MUST · cash only — bring €60–80 family · Kaiserschmarrn here is legendary: fluffy shredded pancake with rum raisins + powdered sugar · Tiroler Gröstl also excellent · glacier + valley views from the terrace · allow 1hr · one of the finest mountain lunches in the Alps",
+            "🥾 <strong>1:00pm — Descent to cable car station</strong> — back down the ridge · ~1.5hrs · back at Ehrwald valley station ~2:30pm · drive 5 min to Bichlbach",
+            "🏠 <strong>2:30pm — Back at Landhaus Bichlbach</strong> — relax · shower · pack bags for tomorrow · checkout is 8am — Neuschwanstein 9:30am · alarm 7:00am",
+            "⭐ <strong>7:30pm — Heiterwanger See sunset walk</strong> — 20 min walk from Landhaus along the Panoramaweg · Panoramaweg stays high enough to catch the alpenglow after the sun dips below the valley · crystal-clear turquoise lake · Zugspitze massif reflected in still water · your last proper alpine evening · free · flat easy path",
+            "🍔 <strong>Dinner</strong> — Gasthof Bichlbach or hotel restaurant · early dinner + early bed · alarm 7:00am tomorrow · Neuschwanstein 9:30am — last big day"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Leave Innsbruck 8:30am · Ehrwald 9:30am · back at valley 2:30pm · Bregenz by 4:30pm"
-        },
-        {
-          "type": "alarm",
-          "text": "💰 Ehrwalder Almbahn ~€21.50 return · Coburger Hütte cash only"
-        },
-        {
-          "type": "alarm",
-          "text": "🏊 Strandbad Bregenz — swimming in Lake Constance · €5 entry · open until 8pm in July"
-        },
-        {
-          "type": "booking",
-          "text": "⏳ Book Bregenz hotel Jul 3–4 · Hotel Weißes Kreuz / Messmer Boutique · near Bodensee"
+          "type": "warn",
+          "text": "💶 <strong>Coburger Hütte cash only</strong> — withdraw €60–80 at Raiffeisenbank ATM in Ehrwald village tonight · budget: Kaiserschmarrn ~€12 · Tiroler Gröstl ~€14 · drinks ~€4–6 each"
         },
         {
           "type": "tip",
-          "text": "💶 <strong>Coburger Hütte is cash only</strong> — bring €40–50 before the hike · ATM in Bichlbach or Ehrwald village the evening before · Kaiserschmarrn ~€12 · Tiroler Gröstl ~€14"
+          "text": "📸 <strong>Seebensee mirror reflection</strong> — must arrive before 10:30am · mountain winds create ripples by midday · morning start from Bichlbach (8:30am) guarantees the calm water window"
+        },
+        {
+          "type": "tip",
+          "text": "🏔️ <strong>Zugspitze platform at top station</strong> — take 5 min before walking to Seebensee · look north toward Germany · see the \"other side\" of the Zugspitze (2,962m) — same peak visible from Garmisch-Partenkirchen"
+        },
+        {
+          "type": "tip",
+          "text": "🌄 <strong>Panoramaweg for Heiterwanger See</strong> — take the higher Panoramaweg trail not the lakeside path · stays above the valley floor to catch alpenglow after sunset · 20 min from hotel · flat + easy"
+        },
+        {
+          "type": "tip",
+          "text": "💰 <strong>Day 14 costs</strong> — Ehrwalder Almbahn ~€26/adult return · Coburger Hütte lunch ~€30–40pp (cash) · Heiterwanger See free · parking free"
+        },
+        {
+          "type": "done",
+          "text": "✅ Landhaus Bichlbach · Night 2 of 2 · already checked in · checkout 8am tomorrow"
         }
       ],
       "summary": {
@@ -1255,11 +1261,11 @@
         "driveTime": "~30m · just Bichlbach ↔ Ehrwald"
       },
       "keyDecisions": [
-        "✅ Ehrwalder Almbahn up · Seebensee · push to Drachensee if energy",
-        "✅ Coburger Hütte Kaiserschmarrn — bring cash · legendary mountain lunch",
-        "✅ Heiterwanger See sunset walk — 20min from hotel · pack tonight · alarm 7am"
+        "✅ ATM in Ehrwald tonight — €60–80 cash · Coburger Hütte cash only · no card reader",
+        "📸 Seebensee mirror reflection before 10:30am — winds create ripples by midday · early start essential",
+        "⚠️ Drachensee path slippery if rained Jul 2 — best-grip boots · 260m steep climb"
       ],
-      "timeline": "8:30am ▸ Ehrwald ▸ cable car ▸ Seebensee ▸ Drachensee ▸ Coburger Hütte lunch ▸ 2:30pm back ▸ pack ▸ early night"
+      "timeline": "Tonight: ATM Ehrwald €60–80 cash ▸ 8:30am Bichlbach ▸ 8:45am Ehrwalder Almbahn €26 ▸ Zugspitze platform ▸ 9:15am Seebensee mirror (before 10:30am) ▸ 10:15am Drachensee climb ▸ 11:30am Coburger Hütte Kaiserschmarrn ▸ 1pm descent ▸ 2:30pm Bichlbach + pack ▸ 7:30pm Heiterwanger See sunset"
     },
     {
       "dayLabel": "15",
