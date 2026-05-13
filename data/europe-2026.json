@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:23:07Z",
+    "_updated": "2026-05-13T00:24:45Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -332,7 +332,7 @@
     {
       "dayLabel": "3",
       "date": "Jun 22",
-      "title": "Fly KEF→ZRH · Lake Thun · Lauterbrunnen",
+      "title": "Fly KEF→ZRH · Spiez · Lauterbrunnen — The Alpine Entry",
       "meta": "Jun 22 · ZRH → Lake Thun → Spiez Castle → Camping Jungfrau, Lauterbrunnen · 🚗 144 km / 90 mi · ~1h 45m",
       "flag": "🇨🇭",
       "mapLinks": [
@@ -349,29 +349,43 @@
         {
           "heading": null,
           "items": [
-            "Return Iceland car at KEF · board <strong>7:20am FI568</strong>",
-            "Land ZRH <strong>1:05pm</strong> · clear Non-Schengen → Schengen passport control · pick up <strong>Hertz rental car</strong> at Arrivals Hall desk · Conf. <strong>L5350959316</strong> · Jeep Compass or similar · allow <strong>60–90 min</strong> for immigration + car pickup",
-            "Depart ZRH <strong>~2:30–3:00pm</strong> · drive south toward Bernese Oberland",
-            "➕ <strong>Optional:</strong> Drive ~1hr → Lake Thun (Thunersee) viewpoint near Spiez — pull off on Route 6 for the classic Eiger/Mönch/Jungfrau framed by turquoise lake · medieval Spiez Castle on the waterfront worth a quick 15 min stop · no entry needed for the exterior · first taste of the Bernese Oberland (~30 min) · only if arriving Lauterbrunnen before 6pm",
-            "🛒 <strong>Aldi Suisse, Interlaken</strong> — Lindenallee, Interlaken · cheapest supermarket in Switzerland · open Mon 8am–8pm ✅ · 5 min off route · buy Swiss days only (Jun 22–24) · do the BIG shop in Berchtesgaden Germany Jun 24 — prices 35% cheaper · allow ~45min",
-            "🏕 <strong>Camping Jungfrau, Lauterbrunnen</strong> — ✅ Nights 3–4 · 📍 Weid 406, 3822 Lauterbrunnen, Switzerland · 📞 +41 33 856 20 10 · reception@camping-jungfrau.ch · Check-in 15:00–18:30 · arrive ~5:30pm",
-            "⭐ <strong>Staubbach Falls, Lauterbrunnen</strong> — 300m freefall straight over the village · walk to the base in 10 min from campsite · golden hour light hits the falls perfectly · free · do this evening on arrival — saves Day 5 morning time",
-            "Dinner at campsite or nearby Lauterbrunnen village · early night — big Day 4 tomorrow"
+            "⏰ <strong>5:45am — KEF Airport</strong> — return Budget rental car at the airport lot · shuttle back to terminal · allow 45 min for drop-off + check-in · FI568 check-in opens 5am · carry-on only — no checked bag wait",
+            "✈️ <strong>7:20am — FI568 KEF → ZRH</strong> — Icelandair · 3hr 45min · arrives 1:05pm · clear Non-Schengen → Schengen passport control at ZRH · Hertz counter is in Arrivals Hall · allow 60–90 min for car pickup",
+            "🚗 <strong>1:05pm — Hertz ZRH pickup</strong> — conf. L5350959316 · Jeep Compass or similar · ⚠️ <strong>Ask at the counter:</strong> (1) Swiss motorway vignette included? (CHF 40 if not) · (2) Cross-border approval for Italy + Austria · (3) Photo / note the licence plate number — you need it tonight to buy the Austrian Digital Vignette · depart ZRH ~2:30–3:00pm",
+            "💳 <strong>Swiss motorway vignette</strong> — the 2026 sticker must be on the windscreen before driving on any Swiss motorway · Hertz should include it — if not, buy at any petrol station for CHF 40 · without it: CHF 200 on-the-spot fine",
+            "⭐ <strong>4:15pm — Spiez Castle & Lake Thun</strong> — \"the most beautiful bay in Europe\" · Route 6 lakeside road from Interlaken — hugs Lake Thun shore · far more scenic than the motorway tunnel · Schloss Spiez gardens are free — skip the interior if tired · panoramic view: Lake Thun + Niesen pyramid mountain + Eiger on clear days · allow 30 min · perfect first Swiss lakes moment",
+            "🛒 <strong>Grocery stop — Coop Supermarket, Lauterbrunnen village</strong> — stop before check-in · closes ~6:30–7:00pm · better than Camping Jungfrau's own shop · pick up: Swiss cheese · charcuterie · local chocolate · wine · breakfast items · this is your first Alpine dinner — make it good · Aldi Interlaken visit can wait until Day 4 or 5 if needed",
+            "🏕 <strong>5:45pm — Check-in: Camping Jungfrau, Lauterbrunnen</strong> — ✅ Nights 3–4 · 📍 Weid 406, 3822 Lauterbrunnen, Switzerland · 📞 +41 33 856 20 10 · reception@camping-jungfrau.ch · check-in 15:00–18:30 · CHF 398 / $499 · 🚗 Park the car here — you won't need it again until Day 5 · valley is best by foot + train",
+            "⭐ ⭐ <strong>Staubbach Falls — evening walk</strong> — 5 min walk from Camping Jungfrau · 300m freefall straight over the village — one of Europe's highest free-falling waterfalls · in June: lit up at dusk · walk to the base and feel the mist · completely free · no driving · magical first Alpine evening · Veena will love the golden-hour light on the cliff",
+            "💳 <strong>Tonight: buy Austrian Digital Vignette</strong> — buy at asfinag.at · ~€16.50 · you need your licence plate number (noted at Hertz) · cameras on the Austrian motorway read the plate automatically · required before entering Austria on Jun 26",
+            "🍔 <strong>Dinner</strong> — picnic at campsite with Coop groceries · or Restaurant Jungfrau in the village (10 min walk) · early night — Oeschinensee gondola departs 8:30am tomorrow"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "🏷 At Hertz: confirm Swiss vignette (CHF 40) included · confirm cross-border approval for Italy + Austria · inspect car before leaving"
-        },
-        {
-          "type": "done",
-          "text": "✅ <strong>Camping Jungfrau, Lauterbrunnen</strong> — Nights 3–4 · $499 / CHF 398 · check-in 15:00–18:30 · Weid 406, 3822 Lauterbrunnen"
+          "type": "warn",
+          "text": "⚠️ <strong>Swiss vignette (CHF 40)</strong> — must be on windscreen before driving on Swiss motorways · Hertz should include it — verify at counter · buy at petrol station if missing · fine = CHF 200"
         },
         {
           "type": "tip",
-          "text": "💰 <strong>Smart grocery strategy</strong> — buy Swiss days only at Aldi Interlaken (Jun 22–24) · then BIG shop at Rewe or Aldi Berchtesgaden on Jun 24 — German prices ~35% cheaper · top up at Spar/Interspar Austria · Eurospar for Italian days"
+          "text": "🚗 <strong>Take the lakeside road</strong> — from Interlaken to Lauterbrunnen use Route 6 along Lake Thun shore · far more scenic than motorway tunnels · adds only 5 min"
+        },
+        {
+          "type": "tip",
+          "text": "🏕️ <strong>Car parked until Day 5</strong> — once at Camping Jungfrau, leave the car · Lauterbrunnen valley is best explored by foot and train · Oeschinensee + Grindelwald both reached by bus/gondola from the village"
+        },
+        {
+          "type": "tip",
+          "text": "💳 <strong>Austrian vignette tonight</strong> — asfinag.at · ~€16.50 · need your licence plate number · cameras check automatically when you enter Austria Jun 26"
+        },
+        {
+          "type": "done",
+          "text": "✅ Camping Jungfrau · Nights 3–4 · CHF 398 / $499 · Weid 406, 3822 Lauterbrunnen · +41 33 856 20 10"
+        },
+        {
+          "type": "tip",
+          "text": "💰 <strong>Grocery strategy</strong> — Coop Lauterbrunnen today (Swiss days) · BIG shop at Rewe/Aldi Berchtesgaden Jun 24 (German prices 35% cheaper) · Hofer Bad Goisern Jun 27 (Austria + Dolomites days)"
         }
       ],
       "summary": {
@@ -393,11 +407,11 @@
         "driveTime": "~1h 45m"
       },
       "keyDecisions": [
-        "✅ Hertz pickup — allow 60–90min at ZRH Arrivals",
-        "🤔 Spiez Castle — optional quick stop · only if arriving Lauterbrunnen before 6pm",
-        "✅ Staubbach Falls this evening — 10min walk from campsite · saves Day 5 morning"
+        "✅ At Hertz: confirm vignette · confirm cross-border Italy+Austria · photograph licence plate",
+        "✅ Spiez Castle gardens (free) — Route 6 lakeside road NOT the motorway tunnel",
+        "✅ Coop Lauterbrunnen before 6:30pm · Staubbach Falls evening walk · Austrian vignette tonight"
       ],
-      "timeline": "7:20am ▸ KEF→ZRH ▸ 1pm ZRH land ▸ 2:30pm drive ▸ Spiez ▸ 5:30pm Lauterbrunnen"
+      "timeline": "5:45am KEF drop-off ▸ 7:20am FI568 ▸ 1:05pm ZRH land ▸ 2:30pm Hertz pickup ▸ 4:15pm Spiez Castle ▸ Coop Lauterbrunnen ▸ 5:45pm Camping Jungfrau ▸ Staubbach Falls evening ▸ Austrian vignette tonight"
     },
     {
       "dayLabel": "4",
