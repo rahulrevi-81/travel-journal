@@ -101,7 +101,7 @@
   .sched-item.alt-route { background: #fdf8f0; border-left: 3px solid #e67e22; }
   .sched-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
   .sched-text { flex: 1; line-height: 1.5; color: #2a2a3e; }
-  .sched-text strong { font-weight: 500; color: var(--ink); }
+  .sched-text strong { font-weight: 600; color: var(--ink); }
   .sched-badge { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
   .badge-wow  { background: var(--gold); color: white; }
   .badge-hike { background: #4a7c2f; color: white; }
@@ -348,10 +348,14 @@
     .day-title { font-size: 13px; }
     .day-body { padding: 0; }
     .day-flag { font-size: 20px; }
-    /* Schedule items */
-    .sched-item { padding: 10px 10px; gap: 6px; }
-    .sched-text { font-size: 13px; line-height: 1.5; }
-    .sched-icon { font-size: 14px; }
+    /* Schedule items — mobile readability */
+    .sched-item { padding: 10px 10px; gap: 6px; align-items: flex-start; }
+    .sched-icon { font-size: 15px; margin-top: 2px; }
+    /* Title on its own line, detail text below — key mobile fix */
+    .sched-text { font-size: 13px; line-height: 1.55; display: block; }
+    .sched-text strong { display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 2px; line-height: 1.4; }
+    .sched-text em { font-style: normal; color: var(--slate); font-size: 12px; }
+    /* After the strong, the detail text (— ... · ...) is slightly muted */
     /* Tags */
     .trip-map-card { min-width: 100%; }
     .booking-strip { padding: 12px 16px; gap: 12px; }
@@ -383,6 +387,7 @@
     .day-num { font-size: 16px !important; }
     .day-title { font-size: 12px; }
     .sched-text { font-size: 12px; }
+    .sched-text strong { font-size: 12px; }
     .day-timeline { font-size: 10px; }
     .hero-stat-num { font-size: 20px; }
   }
