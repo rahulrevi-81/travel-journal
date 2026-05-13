@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:30:31Z",
+    "_updated": "2026-05-13T00:32:26Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -586,7 +586,7 @@
     {
       "dayLabel": "6",
       "date": "Jun 25",
-      "title": "Königssee + Eagle’s Nest + Hintersee → Berchtesgaden Night 2",
+      "title": "Königssee · Eagle's Nest · Hintersee — Lakes, Legends & Luxury",
       "meta": "Jun 25 · Berchtesgaden → Königssee boat → Eagle’s Nest → Hintersee → Berchtesgaden · 🚗 80 km / 50 mi · ~2h total",
       "flag": "🇩🇪",
       "mapLinks": [
@@ -599,31 +599,41 @@
         {
           "heading": null,
           "items": [
-            "Leave Berchtesgaden area <strong>7:00am</strong> · drive <strong>~2hrs</strong> → <strong>Königssee dock, Schönau am Königssee</strong> · arrive ~9:00am",
-            "⭐ <strong>Königssee electric boat</strong> departs ~9:15am — ride straight to <strong>Salet</strong> (55 min · do NOT get off at St. Bartholomä yet)",
-            "🥾 <strong>Obersee walk</strong> — 15 min from Salet to pristine mountain lake · iconic half-submerged boathouse · the quietest corner of Berchtesgaden · ~45min",
-            "Board boat back to <strong>St. Bartholomä</strong> (20 min) · quick beer garden lunch at the historic hunting lodge (~45min)",
-            "Final boat back to <strong>Königssee Seelände</strong> (~35 min) · arrive ~12:30pm",
-            "Drive <strong>10 min</strong> → <strong>Obersalzberg</strong> · park · walk to Dokumentation Obersalzberg WWII museum (~30min · €10/adult)",
-            "⭐ <strong>Eagle's Nest (Kehlsteinhaus)</strong> — bus from Obersalzberg · <strong>first afternoon bus ~1:00pm</strong> · elevator through the mountain · summit 1,834m · panoramic view over Berchtesgaden, Königssee and the Alps · <strong>~2hrs</strong>",
-            "➕ <strong>Optional:</strong> Drive 15 min → Hintersee + Zauberwald (Magic Forest) — crystal-clear turquoise lake · giant moss-covered boulders · quick 30min walk · free",
-            "⭐ <strong>Rossfeld Panorama Road</strong> (Roßfeldpanoramastraße) — Germany's highest panoramic toll road · 1,570m · 15.4km loop · €9/car toll · pay at north tollbooth Roßfeldstraße 150 · 360° views: Hoher Göll · Kehlstein · Watzmann · Berchtesgaden valley · clear days: see Salzburg · straddle the D/Ö border stone at the summit car park · allow ~1hr incl. stops · do after Eagle's Nest — same area · no booking needed",
-            "🏠 <strong>Night 2 — Berchtesgaden Apartment</strong> — ✅ Already checked in · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany · Check-in 16:00–20:00"
+            "⏰ <strong>8:15am — Königssee Seelände car park</strong> — only 10 min drive from Berchtesgaden apartment · car park is huge but the dock is a 10 min walk from the lot — factor this in · aim for the 8:30 or 9:00am boat · buy tickets at the dock counter",
+            "⭐ ⭐ <strong>8:30am — Königssee electric boat</strong> — completely silent electric boats — only powered vessels allowed on this lake · ⚠️ Go all the way to <strong>Salet</strong> (the final stop) — NOT St. Bartholomä · 55 min to Salet · ~€28–30 return to Salet per adult · book at seenschifffahrt.de ~1 week before · Jun 25 is peak season",
+            "🎺 <strong>The mountain echo tradition</strong> — midway the captain stops and plays a trumpet · the sound bounces off the sheer cliff walls · a Königssee tradition for centuries · have €1–2 ready to tip · kids will love this moment",
+            "🥾 <strong>9:45am — Obersee & Röthbachfall walk</strong> — from Salet dock: flat 15 min walk to Obersee · mirror-like glacial lake with the iconic half-submerged wooden boathouse · continue to the end of the lake for <strong>Röthbachfall</strong> — one of the tallest waterfalls in Germany crashing into the lake · completely peaceful — day-trippers rarely make it this far · allow 1.5hrs total",
+            "🍺 <strong>12:00pm — St. Bartholomä lunch stop</strong> — board the boat back from Salet · stop at St. Bartholomä · beer garden at the historic red-domed hunting lodge · Bavarian classics: Brotzeit plate + Weißbier · unique setting right on the lakeshore · allow 45 min · then final boat back",
+            "⛵ <strong>12:45pm — Final boat back to Königssee Seelände</strong> — 35 min · arrive ~1:15pm · walk 10 min to car park",
+            "⭐ ⭐ <strong>1:30pm — Eagle's Nest (Kehlsteinhaus)</strong> — drive 10 min to Obersalzberg car park · buy \"Kehlsteinbus\" ticket at the counter — ~€32 per person (bus + famous brass elevator) · you CANNOT drive your own car to the top — special bus only · ⚠️ On arrival at the top bus station: immediately register for your return bus time at the counter BEFORE going up the elevator — slots fill fast in peak season · the building sits at 1,834m · 360° Alpine panorama · allow 2hrs total",
+            "📍 <strong>Dokumentation Obersalzberg WWII Museum</strong> — ➕ Optional · 30 min · €10/adult · the history of the Nazi elite's mountain retreat is extraordinary context for the Eagle's Nest visit · do this while waiting for the bus if there's a queue",
+            "⭐ <strong>~4:00pm — Rossfeld Panorama Road</strong> — right next to Eagle's Nest area · €9 toll · Germany's highest panoramic toll road at 1,570m · at the summit car park: straddle the stone border marker between Germany and Austria · 360° views: Hoher Göll · Kehlstein · Watzmann · Berchtesgaden valley · allow 45 min · no booking needed",
+            "🥾 <strong>~4:45pm — Hintersee & Zauberwald (Magic Forest)</strong> — 15 min drive toward Ramsau · crystal-clear turquoise lake · follow the trail into the Zauberwald · flat easy walk through ancient forest along a mountain stream · perfectly shaded — ideal afternoon cooldown after a big day · Watzmann reflected in the lake · allow 45 min · free",
+            "🏠 <strong>Night 2 — Berchtesgaden Apartment</strong> — ✅ Already checked in · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany",
+            "🍔 <strong>Dinner — Berchtesgaden</strong> — <strong>Bräustüberl Berchtesgaden</strong> (Bräuhausstraße 13) if not done Day 5 · or <strong>Gasthof Neuhaus</strong> · last proper German dinner before Austria tomorrow · early night — long drive Day 7"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Leave Berchtesgaden 7am · Königssee boat 9:15am · Eagle's Nest afternoon bus ~1pm · Berchtesgaden by 6pm"
+          "type": "tip",
+          "text": "⛵ <strong>Königssee boat tips</strong> — ~€28–30 return to Salet per adult · book at seenschifffahrt.de 1 week before · dock is 10 min walk from car park · tip the captain €1–2 for the trumpet echo"
         },
         {
-          "type": "alarm",
-          "text": "💰 Königssee boat ~€22 return · Eagle's Nest bus €3 return (from Obersalzberg car park) · Jenner cable car ~€25"
+          "type": "warn",
+          "text": "⚠️ <strong>Eagle's Nest return bus</strong> — register your return time at the top station counter IMMEDIATELY on arrival · before going up the elevator · slots fill very fast in June peak season · ~€32/person incl. bus + elevator"
         },
         {
-          "type": "alarm",
-          "text": "⛵ Königssee boat — book at seenschifffahrt.de · reserve in advance for Jun 25"
+          "type": "tip",
+          "text": "💰 <strong>Day 6 budget estimate</strong> — Königssee boat ~€28–30/adult · Eagle's Nest ~€32/person · Rossfeld toll €9/car · Hintersee free · WWII museum €10/adult (optional) · family total approx. €250–280 for activities"
+        },
+        {
+          "type": "done",
+          "text": "✅ One-Bedroom Apartment, Berchtesgaden · Night 2 of 2 · Kälbersteinstraße 4 · already checked in"
+        },
+        {
+          "type": "tip",
+          "text": "⛵ <strong>Königssee booking</strong> — book at seenschifffahrt.de · reserve ~1 week before Jun 25 · non-refundable"
         }
       ],
       "summary": {
@@ -640,11 +650,11 @@
         "driveTime": "~2h total · short loops around Berchtesgaden"
       },
       "keyDecisions": [
-        "✅ Königssee boat 9:15am · Eagle's Nest afternoon bus ~1pm",
-        "✅ Rossfeld Panorama Road after Eagle's Nest — same area · €9 toll · Germany's highest road",
-        "🤔 Hintersee/Zauberwald + Hallein + Salt Mine — all optional · only if time allows"
+        "✅ Go to Salet (final stop) NOT St. Bartholomä — Obersee + Röthbachfall is the highlight",
+        "⚠️ Eagle's Nest: register return bus time at counter BEFORE taking elevator — fills fast",
+        "✅ Rossfeld Road after Eagle's Nest — same area · €9 · straddle the D/A border stone"
       ],
-      "timeline": "7am ▸ Königssee 9:15am ▸ Salet + Obersee ▸ St. Bartholomä ▸ Eagle's Nest 1pm ▸ Hintersee ▸ 5pm back"
+      "timeline": "8:15am Königssee park ▸ 8:30am boat to Salet ▸ Obersee + Röthbachfall 9:45am ▸ St. Bartholomä lunch 12pm ▸ 1:30pm Eagle's Nest Kehlsteinbus ▸ 4pm Rossfeld Road ▸ 4:45pm Hintersee/Zauberwald ▸ 6:30pm Berchtesgaden dinner"
     },
     {
       "dayLabel": "7",
