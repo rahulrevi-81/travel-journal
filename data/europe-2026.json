@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T01:16:39Z",
+    "_updated": "2026-05-13T13:26:11Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -337,12 +337,8 @@
       "flag": "🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 3 Map — Fly → Lake Thun → Diemtigtal",
-          "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Diemtigtal,+Switzerland"
-        },
-        {
-          "label": "Aldi Interlaken",
-          "url": "https://maps.google.com/?q=Aldi+Suisse+Interlaken+Lindenallee"
+          "label": "Day 3 Map — ZRH → Spiez → Lauterbrunnen",
+          "url": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Spiez,+Switzerland/Coop+Lauterbrunnen,+Switzerland/Camping+Jungfrau,+Lauterbrunnen,+Switzerland"
         }
       ],
       "sections": [
@@ -422,8 +418,8 @@
       "warning": true,
       "mapLinks": [
         {
-          "label": "Day 4 Map — Oeschinensee + Grindelwald First — Double Gondola ",
-          "url": "https://www.google.com/maps/dir/Diemtigtal,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Diemtigtal,+Switzerland"
+          "label": "Day 4 Map — Lauterbrunnen → Kandersteg → Grindelwald",
+          "url": "https://www.google.com/maps/dir/Camping+Jungfrau,+Lauterbrunnen,+Switzerland/Oeschinensee,+Kandersteg,+Switzerland/Grindelwald+First,+Switzerland/Camping+Jungfrau,+Lauterbrunnen,+Switzerland"
         }
       ],
       "sections": [
@@ -591,8 +587,8 @@
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 6 Map — Munich → Königssee → Eagle's Nest → Hintersee → Hallein",
-          "url": "https://www.google.com/maps/dir/Munich,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany/Hallein,+Austria"
+          "label": "Day 6 Map — Berchtesgaden → Königssee → Eagle's Nest → Rossfeld → Hintersee",
+          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/K%C3%B6nigssee,+Sch%C3%B6nau+am+K%C3%B6nigssee,+Germany/Kehlsteinhaus,+Berchtesgaden,+Germany/Rossfeldstra%C3%9Fe,+Berchtesgaden,+Germany/Hintersee,+Ramsau+bei+Berchtesgaden,+Germany"
         }
       ],
       "sections": [
@@ -664,8 +660,8 @@
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 7 Map — Hallein → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt",
-          "url": "https://www.google.com/maps/dir/Hallein,+Austria/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Wolfgangsee,+Austria/Hallstatt,+Austria"
+          "label": "Day 7 Map — Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt → Bad Goisern",
+          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria"
         }
       ],
       "sections": [
@@ -736,8 +732,8 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 8 Map — Hallstatt Full Day — Gosausee · Salt Mine · Skywal",
-          "url": "https://www.google.com/maps/dir/Hallstatt,+Austria/Gosausee,+Gosau,+Austria/Hallstatt+Salt+Mine,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Hallstatt,+Austria"
+          "label": "Day 8 Map — Bad Goisern → Krippenstein → Gosausee → Hallstatt",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Dachstein+Krippenstein,+Obertraun,+Austria/Gosausee,+Gosau,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria"
         },
         {
           "label": "Hofer Bad Goisern",
@@ -817,8 +813,8 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Bad Goisern → Grossglockner → Lienz → Sillian",
-          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Lienz,+Austria/Sillian,+Austria"
+          "label": "Day 9 Map — Bad Goisern → Grossglockner → Heiligenblut → Sillian",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Edelwei%C3%9Fspitze,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Heiligenblut,+Austria/Sillian,+Austria"
         }
       ],
       "sections": [
@@ -897,8 +893,8 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 10 Map — Sillian → Braies → Cadini → Prato Piazza → Cortina → Falzarego → Gardena → Siusi",
-          "url": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy"
+          "label": "Day 10 Map — Sillian → Braies → Auronzo/Tre Cime → Prato Piazza → Gardena → Collalbo",
+          "url": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Passo+Gardena,+Italy/Collalbo,+Renon,+Italy"
         }
       ],
       "sections": [
@@ -1047,8 +1043,8 @@
       "flag": "🇮🇹",
       "mapLinks": [
         {
-          "label": "Day 12 Map — Collalbo → Finkenberg",
-          "url": "https://www.google.com/maps/dir/Collalbo,+Italy/Finkenberg,+Austria"
+          "label": "Day 12 Map — Collalbo → Alpe di Siusi → Brenner → Finkenberg",
+          "url": "https://www.google.com/maps/dir/Collalbo,+Renon,+Italy/Compatsch,+Castelrotto,+Italy/Brenner+Pass,+Austria/Finkenberg,+Austria"
         }
       ],
       "sections": [
