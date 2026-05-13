@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:18:15Z",
+    "_updated": "2026-05-13T00:23:07Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -255,7 +255,7 @@
             "🥾 <strong>12:00pm — Svartifoss, Skaftafell</strong> — \"The Black Fall\" · 30 min drive from canyon · unique basalt column waterfall — inspiration for Reykjavik's Hallgrímskirkja Cathedral · 1.5hr RT hike on well-marked path (5km · moderate) · far more unique than the glacier walk — you've done glaciers in Alaska · parking: Parka app · €7 · allow 2hrs total incl. walk",
             "🍔 <strong>1:30pm — Lunch at Skaftafell Visitor Centre</strong> — café at the visitor centre · or food trucks in the car park (lobster soup is outstanding) · allow 45 min · use the toilets here — limited facilities further east",
             "➕ <strong>Optional: Fjallsárlón — the quiet lagoon</strong> — 30 min east of Skaftafell · Jökulsárlón's \"little brother\" · much smaller + quieter · glacier face is dramatically close to the shore · free · 15 min stop · great if Jökulsárlón feels too crowded",
-            "⭐ ⭐ <strong>3:00pm — Jökulsárlón Zodiac Boat Tour</strong> — the floating blue iceberg lagoon at Vatnajökull glacier · ⚠️ Book the <strong>Zodiac</strong> not the Amphibian — smaller, faster, goes deeper into the lagoon · get close enough to touch the icebergs · see the glacier wall face-to-face · ~€85 / $95 per person (€340 family total) · 45 min · only 10–12 people per boat — book NOW at icelagoon.is",
+            "⭐ ⭐ <strong>3:00pm — Jökulsárlón Amphibian Boat Tour</strong> — the amphibian boat drives off dry land directly into the lagoon — kids love this moment · sail among icebergs glowing electric blue · taste 1,000-year-old glacier ice handed to you by the guide · watch for seals resting on the ice · English-speaking guide explains glacial geology · 35–40 min · all ages, no minimum height · ~$46–55/adult · <strong>~$184 family total</strong> (saves ~$200 vs Zodiac) · book at icelagoon.is · no flotation suit needed",
             "⭐ ⭐ <strong>4:30pm — Diamond Beach</strong> — cross the bridge from Jökulsárlón · crystal ice blocks scattered across jet-black volcanic sand · every piece unique · allow 30–45 min · best photos: ice + black sand + crashing waves · ⚠️ Waves reach the beach — same sneaker wave warning as Reynisfjara",
             "🚗 <strong>5:30pm — Start the drive back west</strong> — ~4.5hrs from Diamond Beach to BergOne · drive is mostly Ring Road (Route 1) — flat and straightforward · sun will still be up the entire drive",
             "🍔 <strong>~7:00pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> (best burgers + fries in South Iceland) · or <strong>Suður-Vík</strong> · breaks the long drive perfectly · don't skip — nothing decent to eat near BergOne or KEF at 10pm",
@@ -264,6 +264,10 @@
         }
       ],
       "tags": [
+        {
+          "type": "urgent",
+          "text": "🚨 <strong>Book Jökulsárlón Amphibian Boat NOW</strong> — icelagoon.is · ~$46–55/adult · ~$184 for 4 · all ages · no minimum height · 35–40 min · 40 trips/day in high season but fills fast for Jun 21"
+        },
         {
           "type": "tip",
           "text": "📱 <strong>Parka app essential</strong> — download before landing · pay parking at Seljalandsfoss, Skógafoss, Reynisfjara via app · ~1000 ISK / €7 per stop · cameras read your plate — no cash option"
@@ -283,10 +287,6 @@
         {
           "type": "done",
           "text": "✅ Room in Skeidflot · Night 1 · Airbnb · $290.36 · Skeidflot 871, Mýrdalur"
-        },
-        {
-          "type": "urgent",
-          "text": "🚨 <strong>Book Jökulsárlón Zodiac NOW</strong> — only 10–12 people per boat · Jun 21 slots fill fast · ~€85 / $95 per person · book at icelagoon.is · choose \"Zodiac\" (not Amphibian) — goes deeper into lagoon"
         },
         {
           "type": "tip",
@@ -323,9 +323,9 @@
         "✅ Urriðafoss confirmed — 2 min off Route 1 · zero effort · no tourists · do it",
         "✅ Gljúfrabúi MUST — 500m from Seljalandsfoss · waterproofs essential · most tourists miss it",
         "✅ Grocery stop at Krónan/Bónus Selfoss after lunch — last cheap shop",
-        "✅ Day 2: Zodiac boat at Jökulsárlón — book NOW at icelagoon.is · €85/person",
         "✅ Day 2: Svartifoss hike — skip glacier walk · basalt columns are unique · 1.5hr RT",
-        "🤔 Day 2: Fjaðrárgljúfur — ISK 1000 Parka app · 2km rim walk · keep it"
+        "🤔 Day 2: Fjaðrárgljúfur — ISK 1000 Parka app · 2km rim walk · keep it",
+        "✅ Day 2: Amphibian boat at Jökulsárlón — ~$184 family · all ages · drives into lagoon from land · book icelagoon.is"
       ],
       "timeline": "Day 1: 10:30am KEF ▸ Kerð ▸ Selfoss lunch+grocery ▸ Geysir ▸ Urriðafoss ▸ Seljalandsfoss ▸ Gljúfrabúi ▸ Skógafoss ▸ Reynisfjara ▸ Vík ▸ 9:30pm Skeidflot | Day 2: 8:30am Skeidflot ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Svartifoss hike ▸ Skaftafell lunch ▸ Jökulsárlón Zodiac ▸ Diamond Beach ▸ Vík dinner ▸ 10:30pm BergOne"
     },
@@ -1456,11 +1456,11 @@
       "deadline": "Optional — book a few days before if wanted"
     },
     {
-      "id": "zodiac_boat",
-      "label": "🚤 Jökulsárlón Zodiac boat — Jun 21",
+      "id": "amphibian_boat",
+      "label": "🚤 Jökulsárlón Amphibian boat — Jun 21",
       "status": "urgent",
-      "ref": "Book at icelagoon.is · choose \"Zodiac\" not Amphibian · ~€85/person · 10-12 pax max",
-      "deadline": "Book NOW — Jun 21 slots sell out fast"
+      "ref": "Book at icelagoon.is · ~$46–55/adult · ~$184 family · all ages · 35–40 min · no min height",
+      "deadline": "Book soon — Jul/Aug high season fills fast"
     }
   ],
   "budget": [
