@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T00:32:26Z",
+    "_updated": "2026-05-13T00:34:21Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -659,7 +659,7 @@
     {
       "dayLabel": "7",
       "date": "Jun 26",
-      "title": "Liechtensteinklamm → Salzburg + Hohensalzburg → Wolfgangsee → Hallstatt",
+      "title": "The Salzkammergut Sprint — Klamm · Salzburg · Wolfgangsee · Hallstatt",
       "meta": "Jun 26 · Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt · 🚗 180 km / 112 mi · ~3h 30m incl. Salzburg parking",
       "flag": "🇩🇪",
       "mapLinks": [
@@ -672,31 +672,39 @@
         {
           "heading": null,
           "items": [
-            "Checkout <strong>Berchtesgaden Apartment</strong> by 8:00am — check-out 08:00–11:00 · drive 35 min west → Liechtensteinklamm, St. Johann im Pongau",
-            "⭐ <strong>Liechtensteinklamm Gorge</strong> — deepest gorge in the Alps · 444 stairs up + helix staircase · thundering waterfalls · narrow slot canyon · ~€8/adult · ~1.5hrs",
-            "Drive <strong>45 min</strong> north → <strong>Salzburg</strong> · park Altstadtgarage B · arrive ~11:15am",
-            "⭐ <strong>Salzburg old town</strong> — Getreidegasse · Mozart's birthplace exterior · Residenzplatz · Dom cathedral · ~1hr",
-            "➕ <strong>Optional:</strong> Hohensalzburg Fortress interior — funicular up · one of Europe's largest medieval fortresses · Fürstenzimmer state rooms · city panorama · ~1.5hrs · €16/adult · €16/adult · skip interior if time tight · exterior + funicular view alone worth it",
-            "Drive <strong>45 min</strong> east → <strong>Wolfgangsee (St. Gilgen)</strong> · arrive ~4:00pm",
-            "⭐ <strong>Wolfgangsee</strong> — turquoise lake · Schafberg mountain backdrop · lakefront promenade · coffee · 30min",
-            "Drive <strong>30 min</strong> south → <strong>Hallstatt</strong> · arrive ~5:00pm · ⚠️ P1/P2 parking or Obertraun + ferry",
-            "⭐ <strong>Hallstatt golden hour lakefront</strong> — best light of the day · market square · lakeside walk · dinner",
-            "🏠 <strong>Kaiserblick Goisern</strong> — ✅ Night 1 of 2 · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 📞 Airbnb · key box at entrance · Check-in 14:00–20:00"
+            "⏰ <strong>8:15am — Checkout Berchtesgaden + depart</strong> — check-out 08:00–11:00 · aim to be on the road by 8:15am · drive 35 min south toward St. Johann im Pongau — Austrian motorway A10 · ✅ Austrian vignette must be active — you are on the A10 today",
+            "⭐ ⭐ <strong>9:00am — Liechtensteinklamm Gorge</strong> — be there at opening (9:00am) — experience the helix staircase without crowds · one of the steepest and most dramatic gorges in the Alps · 444 stairs up + the famous helix staircase · thundering waterfalls + mist · ⚠️ Wear sturdy shoes — path is slippery from the spray · 2026 price: €16/adult · allow 1.5–2hrs · park at the gorge car park (Liechtensteinklamm 1, St. Johann im Pongau)",
+            "🚗 <strong>11:00am — Drive north to Salzburg</strong> — ~1hr on A10 · arrive ~12:00pm · ⚠️ Do NOT park in the city centre — 2026 restricted traffic zone + construction everywhere · use <strong>P+R South (Alpenstraße)</strong> — €15 combo-ticket covers parking + shuttle bus for the whole family · significantly faster than hunting for a city garage",
+            "⭐ <strong>12:00pm — Salzburg old town</strong> — shuttle bus from P+R South into the Altstadt · Getreidegasse (Mozart's birthplace exterior) · Residenzplatz · Dom cathedral · ~1hr stroll · grab a quick <em>Würstelstand</em> lunch or Café Tomaselli for coffee + pastries",
+            "⭐ <strong>12:30pm — Hohensalzburg Fortress</strong> — funicular up from Kapitelplatz · stick to the <strong>Panorama Tour</strong> only (courtyards + bastions) — get the view then head back down · do NOT tour every museum inside if you want to reach Hallstatt on time · ➕ Interior: €16/adult · exterior + funicular view included in funicular ticket · allow 1hr",
+            "🚗 <strong>3:00pm — Drive east to Wolfgangsee</strong> — 45 min to St. Gilgen · arrive ~3:45pm · park in St. Gilgen village car park",
+            "⭐ <strong>4:00pm — Wolfgangsee ferry: St. Gilgen → St. Wolfgang → back</strong> — park in St. Gilgen · take the ferry to St. Wolfgang (~20 min) · quick coffee at the lakeside · see the famous Weißes Rössl hotel + Schafberg mountain backdrop · ferry back · \"Sound of Music\" landscape · most relaxing 90 min of the day · ferry runs every 30 min in summer · ~€12 return/adult",
+            "⭐ ⭐ <strong>5:30pm — Hallstatt golden hour</strong> — arrive as day-trippers leave · evening light on the lakefront = the iconic postcard shot · market square · lakeside walk · dinner at Restaurant Bräugasthof or Gasthof Simony · allow 1.5–2hrs",
+            "⚠️ <strong>Hallstatt 2026 camera parking system</strong> — Hallstatt introduced camera-based access management in May 2026 · check the electronic signs at the tunnel entrance: if they show \"Full\" — do NOT enter — go straight to Bad Goisern · alternative: park at Obertraun (5 min drive) + take the ferry to Hallstatt (€4 · 10 min) · or bus from Hallstatt Lahn bus stop · P1/P2 inside: €4/hr",
+            "🏠 <strong>7:30pm — Kaiserblick Goisern, Bad Goisern</strong> — ✅ Night 1 of 2 · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 📞 Airbnb · key box at entrance · check-in 14:00–20:00 · 15 min drive from Hallstatt · $333"
           ]
         }
       ],
       "tags": [
         {
-          "type": "alarm",
-          "text": "⏰ Checkout Berchtesgaden 8am · Liechtensteinklamm opens 8am · arrive early before tour groups"
+          "type": "warn",
+          "text": "⚠️ <strong>Salzburg parking 2026</strong> — Old Town becoming restricted traffic zone · construction barriers everywhere · use P+R South (Alpenstraße) · €15 combo = parking + shuttle bus for whole family · much faster than city garage hunting"
         },
         {
-          "type": "alarm",
-          "text": "💰 Liechtensteinklamm €8/adult · Hohensalzburg funicular + fortress €16/adult · Hallstatt parking €4/hr"
+          "type": "warn",
+          "text": "⚠️ <strong>Hallstatt 2026 camera system</strong> — electronic signs at tunnel entrance · if \"Full\": do not enter · drive straight to Kaiserblick Goisern · return via ferry from Obertraun (€4 · 10 min) or bus on Day 8"
         },
         {
-          "type": "alarm",
-          "text": "🅿️ Hallstatt: P1 €4/hr · or park Obertraun + take ferry (5min drive + 10min ferry)"
+          "type": "tip",
+          "text": "💰 <strong>Day 7 costs</strong> — Liechtensteinklamm €16/adult · Salzburg P+R South €15/family combo · Wolfgangsee ferry ~€12 return/adult · Hallstatt parking €4/hr (if available) · family total approx. €150–180"
+        },
+        {
+          "type": "tip",
+          "text": "☕ <strong>Hohensalzburg tip</strong> — stick to Panorama Tour only (courtyards + bastions) · skip the individual museums to stay on schedule · the view is the reason to go up · allow 1hr max"
+        },
+        {
+          "type": "done",
+          "text": "✅ Kaiserblick Goisern · Nights 1–2 · 38 Unterjoch, 4822 Bad Goisern · Airbnb · key box · $333"
         }
       ],
       "summary": {
@@ -714,11 +722,11 @@
         "driveTime": "~3h 30m incl. Salzburg parking"
       },
       "keyDecisions": [
-        "✅ Liechtensteinklamm — arrive early, before tour groups",
-        "✅ Salzburg old town + Mönchsberg ridge walk to fortress",
-        "🤔 Hohensalzburg interior — optional · €16/adult · exterior + funicular view free"
+        "✅ Liechtensteinklamm 9:00am sharp — be first at the gate · €16/adult · wear sturdy shoes",
+        "✅ Salzburg: P+R South (Alpenstraße) €15 family combo — do NOT park in city centre · 2026 restricted zone",
+        "⚠️ Hallstatt tunnel signs: if \"Full\" — go straight to Goisern · park Obertraun + ferry instead"
       ],
-      "timeline": "8:30am ▸ Liechtensteinklamm ▸ 11am Salzburg ▸ Hohensalzburg ▸ 4pm Wolfgangsee ▸ 5pm Hallstatt ▸ Goisern"
+      "timeline": "8:15am depart Berchtesgaden ▸ 9:00am Liechtensteinklamm ▸ 11am drive Salzburg ▸ 12pm P+R South + Altstadt ▸ Hohensalzburg Panorama Tour ▸ 3pm drive Wolfgangsee ▸ 4pm St. Gilgen→St. Wolfgang ferry ▸ 5:30pm Hallstatt golden hour ▸ 7:30pm Kaiserblick Goisern"
     },
     {
       "dayLabel": "8",
