@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-13T13:26:11Z",
+    "_updated": "2026-05-19T20:10:07Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -82,8 +82,8 @@
     },
     {
       "country": "🇨🇭 Europe",
-      "vendor": "Hertz · Zurich ZRH",
-      "detail": "Jun 22 12pm → Jul 5 7am · Hertz conf. L5350959316 · CHF 575.92 · Due at pick-up · Jeep Compass or similar · Free cancellation"
+      "vendor": "Europcar · Zurich ZRH",
+      "detail": "Jun 22 12pm → Jul 5 7am · Europcar conf. 738796923 · $746.30 · Due at pick-up · Jeep Compass or similar · Free cancellation"
     }
   ],
   "carsTotalNote": "Total car rentals: $1,181.50 · Both pay at pick-up",
@@ -347,7 +347,7 @@
           "items": [
             "⏰ <strong>5:45am — KEF Airport</strong> — return Budget rental car at the airport lot · shuttle back to terminal",
             "✈️ <strong>7:20am — FI568 KEF → ZRH</strong> — 3hr 45min · allow 60–90 min for car pickup",
-            "🚗 <strong>1:05pm — Hertz ZRH pickup</strong> — conf. L5350959316 · Jeep Compass or similar · ⚠️ <strong>Ask at the counter:</strong> — (1) Swiss motorway vignette included? (CHF 40 if not)",
+            "🚗 <strong>1:30pm — Europcar ZRH pickup</strong> — Booking #738796923 · Volkswagen Tiguan 4x4 or similar · Europcar counter in Arrivals · 5 seats · 2 large bags · unlimited mileage · ⚠️ Confirm cross-border Italy+Austria · photograph licence plate for Austrian vignette",
             "💳 <strong>Swiss motorway vignette</strong> — the 2026 sticker must be on the windscreen before driving on any Swiss motorway · Hertz should include it — if not, buy at any petrol station for CHF 40",
             "⭐ <strong>4:15pm — Spiez Castle & Lake Thun</strong> — panoramic view: Lake Thun + Niesen pyramid mountain + Eiger on clear days · allow 30 min",
             "🛒 <strong>Grocery stop — Coop Supermarket, Lauterbrunnen village</strong> — this is your first Alpine dinner — make it good",
@@ -361,7 +361,7 @@
       "tags": [
         {
           "type": "warn",
-          "text": "⚠️ <strong>Swiss vignette (CHF 40)</strong> — must be on windscreen before driving on Swiss motorways · Hertz should include it — verify at counter · buy at petrol station if missing · fine = CHF 200"
+          "text": "⚠️ <strong>Swiss vignette (CHF 40)</strong> — must be on windscreen before driving on Swiss motorways · Europcar should include it — verify at counter · buy at petrol station if missing · fine = CHF 200"
         },
         {
           "type": "tip",
@@ -389,7 +389,7 @@
         "time": "1h 30m",
         "from": "Zurich ZRH 🇨🇭",
         "to": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
-        "highlights": "Fly KEF→ZRH · Hertz pickup · Lake Thun viewpoint · Spiez Castle · Grimmimutz Discovery Trail · Lauterbrunnen village stroll",
+        "highlights": "Fly KEF→ZRH · Europcar pickup · Lake Thun viewpoint · Spiez Castle · Grimmimutz Discovery Trail · Lauterbrunnen village stroll",
         "bookings": [
           {
             "status": "booked",
@@ -397,7 +397,7 @@
           },
           {
             "status": "booked",
-            "text": "✓ Hertz ZRH"
+            "text": "✓ Europcar ZRH"
           }
         ],
         "driveTime": "~1h 45m"
@@ -407,7 +407,7 @@
         "✅ Spiez Castle gardens (free) — Route 6 lakeside road NOT the motorway tunnel",
         "✅ Coop Lauterbrunnen before 6:30pm · Staubbach Falls evening walk · Austrian vignette tonight"
       ],
-      "timeline": "5:45am KEF drop-off ▸ 7:20am FI568 ▸ 1:05pm ZRH land ▸ 2:30pm Hertz pickup ▸ 4:15pm Spiez Castle ▸ Coop Lauterbrunnen ▸ 5:45pm Camping Jungfrau ▸ Staubbach Falls evening ▸ Austrian vignette tonight"
+      "timeline": "5:45am KEF drop-off ▸ 7:20am FI568 ▸ 1:05pm ZRH land ▸ 2:30pm Europcar pickup ▸ 4:15pm Spiez Castle ▸ Coop Lauterbrunnen ▸ 5:45pm Camping Jungfrau ▸ Staubbach Falls evening ▸ Austrian vignette tonight"
     },
     {
       "dayLabel": "4",
@@ -1291,7 +1291,7 @@
             "⭐ ⭐ <strong>2:00pm — Berggasthaus Aescher</strong> — arrive before 4pm · 🎷 Swing event 5pm · Chäs-Chnöpfli or Rösti · Siedwurst if full",
             "🚗 <strong>4:00pm — Cable car down + drive to ZRH</strong> — walk 25 min back up to Ebenalp top station · cable car down · ~2hr drive to Zurich Airport area",
             "❌ <strong>Rhine Falls — SKIP TODAY</strong> — adding 45 min detour north on a peak Saturday risks missing car return window",
-            "🏠 <strong>6:00pm — Airport Hotel Zurich</strong> — ✅ CHF 158 · drop bags → return car Hertz ZRH (5 min) → Hilton shuttle back",
+            "🚗 <strong>Return Europcar ZRH tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Europcar ZRH return · return by 11:30pm · Hilton shuttle back · check Booking.com email for return confirmation",
             "⚠️ <strong>Tonight — final checks</strong> — check-in opens 5:30am · hotel is 5 min walk to terminal"
           ]
         }
@@ -1311,7 +1311,7 @@
         },
         {
           "type": "tip",
-          "text": "🚗 <strong>Return car tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Hertz ZRH car return · take Hilton shuttle back · Hertz open until midnight · eliminates 5:30am stress tomorrow"
+          "text": "🚗 <strong>Return car tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Europcar ZRH car return · take Hilton shuttle back · Europcar open until midnight · eliminates 5:30am stress tomorrow"
         },
         {
           "type": "tip",
@@ -1343,7 +1343,7 @@
       "keyDecisions": [
         "✅ Marienbrücke BEFORE the tour — go at 8:30am · virtually no queue · by 10am it's packed",
         "⚠️ Castle gate by 9:20am — NOT the ticket centre · guide will not wait for latecomers",
-        "🚗 Return car TONIGHT — drop bags at hotel · 5 min to Hertz ZRH · open until midnight · eliminates 5:30am stress"
+        "🚗 Return car TONIGHT — drop bags at hotel · 5 min to Europcar ZRH · open until midnight · eliminates 5:30am stress"
       ],
       "timeline": "7:30am Bichlbach checkout ▸ 8:15am P4 Neuschwanstein ▸ 8:30am Marienbrücke FIRST ▸ 9:20am castle gate ▸ 9:30am tour ▸ 11:30am drive Bregenz tunnel ▸ 1:15pm Wasserauen ▸ 1:30pm Ebenalp cable car ▸ 2pm Aescher (before Swing event 5pm) ▸ 4pm descent ▸ 6pm ZRH hotel + return car tonight ▸ 5am alarm tomorrow"
     },
@@ -1358,7 +1358,7 @@
         {
           "heading": null,
           "items": [
-            "✅ <strong>Night before (Jul 4 Saturday evening) — final prep</strong> — (2) Check Hertz email — confirm car return was closed out correctly",
+            "✅ <strong>Night before (Jul 4 Saturday evening) — final prep</strong> — (2) Check Europcar/Booking.com email — confirm car return was closed out correctly",
             "⏰ <strong>5:00am — Wake up</strong> — perfect timing · do not wake earlier unless extra bags need special handling · hotel breakfast starts at 5:30am if needed",
             "⚠️ <strong>5:30am — Hilton shuttle</strong> — ❌ do NOT walk · 2km to terminal · CHF 7/person · confirm seat tonight",
             "✈️ <strong>5:45am — Terminal 2, Check-in Row 3</strong> — bag drop opens 5:25am · digital boarding pass on phone",
@@ -1377,7 +1377,7 @@
         },
         {
           "type": "tip",
-          "text": "📱 <strong>Saturday night app check-in</strong> — Icelandair app · download boarding passes to Apple/Google Wallet · check Hertz email for car return confirmation · passports in hand-carry bag · two alarms set"
+          "text": "📱 <strong>Saturday night app check-in</strong> — Icelandair app · download boarding passes to Apple/Google Wallet · check Europcar email for car return confirmation · passports in hand-carry bag · two alarms set"
         },
         {
           "type": "tip",
@@ -1393,11 +1393,11 @@
         "time": "—",
         "from": "Zurich ZRH 🇨🇭",
         "to": "✈ Home — Orlando MCO",
-        "highlights": "Hertz drop-off 7am · Depart 7:55am FI571 via KEF → MCO 8:50pm",
+        "highlights": "Europcar drop-off 7am · Depart 7:55am FI571 via KEF → MCO 8:50pm",
         "bookings": [
           {
             "status": "booked",
-            "text": "✓ Hertz drop-off"
+            "text": "✓ Europcar drop-off"
           }
         ],
         "driveTime": "—"
@@ -1429,9 +1429,9 @@
     },
     {
       "id": "hertz",
-      "label": "🚗 Hertz ZRH car rental Jun 22–Jul 5",
+      "label": "🚗 Europcar ZRH — Volkswagen Tiguan 4x4 · Jun 22–Jul 4",
       "status": "done",
-      "ref": "Conf. L5350959316",
+      "ref": "Booking #738796923 · Booking.com · $746.30 · Pickup 1:30pm · Return 11:30pm Jul 4 · Unlimited mileage",
       "deadline": null,
       "link": null
     },
@@ -1480,7 +1480,7 @@
       "label": "🇦🇹 Austrian digital vignette",
       "status": "urgent",
       "ref": null,
-      "deadline": "Buy on Jun 22 at asfinag.at after picking up Hertz car · need licence plate · ~€16.50 · 10-day pass",
+      "deadline": "Buy on Jun 22 at asfinag.at after picking up Europcar car · need licence plate · ~€16.50 · 10-day pass",
       "link": "https://www.asfinag.at"
     },
     {
@@ -1741,7 +1741,7 @@
     },
     {
       "icon": "🇦🇹",
-      "text": "<strong>Austrian digital vignette</strong> — buy on Jun 22 at asfinag.at after Hertz pickup · need licence plate · ~€16.50"
+      "text": "<strong>Austrian digital vignette</strong> — buy on Jun 22 at asfinag.at after Europcar pickup · need licence plate · ~€16.50"
     },
     {
       "icon": "🏥",
@@ -1773,7 +1773,7 @@
     },
     {
       "icon": "🚗",
-      "text": "Hertz ZRH pickup Jun 22 — <strong>confirm child seat booking</strong> for 2 kids · Conf. L5350959316 · return Jul 5 before 7:55am flight"
+      "text": "Europcar ZRH pickup Jun 22 — <strong>confirm child seat booking</strong> for 2 kids · Conf. 738796923 · return Jul 5 before 7:55am flight"
     },
     {
       "icon": "☀️",
@@ -1815,10 +1815,10 @@
       "flag": "🇨🇭",
       "from": "Zurich ZRH 🇨🇭",
       "nightStay": "Camping Jungfrau, Lauterbrunnen 🇨🇭",
-      "highlights": "Fly KEF→ZRH · Hertz pickup · Spiez Castle gardens · Coop Lauterbrunnen · Staubbach Falls evening · Austrian vignette tonight",
+      "highlights": "Fly KEF→ZRH · Europcar pickup · Spiez Castle gardens · Coop Lauterbrunnen · Staubbach Falls evening · Austrian vignette tonight",
       "drive": "~144 km / 90 mi",
       "driveTime": "~1h 45m",
-      "bookings": "✅ Camping Jungfrau (Booking · $499 / CHF 398) · ✅ Hertz ZRH",
+      "bookings": "✅ Camping Jungfrau (Booking · $499 / CHF 398) · ✅ Europcar ZRH",
       "mapUrl": "https://www.google.com/maps/dir/Zurich+Airport,+Switzerland/Spiez+Castle,+Switzerland/Lauterbrunnen,+Switzerland",
       "action": null,
       "checkin": "Check-in 15:00–18:30"

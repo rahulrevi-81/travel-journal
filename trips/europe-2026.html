@@ -426,7 +426,7 @@ if ('serviceWorker' in navigator) {
 
 <script>
 // ─── DATA SOURCE ────────────────────────────────────────────────────────────
-const DATA_FILE = '../data/europe-2026.json?v=20260513132611';
+const DATA_FILE = '../data/europe-2026.json?v=20260519201007';
 
 // ─── EDITABLE HIGHLIGHTS — data layer ───────────────────────────────────────
 const STORAGE_KEY = 'trip-highlights-europe-2026';
@@ -810,7 +810,7 @@ function exportGlanceToExcel(d) {
     ['Category','Estimated','Actual Spent','Notes'],
     ['Flights ×4 ✅','$4,088','$4,088','Icelandair A77762 · Economy Light'],
     ['Accommodation 15 nights ✅','$3,032','$3,032','All 10 properties confirmed'],
-    ['Car Rental ZRH + Budget KEF ✅','$1,182','$1,182','Hertz L5350959316 + Budget #42334482US1'],
+    ['Car Rental ZRH + Budget KEF ✅','$1,182','$1,182','Europcar 738796923 + Budget #42334482US1'],
     ['Food & Drinks','$1,850','','Update daily · rifugios + hüttes = cash only'],
     ['Activities & Entry Fees','$1,100','','Cable cars · boat trips · castle entries'],
     ['Fuel & Tolls','$1,000','','Grossglockner €37 · Schlegeis €17 · Rossfeld €9 · Auronzo €30'],
@@ -908,7 +908,7 @@ function renderCars(d) {
     const row = h('div', {style:'display:flex;align-items:center;gap:14px;flex-wrap:wrap;'});
     row.appendChild(h('span', {style:'font-size:13px;color:var(--slate);min-width:100px'}, c.country));
     row.appendChild(h('span', {style:'font-weight:500'}, c.vendor));
-    row.appendChild(h('span', {style:'font-size:12px;color:var(--slate)', html: c.detail.replace(/\b(L5350959316|#42334482US1|\$289\.00|CHF 575\.92)\b/g, '<strong>$1</strong>')}));
+    row.appendChild(h('span', {style:'font-size:12px;color:var(--slate)', html: c.detail.replace(/\b(738796923|#42334482US1|\$289\.00|\$746\.30)\b/g, '<strong>$1</strong>')}));
     box.appendChild(row);
   });
   const footer = h('div', {style:'border-top:1px solid var(--border);padding-top:12px;'});
@@ -1368,7 +1368,7 @@ function renderPacking(d) {
       { t:'EU/CH power adapters × 2', n:'Type C + J (Switzerland uses J) — bring both' },
       { t:'Universal power bank × 2', n:'20,000mAh each — GPS + phone drain fast on hikes' },
       { t:'USB-C charging cables × 4' },
-      { t:'Phone car charger (12V dual USB)', n:'For the Hertz rental — navigation drains fast' },
+      { t:'Phone car charger (12V dual USB)', n:'For the Europcar rental — navigation drains fast' },
       { t:'Wireless earbuds per person', n:'Long drives + kids entertainment' },
       { t:'Tablet or laptop (1 family)', n:'Evening trip planning + kids entertainment' },
       { t:'Downloaded offline maps (Maps.me / Google)', n:'Cell coverage gaps in Alps and Dolomites' },
@@ -1377,7 +1377,7 @@ function renderPacking(d) {
     { icon:'📄', title:'Documents & Money', items:[
       { t:'Passports × 4 (valid 6+ months beyond Jul 5)' },
       { t:'Flight confirmation — Ref A77762', n:'FI686 / FI568 / FI571+FI689' },
-      { t:'Car rental confirmations printed', n:'Budget #42334482US1 · Hertz L5350959316' },
+      { t:'Car rental confirmations printed', n:'Budget #42334482US1 · Europcar 738796923' },
       { t:'All accommodation booking refs printed' },
       { t:'Activity booking refs (Oeschinensee, Grindelwald, etc.)' },
       { t:'Austrian vignette receipt', n:'Buy at asfinag.at on Jun 22 at ZRH' },
