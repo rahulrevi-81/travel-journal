@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-20T02:03:26Z",
+    "_updated": "2026-05-20T02:15:57Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -295,6 +295,10 @@
         {
           "type": "done",
           "text": "✅ BergOne · Night 2 · Booking.com · $263.98 · 1 Bergás, 260 Ytri-Njarðvík"
+        },
+        {
+          "type": "tip",
+          "text": "🚤 <strong>Jökulsárlón boat — decide on the day</strong> — day-of tickets fine in June · buy at icelagoon.is or on-site · ~$184 family · skip if tired after Svartifoss hike"
         }
       ],
       "summary": {
@@ -1578,10 +1582,10 @@
     },
     {
       "id": "amphibian_boat",
-      "label": "🚤 Jökulsárlón Amphibian boat — Jun 21",
-      "status": "urgent",
-      "ref": "Book at icelagoon.is · ~$46–55/adult · ~$184 family · all ages · 35–40 min · drives into lagoon from land",
-      "deadline": "Book soon — Jun 21 high season"
+      "label": "🚤 Jökulsárlón Amphibian boat — Jun 21 · decide on the day",
+      "status": "pending",
+      "ref": "Buy at icelagoon.is or on-site · ~$46–55/adult · ~$184 family · day-of tickets usually available in June",
+      "deadline": "No pre-booking needed · decide based on weather + energy on Jun 21"
     }
   ],
   "budget": [
