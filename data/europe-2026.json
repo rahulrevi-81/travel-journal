@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-20T01:58:14Z",
+    "_updated": "2026-05-20T02:03:26Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -968,7 +968,7 @@
         {
           "heading": null,
           "items": [
-            "⏰ <strong>8:00am — Depart Collalbo</strong> — 45 min drive to Ortisei, Val Gardena · park at Parkgarage Seceda (€2.80/hr · fills by 9am in July · arrive early)",
+            "🅿️ <strong>Parking at Seceda valley station</strong> — no booking needed · €2.80/hr · 250+ spaces · arrive before 9am (your 8:45am slot guarantees this) · if full: Garage Central Ortisei €19.80/day · 10 min walk via La Curta escalator tunnel",
             "⭐ ⭐ <strong>8:45am — Seceda 360 cable car</strong> — ✅ Booked · Receipt 1161/678/554260 · €255 total · 2 adults €84.50 + 2 juniors €43 · print tickets before departure · best photos 9–10:30am before clouds",
             "🥾 <strong>Trail 1 — Razor Edge ridge walk</strong> — from the cable car top follow Trail 1 to the summit cross · allow 1.5hrs for the ridge walk",
             "🍴 <strong>Lunch at Rifugio Firenze (2,039m)</strong> — allow 45 min",
@@ -1567,14 +1567,6 @@
       "status": "pending",
       "ref": "Book at pass.auronzo.info · €40/car · 12-hour slot · book May 30 (exactly 30 days before) · update rental plate night before",
       "deadline": "May 30, 2026 — booking opens midnight",
-      "link": null
-    },
-    {
-      "id": "seceda_parking",
-      "label": "🅿️ Parkgarage Seceda, Ortisei — Jun 30",
-      "status": "urgent",
-      "ref": "Book at ortisei.info or parkgarage-seceda.it · fills by 9am in July · arrive early",
-      "deadline": "Book before departure",
       "link": null
     },
     {
