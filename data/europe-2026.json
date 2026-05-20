@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-19T20:10:07Z",
+    "_updated": "2026-05-20T01:58:14Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -969,7 +969,7 @@
           "heading": null,
           "items": [
             "⏰ <strong>8:00am — Depart Collalbo</strong> — 45 min drive to Ortisei, Val Gardena · park at Parkgarage Seceda (€2.80/hr · fills by 9am in July · arrive early)",
-            "⭐ ⭐ <strong>8:45am — Seceda cable car</strong> — ✅ pre-booked · €59/adult · 2,519m · best photos 9–10:30am before clouds",
+            "⭐ ⭐ <strong>8:45am — Seceda 360 cable car</strong> — ✅ Booked · Receipt 1161/678/554260 · €255 total · 2 adults €84.50 + 2 juniors €43 · print tickets before departure · best photos 9–10:30am before clouds",
             "🥾 <strong>Trail 1 — Razor Edge ridge walk</strong> — from the cable car top follow Trail 1 to the summit cross · allow 1.5hrs for the ridge walk",
             "🍴 <strong>Lunch at Rifugio Firenze (2,039m)</strong> — allow 45 min",
             "🚗 <strong>1:00pm — Val di Funes (Santa Maddalena)</strong> — 🚨 2026 barrier — park Filler/Putzen lots · walk 25 min Panorama Trail · cannot drive up",
@@ -1005,7 +1005,7 @@
         },
         {
           "type": "tip",
-          "text": "💰 <strong>Day 11 costs</strong> — Seceda cable car €59/adult · Zans parking €10 (if green light) · St. Johann meadow €4 turnstile · Rifugio Odle lunch ~€15–20pp · Earth Pyramids free"
+          "text": "✅ <strong>Seceda 360 booked</strong> — Receipt 1161/678/554260 · 2 adults + 2 juniors · €255 total · Valid Jun 30, 2026 · print at home before departure"
         },
         {
           "type": "done",
@@ -1469,10 +1469,10 @@
     },
     {
       "id": "seceda",
-      "label": "🚡 Seceda cable car timed slots — Jun 30 · €59/adult",
-      "status": "urgent",
-      "ref": "€59/adult round trip · pre-book timed slot at seceda.it · 8:45am or 9:15am slot · Parkgarage Seceda Ortisei",
-      "deadline": "Book NOW — limited slots",
+      "label": "🚡 Seceda 360 cable car — Jun 30 · 4 tickets",
+      "status": "done",
+      "ref": "Receipt 1161/678/554260 · 2 adults €84.50 + 2 juniors €43.00 · Total €255 · Valid Jun 30, 2026 · Print at home",
+      "deadline": "Booked ✅ — print tickets before departure",
       "link": "https://www.seceda.it"
     },
     {
