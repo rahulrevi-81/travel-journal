@@ -669,13 +669,58 @@ function tagEl(tag) {
 function exportGlanceToExcel(d) {
   const wb = XLSX.utils.book_new();
 
-  // Helper: clean HTML tags
-  function stripHtml(s) { return (s||'').replace(/<[^>]+>/g,'').trim(); }
-  function classify(text) {
-    var t = text.toLowerCase();
+  function sx(s) { return (s||'').replace(/<[^>]+>/g,'').trim(); }
+
+  function hdr(bg, fg) {
+    return { font:{bold:true,color:{rgb:fg||'FFFFFF'},name:'Arial',sz:10},
+             fill:{fgColor:{rgb:bg||'1A1A2E'}},
+             alignment:{horizontal:'center',vertical:'center',wrapText:false},
+             border:{bottom:{style:'thin',color:{rgb:'C9A84C'}}} };
+  }
+  function dayHdr() {
+    return { font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:10},
+             fill:{fgColor:{rgb:'2D3561'}},
+             alignment:{horizontal:'left',vertical:'center',wrapText:false} };
+  }
+  function tlStyle() {
+    return { font:{italic:true,color:{rgb:'C9A84C'},name:'Arial',sz:9},
+             fill:{fgColor:{rgb:'1D2645'}},
+             alignment:{horizontal:'left',vertical:'center',wrapText:true} };
+  }
+  function kdStyle() {
+    return { font:{color:{rgb:'92400E'},name:'Arial',sz:9},
+             fill:{fgColor:{rgb:'FFFBEB'}},
+             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
+  }
+  function tipStyle() {
+    return { font:{italic:true,color:{rgb:'6B7280'},name:'Arial',sz:9},
+             fill:{fgColor:{rgb:'EEF2FF'}},
+             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
+  }
+  function rowStyle(typ, isOpt) {
+    var bgs = {DRIVE:'EFF6FF',HIKE:'F0F7EC',MEAL:'FEF9EE',HOTEL:'F5F0FF',
+               WARN:'FEF2F2',PHOTO:'FFF0F5',SHOP:'FFF9E6',STOP:'FFFFFF'};
+    var fgs = {DRIVE:'1D4ED8',HIKE:'4A7C2F',MEAL:'92400E',HOTEL:'5B21B6',
+               WARN:'C0392B',PHOTO:'BE185D',SHOP:'92400E',STOP:'111111'};
+    var bg = isOpt ? 'F8F8F8' : (bgs[typ]||'FFFFFF');
+    var fg = isOpt ? '888888' : (fgs[typ]||'111111');
+    return { font:{color:{rgb:fg},name:'Arial',sz:10},
+             fill:{fgColor:{rgb:bg}},
+             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
+  }
+  function typeStyle(typ) {
+    var fgs={DRIVE:'1D4ED8',HIKE:'4A7C2F',MEAL:'92400E',HOTEL:'5B21B6',
+             WARN:'C0392B',PHOTO:'BE185D',SHOP:'92400E',STOP:'6B7280'};
+    return { font:{bold:true,color:{rgb:fgs[typ]||'6B7280'},name:'Arial',sz:8},
+             alignment:{horizontal:'center',vertical:'top',wrapText:false} };
+  }
+  function c(v, s) { return s ? {v:v||'', t:'s', s:s} : {v:v||'', t:'s'}; }
+
+  function classify(t) {
+    t = t.toLowerCase();
     if (/drive |fly |flight|depart|checkout|check-out|pick up/.test(t)) return 'DRIVE';
     if (/hike|trail|loop|climb|summit/.test(t)) return 'HIKE';
-    if (/lunch|dinner|breakfast|café|rifugio|meal/.test(t)) return 'MEAL';
+    if (/lunch|dinner|breakfast|café|rifugio|meal|🍽|restaurant/.test(t)) return 'MEAL';
     if (/🏠|🏕|check in|check-in|✅ nights|✅ confirmed/.test(t)) return 'HOTEL';
     if (/⚠️|pre-book|must pre-book/.test(t)) return 'WARN';
     if (/📸|photo stop/.test(t)) return 'PHOTO';
@@ -683,145 +728,232 @@ function exportGlanceToExcel(d) {
     return 'STOP';
   }
 
+  var TYPE_LBL = {DRIVE:'🚗 Drive',HIKE:'🥾 Hike',MEAL:'🍽 Eat',HOTEL:'🏠 Stay',
+                  WARN:'⚠️ Alert',PHOTO:'📸 Photo',SHOP:'🛒 Shop',STOP:'📍 Stop'};
+
   // ── TAB 1: Detailed Itinerary ─────────────────────────────────────────
-  var itinRows = [['Day','Date','Type','Optional','Activity · Details','Key Info','Address / Contact']];
-  var icelandSections = {};
+  var rows = [];
+  // Title row
+  rows.push([c('🌍  Europe 2026 — Detailed Itinerary  ·  VR Family Travels  ·  Jun 19 – Jul 5, 2026',
+    {font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},
+     alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']);
+
+  // Header row
+  rows.push([c('Day',hdr()), c('Date',hdr()), c('Type',hdr()), c('Opt',hdr()),
+             c('Activity · Details',hdr()), c('Key Info',hdr()), c('Address / Contact',hdr())]);
+
+  function addDay(label, date, title, items, timeline, decisions, tags, drive, dtime) {
+    // Day header
+    var hdrTxt = 'DAY ' + label + '  ·  ' + date + '  ·  ' + title + (drive ? '     |  🚗 '+drive+' '+dtime : '');
+    rows.push([c(hdrTxt, dayHdr()),'','','','','','']);
+    // Timeline
+    if (timeline) rows.push([c('',tlStyle()), c(date,tlStyle()), c('⏱ Timeline',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:8},fill:{fgColor:{rgb:'1D2645'}}}),
+      c('',tlStyle()), c(timeline,tlStyle()), c('',tlStyle()), c('',tlStyle())]);
+    // Decisions
+    if (decisions) rows.push([c('',kdStyle()), c(date,kdStyle()), c('⚡ Decisions',{font:{bold:true,color:{rgb:'92400E'},name:'Arial',sz:8},fill:{fgColor:{rgb:'FFFBEB'}}}),
+      c('',kdStyle()), c(decisions.replace('⚡ ',''),kdStyle()), c('',kdStyle()), c('',kdStyle())]);
+    // Items
+    (items||[]).forEach(function(item) {
+      var text = sx(item); if (!text) return;
+      var typ = classify(text);
+      var isOpt = item.indexOf('➕') >= 0;
+      var rs = rowStyle(typ, isOpt);
+      var ts = typeStyle(typ);
+      var keys = (text.match(/€[\d.,]+|CHF\s?[\d.]+|\$[\d.]+|~?\d+\s?min|~?\d+\s?hr|~?\d+\s?km|\d+:\d+[apm]+/gi)||[]).slice(0,3).join(' · ');
+      var addr = '';
+      if (typ==='HOTEL') {
+        var am=text.match(/📍\s*([^·📞\n]+)/); var pm=text.match(/📞\s*([^·\n]+)/);
+        if(am) addr+=am[1].trim().substring(0,45);
+        if(pm) addr+=(addr?' · ':'')+pm[1].trim().substring(0,25);
+      }
+      rows.push([
+        c('', rs), c(date, {font:{color:{rgb:'9CA3AF'},name:'Arial',sz:8},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'center',vertical:'top'}}),
+        c(TYPE_LBL[typ]||typ, ts),
+        c(isOpt?'➕':'', {font:{color:{rgb:'9CA3AF'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'center',vertical:'top'}}),
+        c(text.substring(0,240), rs),
+        c(keys, {font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
+        c(addr, {font:{color:{rgb:'5B21B6'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+      ]);
+    });
+    // Tips
+    (tags||[]).forEach(function(tag) {
+      var text = sx(tag.text||''); if (text.length < 5) return;
+      rows.push([c('',tipStyle()),c(date,tipStyle()),c('💡 Tip',{font:{bold:true,color:{rgb:'4338CA'},name:'Arial',sz:8},fill:{fgColor:{rgb:'EEF2FF'}}}),
+        c('',tipStyle()),c(text.substring(0,280),tipStyle()),c('',tipStyle()),c('',tipStyle())]);
+    });
+    // Spacer
+    rows.push([c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
+      c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
+      c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
+      c('',{fill:{fgColor:{rgb:'DDD9D0'}}})]);
+  }
+
   d.days.forEach(function(day) {
-    var label = day.dayLabel;
-    var date  = day.date;
-    var drive = (day.summary||{}).drive||'';
-    var dtime = (day.summary||{}).driveTime||'';
-    var kd    = (day.keyDecisions||[]).join(' | ');
-    var tl    = day.timeline||'';
-
-    function addDay(num, dt, title, items, timeline, decisions, tags) {
-      // Day header
-      itinRows.push(['DAY '+num, dt, '—', '—',
-        title + (drive ? '  |  🚗 '+drive+' '+dtime : ''), '', '']);
-      // Timeline
-      if (timeline) itinRows.push(['', dt, 'TIMELINE', '', timeline, '', '']);
-      // Key decisions
-      if (decisions) itinRows.push(['', dt, 'DECISIONS', '', '⚡ '+decisions, '', '']);
-      // Items
-      (items||[]).forEach(function(item) {
-        var text = stripHtml(item);
-        if (!text) return;
-        var typ = classify(text);
-        var isOpt = item.indexOf('➕') >= 0 ? 'Yes' : '';
-        // Extract costs/times
-        var keys = (text.match(/€[\d.,]+|CHF\s?[\d.]+|\$[\d.]+|~?\d+\s?min|~?\d+\s?hr|~?\d+\s?km|\d+\.\d+\s?mi|\d+:\d+[apm]+/gi)||[]).slice(0,3).join(' · ');
-        // Extract address for hotels
-        var addr = '';
-        if (typ === 'HOTEL') {
-          var am = text.match(/📍\s*([^·📞\n]+)/); var pm = text.match(/📞\s*([^·\n]+)/);
-          if (am) addr += am[1].trim().substring(0,45);
-          if (pm) addr += (addr?' · ':'')+pm[1].trim().substring(0,25);
-        }
-        itinRows.push(['', dt, typ, isOpt, text.substring(0,220), keys, addr]);
-      });
-      // Tags
-      (tags||[]).forEach(function(tag) {
-        var text = stripHtml(tag.text||'');
-        if (text.length > 4) itinRows.push(['', dt, 'TIP', '', text.substring(0,260), '', '']);
-      });
-      // Spacer
-      itinRows.push(['','','','','','','']);
-    }
-
-    if (label === '1–2') {
-      addDay('1','Jun 20','Iceland Day 1 — Golden Circle + South Coast',
-        day.sections[0].items,
-        'Day 1: 10:30am KEF ▸ Kerið ▸ Geysir ▸ Seljalandsfoss ▸ Skógafoss ▸ Reynisfjara ▸ 9:30pm Skeidflot',
-        '✅ Pick up Iceland car 10:30am | ✅ Kerið + Geysir early | 🤔 Urriðafoss optional',
-        [{text:'✓ Night 1: Room in Skeidflot · Skeidflot 871, Mýrdalur · $290'}]);
-      addDay('2','Jun 21','Iceland Day 2 — South Coast Full Push',
-        day.sections[1].items,
-        'Day 2: 7am ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Glacier ▸ Jökulsárlón ▸ Diamond Beach ▸ 5pm BergOne',
-        '✅ Dyrhólaey before 8am — puffins | ✅ Jökulsárlón + Diamond Beach | 🤔 Fjaðrárgljúfur optional',
-        [{text:'🐦 Puffins at Dyrhólaey lower area · before 10am'},
-         {text:'✓ Night 2: BergOne · 1 Bergás, 260 Ytri-Njarðvík · $264'}]);
+    var dr=day.summary&&day.summary.drive||'', dt=day.summary&&day.summary.driveTime||'';
+    var kd=(day.keyDecisions||[]).join(' | ');
+    if (day.dayLabel==='1–2') {
+      var s0=day.sections[0], s1=day.sections[1];
+      addDay('1','Jun 20','Iceland Day 1 — Golden Circle + South Coast',s0.items,
+        'Day 1: 10:30am KEF ▸ Selfoss lunch ▸ Geysir ▸ Seljalandsfoss+Gljúfrabúi ▸ Skógafoss ▸ Reynisfjara ▸ 7:30pm Skeidflot',
+        '✅ Selfoss lunch+grocery first | ✅ Gljúfrabúi MUST — waterproofs | ✅ Reynisfjara 6pm golden light',
+        [{text:'✓ Night 1: Room in Skeidflot · $290.36'}],'~180 km / 112 mi','~2.5h driving');
+      addDay('2','Jun 21','Iceland Day 2 — Glacier Walk + Jökulsárlón',s1.items,
+        'Day 2: 7am Skeidflot ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Skaftafell glacier walk ▸ Jökulsárlón shore ▸ Diamond Beach ▸ 3pm drive ▸ Vík dinner ▸ 8pm BergOne',
+        '✅ 3pm departure firm — BergOne 8pm · 5:15am alarm | ✅ Glacier walk free+easy | ✅ Shore walk only (no boat)',
+        [{text:'✓ Night 2: BergOne · $263.98 · 1 Bergás, 260 Ytri-Njarðvík'}],'~480 km / 298 mi','~5h driving');
     } else {
-      var allItems = [];
-      day.sections.forEach(function(s){ allItems = allItems.concat(s.items); });
-      addDay(label, date, day.title, allItems, tl, kd, day.tags||[]);
+      var allItems=[]; day.sections.forEach(function(s){allItems=allItems.concat(s.items);});
+      addDay(day.dayLabel, day.date, day.title, allItems, day.timeline||'', kd, day.tags||[], dr, dt);
     }
   });
-  var wsItin = XLSX.utils.aoa_to_sheet(itinRows);
-  wsItin['!cols'] = [{wch:7},{wch:10},{wch:9},{wch:8},{wch:70},{wch:24},{wch:28}];
-  // Style header
-  for (var C=0; C<7; C++) {
-    var ca = XLSX.utils.encode_cell({r:0,c:C});
-    if (wsItin[ca]) wsItin[ca].s = {font:{bold:true,color:{rgb:'FFFFFF'}},fill:{fgColor:{rgb:'2D3561'}},alignment:{wrapText:true}};
-  }
-  XLSX.utils.book_append_sheet(wb, wsItin, '🗺 Detailed Itinerary');
+
+  var ws1 = XLSX.utils.aoa_to_sheet(rows);
+  ws1['!cols'] = [{wch:7},{wch:10},{wch:10},{wch:5},{wch:72},{wch:22},{wch:28}];
+  ws1['!freeze'] = {xSplit:0, ySplit:2};
+  // Merge title row across all cols
+  ws1['!merges'] = [{s:{r:0,c:0},e:{r:0,c:6}},{s:{r:rows.length-1,c:0},e:{r:rows.length-1,c:6}}];
+  XLSX.utils.book_append_sheet(wb, ws1, '🗺 Detailed Itinerary');
 
   // ── TAB 2: Trip at a Glance ───────────────────────────────────────────
-  var glanceRows = [['Day','Date','From','Night Stay','Highlights','Drive','Drive Time']];
+  var g2 = [[c('🌍  Europe 2026 — Trip at a Glance',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']];
+  g2.push([c('Day',hdr()),c('Date',hdr()),c('From',hdr()),c('Night Stay',hdr()),c('Highlights',hdr()),c('Drive',hdr()),c('Drive Time',hdr())]);
+  var altG=false;
   (editableGlance.length ? editableGlance : d.glance||[]).forEach(function(g) {
-    var hl = g._highlights ? g._highlights.join(' · ') : (g.highlights||'');
-    glanceRows.push(['Day '+g.day, g.date, g.from||'', g.nightStay||'', hl, g.drive||'', g.driveTime||'']);
+    altG=!altG;
+    var bg=altG?'FAF8F3':'FFFFFF';
+    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    var dayS={font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}};
+    var slS={font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    g2.push([c('Day '+g.day,dayS),c(g.date,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
+      c(g.from||'',rs),c(g.nightStay||'',rs),
+      c((g._highlights?g._highlights.join(' · '):g.highlights)||'',rs),
+      c(g.drive||'',slS),c(g.driveTime||'',slS)]);
   });
-  var wsG = XLSX.utils.aoa_to_sheet(glanceRows);
-  wsG['!cols'] = [{wch:8},{wch:10},{wch:28},{wch:28},{wch:55},{wch:20},{wch:22}];
-  XLSX.utils.book_append_sheet(wb, wsG, '🗓 Trip at a Glance');
+  var ws2=XLSX.utils.aoa_to_sheet(g2);
+  ws2['!cols']=[{wch:8},{wch:10},{wch:30},{wch:32},{wch:55},{wch:22},{wch:22}];
+  ws2['!merges']=[{s:{r:0,c:0},e:{r:0,c:6}}];
+  XLSX.utils.book_append_sheet(wb,ws2,'🗓 Trip at a Glance');
 
   // ── TAB 3: Daily Tracker ──────────────────────────────────────────────
-  var trackerRows = [['Day','Date','Where Tonight','Highlights','Status','Notes & Updates']];
+  var g3=[[c('🌍  Europe 2026 — Daily Tracker',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','']];
+  g3.push([c('Day',hdr()),c('Date',hdr()),c('Where Tonight',hdr()),c('Highlights',hdr()),c('Status',hdr()),c('Notes',hdr())]);
+  var altT=false;
   d.days.forEach(function(day) {
-    if (day.dayLabel==='1–2') {
-      trackerRows.push(['Day 1','Jun 20','Skeidflot, Mýrdalur 🇮🇸','Kerið · Geysir · Seljalandsfoss · Skógafoss · Reynisfjara','⚪ Upcoming','']);
-      trackerRows.push(['Day 2','Jun 21','BergOne, Ytri-Njarðvík 🇮🇸','Dyrhólaey · Fjaðrárgljúfur · Jökulsárlón · Diamond Beach','⚪ Upcoming','']);
+    if(day.dayLabel==='1–2') {
+      altT=!altT; var bg=altT?'FAF8F3':'FFFFFF';
+      var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+      g3.push([c('Day 1',{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
+        c('Jun 20',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
+        c('Skeidflot, Mýrdalur 🇮🇸',rs),c('Geysir · Seljalandsfoss+Gljúfrabúi · Skógafoss · Reynisfjara',rs),
+        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs)]);
+      altT=!altT; bg=altT?'FAF8F3':'FFFFFF';
+      rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+      g3.push([c('Day 2',{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
+        c('Jun 21',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
+        c('BergOne, Ytri-Njarðvík 🇮🇸',rs),c('Dyrhólaey · Fjaðrárgljúfur · Glacier walk · Jökulsárlón · Diamond Beach',rs),
+        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs)]);
     } else {
-      var s = day.summary||{};
-      var where = (s.to||'').replace(/[\uD800-\uDFFF]/g,'').trim();
-      var hl = (s.highlights||'').split(' · ').slice(0,4).join(' · ');
-      trackerRows.push(['Day '+day.dayLabel, day.date, where, hl, '⚪ Upcoming', '']);
+      altT=!altT; var bg2=altT?'FAF8F3':'FFFFFF';
+      var s=day.summary||{};
+      var where=(s.to||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
+      var hl=(s.highlights||'').split(' · ').slice(0,4).join(' · ');
+      var rs2={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+      g3.push([c('Day '+day.dayLabel,{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'center',vertical:'top'}}),
+        c(day.date,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}}}),
+        c(where,rs2),c(hl,rs2),
+        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs2)]);
     }
   });
-  var wsTr = XLSX.utils.aoa_to_sheet(trackerRows);
-  wsTr['!cols'] = [{wch:8},{wch:10},{wch:28},{wch:50},{wch:14},{wch:42}];
-  XLSX.utils.book_append_sheet(wb, wsTr, '📅 Daily Tracker');
+  var ws3=XLSX.utils.aoa_to_sheet(g3);
+  ws3['!cols']=[{wch:8},{wch:10},{wch:30},{wch:52},{wch:14},{wch:44}];
+  ws3['!merges']=[{s:{r:0,c:0},e:{r:0,c:5}}];
+  XLSX.utils.book_append_sheet(wb,ws3,'📅 Daily Tracker');
 
   // ── TAB 4: Booking Checklist ──────────────────────────────────────────
-  var clRows = [['Status','Item','Reference / Confirmation','Deadline / Notes','☑']];
+  var g4=[[c('🌍  Europe 2026 — Booking Checklist',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','']];
+  g4.push([c('Status',hdr()),c('Item',hdr()),c('Reference / Confirmation',hdr()),c('Deadline / Notes',hdr()),c('☑',hdr())]);
+  var ST={done:{bg:'F0F7EC',fg:'4A7C2F'},urgent:{bg:'FEF2F2',fg:'C0392B'},pending:{bg:'FFFBEB',fg:'92400E'}};
+  var SL={'✅ Done':'done','🔴 Urgent':'urgent','⏳ Pending':'pending'};
   (d.checklist||[]).forEach(function(item) {
-    var lbl = {done:'✅ Done',urgent:'🔴 Urgent',pending:'⏳ Pending'}[item.status]||item.status;
-    clRows.push([lbl, item.label||'', item.ref||'', item.deadline||'', item.status==='done'?'☑':'☐']);
+    var k=SL[item.status]||'pending'; var st=ST[k];
+    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    var lbl={'✅ Done':'✅ Done','🔴 Urgent':'🔴 Urgent','⏳ Pending':'⏳ Pending'}[item.status]||item.status;
+    g4.push([
+      c(lbl,{font:{bold:true,color:{rgb:st.fg},name:'Arial',sz:10},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'center',vertical:'top'}}),
+      c(item.label||'',rs),
+      c(item.ref||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
+      c(item.deadline||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
+      c(k==='done'?'☑':'☐',{font:{color:{rgb:k==='done'?'4A7C2F':'9CA3AF'},name:'Arial',sz:12},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'center',vertical:'top'}})
+    ]);
   });
-  var wsCl = XLSX.utils.aoa_to_sheet(clRows);
-  wsCl['!cols'] = [{wch:14},{wch:50},{wch:38},{wch:42},{wch:5}];
-  XLSX.utils.book_append_sheet(wb, wsCl, '✅ Booking Checklist');
+  var ws4=XLSX.utils.aoa_to_sheet(g4);
+  ws4['!cols']=[{wch:14},{wch:52},{wch:40},{wch:44},{wch:5}];
+  ws4['!merges']=[{s:{r:0,c:0},e:{r:0,c:4}}];
+  XLSX.utils.book_append_sheet(wb,ws4,'✅ Booking Checklist');
 
-  // ── TAB 5: Accommodation ──────────────────────────────────────────────
-  var accRows = [['Nights','Dates','Property','Address','Check-in','Cost','Phone / Contact']];
+  // ── TAB 5: Accommodation ─────────────────────────────────────────────
+  var g5=[[c('🌍  Europe 2026 — Accommodation',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']];
+  g5.push([c('Nights',hdr()),c('Dates',hdr()),c('Property',hdr()),c('Address',hdr()),c('Check-in',hdr()),c('Cost',hdr()),c('Phone / Contact',hdr())]);
+  var altA=false;
   (d.accommodation||[]).filter(function(a){return a.status!=='cancelled';}).forEach(function(a) {
-    var ref = a.ref||'';
-    var ci = (ref.match(/check-in\s*([\d:–\-]+)/i)||[])[1]||'—';
-    var cost = (ref.match(/(\$[\d,]+|CHF[\s\d.]+|€[\d.]+)/i)||[])[1]||'—';
-    var prop = (a.property||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
-    accRows.push([a.nights||'', a.dates||'', prop, a.address||'', ci, cost, a.phone||'']);
+    altA=!altA; var bg=altA?'F0F7EC':'FFFFFF';
+    var ref=a.ref||'';
+    var ci=(ref.match(/check-in\s*([\d:–\-]+)/i)||[])[1]||'—';
+    var cost=(ref.match(/(\$[\d,]+|CHF[\s\d.]+|€[\d.]+)/i)||[])[1]||'—';
+    var prop=(a.property||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
+    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    g5.push([
+      c(a.nights||'',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
+      c(a.dates||'',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
+      c(prop,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
+      c(a.address||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
+      c(ci,{font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
+      c(cost,{font:{bold:true,color:{rgb:'4A7C2F'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
+      c(a.phone||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+    ]);
   });
-  var wsAcc = XLSX.utils.aoa_to_sheet(accRows);
-  wsAcc['!cols'] = [{wch:8},{wch:14},{wch:30},{wch:40},{wch:14},{wch:12},{wch:30}];
-  XLSX.utils.book_append_sheet(wb, wsAcc, '🏨 Accommodation');
+  var ws5=XLSX.utils.aoa_to_sheet(g5);
+  ws5['!cols']=[{wch:8},{wch:14},{wch:30},{wch:40},{wch:14},{wch:12},{wch:30}];
+  ws5['!merges']=[{s:{r:0,c:0},e:{r:0,c:6}}];
+  XLSX.utils.book_append_sheet(wb,ws5,'🏨 Accommodation');
 
   // ── TAB 6: Budget ─────────────────────────────────────────────────────
-  var budgetRows = [
-    ['Category','Estimated','Actual Spent','Notes'],
+  var g6=[[c('🌍  Europe 2026 — Budget Tracker',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','']];
+  g6.push([c('Category',hdr()),c('Estimated',hdr()),c('Actual Spent',hdr()),c('Notes',hdr())]);
+  var budget=[
     ['Flights ×4 ✅','$4,088','$4,088','Icelandair A77762 · Economy Light'],
     ['Accommodation 15 nights ✅','$3,032','$3,032','All 10 properties confirmed'],
     ['Car Rental ZRH + Budget KEF ✅','$1,182','$1,182','Europcar 738796923 + Budget #42334482US1'],
     ['Food & Drinks','$1,850','','Update daily · rifugios + hüttes = cash only'],
     ['Activities & Entry Fees','$1,100','','Cable cars · boat trips · castle entries'],
-    ['Fuel & Tolls','$1,000','','Grossglockner €37 · Schlegeis €17 · Rossfeld €9 · Auronzo €30'],
+    ['Fuel & Tolls','$1,000','','Grossglockner €46.50 · Schlegeis €17 · Rossfeld €9'],
     ['Shopping & Misc','$400','',''],
-    ['TOTAL CONFIRMED','$8,302','','vs est. ~$11,600–$12,900'],
   ];
-  var wsBg = XLSX.utils.aoa_to_sheet(budgetRows);
-  wsBg['!cols'] = [{wch:32},{wch:16},{wch:16},{wch:44}];
-  XLSX.utils.book_append_sheet(wb, wsBg, '💰 Budget');
+  var altB=false;
+  budget.forEach(function(row) {
+    altB=!altB;
+    var isConf=row[0].indexOf('✅')>=0;
+    var bg=isConf?'F0F7EC':(altB?'FAF8F3':'FFFFFF');
+    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10,bold:isConf},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    g6.push([c(row[0],rs),
+      c(row[1],{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
+      c(row[2],{font:{bold:!!row[2],color:{rgb:row[2]?'4A7C2F':'9CA3AF'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
+      c(row[3],{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+    ]);
+  });
+  // Total row
+  g6.push([
+    c('TOTAL CONFIRMED',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),
+    c('$8,302',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'right',vertical:'center'}}),
+    c('',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'right',vertical:'center'}}),
+    c('vs est. ~$11,600–$12,900',{font:{color:{rgb:'FAF8F3'},name:'Arial',sz:10},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}})
+  ]);
+  var ws6=XLSX.utils.aoa_to_sheet(g6);
+  ws6['!cols']=[{wch:32},{wch:16},{wch:16},{wch:44}];
+  ws6['!merges']=[{s:{r:0,c:0},e:{r:0,c:3}}];
+  XLSX.utils.book_append_sheet(wb,ws6,'💰 Budget');
 
-  var filename = 'Europe-2026-VRFamilyTravels-' + new Date().toISOString().slice(0,10) + '.xlsx';
+  var filename='Europe-2026-VRFamilyTravels-'+new Date().toISOString().slice(0,10)+'.xlsx';
   XLSX.writeFile(wb, filename);
 }
 
