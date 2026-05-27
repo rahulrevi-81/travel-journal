@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-20T02:15:57Z",
+    "_updated": "2026-05-27T02:25:20Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -232,57 +232,47 @@
         {
           "heading": "Day 1 — The South Coast Gateway",
           "items": [
-            "⏰ <strong>10:30am — Pick up Iceland car at KEF</strong> — shuttle bus from terminal to car lot (~10 min) · allow 30–45 min for pickup formalities",
-            "⭐ <strong>12:15pm — Kerð Crater</strong> — 45 min drive from KEF · walk the rim (easy 15 min) + descend to the lake edge",
-            "🍽 <strong>1:15pm — Lunch in Selfoss</strong> — <strong>The Old Dairy (Mjólkurbúð)</strong> food hall for variety · or <strong>Kaffi Krús</strong> for cosy sit-down · allow ~1hr incl. supermarket stop",
-            "🛒 <strong>Grocery stop — Krónan or Bónus supermarket, Selfoss</strong>",
-            "⭐ ⭐ <strong>2:45pm — Geysir & Strokkur geyser</strong> — 35 min from Selfoss · Strokkur erupts every 5–10 min",
-            "⭐ <strong>4:15pm — Urriðafoss</strong> — 45 min south from Geysir · Iceland's most voluminous waterfall (more water than any other)",
-            "⭐ ⭐ <strong>5:30pm — Seljalandsfoss</strong> — ~1000 ISK / €7 · allow 1hr total",
-            "⭐ ⭐ <strong>Gljúfrabúi — the hidden canyon waterfall</strong> — most tour buses completely miss this",
-            "⭐ <strong>7:30pm — Skógafoss</strong> — drive 20 min east · ~1000 ISK",
-            "⭐ ⭐ <strong>8:45pm — Reynisfjara black sand beach</strong> — 15 min east · ⚠️ Sneaker waves are deadly — never turn your back to the ocean",
-            "📍 <strong>Vík village quick stop</strong> — 10 min east · red-roofed church on the hill viewpoint · 15 min only · fill the tank here if below half — N1 station in Vík",
-            "🏠 <strong>Room in Skeidflot</strong> — ✅ Night 1 · 📍 Skeidflot 871, Mýrdalur, Iceland · 📞 Airbnb · check in ~9:30pm · hosted by Arnar · $290.36"
+            "⏰ <strong>10:30am — Pick up Iceland car at KEF</strong> — Budget counter in Arrivals · shuttle bus from terminal to car lot (~10 min) · conf. #42334482US1 · allow 30–45 min · fuel up at KEF petrol station",
+            "🍴 <strong>12:00pm — Lunch in Selfoss</strong> — <strong>The Old Dairy (Mjólkurbúð)</strong> food hall · or <strong>Kaffi Krús</strong> for cosy sit-down · allow 1hr incl. supermarket",
+            "🛒 <strong>Grocery stop — Krónan or Bónus, Selfoss</strong> — last cheap supermarket before remote South Coast · snacks + water + breakfast items for Day 2",
+            "⭐ ⭐ <strong>1:30pm — Geysir & Strokkur geyser</strong> — 35 min from Selfoss · Strokkur erupts every 5–10 min · stand on the NORTH side for best photos · allow 45 min · free",
+            "⭐ ⭐ <strong>3:00pm — Seljalandsfoss</strong> — walk-behind waterfall · waterproofs essential · Parka app ~1000 ISK · allow 1hr total",
+            "⭐ ⭐ <strong>Gljúfrabúi — the hidden canyon waterfall</strong> — 500m north of Seljalandsfoss · walk inside the canyon · most tourists miss this · waterproofs essential · free",
+            "⭐ <strong>4:30pm — Skógafoss</strong> — 30 min east · climb the 527 stairs for coastline views · Parka app ~1000 ISK · allow 45 min",
+            "⭐ ⭐ <strong>6:00pm — Reynisfjara black sand beach</strong> — ⚠️ Sneaker waves — never turn your back to the ocean · basalt columns + sea stacks · soft golden light at 6pm · Parka app ~1000 ISK",
+            "🚗 <strong>7:00pm — Vík village quick stop</strong> — red-roofed church viewpoint · fill the tank at N1 station · 15 min",
+            "🏠 <strong>Room in Skeidflot</strong> — ✅ Night 1 · 📍 Skeidflot 871, Mýrdalur, Iceland · 📞 Airbnb · check in ~7:30pm · hosted by Arnar · $290.36"
           ]
         },
         {
-          "heading": "Day 2 — The Glacial Visuals Route",
+          "heading": "Day 2 — Puffins · Canyon · Glacier Walk · Jökulsárlón",
           "items": [
-            "⏰ <strong>8:30am — Depart Skeidflot</strong> — already 10km from Dyrhólaey — head west first before the big eastward push",
-            "⭐ <strong>8:45am — Dyrhólaey arch</strong> — only 10km from Skeidflot · 30 min max",
-            "⭐ ⭐ <strong>10:30am — Fjaðrárgljúfur Canyon</strong> — 45 min drive east from Dyrhólaey · Game of Thrones Season 8 filming location",
-            "🥾 <strong>12:00pm — Svartifoss, Skaftafell</strong> — 30 min drive from canyon · 1.5hr RT hike on well-marked path (5km",
-            "🍔 <strong>1:30pm — Lunch at Skaftafell Visitor Centre</strong> — allow 45 min · use the toilets here — limited facilities further east",
-            "➕ <strong>Optional: Fjallsárlón — the quiet lagoon</strong> — 30 min east of Skaftafell · 15 min stop",
-            "⭐ ⭐ <strong>3:00pm — Jökulsárlón Amphibian Boat Tour</strong> — the amphibian boat drives off dry land directly into the lagoon — kids love this moment · sail among icebergs glowing electric blue · taste 1,000-year-old glacier ice handed to you by the guide · watch for seals resting on the ice · English-speaking guide explains glacial geology · 35–40 min · all ages, no minimum height · ~$46–55/adult · <strong>~$184 family total</strong> — (saves ~$200 vs Zodiac) · book at icelagoon.is",
-            "⭐ ⭐ <strong>4:30pm — Diamond Beach</strong> — allow 30–45 min · ⚠️ Waves reach the beach — same sneaker wave warning as Reynisfjara",
-            "🚗 <strong>5:30pm — Start the drive back west</strong>",
-            "🍔 <strong>~7:00pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> (best burgers + fries in South Iceland) · or <strong>Suður-Vík</strong>",
-            "🏠 <strong>BergOne, Ytri-Njarðvík</strong> — 📞 Booking.com · $263.98"
-          ]
+            "⏰ <strong>7:00am — Depart Skeidflot</strong> — already 10km from Dyrhólaey · head west first",
+            "⭐ <strong>7:15am — Dyrhólaey arch</strong> — clifftop viewpoint over black sand coast · puffins nesting on Lágey islet in June — lower area · 30 min",
+            "⭐ ⭐ <strong>9:00am — Fjaðrárgljúfur Canyon</strong> — 45 min drive east · 100m deep serpentine moss-covered canyon · Game of Thrones Season 8 · 2km rim walk · ISK 1000 Parka · 1hr",
+            "🥾 <strong>11:00am — Skaftafellsjökull glacier walk</strong> — easy flat trail from Skaftafell visitor centre car park · 3mi / 4.8km RT · 1–1.5hrs · walk right up to the glacier edge · feel the cold air · kids can touch the ice · Game of Thrones + Interstellar filming location · free",
+            "🍔 <strong>12:30pm — Lunch at Skaftafell</strong> — food trucks in the car park (lobster soup is outstanding) · or visitor centre café · use the toilets here · allow 30 min",
+            "⭐ ⭐ <strong>1:30pm — Jökulsárlón — shore walk</strong> — 45 min drive east · floating blue icebergs glowing electric blue · walk the shore · seals resting on the ice · free · allow 30 min · 📸 every angle is a photo",
+            "⭐ ⭐ <strong>2:15pm — Diamond Beach</strong> — cross the bridge · crystal ice blocks on jet-black volcanic sand · ⚠️ same sneaker wave warning · allow 30 min",
+            "🚗 <strong>3:00pm — Start the drive back west</strong> — ~4hrs to BergOne · Ring Road all the way · sun still up the entire drive",
+            "🍔 <strong>~5:30pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> — best burgers in South Iceland · or Suður-Vík · breaks the drive perfectly · allow 1hr",
+            "🏠 <strong>BergOne, Ytri-Njarðvík</strong> — ✅ Night 2 · 📍 1 Bergás, 260 Ytri-Njarðvík, Iceland · 📞 Booking.com · check in ~8pm · $263.98 · ⏰ alarm 5:15am Jun 22 — FI568 departs KEF 7:20am"
+          ],
+          "tags": []
         }
       ],
       "tags": [
         {
-          "type": "urgent",
-          "text": "🚨 <strong>Book Jökulsárlón Amphibian Boat NOW</strong> — icelagoon.is · ~$46–55/adult · ~$184 for 4 · all ages · no minimum height · 35–40 min · 40 trips/day in high season but fills fast for Jun 21"
+          "type": "tip",
+          "text": "📱 <strong>Parka app</strong> — download before landing · pay parking at Seljalandsfoss, Skógafoss, Reynisfjara · ~1000 ISK / €7 per stop · cameras read your plate"
         },
         {
           "type": "tip",
-          "text": "📱 <strong>Parka app essential</strong> — download before landing · pay parking at Seljalandsfoss, Skógafoss, Reynisfjara via app · ~1000 ISK / €7 per stop · cameras read your plate — no cash option"
+          "text": "☀️ <strong>24-hour daylight</strong> — Jun 20 sunset 12:03am · Reynisfjara at 6pm = golden light + no tour buses · Seljalandsfoss rainbow in the spray at 3pm"
         },
         {
-          "type": "tip",
-          "text": "☀️ <strong>24-hour daylight advantage</strong> — Jun 20 sunset is 12:03am · Reynisfjara at 8:45pm = soft golden light + no tour buses · Seljalandsfoss at 5:30pm = rainbow in the spray · no rush ever"
-        },
-        {
-          "type": "tip",
-          "text": "⚠️ <strong>Sneaker waves at Reynisfjara</strong> — Iceland's most dangerous beach · never turn your back to the ocean · stay well behind the safety rope · waves can appear from nowhere and travel far up the beach"
-        },
-        {
-          "type": "tip",
-          "text": "⏰ <strong>Set alarm 5:15am Jun 22</strong> — drive ~45 min to KEF · FI568 departs 7:20am · allow 1hr 45min at airport"
+          "type": "warn",
+          "text": "⚠️ <strong>Sneaker waves at Reynisfjara</strong> — Iceland's most dangerous beach · never turn your back to the ocean · stay well behind the safety rope"
         },
         {
           "type": "done",
@@ -290,15 +280,19 @@
         },
         {
           "type": "tip",
-          "text": "☀️ <strong>Day 2 drive back</strong> — 4.5hrs from Diamond Beach to BergOne · stop for dinner in Vík (~7pm) · Smiðjan Brugghsús for burgers · sun is up the entire drive — no rushing needed"
+          "text": "🧊 <strong>Skaftafellsjökull glacier walk</strong> — flat easy trail from car park · kids can walk right up to the ice · free · 1–1.5hrs · bring a warm layer — temperature drops near the ice"
+        },
+        {
+          "type": "tip",
+          "text": "💰 <strong>Day 2 savings</strong> — skipping Amphibian boat saves ~$184 · shore walk is free and still spectacular · glacier walk is free · overall a much cheaper day"
+        },
+        {
+          "type": "warn",
+          "text": "⏰ <strong>3pm departure from Diamond Beach is firm</strong> — BergOne by 8pm · 5:15am alarm next morning · don't linger at Jökulsárlón or you'll be driving past midnight"
         },
         {
           "type": "done",
           "text": "✅ BergOne · Night 2 · Booking.com · $263.98 · 1 Bergás, 260 Ytri-Njarðvík"
-        },
-        {
-          "type": "tip",
-          "text": "🚤 <strong>Jökulsárlón boat — decide on the day</strong> — day-of tickets fine in June · buy at icelagoon.is or on-site · ~$184 family · skip if tired after Svartifoss hike"
         }
       ],
       "summary": {
@@ -324,14 +318,11 @@
         "driveTime": "~2 days total"
       },
       "keyDecisions": [
-        "✅ Urriðafoss confirmed — 2 min off Route 1 · zero effort · no tourists · do it",
-        "✅ Gljúfrabúi MUST — 500m from Seljalandsfoss · waterproofs essential · most tourists miss it",
-        "✅ Grocery stop at Krónan/Bónus Selfoss after lunch — last cheap shop",
-        "✅ Day 2: Svartifoss hike — skip glacier walk · basalt columns are unique · 1.5hr RT",
-        "🤔 Day 2: Fjaðrárgljúfur — ISK 1000 Parka app · 2km rim walk · keep it",
-        "✅ Day 2: Amphibian boat at Jökulsárlón — ~$184 family · all ages · drives into lagoon from land · book icelagoon.is"
+        "✅ Urriðafoss + Kerð dropped Day 1 — relaxed pace for jet-lag day",
+        "✅ Day 2: Skaftafellsjökull glacier walk — free · easy · kids touch the ice",
+        "⚠️ Depart Diamond Beach by 3pm firm — BergOne 8pm · 5:15am alarm"
       ],
-      "timeline": "Day 1: 10:30am KEF ▸ Kerð ▸ Selfoss lunch+grocery ▸ Geysir ▸ Urriðafoss ▸ Seljalandsfoss ▸ Gljúfrabúi ▸ Skógafoss ▸ Reynisfjara ▸ Vík ▸ 9:30pm Skeidflot | Day 2: 8:30am Skeidflot ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Svartifoss hike ▸ Skaftafell lunch ▸ Jökulsárlón Zodiac ▸ Diamond Beach ▸ Vík dinner ▸ 10:30pm BergOne"
+      "timeline": "Day 1: 10:30am KEF ▸ Selfoss lunch + grocery ▸ 1:30pm Geysir ▸ 3pm Seljalandsfoss + Gljúfrabúi ▸ 4:30pm Skógafoss ▸ 6pm Reynisfjara ▸ Vík fuel ▸ 7:30pm Skeidflot | Day 2: 7am ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Skaftafell glacier walk ▸ lunch ▸ Jökulsárlón shore ▸ Diamond Beach ▸ 3pm drive ▸ Vík dinner ▸ 8pm BergOne"
     },
     {
       "dayLabel": "3",
