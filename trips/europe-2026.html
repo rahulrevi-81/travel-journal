@@ -814,60 +814,62 @@ function exportGlanceToExcel(d) {
   ws1['!merges'] = [{s:{r:0,c:0},e:{r:0,c:6}},{s:{r:rows.length-1,c:0},e:{r:rows.length-1,c:6}}];
   XLSX.utils.book_append_sheet(wb, ws1, '🗺 Detailed Itinerary');
 
-  // ── TAB 2: Trip at a Glance ───────────────────────────────────────────
-  var g2 = [[c('🌍  Europe 2026 — Trip at a Glance',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']];
-  g2.push([c('Day',hdr()),c('Date',hdr()),c('From',hdr()),c('Night Stay',hdr()),c('Highlights',hdr()),c('Drive',hdr()),c('Drive Time',hdr())]);
-  var altG=false;
-  (editableGlance.length ? editableGlance : d.glance||[]).forEach(function(g) {
-    altG=!altG;
-    var bg=altG?'FAF8F3':'FFFFFF';
-    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    var dayS={font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}};
-    var slS={font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    g2.push([c('Day '+g.day,dayS),c(g.date,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
-      c(g.from||'',rs),c(g.nightStay||'',rs),
-      c((g._highlights?g._highlights.join(' · '):g.highlights)||'',rs),
-      c(g.drive||'',slS),c(g.driveTime||'',slS)]);
-  });
-  var ws2=XLSX.utils.aoa_to_sheet(g2);
-  ws2['!cols']=[{wch:8},{wch:10},{wch:30},{wch:32},{wch:55},{wch:22},{wch:22}];
-  ws2['!merges']=[{s:{r:0,c:0},e:{r:0,c:6}}];
-  XLSX.utils.book_append_sheet(wb,ws2,'🗓 Trip at a Glance');
-
-  // ── TAB 3: Daily Tracker ──────────────────────────────────────────────
-  var g3=[[c('🌍  Europe 2026 — Daily Tracker',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','']];
-  g3.push([c('Day',hdr()),c('Date',hdr()),c('Where Tonight',hdr()),c('Highlights',hdr()),c('Status',hdr()),c('Notes',hdr())]);
-  var altT=false;
+  // ── TAB 2: Trip Overview & Live Tracker (merged) ───────────────────────
+  var COUNTRY_BG = {
+    'Jun 20':'F0F9FF','Jun 21':'F0F9FF',
+    'Jun 22':'F5FFF5','Jun 23':'F5FFF5',
+    'Jun 24':'FFFFF0','Jun 25':'FFFFF0',
+    'Jun 26':'FFF5F0','Jun 27':'FFF5F0','Jun 28':'FFF5F0',
+    'Jun 29':'FFF0F5','Jun 30':'FFF0F5',
+    'Jul 1':'FFF5F0','Jul 2':'FFF5F0','Jul 3':'FFF5F0',
+    'Jul 4':'F5FFF5','Jul 5':'F0F9FF'
+  };
+  var glanceMap = {};
+  (d.glance||[]).forEach(function(g){ glanceMap[g.date]=g; });
+  var trackerRows = [];
   d.days.forEach(function(day) {
-    if(day.dayLabel==='1–2') {
-      altT=!altT; var bg=altT?'FAF8F3':'FFFFFF';
-      var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-      g3.push([c('Day 1',{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
-        c('Jun 20',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
-        c('Skeidflot, Mýrdalur 🇮🇸',rs),c('Geysir · Seljalandsfoss+Gljúfrabúi · Skógafoss · Reynisfjara',rs),
-        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs)]);
-      altT=!altT; bg=altT?'FAF8F3':'FFFFFF';
-      rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-      g3.push([c('Day 2',{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
-        c('Jun 21',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
-        c('BergOne, Ytri-Njarðvík 🇮🇸',rs),c('Dyrhólaey · Fjaðrárgljúfur · Glacier walk · Jökulsárlón · Diamond Beach',rs),
-        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs)]);
+    if (day.dayLabel==='1–2') {
+      [['Jun 20','1'],['Jun 21','2']].forEach(function(pair) {
+        var g=glanceMap[pair[0]]||{};
+        trackerRows.push({day:'Day '+pair[1],date:pair[0],
+          from:g.from||'',nightStay:g.nightStay||'',highlights:g.highlights||'',
+          drive:(g.drive||'')+' '+( g.driveTime||'')});
+      });
     } else {
-      altT=!altT; var bg2=altT?'FAF8F3':'FFFFFF';
-      var s=day.summary||{};
-      var where=(s.to||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
-      var hl=(s.highlights||'').split(' · ').slice(0,4).join(' · ');
-      var rs2={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-      g3.push([c('Day '+day.dayLabel,{font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'center',vertical:'top'}}),
-        c(day.date,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}}}),
-        c(where,rs2),c(hl,rs2),
-        c('⚪ Upcoming',{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg2}},alignment:{horizontal:'center',vertical:'top'}}),c('',rs2)]);
+      var g=glanceMap[day.date]||{};
+      trackerRows.push({day:'Day '+day.dayLabel,date:day.date,
+        from:g.from||'',nightStay:g.nightStay||'',highlights:g.highlights||'',
+        drive:(g.drive||'')+' '+(g.driveTime||'')});
     }
   });
-  var ws3=XLSX.utils.aoa_to_sheet(g3);
-  ws3['!cols']=[{wch:8},{wch:10},{wch:30},{wch:52},{wch:14},{wch:44}];
-  ws3['!merges']=[{s:{r:0,c:0},e:{r:0,c:5}}];
-  XLSX.utils.book_append_sheet(wb,ws3,'📅 Daily Tracker');
+  var g2Rows = [['Day','Date','From','Night Stay','Highlights','Drive & Time','Status','Notes & Updates']];
+  trackerRows.forEach(function(r) {
+    g2Rows.push([r.day, r.date, r.from, r.nightStay, r.highlights, r.drive.trim(), '⚪ Upcoming', '']);
+  });
+  // Legend rows
+  g2Rows.push(['','','','','','','','']);
+  g2Rows.push(['Status legend:','⚪ Upcoming','✅ Done','⚠️ Issue','⛔ Skipped','❤️ Favourite','','']);
+  g2Rows.push(['Colours:','🔵 Iceland','🟢 Switzerland','🟡 Germany','🟠 Austria/Tyrol','🩷 Italy/Dolomites','','']);
+  var ws2=XLSX.utils.aoa_to_sheet(g2Rows);
+  ws2['!cols']=[{wch:8},{wch:10},{wch:28},{wch:30},{wch:52},{wch:20},{wch:16},{wch:44}];
+  // Style header row
+  'ABCDEFGH'.split('').forEach(function(col) {
+    var ca=col+'1';
+    if(ws2[ca]) ws2[ca].s={font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:9},
+      fill:{fgColor:{rgb:'C9A84C'}},alignment:{horizontal:'center',vertical:'center'}};
+  });
+  // Style data rows with country colours
+  trackerRows.forEach(function(r,i) {
+    var rn=i+2; var bg=COUNTRY_BG[r.date]||'FAF8F3';
+    'ABCDEFGH'.split('').forEach(function(col) {
+      var ca=col+rn;
+      if(ws2[ca]) ws2[ca].s={font:{color:{rgb:'111111'},name:'Arial',sz:10},
+        fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
+    });
+    var ca='A'+rn; if(ws2[ca]) ws2[ca].s.font={bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10};
+    var cg='G'+rn; if(ws2[cg]) ws2[cg].s.alignment={horizontal:'center',vertical:'top'};
+  });
+  XLSX.utils.book_append_sheet(wb, ws2, '🗓 Trip Overview & Tracker');
 
   // ── TAB 4: Booking Checklist ──────────────────────────────────────────
   var g4=[[c('🌍  Europe 2026 — Booking Checklist',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','']];
