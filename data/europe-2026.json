@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-27T02:25:20Z",
+    "_updated": "2026-05-27T02:32:31Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -296,11 +296,11 @@
         }
       ],
       "summary": {
-        "drive": "~358 km / 222 mi",
+        "drive": "~660 km / 410 mi",
         "time": "~14hrs daylight each day",
         "from": "Reykjavík / KEF 🇮🇸",
-        "to": "Room in Skeidflot → BergOne",
-        "highlights": "Kerið · Geysir · Seljalandsfoss · Skógafoss · Reynisfjara · Svínafellsjökull · Jökulsárlón Glacier Lagoon · Diamond Beach · Dyrhólaey",
+        "to": "BergOne, Ytri-Njarðvík 🇮🇸",
+        "highlights": "Geysir · Seljalandsfoss + Gljúfrabúi · Skógafoss · Reynisfjara · Dyrhólaey · Fjaðrárgljúfur · Skaftafellsjökull glacier walk · Jökulsárlón shore · Diamond Beach",
         "bookings": [
           {
             "status": "booked",
@@ -315,7 +315,7 @@
             "text": "✓ Budget car KEF"
           }
         ],
-        "driveTime": "~2 days total"
+        "driveTime": "~7.5h total over 2 days"
       },
       "keyDecisions": [
         "✅ Urriðafoss + Kerð dropped Day 1 — relaxed pace for jet-lag day",
@@ -1570,13 +1570,6 @@
       "status": "done",
       "ref": "Removed from itinerary — time constraints on Jul 1",
       "deadline": "N/A"
-    },
-    {
-      "id": "amphibian_boat",
-      "label": "🚤 Jökulsárlón Amphibian boat — Jun 21 · decide on the day",
-      "status": "pending",
-      "ref": "Buy at icelagoon.is or on-site · ~$46–55/adult · ~$184 family · day-of tickets usually available in June",
-      "deadline": "No pre-booking needed · decide based on weather + energy on Jun 21"
     }
   ],
   "budget": [
@@ -1774,9 +1767,9 @@
       "flag": "🇮🇸",
       "from": "Keflavík KEF 🇮🇸",
       "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
-      "highlights": "Kerið Crater · Geysir Strokkur · Selfoss grocery · Urriðafoss · Seljalandsfoss + Gljúfrabúi · Skógafoss · Reynisfjara",
-      "drive": "~300 km / 185 mi",
-      "driveTime": "~3h pure drive · full day with stops",
+      "highlights": "Selfoss lunch + grocery · Geysir + Strokkur · Seljalandsfoss + Gljúfrabúi · Skógafoss 527 stairs · Reynisfjara golden hour",
+      "drive": "~180 km / 112 mi",
+      "driveTime": "~2.5h driving · relaxed pace",
       "bookings": "✓ Room in Skeidflot (Airbnb) · ✓ Budget car KEF",
       "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Keri%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara,+Iceland/V%C3%ADk,+Iceland/Room+in+Skeidflot,+Iceland",
       "action": null,
@@ -1788,9 +1781,9 @@
       "flag": "🇮🇸",
       "from": "Skeidflot, Mýrdalur 🇮🇸",
       "nightStay": "BergOne, Ytri-Njarðvík 🇮🇸",
-      "highlights": "Dyrhólaey puffins · Svartifoss hike · Skaftafell · Jökulsárlón Amphibian boat · Diamond Beach · Vík dinner",
-      "drive": "~230 km / 143 mi",
-      "driveTime": "~3h pure drive · full day with stops",
+      "highlights": "Dyrhólaey puffins · Fjaðrárgljúfur canyon · Skaftafellsjökull glacier walk (free) · Jökulsárlón shore walk · Diamond Beach · Vík dinner",
+      "drive": "~480 km / 298 mi",
+      "driveTime": "~5h driving · depart 3pm · BergOne 8pm",
       "bookings": "✓ BergOne",
       "mapUrl": "https://www.google.com/maps/dir/Skeidflot,+Iceland/Dyrh%C3%B3laey,+Iceland/Fja%C3%B0r%C3%A1rglj%C3%BAfur+Canyon,+Iceland/Sv%C3%ADnafellsj%C3%B6kull,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n+Glacier+Lagoon,+Iceland/BergOne,+Ytri-Njar%C3%B0v%C3%ADk,+Iceland",
       "action": null,
