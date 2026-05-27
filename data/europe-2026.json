@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-27T02:42:45Z",
+    "_updated": "2026-05-27T02:55:59Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -258,7 +258,24 @@
             "🍔 <strong>~5:30pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> — best burgers in South Iceland · or Suður-Vík · breaks the drive perfectly · allow 1hr",
             "🏠 <strong>BergOne, Ytri-Njarðvík</strong> — ✅ Night 2 · 📍 1 Bergás, 260 Ytri-Njarðvík, Iceland · 📞 Booking.com · check in ~8pm · $263.98 · ⏰ alarm 5:15am Jun 22 — FI568 departs KEF 7:20am"
           ],
-          "tags": []
+          "tags": [
+            {
+              "type": "tip",
+              "text": "🧊 <strong>Skaftafellsjökull glacier walk</strong> — flat easy trail from car park · kids can walk right up to the ice · free · 1–1.5hrs · bring a warm layer — temperature drops near the ice"
+            },
+            {
+              "type": "tip",
+              "text": "💰 <strong>Day 2 savings</strong> — skipping Amphibian boat saves ~$184 · shore walk is free and still spectacular · glacier walk is free · overall a much cheaper day"
+            },
+            {
+              "type": "warn",
+              "text": "⏰ <strong>3pm departure from Diamond Beach is firm</strong> — BergOne by 8pm · 5:15am alarm next morning · don't linger at Jökulsárlón or you'll be driving past midnight"
+            },
+            {
+              "type": "done",
+              "text": "✅ BergOne · Night 2 · Booking.com · $263.98 · 1 Bergás, 260 Ytri-Njarðvík"
+            }
+          ]
         }
       ],
       "tags": [
@@ -277,22 +294,6 @@
         {
           "type": "done",
           "text": "✅ Room in Skeidflot · Night 1 · Airbnb · $290.36 · Skeidflot 871, Mýrdalur"
-        },
-        {
-          "type": "tip",
-          "text": "🧊 <strong>Skaftafellsjökull glacier walk</strong> — flat easy trail from car park · kids can walk right up to the ice · free · 1–1.5hrs · bring a warm layer — temperature drops near the ice"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 2 savings</strong> — skipping Amphibian boat saves ~$184 · shore walk is free and still spectacular · glacier walk is free · overall a much cheaper day"
-        },
-        {
-          "type": "warn",
-          "text": "⏰ <strong>3pm departure from Diamond Beach is firm</strong> — BergOne by 8pm · 5:15am alarm next morning · don't linger at Jökulsárlón or you'll be driving past midnight"
-        },
-        {
-          "type": "done",
-          "text": "✅ BergOne · Night 2 · Booking.com · $263.98 · 1 Bergás, 260 Ytri-Njarðvík"
         }
       ],
       "summary": {
