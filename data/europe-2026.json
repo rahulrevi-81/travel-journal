@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-27T02:55:59Z",
+    "_updated": "2026-05-28T03:04:09Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -116,8 +116,8 @@
   "accommodation": [
     {
       "nights": "1",
-      "property": "Room in Skeidflot 🇮🇸",
-      "address": "Skeidflot 871, IS, Iceland",
+      "property": "Farmhouse Lodge, Vík 🇮🇸",
+      "address": "871 Vík, Iceland",
       "dates": "Jun 20–21",
       "ref": "Airbnb · $290.36",
       "freeCancel": "",
@@ -241,7 +241,7 @@
             "⭐ <strong>4:30pm — Skógafoss</strong> — 30 min east · climb the 527 stairs for coastline views · Parka app ~1000 ISK · allow 45 min",
             "⭐ ⭐ <strong>6:00pm — Reynisfjara black sand beach</strong> — ⚠️ Sneaker waves — never turn your back to the ocean · basalt columns + sea stacks · soft golden light at 6pm · Parka app ~1000 ISK",
             "🚗 <strong>7:00pm — Vík village quick stop</strong> — red-roofed church viewpoint · fill the tank at N1 station · 15 min",
-            "🏠 <strong>Room in Skeidflot</strong> — ✅ Night 1 · 📍 Skeidflot 871, Mýrdalur, Iceland · 📞 Airbnb · check in ~7:30pm · hosted by Arnar · $290.36"
+            "🏠 <strong>Farmhouse Lodge, 871 Vík, Iceland</strong> — ✅ Night 1 · 📍 Farmhouse Lodge, 871 Vík, Iceland · 📞 Airbnb · check in ~7:30pm · $290.36"
           ]
         },
         {
@@ -293,7 +293,7 @@
         },
         {
           "type": "done",
-          "text": "✅ Room in Skeidflot · Night 1 · Airbnb · $290.36 · Skeidflot 871, Mýrdalur"
+          "text": "✅ Farmhouse Lodge, 871 Vík, Iceland · Night 1 · Airbnb · $290.36"
         }
       ],
       "summary": {
@@ -1767,7 +1767,7 @@
       "date": "Jun 20",
       "flag": "🇮🇸",
       "from": "Keflavík KEF 🇮🇸",
-      "nightStay": "Room in Skeidflot, Mýrdalur 🇮🇸",
+      "nightStay": "Farmhouse Lodge, Vík 🇮🇸",
       "highlights": "Selfoss lunch + grocery · Geysir + Strokkur · Seljalandsfoss + Gljúfrabúi · Skógafoss 527 stairs · Reynisfjara golden hour",
       "drive": "~180 km / 112 mi",
       "driveTime": "~2.5h driving · relaxed pace",
