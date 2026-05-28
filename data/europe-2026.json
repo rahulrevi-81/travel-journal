@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-28T03:09:05Z",
+    "_updated": "2026-05-28T13:32:07Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -246,7 +246,8 @@
             "⭐ ⭐ <strong>6:00pm — Reynisfjara black sand beach</strong> — ⚠️ Sneaker waves — never turn your back to the ocean · basalt columns + sea stacks · soft golden light at 6pm · Parka app ~1000 ISK",
             "🚗 <strong>7:00pm — Vík village quick stop</strong> — red-roofed church viewpoint · fill the tank at N1 station · 15 min",
             "🏠 <strong>Farmhouse Lodge, 871 Vík, Iceland</strong> — ✅ Night 1 · 📍 Farmhouse Lodge, 871 Vík, Iceland · 📞 Airbnb · check in ~7:30pm · $290.36"
-          ]
+          ],
+          "tags": []
         },
         {
           "heading": "Day 2 — Puffins · Canyon · Glacier Walk · Jökulsárlón",
@@ -268,16 +269,8 @@
               "text": "🧊 <strong>Skaftafellsjökull glacier walk</strong> — flat easy trail from car park · kids can walk right up to the ice · free · 1–1.5hrs · bring a warm layer — temperature drops near the ice"
             },
             {
-              "type": "tip",
-              "text": "💰 <strong>Day 2 savings</strong> — skipping Amphibian boat saves ~$184 · shore walk is free and still spectacular · glacier walk is free · overall a much cheaper day"
-            },
-            {
               "type": "warn",
               "text": "⏰ <strong>3pm departure from Diamond Beach is firm</strong> — BergOne by 8pm · 5:15am alarm next morning · don't linger at Jökulsárlón or you'll be driving past midnight"
-            },
-            {
-              "type": "done",
-              "text": "✅ BergOne · Night 2 · Booking.com · $263.98 · 1 Bergás, 260 Ytri-Njarðvík"
             }
           ]
         }
@@ -294,10 +287,6 @@
         {
           "type": "warn",
           "text": "⚠️ <strong>Sneaker waves at Reynisfjara</strong> — Iceland's most dangerous beach · never turn your back to the ocean · stay well behind the safety rope"
-        },
-        {
-          "type": "done",
-          "text": "✅ Farmhouse Lodge, 871 Vík, Iceland · Night 1 · Airbnb · $290.36"
         }
       ],
       "summary": {
@@ -355,7 +344,8 @@
             "⭐ ⭐ <strong>Staubbach Falls — evening walk</strong> — 5 min walk from Camping Jungfrau · walk to the base and feel the mist",
             "💳 <strong>Tonight: buy Austrian Digital Vignette</strong> — ~€16.50",
             "🍔 <strong>Dinner</strong> — or Restaurant Jungfrau in the village (10 min walk)"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -369,15 +359,7 @@
         },
         {
           "type": "tip",
-          "text": "🏕️ <strong>Car parked until Day 5</strong> — once at Camping Jungfrau, leave the car · Lauterbrunnen valley is best explored by foot and train · Oeschinensee + Grindelwald both reached by bus/gondola from the village"
-        },
-        {
-          "type": "tip",
           "text": "💳 <strong>Austrian vignette tonight</strong> — asfinag.at · ~€16.50 · need your licence plate number · cameras check automatically when you enter Austria Jun 26"
-        },
-        {
-          "type": "done",
-          "text": "✅ Camping Jungfrau · Nights 3–4 · CHF 398 / $499 · Weid 406, 3822 Lauterbrunnen · +41 33 856 20 10"
         },
         {
           "type": "tip",
@@ -440,14 +422,11 @@
             "⚠️ <strong>5:00pm — Back at First station</strong> — LAST gondola down is <strong>6:00pm</strong> — do not miss it · allow 45 min walk back from Bachalpsee",
             "🚗 <strong>5:30pm — Gondola down → drive back</strong> — 20 min drive to Camping Jungfrau, Lauterbrunnen · arrive ~6:30pm",
             "🍔 <strong>Dinner</strong> — campsite kitchen with Coop groceries · or <strong>Airtime Restaurant</strong> — in Lauterbrunnen village (10 min walk)"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
-        {
-          "type": "done",
-          "text": "✅ Oeschinensee gondola 8:30am · Order 254-SK2MH6 · CHF 125 · arrive Kandersteg by 8:15am"
-        },
         {
           "type": "done",
           "text": "✅ Grindelwald Firstbahn #238070 · Jun 23 · 2 adults + 2 children"
@@ -529,7 +508,8 @@
             "📸 <strong>~5:00pm — Hintersee lake photo stop</strong> — 15 min drive from Berchtesgaden town · allow 20 min",
             "🏠 <strong>~5:30pm — Check-in: One-Bedroom Apartment, Berchtesgaden</strong> — 📞 Booking.com message host",
             "🍔 <strong>Dinner — Berchtesgaden</strong> — <strong>Bräustüberl Berchtesgaden</strong> — allow 1hr"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -548,10 +528,6 @@
         {
           "type": "tip",
           "text": "🇱🇮 <strong>Liechtenstein passport stamp</strong> — tourist office in Vaduz · CHF 3 per passport · one of the rarest stamps in Europe · great for the kids"
-        },
-        {
-          "type": "done",
-          "text": "✅ One-Bedroom Apartment, Berchtesgaden · Nights 5–6 · Kälbersteinstraße 4, 83471 Berchtesgaden · check-in 16:00–20:00"
         },
         {
           "type": "tip",
@@ -607,7 +583,8 @@
             "🥾 <strong>~4:45pm — Hintersee & Zauberwald (Magic Forest)</strong> — 15 min drive toward Ramsau · follow the trail into the Zauberwald",
             "🏠 <strong>Night 2 — Berchtesgaden Apartment</strong> — ✅ Already checked in · 📍 Kälbersteinstraße 4, 83471 Berchtesgaden, Germany",
             "🍔 <strong>Dinner — Berchtesgaden</strong> — <strong>Bräustüberl Berchtesgaden</strong> (Bräuhausstraße 13) if not done Day 5 · or <strong>Gasthof Neuhaus</strong>"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -618,14 +595,6 @@
         {
           "type": "warn",
           "text": "⚠️ <strong>Eagle's Nest return bus</strong> — register your return time at the top station counter IMMEDIATELY on arrival · before going up the elevator · slots fill very fast in June peak season · ~€32/person incl. bus + elevator"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 6 budget estimate</strong> — Königssee boat ~€28–30/adult · Eagle's Nest ~€32/person · Rossfeld toll €9/car · Hintersee free · WWII museum €10/adult (optional) · family total approx. €250–280 for activities"
-        },
-        {
-          "type": "done",
-          "text": "✅ One-Bedroom Apartment, Berchtesgaden · Night 2 of 2 · Kälbersteinstraße 4 · already checked in"
         },
         {
           "type": "tip",
@@ -678,7 +647,8 @@
             "⭐ ⭐ <strong>5:30pm — Hallstatt golden hour</strong> — allow 1.5–2hrs",
             "⚠️ <strong>Hallstatt 2026 camera parking system</strong> — alternative: park at Obertraun (5 min drive) + take the ferry to Hallstatt (€4 · 10 min)",
             "🏠 <strong>7:30pm — Kaiserblick Goisern, Bad Goisern</strong> — 15 min drive from Hallstatt · $333"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -692,15 +662,7 @@
         },
         {
           "type": "tip",
-          "text": "💰 <strong>Day 7 costs</strong> — Liechtensteinklamm €16/adult · Salzburg P+R South €15/family combo · Wolfgangsee ferry ~€12 return/adult · Hallstatt parking €4/hr (if available) · family total approx. €150–180"
-        },
-        {
-          "type": "tip",
           "text": "☕ <strong>Hohensalzburg tip</strong> — stick to Panorama Tour only (courtyards + bastions) · skip the individual museums to stay on schedule · the view is the reason to go up · allow 1hr max"
-        },
-        {
-          "type": "done",
-          "text": "✅ Kaiserblick Goisern · Nights 1–2 · 38 Unterjoch, 4822 Bad Goisern · Airbnb · key box · $333"
         }
       ],
       "summary": {
@@ -755,7 +717,8 @@
             "⚠️ <strong>Saturday parking warning</strong> — if P1/P2 show \"Full\": park in Obertraun (5 min drive) + take the ferry across · NAVIA ferry: €4 cash",
             "⭐ <strong>Beinhaus (Bone Chapel)</strong> — €1.50/adult · 10 min",
             "🏠 <strong>Night 2 — Kaiserblick Goisern</strong> — ✅ Already checked in · 📍 38 Unterjoch, 4822 Bad Goisern, Austria · 15 min drive from Hallstatt"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -765,19 +728,11 @@
         },
         {
           "type": "tip",
-          "text": "💰 <strong>Day 8 costs</strong> — Krippenstein Sections 1+2 ~€44.90/adult · Ice Cave optional ~€10 · Gosaukammbahn ~€28 return/adult · Beinhaus €1.50 · Hallstatt ferry €4 cash (if needed) · family total approx. €300–340 for activities"
-        },
-        {
-          "type": "tip",
           "text": "⚠️ <strong>5 Fingers vs Skywalk</strong> — 5 Fingers on Krippenstein is higher, more dramatic, free with cable car ticket · direct aerial view down into Hallstatt village · Skywalk is closed anyway — 5 Fingers is the better experience"
         },
         {
           "type": "tip",
           "text": "🌊 <strong>Gosausee afternoon tip</strong> — best photos happen when the sun hits the Dachstein glacier face-on in the afternoon · go at 3pm not morning for the mirror reflection shot"
-        },
-        {
-          "type": "done",
-          "text": "✅ Kaiserblick Goisern · Night 2 of 2 · 38 Unterjoch, 4822 Bad Goisern · key box"
         },
         {
           "type": "tip",
@@ -835,7 +790,8 @@
             "➕ <strong>Optional: Loacker Café, Bolzano</strong> — 20 min detour off route",
             "🏠 <strong>5:30pm — Hotel Schwarzer Adler, Sillian</strong> — $115 / €99.40",
             "🍴 <strong>Dinner in Sillian</strong> — 📱 Download offline Dolomites maps tonight (Maps.me or Google Maps) · check Rifugio Auronzo parking booking confirmation"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -858,10 +814,6 @@
         {
           "type": "tip",
           "text": "📱 <strong>Tonight: prep for Dolomites</strong> — download offline maps (Google Maps or Maps.me) for the Dolomites · confirm Rifugio Auronzo parking booking · 5am alarm tomorrow · Braies gate opens 7:30am"
-        },
-        {
-          "type": "done",
-          "text": "✅ Hotel Schwarzer Adler · Sillian · $115 / €99.40 · check-in 16:00–21:00 · +43 4842 6214"
         }
       ],
       "summary": {
@@ -913,7 +865,8 @@
             "⭐ <strong>Prato Piazza plateau</strong> — 20 min off the route back · open alpine meadow with Tre Cime looming directly north",
             "⭐ ⭐ <strong>Passo Gardena (2,121m)</strong> — SS243 · low gear descent · ➕ Lagazuoi cable car optional",
             "🏠 <strong>6:30pm — Kaiserau 1907, Collalbo</strong> — $352 / €354.56"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -928,14 +881,6 @@
         {
           "type": "tip",
           "text": "📸 <strong>Cadini viewpoint tip</strong> — final 50m is a narrow ridge · secondary viewpoint 20m before the narrow section · 95% as good · go early — very crowded by midday · most dramatic jagged peak view in the Dolomites"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 10 costs</strong> — Braies P3 ~€12 · Auronzo toll €40 · Misurina coffee ~€5 · Rifugio lunch ~€15–20pp · Gardena pass free · Lagazuoi optional €22/adult"
-        },
-        {
-          "type": "done",
-          "text": "✅ Kaiserau 1907 Collalbo · Nights 10–11 · Via Peter Mayr 65, Collalbo · check-in 15:00–22:00"
         }
       ],
       "summary": {
@@ -981,7 +926,8 @@
             "🚗 <strong>5:30pm — Descent to Zannes car park</strong> — ~1hr back down · same trail · arrive Zannes ~6:30pm · drive 50 min back to Collalbo",
             "⭐ <strong>Renon Earth Pyramids — evening walk</strong> — ➕ Optional if energy allows · 5 min from hotel",
             "🏠 <strong>Night 2 — Kaiserau 1907, Collalbo</strong>"
-          ]
+          ],
+          "tags": []
         }
       ],
       "mapLinks": [
@@ -1002,14 +948,6 @@
         {
           "type": "tip",
           "text": "📸 <strong>Photography windows</strong> — Seceda ridge: 9:00–10:30am before clouds form · Santa Maddalena viewpoint: late afternoon — sun behind you · Odle peaks lit directly · morning light hits the wrong side of the peaks"
-        },
-        {
-          "type": "tip",
-          "text": "✅ <strong>Seceda 360 booked</strong> — Receipt 1161/678/554260 · 2 adults + 2 juniors · €255 total · Valid Jun 30, 2026 · print at home before departure"
-        },
-        {
-          "type": "done",
-          "text": "✅ Kaiserau 1907 Collalbo · Night 2 of 2 · already checked in"
         }
       ],
       "summary": {
@@ -1063,7 +1001,8 @@
             "🛒 <strong>M-Preis Supermarket, Mayrhofen</strong> — Finkenberg is up a winding road — nothing open nearby in the evening · allow 20 min",
             "🏠 <strong>4:30pm — Keyone Rooms, Finkenberg</strong> — $176 / €152.92 · ⚠️ Driveway can be steep — take it slowly on the approach",
             "🍔 <strong>Dinner in Finkenberg or Mayrhofen</strong> — or drive 5 min down to Mayrhofen for more options"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -1082,14 +1021,6 @@
         {
           "type": "tip",
           "text": "🛒 <strong>M-Preis Mayrhofen</strong> — stop before Finkenberg · buy breakfast for Day 13 · nothing open near Keyone in evenings · steep winding road to Finkenberg — take slowly"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 12 costs</strong> — P2 Compatsch €30 · Telemix lift ~€20 return/adult · Brenner Digital Flex €11.50 · lunch ~€15–20pp · Bullaccia loop free once on plateau"
-        },
-        {
-          "type": "done",
-          "text": "✅ Keyone Rooms Finkenberg · Night 1 · Dorf 131, 6292 Finkenberg · check-in 16:00"
         }
       ],
       "summary": {
@@ -1141,7 +1072,8 @@
             "🏠 <strong>~7:30pm — Landhaus Bichlbach</strong> — $467 / €405 · Heiterwanger See lake is a 20 min evening walk from the hotel",
             "⭐ <strong>Heiterwanger See sunset walk</strong> — easy 20 min walk from Landhaus along Panoramaweg",
             "🍔 <strong>Dinner + pack bags</strong> — Gasthof Bichlbach · checkout 8am · alarm 7am"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -1156,14 +1088,6 @@
         {
           "type": "tip",
           "text": "📱 <strong>At Olpererhütte: check Neuschwanstein booking</strong> — the hut has excellent Wi-Fi · confirm your 9:30am slot for tomorrow · cash preferred for food but cards accepted"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 13 costs</strong> — Schlegeis toll €17 · Olpererhütte lunch ~€15–20pp (cash) · Achensee boat ~€22/adult (optional) · Swarovski ~€22/adult (weather backup) · Heiterwanger See free"
-        },
-        {
-          "type": "done",
-          "text": "✅ Landhaus Bichlbach · Nights 1–2 · Siedlung 159, 6621 Bichlbach · check-in 15:00–18:00"
         }
       ],
       "summary": {
@@ -1213,7 +1137,8 @@
             "🏠 <strong>2:30pm — Back at Landhaus Bichlbach</strong> — relax · shower · pack bags for tomorrow · checkout is 8am — Neuschwanstein 9:30am · alarm 7:00am",
             "⭐ <strong>7:30pm — Heiterwanger See sunset walk</strong> — 20 min walk from Landhaus along the Panoramaweg",
             "🍔 <strong>Dinner</strong> — Gasthof Bichlbach or hotel restaurant · early dinner + early bed · alarm 7:00am tomorrow · Neuschwanstein 9:30am — last big day"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -1232,14 +1157,6 @@
         {
           "type": "tip",
           "text": "🌄 <strong>Panoramaweg for Heiterwanger See</strong> — take the higher Panoramaweg trail not the lakeside path · stays above the valley floor to catch alpenglow after sunset · 20 min from hotel · flat + easy"
-        },
-        {
-          "type": "tip",
-          "text": "💰 <strong>Day 14 costs</strong> — Ehrwalder Almbahn ~€26/adult return · Coburger Hütte lunch ~€30–40pp (cash) · Heiterwanger See free · parking free"
-        },
-        {
-          "type": "done",
-          "text": "✅ Landhaus Bichlbach · Night 2 of 2 · already checked in · checkout 8am tomorrow"
         }
       ],
       "summary": {
@@ -1293,7 +1210,8 @@
             "❌ <strong>Rhine Falls — SKIP TODAY</strong> — adding 45 min detour north on a peak Saturday risks missing car return window",
             "🚗 <strong>Return Europcar ZRH tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Europcar ZRH return · return by 11:30pm · Hilton shuttle back · check Booking.com email for return confirmation",
             "⚠️ <strong>Tonight — final checks</strong> — check-in opens 5:30am · hotel is 5 min walk to terminal"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
@@ -1367,7 +1285,8 @@
             "✈️ <strong>7:55am — FI571 departs ZRH → KEF</strong>",
             "🇮🇸 <strong>KEF layover tip</strong> — 1.5–2hr layover is just enough time · grab a <strong>Pylsur</strong> — duty-free is excellent here if you missed anything",
             "🏠 <strong>8:50pm — Arrive Orlando MCO</strong> — clear US Customs + Immigration at MCO · allow 45–60 min for customs on Sunday evening"
-          ]
+          ],
+          "tags": []
         }
       ],
       "tags": [
