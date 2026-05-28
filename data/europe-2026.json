@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-28T03:04:09Z",
+    "_updated": "2026-05-28T03:09:05Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -224,8 +224,12 @@
       "flag": "🇮🇸",
       "mapLinks": [
         {
-          "label": "Day 1–2 Map — Iceland — Reykjanes, Geysir & South Coast",
-          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Ker%C3%AD%C3%B0+Crater,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Sk%C3%B3gafoss,+Iceland/Reynisfjara+Beach,+Iceland/J%C3%B6kuls%C3%A1rl%C3%B3n,+Iceland"
+          "label": "Day 1 Map — KEF → Selfoss → Geysir → Seljalandsfoss → Skógafoss → Reynisfjara → Vík",
+          "url": "https://www.google.com/maps/dir/Keflavik+International+Airport,+Iceland/Selfoss,+Iceland/Geysir,+Iceland/Seljalandsfoss,+Iceland/Skogafoss,+Iceland/Reynisfjara+Beach,+Iceland/Farmhouse+Lodge,+871+Vik,+Iceland"
+        },
+        {
+          "label": "Day 2 Map — Skeidflot → Dyrhólaey → Skaftafell → Jökulsárlón → Diamond Beach → Fjaðrárgljúfur → Vík → BergOne",
+          "url": "https://www.google.com/maps/dir/Farmhouse+Lodge,+871+Vik,+Iceland/Dyrhólaey,+Iceland/Skaftafell,+Iceland/Jokulsarlon,+Iceland/Diamond+Beach,+Iceland/Fjadrargljufur,+Iceland/Vik,+Iceland/BergOne,+Ytri-Njardvik,+Iceland"
         }
       ],
       "sections": [
@@ -249,13 +253,13 @@
           "items": [
             "⏰ <strong>7:00am — Depart Skeidflot</strong> — already 10km from Dyrhólaey · head west first",
             "⭐ <strong>7:15am — Dyrhólaey arch</strong> — clifftop viewpoint over black sand coast · puffins nesting on Lágey islet in June — lower area · 30 min",
-            "⭐ ⭐ <strong>9:00am — Fjaðrárgljúfur Canyon</strong> — 45 min drive east · 100m deep serpentine moss-covered canyon · Game of Thrones Season 8 · 2km rim walk · ISK 1000 Parka · 1hr",
-            "🥾 <strong>11:00am — Skaftafellsjökull glacier walk</strong> — easy flat trail from Skaftafell visitor centre car park · 3mi / 4.8km RT · 1–1.5hrs · walk right up to the glacier edge · feel the cold air · kids can touch the ice · Game of Thrones + Interstellar filming location · free",
-            "🍔 <strong>12:30pm — Lunch at Skaftafell</strong> — food trucks in the car park (lobster soup is outstanding) · or visitor centre café · use the toilets here · allow 30 min",
-            "⭐ ⭐ <strong>1:30pm — Jökulsárlón — shore walk</strong> — 45 min drive east · floating blue icebergs glowing electric blue · walk the shore · seals resting on the ice · free · allow 30 min · 📸 every angle is a photo",
-            "⭐ ⭐ <strong>2:15pm — Diamond Beach</strong> — cross the bridge · crystal ice blocks on jet-black volcanic sand · ⚠️ same sneaker wave warning · allow 30 min",
-            "🚗 <strong>3:00pm — Start the drive back west</strong> — ~4hrs to BergOne · Ring Road all the way · sun still up the entire drive",
-            "🍔 <strong>~5:30pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> — best burgers in South Iceland · or Suður-Vík · breaks the drive perfectly · allow 1hr",
+            "🥾 <strong>10:00am — Skaftafellsjökull glacier walk</strong> — easy flat trail from Skaftafell visitor centre car park · 3mi / 4.8km RT · 1–1.5hrs · walk right up to the glacier edge · feel the cold air · kids can touch the ice · Game of Thrones + Interstellar filming location · free",
+            "🍔 <strong>11:30am — Lunch at Skaftafell</strong> — food trucks in the car park (lobster soup is outstanding) · or visitor centre café · use the toilets here · allow 30 min",
+            "⭐ ⭐ <strong>12:30pm — Jökulsárlón — shore walk</strong> — 45 min drive east · floating blue icebergs glowing electric blue · walk the shore · seals resting on the ice · free · allow 30 min · 📸 every angle is a photo",
+            "⭐ ⭐ <strong>1:15pm — Diamond Beach</strong> — cross the bridge · crystal ice blocks on jet-black volcanic sand · ⚠️ same sneaker wave warning · allow 30 min",
+            "🚗 <strong>2:00pm — Start the drive back west</strong> — ~5hrs to BergOne incl. canyon stop · Ring Road all the way · sun still up the entire drive",
+            "⭐ ⭐ <strong>~4:00pm — Fjaðrárgljúfur Canyon</strong> — natural break on the return drive · Route 1 passes right by it · 100m deep serpentine moss-covered canyon · Game of Thrones Season 8 · 2km rim walk · fewer crowds than morning · ISK 1000 Parka · allow 45 min",
+            "🍔 <strong>~5:45pm — Dinner in Vík</strong> — <strong>Smiðjan Brugghsús</strong> — best burgers in South Iceland · or Suður-Vík · breaks the drive perfectly · allow 1hr",
             "🏠 <strong>BergOne, Ytri-Njarðvík</strong> — ✅ Night 2 · 📍 1 Bergás, 260 Ytri-Njarðvík, Iceland · 📞 Booking.com · check in ~8pm · $263.98 · ⏰ alarm 5:15am Jun 22 — FI568 departs KEF 7:20am"
           ],
           "tags": [
@@ -323,7 +327,7 @@
         "✅ Day 2: Skaftafellsjökull glacier walk — free · easy · kids touch the ice",
         "⚠️ Depart Diamond Beach by 3pm firm — BergOne 8pm · 5:15am alarm"
       ],
-      "timeline": "Day 1: 10:30am KEF ▸ Selfoss lunch + grocery ▸ 1:30pm Geysir ▸ 3pm Seljalandsfoss + Gljúfrabúi ▸ 4:30pm Skógafoss ▸ 6pm Reynisfjara ▸ Vík fuel ▸ 7:30pm Skeidflot | Day 2: 7am ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Skaftafell glacier walk ▸ lunch ▸ Jökulsárlón shore ▸ Diamond Beach ▸ 3pm drive ▸ Vík dinner ▸ 8pm BergOne"
+      "timeline": "Day 1: 10:30am KEF ▸ Selfoss ▸ Geysir ▸ Seljalandsfoss+Gljúfrabúi ▸ Skógafoss ▸ Reynisfjara ▸ 7:30pm Vík | Day 2: 7am ▸ Dyrhólaey ▸ Skaftafellsjökull glacier walk ▸ Skaftafell lunch ▸ Jökulsárlón shore ▸ Diamond Beach ▸ 2pm drive ▸ 4pm Fjaðrárgljúfur Canyon ▸ Vík dinner ▸ 8pm BergOne"
     },
     {
       "dayLabel": "3",
