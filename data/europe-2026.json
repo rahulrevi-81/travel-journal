@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-28T13:32:07Z",
+    "_updated": "2026-05-29T18:45:32Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -574,10 +574,10 @@
             "⏰ <strong>8:15am — Königssee Seelände car park</strong> — only 10 min drive from Berchtesgaden apartment · car park is huge but the dock is a 10 min walk from the lot — factor this in",
             "⭐ ⭐ <strong>8:30am — Königssee electric boat</strong> — completely silent electric boats — only powered vessels allowed on this lake · ⚠️ Go all the way to <strong>Salet</strong> — 55 min to Salet · ~€28–30 return to Salet per adult",
             "🎺 <strong>The mountain echo tradition</strong> — midway the captain stops and plays a trumpet · have €1–2 ready to tip",
-            "🥾 <strong>9:45am — Obersee & Röthbachfall walk</strong> — from Salet dock: flat 15 min walk to Obersee · mirror-like glacial lake with the iconic half-submerged wooden boathouse · continue to the end of the lake for <strong>Röthbachfall</strong> — allow 1.5hrs total",
+            "🥾 <strong>9:45am — Obersee & Röthbachfall</strong> — flat 15 min walk from Salet dock · mirror-like glacial lake · iconic half-submerged wooden boathouse · walk all the way to <strong>Fischunkelalm hut</strong> on the far side · look straight up the valley walls — <strong>Röthbachfall</strong> = Germany's highest waterfall crashing down · no extra driving · right there · allow 1.5hrs total",
             "🍺 <strong>12:00pm — St. Bartholomä lunch stop</strong> — allow 45 min",
             "⛵ <strong>12:45pm — Final boat back to Königssee Seelände</strong> — 35 min · arrive ~1:15pm · walk 10 min to car park",
-            "⭐ ⭐ <strong>1:30pm — Eagle's Nest (Kehlsteinhaus)</strong> — drive 10 min to Obersalzberg car park · buy \"Kehlsteinbus\" ticket at the counter — ~€32 per person (bus + famous brass elevator)",
+            "⭐ ⭐ <strong>1:30pm — Eagle's Nest (Kehlsteinhaus)</strong> — drive 10 min to Obersalzberg car park · buy \"Kehlsteinbus\" ticket ~€32 (bus + brass elevator) · 🚨 <strong>Golden Rule: the moment you step off the bus at the top</strong> — go IMMEDIATELY to the ticket window and book your return bus slot · book the <strong>4:00 or 4:15pm return</strong> · mid-afternoon slots fill fast · missing this = stranded at the top · allow 2hrs at the top · 360° Alpine panorama",
             "📍 <strong>Dokumentation Obersalzberg WWII Museum</strong> — 30 min · €10/adult",
             "⭐ <strong>~4:00pm — Rossfeld Panorama Road</strong> — €9 toll · Germany's highest panoramic toll road at 1,570m",
             "🥾 <strong>~4:45pm — Hintersee & Zauberwald (Magic Forest)</strong> — 15 min drive toward Ramsau · follow the trail into the Zauberwald",
@@ -594,7 +594,7 @@
         },
         {
           "type": "warn",
-          "text": "⚠️ <strong>Eagle's Nest return bus</strong> — register your return time at the top station counter IMMEDIATELY on arrival · before going up the elevator · slots fill very fast in June peak season · ~€32/person incl. bus + elevator"
+          "text": "⚠️ <strong>Eagle's Nest return bus</strong> — book 4:00 or 4:15pm slot at the top counter IMMEDIATELY · slots fill fast in peak season · missing it = stranded at the top"
         },
         {
           "type": "tip",
