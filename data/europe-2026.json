@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-29T19:22:25Z",
+    "_updated": "2026-05-29T19:33:22Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -992,7 +992,7 @@
           "items": [
             "⏰ <strong>7:45am — Depart Collalbo</strong> — 40 min drive to the Alpe di Siusi St. Valentin gate · checkout Kaiserau 1907 before leaving · luggage in the car",
             "⚠️ <strong>CRITICAL: St. Valentin Gate — before 9:00am</strong> — 9:01am = turned back · €120+ cable car alternative",
-            "🚗 <strong>8:45am — P2 Compatsch parking</strong> — ✅ Pre-booked slot · €30/day",
+            "🚗 <strong>P2 Compatsch parking</strong> — ⚠️ Currently fully booked · keep checking seiseralm.it for cancellations · slots open up to 6 days before · €30 cash · must arrive before 9am · cameras enforce the gate · 🇧 <strong>Plan B: Seis–Compatsch cable car</strong> — park in Seis village · gondola up to Compatsch (same trailhead) · ~€30/adult RT · family ticket ~€65 · no booking needed · no 9am deadline",
             "🥾 <strong>9:15am — Bullaccia (Puflatsch) Loop</strong> — take the Telemix lift up from Compatsch · Trail PU (Puflatschumrundung)",
             "⭐ <strong>Hexenbänke — Witches' Benches</strong> — signed from the trail",
             "🍽️ <strong>12:00pm — Lunch: Tschötsch Alm or Arnika Hütte</strong> — ⚠️ <strong>Do NOT go to Rifugio Zallinger</strong> — allow 1hr",
@@ -1039,6 +1039,8 @@
         "driveTime": "~1h 45m · Collalbo → Finkenberg via Brenner"
       },
       "keyDecisions": [
+        "🅿️ Plan A: P2 Compatsch — keep checking seiseralm.it for cancellations · must arrive before 9am · €30",
+        "🚡 Plan B: Seis cable car → Compatsch — park in Seis · ~€30/adult RT · no booking · no 9am rule · same trailhead",
         "🚨 St. Valentin gate closes 9:00am SHARP — leave Collalbo 7:45am · arrive 8:30am · no exceptions",
         "❌ Skip Rifugio Zallinger — 4hr RT or 2 extra lifts · impractical · eat at Tschötsch Alm instead",
         "⚠️ Brenner Lueg Bridge construction 2026 — 30–45 min delay · Digital Flex toll essential"
@@ -1469,10 +1471,10 @@
     },
     {
       "id": "compatsch_parking",
-      "label": "🅿️ P2 Compatsch parking — pre-book online · Jul 1",
+      "label": "🅿️ P2 Compatsch parking — Jul 1 (fully booked · keep checking)",
       "status": "pending",
-      "ref": "Book at seiseralm.it · €30/day · cameras enforce · new summer 2026 system · opens late May",
-      "deadline": "Available from end of May 2026 · book immediately when open · seiseralm.it"
+      "ref": "seiseralm.it · €30 · must arrive before 9am · cancellations appear · check daily · Plan B: Seis cable car €30/adult RT",
+      "deadline": "Keep checking daily — cancellations appear · Plan B = Seis–Compatsch cable car (no booking needed)"
     },
     {
       "id": "brenner_toll",
