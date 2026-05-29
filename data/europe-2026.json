@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-29T22:38:54Z",
+    "_updated": "2026-05-29T22:41:03Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1487,7 +1487,7 @@
       "id": "rifugio_auronzo",
       "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime",
       "status": "done",
-      "ref": "Transaction PASS3CIME_26017885 · Doc R26013671 · €40.00 · paid 30/05/2026 · pass.auronzo.info",
+      "ref": "Transaction PASS3CIME_26017885 · Ticket P26134547 · €40 · 9:00am–8:59pm Jun 29 · update plate Jun 28 at pass.auronzo.info",
       "deadline": "Booked ✅ · update licence plate night before (Jun 28 in Sillian)",
       "link": null
     },
