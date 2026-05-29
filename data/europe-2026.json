@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-29T19:33:22Z",
+    "_updated": "2026-05-29T22:38:54Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -858,7 +858,7 @@
             "🥾 <strong>Braies lake circuit</strong> — 3.5km / 2.2mi · leave by 8:30am at the latest — before the 9am gate closure",
             "🚗 <strong>8:30am — Depart Braies</strong> — leave before the 9:00am road closure begins · drive 20 min to Lago di Misurina",
             "📸 <strong>9:30am — Lago di Misurina</strong> — mirror-reflection of the Tre Cime in the lake · Rifugio Misurina café on the lakeside",
-            "⚠️ <strong>10:00am — Tre Cime toll road</strong> — use pre-booked slot · book at <strong>pass.auronzo.info</strong> · €40 · May 30 booking date",
+            "⚠️ <strong>10:00am — Tre Cime toll road</strong> — ✅ Pre-booked · PASS3CIME_26017885 · €40 paid · 9am slot booked · plate reads automatically at gate · ⚠️ Update licence plate tonight (Jun 28) at pass.auronzo.info",
             "⭐ ⭐ <strong>10:30am — Cadini di Misurina Trail 117</strong> — 30–40 min · secondary viewpoint 20m back if heights issue · gets crowded by midday",
             "🍴 <strong>12:30pm — Lunch at Rifugio Auronzo</strong> — cash preferred · allow 1hr",
             "🥾 <strong>1:30pm — Tre Cime partial loop</strong> — flat path to Rifugio Lavaredo (20 min each way) · allow 1hr",
@@ -1485,10 +1485,10 @@
     },
     {
       "id": "rifugio_auronzo",
-      "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime toll road",
-      "status": "pending",
-      "ref": "Book at pass.auronzo.info · €40/car · 12-hour slot · book May 30 (exactly 30 days before) · update rental plate night before",
-      "deadline": "May 30, 2026 — booking opens midnight",
+      "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime",
+      "status": "done",
+      "ref": "Transaction PASS3CIME_26017885 · Doc R26013671 · €40.00 · paid 30/05/2026 · pass.auronzo.info",
+      "deadline": "Booked ✅ · update licence plate night before (Jun 28 in Sillian)",
       "link": null
     },
     {
