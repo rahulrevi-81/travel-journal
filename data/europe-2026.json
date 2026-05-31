@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-31T21:17:56Z",
+    "_updated": "2026-05-31T21:34:21Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -770,8 +770,8 @@
       "flag": "🇦🇹",
       "mapLinks": [
         {
-          "label": "Day 9 Map — Bad Goisern → Grossglockner → Heiligenblut → Sillian",
-          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Grossglockner+Hochalpenstrasse,+Austria/Edelwei%C3%9Fspitze,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Austria/Heiligenblut,+Austria/Sillian,+Austria"
+          "label": "Day 9 Map — Bad Goisern → Ferleiten → Edelweiß-Spitze → KFJ-Höhe → Heiligenblut → Sillian",
+          "url": "https://www.google.com/maps/dir/Bad+Goisern,+Austria/Ferleiten,+Fusch+an+der+Glocknerstrasse,+Austria/Edelwei%C3%9Fspitze,+Heiligenblut,+Austria/Kaiser-Franz-Josefs-H%C3%B6he,+Heiligenblut,+Austria/Heiligenblut,+Austria/Sillian,+Austria"
         }
       ],
       "sections": [
@@ -789,7 +789,6 @@
             "🍴 <strong>1:30pm — Lunch at Kaiser-Franz-Josefs-Höhe</strong> — panoramic terrace facing the glacier · allow 1hr",
             "⚠️ <strong>Descent toward Heiligenblut — brake warning</strong>",
             "⭐ <strong>3:30pm — Heiligenblut village</strong> — allow 30 min",
-            "➕ <strong>Optional: Loacker Café, Bolzano</strong> — 20 min detour off route",
             "🏠 <strong>5:30pm — Hotel Schwarzer Adler, Sillian</strong> — $115 / €99.40",
             "🍴 <strong>Dinner in Sillian</strong> — 📱 Download offline Dolomites maps tonight (Maps.me or Google Maps) · check Rifugio Auronzo parking booking confirmation"
           ],
