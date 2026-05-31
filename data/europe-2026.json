@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-05-30T19:28:47Z",
+    "_updated": "2026-05-31T21:17:05Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -855,18 +855,15 @@
         {
           "heading": null,
           "items": [
-            "⏰ <strong>5:00am — Depart Sillian</strong> — 30 min to Braies · if cloudy → pivot to Prato Piazza instead",
-            "⭐ ⭐ <strong>5:30am — Lago di Braies sunrise</strong> — park P3 ~€12 · no reservation before 8am · leave by 8:30am before 9am gate closure",
-            "🥾 <strong>Braies lake circuit</strong> — 3.5km / 2.2mi · leave by 8:30am at the latest — before the 9am gate closure",
-            "🚗 <strong>8:30am — Depart Braies</strong> — leave before the 9:00am road closure begins · drive 20 min to Lago di Misurina",
-            "📸 <strong>9:30am — Lago di Misurina</strong> — mirror-reflection of the Tre Cime in the lake · Rifugio Misurina café on the lakeside",
-            "⚠️ <strong>10:00am — Tre Cime toll road</strong> — ✅ Pre-booked · PASS3CIME_26017885 · €40 paid · 9am slot booked · plate reads automatically at gate · ⚠️ Update licence plate tonight (Jun 28) at pass.auronzo.info",
-            "⭐ ⭐ <strong>10:30am — Cadini di Misurina Trail 117</strong> — 30–40 min · secondary viewpoint 20m back if heights issue · gets crowded by midday",
-            "🍴 <strong>12:30pm — Lunch at Rifugio Auronzo</strong> — cash preferred · allow 1hr",
-            "🥾 <strong>1:30pm — Tre Cime partial loop</strong> — flat path to Rifugio Lavaredo (20 min each way) · allow 1hr",
-            "⭐ <strong>Prato Piazza plateau (Plätzwiese)</strong> — ✅ Confirmed stop · ⚠️ <strong>2026: access road closed to private cars 10am–4pm</strong> · you arrive during closure window — park at <strong>Ponticello (Brückele)</strong> lot at the bottom · take the shuttle bus up to the meadow · keep small Euro coins handy for the bus · open alpine meadow · Tre Cime looming directly north · allow 45 min",
-            "⭐ ⭐ <strong>Passo Gardena (2,121m)</strong> — SS243 · low gear descent · ➕ Lagazuoi cable car optional",
-            "🏠 <strong>6:30pm — Kaiserau 1907, Collalbo</strong> — $352 / €354.56"
+            "🚗 <strong>8:00am — Depart Sillian</strong> — 45 min straight across the Italian border · download offline Dolomites maps tonight if not done · update Auronzo plate at pass.auronzo.info tonight (Jun 28)",
+            "⭐ ⭐ <strong>8:45am — Lago di Braies</strong> — park P3 ~€12 · no reservation needed · walk the best half of the lakeside circuit · famous stilt boathouse · morning views · allow 1.5hrs · leave by 10:15am",
+            "☕ <strong>10:15am — Drive via Lago di Misurina</strong> — 1hr drive down the valley · stop at Rifugio Misurina café · 15 min coffee + mirror-reflection photo of Tre Cime in the lake",
+            "⚠️ <strong>11:15am — Auronzo gate</strong> — ✅ Pre-booked · PASS3CIME_26017885 · Ticket P26134547 · 9am–8:59pm slot · plate reads automatically · drive straight up · €40 paid · no queue",
+            "⭐ ⭐ <strong>11:45am — Cadini di Misurina Trail 117</strong> — hike out to the iconic jagged peak viewpoint · 45 min RT at normal pace · ⚠️ final 50m is a narrow ridge · secondary viewpoint 20m back is 95% as good · allow 1hr 45min total for photos + kids pace",
+            "🍽 <strong>1:30pm — Lunch at Rifugio Auronzo</strong> — cash is faster · hearty mountain lunch · allow 1hr",
+            "🥾 <strong>2:30pm — Tre Cime Highlights Walk</strong> — flat path to Rifugio Lavaredo (20 min each way) · see the towering north faces up close · allow 1hr 15min",
+            "🚗 <strong>3:45pm — Passo Gardena scenic drive</strong> — drive back down toll road · SS243 Gardena Pass (2,121m) · hairpin turns · low gear descent · ➕ Lagazuoi cable car optional if energy · ~1hr 15min drive",
+            "🏠 <strong>5:00pm — Kaiserau 1907, Collalbo</strong> — ✅ Check in · Via Peter Mayr 65, 39054 Collalbo · check-in 15:00–22:00 · unpack · rest · open a bottle of Italian wine 🍷"
           ],
           "tags": []
         }
@@ -900,12 +897,13 @@
         "driveTime": "~5h total driving · many short hops"
       },
       "keyDecisions": [
-        "✅ Arrive Braies 5:30am — P3 €12 no reservation · bypass 9am gate · best light · 1000 fewer people",
-        "⚠️ Auronzo booking: pass.auronzo.info · May 30 = exactly 30 days before · €40 · update plate night before",
-        "⚠️ Cadini final 50m narrow ridge — secondary viewpoint 20m back is 95% as good if heights are an issue",
-        "⚠️ Prato Piazza: access road closed 10am–4pm · park at Ponticello (Brückele) · take shuttle up · keep coins"
+        "✅ 8am departure — relaxed start · Braies 8:45am · still beautiful · P3 no reservation",
+        "❌ Prato Piazza dropped — already have Alpe di Siusi Day 12 · same alpine meadow experience",
+        "✅ Auronzo gate 11:15am — well within 9am–8:59pm slot · plate auto-read · no queue",
+        "⚠️ Cadini final 50m narrow ridge — secondary viewpoint 20m back is 95% as good",
+        "⚠️ Update Auronzo licence plate Jun 28 evening at pass.auronzo.info before Sillian dinner"
       ],
-      "timeline": "5am depart Sillian ▸ 5:30am Braies sunrise P3 ▸ 8:30am depart before gate ▸ 9:30am Misurina coffee ▸ 10am Auronzo slot ▸ 10:30am Cadini Trail 117 ▸ 12:30pm Rifugio Auronzo lunch ▸ 1:30pm Tre Cime partial loop ▸ Prato Piazza ▸ Gardena pass ▸ 6:30pm Collalbo"
+      "timeline": "8am Sillian ▸ 8:45am Braies P3 ▸ 10:15am depart ▸ Misurina coffee ▸ 11:15am Auronzo gate ▸ 11:45am Cadini Trail 117 ▸ 1:30pm lunch ▸ 2:30pm Tre Cime walk ▸ 3:45pm Gardena Pass ▸ 5pm Collalbo"
     },
     {
       "date": "Jun 30",
@@ -1837,9 +1835,9 @@
       "flag": "🇦🇹",
       "from": "Sillian 🇦🇹",
       "nightStay": "Kaiserau 1907, Collalbo 🇮🇹 ✅",
-      "highlights": "Braies sunrise 5:30am P3 · Misurina coffee · Cadini Trail 117 · Tre Cime partial loop · Prato Piazza · Passo Gardena · Collalbo",
-      "drive": "~200 km / 124 mi",
-      "driveTime": "~5h total driving · many short hops",
+      "highlights": "Braies 8:45am · Misurina mirror coffee · Cadini Trail 117 · Rifugio Auronzo lunch · Tre Cime walk · Gardena Pass · Collalbo",
+      "drive": "~180 km / 112 mi",
+      "driveTime": "~3h driving · relaxed pace",
       "bookings": "✅ Kaiserau 1907 · €354.56 · check-in 15:00–22:00",
       "mapUrl": "https://www.google.com/maps/dir/Sillian,+Austria/Lago+di+Braies,+Italy/Rifugio+Auronzo,+Misurina,+Italy/Prato+Piazza,+Braies,+Italy/Cortina+d'Ampezzo,+Italy/Passo+Falzarego,+Italy/Passo+Gardena,+Italy/Siusi+allo+Sciliar,+Italy",
       "action": {
