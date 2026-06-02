@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-02T18:30:42Z",
+    "_updated": "2026-06-02T18:39:34Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -243,6 +243,7 @@
             "⭐ ⭐ <strong>3:00pm — Seljalandsfoss</strong> — walk-behind waterfall · waterproofs essential · Parka app ~1000 ISK · allow 1hr total",
             "⭐ ⭐ <strong>Gljúfrabúi — the hidden canyon waterfall</strong> — 500m north of Seljalandsfoss · walk inside the canyon · most tourists miss this · waterproofs essential · free",
             "⭐ <strong>4:30pm — Skógafoss</strong> — 30 min east · climb the 527 stairs for coastline views · Parka app ~1000 ISK · allow 45 min",
+            "⭐ <strong>Kvernufoss — the hidden waterfall</strong> — 5 min walk from Skógafoss car park · walk behind the waterfall into the canyon · most visitors completely miss this · completely different experience from Skógafoss · free · allow 15 min",
             "⭐ ⭐ <strong>6:00pm — Reynisfjara black sand beach</strong> — ⚠️ Sneaker waves — never turn your back to the ocean · basalt columns + sea stacks · soft golden light at 6pm · Parka app ~1000 ISK",
             "🚗 <strong>7:00pm — Vík village quick stop</strong> — red-roofed church viewpoint · fill the tank at N1 station · 15 min",
             "🏠 <strong>Farmhouse Lodge, 871 Vík, Iceland</strong> — ✅ Night 1 · 📍 Farmhouse Lodge, 871 Vík, Iceland · 📞 Airbnb · check in ~7:30pm · $290.36"
@@ -745,6 +746,10 @@
         {
           "type": "tip",
           "text": "🛒 <strong>Hofer (Aldi) Bad Goisern</strong> — stock up this morning or evening · discount prices · buy for Jun 27–Jul 1: Grossglockner · Sillian · Dolomites 3 nights · Hofrat-Renner-Weg 1 · open Tue 7:15am"
+        },
+        {
+          "type": "tip",
+          "text": "🌊 <strong>Löckenmoos alpine lake — Bad Goisern</strong> — minutes from Kaiserblick hotel · almost no international tourists · small alpine bog lake with mountain reflections · ☀️ clear weather only — magical when calm · perfect 20 min evening walk from the hotel · free"
         }
       ],
       "summary": {
@@ -1097,6 +1102,10 @@
         {
           "type": "tip",
           "text": "📱 <strong>At Olpererhütte: check Neuschwanstein booking</strong> — the hut has excellent Wi-Fi · confirm your 9:30am slot for tomorrow · cash preferred for food but cards accepted"
+        },
+        {
+          "type": "tip",
+          "text": "🌊 <strong>Blindsee — 2km from Landhaus Bichlbach</strong> — one of Austria's most photogenic lakes · emerald green · often misty in the morning · short walk or 3 min drive from the hotel · many visitors prefer it over Achensee · perfect early morning walk before the Schlegeis drive · free"
         }
       ],
       "summary": {
