@@ -873,7 +873,7 @@ function exportGlanceToExcel(d) {
     if(d.days) {
       d.days.forEach(function(day) {
         if(!day.mapLinks) return;
-        if(day.dayLabel==='1-2'||day.dayLabel==='1\u20132') {
+        if(day.dayLabel==='1-2'||day.dayLabel==='1–2'||day.dayLabel.indexOf('1')===0&&day.dayLabel.indexOf('2')>0) {
           day.mapLinks.forEach(function(ml){
             if(ml.label&&ml.label.toLowerCase().indexOf('day 1')>=0&&date==='Jun 20') mapUrl=ml.url||'';
             if(ml.label&&ml.label.toLowerCase().indexOf('day 2')>=0&&date==='Jun 21') mapUrl=ml.url||'';
