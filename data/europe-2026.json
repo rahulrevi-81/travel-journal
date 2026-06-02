@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-02T18:22:01Z",
+    "_updated": "2026-06-02T18:30:42Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -575,6 +575,7 @@
             "⭐ ⭐ <strong>8:30am — Königssee electric boat</strong> — completely silent electric boats — only powered vessels allowed on this lake · ⚠️ Go all the way to <strong>Salet</strong> — 55 min to Salet · ~€28–30 return to Salet per adult",
             "🎺 <strong>The mountain echo tradition</strong> — midway the captain stops and plays a trumpet · have €1–2 ready to tip",
             "🥾 <strong>9:45am — Obersee & Röthbachfall</strong> — flat 15 min walk from Salet dock · mirror-like glacial lake · iconic half-submerged wooden boathouse · walk all the way to <strong>Fischunkelalm hut</strong> on the far side · look straight up the valley walls — <strong>Röthbachfall</strong> = Germany's highest waterfall crashing down · no extra driving · right there · allow 1.5hrs total",
+            "📸 <strong>Malerwinkel — Painter's Corner viewpoint</strong> — on the walk back from Obersee toward St. Bartholomä · wooden bench overlook · most famous postcard view of the lake · red onion domes of St. Bartholomä perfectly reflected · most boat passengers miss this entirely · free · 2 min off the path",
             "🍺 <strong>12:00pm — St. Bartholomä lunch stop</strong> — allow 45 min",
             "⛵ <strong>12:45pm — Final boat back to Königssee Seelände</strong> — 35 min · arrive ~1:15pm · walk 10 min to car park",
             "⭐ ⭐ <strong>1:30pm — Eagle's Nest (Kehlsteinhaus)</strong> — drive 10 min to Obersalzberg car park · Kehlsteinbus ~€32 (bus + brass elevator) · 🚨 <strong>Golden Rule: immediately book 4:00 or 4:15pm return slot</strong> at top counter · 360° Alpine panorama at 1,834m · allow 2hrs · ☁️ <strong>If foggy/cloudy: swap for Berchtesgaden Salt Mine instead</strong> — Salzburger Str. 24 · 10 min from apartment · same 1:30pm slot · book online at salzbergwerk.de",
@@ -600,6 +601,10 @@
         {
           "type": "tip",
           "text": "⛵ <strong>Königssee booking</strong> — book at seenschifffahrt.de · reserve ~1 week before Jun 25 · non-refundable"
+        },
+        {
+          "type": "tip",
+          "text": "📸 <strong>Ramsau village — 10 min from Berchtesgaden</strong> — stone bridge over the fast-moving turquoise Ramsauer Ache river · Reiteralpe massif behind it · one of the most photographed spots in Bavaria · zero crowds at 7am · drive through on the way to Königssee or as a 15 min evening stop"
         }
       ],
       "summary": {
