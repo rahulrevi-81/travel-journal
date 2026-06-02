@@ -669,294 +669,324 @@ function tagEl(tag) {
 function exportGlanceToExcel(d) {
   const wb = XLSX.utils.book_new();
 
-  function sx(s) { return (s||'').replace(/<[^>]+>/g,'').trim(); }
+  // Clean HTML tags and emoji from text
+  function cl(s) { return (s||'').replace(/<[^>]+>/g,'').trim(); }
+  function clean(s) {
+    s = cl(s);
+    // Remove emoji and non-latin unicode, keep basic punctuation
+    s = s.replace(/[^\u0000-\u007F\u00C0-\u024F\u2014\u2013\u00B7\u00E9\u00FC\u00F6\u00E4\u00E0\u00E8\u00F9\u00EE\u00EF\u00EB\u00EA\u00E2\u00E7\u00F3\u00FA\u00ED\u00F1]/g,'');
+    return s.trim().replace(/^[\s\|\-]+|[\s\|\-]+$/g,'');
+  }
 
-  function hdr(bg, fg) {
-    return { font:{bold:true,color:{rgb:fg||'FFFFFF'},name:'Arial',sz:10},
-             fill:{fgColor:{rgb:bg||'1A1A2E'}},
-             alignment:{horizontal:'center',vertical:'center',wrapText:false},
-             border:{bottom:{style:'thin',color:{rgb:'C9A84C'}}} };
+  // Colour palette
+  var INK='FF1A1A2E', GOLD='FFC9A84C', WHITE='FFFFFFFF', SLATE='FF6B7280';
+  var SAGE='FF2D6A2D', RUST='FFB91C1C', AMBER='FF78350F';
+  var DAY='FF1E3A5F', TL='FF0F2544', KD='FFFEF3C7', TIP='FFEFF6FF';
+  var TYPE_BG={DRIVE:'FFDBEAFE',HIKE:'FFDCFCE7',MEAL:'FFFEF9C3',HOTEL:'FFEDE9FE',WARN:'FFFEE2E2',STOP:'FFFFFFFF'};
+  var TYPE_FG={DRIVE:'FF1E40AF',HIKE:SAGE,MEAL:AMBER,HOTEL:'FF5B21B6',WARN:RUST,STOP:'FF374151'};
+  var TYPE_LBL={DRIVE:'Drive',HIKE:'Hike',MEAL:'Eat',HOTEL:'Stay',WARN:'ALERT',STOP:'Stop'};
+  var STATUS_BG={done:'FFDCFCE7',urgent:'FFFEE2E2',pending:'FFFEF9C3'};
+  var STATUS_FG={done:SAGE,urgent:RUST,pending:AMBER};
+  var STATUS_LBL={done:'Done',urgent:'URGENT',pending:'Pending'};
+
+  function st(bg, fg, bold, sz, wrap, halign) {
+    var s = {
+      font:{name:'Arial',color:{rgb:fg||'FF111111'},bold:!!bold,sz:sz||10},
+      fill:{fgColor:{rgb:bg||'FFFFFFFF'}},
+      alignment:{horizontal:halign||'left',vertical:'top',wrapText:(wrap!==false)},
+      border:{top:{style:'thin',color:{rgb:'FFCCCCCC'}},bottom:{style:'thin',color:{rgb:'FFCCCCCC'}},
+              left:{style:'thin',color:{rgb:'FFCCCCCC'}},right:{style:'thin',color:{rgb:'FFCCCCCC'}}}
+    };
+    return s;
   }
-  function dayHdr() {
-    return { font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:10},
-             fill:{fgColor:{rgb:'2D3561'}},
-             alignment:{horizontal:'left',vertical:'center',wrapText:false} };
-  }
-  function tlStyle() {
-    return { font:{italic:true,color:{rgb:'C9A84C'},name:'Arial',sz:9},
-             fill:{fgColor:{rgb:'1D2645'}},
-             alignment:{horizontal:'left',vertical:'center',wrapText:true} };
-  }
-  function kdStyle() {
-    return { font:{color:{rgb:'92400E'},name:'Arial',sz:9},
-             fill:{fgColor:{rgb:'FFFBEB'}},
-             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
-  }
-  function tipStyle() {
-    return { font:{italic:true,color:{rgb:'6B7280'},name:'Arial',sz:9},
-             fill:{fgColor:{rgb:'EEF2FF'}},
-             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
-  }
-  function rowStyle(typ, isOpt) {
-    var bgs = {DRIVE:'EFF6FF',HIKE:'F0F7EC',MEAL:'FEF9EE',HOTEL:'F5F0FF',
-               WARN:'FEF2F2',PHOTO:'FFF0F5',SHOP:'FFF9E6',STOP:'FFFFFF'};
-    var fgs = {DRIVE:'1D4ED8',HIKE:'4A7C2F',MEAL:'92400E',HOTEL:'5B21B6',
-               WARN:'C0392B',PHOTO:'BE185D',SHOP:'92400E',STOP:'111111'};
-    var bg = isOpt ? 'F8F8F8' : (bgs[typ]||'FFFFFF');
-    var fg = isOpt ? '888888' : (fgs[typ]||'111111');
-    return { font:{color:{rgb:fg},name:'Arial',sz:10},
-             fill:{fgColor:{rgb:bg}},
-             alignment:{horizontal:'left',vertical:'top',wrapText:true} };
-  }
-  function typeStyle(typ) {
-    var fgs={DRIVE:'1D4ED8',HIKE:'4A7C2F',MEAL:'92400E',HOTEL:'5B21B6',
-             WARN:'C0392B',PHOTO:'BE185D',SHOP:'92400E',STOP:'6B7280'};
-    return { font:{bold:true,color:{rgb:fgs[typ]||'6B7280'},name:'Arial',sz:8},
-             alignment:{horizontal:'center',vertical:'top',wrapText:false} };
-  }
-  function c(v, s) { return s ? {v:v||'', t:'s', s:s} : {v:v||'', t:'s'}; }
+
+  function c(v,s) { return s ? {v:v||'',t:'s',s:s} : {v:v||'',t:'s'}; }
 
   function classify(t) {
-    t = t.toLowerCase();
-    if (/drive |fly |flight|depart|checkout|check-out|pick up/.test(t)) return 'DRIVE';
-    if (/hike|trail|loop|climb|summit/.test(t)) return 'HIKE';
-    if (/lunch|dinner|breakfast|café|rifugio|meal|🍽|restaurant/.test(t)) return 'MEAL';
-    if (/🏠|🏕|check in|check-in|✅ nights|✅ confirmed/.test(t)) return 'HOTEL';
-    if (/⚠️|pre-book|must pre-book/.test(t)) return 'WARN';
-    if (/📸|photo stop/.test(t)) return 'PHOTO';
-    if (/🛒|grocery|aldi|rewe|hofer/.test(t)) return 'SHOP';
+    t=t.toLowerCase();
+    if(/drive |fly |flight|depart|checkout|pick up/.test(t)) return 'DRIVE';
+    if(/\bhike\b|trail|loop|climb|summit|descent|ascent/.test(t)) return 'HIKE';
+    if(/lunch|dinner|breakfast|cafe|rifugio|restaurant|grocery/.test(t)) return 'MEAL';
+    if(/check.in|night [0-9]|lodge|apartment|camping|hotel\b/.test(t)) return 'HOTEL';
+    if(/alert|closed|critical/.test(t)) return 'WARN';
     return 'STOP';
   }
 
-  var TYPE_LBL = {DRIVE:'🚗 Drive',HIKE:'🥾 Hike',MEAL:'🍽 Eat',HOTEL:'🏠 Stay',
-                  WARN:'⚠️ Alert',PHOTO:'📸 Photo',SHOP:'🛒 Shop',STOP:'📍 Stop'};
+  var SKIP=[/night \d.{0,10}already checked in/,/^austrian vignette still valid/,
+            /^spend remaining swiss/,/^gondola down.*drive back/,/^pack bags/];
+  function skipItem(t) { return SKIP.some(function(p){return p.test(t.toLowerCase().trim());}); }
 
-  // ── TAB 1: Detailed Itinerary ─────────────────────────────────────────
-  var rows = [];
-  // Title row
-  rows.push([c('🌍  Europe 2026 — Detailed Itinerary  ·  VR Family Travels  ·  Jun 19 – Jul 5, 2026',
-    {font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},
-     alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']);
+  // ── TAB 1: ITINERARY ──────────────────────────────────────────────────
+  var rows=[];
+  // Title
+  rows.push([c('Europe 2026  |  VR Family Travels  |  Jun 19 - Jul 5',st(INK,WHITE,true,11,false,'left')),'','','','']);
+  // Header
+  rows.push([c('Day',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+             c('Date',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+             c('Type',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+             c('Opt',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+             c('Activity / Details / Tips',st(GOLD,'FF1A1A2E',true,9,false,'center'))]);
 
-  // Header row
-  rows.push([c('Day',hdr()), c('Date',hdr()), c('Type',hdr()), c('Opt',hdr()),
-             c('Activity · Details',hdr()), c('Key Info',hdr()), c('Address / Contact',hdr())]);
-
-  function addDay(label, date, title, items, timeline, decisions, tags, drive, dtime) {
+  function addDay(label,date,title,items,timeline,kd,tags,drive,dtime) {
     // Day header
-    var hdrTxt = 'DAY ' + label + '  ·  ' + date + '  ·  ' + title + (drive ? '     |  🚗 '+drive+' '+dtime : '');
-    rows.push([c(hdrTxt, dayHdr()),'','','','','','']);
+    var hdr='DAY '+label+'  |  '+date+'  |  '+clean(title);
+    if(drive) hdr+='  |  '+clean(drive)+'  '+clean(dtime);
+    rows.push([c(hdr,st(DAY,WHITE,true,10,false,'left')),'','','','']);
     // Timeline
-    if (timeline) rows.push([c('',tlStyle()), c(date,tlStyle()), c('⏱ Timeline',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:8},fill:{fgColor:{rgb:'1D2645'}}}),
-      c('',tlStyle()), c(timeline,tlStyle()), c('',tlStyle()), c('',tlStyle())]);
-    // Decisions
-    if (decisions) rows.push([c('',kdStyle()), c(date,kdStyle()), c('⚡ Decisions',{font:{bold:true,color:{rgb:'92400E'},name:'Arial',sz:8},fill:{fgColor:{rgb:'FFFBEB'}}}),
-      c('',kdStyle()), c(decisions.replace('⚡ ',''),kdStyle()), c('',kdStyle()), c('',kdStyle())]);
+    if(timeline) {
+      rows.push([c('> '+clean(timeline),{font:{name:'Arial',color:{rgb:GOLD},italic:true,sz:8},
+        fill:{fgColor:{rgb:TL}},alignment:{horizontal:'left',vertical:'center',wrapText:false},
+        border:{top:{style:'thin',color:{rgb:'FFCCCCCC'}},bottom:{style:'thin',color:{rgb:'FFCCCCCC'}},
+                left:{style:'thin',color:{rgb:'FFCCCCCC'}},right:{style:'thin',color:{rgb:'FFCCCCCC'}}}}),'','','','']);
+    }
+    // Key decisions
+    if(kd && kd.length) {
+      var kds=(Array.isArray(kd)?kd.join('  |  '):kd);
+      rows.push([c('KEY: '+clean(kds),st(KD,AMBER,false,8,true,'left')),'','','','']);
+    }
     // Items
     (items||[]).forEach(function(item) {
-      var text = sx(item); if (!text) return;
-      var typ = classify(text);
-      var isOpt = item.indexOf('➕') >= 0;
-      var rs = rowStyle(typ, isOpt);
-      var ts = typeStyle(typ);
-      var keys = (text.match(/€[\d.,]+|CHF\s?[\d.]+|\$[\d.]+|~?\d+\s?min|~?\d+\s?hr|~?\d+\s?km|\d+:\d+[apm]+/gi)||[]).slice(0,3).join(' · ');
-      var addr = '';
-      if (typ==='HOTEL') {
-        var am=text.match(/📍\s*([^·📞\n]+)/); var pm=text.match(/📞\s*([^·\n]+)/);
-        if(am) addr+=am[1].trim().substring(0,45);
-        if(pm) addr+=(addr?' · ':'')+pm[1].trim().substring(0,25);
-      }
+      var text=cl(item); if(!text||skipItem(text)) return;
+      var typ=classify(text);
+      var isOpt=text.toLowerCase().indexOf('optional')===0;
+      var bg=isOpt?'FFF5F5F5':(TYPE_BG[typ]||'FFFFFFFF');
+      var fg=isOpt?SLATE:(TYPE_FG[typ]||'FF111111');
+      var lbl=TYPE_LBL[typ]||'Stop';
+      var ct=clean(text).substring(0,280);
       rows.push([
-        c('', rs), c(date, {font:{color:{rgb:'9CA3AF'},name:'Arial',sz:8},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'center',vertical:'top'}}),
-        c(TYPE_LBL[typ]||typ, ts),
-        c(isOpt?'➕':'', {font:{color:{rgb:'9CA3AF'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'center',vertical:'top'}}),
-        c(text.substring(0,240), rs),
-        c(keys, {font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
-        c(addr, {font:{color:{rgb:'5B21B6'},name:'Arial',sz:9},fill:{fgColor:{rgb:rs.fill.fgColor.rgb}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+        c(date,st(bg,SLATE,false,8,false,'center')),
+        c(date,st(bg,SLATE,false,8,false,'center')),
+        c(lbl,st(bg,fg,typ==='WARN',8,false,'center')),
+        c(isOpt?'opt':'',st(bg,SLATE,false,8,false,'center')),
+        c(ct,st(bg,typ==='WARN'?RUST:(isOpt?SLATE:'FF111111'),false,10,true,'left'))
       ]);
     });
     // Tips
     (tags||[]).forEach(function(tag) {
-      var text = sx(tag.text||''); if (text.length < 5) return;
-      rows.push([c('',tipStyle()),c(date,tipStyle()),c('💡 Tip',{font:{bold:true,color:{rgb:'4338CA'},name:'Arial',sz:8},fill:{fgColor:{rgb:'EEF2FF'}}}),
-        c('',tipStyle()),c(text.substring(0,280),tipStyle()),c('',tipStyle()),c('',tipStyle())]);
+      var txt=clean(cl(tag.text||'')); if(txt.length<5) return;
+      rows.push([
+        c('',st(TIP,SLATE,false,8,false)),
+        c('',st(TIP,SLATE,false,8,false)),
+        c('Tip',st(TIP,'FF1D4ED8',true,8,false,'center')),
+        c('',st(TIP,SLATE,false,8,false)),
+        c(txt.substring(0,260),{font:{name:'Arial',color:{rgb:SLATE},italic:true,sz:9},
+          fill:{fgColor:{rgb:TIP}},alignment:{horizontal:'left',vertical:'top',wrapText:true},
+          border:{top:{style:'thin',color:{rgb:'FFCCCCCC'}},bottom:{style:'thin',color:{rgb:'FFCCCCCC'}},
+                  left:{style:'thin',color:{rgb:'FFCCCCCC'}},right:{style:'thin',color:{rgb:'FFCCCCCC'}}}})
+      ]);
     });
-    // Spacer
-    rows.push([c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
-      c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
-      c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),c('',{fill:{fgColor:{rgb:'DDD9D0'}}}),
-      c('',{fill:{fgColor:{rgb:'DDD9D0'}}})]);
+    // Separator
+    rows.push([c('',st('FFE5E7EB',SLATE,false,3,false)),c('',st('FFE5E7EB',SLATE,false,3,false)),
+               c('',st('FFE5E7EB',SLATE,false,3,false)),c('',st('FFE5E7EB',SLATE,false,3,false)),
+               c('',st('FFE5E7EB',SLATE,false,3,false))]);
   }
 
   d.days.forEach(function(day) {
+    var tl=day.timeline||'', kd=day.keyDecisions||[];
     var dr=day.summary&&day.summary.drive||'', dt=day.summary&&day.summary.driveTime||'';
-    var kd=(day.keyDecisions||[]).join(' | ');
-    if (day.dayLabel==='1–2') {
+    if(day.dayLabel==='1-2'||day.dayLabel==='1–2') {
       var s0=day.sections[0], s1=day.sections[1];
-      addDay('1','Jun 20','Iceland Day 1 — Golden Circle + South Coast',s0.items,
-        'Day 1: 10:30am KEF ▸ Selfoss lunch ▸ Geysir ▸ Seljalandsfoss+Gljúfrabúi ▸ Skógafoss ▸ Reynisfjara ▸ 7:30pm Skeidflot',
-        '✅ Selfoss lunch+grocery first | ✅ Gljúfrabúi MUST — waterproofs | ✅ Reynisfjara 6pm golden light',
-        [{text:'✓ Night 1: Room in Skeidflot · $290.36'}],'~180 km / 112 mi','~2.5h driving');
-      addDay('2','Jun 21','Iceland Day 2 — Glacier Walk + Jökulsárlón',s1.items,
-        'Day 2: 7am Skeidflot ▸ Dyrhólaey ▸ Fjaðrárgljúfur ▸ Skaftafell glacier walk ▸ Jökulsárlón shore ▸ Diamond Beach ▸ 3pm drive ▸ Vík dinner ▸ 8pm BergOne',
-        '✅ 3pm departure firm — BergOne 8pm · 5:15am alarm | ✅ Glacier walk free+easy | ✅ Shore walk only (no boat)',
-        [{text:'✓ Night 2: BergOne · $263.98 · 1 Bergás, 260 Ytri-Njarðvík'}],'~480 km / 298 mi','~5h driving');
+      addDay('1','Jun 20','Iceland Day 1 - South Coast',s0.items,
+        'Day 1: 10:30am KEF > Selfoss > Geysir > Seljalandsfoss+Gljufrabui > Skogafoss > Reynisfjara > 7:30pm Vik',
+        ['Selfoss lunch+grocery first','Gljufrabui MUST - waterproofs','Reynisfjara 6pm golden light'],
+        day.tags||[],'~180 km','~2.5h');
+      addDay('2','Jun 21','Iceland Day 2 - Glacier Walk + Jokulsarlon',s1.items,
+        'Day 2: 7am > Dyrholaey > Glacier walk > Skaftafell > Jokulsarlon > Diamond Beach > 2pm drive > Canyon 4pm > Vik > BergOne 8pm',
+        ['Glacier walk free - kids touch ice','2pm departure firm','Canyon on return at 4pm'],
+        s1.tags||[],'~480 km','~5h');
     } else {
-      var allItems=[]; day.sections.forEach(function(s){allItems=allItems.concat(s.items);});
-      addDay(day.dayLabel, day.date, day.title, allItems, day.timeline||'', kd, day.tags||[], dr, dt);
+      var allItems=[], allTags=[];
+      day.sections.forEach(function(s){allItems=allItems.concat(s.items||[]);allTags=allTags.concat(s.tags||[]);});
+      allTags=allTags.concat(day.tags||[]);
+      addDay(day.dayLabel,day.date,day.title,allItems,tl,kd,allTags,dr,dt);
     }
   });
 
-  var ws1 = XLSX.utils.aoa_to_sheet(rows);
-  ws1['!cols'] = [{wch:7},{wch:10},{wch:10},{wch:5},{wch:72},{wch:22},{wch:28}];
-  ws1['!freeze'] = {xSplit:0, ySplit:2};
-  // Merge title row across all cols
-  ws1['!merges'] = [{s:{r:0,c:0},e:{r:0,c:6}},{s:{r:rows.length-1,c:0},e:{r:rows.length-1,c:6}}];
-  XLSX.utils.book_append_sheet(wb, ws1, '🗺 Detailed Itinerary');
+  var ws1=XLSX.utils.aoa_to_sheet(rows);
+  ws1['!cols']=[{wch:6},{wch:10},{wch:7},{wch:4},{wch:90}];
+  XLSX.utils.book_append_sheet(wb,ws1,'Itinerary');
 
-  // ── TAB 2: Trip Overview & Live Tracker (merged) ───────────────────────
-  var COUNTRY_BG = {
-    'Jun 20':'F0F9FF','Jun 21':'F0F9FF',
-    'Jun 22':'F5FFF5','Jun 23':'F5FFF5',
-    'Jun 24':'FFFFF0','Jun 25':'FFFFF0',
-    'Jun 26':'FFF5F0','Jun 27':'FFF5F0','Jun 28':'FFF5F0',
-    'Jun 29':'FFF0F5','Jun 30':'FFF0F5',
-    'Jul 1':'FFF5F0','Jul 2':'FFF5F0','Jul 3':'FFF5F0',
-    'Jul 4':'F5FFF5','Jul 5':'F0F9FF'
+  // ── TAB 2: OVERVIEW & TRACKER ────────────────────────────────────────
+  var CBGS={
+    'Jun 20':'FFDBEAFE','Jun 21':'FFDBEAFE','Jun 22':'FFDCFCE7','Jun 23':'FFDCFCE7',
+    'Jun 24':'FFFEF9C3','Jun 25':'FFFEF9C3','Jun 26':'FFFEE2E2','Jun 27':'FFFEE2E2',
+    'Jun 28':'FFFEE2E2','Jun 29':'FFFCE7F3','Jun 30':'FFFCE7F3','Jul 1':'FFFEE2E2',
+    'Jul 2':'FFFEE2E2','Jul 3':'FFFEE2E2','Jul 4':'FFDCFCE7','Jul 5':'FFDBEAFE'
   };
-  var glanceMap = {};
-  (d.glance||[]).forEach(function(g){ glanceMap[g.date]=g; });
-  var trackerRows = [];
-  d.days.forEach(function(day) {
-    if (day.dayLabel==='1–2') {
-      [['Jun 20','1'],['Jun 21','2']].forEach(function(pair) {
-        var g=glanceMap[pair[0]]||{};
-        trackerRows.push({day:'Day '+pair[1],date:pair[0],
-          from:g.from||'',nightStay:g.nightStay||'',highlights:g.highlights||'',
-          drive:(g.drive||'')+' '+( g.driveTime||'')});
+  var HL={
+    'Jun 20':'KEF pickup | Selfoss lunch+grocery | Geysir/Strokkur | Seljalandsfoss+Gljufrabui | Skogafoss | Reynisfjara',
+    'Jun 21':'Dyrholaey puffins | Glacier walk (free) | Jokulsarlon shore | Diamond Beach | Fjadrargljufur 4pm | Vik dinner',
+    'Jun 22':'Fly KEF>ZRH | Europcar pickup 1:30pm | Spiez Castle | Coop Lauterbrunnen | Staubbach Falls',
+    'Jun 23':'Oeschinensee gondola | Heuberg Ridge Trail #8 | Grindelwald First | Cliff Walk | Bachalpsee',
+    'Jun 24':'Trummelbach Falls | Vaduz Liechtenstein (Country 3) | A8 construction warning | Berchtesgaden',
+    'Jun 25':'Konigssee to Salet | Obersee + Rothbachfall | St. Bartholoma lunch | Eagles Nest (clear) or Salt Mine (cloudy) | Rossfeld | Zauberwald',
+    'Jun 26':'Liechtensteinklamm 9am | Salzburg P+R South | Hohensalzburg | Wolfgangsee ferry | Hallstatt golden hour',
+    'Jun 27':'Krippenstein 8:45am | 5 Fingers viewpoint | Gosausee Mirror Lake | Gosaukammbahn | Hallstatt 4:30pm',
+    'Jun 28':'Grossglockner 46.50 EUR | Edelweiss-Spitze 2571m | KFJ-Hohe marmots | Heiligenblut church',
+    'Jun 29':'Braies 8:45am | Misurina mirror coffee | Cadini Trail 117 | Rifugio Auronzo lunch | Tre Cime walk | Gardena Pass',
+    'Jun 30':'Seceda 8:45am | Razor Edge Trail 1 | Santa Maddalena 2026 barrier | St. Johann Ranui | Adolf Munkel',
+    'Jul 1':'9am St. Valentin gate CRITICAL | Bullaccia loop | Hexenbanke | Tschotsch Alm lunch | Brenner construction',
+    'Jul 2':'Schlegeis 17 EUR | Olpererhutte hike | Kebema bridge 10:30am | Sunny: Achensee | Rainy: Swarovski | Heiterwanger See',
+    'Jul 3':'Ehrwalder Almbahn 8am | Seebensee mirror before 10:30am | Drachensee climb | Coburger Hutte Kaiserschmarrn',
+    'Jul 4':'Marienbrucke 8:30am FIRST | Neuschwanstein 9:30am | Ebenalp | Aescher before 5pm | Return car tonight',
+    'Jul 5':'Hilton shuttle 5:30am NOT walk | Terminal 2 Row 3 | FI571 7:55am ZRH>KEF>MCO | Pylsur at KEF | MCO 8:50pm'
+  };
+  var NIGHT={'Jun 20':'Farmhouse Lodge, Vik, Iceland','Jun 21':'BergOne, Ytri-Njardvik, Iceland',
+    'Jun 22':'Camping Jungfrau, Lauterbrunnen, Switzerland','Jun 23':'Camping Jungfrau, Lauterbrunnen, Switzerland',
+    'Jun 24':'Apartment, Berchtesgaden, Germany','Jun 25':'Apartment, Berchtesgaden, Germany',
+    'Jun 26':'Kaiserblick Goisern, Bad Goisern, Austria','Jun 27':'Kaiserblick Goisern, Bad Goisern, Austria',
+    'Jun 28':'Hotel Schwarzer Adler, Sillian, Austria','Jun 29':'Kaiserau 1907, Collalbo, Italy',
+    'Jun 30':'Kaiserau 1907, Collalbo, Italy','Jul 1':'Keyone Rooms, Finkenberg, Austria',
+    'Jul 2':'Landhaus Bichlbach, Austria','Jul 3':'Landhaus Bichlbach, Austria',
+    'Jul 4':'Airport Hotel Zurich, Switzerland','Jul 5':'Home - Orlando, Florida'};
+  var FROM={'Jun 20':'Keflavik KEF, Iceland','Jun 21':'Farmhouse Lodge, Vik',
+    'Jun 22':'Camping Jungfrau (fly KEF>ZRH)','Jun 23':'Camping Jungfrau, Lauterbrunnen',
+    'Jun 24':'Camping Jungfrau, Lauterbrunnen','Jun 25':'Apartment, Berchtesgaden',
+    'Jun 26':'Apartment, Berchtesgaden','Jun 27':'Kaiserblick, Bad Goisern',
+    'Jun 28':'Kaiserblick, Bad Goisern','Jun 29':'Hotel Schwarzer Adler, Sillian',
+    'Jun 30':'Kaiserau 1907, Collalbo','Jul 1':'Kaiserau 1907, Collalbo',
+    'Jul 2':'Keyone Rooms, Finkenberg','Jul 3':'Landhaus Bichlbach',
+    'Jul 4':'Landhaus Bichlbach','Jul 5':'Airport Hotel Zurich'};
+  var glanceMap={};
+  (d.glance||[]).forEach(function(g){glanceMap[g.date]=g;});
+
+  var g2rows=[];
+  g2rows.push([c('Europe 2026 - Trip Overview & Live Tracker  |  Jun 19 - Jul 5',st(INK,WHITE,true,11,false)),'','','','','','']);
+  g2rows.push([c('Day',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Date',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('From',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Night Stay',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Highlights',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Drive',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Map',st(GOLD,'FF1A1A2E',true,9,false,'center'))]);
+
+  var DATES=['Jun 20','Jun 21','Jun 22','Jun 23','Jun 24','Jun 25','Jun 26','Jun 27',
+             'Jun 28','Jun 29','Jun 30','Jul 1','Jul 2','Jul 3','Jul 4','Jul 5'];
+  var DNUMS=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16'];
+  DATES.forEach(function(date,i) {
+    var bg=CBGS[date]||'FFFFFFFF';
+    var g=glanceMap[date]||{};
+    var drv=(g.drive||'')+(g.driveTime?' '+g.driveTime:'');
+    if(date==='Jun 20') drv='~180 km  ~2.5h';
+    if(date==='Jun 21') drv='~480 km  ~5h';
+    var mapUrl='';
+    if(d.days) {
+      d.days.forEach(function(day) {
+        if(!day.mapLinks) return;
+        if(day.dayLabel==='1-2'||day.dayLabel==='1\u20132') {
+          day.mapLinks.forEach(function(ml){
+            if(ml.label&&ml.label.toLowerCase().indexOf('day 1')>=0&&date==='Jun 20') mapUrl=ml.url||'';
+            if(ml.label&&ml.label.toLowerCase().indexOf('day 2')>=0&&date==='Jun 21') mapUrl=ml.url||'';
+          });
+        } else if(day.date===date&&day.mapLinks.length) {
+          mapUrl=day.mapLinks[0].url||'';
+        }
       });
-    } else {
-      var g=glanceMap[day.date]||{};
-      trackerRows.push({day:'Day '+day.dayLabel,date:day.date,
-        from:g.from||'',nightStay:g.nightStay||'',highlights:g.highlights||'',
-        drive:(g.drive||'')+' '+(g.driveTime||'')});
     }
+    var mapCell = mapUrl
+      ? {v:'Map',t:'s',l:{Target:mapUrl},s:st(bg,'FF1D4ED8',true,9,false,'center')}
+      : c('',st(bg,SLATE,false,9,false,'center'));
+    g2rows.push([
+      c('Day '+DNUMS[i],st(bg,'FF1A1A2E',true,9,false,'center')),
+      c(date,st(bg,'FF1A1A2E',true,9,false)),
+      c(FROM[date]||'',st(bg,SLATE,false,9,true)),
+      c(NIGHT[date]||'',st(bg,'FF111111',false,10,true)),
+      c(HL[date]||'',st(bg,'FF111111',false,10,true)),
+      c(drv.trim(),st(bg,SLATE,false,9,false)),
+      mapCell
+    ]);
   });
-  var g2Rows = [['Day','Date','From','Night Stay','Highlights','Drive & Time','Status','Notes & Updates']];
-  trackerRows.forEach(function(r) {
-    g2Rows.push([r.day, r.date, r.from, r.nightStay, r.highlights, r.drive.trim(), '⚪ Upcoming', '']);
-  });
-  // Legend rows
-  g2Rows.push(['','','','','','','','']);
-  g2Rows.push(['Status legend:','⚪ Upcoming','✅ Done','⚠️ Issue','⛔ Skipped','❤️ Favourite','','']);
-  g2Rows.push(['Colours:','🔵 Iceland','🟢 Switzerland','🟡 Germany','🟠 Austria/Tyrol','🩷 Italy/Dolomites','','']);
-  var ws2=XLSX.utils.aoa_to_sheet(g2Rows);
-  ws2['!cols']=[{wch:8},{wch:10},{wch:28},{wch:30},{wch:52},{wch:20},{wch:16},{wch:44}];
-  // Style header row
-  'ABCDEFGH'.split('').forEach(function(col) {
-    var ca=col+'1';
-    if(ws2[ca]) ws2[ca].s={font:{bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:9},
-      fill:{fgColor:{rgb:'C9A84C'}},alignment:{horizontal:'center',vertical:'center'}};
-  });
-  // Style data rows with country colours
-  trackerRows.forEach(function(r,i) {
-    var rn=i+2; var bg=COUNTRY_BG[r.date]||'FAF8F3';
-    'ABCDEFGH'.split('').forEach(function(col) {
-      var ca=col+rn;
-      if(ws2[ca]) ws2[ca].s={font:{color:{rgb:'111111'},name:'Arial',sz:10},
-        fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    });
-    var ca='A'+rn; if(ws2[ca]) ws2[ca].s.font={bold:true,color:{rgb:'1A1A2E'},name:'Arial',sz:10};
-    var cg='G'+rn; if(ws2[cg]) ws2[cg].s.alignment={horizontal:'center',vertical:'top'};
-  });
-  XLSX.utils.book_append_sheet(wb, ws2, '🗓 Trip Overview & Tracker');
+  g2rows.push([c('Colours: Blue=Iceland  Green=Switzerland  Yellow=Germany  Red=Austria  Pink=Italy  |  Map: tap to open Google Maps route',
+    st('FFF9FAFB',SLATE,false,8,false)),'','','','','','']);
 
-  // ── TAB 4: Booking Checklist ──────────────────────────────────────────
-  var g4=[[c('🌍  Europe 2026 — Booking Checklist',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','']];
-  g4.push([c('Status',hdr()),c('Item',hdr()),c('Reference / Confirmation',hdr()),c('Deadline / Notes',hdr()),c('☑',hdr())]);
-  var ST={done:{bg:'F0F7EC',fg:'4A7C2F'},urgent:{bg:'FEF2F2',fg:'C0392B'},pending:{bg:'FFFBEB',fg:'92400E'}};
-  var SL={'✅ Done':'done','🔴 Urgent':'urgent','⏳ Pending':'pending'};
+  var ws2=XLSX.utils.aoa_to_sheet(g2rows);
+  ws2['!cols']=[{wch:8},{wch:10},{wch:26},{wch:26},{wch:58},{wch:18},{wch:12}];
+  XLSX.utils.book_append_sheet(wb,ws2,'Overview & Tracker');
+
+  // ── TAB 3: CHECKLIST ─────────────────────────────────────────────────
+  var g3rows=[];
+  g3rows.push([c('Europe 2026 - Booking Checklist',st(INK,WHITE,true,11,false)),'','','','']);
+  g3rows.push([c('Status',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Item',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Reference',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Deadline / Notes',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Done',st(GOLD,'FF1A1A2E',true,9,false,'center'))]);
   (d.checklist||[]).forEach(function(item) {
-    var k=SL[item.status]||'pending'; var st=ST[k];
-    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    var lbl={'✅ Done':'✅ Done','🔴 Urgent':'🔴 Urgent','⏳ Pending':'⏳ Pending'}[item.status]||item.status;
-    g4.push([
-      c(lbl,{font:{bold:true,color:{rgb:st.fg},name:'Arial',sz:10},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'center',vertical:'top'}}),
-      c(item.label||'',rs),
-      c(item.ref||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
-      c(item.deadline||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
-      c(k==='done'?'☑':'☐',{font:{color:{rgb:k==='done'?'4A7C2F':'9CA3AF'},name:'Arial',sz:12},fill:{fgColor:{rgb:st.bg}},alignment:{horizontal:'center',vertical:'top'}})
+    var st2=item.status||'pending'; var bg=STATUS_BG[st2]||'FFFFFFFF';
+    var fg=STATUS_FG[st2]||SLATE; var lbl=STATUS_LBL[st2]||'Pending';
+    g3rows.push([
+      c(lbl,st(bg,fg,true,10,false,'center')),
+      c(clean(item.label||''),st(bg,'FF111111',false,10,true)),
+      c(clean(item.ref||''),st(bg,SLATE,false,9,true)),
+      c(clean(item.deadline||''),st(bg,SLATE,false,9,true)),
+      c(st2==='done'?'Y':'',st(bg,st2==='done'?SAGE:SLATE,st2==='done',10,false,'center'))
     ]);
   });
-  var ws4=XLSX.utils.aoa_to_sheet(g4);
-  ws4['!cols']=[{wch:14},{wch:52},{wch:40},{wch:44},{wch:5}];
-  ws4['!merges']=[{s:{r:0,c:0},e:{r:0,c:4}}];
-  XLSX.utils.book_append_sheet(wb,ws4,'✅ Booking Checklist');
+  var ws3=XLSX.utils.aoa_to_sheet(g3rows);
+  ws3['!cols']=[{wch:10},{wch:50},{wch:36},{wch:42},{wch:6}];
+  XLSX.utils.book_append_sheet(wb,ws3,'Checklist');
 
-  // ── TAB 5: Accommodation ─────────────────────────────────────────────
-  var g5=[[c('🌍  Europe 2026 — Accommodation',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','','','','']];
-  g5.push([c('Nights',hdr()),c('Dates',hdr()),c('Property',hdr()),c('Address',hdr()),c('Check-in',hdr()),c('Cost',hdr()),c('Phone / Contact',hdr())]);
-  var altA=false;
-  (d.accommodation||[]).filter(function(a){return a.status!=='cancelled';}).forEach(function(a) {
-    altA=!altA; var bg=altA?'F0F7EC':'FFFFFF';
-    var ref=a.ref||'';
-    var ci=(ref.match(/check-in\s*([\d:–\-]+)/i)||[])[1]||'—';
-    var cost=(ref.match(/(\$[\d,]+|CHF[\s\d.]+|€[\d.]+)/i)||[])[1]||'—';
-    var prop=(a.property||'').replace(/[\u{1F000}-\u{1FFFF}]/gu,'').trim();
-    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    g5.push([
-      c(a.nights||'',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
-      c(a.dates||'',{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}}}),
-      c(prop,{font:{bold:true,color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
-      c(a.address||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}}),
-      c(ci,{font:{color:{rgb:'111111'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'center',vertical:'top'}}),
-      c(cost,{font:{bold:true,color:{rgb:'4A7C2F'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
-      c(a.phone||'',{font:{color:{rgb:'6B7280'},name:'Arial',sz:9},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+  // ── TAB 4: ACCOMMODATION ─────────────────────────────────────────────
+  var g4rows=[];
+  g4rows.push([c('Europe 2026 - Accommodation',st(INK,WHITE,true,11,false)),'','','','']);
+  g4rows.push([c('Nights',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Dates',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Property',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Address',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Phone / Contact',st(GOLD,'FF1A1A2E',true,9,false,'center'))]);
+  (d.accommodation||[]).filter(function(a){return a.status!=='cancelled';}).forEach(function(a,i) {
+    var bg=i%2===0?'FFF0FDF4':'FFFFFFFF';
+    g4rows.push([
+      c(a.nights||'',st(bg,'FF111111',true,10,false,'center')),
+      c(a.dates||'',st(bg,'FF111111',true,10,false)),
+      c(clean(a.property||''),st(bg,'FF111111',true,10,true)),
+      c(a.address||'',st(bg,SLATE,false,9,true)),
+      c(a.phone||'',st(bg,SLATE,false,9,true))
     ]);
   });
-  var ws5=XLSX.utils.aoa_to_sheet(g5);
-  ws5['!cols']=[{wch:8},{wch:14},{wch:30},{wch:40},{wch:14},{wch:12},{wch:30}];
-  ws5['!merges']=[{s:{r:0,c:0},e:{r:0,c:6}}];
-  XLSX.utils.book_append_sheet(wb,ws5,'🏨 Accommodation');
+  var ws4=XLSX.utils.aoa_to_sheet(g4rows);
+  ws4['!cols']=[{wch:8},{wch:14},{wch:30},{wch:48},{wch:32}];
+  XLSX.utils.book_append_sheet(wb,ws4,'Accommodation');
 
-  // ── TAB 6: Budget ─────────────────────────────────────────────────────
-  var g6=[[c('🌍  Europe 2026 — Budget Tracker',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:12},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),'','','']];
-  g6.push([c('Category',hdr()),c('Estimated',hdr()),c('Actual Spent',hdr()),c('Notes',hdr())]);
+  // ── TAB 5: BUDGET ────────────────────────────────────────────────────
+  var g5rows=[];
+  g5rows.push([c('Europe 2026 - Budget Tracker',st(INK,WHITE,true,11,false)),'','','']);
+  g5rows.push([c('Category',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Estimated',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Actual Spent',st(GOLD,'FF1A1A2E',true,9,false,'center')),
+               c('Notes',st(GOLD,'FF1A1A2E',true,9,false,'center'))]);
   var budget=[
-    ['Flights ×4 ✅','$4,088','$4,088','Icelandair A77762 · Economy Light'],
-    ['Accommodation 15 nights ✅','$3,032','$3,032','All 10 properties confirmed'],
-    ['Car Rental ZRH + Budget KEF ✅','$1,182','$1,182','Europcar 738796923 + Budget #42334482US1'],
-    ['Food & Drinks','$1,850','','Update daily · rifugios + hüttes = cash only'],
-    ['Activities & Entry Fees','$1,100','','Cable cars · boat trips · castle entries'],
-    ['Fuel & Tolls','$1,000','','Grossglockner €46.50 · Schlegeis €17 · Rossfeld €9'],
-    ['Shopping & Misc','$400','',''],
+    ['Flights x4 (confirmed)','$4,088','$4,088','Icelandair A77762'],
+    ['Accommodation 15 nights (confirmed)','$3,032','$3,032','All 10 properties'],
+    ['Car Rental ZRH + KEF (confirmed)','$1,182','$1,182','Europcar 738796923 + Budget #42334482US1'],
+    ['Food & Drinks','$1,850','','Update daily'],
+    ['Activities & Entry Fees','$1,100','','Cable cars, castle entries'],
+    ['Fuel & Tolls','$1,000','','Grossglockner 46.50 EUR, Schlegeis 17 EUR, Auronzo 40 EUR'],
+    ['Shopping & Misc','$400','','']
   ];
-  var altB=false;
-  budget.forEach(function(row) {
-    altB=!altB;
-    var isConf=row[0].indexOf('✅')>=0;
-    var bg=isConf?'F0F7EC':(altB?'FAF8F3':'FFFFFF');
-    var rs={font:{color:{rgb:'111111'},name:'Arial',sz:10,bold:isConf},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}};
-    g6.push([c(row[0],rs),
-      c(row[1],{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
-      c(row[2],{font:{bold:!!row[2],color:{rgb:row[2]?'4A7C2F':'9CA3AF'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'right',vertical:'top'}}),
-      c(row[3],{font:{color:{rgb:'6B7280'},name:'Arial',sz:10},fill:{fgColor:{rgb:bg}},alignment:{horizontal:'left',vertical:'top',wrapText:true}})
+  budget.forEach(function(row,i) {
+    var isConf=row[0].indexOf('confirmed')>=0;
+    var bg=isConf?'FFF0FDF4':(i%2===0?'FFFAFAFA':'FFFFFFFF');
+    g5rows.push([
+      c(row[0],st(bg,'FF111111',isConf,10,true)),
+      c(row[1],st(bg,SLATE,false,10,false,'right')),
+      c(row[2]||'',st(bg,row[2]?SAGE:SLATE,!!row[2],10,false,'right')),
+      c(row[3],st(bg,SLATE,false,9,true))
     ]);
   });
   // Total row
-  g6.push([
-    c('TOTAL CONFIRMED',{font:{bold:true,color:{rgb:'FFFFFF'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}}),
-    c('$8,302',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'right',vertical:'center'}}),
-    c('',{font:{bold:true,color:{rgb:'C9A84C'},name:'Arial',sz:11},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'right',vertical:'center'}}),
-    c('vs est. ~$11,600–$12,900',{font:{color:{rgb:'FAF8F3'},name:'Arial',sz:10},fill:{fgColor:{rgb:'1A1A2E'}},alignment:{horizontal:'left',vertical:'center'}})
+  g5rows.push([
+    c('TOTAL CONFIRMED',st(INK,WHITE,true,11,false,'left')),
+    c('$8,302',st(INK,GOLD,true,11,false,'right')),
+    c('',st(INK,GOLD,true,11,false,'right')),
+    c('vs est. ~$11,600-$12,900',st(INK,'FFD1D5DB',false,10,false,'left'))
   ]);
-  var ws6=XLSX.utils.aoa_to_sheet(g6);
-  ws6['!cols']=[{wch:32},{wch:16},{wch:16},{wch:44}];
-  ws6['!merges']=[{s:{r:0,c:0},e:{r:0,c:3}}];
-  XLSX.utils.book_append_sheet(wb,ws6,'💰 Budget');
+  var ws5=XLSX.utils.aoa_to_sheet(g5rows);
+  ws5['!cols']=[{wch:34},{wch:14},{wch:14},{wch:44}];
+  XLSX.utils.book_append_sheet(wb,ws5,'Budget');
 
   var filename='Europe-2026-VRFamilyTravels-'+new Date().toISOString().slice(0,10)+'.xlsx';
-  XLSX.writeFile(wb, filename);
+  XLSX.writeFile(wb,filename);
 }
 
 
