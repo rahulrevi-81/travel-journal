@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-02T18:39:34Z",
+    "_updated": "2026-06-04T19:57:04Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1204,33 +1204,33 @@
     {
       "dayLabel": "15",
       "date": "Jul 4",
-      "title": "The Fairy Tale Finale — Neuschwanstein · Ebenalp · Aescher → ZRH",
+      "title": "Zurich Day — Old Town · Lake · Caliente Festival → ZRH",
       "meta": "Jul 4 · Bichlbach → Neuschwanstein → Ebenalp/Wasserauen → (Rhine Falls optional) → ZRH Airport · 🚗 280 km / 174 mi · ~3h 30m",
       "flag": "🇦🇹🇱🇮🇨🇭",
       "mapLinks": [
         {
-          "label": "Day 15 Map — Bichlbach → Neuschwanstein → Ebenalp → ZRH",
-          "url": "https://www.google.com/maps/dir/Bichlbach,+Austria/Neuschwanstein+Castle,+Schwangau,+Germany/Wasserauen,+Switzerland/Zurich+Airport,+Switzerland"
+          "label": "Day 15 Map — Bichlbach → Zurich Airport → Zurich City",
+          "url": "https://www.google.com/maps/dir/Landhaus+Bichlbach,+Austria/Zurich+Airport,+Switzerland/Grossmünster,+Zurich,+Switzerland/Lake+Zurich,+Bürkliplatz,+Zurich,+Switzerland"
         }
       ],
       "sections": [
         {
           "heading": null,
           "items": [
-            "⏰ <strong>7:30am — Checkout Landhaus Bichlbach + depart</strong> — 30 min earlier than original plan · 45 min drive to Schwangau",
-            "💳 <strong>Swiss vignette check</strong> — cameras trigger a CHF 200 fine if missing",
-            "🚗 <strong>8:15am — Park P4, Schwangau</strong> — €7 · 10 min walk to ticket centre · go straight to Marienbrücke",
-            "⭐ ⭐ <strong>8:30am — Marienbrücke (Mary's Bridge) — go here FIRST</strong> — 10 min walk above the castle · allow 20–30 min for photos",
-            "⚠️ <strong>9:20am — Castle GATE (not ticket centre)</strong> — entry strictly timed · guide will not wait",
-            "⭐ ⭐ <strong>9:30am — Neuschwanstein Castle interior tour</strong> — guided tour 35–40 min inside · photography not allowed inside",
-            "🚗 <strong>11:30am — Depart Neuschwanstein → Wasserauen</strong> — 1hr 30min drive · ⚠️ Saturday = absolute peak crowds on all German/Swiss roads",
-            "🚗 <strong>1:15pm — Park at Wasserauen cable car</strong> — CHF 36/adult return (2026 rate) · runs every 15 min · ⚠️ <strong>Peak Saturday: parking lot likely full</strong> — if full: park further down the valley on the roadside · local train/shuttle runs to the cable car station · allow extra 20 min",
-            "⭐ <strong>1:30pm — Ebenalp cable car</strong> — CHF 36/adult · 6 min · last descent 6pm · ⚠️ caves 10°C — pack a layer",
-            "⭐ ⭐ <strong>2:00pm — Berggasthaus Aescher</strong> — arrive before 4pm · 🎷 Swing event 5pm · Chäs-Chnöpfli or Rösti · Siedwurst if full",
-            "🚗 <strong>4:00pm — Cable car down + drive to ZRH</strong> — walk 25 min back up to Ebenalp top station · cable car down · ~2hr drive to Zurich Airport area",
-            "❌ <strong>Rhine Falls — SKIP TODAY</strong> — adding 45 min detour north on a peak Saturday risks missing car return window",
-            "🚗 <strong>Return Europcar ZRH tonight</strong> — drop bags at Airport Hotel Zurich · drive 5 min to Europcar ZRH return · return by 11:30pm · Hilton shuttle back · check Booking.com email for return confirmation",
-            "⚠️ <strong>Tonight — final checks</strong> — check-in opens 5:30am · hotel is 5 min walk to terminal"
+            "🚗 <strong>8:00am — Checkout Landhaus Bichlbach + depart</strong> — ~185km direct to Zurich Airport · ~2hrs via A17/A12/A14 · no border stress · no peak Saturday mountain parking",
+            "💳 <strong>Swiss vignette check</strong> — cameras trigger a CHF 200 fine if missing · verify on windscreen before entering Switzerland",
+            "🏠 <strong>~10:00am — Airport Hotel Zurich</strong> — drop bags at hotel · Lindbergh-Platz 1, 8152 Glattbrugg · check-in may not be ready — leave bags at reception",
+            "🚗 <strong>10:30am — Return Europcar ZRH</strong> — 5 min drive from hotel · confirm return closed out correctly · take Hilton shuttle back · keep boarding passes + passports in hand-carry",
+            "🚂 <strong>11:00am — Train to Zurich HB</strong> — Zurich Airport → Zurich HB · 10 min · CHF 7 · runs every 10 min from the airport underground station",
+            "⭐ <strong>11:15am — Lindenhof viewpoint</strong> — hilltop square · best city panorama without climbing · Romans used it as a fort · free · 15 min",
+            "⭐ ⭐ <strong>11:30am — Grossmünster</strong> — twin-towered landmark · climb to the top for panorama of city + Lake Zurich · kids love the tower climb · ~CHF 5",
+            "⭐ <strong>12:15pm — Fraumünster</strong> — Marc Chagall stained glass windows — genuinely stunning · unlike anything else on the trip · ~CHF 5",
+            "🛒 <strong>1:00pm — Bahnhofstrasse</strong> — one of the world's great shopping streets · Confiserie Sprüngli for Swiss chocolate + Luxemburgerli macarons — MUST · 30 min stroll",
+            "⭐ ⭐ <strong>1:45pm — Lake Zurich waterfront</strong> — Bürkliplatz · swans · paddle boats · Alps visible in the background on a clear day · free · 45 min",
+            "⭐ ⭐ <strong>2:30pm — Caliente! Latin Festival</strong> — Jul 3–5 2026 · Europe's largest Latin festival · Kasernenareal · South American music + dancing + food stalls · Jul 4 is the final day — biggest atmosphere · family-friendly · free or low cost",
+            "🍽 <strong>4:30pm — Early dinner by Lake Zurich</strong> — Zeughauskeller (15th century armory beer hall · hearty Swiss meals) · or lakeside restaurant at Bürkliplatz · allow 1.5hrs",
+            "🚂 <strong>6:00pm — Train back to airport</strong> — Zurich HB → Zurich Airport · 10 min · CHF 7",
+            "🏠 <strong>6:30pm — Airport Hotel Zurich</strong> — pack final bags · passports in hand-carry · boarding passes to phone wallet · confirm 5:30am shuttle at front desk · set two alarms · early bed"
           ],
           "tags": []
         }
@@ -1262,11 +1262,11 @@
         }
       ],
       "summary": {
-        "drive": "~280 km / 174 mi",
+        "drive": "~185 km / 115 mi",
         "time": "2h 30m",
         "from": "Bichlbach 🇦🇹",
-        "to": "ZRH Airport Hotel 🇨🇭",
-        "highlights": "Neuschwanstein Castle · Marienbruecke view · Ebenalp cable car · Wildkirchli caves · Aescher cliff restaurant · ZRH arrival",
+        "to": "Airport Hotel Zurich",
+        "highlights": "Lindenhof · Grossmünster · Fraumünster · Bahnhofstrasse · Lake Zurich · Caliente! Festival",
         "bookings": [
           {
             "status": "pending",
@@ -1277,14 +1277,15 @@
             "text": "✓ Airport Hotel Zurich · CHF 157.62 · check-in 15:00"
           }
         ],
-        "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH"
+        "driveTime": "~2h direct · saves 100km vs castle route"
       },
       "keyDecisions": [
-        "✅ Marienbrücke BEFORE the tour — go at 8:30am · virtually no queue · by 10am it's packed",
-        "⚠️ Castle gate by 9:20am — NOT the ticket centre · guide will not wait for latecomers",
-        "🚗 Return car TONIGHT — drop bags at hotel · 5 min to Europcar ZRH · open until midnight · eliminates 5:30am stress"
+        "✅ Return Europcar ZRH first thing — 10:30am · 5 min drive · done before Zurich",
+        "✅ Caliente! Latin Festival Jul 4 — final day · Europe's largest Latin festival · lakefront · family-friendly",
+        "✅ Confirm Hilton shuttle 5:30am at front desk tonight — CHF 7/person · NOT walk (2km)",
+        "⚠️ Swiss vignette — verify on windscreen before crossing border"
       ],
-      "timeline": "7:30am Bichlbach checkout ▸ 8:15am P4 Neuschwanstein ▸ 8:30am Marienbrücke FIRST ▸ 9:20am castle gate ▸ 9:30am tour ▸ 11:30am drive Bregenz tunnel ▸ 1:15pm Wasserauen ▸ 1:30pm Ebenalp cable car ▸ 2pm Aescher (before Swing event 5pm) ▸ 4pm descent ▸ 6pm ZRH hotel + return car tonight ▸ 5am alarm tomorrow"
+      "timeline": "8:00am Bichlbach checkout ▸ ~10:00am Airport Hotel ZRH ▸ 10:30am return Europcar ▸ 11:00am train to Zurich HB ▸ 11:15am Lindenhof + Grossmünster + Fraumünster ▸ 1:00pm Bahnhofstrasse + Sprüngli ▸ 1:45pm Lake Zurich waterfront ▸ 2:30pm Caliente! Latin Festival ▸ 4:30pm dinner by the lake ▸ 6:00pm train back ▸ early bed"
     },
     {
       "dayLabel": "16",
@@ -1398,14 +1399,6 @@
       "ref": "Done",
       "deadline": null,
       "link": null
-    },
-    {
-      "id": "neuschwanstein",
-      "label": "🏰 Neuschwanstein Castle tickets — Jul 4 · 9:30am entry slot",
-      "status": "urgent",
-      "ref": "€17.50/adult incl. booking fee · tickets.hohenschwangau.de · be at GATE (not ticket centre) by 9:20am",
-      "deadline": "Book NOW — July sells out weeks ahead",
-      "link": "https://tickets.hohenschwangau.de"
     },
     {
       "id": "seceda",
@@ -1938,9 +1931,9 @@
       "flag": "🇦🇹",
       "from": "Bichlbach 🇦🇹",
       "nightStay": "Airport Hotel Zurich 🇨🇭 ✅",
-      "highlights": "Marienbrücke 8:30am FIRST · Neuschwanstein 9:30am €17.50 · Wildkirchli caves 10°C · Aescher before 5pm Swing event · return car tonight",
-      "drive": "~280 km / 174 mi",
-      "driveTime": "~3h 30m · Neuschwanstein → Ebenalp → ZRH",
+      "highlights": "Bichlbach checkout 8am · direct to ZRH ~2hrs · return Europcar · train to Zurich HB · Lindenhof · Grossmünster · Bahnhofstrasse · Lake Zurich · Caliente! Latin Festival · dinner by the lake",
+      "drive": "~185 km / 115 mi",
+      "driveTime": "~2h direct to ZRH",
       "bookings": "✅ Airport Hotel Zurich · CHF 157.62 · check-in 15:00 · ⚠️ Book Neuschwanstein NOW",
       "mapUrl": "https://www.google.com/maps/dir/Bichlbach,+Austria/Neuschwanstein+Castle,+Schwangau,+Germany/Wasserauen,+Switzerland/Zurich+Airport,+Switzerland",
       "action": {
