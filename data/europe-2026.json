@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-12T22:01:55Z",
+    "_updated": "2026-06-12T22:12:12Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -155,14 +155,14 @@
       "phone": "+49 8652 xxx · Booking.com message host"
     },
     {
-      "nights": "7–8",
-      "property": "Kaiserblick Goisern 🇦🇹",
+      "nights": "2",
+      "property": "Kaiserblick Goisern",
       "address": "38 Unterjoch, 4822 Bad Goisern, Austria",
       "dates": "Jun 26–28",
-      "ref": "✅ Airbnb booked · $333 / €288.36 · 2 nights · check-in 14:00–20:00 · key box at entrance with code · Jun 26–28",
+      "ref": "Booking.com · ~$360 · 2 adults + 2 children (6 and 11 yrs) · 2 nights · 1 apartment · check-in 14:00–20:00 · check-out 08:00–10:00",
       "freeCancel": null,
       "status": "Confirmed",
-      "phone": "+43 xxx · Airbnb message host · key box on arrival"
+      "phone": "Key box with code at apartment entrance · schedule time with host via Booking.com"
     },
     {
       "nights": "9",
