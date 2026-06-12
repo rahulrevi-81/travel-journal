@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-12T21:59:28Z",
+    "_updated": "2026-06-12T22:01:55Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1353,6 +1353,52 @@
   ],
   "checklist": [
     {
+      "id": "insurance",
+      "label": "🛡 Travel insurance × 4",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "BOOK TODAY — trip departs Jun 19 · only 7 days away",
+      "link": null
+    },
+    {
+      "id": "dachstein",
+      "label": "🏔 Dachstein Krippenstein cable car + 5 Fingers — Jun 27",
+      "status": "urgent",
+      "ref": "Book at dachstein.at · Sections 1+2 ~€44.90/adult · 5 Fingers free at top · arrive Obertraun 8:15am",
+      "deadline": "Book before departure",
+      "link": "https://www.dachstein.at"
+    },
+    {
+      "id": "gosaukamm",
+      "label": "🚡 Gosaukammbahn cable car — Jun 27",
+      "status": "urgent",
+      "ref": "~€28 return/adult · book at gosaukammbahn.at · afternoon after Krippenstein",
+      "deadline": "Book soon — Jun 27 Saturday peak season",
+      "link": "https://www.gosaukammbahn.at"
+    },
+    {
+      "id": "brenner_toll",
+      "label": "💳 Brenner Pass Digital Flex toll — buy online",
+      "status": "urgent",
+      "ref": "autobrennero.it · cameras read plate · skip queue · needed Jun 30→Jul 1",
+      "deadline": "Buy before Jun 30 (Day 12) · autobrennero.it · €11.50"
+    },
+    {
+      "id": "vignette",
+      "label": "🇦🇹 Austrian digital vignette",
+      "status": "urgent",
+      "ref": null,
+      "deadline": "Buy on Jun 22 at asfinag.at after picking up Europcar car · need licence plate · ~€16.50 · 10-day pass",
+      "link": "https://www.asfinag.at"
+    },
+    {
+      "id": "compatsch_parking",
+      "label": "🅿️ P2 Compatsch parking — Jul 1 (fully booked · keep checking)",
+      "status": "pending",
+      "ref": "seiseralm.it · €30 · must arrive before 9am · cancellations appear · check daily · Plan B: Seis cable car €30/adult RT",
+      "deadline": "Keep checking daily — cancellations appear · Plan B = Seis–Compatsch cable car (no booking needed)"
+    },
+    {
       "id": "accommodation_all",
       "label": "🏠 All accommodation — 10 properties confirmed",
       "status": "done",
@@ -1409,14 +1455,6 @@
       "link": "https://www.seceda.it"
     },
     {
-      "id": "vignette",
-      "label": "🇦🇹 Austrian digital vignette",
-      "status": "urgent",
-      "ref": null,
-      "deadline": "Buy on Jun 22 at asfinag.at after picking up Europcar car · need licence plate · ~€16.50 · 10-day pass",
-      "link": "https://www.asfinag.at"
-    },
-    {
       "id": "oeschinen",
       "label": "🏔 Oeschinensee timed slot — Jun 23 · 8:30am",
       "status": "done",
@@ -1433,81 +1471,12 @@
       "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/"
     },
     {
-      "id": "gosaukamm",
-      "label": "🚡 Gosaukammbahn cable car — Jun 27",
-      "status": "pending",
-      "ref": "~€28 return/adult · book at gosaukammbahn.at · afternoon after Krippenstein",
-      "deadline": "Book soon — Jun 27 Saturday peak season",
-      "link": "https://www.gosaukammbahn.at"
-    },
-    {
-      "id": "saltmine",
-      "label": "⛏ Hallstatt Salt Mine — CLOSED Jun 27 (renovation)",
-      "status": "done",
-      "ref": "🚨 Closed for renovation · reopens Jun 30 · Salzwelten Altaussee is the alternative (25 min away)",
-      "deadline": "N/A — closed during our visit",
-      "link": "https://www.salzwelten.at/en/hallstatt"
-    },
-    {
-      "id": "dachstein",
-      "label": "🏔 Dachstein Krippenstein cable car + 5 Fingers — Jun 27",
-      "status": "pending",
-      "ref": "Book at dachstein.at · Sections 1+2 ~€44.90/adult · 5 Fingers free at top · arrive Obertraun 8:15am",
-      "deadline": "Book before departure",
-      "link": "https://www.dachstein.at"
-    },
-    {
-      "id": "achensee",
-      "label": "⛴ Achensee steamboat — Jul 2",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Day-of or day-before fine · large boats · no timed slots · achensee.com",
-      "link": "https://www.achensee.com"
-    },
-    {
-      "id": "eagles_nest",
-      "label": "🦅 Eagle's Nest bus — Jun 25 · ~1pm from Obersalzberg",
-      "status": "pending",
-      "ref": "~€32/person (bus + elevator) · buy at Obersalzberg car park · no advance booking · register return bus time immediately at top",
-      "deadline": "Buy on day — no pre-booking needed",
-      "link": "https://www.obersalzberg.de"
-    },
-    {
-      "id": "insurance",
-      "label": "🛡 Travel insurance × 4",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Before departure",
-      "link": null
-    },
-    {
-      "id": "compatsch_parking",
-      "label": "🅿️ P2 Compatsch parking — Jul 1 (fully booked · keep checking)",
-      "status": "pending",
-      "ref": "seiseralm.it · €30 · must arrive before 9am · cancellations appear · check daily · Plan B: Seis cable car €30/adult RT",
-      "deadline": "Keep checking daily — cancellations appear · Plan B = Seis–Compatsch cable car (no booking needed)"
-    },
-    {
-      "id": "brenner_toll",
-      "label": "💳 Brenner Pass Digital Flex toll — buy online",
-      "status": "pending",
-      "ref": "autobrennero.it · cameras read plate · skip queue · needed Jun 30→Jul 1",
-      "deadline": "Buy before Jun 30"
-    },
-    {
       "id": "rifugio_auronzo",
       "label": "🅿️ Rifugio Auronzo parking — Jun 29 · Tre Cime",
       "status": "done",
       "ref": "Transaction PASS3CIME_26017885 · Ticket P26134547 · €40 · 9:00am–8:59pm Jun 29 · update plate Jun 28 at pass.auronzo.info",
       "deadline": "Booked ✅ · update licence plate night before (Jun 28 in Sillian)",
       "link": null
-    },
-    {
-      "id": "siusi_ebikes",
-      "label": "🚲 Siusi Alm e-bikes — Jul 1 · optional",
-      "status": "done",
-      "ref": "Removed from itinerary — time constraints on Jul 1",
-      "deadline": "N/A"
     }
   ],
   "budget": [
