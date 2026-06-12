@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-04T19:57:04Z",
+    "_updated": "2026-06-12T21:59:28Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -573,7 +573,7 @@
           "heading": null,
           "items": [
             "⏰ <strong>8:15am — Königssee Seelände car park</strong> — only 10 min drive from Berchtesgaden apartment · car park is huge but the dock is a 10 min walk from the lot — factor this in",
-            "⭐ ⭐ <strong>8:30am — Königssee electric boat</strong> — completely silent electric boats — only powered vessels allowed on this lake · ⚠️ Go all the way to <strong>Salet</strong> — 55 min to Salet · ~€28–30 return to Salet per adult",
+            "⭐ ⭐ <strong>9:15am — Königssee electric boat</strong> — ✅ Booked · OB6A2C80290DB89 · Fahrt-Nr. 16 · arrive dock by 8:55am (20 min before) · completely silent electric boats — only powered vessels allowed on this lake · 55 min to Salet · ~€29.80/adult · €14.90/child · ⚠️ Return ticket: keep separately · flexible return time",
             "🎺 <strong>The mountain echo tradition</strong> — midway the captain stops and plays a trumpet · have €1–2 ready to tip",
             "🥾 <strong>9:45am — Obersee & Röthbachfall</strong> — flat 15 min walk from Salet dock · mirror-like glacial lake · iconic half-submerged wooden boathouse · walk all the way to <strong>Fischunkelalm hut</strong> on the far side · look straight up the valley walls — <strong>Röthbachfall</strong> = Germany's highest waterfall crashing down · no extra driving · right there · allow 1.5hrs total",
             "📸 <strong>Malerwinkel — Painter's Corner viewpoint</strong> — on the walk back from Obersee toward St. Bartholomä · wooden bench overlook · most famous postcard view of the lake · red onion domes of St. Bartholomä perfectly reflected · most boat passengers miss this entirely · free · 2 min off the path",
@@ -627,7 +627,7 @@
         "✅ Rossfeld Road after Eagle's Nest — same area · €9 · straddle the D/A border stone",
         "🌦️ Eagle's Nest if clear · Salt Mine if foggy — both at 1:30pm · same area · book Salt Mine online at salzbergwerk.de"
       ],
-      "timeline": "8:15am Königssee park ▸ 8:30am boat to Salet ▸ Obersee + Röthbachfall 9:45am ▸ St. Bartholomä lunch 12pm ▸ 1:30pm Eagle's Nest Kehlsteinbus ▸ 4pm Rossfeld Road ▸ 4:45pm Hintersee/Zauberwald ▸ 6:30pm Berchtesgaden dinner"
+      "timeline": "8:55am Königssee dock ▸ 9:15am boat to Salet ▸ Obersee + Röthbachfall + Malerwinkel 10:10am ▸ St. Bartholomä lunch 12pm ▸ 12:45pm boat back ▸ 1:30pm Eagle's Nest (clear) or Salt Mine (cloudy) ▸ 4pm Rossfeld ▸ 4:45pm Hintersee/Zauberwald ▸ 6:30pm Berchtesgaden dinner"
     },
     {
       "dayLabel": "7",
@@ -1426,10 +1426,10 @@
     },
     {
       "id": "konigssee",
-      "label": "⛵ Königssee electric boat — Jun 25 · 9:15am",
-      "status": "pending",
-      "ref": null,
-      "deadline": "Book 1–2 weeks before Jun 25 (non-refundable · pick time you are confident about) · seenschifffahrt.de",
+      "label": "Königssee electric boat — Jun 25 · 9:15am",
+      "status": "done",
+      "ref": "Booking OB6A2C80290DB89 · Vorgangs-Nr. 95019 · €89.40 · 2 adults + 2 children · Fahrt-Nr. 16 · Seelände → Salet return · 4 individual tickets",
+      "deadline": "Booked ✅ · Arrive Seelände dock by 8:55am (20 min before) · Keep return tickets separately",
       "link": "https://www.seenschifffahrt.de/en/koenigssee/online-tickets/"
     },
     {
