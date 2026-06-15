@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-12T22:12:12Z",
+    "_updated": "2026-06-15T04:48:37Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -1393,10 +1393,10 @@
     },
     {
       "id": "compatsch_parking",
-      "label": "🅿️ P2 Compatsch parking — Jul 1 (fully booked · keep checking)",
+      "label": "P2 Compatsch parking — Jul 1",
       "status": "pending",
-      "ref": "seiseralm.it · €30 · must arrive before 9am · cancellations appear · check daily · Plan B: Seis cable car €30/adult RT",
-      "deadline": "Keep checking daily — cancellations appear · Plan B = Seis–Compatsch cable car (no booking needed)"
+      "ref": "seiseralm.it · €30/day · must arrive before 9am · QR code scan at barrier above Hotel Zorzi · booking system opens end of June 2026",
+      "deadline": "Booking NOT open yet — system opens ~Jun 25 · check seiseralm.it daily from Jun 25 · book immediately when live · within 6-day window from Collalbo · Plan B: Seis cable car (no booking needed)"
     },
     {
       "id": "accommodation_all",
