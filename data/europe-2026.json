@@ -25,7 +25,7 @@
     "return": "Jul 5",
     "status": "upcoming",
     "totalDays": 16,
-    "_updated": "2026-06-15T04:48:37Z",
+    "_updated": "2026-06-25T21:59:08Z",
     "liveSheetUrl": "https://docs.google.com/spreadsheets/d/1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w/edit?usp=sharing",
     "liveSheetId": "1X0PYIQz9Im_55xB6GXORxbJwdXwsQBQgXY9gtB0MI7w"
   },
@@ -637,8 +637,8 @@
       "flag": "🇩🇪",
       "mapLinks": [
         {
-          "label": "Day 7 Map — Berchtesgaden → Liechtensteinklamm → Salzburg → Wolfgangsee → Hallstatt → Bad Goisern",
-          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Liechtensteinklamm,+St.+Johann+im+Pongau,+Austria/Salzburg,+Austria/St.+Gilgen,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria"
+          "label": "Day 7 Map — Berchtesgaden → Liechtensteinklamm → Gschwandtanger → Salzachöfen → St. Gilgen → Hallstatt → Bad Goisern",
+          "url": "https://www.google.com/maps/dir/Berchtesgaden,+Germany/Liechtensteinklamm,+Liechtensteinklammstra%C3%9Fe+123,+5600+St.+Johann+im+Pongau,+Austria/The+Sound+of+Music+Trail,+Markt+21,+5450+Werfen,+Austria/Salzachklamm,+Pa%C3%9F-Lueg-Stra%C3%9Fe+82,+5440+Golling+an+der+Salzach,+Austria/Wolfgangsee+Lake,+Austria/Hallstatt,+Austria/Bad+Goisern,+Austria"
         }
       ],
       "sections": [
@@ -648,6 +648,7 @@
             "⏰ <strong>8:15am — Checkout Berchtesgaden + depart</strong> — drive 35 min south toward St. Johann im Pongau — Austrian motorway A10 · ✅ Austrian vignette must be active — you are on the A10 today",
             "⭐ ⭐ <strong>9:00am — Liechtensteinklamm Gorge</strong> — be there at opening (9:00am) — experience the helix staircase without crowds · thundering waterfalls + mist",
             "⭐ <strong>Sound of Music meadow — Gschwandtanger, Werfen</strong> — just off the B159 near Liechtensteinklamm · the exact meadow where the Do-Re-Mi picnic scene was filmed · jaw-dropping views of Hohenwerfen Castle + mountains · no crowds vs Salzburg · allow 15 min · free · kids will love the connection",
+            "⭐ ⭐ <strong>Salzachöfen Gorge</strong> — Paß-Lueg-Straße 82, Golling · 5 min away · €5/adult · €3/child · free parking · 90m deep gorge · narrow cathedral cave section · different experience to Liechtensteinklamm · allow 1.5hrs",
             "🚗 <strong>11:00am — Drive north to Salzburg</strong> — ~1hr on A10 · arrive ~12:00pm · ⚠️ Do NOT park in the city centre — 2026 restricted traffic zone + construction everywhere · use <strong>P+R South (Alpenstraße)</strong> — €15 combo-ticket covers parking + shuttle bus for the whole family",
             "⭐ <strong>12:00pm — Salzburg old town</strong>",
             "⭐ <strong>12:30pm — Hohensalzburg Fortress</strong> — funicular up from Kapitelplatz · stick to the <strong>Panorama Tour</strong> — ➕ Interior: €16/adult · allow 1hr",
@@ -689,11 +690,11 @@
         "driveTime": "~3h 30m incl. Salzburg parking"
       },
       "keyDecisions": [
+        "✅ Salzachöfen Gorge after Gschwandtanger — €5/adult · 1.5hrs · free parking · no booking needed",
         "✅ Liechtensteinklamm 9:00am sharp — be first at the gate · €16/adult · wear sturdy shoes",
-        "✅ Salzburg: P+R South (Alpenstraße) €15 family combo — do NOT park in city centre · 2026 restricted zone",
         "⚠️ Hallstatt tunnel signs: if \"Full\" — go straight to Goisern · park Obertraun + ferry instead"
       ],
-      "timeline": "8:15am depart Berchtesgaden ▸ 9:00am Liechtensteinklamm ▸ 11am drive Salzburg ▸ 12pm P+R South + Altstadt ▸ Hohensalzburg Panorama Tour ▸ 3pm drive Wolfgangsee ▸ 4pm St. Gilgen→St. Wolfgang ferry ▸ 5:30pm Hallstatt golden hour ▸ 7:30pm Kaiserblick Goisern"
+      "timeline": "8:15am Berchtesgaden ▸ 9:00am Liechtensteinklamm ▸ 10:30am Gschwandtanger meadow ▸ 10:45am Salzachöfen Gorge ▸ 12:15pm drive ▸ 1:15pm St. Gilgen lunch ▸ 2:15pm Hallstatt ▸ 6:00pm Bad Goisern"
     },
     {
       "dayLabel": "8",
@@ -1764,7 +1765,7 @@
       "flag": "🇩🇪",
       "from": "Berchtesgaden 🇩🇪",
       "nightStay": "Kaiserblick Goisern, Bad Goisern 🇦🇹 ✅",
-      "highlights": "Liechtensteinklamm 9am · Salzburg P+R South · Hohensalzburg Panorama · Wolfgangsee ferry · Hallstatt golden hour",
+      "highlights": "Liechtensteinklamm 9am · Gschwandtanger Sound of Music meadow · Salzachöfen Gorge · St. Gilgen Wolfgangsee lunch · Hallstatt golden hour",
       "drive": "~180 km / 112 mi",
       "driveTime": "~3h 30m incl. Salzburg parking",
       "bookings": "✅ Kaiserblick Goisern confirmed · Airbnb $333 · check-in 14:00–20:00 · key box",
